@@ -1,0 +1,62 @@
+---
+permalink: sm-settings/enable-iscsi-discovery-settings.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, enable, iscsi, discovery, settings, 
+summary: Pode ativar as definições relacionadas com a deteção de dispositivos de armazenamento numa rede iSCSI. 
+---
+= Ativar definições de deteção iSCSI
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Pode ativar as definições relacionadas com a deteção de dispositivos de armazenamento numa rede iSCSI.
+
+As Definições de deteção de destino permitem registar as informações iSCSI da matriz de armazenamento utilizando o protocolo iSNS (Internet Storage Name Service) e também determinar se pretende permitir sessões de deteção sem nome.
+
+.Antes de começar
+Se o servidor iSNS usar um endereço IP estático, esse endereço deve estar disponível para o Registro do iSNS. Tanto o IPv4 como o IPv6 são suportados.
+
+.Sobre esta tarefa
+Pode ativar as seguintes definições relacionadas com a deteção iSCSI:
+
+* *Ativar o servidor iSNS para Registrar um destino* -- quando ativado, o storage Registra seu nome qualificado iSCSI (IQN) e informações de porta do servidor iSNS. Essa configuração permite a descoberta do iSNS, de modo que um iniciador possa recuperar as informações da IQN e da porta do servidor iSNS.
+* *Ativar sessões de descoberta sem nome* -- quando sessões de descoberta sem nome estão ativadas, o iniciador (host iSCSI) não precisa fornecer o IQN do destino (controlador) durante a sequência de login para uma conexão do tipo descoberta. Quando desabilitados, os hosts precisam fornecer o IQN para estabelecer uma sessão de descoberta para o controlador. No entanto, o IQN alvo é sempre necessário para uma sessão normal (rolamento de e/S). Desativar esta definição pode impedir que anfitriões iSCSI não autorizados se liguem ao controlador utilizando apenas o seu endereço IP.
+
+
+[NOTE]
+====
+As definições e funções iSCSI só são apresentadas na página Definições se a sua matriz de armazenamento suportar iSCSI.
+
+====
+.Passos
+. Selecione menu:Definições[sistema].
+. Em *iSCSI settings*, clique em *View/Edit Target Discovery Settings*.
++
+A caixa de diálogo Target Discovery Settings (Definições de deteção de destino) é apresentada. Abaixo do campo *Enable iSNS Server*... (Ativar servidor iSNS*...), a caixa de diálogo indica se o controlador já está registado.
+
+. Para Registrar o controlador, selecione *Ativar o servidor iSNS para Registrar meu destino* e, em seguida, selecione uma das seguintes opções:
++
+** *Obter automaticamente a configuração do servidor DHCP* -- Selecione essa opção se desejar configurar o servidor iSNS usando um servidor DHCP (Dynamic Host Configuration Protocol). Esteja ciente de que, se você usar essa opção, todas as portas iSCSI no controlador devem ser configuradas para usar DHCP também. Se necessário, atualize as definições da porta iSCSI do controlador para ativar esta opção.
++
+[NOTE]
+====
+Para que o servidor DHCP forneça o endereço do servidor iSNS, você deve configurar o servidor DHCP para usar a opção 43 -- "'informações específicas do fornecedor.'" esta opção precisa conter o endereço do servidor iSNS IPv4 em bytes de dados 0xA-0xd (10-13).
+
+====
+** *Especifique manualmente a configuração estática* -- Selecione esta opção se desejar inserir um endereço IP estático para o servidor iSNS. (Se desejado, você pode cortar e colar endereços nos campos.) No campo, insira um endereço IPv4 ou um endereço IPv6. Se você configurou ambos, IPv4 é o padrão. Insira também uma porta de escuta TCP (use o padrão 3205 ou insira um valor entre 49152 e 65535).
+
+
+. Para permitir que o storage array participe de sessões de descoberta sem nome, selecione *Ativar sessões de descoberta sem nome*.
++
+** Quando ativado, os iniciadores iSCSI não são necessários para especificar o IQN de destino para recuperar as informações do controlador.
+** Quando desabilitadas, as sessões de descoberta são impedidas a menos que o iniciador forneça o IQN de destino. Desativar sessões de descoberta sem nome fornece segurança adicional.
+
+
+. Clique em *Salvar*.
+
+
+.Resultados
+Uma barra de progresso aparece quando o System Manager tenta Registrar o controlador no servidor iSNS. Esse processo pode levar até cinco minutos.

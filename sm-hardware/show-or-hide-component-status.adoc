@@ -1,0 +1,32 @@
+---
+permalink: sm-hardware/show-or-hide-component-status.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, show, hide, component, status, 
+summary: Você pode exibir descrições de status para unidades, controladores, ventiladores e fontes de alimentação. 
+---
+= Mostrar ou ocultar o estado do componente
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode exibir descrições de status para unidades, controladores, ventiladores e fontes de alimentação.
+
+.Passos
+. Selecione *hardware*.
+. Para ver os componentes posterior ou frontal:
++
+** Se você quiser ver os componentes do controlador e do recipiente de alimentação/ventilador, mas as unidades forem exibidas, clique na guia *Controllers & Components* (Controladores e componentes).
+** Se você quiser ver as unidades, mas os componentes do controlador e do recipiente de energia/ventilador forem exibidos, clique na guia *unidades*.
+
+
+. Para visualizar ou ocultar descrições de estado pop-over:
++
+** Se você quiser ver uma descrição pop-over dos ícones de status, clique em *Mostrar detalhes do ícone de status* no canto superior direito da exibição da prateleira (marque a caixa de seleção).
+** Para ocultar as descrições pop-up, clique em *Mostrar detalhes do ícone de status* novamente (desmarque a caixa de seleção).
+
+
+. Se você quiser ver os detalhes completos do status, selecione o componente na exibição de prateleira e selecione *Configurações de exibição*.
+. Se quiser ver as descrições dos componentes coloridos, selecione *Legenda*.
+

@@ -1,0 +1,35 @@
+---
+permalink: sm-mirroring/re-synchronize-mirror-consistency-group-manually.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, re-synchronize, mirror, consistency, group, manually, 
+summary: Você pode iniciar manualmente a re-sincronização para todos os pares espelhados dentro de um grupo de consistência de espelho. 
+---
+= Sincronize novamente o grupo de consistência de espelhos manualmente
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode iniciar manualmente a re-sincronização para todos os pares espelhados dentro de um grupo de consistência de espelho.
+
+.Passos
+. Selecione menu:armazenamento[Espelhamento assíncrono].
+. Selecione a guia *Espelhar grupos de consistência*.
++
+A tabela Mirror Consistency Group (Grupo de consistência de espelho) é exibida e exibe todos os grupos de consistência de espelho associados ao storage array.
+
+. Selecione o grupo de consistência de espelho que deseja sincronizar novamente e, em seguida, selecione menu:mais[manualmente ressincronizar].
++
+O sistema apresenta uma confirmação.
+
+. Selecione *Sim* para confirmar.
+
+
+.Resultados
+O sistema executa as seguintes ações:
+
+* Inicia a re-sincronização de dados em todos os pares espelhados dentro do grupo de consistência de espelho selecionado.
+* Atualiza os dados modificados do storage array local para o storage array remoto.
+

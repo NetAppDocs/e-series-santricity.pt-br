@@ -1,0 +1,18 @@
+---
+permalink: sm-settings/why-are-there-two-ip-addresses-for-one-physical-port.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, IP, addresses, physical, port, 
+summary: A matriz de armazenamento EF600 pode incluir dois HICs – um externo e um interno. 
+---
+= Por que há dois endereços IP para uma porta física?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A matriz de armazenamento EF600 pode incluir dois HICs - um externo e um interno.
+
+Nesta configuração, o HIC externo está ligado a um HIC interno auxiliar. Cada porta física que você pode acessar do HIC externo tem uma porta virtual associada do HIC interno.
+
+Para obter o máximo desempenho de 200GB GbE, você deve atribuir um endereço IP exclusivo para as portas físicas e virtuais para que o host possa estabelecer conexões com cada uma. Se você não atribuir um endereço IP à porta virtual, o HIC será executado a aproximadamente metade de sua velocidade capaz.

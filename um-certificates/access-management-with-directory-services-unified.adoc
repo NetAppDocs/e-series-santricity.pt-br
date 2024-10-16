@@ -1,0 +1,49 @@
+---
+permalink: um-certificates/access-management-with-directory-services-unified.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, access management, directory services, 
+summary: 'Os administradores podem usar um servidor LDAP (Lightweight Directory Access Protocol) e um serviço de diretório, como o ative Directory da Microsoft.' 
+---
+= Gerenciamento de acesso com serviços de diretório
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Os administradores podem usar um servidor LDAP (Lightweight Directory Access Protocol) e um serviço de diretório, como o ative Directory da Microsoft.
+
+
+
+== Fluxo de trabalho de configuração
+
+Se um servidor LDAP e um serviço de diretório são usados na rede, a configuração funciona da seguinte forma:
+
+. Um administrador faz login no Unified Manager com um perfil de usuário que inclui permissões de administrador de segurança.
++
+[NOTE]
+====
+O `admin` utilizador tem acesso total a todas as funções do sistema.
+
+====
+. O administrador insere as configurações do servidor LDAP. As configurações incluem o nome do domínio, URL e informações da conta Bind.
+. Se o servidor LDAP usar um protocolo seguro (LDAPS), o administrador carrega uma cadeia de certificados de autoridade de certificação (CA) para autenticação entre o servidor LDAP e o sistema host onde o proxy de serviços da Web está instalado.
+. Depois de estabelecer a ligação ao servidor, o administrador mapeia os grupos de utilizadores para as funções de utilizador locais. Essas funções são predefinidas e não podem ser modificadas.
+. O administrador testa a conexão entre o servidor LDAP e o Proxy de serviços da Web.
+. Os usuários fazem login no sistema com suas credenciais LDAP/Directory Services atribuídas.
+
+
+
+
+== Gerenciamento
+
+Ao usar serviços de diretório para autenticação, os administradores podem executar as seguintes tarefas de gerenciamento:
+
+* Adicione um servidor de diretório.
+* Editar definições do servidor de diretório.
+* Mapeie usuários LDAP para funções de usuário locais.
+* Remova um servidor de diretório.
+* Alterar senhas.
+* Defina um comprimento mínimo para senhas.
+* Permitir que os usuários façam login sem senhas.
+

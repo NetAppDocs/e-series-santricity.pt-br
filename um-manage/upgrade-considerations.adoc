@@ -1,0 +1,42 @@
+---
+permalink: um-manage/upgrade-considerations.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, upgrade, considerations 
+summary: Antes de usar o Unified Manager para atualizar vários storage arrays, consulte as principais considerações como parte do Planejamento. 
+---
+= Considerações sobre a atualização
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Antes de usar o Unified Manager para atualizar vários storage arrays, consulte as principais considerações como parte do Planejamento.
+
+
+
+== Versões atuais
+
+Você pode exibir as versões atuais do software SANtricity os na página Gerenciar do Gerenciador Unificado para cada storage array descoberto. A versão é mostrada na coluna Software do SANtricity os. As informações de firmware e NVSRAM da controladora estão disponíveis em uma caixa de diálogo pop-up quando você clica na versão do SANtricity os em cada linha.
+
+
+
+== Outros componentes que exigem atualização
+
+Como parte do processo de atualização, você também pode precisar atualizar o driver multipath/failover do host ou o driver HBA para que o host possa interagir com os controladores corretamente.
+
+Para obter informações sobre compatibilidade, consulte o https://imt.netapp.com/matrix/#welcome["Matriz de interoperabilidade do NetApp"^]. Consulte também os procedimentos nos Guias expressos do seu sistema operativo. Os guias expressos estão disponíveis no https://docs.netapp.com/us-en/e-series/index.html["Documentação do e-Series e do SANtricity"^].
+
+
+
+== Controladores duplos
+
+Se um storage array contiver dois controladores e você tiver um driver multipath instalado, o storage array poderá continuar processando e/S durante a atualização. Durante a atualização, ocorre o seguinte processo:
+
+. O controlador A faz failover de todos os LUNs para o controlador B.
+. A atualização ocorre no controlador A..
+. O controlador A recupera os LUNs e todos os LUNs do controlador B.
+. A atualização ocorre no controlador B.
+
+
+Após a conclusão da atualização, talvez seja necessário redistribuir manualmente os volumes entre as controladoras para garantir que os volumes voltem para a controladora proprietária correta.

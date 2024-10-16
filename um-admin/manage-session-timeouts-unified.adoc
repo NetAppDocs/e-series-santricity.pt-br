@@ -1,0 +1,39 @@
+---
+permalink: um-admin/manage-session-timeouts-unified.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, manage, session, timeouts 
+summary: Você pode configurar tempos limite para o SANtricity Unified Manager para que as sessões inativas dos usuários sejam desconetadas após um tempo especificado. 
+---
+= Gerenciar tempos limite de sessão
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+É possível configurar tempos limite para o Unified Manager para que os usuários de sessões inativas sejam desconetadas após um tempo especificado.
+
+.Sobre esta tarefa
+Por padrão, o tempo limite da sessão para o Unified Manager é de 30 minutos. Você pode ajustar esse tempo ou pode desativar os tempos limite da sessão por completo.
+
+
+NOTE: Se o Gerenciamento de Acesso for configurado usando os recursos SAML (Security Assertion Markup Language) incorporados no array, um tempo limite de sessão pode ocorrer quando a sessão SSO do usuário atingir seu limite máximo. Isso pode ocorrer antes do tempo limite da sessão do System Manager.
+
+.Passos
+. Na barra de menus, selecione a seta suspensa ao lado do nome de login do usuário.
+. Selecione *Ativar/Desativar tempo limite da sessão*.
++
+A caixa de diálogo Ativar/Desativar tempo limite da sessão é aberta.
+
+. Utilize os controlos giratórios para aumentar ou diminuir o tempo em minutos.
++
+O tempo limite mínimo que você pode definir é de 15 minutos.
+
++
+[NOTE]
+====
+Para desativar os tempos limite de sessão, desmarque a caixa de seleção *Definir o período de tempo...*.
+
+====
+. Clique em *Salvar*.
+

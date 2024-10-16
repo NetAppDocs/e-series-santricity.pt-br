@@ -1,0 +1,21 @@
+---
+permalink: sm-interface/what-if-i-dont-see-all-of-my-hosts.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, host detection 
+summary: Se você não vir seus hosts conetados, a deteção automática falhou, os hosts estão conetados incorretamente ou nenhum host está conetado atualmente. 
+---
+= E se eu não ver todos os meus anfitriões?
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se você não vir seus hosts conetados, a deteção automática falhou, os hosts estão conetados incorretamente ou nenhum host está conetado atualmente.
+
+Você pode configurar os hosts mais tarde, uma vez que você terminar com a configuração. Você pode criar hosts manualmente da seguinte forma:
+
+* Você pode criar manualmente hosts e associar os identificadores de porta de host apropriados acessando o menu:armazenamento[hosts]. Os hosts que foram criados manualmente também são exibidos no assistente *Initial Setup*.
+* O destino e o host devem ser configurados para o tipo de porta do host (por exemplo, iSCSI ou NVMe sobre RoCE) e uma sessão para o storage estabelecida antes que a deteção automática funcione.
+

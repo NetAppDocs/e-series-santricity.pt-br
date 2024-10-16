@@ -1,0 +1,55 @@
+---
+permalink: sm-storage/overview-volumes.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, volumes 
+summary: Você pode criar um volume como um contentor no qual aplicativos, bancos de dados e sistemas de arquivos armazenam dados. Ao criar um volume, você também seleciona uma carga de trabalho para personalizar a configuração do storage array para um aplicativo específico. 
+---
+= Visão geral de volumes e workloads
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode criar um volume como um contentor no qual aplicativos, bancos de dados e sistemas de arquivos armazenam dados. Ao criar um volume, você também seleciona uma carga de trabalho para personalizar a configuração do storage array para um aplicativo específico.
+
+
+
+== O que são volumes e workloads?
+
+Um _volume_ é o componente lógico criado com capacidade específica para o host acessar. Embora um volume possa consistir em mais de uma unidade, um volume aparece como um componente lógico para o host. Depois que um volume é definido, você pode adicioná-lo a uma carga de trabalho. Um _Workload_ é um objeto de armazenamento que suporta um aplicativo, como SQL Server ou Exchange, que você pode usar para otimizar o armazenamento para esse aplicativo.
+
+Saiba mais:
+
+* link:how-volumes-work.html["Como os volumes funcionam"]
+* link:how-workloads-work.html["Como as cargas de trabalho funcionam"]
+* link:volume-terminology.html["Terminologia de volume"]
+* link:capacity-for-volumes.html["Como a capacidade é alocada para volumes"]
+* link:actions-you-can-perform-on-volumes.html["Ações que podem ser executadas em volumes"]
+
+
+
+
+== Como você cria volumes e cargas de trabalho?
+
+Primeiro, você cria uma carga de trabalho. Aceda ao menu:armazenamento[volumes] e abra um assistente que o orienta através das etapas. Em seguida, crie um volume a partir da capacidade disponível em um pool ou grupo de volumes e atribua a carga de trabalho criada.
+
+Saiba mais:
+
+* link:workflow-for-creating-volumes.html["Fluxo de trabalho para criar volumes"]
+* link:create-workloads.html["Crie workloads"]
+* link:create-volumes.html["Criar volumes"]
+* link:add-to-workload.html["Adicionar volumes ao workload"]
+
+
+
+
+== Informações relacionadas
+
+Saiba mais sobre conceitos relacionados a volumes:
+
+* link:data-integrity-and-data-security-for-volumes.html["Integridade de dados e segurança de dados para volumes"]
+* link:ssd-cache-and-volumes.html["Cache e volumes SSD"]
+* link:thin-volume-monitoring.html["Monitoramento de volume fino"]
+

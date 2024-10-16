@@ -1,0 +1,36 @@
+---
+permalink: sm-settings/validate-security-key.html 
+sidebar: sidebar 
+keywords: SANtricity,System Manager, E-Series, validate, security, key, 
+summary: Você pode validar a chave de segurança para se certificar de que ela não foi corrompida e para verificar se você tem uma frase-passe correta. 
+---
+= Valide a chave de segurança
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode validar a chave de segurança para se certificar de que ela não foi corrompida e para verificar se você tem uma frase-passe correta.
+
+.Sobre esta tarefa
+Esta tarefa descreve como validar a chave de segurança criada anteriormente. Esta é uma etapa importante para se certificar de que o arquivo de chave não está corrompido e a frase-passe está correta, o que garante que você possa acessar mais tarde os dados da unidade se mover uma unidade habilitada para segurança de uma matriz de armazenamento para outra.
+
+.Passos
+. Selecione menu:Definições[sistema].
+. Em *Gerenciamento de chaves de segurança*, selecione *Validar chave*.
++
+A caixa de diálogo Validar chave de segurança é aberta.
+
+. Clique em *Procurar* e selecione o ficheiro de chave (por exemplo, `drivesecurity.slk` ).
+. Introduza a frase-passe associada à chave selecionada.
++
+Quando você seleciona um arquivo de chave válido e uma frase-passe, o botão *Validar* fica disponível.
+
+. Clique em *Validar*.
++
+Os resultados da validação são exibidos na caixa de diálogo.
+
+. Se os resultados mostrarem "a chave de segurança validada com êxito", clique em *Fechar*. Se for apresentada uma mensagem de erro, siga as instruções sugeridas apresentadas na caixa de diálogo.
+

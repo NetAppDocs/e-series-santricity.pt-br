@@ -1,0 +1,46 @@
+---
+permalink: sm-settings/access-management-with-directory-services.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, access management, directory services, 
+summary: 'Para Gerenciamento de Acesso, os administradores podem usar um servidor LDAP (Lightweight Directory Access Protocol) e um serviço de diretório, como o ative Directory da Microsoft.' 
+---
+= Gerenciamento de acesso com serviços de diretório
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Para Gerenciamento de Acesso, os administradores podem usar um servidor LDAP (Lightweight Directory Access Protocol) e um serviço de diretório, como o ative Directory da Microsoft.
+
+
+
+== Fluxo de trabalho de configuração
+
+Se um servidor LDAP e um serviço de diretório são usados na rede, a configuração funciona da seguinte forma:
+
+. Um administrador faz login no System Manager com um perfil de usuário que inclui permissões de administrador de segurança.
++
+[NOTE]
+====
+O `admin` utilizador tem acesso total a todas as funções do sistema.
+
+====
+. O administrador insere as configurações do servidor LDAP. As configurações incluem o nome do domínio, URL e informações da conta Bind.
+. Se o servidor LDAP utilizar um protocolo seguro (LDAPS), o administrador carrega uma cadeia de certificados de autoridade de certificação (CA) para autenticação entre o servidor LDAP e a matriz de armazenamento.
+. Depois que a conexão com o servidor é estabelecida, o administrador mapeia os grupos de usuários para as funções do storage array. Essas funções são predefinidas e não podem ser modificadas.
+. O administrador testa a conexão entre o servidor LDAP e o storage array.
+. Os usuários fazem login no sistema com suas credenciais LDAP/Directory Services atribuídas.
+
+
+
+
+== Gerenciamento
+
+Ao usar serviços de diretório para autenticação, os administradores podem executar as seguintes tarefas de gerenciamento:
+
+* Adicione um servidor de diretório.
+* Editar definições do servidor de diretório.
+* Mapeie usuários LDAP para funções de usuário locais.
+* Remova um servidor de diretório.
+

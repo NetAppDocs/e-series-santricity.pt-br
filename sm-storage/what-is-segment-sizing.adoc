@@ -1,0 +1,30 @@
+---
+permalink: sm-storage/what-is-segment-sizing.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, segment, size, storage, raid 
+summary: 'Um segmento é a quantidade de dados em kilobytes (KiB) que é armazenada em uma unidade antes que a matriz de armazenamento se mova para a próxima unidade na faixa (grupo RAID). O tamanho do segmento aplica-se apenas a grupos de volume, não a pools.' 
+---
+= O que é o tamanho do segmento?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Um segmento é a quantidade de dados em kilobytes (KiB) que é armazenada em uma unidade antes que a matriz de armazenamento se mova para a próxima unidade na faixa (grupo RAID). O tamanho do segmento aplica-se apenas a grupos de volume, não a pools.
+
+O tamanho do segmento é definido pelo número de blocos de dados que contém. Ao determinar o tamanho do segmento, você deve saber que tipo de dados você armazenará em um volume. Se um aplicativo normalmente usa pequenas leituras e gravações aleatórias (IOPS), um tamanho de segmento menor normalmente funciona melhor. Como alternativa, se o aplicativo tiver leituras e gravações sequenciais grandes (throughput), um tamanho de segmento grande geralmente é melhor.
+
+Se um aplicativo usa pequenas leituras e gravações aleatórias ou grandes leituras e gravações sequenciais, o storage array tem melhor desempenho se o tamanho do segmento for maior do que o tamanho típico de bloco de dados. Isso normalmente torna mais fácil e rápido para as unidades acessarem os dados, o que é importante para um melhor desempenho do storage array.
+
+
+
+== Ambientes em que a performance do IOPS é importante
+
+Em um ambiente de operações de e/S por segundo (IOPS), o storage array tem melhor desempenho se você usar um tamanho de segmento maior do que o tamanho típico do bloco de dados (" chunk'") que é lido/escrito em uma unidade. Isso garante que cada bloco seja escrito em uma única unidade.
+
+
+
+== Ambientes onde a taxa de transferência é importante
+
+Em um ambiente de taxa de transferência, o tamanho do segmento deve ser uma fração uniforme do total de unidades de dados e o tamanho típico de bloco de dados (tamanho de e/S). Isso espalha os dados como um único stripe entre as unidades do grupo de volumes, levando a leituras e gravações mais rápidas.

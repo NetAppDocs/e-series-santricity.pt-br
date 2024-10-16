@@ -1,0 +1,114 @@
+---
+permalink: sm-storage/change-the-reserved-capacity-settings-for-a-snapshot-group.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, reserved capacity, settings, snapshot, group 
+summary: Pode alterar as definições de um grupo de instantâneos para alterar o seu nome, as definições de eliminação automática, o número máximo de imagens instantâneas permitidas, o ponto percentual no qual o Gestor do sistema envia uma notificação de alerta de capacidade reservada ou a política a utilizar quando a capacidade reservada atinge a sua percentagem máxima definida. 
+---
+= Altere as definições de capacidade reservada para um grupo de instantâneos
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Pode alterar as definições de um grupo de instantâneos para alterar o seu nome, as definições de eliminação automática, o número máximo de imagens instantâneas permitidas, o ponto percentual no qual o Gestor do sistema envia uma notificação de alerta de capacidade reservada ou a política a utilizar quando a capacidade reservada atinge a sua percentagem máxima definida.
+
+Durante a criação de um grupo de instantâneos, a capacidade reservada é criada para armazenar os dados de todas as imagens instantâneas contidas no grupo.
+
+.Passos
+. Selecione menu:armazenamento[pools & grupos de volume].
+. Clique na guia *capacidade reservada*.
+. Selecione o grupo de instantâneos que pretende editar e, em seguida, clique em *Ver/Editar definições*.
++
+A caixa de diálogo Configurações do grupo instantâneo é exibida.
+
+. Altere as definições do grupo de instantâneos conforme adequado.
++
+.Detalhes do campo
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Definição | Descrição 
+
+
+ a| 
+*Configurações do grupo de instantâneos*
+
+
+
+ a| 
+Nome
+ a| 
+O nome do grupo instantâneo. É necessário especificar um nome para o grupo de instantâneos.
+
+
+
+ a| 
+Eliminação automática
+ a| 
+Uma definição que mantém o número total de imagens instantâneas no grupo em ou abaixo de um máximo definido pelo utilizador. Quando esta opção está ativada, o Gestor do sistema elimina automaticamente a imagem instantânea mais antiga do grupo sempre que é criado um novo instantâneo, de modo a cumprir o número máximo de imagens instantâneas permitidas para o grupo.
+
+
+
+ a| 
+Limite de imagem instantânea
+ a| 
+Um valor configurável que especifica o número máximo de imagens instantâneas permitidas para um grupo de instantâneos.
+
+
+
+ a| 
+Agendamento do Snapshot
+ a| 
+Se Sim, uma programação é definida para criar automaticamente instantâneos.
+
+
+
+ a| 
+* Configurações de capacidade reservada*
+
+
+
+ a| 
+Alerta-me quando...
+ a| 
+Use a caixa giratório para ajustar o ponto percentual no qual o System Manager envia uma notificação de alerta quando a capacidade reservada para um grupo de instantâneos estiver quase cheia.
+
+Quando a capacidade reservada para o grupo de instantâneos excede o limite especificado, o System Manager envia um alerta, permitindo que você aumente a capacidade reservada ou exclua objetos desnecessários.
+
+
+
+ a| 
+Política de capacidade reservada completa
+ a| 
+Você pode escolher uma das seguintes políticas:
+
+** *Limpar imagem de snapshot mais antiga* -- o System Manager limpa automaticamente a imagem de snapshot mais antiga do grupo de snapshot, que libera a capacidade reservada da imagem de snapshot para reutilização dentro do grupo.
+** *Rejeitar gravações no volume base* -- quando a capacidade reservada atinge sua porcentagem máxima definida, o System Manager rejeita qualquer solicitação de gravação de e/S para o volume base que acionou o acesso à capacidade reservada.
+
+
+
+
+ a| 
+*Objetos associados*
+
+
+
+ a| 
+Volume base
+ a| 
+O nome do volume base utilizado para o grupo. Um volume base é a origem a partir da qual uma imagem instantânea é criada. Pode ser um volume grosso ou fino e é normalmente atribuído a um host. O volume base pode residir em um grupo de volumes ou em um pool de discos.
+
+
+
+ a| 
+Imagens instantâneas
+ a| 
+O número de imagens criadas a partir deste grupo. Uma imagem instantânea é uma cópia lógica dos dados de volume, capturados em um determinado ponto no tempo. Como um ponto de restauração, as imagens instantâneas permitem que você role de volta para um conjunto de dados em boas condições. Embora o host possa acessar a imagem instantânea, ele não pode ler ou gravar diretamente nela.
+
+|===
+====
+. Clique em *Salvar* para aplicar as alterações às configurações do grupo de instantâneos.
+

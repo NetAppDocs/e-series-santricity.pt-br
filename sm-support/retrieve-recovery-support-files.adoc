@@ -1,0 +1,44 @@
+---
+permalink: sm-support/retrieve-recovery-support-files.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, retrieve, recovery, support files 
+summary: O suporte técnico pode usar arquivos de suporte de recuperação para solucionar problemas. O System Manager salva automaticamente esses arquivos. 
+---
+= Recuperar arquivos de suporte de recuperação
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O suporte técnico pode usar arquivos de suporte de recuperação para solucionar problemas. O System Manager salva automaticamente esses arquivos.
+
+.Antes de começar
+O suporte técnico solicitou que você lhes enviasse arquivos adicionais para solução de problemas.
+
+.Sobre esta tarefa
+Os arquivos de suporte de recuperação incluem estes tipos de arquivos:
+
+* Suporta arquivos de dados
+* História da AutoSupport
+* Log do AutoSupport
+* Arquivos de diagnóstico SAS/RLS
+* Dados do perfil de recuperação
+* Arquivos de captura de banco de dados
+
+
+.Passos
+. Selecione menu:guia Support [Support Center > Diagnostics] (suporte > Centro de suporte > Diagnóstico).
+. Selecione *recuperar arquivos de suporte de recuperação*.
++
+Uma caixa de diálogo lista todos os arquivos de suporte de recuperação que seu storage array coletou. Para encontrar arquivos específicos, você pode classificar qualquer uma das colunas ou digitar carateres na caixa *filtro*.
+
+. Selecione um arquivo e clique em *Download*.
++
+O arquivo é salvo na pasta Downloads do navegador.
+
+. Se você precisar salvar arquivos adicionais, repita a etapa anterior.
+. Clique em *Fechar*.
+. Siga as instruções fornecidas pelo suporte técnico para enviar o arquivo para eles.
+

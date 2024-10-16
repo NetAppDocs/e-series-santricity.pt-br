@@ -1,0 +1,31 @@
+---
+permalink: sm-storage/resume-snapshot-image-rollback.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, resume, snapshot, image, rollback 
+summary: Se ocorrer um erro durante uma operação de reversão de imagem instantânea, a operação é pausada automaticamente. Você pode retomar uma operação de reversão que está em um estado de pausa. 
+---
+= Retomar a reversão da imagem instantânea
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se ocorrer um erro durante uma operação de reversão de imagem instantânea, a operação é pausada automaticamente. Você pode retomar uma operação de reversão que está em um estado de pausa.
+
+.Passos
+. Selecione menu:armazenamento[instantâneos].
+. Clique no separador *Snapshot Images* (imagens instantâneas).
+. Realce a reversão pausada e, em seguida, selecione menu:Reverter[Resume].
++
+A operação é retomada.
+
+
+
+.Resultados
+O System Manager executa as seguintes ações:
+
+* Se a operação de reversão for retomada com êxito, você poderá visualizar o andamento da operação de reversão na janela operações em andamento.
+* Se a operação de reversão não for bem-sucedida, a operação será interrompida novamente. Você pode seguir o procedimento Recovery Guru para corrigir o problema ou entrar em Contato com o suporte técnico.
+

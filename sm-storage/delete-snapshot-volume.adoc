@@ -1,0 +1,37 @@
+---
+permalink: sm-storage/delete-snapshot-volume.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, delete, snapshot, volume 
+summary: Você pode excluir um volume instantâneo ou um volume instantâneo de grupo de consistência de snapshot que não seja mais necessário para fins de teste de aplicativos de backup ou software. 
+---
+= Eliminar volume instantâneo
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode excluir um volume instantâneo ou um volume instantâneo de grupo de consistência de snapshot que não seja mais necessário para fins de teste de aplicativos de backup ou software.
+
+Você também pode especificar se deseja excluir o volume de capacidade reservada de snapshot associado a um volume instantâneo `read-write` ou reter o volume de capacidade reservada de snapshot como um volume não atribuído.
+
+.Sobre esta tarefa
+A exclusão de um volume base exclui automaticamente qualquer volume instantâneo associado ou volume instantâneo de grupo de consistência. Não é possível excluir um volume instantâneo que esteja em uma cópia de volume com o status *em andamento*.
+
+.Passos
+. Selecione menu:armazenamento[instantâneos].
+. Selecione a guia *volumes instantâneos*.
++
+O System Manager exibe todos os volumes instantâneos associados ao storage array.
+
+. Selecione o volume instantâneo que pretende eliminar e, em seguida, selecione menu:tarefas pouco comuns[Eliminar].
+. Confirme se deseja executar a operação e clique em *Excluir*.
+
+
+.Resultados
+O System Manager executa as seguintes ações:
+
+* Exclui todos os volumes de snapshot de membros (para um volume de snapshot de um grupo de consistência de snapshot).
+* Remove todas as atribuições de host associadas.
+

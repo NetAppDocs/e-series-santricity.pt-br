@@ -1,0 +1,735 @@
+---
+permalink: sm-settings/view-iscsi-statistics-packages-system.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, view, iscsi, statistics, packages, 
+summary: Pode visualizar dados sobre as ligações iSCSI à sua matriz de armazenamento. 
+---
+= Visualizar pacotes de estatísticas iSCSI
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Pode visualizar dados sobre as ligações iSCSI à sua matriz de armazenamento.
+
+.Sobre esta tarefa
+O System Manager mostra estes tipos de estatísticas iSCSI. Todas as estatísticas são apenas de leitura e não podem ser definidas.
+
+* *Ethernet MAC statistics* -- fornece estatísticas para o controle de acesso de Mídia (MAC). O MAC também fornece um mecanismo de endereçamento chamado endereço físico ou endereço MAC. O endereço MAC é um endereço exclusivo atribuído a cada adaptador de rede. O endereço MAC ajuda a entregar pacotes de dados a um destino dentro da sub-rede.
+* *Ethernet TCP/IP statistics* -- fornece estatísticas para o TCP/IP, que é o Transmission Control Protocol (TCP) e o Internet Protocol (IP) para o dispositivo iSCSI. Com o TCP, os aplicativos em hosts em rede podem criar conexões entre si, sobre as quais eles podem trocar dados em pacotes. O IP é um protocolo orientado a dados que comunica dados através de uma rede interligada por pacotes. As estatísticas de IPv4 e as estatísticas de IPv6 são mostradas separadamente.
+* *Estatísticas locais de destino/Iniciador (Protocolo)* -- mostra estatísticas para o destino iSCSI, que fornece acesso em nível de bloco a sua Mídia de armazenamento e mostra as estatísticas iSCSI para o storage array quando usado como iniciador em operações de espelhamento assíncrono.
+* *DCBX Operational States statistics* -- exibe os estados operacionais dos vários recursos do Data Center Bridging Exchange (DCBX).
+* *LLDP TLV statistics* -- exibe as estatísticas do valor de comprimento do tipo (TLV) do Protocolo de descoberta de camada de enlace (LLDP).
+* *DCBX TLV statistics* -- exibe as informações que identificam as portas de host do storage array em um ambiente DCB (Data Center Bridging). Essas informações são compartilhadas com os pares de rede para fins de identificação e capacidade.
+
+
+Você pode visualizar cada uma dessas estatísticas como estatísticas em bruto ou como estatísticas de linha de base. As estatísticas em bruto são todas as estatísticas que foram coletadas desde que os controladores foram iniciados. As estatísticas da linha de base são estatísticas pontuais que foram reunidas desde que você definiu o tempo da linha de base.
+
+.Passos
+. Selecione menu:Definições[sistema].
+. Selecione *Ver Pacotes de Estatísticas iSCSI*.
+. Clique num separador para ver os diferentes conjuntos de estatísticas.
+. *Opcional:* para definir a linha de base, clique em *Definir nova linha de base*.
++
+Definir a linha de base define um novo ponto de partida para a coleção das estatísticas. A mesma linha de base é utilizada para todas as estatísticas iSCSI.
+
+
+
+Consulte as seções a seguir para obter mais informações sobre os diferentes tipos de estatísticas.
+
+
+
+== Estatísticas de transmissão MAC e receção MAC
+
+Quando você seleciona estatísticas Ethernet MAC, as estatísticas de receção e transmissão são exibidas. Você pode visualizar cada uma dessas estatísticas como estatísticas em bruto ou como estatísticas de linha de base.
+
+.Estatísticas de transmissão DO MAC:
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Estatística | Definição 
+
+
+ a| 
+F
+ a| 
+Contagem de fotogramas
+
+
+
+ a| 
+B
+ a| 
+Contagem de bytes
+
+
+
+ a| 
+MF
+ a| 
+Contagem de quadros multicast
+
+
+
+ a| 
+BF
+ a| 
+Contagem de quadros de difusão
+
+
+
+ a| 
+PF
+ a| 
+Pausar contagem de quadros
+
+
+
+ a| 
+CF
+ a| 
+Contagem de quadros de controle
+
+
+
+ a| 
+FDF
+ a| 
+Contagem de diferimento da estrutura
+
+
+
+ a| 
+ALIMENTADO
+ a| 
+Contagem de diferimento em excesso de estrutura
+
+
+
+ a| 
+FLC
+ a| 
+Contagem de colisões atrasadas de quadros
+
+
+
+ a| 
+FA
+ a| 
+Contagem de cancelamento de fotogramas
+
+
+
+ a| 
+FSC
+ a| 
+Contagem de colisão única de quadro
+
+
+
+ a| 
+FMC
+ a| 
+A contagem de colisões múltiplas do quadro
+
+
+
+ a| 
+FC
+ a| 
+Contagem de colisões de quadros
+
+
+
+ a| 
+FDR
+ a| 
+Contagem de queda do quadro
+
+
+
+ a| 
+JF
+ a| 
+Contagem de quadros jumbo
+
+|===
+====
+.MAC receber estatísticas:
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Estatística | Definição 
+
+
+ a| 
+F
+ a| 
+Contagem de fotogramas
+
+
+
+ a| 
+B
+ a| 
+Contagem de bytes
+
+
+
+ a| 
+MF
+ a| 
+Contagem de quadros multicast
+
+
+
+ a| 
+BF
+ a| 
+Contagem de quadros de difusão
+
+
+
+ a| 
+PF
+ a| 
+Pausar contagem de quadros
+
+
+
+ a| 
+CF
+ a| 
+Contagem de quadros de controle
+
+
+
+ a| 
+FLE
+ a| 
+Contagem de erros de comprimento da estrutura
+
+
+
+ a| 
+FD
+ a| 
+Contagem de queda do quadro
+
+
+
+ a| 
+FCRCE
+ a| 
+Contagem de erros de CRC do fotograma
+
+
+
+ a| 
+TAXA
+ a| 
+Contagem de erros de codificação de fotogramas
+
+
+
+ a| 
+LFE
+ a| 
+Contagem de erros de fotograma grande
+
+
+
+ a| 
+SFE
+ a| 
+Contagem de erros de quadro pequeno
+
+
+
+ a| 
+J
+ a| 
+Jabber count
+
+
+
+ a| 
+UCC
+ a| 
+Contagem de quadros de controle desconhecida
+
+
+
+ a| 
+CSE
+ a| 
+Contagem de erros de deteção de operadora
+
+|===
+====
+
+
+== Estatísticas Ethernet TCP/IP
+
+Quando você seleciona estatísticas TCP/IP Ethernet, as estatísticas TCP e IP são exibidas. Você pode visualizar cada uma dessas estatísticas como estatísticas em bruto ou como estatísticas de linha de base.
+
+.Estatísticas Ethernet TCP:
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Estatística | Definição 
+
+
+ a| 
+TxS
+ a| 
+Contagem de segmentos transmitidos
+
+
+
+ a| 
+TxB
+ a| 
+Contagem de bytes transmitidos
+
+
+
+ a| 
+RTxTE
+ a| 
+Contagem expirada do temporizador de retransmissão
+
+
+
+ a| 
+TxDACK
+ a| 
+Transmitir contagem de ACK atrasada
+
+
+
+ a| 
+TxACK
+ a| 
+Transmitir contagem ACK
+
+
+
+ a| 
+RXS
+ a| 
+Contagem de segmentos recebidos
+
+
+
+ a| 
+RXB
+ a| 
+Contagem de bytes recebidos
+
+
+
+ a| 
+RxDACK
+ a| 
+Contagem de ACK duplicada recebida
+
+
+
+ a| 
+RxACK
+ a| 
+Contagem de ACK recebida
+
+
+
+ a| 
+RxSEC
+ a| 
+Contagem de erros de segmento recebido
+
+
+
+ a| 
+RxSOOC
+ a| 
+Contagem fora de encomenda do segmento recebido
+
+
+
+ a| 
+RxWP
+ a| 
+Contagem de sondas da janela recebida
+
+
+
+ a| 
+RxWU
+ a| 
+Contagem de atualizações da janela recebida
+
+|===
+====
+.Estatísticas Ethernet IP:
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Estatística | Definição 
+
+
+ a| 
+TxP
+ a| 
+Contagem de pacotes transmitidos
+
+
+
+ a| 
+TxB
+ a| 
+Contagem de bytes transmitidos
+
+
+
+ a| 
+TxF
+ a| 
+Contagem de fragmentos transmitidos
+
+
+
+ a| 
+RxP
+ a| 
+Contagem de pacotes recebidos. Selecione *Mostrar IPv4* para mostrar a contagem de IPv4 pacotes recebidos. Selecione *Mostrar IPv6* para mostrar a contagem de IPv6 pacotes recebidos.
+
+
+
+ a| 
+RXB
+ a| 
+Contagem de bytes recebidos
+
+
+
+ a| 
+RxF
+ a| 
+Contagem de fragmentos recebidos
+
+
+
+ a| 
+RxPE
+ a| 
+Contagem de erros do pacote recebido
+
+
+
+ a| 
+DR
+ a| 
+Contagem de remontagem de datagramas
+
+
+
+ a| 
+DRE-OLFC
+ a| 
+Erro de remontagem de datagramas, contagem de fragmentos sobrepostos
+
+
+
+ a| 
+DRE-OOFC
+ a| 
+Erro de remontagem de datagramas, contagem de fragmentos fora de ordem
+
+
+
+ a| 
+DRE-TOC
+ a| 
+Erro de remontagem de datagramas, contagem de tempo limite
+
+|===
+====
+
+
+== Estatísticas de destino iSCSI e estatísticas do iniciador local
+
+Quando seleciona estatísticas de destino (protocolo) ou estatísticas de iniciador local (protocolo), as estatísticas iSCSI são apresentadas. Você pode visualizar cada uma dessas estatísticas como estatísticas em bruto ou como estatísticas de linha de base.
+
+.Estatísticas iSCSI:
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Estatística | Definição 
+
+
+ a| 
+SL
+ a| 
+Contagem de login iSCSI bem-sucedida
+
+
+
+ a| 
+UL
+ a| 
+Contagem de início de sessão iSCSI sem êxito
+
+
+
+ a| 
+SA
+ a| 
+Contagem de autenticação iSCSI bem-sucedida (quando a autenticação está ativada)
+
+
+
+ a| 
+UA
+ a| 
+Contagem de autenticação iSCSI sem êxito (quando a autenticação está ativada)
+
+
+
+ a| 
+PDU
+ a| 
+Contagem correta de PDUs iSCSI processadas
+
+
+
+ a| 
+HDE
+ a| 
+PDUs iSCSI com contagem de erros de resumo do cabeçalho
+
+
+
+ a| 
+DDE
+ a| 
+PDUs iSCSI com contagem de erros de resumo de dados
+
+
+
+ a| 
+PE
+ a| 
+Contagem de PDUs com erros de protocolo iSCSI
+
+
+
+ a| 
+UST
+ a| 
+Contagem de terminações de sessão iSCSI inesperadas
+
+
+
+ a| 
+UCT
+ a| 
+Contagem inesperada de terminação de ligação iSCSI
+
+|===
+====
+
+
+== Estatísticas do estado operacional DCBX
+
+Quando você seleciona Estatísticas de Estado operacional do Data Center Bridging Exchange (DCBX), as estatísticas DCBX são exibidas.
+
+.Estatísticas DCBX:
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Estatística | Definição 
+
+
+ a| 
+Porta de anfitrião iSCSI
+ a| 
+Indica a localização da porta de host detetada no formato Controller no, Port no. (Porta no).
+
+
+
+ a| 
+Grupo prioritário
+ a| 
+Indica o estado operacional da aplicação Priority Group (PG). O estado está ativado ou Desativado.
+
+
+
+ a| 
+Controle de fluxo baseado em prioridade
+ a| 
+Indica o estado operacional do recurso de Controle de fluxo baseado em prioridade (PFC). O estado está ativado ou Desativado.
+
+
+
+ a| 
+Recurso iSCSI
+ a| 
+Indica o estado operacional da aplicação Internet Small Computer System Interface (iSCSI). O estado está ativado ou Desativado.
+
+
+
+ a| 
+Largura de banda FCoE
+ a| 
+Indica o estado da largura de banda Fibre Channel over Ethernet (FCoE). O estado é verdadeiro ou Falso.
+
+
+
+ a| 
+Não há correspondência de mapa FCoE/FIP
+ a| 
+Indica se existe uma incompatibilidade de mapa entre o FCoE e o protocolo de inicialização FCoE (FIP). O valor é verdadeiro ou Falso.
+
+|===
+====
+
+NOTE: Você pode encontrar estatísticas de estado operacional DCBX adicionais no arquivo de captura de estado.
+
+
+
+== Estatísticas de TLV LLDP
+
+Quando você seleciona Link Layer Discovery Protocol (LLDP) Type Length Value (TLV) Statistics, dois conjuntos de estatísticas são exibidos: Um para o dispositivo local e outro para o dispositivo remoto. O dispositivo local refere-se ao controlador. O dispositivo remoto refere-se ao dispositivo ponto a que o controlador está ligado, normalmente um switch.
+
+.Estatísticas do TLV LLDP:
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Estatística | Definição 
+
+
+ a| 
+Porta de anfitrião iSCSI
+ a| 
+Indica a localização da porta de host detetada no formato Controller no, Port no. (Porta no).
+
+
+
+ a| 
+ID do chassis
+ a| 
+Indica a ID do chassis.
+
+
+
+ a| 
+Subtipo de ID do chassis
+ a| 
+Indica o subtipo de ID do chassi.
+
+
+
+ a| 
+ID da porta
+ a| 
+Indica a ID da porta.
+
+
+
+ a| 
+Subtipo de ID da porta
+ a| 
+Indica o subtipo de ID da porta.
+
+
+
+ a| 
+Tempo para viver
+ a| 
+Indica o número de segundos em que o agente LLDP destinatário considera que as informações são válidas.
+
+|===
+====
+
+NOTE: Você pode encontrar estatísticas adicionais do LLDP TLV no arquivo de captura de estado.
+
+
+
+== Estatísticas DCBX TLV
+
+Quando você seleciona Estatísticas do valor do comprimento do tipo (TLV) do intercâmbio de Bridging do data center (DCBX), essas estatísticas são exibidas:
+
+* *Estatísticas locais* -- os parâmetros DCBX configurados no controlador na fábrica.
+* *Estatísticas operacionais* -- os parâmetros DCBX que resultam das negociações do DCBX.
+* *Estatísticas remotas* -- os parâmetros DCBX do dispositivo peer ao qual o controlador está conetado, normalmente um switch.
+
+
+.Estatísticas DCBX TLV:
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Estatística | Definição 
+
+
+ a| 
+Porta de anfitrião iSCSI
+ a| 
+Indica a localização da porta de host detetada no formato Controller no, Port no. (Porta no).
+
+
+
+ a| 
+Modo de controlo de fluxo
+ a| 
+O modo de controlo de fluxo de toda a porta. Os valores válidos são Desativado, padrão, por prioridade ou indeterminado.
+
+
+
+ a| 
+Protocolo
+ a| 
+O protocolo de comunicação. Os valores válidos são FCoE, FIP, iSCSI ou DESCONHECIDO.
+
+
+
+ a| 
+Prioridade
+ a| 
+Valor inteiro indicando o número de prioridade da comunicação.
+
+
+
+ a| 
+Grupo prioritário
+ a| 
+Valor inteiro que representa o grupo de prioridade ao qual o protocolo foi atribuído.
+
+
+
+ a| 
+Largura de banda % do grupo de prioridades
+ a| 
+Valor percentual que indica a quantidade de largura de banda alocada ao grupo de prioridades.
+
+
+
+ a| 
+Status do PFC DCBX
+ a| 
+Status de controle de fluxo baseado em prioridade (PFC) da porta específica. O valor está ativado ou desativado.
+
+|===
+====
+
+NOTE: Você pode encontrar estatísticas adicionais do DCBX TLV no arquivo de captura de estado.

@@ -1,0 +1,53 @@
+---
+permalink: sm-settings/configure-syslog-server-for-audit-logs.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, configure, syslog, server, audit, logs, 
+summary: Se você quiser arquivar logs de auditoria em um servidor syslog externo, você pode configurar as comunicações entre esse servidor e o storage array. Depois que a conexão é estabelecida, os logs de auditoria são salvos automaticamente no servidor syslog. 
+---
+= Configure o servidor syslog para logs de auditoria
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se você quiser arquivar logs de auditoria em um servidor syslog externo, você pode configurar as comunicações entre esse servidor e o storage array. Depois que a conexão é estabelecida, os logs de auditoria são salvos automaticamente no servidor syslog.
+
+.Antes de começar
+* Você deve estar conetado com um perfil de usuário que inclua permissões de administrador de segurança. Caso contrário, as funções de Gerenciamento de Acesso não aparecem.
+* O endereço do servidor syslog, o protocolo e o número da porta devem estar disponíveis. O endereço do servidor pode ser um nome de domínio totalmente qualificado, um endereço IPv4 ou um endereço IPv6.
+* Se o servidor usar um protocolo seguro (por exemplo, TLS), um certificado de autoridade de certificação (CA) deve estar disponível no sistema local. Os certificados CA identificam os proprietários de sites para conexões seguras entre servidores e clientes.
+
+
+.Passos
+. Selecione menu:Definições[Gestão de Acesso].
+. Na guia Registro de auditoria, selecione *Configurar servidores Syslog*.
++
+A caixa de diálogo Configurar servidores Syslog é aberta.
+
+. Clique em *Add*.
++
+A caixa de diálogo Add Syslog Server (Adicionar servidor Syslog) é aberta.
+
+. Insira as informações do servidor e clique em *Adicionar*.
++
+** *Endereço do servidor* -- Digite um nome de domínio totalmente qualificado, um endereço IPv4 ou um endereço IPv6.
+** *Protocol* -- Selecione um protocolo na lista suspensa (por exemplo, TLS, UDP ou TCP).
+** *Upload certificate (opcional)* -- se você selecionou o protocolo TLS e ainda não carregou um certificado CA assinado, clique em *Browse* para carregar um arquivo de certificado. Os logs de auditoria não são arquivados em um servidor syslog sem um certificado confiável.
++
+[NOTE]
+====
+Se o certificado se tornar inválido mais tarde, o handshake TLS falhará. Como resultado, uma mensagem de erro é postada no log de auditoria e as mensagens não são mais enviadas para o servidor syslog. Para resolver este problema, tem de corrigir o certificado no servidor syslog e, em seguida, aceder ao menu:Definições[Registo de auditoria > Configurar servidores Syslog > testar tudo].
+
+====
+** *Port* -- Digite o número da porta para o recetor syslog. Depois de clicar em *Add*, a caixa de diálogo Configurar servidores Syslog abre e exibe o servidor syslog configurado na página.
+
+
+. Para testar a conexão do servidor com a matriz de armazenamento, selecione *Test All*.
+
+
+.Resultados
+Após a configuração, todos os novos logs de auditoria são enviados para o servidor syslog. Os registos anteriores não são transferidos. Para configurar ainda mais as configurações do syslog para alertas, https://docs.netapp.com/us-en/e-series-santricity/sm-settings/configure-syslog-server-for-alerts.html["Configure o servidor syslog para alertas"] consulte .
+
+ NOTE: If multiple syslog servers are configured, all configured syslog servers will receive an audit log.

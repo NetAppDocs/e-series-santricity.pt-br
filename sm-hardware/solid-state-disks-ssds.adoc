@@ -1,0 +1,48 @@
+---
+permalink: sm-hardware/solid-state-disks-ssds.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, solid, state, disk, SSD 
+summary: 'Os discos de estado sólido (SSDs) são dispositivos de armazenamento de dados que usam memória de estado sólido (flash) para armazenar dados persistentemente. Os SSDs emulam discos rígidos convencionais e estão disponíveis com as mesmas interfaces que os discos rígidos usam.' 
+---
+= Discos de estado sólido (SSDs)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Os discos de estado sólido (SSDs) são dispositivos de armazenamento de dados que usam memória de estado sólido (flash) para armazenar dados persistentemente. Os SSDs emulam discos rígidos convencionais e estão disponíveis com as mesmas interfaces que os discos rígidos usam.
+
+
+
+== Vantagens dos SSDs
+
+As vantagens dos SSDs em relação aos discos rígidos incluem:
+
+* Arranque mais rápido (sem aumento)
+* Menor latência
+* Operações de e/S mais altas por segundo (IOPS)
+* Maior confiabilidade com menos peças móveis
+* Menor consumo de energia
+* Menos calor produzido e menos resfriamento necessário
+
+
+
+
+== Identificação de SSDs
+
+Na página hardware, você pode localizar os SSDs na visualização do compartimento frontal. Procure por compartimentos de unidade que exibem um ícone de raio, que indica que um SSD está instalado.
+
+
+
+== Grupos de volume
+
+Todas as unidades de um grupo de volumes devem ser do mesmo tipo de Mídia (todos os SSDs ou todos os discos rígidos). Os grupos de volume não podem ter uma mistura de tipos de Mídia ou tipos de interface.
+
+
+
+== Armazenamento em cache
+
+O armazenamento em cache de gravação da controladora está sempre habilitado para SSDs. O armazenamento em cache de gravação melhora o desempenho e prolonga a vida útil do SSD.
+
+Além do cache da controladora, você pode implementar o recurso cache SSD para melhorar o desempenho geral do sistema. No cache SSD, os dados são copiados de volumes e armazenados em dois volumes RAID internos (um por controladora).

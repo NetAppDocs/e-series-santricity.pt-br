@@ -1,0 +1,96 @@
+---
+permalink: sm-storage/snapshot-terminology.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, snapshot, terms 
+summary: Saiba como os termos do snapshot se aplicam ao storage array. 
+---
+= Terminologia Snapshot
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Saiba como os termos do snapshot se aplicam ao storage array.
+
+[cols="25h,~"]
+|===
+| Prazo | Descrição 
+
+
+ a| 
+Recurso de instantâneos
+ a| 
+O recurso Snapshots é usado para criar e gerenciar imagens de volumes.
+
+
+
+ a| 
+Imagem instantânea
+ a| 
+Uma imagem instantânea é uma cópia lógica dos dados de volume, capturados em um determinado ponto no tempo. Como um ponto de restauração, as imagens instantâneas permitem que você role de volta para um conjunto de dados em boas condições. Embora o host possa acessar a imagem instantânea, ele não pode ler ou gravar diretamente nela.
+
+
+
+ a| 
+Volume base
+ a| 
+Um volume base é a origem a partir da qual uma imagem instantânea é criada. Pode ser um volume grosso ou fino e é normalmente atribuído a um host. O volume base pode residir em um grupo de volumes ou em um pool de discos.
+
+
+
+ a| 
+Volume do Snapshot
+ a| 
+Um volume instantâneo permite que o host acesse dados na imagem instantânea. O volume instantâneo contém a sua própria capacidade reservada, que guarda quaisquer modificações no volume base sem afetar a imagem instantânea original.
+
+
+
+ a| 
+Grupo de instantâneos
+ a| 
+Um grupo de instantâneos é uma coleção de imagens instantâneas a partir de um único volume base.
+
+
+
+ a| 
+Volume de capacidade reservada
+ a| 
+Um volume de capacidade reservada rastreia quais blocos de dados do volume base são sobrescritos e o conteúdo preservado desses blocos.
+
+
+
+ a| 
+Agendamento do Snapshot
+ a| 
+Um agendamento de instantâneos é um calendário para criar imagens instantâneas automatizadas. Através da programação, você pode controlar a frequência das criações de imagens.
+
+
+
+ a| 
+Grupo de consistência do Snapshot
+ a| 
+Um grupo de consistência de snapshot é uma coleção de volumes que são tratados como uma única entidade quando uma imagem instantânea é criada. Cada um desses volumes tem sua própria imagem instantânea, mas todas as imagens são criadas no mesmo momento.
+
+
+
+ a| 
+Volume do membro do grupo de consistência de snapshot
+ a| 
+Cada volume que pertence a um grupo de consistência de instantâneos é referido como um volume de membro. Quando você adiciona um volume a um grupo de consistência de snapshot, o System Manager cria automaticamente um novo grupo de snapshot que corresponde a esse volume de membro.
+
+
+
+ a| 
+Reverter
+ a| 
+Uma reversão é o processo de retornar dados em um volume base para um ponto anterior no tempo.
+
+
+
+ a| 
+Capacidade reservada
+ a| 
+A capacidade reservada é a capacidade alocada física usada para qualquer operação de serviço de cópia e objeto de storage. Não é diretamente legível pelo host.
+
+|===

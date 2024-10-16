@@ -1,0 +1,118 @@
+---
+permalink: sm-support/overview-upgrade-center.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, upgrade, center 
+summary: Use o Centro de Atualização para baixar o software e o firmware mais recentes e atualizar sua matriz de armazenamento para obter os recursos mais recentes e correções de bugs. 
+---
+= Visão geral do Centro de atualizações
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Use o Centro de Atualização para baixar o software e o firmware mais recentes e atualizar seus controladores e unidades.
+
+
+
+== Visão geral da atualização do controlador
+
+Você pode atualizar o software e firmware da sua matriz de armazenamento para todos os recursos mais recentes e correções de bugs.
+
+
+
+=== Componentes incluídos na atualização da controladora do sistema operacional
+
+Vários componentes de storage array contêm software ou hardware que você pode querer atualizar ocasionalmente.
+
+* *Software de gerenciamento* -- System Manager é o software que gerencia o storage array.
+* *Firmware do controlador* -- o firmware do controlador gerencia a e/S entre hosts e volumes.
+* *Controller NVSRAM* -- Controller NVSRAM é um arquivo de controlador que especifica as configurações padrão para os controladores.
+* *Firmware IOM* -- o firmware do módulo de e/S (IOM) gerencia a conexão entre uma controladora e um compartimento de unidades. Também monitoriza o estado dos componentes.
+* *Software Supervisor* -- o software Supervisor é a máquina virtual em um controlador no qual o software é executado.
+
+
+image::../media/sam1130-dwg-upgrade-firmware-locations.gif[sam1130 dwg atualizar localizações de firmware]
+
+1 GB, 2 GB, firmware da controladora, software supervisor; 3 GB, firmware da unidade; 4 GB, firmware da unidade; 5 GB, firmware da unidade; 6 GB, firmware da unidade
+
+Você pode exibir as versões atuais de software e firmware na caixa de diálogo Inventário de Software e firmware. Aceda ao menu:suporte[Centro de Atualização] e, em seguida, clique no link *Inventário de Software e firmware*.
+
+Como parte do processo de atualização, o driver multipath/failover e/ou o driver HBA do host também podem precisar ser atualizados para que o host possa interagir com os controladores corretamente. Para determinar se esse é o caso, consulte https://imt.netapp.com/matrix/#welcome["Ferramenta de Matriz de interoperabilidade do NetApp"^] .
+
+
+
+=== Quando parar e/S
+
+Se o storage array contiver duas controladoras e você tiver um driver multipath instalado, o storage array poderá continuar processando e/S durante a atualização. Durante a atualização, a controladora A falha em todos os volumes para a controladora B, atualiza, recupera os volumes e todos os volumes da controladora B e, em seguida, atualiza a controladora B.
+
+
+
+=== Verificação de integridade pré-atualização
+
+Uma verificação de integridade de pré-atualização é executada como parte do processo de atualização. A verificação de integridade da pré-atualização avalia todos os componentes do storage array para garantir que a atualização possa prosseguir. As seguintes condições podem impedir a atualização:
+
+* Unidades atribuídas com falha
+* Peças sobressalentes quentes em uso
+* Grupos de volumes incompletos
+* Operações exclusivas em execução
+* Volumes em falta
+* Controlador em estado não ótimo
+* Número excessivo de eventos de log
+* Falha na validação da base de dados de configuração
+* Unidades com versões antigas do DACstore
+
+
+Você também pode executar a verificação de integridade de pré-atualização separadamente sem fazer uma atualização.
+
+
+
+== Visão geral da atualização da unidade
+
+O firmware da unidade controla as caraterísticas operacionais de baixo nível de uma unidade. Periodicamente, os fabricantes de unidades lançam atualizações para o firmware da unidade para adicionar novos recursos, melhorar o desempenho e corrigir defeitos.
+
+
+
+=== Atualizações de firmware de unidade on-line e off-line
+
+Existem dois tipos de métodos de atualização de firmware de unidade: On-line e off-line.
+
+
+
+==== Online
+
+Durante uma atualização online, as unidades são atualizadas sequencialmente, uma de cada vez. O storage array continua processando e/S durante a atualização. Você não tem que parar I/O.. Se uma unidade puder fazer uma atualização on-line, o método on-line será usado automaticamente.
+
+As unidades que podem fazer uma atualização online incluem o seguinte:
+
+* Conduz em um pool ideal
+* Unidades em um grupo de volume redundante ideal (RAID 1, RAID 5 e RAID 6)
+* Unidades não atribuídas
+* Unidades de reserva hot spare em espera
+
+
+Fazer uma atualização de firmware de unidade on-line pode levar várias horas, expondo o storage array a possíveis falhas de volume. A falha de volume pode ocorrer nestes casos:
+
+* Em um grupo de volumes RAID 1 ou RAID 5, uma unidade falha enquanto uma unidade diferente no grupo de volumes está sendo atualizada.
+* Em um pool RAID 6 ou grupo de volumes, duas unidades falham enquanto uma unidade diferente no pool ou grupo de volumes está sendo atualizada.
+
+
+
+
+==== Offline (paralelo)
+
+Durante uma atualização off-line, todas as unidades do mesmo tipo de unidade são atualizadas ao mesmo tempo. Este método requer a interrupção da atividade de e/S para os volumes associados às unidades selecionadas. Como várias unidades podem ser atualizadas simultaneamente (em paralelo), o tempo de inatividade geral é significativamente reduzido. Se uma unidade puder fazer apenas uma atualização off-line, o método off-line será usado automaticamente.
+
+As seguintes unidades DEVEM usar o método offline:
+
+* Unidades em um grupo de volume não redundante (RAID 0)
+* Unidades em um pool ou grupo de volumes não ideais
+* Unidades em cache SSD
+
+
+
+
+=== Compatibilidade
+
+Cada arquivo de firmware da unidade contém informações sobre o tipo de unidade em que o firmware é executado. Pode transferir o ficheiro de firmware especificado apenas para uma unidade compatível. O System Manager verifica automaticamente a compatibilidade durante o processo de atualização.

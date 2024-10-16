@@ -1,0 +1,53 @@
+---
+permalink: sm-mirroring/synchronous-mirroring-status.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, synchronous, mirroring, status, 
+summary: O status de um par espelhado síncrono indica se os dados no volume primário e no volume secundário estão sincronizados. Um status de espelho é independente do status do componente dos volumes no par espelhado. 
+---
+= Status do espelhamento síncrono
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O status de um par espelhado síncrono indica se os dados no volume primário e no volume secundário estão sincronizados. Um status de espelho é independente do status do componente dos volumes no par espelhado.
+
+[NOTE]
+====
+Este recurso não está disponível no sistema de armazenamento EF600 ou EF300.
+
+====
+Pares espelhados síncronos podem ter um dos seguintes status:
+
+* *Ótimo*
++
+Indica que os volumes no par espelhado estão sincronizados, o que significa que a conexão de malha entre os storages de armazenamento está operacional e cada volume está na condição de trabalho desejada.
+
+* *Sincronização*
++
+Mostra o progresso da sincronização de dados entre os pares espelhados. Este estado também será apresentado durante a sincronização inicial.
+
++
+Após uma interrupção do link de comunicação, apenas os blocos de dados que foram alterados no volume primário durante a interrupção do link são copiados para o volume secundário.
+
+* *Não sincronizado*
++
+Indica que a matriz de armazenamento do volume primário não consegue gravar dados de entrada na matriz remota. O host local pode continuar a gravar no volume principal, mas não ocorrem gravações remotas. Condições diferentes podem impedir que o storage array do volume primário grave dados recebidos no volume secundário, como:
+
++
+** O volume secundário não está acessível.
+** A matriz de armazenamento remoto não está acessível.
+** A conexão de malha entre os storage arrays não está acessível.
+** O volume secundário não pode ser atualizado com um novo World Wide Identifier (WWID).
+
+
+* * Suspenso*
++
+Indica que a operação de espelhamento síncrono foi suspensa pelo usuário. Quando um par espelhado é suspenso, nenhuma tentativa é feita para entrar em Contato com o volume secundário. Todas as gravações no volume primário são persistentemente registradas nos volumes de capacidade reservada espelhada.
+
+* *Falhou*
++
+Indica que a operação de espelhamento síncrono não pode operar normalmente devido a uma falha no volume primário, no volume secundário ou na capacidade reservada do espelho.
+
+

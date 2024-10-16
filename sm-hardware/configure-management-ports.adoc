@@ -1,0 +1,98 @@
+---
+permalink: sm-hardware/configure-management-ports.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, configure, management, port, 
+summary: O controlador inclui uma porta Ethernet utilizada para a gestão do sistema. Se necessário, você pode alterar seus parâmetros de transmissão e endereços IP. 
+---
+= Configurar a porta de gerenciamento
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O controlador inclui uma porta Ethernet utilizada para a gestão do sistema. Se necessário, você pode alterar seus parâmetros de transmissão e endereços IP.
+
+.Sobre esta tarefa
+Durante este procedimento, selecione a porta 1 e, em seguida, determine a velocidade e o método de endereçamento da porta. A porta 1 coneta-se à rede onde o cliente de gerenciamento pode acessar o controlador e o System Manager.
+
+[NOTE]
+====
+Não use a porta 2 em nenhum dos controladores. A porta 2 está reservada para uso pelo suporte técnico.
+
+====
+.Passos
+. Selecione *hardware*.
+. Se o gráfico mostrar as unidades, clique na guia *Controllers & Components* (Controladores e componentes).
++
+O gráfico muda para mostrar os controladores em vez das unidades.
+
+. Clique no controlador com a porta de gerenciamento que deseja configurar.
++
+É apresentado o menu de contexto do controlador.
+
+. Selecione *Configurar portas de gerenciamento*.
++
+A caixa de diálogo Configurar portas de gerenciamento é aberta.
+
+. Certifique-se de que a porta 1 é exibida e clique em *Next*.
+. Selecione as definições da porta de configuração e, em seguida, clique em *seguinte*.
++
+.Detalhes do campo
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Campo | Descrição 
+
+
+ a| 
+Velocidade e modo duplex
+ a| 
+Mantenha a configuração negociação automática se desejar que o System Manager determine os parâmetros de transmissão entre o storage de armazenamento e a rede; ou se você souber a velocidade e o modo da rede, selecione os parâmetros na lista suspensa. Apenas as combinações de velocidade e duplex válidas aparecem na lista.
+
+
+
+ a| 
+Ativar IPv4 / ativar IPv6
+ a| 
+Selecione uma ou ambas as opções para ativar o suporte para redes IPv4G e IPv6G.
+
+|===
+====
++
+Se selecionar *Ativar IPv4*, abre-se uma caixa de diálogo para selecionar IPv4 definições depois de clicar em *seguinte*. Se selecionar *Ativar IPv6*, abre-se uma caixa de diálogo para selecionar IPv6 definições depois de clicar em *seguinte*. Se você selecionar ambas as opções, a caixa de diálogo para configurações IPv4 será aberta primeiro e, depois de clicar em *Avançar*, a caixa de diálogo para configurações IPv6 será aberta.
+
+. Configure as definições IPv4 e/ou IPv6, automática ou manualmente.
++
+.Detalhes do campo
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Campo | Descrição 
+
+
+ a| 
+Obter automaticamente a configuração do servidor DHCP
+ a| 
+Selecione esta opção para obter a configuração automaticamente.
+
+
+
+ a| 
+Especifique manualmente a configuração estática
+ a| 
+Selecione esta opção e, em seguida, introduza o endereço IP do controlador. (Se desejado, você pode cortar e colar endereços nos campos.) Para IPv4, inclua a máscara de sub-rede e o gateway. Para IPv6, inclua o endereço IP roteável e o endereço IP do roteador.
+
+
+NOTE: Se você alterar a configuração do endereço IP, perderá o caminho de gerenciamento para o storage array. Se você usar o Gerenciador Unificado do SANtricity para gerenciar arrays globalmente em sua rede, abra a interface do usuário e vá para o menu:Gerenciar[descobrir]. Se utilizar o SANtricity Storage Manager, tem de remover o dispositivo da janela de Gestão Empresarial (EMW), adicioná-lo de volta ao EMW selecionando menu:Editar[Adicionar matriz de armazenamento] e, em seguida, introduza o novo endereço IP.
+
+|===
+====
+. Clique em *Finish*.
+
+
+.Resultados
+A configuração da porta de gerenciamento é exibida nas configurações do controlador, guia portas de gerenciamento.

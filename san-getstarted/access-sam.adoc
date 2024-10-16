@@ -1,0 +1,59 @@
+---
+permalink: san-getstarted/access-sam.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, access System Manager 
+summary: Para acessar a interface do usuário do System Manager, você aponta um navegador para o endereço IP do controlador. Um assistente de configuração ajuda você a começar com a configuração do sistema. 
+---
+= Acesse o System Manager
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Para acessar a interface do usuário do System Manager, você aponta um navegador para o endereço IP do controlador. Um assistente de configuração ajuda você a começar com a configuração do sistema.
+
+.Antes de começar
+* Instale e configure o hardware, conforme descrito em um dos guias de configuração expressos:
++
+** https://docs.netapp.com/us-en/e-series/config-linux/index.html["Configuração expressa do Linux"^]
+** https://docs.netapp.com/us-en/e-series/config-vmware/index.html["Configuração do VMware Express"^]
+** https://docs.netapp.com/us-en/e-series/config-windows/index.html["Configuração expressa do Windows"^]
+
+
+* Configure uma estação de gerenciamento que atenda aos seguintes requisitos:
++
+** Ligado a uma rede de 1 Gbps ou mais rápida.
+** Anexado à mesma sub-rede que as portas de gerenciamento de armazenamento.
+** Usado como uma estação separada, em vez de um host (e/S anexado) usado para gerenciamento de dados.
+** Configure o gerenciamento fora da banda, no qual uma estação de gerenciamento de storage envia comandos ao sistema de storage por meio das conexões Ethernet ao controlador.
+** Configurar com um navegador suportado. link:supported-browsers-os.html["Navegadores e sistemas operacionais suportados"]Consulte .
+
+
+
+
+.Passos
+. No seu navegador, insira o seguinte URL: `+https://<IPAddress>+`
++
+`IPAddress` é o endereço de uma das controladoras de storage array.
+
++
+Na primeira vez que o System Manager é aberto em uma matriz que não foi configurada, o prompt Set Administrator Password (Definir senha do administrador) é exibido.
+
+. Introduza a palavra-passe do Gestor do sistema para a função de administrador nos campos Definir palavra-passe do administrador e confirmar palavra-passe e, em seguida, clique em *Definir palavra-passe*.
++
+O assistente de configuração é iniciado no início de sessão pela primeira vez.
+
+. Use o assistente de configuração para executar as seguintes tarefas:
++
+** *Verifique o hardware (controladores e unidades)* -- Verifique o número de controladores e unidades no storage de armazenamento. Atribua um nome à matriz.
+** *Verifique hosts e sistemas operacionais* -- Verifique os tipos de host e sistema operacional que o storage array pode acessar.
+** *Accept pools* -- aceite a configuração de pool recomendada para o método de instalação expressa. Um pool é um grupo lógico de unidades.
+** *Configurar alertas* -- permitir que o System Manager receba notificações automáticas quando ocorrer um problema com a matriz de armazenamento.
+** * Ativar AutoSupport* -- monitore automaticamente a integridade do seu storage array e tenha despachos enviados para o suporte técnico.
+
+
+
+
+Para obter mais informações sobre o Assistente de configuração, link:../sm-interface/setup-wizard-overview.html["Descrição geral do Assistente de configuração"]consulte .

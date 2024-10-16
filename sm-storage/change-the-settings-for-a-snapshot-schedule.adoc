@@ -1,0 +1,92 @@
+---
+permalink: sm-storage/change-the-settings-for-a-snapshot-schedule.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, settings, snapshot, schedule 
+summary: Para uma programação de instantâneos, pode alterar os tempos de recolha automática ou a frequência da recolha. 
+---
+= Altere as definições de uma programação de instantâneos
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Para uma programação de instantâneos, pode alterar os tempos de recolha automática ou a frequência da recolha.
+
+.Sobre esta tarefa
+Você pode importar configurações de um agendamento instantâneo existente ou modificar as configurações conforme necessário.
+
+Como uma programação de instantâneos está associada a um grupo de instantâneos ou a um grupo de consistência de instantâneos, a capacidade reservada pode ser afetada por alterações nas configurações de agendamento.
+
+.Passos
+. Selecione menu:armazenamento[instantâneos].
+. Clique na guia *horários*.
+. Selecione a programação de instantâneos que pretende alterar e, em seguida, clique em *Editar*.
++
+A caixa de diálogo Editar agendamento instantâneo é exibida.
+
+. Execute um dos seguintes procedimentos:
++
+** *Use um agendamento previamente definido de outro objeto snapshot* -- clique em *Importar Agendamento*, selecione o objeto com o agendamento que deseja importar e clique em *Importar*.
+** *Editar as configurações de agendamento* -- consulte os detalhes do campo abaixo.
++
+.Detalhes do campo
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Definição | Descrição 
+
+
+ a| 
+Dia / mês
+ a| 
+Escolha uma das seguintes opções:
+
+*** *Daily / Weekly* -- Selecione dias individuais para instantâneos de sincronização. Você também pode selecionar a caixa de seleção *Selecionar todos os dias* no canto superior direito, se desejar uma programação diária.
+*** *Mensal / anual* -- Selecione meses individuais para instantâneos de sincronização. No campo *no(s) dia(s)*, insira os dias do mês para que as sincronizações ocorram. As inscrições válidas são *1* a *31* e *Last*. Você pode separar vários dias com uma vírgula ou ponto e vírgula. Use um hífen para datas inclusivas. Por exemplo: 1,3,4,10-15,último. Você também pode selecionar a caixa de seleção *Selecionar todos os meses* no canto superior direito, se desejar um agendamento mensal.
+
+
+
+
+ a| 
+Hora de início
+ a| 
+Na lista suspensa, selecione uma nova hora de início para os instantâneos diários. As seleções são fornecidas em incrementos de meia hora. A hora de início é predefinida para meia hora à frente da hora atual.
+
+
+
+ a| 
+Fuso horário
+ a| 
+Na lista suspensa, selecione o fuso horário da matriz de armazenamento.
+
+
+
+ a| 
+Instantâneos por dia
+
+Tempo entre instantâneos
+ a| 
+Selecione o número de imagens instantâneas a criar por dia.
+
+Se selecionar mais de um, selecione também o tempo entre os pontos de restauro. Para vários pontos de restauração, verifique se você tem capacidade reservada adequada.
+
+
+
+ a| 
+Data de início
+
+Data de fim
+
+Sem data de fim
+ a| 
+Introduza a data de início para que as sincronizações comecem. Introduza também uma data de fim ou selecione *sem data de fim*.
+
+|===
+====
+
+
+. Clique em *Salvar*.
+

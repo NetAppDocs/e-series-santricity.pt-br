@@ -1,0 +1,24 @@
+---
+permalink: um-manage/delete-storage-array-group.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, delete, storage, array, group 
+summary: Você pode remover um ou mais grupos de storage que não são mais necessários. 
+---
+= Eliminar grupo de matrizes de armazenamento
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode remover um ou mais grupos de storage que não são mais necessários.
+
+.Sobre esta tarefa
+Esta operação exclui apenas o grupo de matrizes de armazenamento. Os storage arrays associados ao grupo excluído permanecem acessíveis por meio da exibição Gerenciar tudo ou qualquer outro grupo ao qual está associado.
+
+.Passos
+. Na página Gerenciar, selecione menu:Gerenciar grupos[Excluir grupo de matrizes de armazenamento].
+. Selecione um ou mais grupos de matrizes de armazenamento que pretende eliminar.
+. Clique em *Excluir*.
+

@@ -1,0 +1,27 @@
+---
+permalink: sm-mirroring/synchronous-mirroring-what-do-i-need-to-know-before-creating-a-mirrored-pair.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, synchronous mirroring, 
+summary: Você configura pares espelhados na interface do Unified Manager e gerencia os pares no System Manager. 
+---
+= Espelhamento síncrono - o que eu preciso saber antes de criar um par espelhado?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você configura pares espelhados na interface do Unified Manager e gerencia os pares no System Manager.
+
+Antes de criar um par espelhado, siga estas diretrizes:
+
+* Você precisa ter dois storage arrays.
+* Cada storage array deve ter duas controladoras.
+* Cada controlador no array primário e no array secundário deve ter uma porta de gerenciamento Ethernet configurada e estar conetado à rede.
+* Seus storage arrays locais e remotos são conectados por meio de uma malha Fibre Channel.
+* As matrizes de armazenamento têm uma versão mínima de firmware de 7,84. (Cada um deles pode executar diferentes versões do sistema operacional.)
+* Você deve saber a senha para os storages de armazenamento local e remoto.
+* Você precisa ter capacidade livre suficiente no storage array remoto para criar um volume secundário igual ou maior que o volume principal que deseja espelhar.
+* Você instalou o Web Services Proxy e o Unified Manager. Os pares espelhados são configurados na interface do Unified Manager.
+* Os dois storage arrays são descobertos no Unified Manager.
+

@@ -1,0 +1,44 @@
+---
+permalink: sm-storage/overview-remote-storage.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, remote, storage 
+summary: Se tiver a funcionalidade armazenamento remoto, pode importar dados de um sistema de armazenamento remoto. 
+---
+= Visão geral da funcionalidade de armazenamento remoto
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se tiver a funcionalidade armazenamento remoto, pode importar dados de um sistema de armazenamento remoto para a sua matriz de armazenamento.
+
+
+
+== O que é o recurso de armazenamento remoto?
+
+O recurso _armazenamento remoto_ permite importar dados de um sistema de armazenamento remoto para um sistema de armazenamento local e-Series. O sistema remoto pode ser outro sistema e-Series ou um sistema de outro fornecedor. Esse recurso é útil quando você deseja otimizar a migração de dados com o mínimo de tempo de inatividade, como durante atualizações de equipamentos.
+
+
+NOTE: Para usar o armazenamento remoto, esse recurso deve estar habilitado no ID do submodelo (SMID).
+
+Saiba mais:
+
+* link:rtv-how-remote-storage-works.html["Como o armazenamento remoto funciona"]
+* link:rtv-terminology.html["Terminologia de armazenamento remoto"]
+* link:rtv-remote-storage-requirements.html["Requisitos de armazenamento remoto"]
+* link:rtv-remote-storage-volume-requirements.html["Requisitos de volume de armazenamento remoto"]
+
+
+
+
+== Como posso importar dados com esta funcionalidade?
+
+Usando o assistente de armazenamento remoto, você mapeia um dispositivo de armazenamento remoto (a origem da importação de dados) para um volume de destino no sistema e-Series. Este assistente está disponível no menu:armazenamento[armazenamento remoto].
+
+Saiba mais:
+
+* link:rtv-import-remote-storage.html["Importar armazenamento remoto"]
+* link:rtv-manage-progress-of-remote-volume-import.html["Gerenciar o progresso da importação de dados"]
+

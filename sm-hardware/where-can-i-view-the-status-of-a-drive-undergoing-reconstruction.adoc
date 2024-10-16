@@ -1,0 +1,18 @@
+---
+permalink: sm-hardware/where-can-i-view-the-status-of-a-drive-undergoing-reconstruction.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, drive, reconstruction, 
+summary: Pode visualizar o estado de reconstrução da unidade a partir do painel operações em curso. 
+---
+= Onde posso ver o estado de uma unidade em fase de reconstrução?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Pode visualizar o estado de reconstrução da unidade a partir do painel operações em curso.
+
+Na página inicial, clique no link *Exibir operações em andamento* no canto superior direito.
+
+Dependendo da unidade, a reconstrução completa pode demorar um tempo considerável. Se a propriedade de um volume tiver mudado, poderá ocorrer uma reconstrução completa em vez da reconstrução rápida.

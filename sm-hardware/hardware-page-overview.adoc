@@ -1,0 +1,72 @@
+---
+permalink: sm-hardware/hardware-page-overview.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, hardware, page, components, 
+summary: A página hardware fornece uma representação gráfica dos componentes físicos da matriz de armazenamento. A partir daqui, você pode verificar o status do componente e executar algumas funções relacionadas a esses componentes. 
+---
+= Página de hardware e componentes
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A página hardware fornece uma representação gráfica dos componentes físicos da matriz de armazenamento. A partir daqui, você pode verificar o status do componente e executar algumas funções relacionadas a esses componentes.
+
+
+
+== Compartimentos
+
+Uma gaveta é um componente que contém o hardware para o storage array (controladoras, coletores de energia/ventoinhas e unidades). Existem dois tipos de prateleiras:
+
+* *Compartimento de controladora* -- contém as unidades, os coletores de energia/ventilador e os controladores.
+* *Compartimento de unidades* (ou *compartimento de expansão*) -- contém unidades, coletores de energia/ventilador e dois módulos de entrada/saída (IOMs). As IOMs, também conhecidas como módulos de serviço ambiental (ESMs), incluem portas SAS que conetam o compartimento de unidades ao compartimento de controladora.
+
+
+As gavetas estão disponíveis em três tamanhos para acomodar até 12, 24 ou 60 unidades. Cada compartimento inclui um número de ID, que é atribuído pelo firmware da controladora. O ID aparece no canto superior esquerdo da exibição da prateleira.
+
+A exibição do compartimento na página hardware mostra os componentes frontal ou traseiro. Você pode alternar entre as duas visualizações selecionando as guias *Drives* ou *Controller* no canto superior direito da exibição da prateleira. Você também pode selecionar *Mostrar tudo frontal* ou *Mostrar tudo de volta* na parte inferior da página. As vistas frontal e traseira mostram o seguinte:
+
+* *Componentes dianteiros* -- unidades e compartimentos de unidades vazios.
+* *Componentes traseiros* -- Controladores e coletores de energia/ventilador (para compartimentos de controladores) ou IOMs e coletores de energia/ventilador (para compartimentos de unidades).
+
+
+Você pode executar as seguintes funções relacionadas às prateleiras:
+
+* Ligue a luz de localização da prateleira, para que você possa encontrar a localização física da prateleira no gabinete ou rack.
+* Altere o número de ID mostrado no canto superior esquerdo da exibição da prateleira.
+* Visualize as configurações do compartimento, como os tipos de unidades instaladas e o número de série.
+* Mova as exibições do compartimento para cima ou para baixo para corresponder ao layout físico no storage de armazenamento.
+
+
+
+
+== Controladores
+
+Um controlador é o hardware e firmware combinados que implementa funções de storage e gerenciamento. Ele inclui a memória cache, suporte à unidade e suporte à interface do host.
+
+Você pode executar as seguintes funções relacionadas aos controladores:
+
+* Configure as portas de gerenciamento para endereços IP e velocidade.
+* Configurar conexões de host iSCSI (se você tiver hosts iSCSI).
+* Configure um servidor NTP (Network Time Protocol) e um servidor DNS (Domain Name System).
+* Ver o estado e as definições do controlador.
+* Permita que os usuários de fora da rede local iniciem uma sessão SSH e alterem as configurações no controlador.
+* Coloque o controlador offline, online ou no modo de serviço.
+
+
+
+
+== Unidades
+
+O storage array pode incluir unidades de disco rígido (HDDs) ou unidades de estado sólido (SSDs). Dependendo do tamanho da gaveta, até 12, 24 ou 60 unidades podem ser instaladas na gaveta.
+
+Você pode executar as seguintes funções relacionadas às unidades:
+
+* Ligue a luz de localização da unidade, para que você possa encontrar a localização física da unidade na prateleira.
+* Ver o estado e as definições da unidade.
+* Reatribua uma unidade (substitua logicamente uma unidade com falha por uma unidade não atribuída) e reconstrua manualmente a unidade, se necessário.
+* Falhar manualmente uma unidade para que você possa substituí-la. (A falha de uma unidade permite copiar o conteúdo da unidade antes de substituí-la.)
+* Atribuir ou anular a atribuição de peças sobressalentes quentes.
+* Apagar unidades.
+

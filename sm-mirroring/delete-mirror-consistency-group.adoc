@@ -1,0 +1,41 @@
+---
+permalink: sm-mirroring/delete-mirror-consistency-group.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, delete, mirror, consistency, group, 
+summary: Você pode excluir grupos de consistência de espelho que não são mais necessários no storage de armazenamento local e no storage de armazenamento remoto. 
+---
+= Eliminar grupo de consistência de espelho
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode excluir grupos de consistência de espelho que não são mais necessários no storage de armazenamento local e no storage de armazenamento remoto.
+
+.Antes de começar
+Todos os pares espelhados devem ser removidos do grupo de consistência de espelho.
+
+.Passos
+. Selecione menu:armazenamento[Espelhamento assíncrono].
+. Selecione a guia *Espelhar grupos de consistência*.
++
+A tabela Mirror Consistency Group (Grupo de consistência de espelho) é exibida e exibe todos os grupos de consistência de espelho associados ao storage array.
+
+. Selecione o grupo de consistência de espelho que você deseja excluir e, em seguida, selecione menu:tarefas incomuns[Excluir].
++
+O sistema apresenta uma confirmação.
+
+. Selecione *Yes* para excluir o grupo de consistência espelhada.
+
+
+.Resultados
+O System Manager executa as seguintes ações:
+
+* Exclui primeiro o grupo de consistência de espelho na matriz de armazenamento local e, em seguida, exclui o grupo de consistência de espelho na matriz de armazenamento remoto.
+* Remove o grupo de consistência de espelho da tabela Grupo de consistência de espelho.
+
+
+.Depois de terminar
+Ocasionalmente, pode haver instâncias em que o grupo de consistência de espelho é excluído com sucesso da matriz de armazenamento local, mas um erro de comunicação impede que o grupo de consistência de espelho seja excluído da matriz de armazenamento remoto. Nesse caso, você deve acessar a matriz de armazenamento remoto para excluir o grupo de consistência de espelho correspondente.

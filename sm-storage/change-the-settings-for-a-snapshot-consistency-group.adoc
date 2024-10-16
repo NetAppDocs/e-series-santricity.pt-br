@@ -1,0 +1,80 @@
+---
+permalink: sm-storage/change-the-settings-for-a-snapshot-consistency-group.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, settings, snapshot, consistency group 
+summary: Altere as definições de um grupo de consistência de instantâneos quando pretender alterar o seu nome, as definições de eliminação automática ou o número máximo de imagens instantâneas permitidas. 
+---
+= Altere as configurações de um grupo de consistência de snapshot
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Altere as definições de um grupo de consistência de instantâneos quando pretender alterar o seu nome, as definições de eliminação automática ou o número máximo de imagens instantâneas permitidas.
+
+.Passos
+. Selecione menu:armazenamento[instantâneos].
+. Clique na guia *Snapshot Consistency Groups* (grupos de consistência de instantâneos).
+. Selecione o grupo de consistência de instantâneos que você deseja editar e clique em *Exibir/Editar configurações*.
++
+A caixa de diálogo Definição do grupo de consistência de instantâneo é exibida.
+
+. Altere as configurações do grupo de consistência de instantâneos conforme apropriado.
++
+.Detalhes do campo
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Definição | Descrição 
+
+
+ a| 
+* Configurações do grupo de consistência do instantâneo*
+
+
+
+ a| 
+Nome
+ a| 
+Você pode alterar o nome do grupo de consistência de snapshot.
+
+
+
+ a| 
+Eliminação automática
+ a| 
+Mantenha a caixa de verificação selecionada se pretender que as imagens instantâneas sejam eliminadas automaticamente após o limite especificado; utilize a caixa de seleção para alterar o limite. Se desmarcar esta caixa de verificação, a criação de imagens instantâneas pára após 32 imagens.
+
+
+
+ a| 
+Limite de imagem instantânea
+ a| 
+Pode alterar o número máximo de imagens instantâneas permitidas para um grupo de instantâneos.
+
+
+
+ a| 
+Agendamento do Snapshot
+ a| 
+Este campo indica se uma programação está associada ao grupo de consistência de instantâneos.
+
+
+
+ a| 
+*Objetos associados*
+
+
+
+ a| 
+Volumes dos membros
+ a| 
+É possível exibir a quantidade de volumes de membros associados ao grupo de consistência de snapshot.
+
+|===
+====
+. Clique em *Salvar*.
+

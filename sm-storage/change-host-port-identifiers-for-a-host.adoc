@@ -1,0 +1,78 @@
+---
+permalink: sm-storage/change-host-port-identifiers-for-a-host.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, host port, identifiers, host 
+summary: Altere os identificadores de porta do host quando você quiser alterar o rótulo de usuário em um identificador de porta do host, adicionar um novo identificador de porta do host ao host ou excluir um identificador de porta do host do host. 
+---
+= Alterar identificadores de porta do host para um host
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Altere os identificadores de porta do host quando você quiser alterar o rótulo de usuário em um identificador de porta do host, adicionar um novo identificador de porta do host ao host ou excluir um identificador de porta do host do host.
+
+.Sobre esta tarefa
+Ao alterar identificadores de porta do host, tenha em mente as seguintes diretrizes:
+
+* *Add* -- quando você adiciona uma porta de host, você está associando o identificador de porta de host ao host que você criou para se conetar ao seu storage array. Você pode inserir manualmente as informações da porta usando um utilitário HBA (adaptador de barramento do host).
+* * Editar* -- você pode editar as portas do host para mover (associar) uma porta de host para um host diferente. Você pode ter movido o adaptador de barramento do host ou o iniciador iSCSI para um host diferente, então você deve mover (associar) a porta do host para o novo host.
+* *Delete* -- você pode excluir portas de host para remover (não associar) portas de host de um host.
+
+
+.Passos
+. Selecione menu:armazenamento[hosts].
+. Selecione o host ao qual as portas serão associadas e clique em *Exibir/Editar configurações*.
++
+Se quiser adicionar portas a um host em um cluster de host, expanda o cluster de host e selecione o host desejado. Não é possível adicionar portas no nível do cluster de host.
+
++
+É apresentada uma caixa de diálogo que mostra as definições atuais do anfitrião.
+
+. Clique na guia *Host Ports*.
++
+A caixa de diálogo mostra os identificadores de porta do host atual.
+
+. Altere as configurações do identificador da porta do host conforme apropriado.
++
+[cols="25h,~"]
+|===
+| Definição | Descrição 
+
+
+ a| 
+Porta do host
+ a| 
+Você pode escolher uma das seguintes opções:
+
+** *Add* -- Use Add para associar um novo identificador de porta de host ao host. O comprimento do nome do identificador da porta do host é determinado pela tecnologia da interface do host. Os nomes dos identificadores de porta de host Fibre Channel e Infiniband devem ter 16 carateres. Os nomes dos identificadores de porta de host iSCSI têm um máximo de 223 carateres. A porta deve ser única. Não é permitido um número de porta que já tenha sido configurado.
+** *Delete* -- Use Delete para remover (não associar) um identificador de porta de host. A opção Excluir não remove fisicamente a porta do host. Essa opção remove a associação entre a porta do host e o host. A menos que você remova o adaptador de barramento do host ou o iniciador iSCSI, a porta do host ainda é reconhecida pelo controlador.
++
+[NOTE]
+====
+Se você excluir um identificador de porta do host, ele não estará mais associado a esse host. Além disso, o host perde o acesso a qualquer um de seus volumes atribuídos por meio desse identificador de porta do host.
+
+====
+
+
+
+
+ a| 
+Etiqueta
+ a| 
+Para alterar o nome da etiqueta da porta, clique no ícone *Editar* (lápis). O nome da etiqueta da porta deve ser exclusivo. Não é permitido um nome de rótulo que já tenha sido configurado.
+
+
+
+ a| 
+Segredo de CHAP
+ a| 
+Aparece apenas para hosts iSCSI. Você pode definir ou alterar o segredo CHAP para os iniciadores (hosts iSCSI).
+
+O System Manager usa o método CHAP (Challenge Handshake Authentication Protocol), que valida a identidade de alvos e iniciadores durante o link inicial. A autenticação é baseada em uma chave de segurança compartilhada chamada CHAP secret.
+
+|===
+. Clique em *Salvar*.
+

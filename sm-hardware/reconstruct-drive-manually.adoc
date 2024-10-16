@@ -1,0 +1,32 @@
+---
+permalink: sm-hardware/reconstruct-drive-manually.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, reconstruct, drive, manually, 
+summary: A reconstrução da unidade é normalmente iniciada automaticamente após a substituição de uma unidade. Se a reconstrução da unidade não iniciar automaticamente, pode iniciar a reconstrução manualmente. 
+---
+= Reconstruir a condução manualmente
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A reconstrução da unidade é normalmente iniciada automaticamente após a substituição de uma unidade. Se a reconstrução da unidade não iniciar automaticamente, pode iniciar a reconstrução manualmente.
+
+[NOTE]
+====
+Execute esta operação somente quando instruído a fazê-lo pelo suporte técnico ou pelo Recovery Guru.
+
+====
+.Passos
+. Selecione *hardware*.
+. Se o gráfico mostrar os controladores, clique na guia *Drives*.
++
+O gráfico muda para mostrar as unidades em vez dos controladores.
+
+. Clique na unidade que pretende reconstruir manualmente.
++
+É apresentado o menu de contexto da unidade.
+
+. Selecione *Reconstruct* e confirme que deseja executar a operação.
+

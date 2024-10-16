@@ -1,0 +1,41 @@
+---
+permalink: sm-support/overview-event-log.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, event, log 
+summary: Use o log de eventos para exibir um Registro histórico de alterações e eventos que aconteceram no storage array. 
+---
+= Visão geral do log de eventos
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O log de eventos fornece um Registro histórico de eventos que ocorreram no storage array, o que ajuda o suporte técnico na solução de problemas de eventos que levam a falhas.
+
+Você pode usar o log de eventos como uma ferramenta de diagnóstico complementar ao Recovery Guru para rastrear eventos de storage array. Sempre consulte o Recovery Guru primeiro quando você tentar se recuperar de falhas de componentes no storage array.
+
+
+
+== Categorias de eventos
+
+Os eventos no log de eventos são categorizados com status diferentes. Os eventos nos quais você precisa agir têm os seguintes status:
+
+* Crítico
+* Aviso
+
+
+Os eventos que são informativos e não exigem nenhuma ação imediata são os seguintes:
+
+* Informativo
+
+
+
+
+== Eventos críticos
+
+Eventos críticos indicam um problema com o storage array. Se você resolver o evento crítico imediatamente, poderá evitar a perda de acesso aos dados.
+
+Quando ocorre um evento crítico, ele é registrado no log de eventos. Todos os eventos críticos são enviados para o console de gerenciamento SNMP ou para o destinatário de e-mail que você configurou para receber notificações de alerta. Se o ID do compartimento não for conhecido no momento do evento, o ID do compartimento é listado como "prateleira desconhecida".
+
+Quando receber um evento crítico, consulte o procedimento Recovery Guru para obter uma descrição detalhada do evento crítico. Conclua o procedimento Recovery Guru para corrigir o evento crítico. Para corrigir certos eventos críticos, talvez seja necessário entrar em Contato com o suporte técnico.

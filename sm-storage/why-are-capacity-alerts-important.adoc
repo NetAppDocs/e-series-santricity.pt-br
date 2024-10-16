@@ -1,0 +1,23 @@
+---
+permalink: sm-storage/why-are-capacity-alerts-important.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, capacity, alerts, important 
+summary: Alertas de capacidade indicam quando adicionar unidades a um pool. Um pool precisa de capacidade livre suficiente para executar com sucesso as operações do storage array. Você pode evitar interrupções nessas operações configurando o System Manager para enviar alertas quando a capacidade livre de um pool atingir ou exceder uma porcentagem especificada. 
+---
+= Por que os alertas de capacidade são importantes?
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Alertas de capacidade indicam quando adicionar unidades a um pool. Um pool precisa de capacidade livre suficiente para executar com sucesso as operações do storage array. Você pode evitar interrupções nessas operações configurando o System Manager para enviar alertas quando a capacidade livre de um pool atingir ou exceder uma porcentagem especificada.
+
+Você define essa porcentagem quando cria um pool usando a opção *Configuração automática do pool* ou a opção *criar pool*. Se você escolher a opção automática, as configurações padrão determinarão automaticamente quando você receber notificações de alerta. Se você optar por criar manualmente o pool, poderá determinar as configurações de notificação de alerta; ou, se preferir, poderá aceitar as configurações padrão. Você pode ajustar essas configurações mais tarde no menu:Configurações[Alertas].
+
+[NOTE]
+====
+Quando a capacidade livre no pool atinge a porcentagem especificada, uma notificação de alerta é enviada usando o método especificado na configuração de alerta.
+
+====

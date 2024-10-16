@@ -1,0 +1,14 @@
+---
+permalink: sm-hardware/which-do-i-choose-dhcp-or-manual-configuration.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, dhcp, manual, configuration, protocol, 
+summary: 'O método predefinido para a configuração da rede é o DHCP (Dynamic Host Configuration Protocol). Utilize sempre esta opção, a menos que a rede não tenha um servidor DHCP.' 
+---
+= O que eu escolho - DHCP ou configuração manual?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O método predefinido para a configuração da rede é o DHCP (Dynamic Host Configuration Protocol). Utilize sempre esta opção, a menos que a rede não tenha um servidor DHCP.

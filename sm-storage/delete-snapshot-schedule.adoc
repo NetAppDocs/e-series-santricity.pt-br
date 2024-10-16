@@ -1,0 +1,27 @@
+---
+permalink: sm-storage/delete-snapshot-schedule.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, delete, snapshot, schedule 
+summary: Se já não pretender recolher imagens de instantâneos, pode eliminar uma agenda de instantâneos existente. 
+---
+= Eliminar agendamento de instantâneos
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se já não pretender recolher imagens de instantâneos, pode eliminar uma agenda de instantâneos existente.
+
+.Sobre esta tarefa
+Quando elimina uma agenda de instantâneos, as imagens de instantâneos associadas não são eliminadas juntamente com esta. Se você acha que a coleção de imagens instantâneas pode ser retomada em algum momento, você deve suspender o agendamento de instantâneos em vez de excluí-lo.
+
+.Passos
+. Selecione menu:armazenamento[instantâneos].
+. Clique na guia *horários*.
+. Selecione a programação de instantâneos que pretende eliminar e confirme a operação.
+
+
+.Resultados
+O sistema remove todos os atributos de agendamento do volume base ou do grupo de consistência de snapshot.

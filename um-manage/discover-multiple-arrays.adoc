@@ -1,0 +1,129 @@
+---
+permalink: um-manage/discover-multiple-arrays.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, discover, multiple, storage, arrays 
+summary: Você descobre várias matrizes para detetar todas as matrizes de armazenamento na sub-rede onde reside o servidor de gestão e para adicionar automaticamente as matrizes descobertas ao seu domínio de gestão. 
+---
+= Descubra vários storages de armazenamento
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você descobre várias matrizes para detetar todas as matrizes de armazenamento na sub-rede onde reside o servidor de gestão e para adicionar automaticamente as matrizes descobertas ao seu domínio de gestão.
+
+.Antes de começar
+* Você deve estar conetado com um perfil de usuário que inclua permissões de Administrador de Segurança.
+* A matriz de armazenamento deve ser corretamente configurada e configurada.
+* As senhas do storage array devem ser configuradas usando o bloco Gerenciamento de Acesso do System Manager.
+* Para resolver certificados não confiáveis, você deve ter arquivos de certificado confiáveis de uma autoridade de certificação (CA) e os arquivos de certificado estão disponíveis no sistema local.
+
+
+Descobrir arrays é um procedimento de várias etapas.
+
+
+
+== Etapa 1: Insira o endereço de rede
+
+Introduza um intervalo de endereços de rede para pesquisar na sub-rede local. Qualquer matriz de armazenamento alcançada com sucesso aparece na página descobrir e pode ser adicionada ao seu domínio de gerenciamento.
+
+Se você precisar parar a operação de descoberta por qualquer motivo, clique em *Stop Discovery*.
+
+.Passos
+. Na página Gerenciar, selecione *Adicionar/descobrir*.
++
+A caixa de diálogo Adicionar/descobrir é exibida.
+
+. Selecione o botão de opção *Discover all storage arrays within a network range*.
+. Introduza o endereço de rede inicial e o endereço de rede final para procurar na sub-rede local e, em seguida, clique em *Iniciar descoberta*.
++
+O processo de descoberta é iniciado. Este processo de descoberta pode levar vários minutos para ser concluído. A tabela na página descobrir é preenchida à medida que os storages são descobertos.
+
++
+[NOTE]
+====
+Se não forem detetados arrays gerenciáveis, verifique se os storages de armazenamento estão conetados corretamente à sua rede e se seus endereços atribuídos estão dentro do alcance. Clique em *New Discovery Parameters* (novos parâmetros de descoberta) para voltar à página Add/Discover (Adicionar/descobrir).
+
+====
+. Reveja a lista de matrizes de armazenamento descobertas.
+. Marque a caixa de seleção ao lado de qualquer matriz de armazenamento que você deseja adicionar ao seu domínio de gerenciamento e clique em *Avançar*.
++
+O Unified Manager executa uma verificação de credenciais em cada array que você está adicionando ao domínio de gerenciamento. Talvez seja necessário resolver quaisquer certificados autoassinados e certificados não confiáveis associados a essa matriz.
+
+. Clique em *Next* (seguinte) para avançar para a próxima etapa do assistente.
+
+
+
+
+== Etapa 2: Resolva certificados autoassinados durante a descoberta
+
+Como parte do processo de descoberta, o sistema verifica se os storages de armazenamento estão usando certificados por uma fonte confiável.
+
+.Passos
+. Execute um dos seguintes procedimentos:
++
+** Se você confiar nas conexões com os storages de armazenamento descobertos, continue para a próxima placa no assistente. Os certificados autoassinados serão marcados como confiáveis e os storages de armazenamento serão adicionados ao Unified Manager.
+** Se você não confiar nas conexões com os storages de armazenamento, selecione *Cancelar* e valide a estratégia de certificado de segurança de cada storage antes de adicionar qualquer um deles ao Unified Manager.
+
+
+. Clique em *Next* (seguinte) para avançar para a próxima etapa do assistente.
+
+
+
+
+== Etapa 3: Resolva certificados não confiáveis durante a descoberta
+
+Certificados não confiáveis ocorrem quando um storage array tenta estabelecer uma conexão segura com o Unified Manager, mas a conexão não consegue confirmar como segura. Durante o processo de descoberta de matriz, você pode resolver certificados não confiáveis importando um certificado de autoridade de certificação (CA) (ou certificado assinado pela CA) emitido por um terceiro confiável.
+
+Talvez seja necessário instalar certificados de CA confiáveis adicionais se alguma das seguintes opções for verdadeira:
+
+* Recentemente, você adicionou uma matriz de armazenamento.
+* Um ou ambos os certificados expiram.
+* Um ou ambos os certificados são revogados.
+* Um ou ambos os certificados estão faltando um certificado raiz ou intermediário.
+
+
+.Passos
+. Marque a caixa de seleção ao lado de qualquer storage para o qual você deseja resolver certificados não confiáveis e selecione o botão **Importar**.
++
+Abre-se uma caixa de diálogo para importar os ficheiros de certificado fidedignos.
+
+. Clique em *Procurar* para selecionar os arquivos de certificado para os storages de armazenamento.
++
+Os nomes dos arquivos são exibidos na caixa de diálogo.
+
+. Clique em *Importar*.
++
+Os arquivos são carregados e validados.
+
++
+[NOTE]
+====
+Qualquer storage array com problemas de certificado não confiáveis que não sejam resolvidos não será adicionado ao Unified Manager.
+
+====
+. Clique em *Next* (seguinte) para avançar para a próxima etapa do assistente.
+
+
+
+
+== Passo 4: Forneça senhas
+
+Você deve inserir as senhas dos storages de armazenamento que deseja adicionar ao seu domínio de gerenciamento.
+
+.Passos
+. Introduza a palavra-passe para cada matriz de armazenamento que pretende adicionar ao Unified Manager.
+. *Opcional:* associar matrizes de armazenamento a um grupo: Na lista pendente, selecione o grupo pretendido a associar com as matrizes de armazenamento selecionadas.
+. Clique em *Finish*.
+
+
+.Depois de terminar
+Os storages de armazenamento são adicionados ao domínio de gerenciamento e associados ao grupo selecionado (se especificado).
+
+[NOTE]
+====
+Pode levar alguns minutos para que o Unified Manager se conecte aos storage arrays especificados.
+
+====

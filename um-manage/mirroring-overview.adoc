@@ -1,0 +1,76 @@
+---
+permalink: um-manage/mirroring-overview.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, mirroring, 
+summary: O Unified Manager inclui opções de configuração para os recursos de espelhamento do SANtricity, que permitem que os administradores repliquem dados entre dois storage arrays para proteção de dados. 
+---
+= Como o espelhamento funciona
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O Unified Manager inclui opções de configuração para os recursos de espelhamento do SANtricity, que permitem que os administradores repliquem dados entre dois storage arrays para proteção de dados.
+
+[NOTE]
+====
+O espelhamento síncrono não está disponível no sistema de storage EF600 ou EF300.
+
+====
+
+
+== Tipos de espelhamento
+
+As aplicações SANtricity incluem dois tipos de espelhamento: Assíncrono e síncrono.
+
+O espelhamento assíncrono copia volumes de dados sob demanda ou de acordo com o cronograma, o que minimiza ou evita o tempo de inatividade que pode resultar de corrupção ou perda de dados. O espelhamento assíncrono captura o estado do volume primário em um determinado momento no tempo e copia apenas os dados que foram alterados desde a última captura de imagem. O site principal pode ser atualizado imediatamente e o site secundário pode ser atualizado como a largura de banda permite. As informações são armazenadas em cache e enviadas posteriormente, à medida que os recursos de rede ficam disponíveis. Esse tipo de espelhamento é ideal para processos periódicos, como backup e arquivamento.
+
+O espelhamento síncrono replica volumes de dados em tempo real para garantir disponibilidade contínua. O objetivo é alcançar um objetivo de ponto de restauração (RPO) sem perda de dados ao ter uma cópia dos dados importantes disponível se um desastre ocorrer em um dos dois storage arrays. A cópia é idêntica aos dados de produção a cada momento, porque cada vez que uma gravação é feita no volume primário, uma gravação é feita no volume secundário. O host não recebe uma confirmação de que a gravação foi bem-sucedida até que o volume secundário seja atualizado com as alterações feitas no volume primário. Esse tipo de espelhamento é ideal para fins de continuidade dos negócios, como recuperação de desastres.
+
+
+
+== Diferenças entre tipos de espelhamento
+
+A tabela a seguir descreve as principais diferenças entre os dois tipos de espelhamento.
+
+[cols="1a,1a,1a"]
+|===
+| Atributo | Assíncrono | Síncrono 
+
+
+ a| 
+Método de replicação
+ a| 
+Point-in-time -- o espelhamento é feito sob demanda ou automaticamente de acordo com uma programação definida pelo usuário.
+ a| 
+Contínuo -- o espelhamento é executado automaticamente continuamente, copiando dados de cada gravação de host.
+
+
+
+ a| 
+Distância
+ a| 
+Suporta longas distâncias entre arrays. Normalmente, a distância é limitada apenas pelas capacidades da rede e da tecnologia de extensão de canal.
+ a| 
+Restrito a distâncias mais curtas entre arrays. Normalmente, a distância deve estar a cerca de 10 km (6,2 milhas) do storage array local para atender aos requisitos de latência e desempenho do aplicativo.
+
+
+
+ a| 
+Método de comunicação
+ a| 
+Uma rede IP ou Fibre Channel padrão.
+ a| 
+Apenas rede Fibre Channel.
+
+
+
+ a| 
+Tipos de volume
+ a| 
+Padrão ou fino.
+ a| 
+Apenas padrão.
+
+|===

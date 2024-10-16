@@ -1,0 +1,188 @@
+---
+permalink: sm-storage/create-snapshot-volume.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, create, snapshot, volume 
+summary: Você cria um volume de snapshot para fornecer acesso do host a uma imagem de snapshot de um volume ou grupo de consistência de snapshot. Você pode designar o volume do snapshot como somente leitura ou leitura-gravação. 
+---
+= Criar volume instantâneo
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você cria um volume de snapshot para fornecer acesso do host a uma imagem de snapshot de um volume ou grupo de consistência de snapshot. Você pode designar o volume do snapshot como somente leitura ou leitura-gravação.
+
+.Sobre esta tarefa
+A sequência de criação de volume instantâneo permite criar um volume instantâneo a partir de uma imagem instantânea e fornece opções para alocar capacidade reservada se o volume for leitura/gravação. Um volume instantâneo pode ser designado como um dos seguintes:
+
+* Um volume instantâneo somente leitura fornece um aplicativo host com acesso de leitura a uma cópia dos dados contidos na imagem instantânea, mas sem a capacidade de modificar a imagem instantânea. Um volume snapshot somente leitura não tem capacidade reservada associada.
+* Um volume instantâneo de leitura e gravação fornece ao aplicativo host acesso de gravação a uma cópia dos dados contidos na imagem instantânea. Ele tem sua própria capacidade reservada que é usada para salvar quaisquer modificações subsequentes feitas pelo aplicativo host no volume base sem afetar a imagem de snapshot referenciada.
+
+
+O processo para criar um volume instantâneo é um procedimento de várias etapas.
+
+
+
+== Etapa 1: Revise os membros para obter um volume instantâneo
+
+Selecione uma imagem instantânea de um volume base ou um grupo de consistência de instantâneos. Se você selecionar uma imagem instantânea do grupo de consistência de instantâneos, os volumes membros do grupo de consistência de instantâneos serão exibidos para revisão.
+
+.Passos
+. Selecione menu:armazenamento[instantâneos].
+. Selecione a guia *volumes instantâneos*.
+. Selecione *criar*.
++
+A caixa de diálogo criar volume instantâneo é exibida.
+
+. Selecione a imagem instantânea (volume ou grupo de consistência de instantâneos) que deseja converter em um volume instantâneo e clique em *Avançar*. Use uma entrada de texto no campo *filtro* para restringir a lista.
++
+Se a seleção foi para uma imagem instantânea de um grupo de consistência de instantâneos, a caixa de diálogo Membros de revisão será exibida.
+
++
+Na caixa de diálogo Review Members (Rever membros), reveja a lista de volumes selecionados para conversão em volumes instantâneos e, em seguida, clique em *Next* (seguinte).
+
+. Vá para <<Etapa 2: Atribuir volume instantâneo ao host>>.
+
+
+
+
+== Etapa 2: Atribuir volume instantâneo ao host
+
+Selecione um host ou cluster de host específico para atribuí-lo ao volume de snapshot. Esta atribuição concede a um host ou cluster de host acesso ao volume de snapshot. Você pode optar por atribuir um host mais tarde, se necessário.
+
+.Antes de começar
+* Existem hosts ou clusters de host válidos na página hosts.
+* Os identificadores de porta do host devem ter sido definidos para o host.
+* Antes de criar um volume habilitado PARA DA, verifique se sua conexão de host planejada suporta o recurso Data Assurance (DA). Se qualquer uma das conexões de host nos controladores do storage array não suportar DA, os hosts associados não poderão acessar dados em volumes habilitados PARA DA.
+
+
+.Sobre esta tarefa
+Ao atribuir volumes, tenha em mente estas diretrizes:
+
+* O sistema operacional de um host pode ter limites específicos sobre quantos volumes o host pode acessar.
+* Você pode definir uma atribuição de host para cada volume instantâneo no storage array.
+* Os volumes atribuídos são compartilhados entre controladores no storage array.
+* O mesmo número de unidade lógica (LUN) não pode ser usado duas vezes por um host ou um cluster de host para acessar um volume de snapshot. Você deve usar um LUN exclusivo.
+
+
+[NOTE]
+====
+A atribuição de um volume a um host falhará se você tentar atribuir um volume a um cluster de host que esteja em conflito com uma atribuição estabelecida para um host no cluster de host.
+
+====
+.Passos
+. Na caixa de diálogo *Assign to Host*, selecione o host ou cluster de host que você deseja atribuir ao novo volume. Se você quiser criar o volume sem atribuir um host, selecione *Assign later* na lista suspensa.
+. Selecione o modo de acesso. Escolha uma das seguintes opções:
++
+** *Leitura/gravação* -- esta opção fornece ao host acesso de leitura/gravação ao volume instantâneo e requer capacidade reservada.
+** *Somente leitura* -- esta opção fornece ao host acesso somente leitura ao volume instantâneo e não requer capacidade reservada.
+
+
+. Clique em *seguinte* e siga um destes procedimentos:
++
+** Se o volume do instantâneo for leitura/gravação, a caixa de diálogo capacidade de revisão será exibida. Vá para <<Etapa 3: Reserva de capacidade para um volume instantâneo>>.
+** Se o volume do instantâneo for somente leitura, a caixa de diálogo Editar prioridade será exibida. Vá para <<Etapa 4: Edite as configurações para um volume instantâneo>>.
+
+
+
+
+
+
+== Etapa 3: Reserva de capacidade para um volume instantâneo
+
+Associar a capacidade reservada a um volume instantâneo de leitura/gravação. O System Manager sugere os volumes e a capacidade com base nas propriedades do volume base ou do grupo de consistência de snapshot. Pode aceitar a configuração de capacidade reservada recomendada ou personalizar o armazenamento alocado.
+
+.Sobre esta tarefa
+Você pode aumentar ou diminuir a capacidade reservada para o volume de snapshot conforme necessário. Se você descobrir que a capacidade reservada do snapshot é maior do que o necessário, poderá reduzir o tamanho para liberar espaço necessário para outros volumes lógicos.
+
+.Passos
+. Use a caixa giratório para alocar a capacidade reservada para o volume instantâneo.
++
+A tabela volume Candidate exibe apenas os candidatos que suportam a capacidade reservada especificada.
+
++
+Execute uma das seguintes ações:
+
++
+** *Aceite as configurações padrão*.
++
+Utilize esta opção recomendada para alocar a capacidade reservada para o volume instantâneo com as predefinições.
+
+** *Aloque suas próprias configurações de capacidade reservada para atender às suas necessidades de armazenamento de dados*.
++
+Se você alterar a configuração de capacidade reservada padrão, clique em *Atualizar candidatos* para atualizar a lista de candidatos para a capacidade reservada especificada.
+
++
+Alocar a capacidade reservada usando as diretrizes a seguir.
+
++
+*** A configuração padrão para capacidade reservada é de 40% da capacidade do volume base e, geralmente, essa capacidade é suficiente.
+*** A capacidade necessária varia, dependendo da frequência e do tamanho das gravações de e/S nos volumes e da quantidade e duração da coleção de imagens instantâneas.
+
+
+
+
+. *Opcional:* se você estiver criando o volume instantâneo para um grupo de consistência de snapshot, a opção "alterar candidato" aparecerá na tabela candidatos de capacidade reservada. Clique em *Change candidate* para selecionar um candidato de capacidade reservada alternativa.
+. Clique em *seguinte* e vá para <<Etapa 4: Edite as configurações para um volume instantâneo>>.
+
+
+
+
+== Etapa 4: Edite as configurações para um volume instantâneo
+
+Altere as configurações de um volume instantâneo, como nome, armazenamento em cache, limites de alerta de capacidade reservada, etc.
+
+.Sobre esta tarefa
+Você pode adicionar o volume ao cache de disco de estado sólido (SSD) como uma maneira de melhorar o desempenho somente leitura. O cache SSD consiste em um conjunto de unidades SSD que você agrupa logicamente em sua matriz de armazenamento.
+
+.Passos
+. Aceite ou altere as definições do volume instantâneo, conforme adequado.
++
+.Detalhes do campo
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Definição | Descrição 
+
+
+ a| 
+* Configurações de volume instantâneo*
+
+
+
+ a| 
+Nome
+ a| 
+Especifique o nome do volume instantâneo.
+
+
+
+ a| 
+Ativar cache SSD
+ a| 
+Escolha essa opção para habilitar o armazenamento em cache somente leitura em SSDs.
+
+
+
+ a| 
+* Configurações de capacidade reservada*
+
+
+
+ a| 
+Alerta-me quando...
+ a| 
+*Aparece apenas para um volume instantâneo de leitura/gravação*.
+
+Use a caixa giratório para ajustar o ponto percentual no qual o sistema envia uma notificação de alerta quando a capacidade reservada para um grupo de instantâneos estiver quase cheia.
+
+Quando a capacidade reservada para o grupo de instantâneos exceder o limite especificado, use o aviso prévio para aumentar a capacidade reservada ou excluir objetos desnecessários antes que o espaço restante se esgote.
+
+|===
+====
+. Reveja a configuração do volume instantâneo. Clique em *voltar* para fazer quaisquer alterações.
+. Quando estiver satisfeito com a configuração do volume do instantâneo, clique em *Finish*.
+

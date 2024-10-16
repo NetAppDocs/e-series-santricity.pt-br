@@ -1,0 +1,119 @@
+---
+permalink: sm-storage/how-do-i-know-which-host-operating-system-type-is-correct.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, host operating system, type, 
+summary: 'O campo Host Operating System Type (tipo de sistema operativo anfitrião) contém o sistema operativo do anfitrião. Você pode selecionar o tipo de host recomendado na lista suspensa.' 
+---
+= Como sei qual tipo de sistema operacional do host está correto?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O campo Host Operating System Type (tipo de sistema operativo anfitrião) contém o sistema operativo do anfitrião. Você pode selecionar o tipo de host recomendado na lista suspensa.
+
+Os tipos de host que aparecem na lista suspensa dependem do modelo do storage array e da versão do firmware. As versões mais recentes exibem as opções mais comuns primeiro, que são as mais prováveis de serem apropriadas. A aparência nesta lista não implica que a opção seja totalmente suportada.
+
+[NOTE]
+====
+Para obter mais informações sobre o suporte ao host, consulte o https://imt.netapp.com/matrix/#welcome["Ferramenta de Matriz de interoperabilidade do NetApp"^].
+
+====
+Alguns dos seguintes tipos de host podem aparecer na lista:
+
+[cols="35h,~"]
+|===
+| Tipo de sistema operacional do host | Sistema operacional (SO) e driver multipath 
+
+
+ a| 
+Linux DM-MP (Kernel 3,10 ou posterior)
+ a| 
+Suporta sistemas operacionais Linux usando uma solução de failover multipath Device Mapper com um Kernel 3,10 ou posterior.
+
+
+
+ a| 
+VMware ESXi
+ a| 
+Oferece suporte aos sistemas operacionais VMware ESXi que executam a arquitetura NMP (NMP) nativa usando o módulo SATP_ALUA interno de política de tipo de matriz de armazenamento da VMware.
+
+
+
+ a| 
+Windows (em cluster ou não em cluster)
+ a| 
+Oferece suporte a configurações em cluster ou não em cluster do Windows que não estejam executando o driver de multipathing ATTO.
+
+
+
+ a| 
+ATTO Cluster (todos os sistemas operacionais)
+ a| 
+Suporta todas as configurações de cluster usando o driver ATTO Technology, Inc., multipathing.
+
+
+
+ a| 
+Linux (Veritas DMP)
+ a| 
+Suporta sistemas operacionais Linux usando uma solução de multipathing Veritas DMP.
+
+
+
+ a| 
+Linux (ATTO)
+ a| 
+Suporta sistemas operacionais Linux usando um ATTO Technology, Inc., driver multipathing.
+
+
+
+ a| 
+Mac os (ATTO)
+ a| 
+Suporta versões do Mac os usando um ATTO Technology, Inc., driver multipathing.
+
+
+
+ a| 
+Windows (ATTO)
+ a| 
+Suporta sistemas operacionais Windows usando um ATTO Technology, Inc., driver multipathing.
+
+
+
+ a| 
+FlexArray (ALUA)
+ a| 
+Suporta um sistema NetApp FlexArray usando ALUA para multipathing.
+
+
+
+ a| 
+SVC DA IBM
+ a| 
+Suporta uma configuração do IBM SAN volume Controller.
+
+
+
+ a| 
+Predefinição de fábrica
+ a| 
+Reservado para a inicialização inicial do storage array. Se o tipo de sistema operacional do host estiver definido como padrão de fábrica, altere-o para corresponder ao sistema operacional do host e ao driver multipath executados no host conetado.
+
+
+
+ a| 
+Linux DM-MP (Kernel 3,9 ou anterior)
+ a| 
+Suporta sistemas operacionais Linux usando uma solução de failover multipath Device Mapper com um Kernel 3,9 ou anterior.
+
+
+
+ a| 
+Janela agrupada (obsoleta)
+ a| 
+Se o tipo de sistema operacional do host estiver definido para esse valor, use a configuração Windows (em cluster ou não em cluster).
+
+|===

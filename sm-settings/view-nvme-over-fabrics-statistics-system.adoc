@@ -1,0 +1,33 @@
+---
+permalink: sm-settings/view-nvme-over-fabrics-statistics-system.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, view, nvme, fabrics, statistics, 
+summary: É possível visualizar dados sobre as conexões NVMe sobre Fabrics com o storage array. 
+---
+= Veja as estatísticas do NVMe sobre Fabrics
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+É possível visualizar dados sobre as conexões NVMe sobre Fabrics com o storage array.
+
+.Sobre esta tarefa
+O System Manager mostra esses tipos de estatísticas de NVMe sobre Fabrics. Todas as estatísticas são apenas de leitura e não podem ser definidas.
+
+* *Estatísticas do subsistema NVMe* -- mostra estatísticas para o controlador NVMe e sua fila. O controlador NVMe fornece um caminho de acesso entre um host e os namespaces no storage array. Você pode revisar as estatísticas do subsistema NVMe para itens como falhas de conexão, reconfigurações e paradas.
+* *Estatísticas da interface RDMA* -- fornece estatísticas para todas as portas NVMe sobre Fabrics na interface RDMA, que inclui estatísticas de desempenho e informações de erro de link associadas a cada porta do switch. Essa guia só aparece quando as portas NVMe sobre Fabrics estiverem disponíveis.
+
+
+Você pode visualizar cada uma dessas estatísticas como estatísticas em bruto ou como estatísticas de linha de base. As estatísticas em bruto são todas as estatísticas que foram coletadas desde que os controladores foram iniciados. As estatísticas da linha de base são estatísticas pontuais que foram reunidas desde que você definiu o tempo da linha de base.
+
+.Passos
+. Selecione menu:Definições[sistema].
+. Selecione *View NVMe over Fabrics Statistics*.
+. *Opcional:* para definir a linha de base, clique em *Definir nova linha de base*.
++
+Definir a linha de base define um novo ponto de partida para a coleção das estatísticas. A mesma linha de base é usada para todas as estatísticas do NVMe.
+
+

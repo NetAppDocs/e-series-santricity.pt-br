@@ -1,0 +1,47 @@
+---
+permalink: sm-settings/add-on-feature-terminology.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, add-on, feature, terms 
+summary: Saiba como os termos do recurso complementar se aplicam à sua matriz de armazenamento. 
+---
+= Terminologia de recursos complementares
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Saiba como os termos do recurso complementar se aplicam à sua matriz de armazenamento.
+
+[cols="25h,~"]
+|===
+| Prazo | Descrição 
+
+
+ a| 
+Identificador de ativação de funcionalidade
+ a| 
+Um identificador de ativação de recurso é uma cadeia de carateres exclusiva que identifica a matriz de armazenamento específica. Esse identificador garante que, quando você obtém o recurso premium, ele está associado apenas a essa matriz de armazenamento específica. Esta cadeia de carateres é exibida em Complementos na página sistema.
+
+
+
+ a| 
+Arquivo de chave de recurso
+ a| 
+Um arquivo de chave de recurso é um arquivo que você recebe para desbloquear e habilitar um recurso premium ou pacote de recursos.
+
+
+
+ a| 
+Pacote de funcionalidades
+ a| 
+Um pacote de recursos é um pacote que altera os atributos do storage de armazenamento (por exemplo, alterando o protocolo de Fibre Channel para iSCSI). Os pacotes de recursos exigem uma chave especial para ativá-los.
+
+
+
+ a| 
+Recurso Premium
+ a| 
+Um recurso premium é uma opção extra que requer uma chave para ativá-lo. Ele não está incluído na configuração padrão do System Manager.
+
+|===

@@ -1,0 +1,37 @@
+---
+permalink: sm-settings/configure-nvme-over-infiniband-ports-system.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, configure, nvme, over, InfiniBand, ports, 
+summary: Se o controlador incluir uma conexão NVMe over InfiniBand, você poderá configurar as configurações de porta NVMe na página sistema. 
+---
+= Configurar portas NVMe em InfiniBand
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se o controlador incluir uma conexão NVMe over InfiniBand, você poderá configurar as configurações de porta NVMe na página sistema.
+
+.Antes de começar
+* Seu controlador deve incluir uma porta de host NVMe over InfiniBand. Caso contrário, as configurações de NVMe em InfiniBand não estão disponíveis no System Manager.
+* Você deve saber o endereço IP da conexão do host.
+
+
+[NOTE]
+====
+As configurações e funções do NVMe over InfiniBand aparecerão somente se a controladora do storage array incluir uma porta NVMe over InfiniBand.
+
+====
+.Passos
+. Selecione menu:Definições[sistema].
+. Em *configurações NVMe over InfiniBand*, selecione *Configurar portas NVMe over InfiniBand*.
+. Selecione a controladora com a porta NVMe over InfiniBand que você deseja configurar. Clique em *seguinte*.
+. Selecione a porta HIC que pretende configurar na lista pendente e, em seguida, introduza o endereço IP.
++
+Se você estiver configurando um storage array EF600 com um HIC compatível com 200GB, essa caixa de diálogo exibirá dois campos de Endereço IP, um para uma porta física (externa) e outro para uma porta virtual (interna). Você deve atribuir um endereço IP exclusivo para ambas as portas. Essas configurações permitem que o host estabeleça um caminho entre cada porta e que o HIC alcance o máximo desempenho. Se você não atribuir um endereço IP à porta virtual, o HIC será executado a aproximadamente metade de sua velocidade capaz.
+
+. Clique em *Finish*.
+. Redefina a porta NVMe over InfiniBand clicando em *Yes*.
+

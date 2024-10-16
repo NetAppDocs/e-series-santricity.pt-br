@@ -1,0 +1,51 @@
+---
+permalink: sm-settings/what-else-do-i-need-to-do-to-configure-or-diagnose-nvme-over-infiniband.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, configure, diagnose, nvme, infiniBand, 
+summary: A tabela a seguir lista as funções do System Manager que você pode usar para configurar e gerenciar sessões NVMe over InfiniBand. 
+---
+= O que mais preciso fazer para configurar ou diagnosticar o NVMe em InfiniBand?
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A tabela a seguir lista as funções do System Manager que você pode usar para configurar e gerenciar sessões NVMe over InfiniBand.
+
+[NOTE]
+====
+As configurações NVMe over InfiniBand estarão disponíveis somente se a controladora do storage array incluir uma porta NVMe over InfiniBand.
+
+====
+[cols="35h,~"]
+|===
+| Ação | Localização 
+
+
+ a| 
+Configurar portas NVMe em InfiniBand
+ a| 
+. Selecione *hardware*.
+. Selecione a guia *Controllers & Components* (Controladores e componentes).
+. Selecione um controlador.
+. Selecione *Configurar portas NVMe over InfiniBand*.
+
+
+ou
+
+. Selecione menu:Definições[sistema].
+. Role para baixo até *NVMe over InfiniBand settings* e selecione *Configurar portas NVMe over InfiniBand*.
+
+
+
+
+ a| 
+Visualizar estatísticas do NVMe em InfiniBand
+ a| 
+. Selecione menu:Definições[sistema].
+. Role para baixo até *NVMe over InfiniBand settings* e selecione *View NVMe over Fabrics Statistics*.
+
+
+|===

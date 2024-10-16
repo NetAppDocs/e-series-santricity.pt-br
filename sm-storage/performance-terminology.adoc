@@ -1,0 +1,130 @@
+---
+permalink: sm-storage/performance-terminology.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, performance, terms 
+summary: Saiba como os termos de desempenho se aplicam ao storage array. 
+---
+= Terminologia de desempenho
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Saiba como os termos de desempenho se aplicam ao storage array.
+
+[cols="25h,~"]
+|===
+| Prazo | Descrição 
+
+
+ a| 
+Aplicação
+ a| 
+Um aplicativo é um programa de software, como SQL ou Exchange.
+
+
+
+ a| 
+CPU
+ a| 
+CPU é curto para "unidade de processamento central". CPU indica a porcentagem da capacidade de processamento da matriz de armazenamento sendo usada.
+
+
+
+ a| 
+Host
+ a| 
+Um host é um servidor que envia e/S para um volume em um storage array.
+
+
+
+ a| 
+IOPS
+ a| 
+IOPS significa operações de entrada/saída por segundo.
+
+
+
+ a| 
+Latência
+ a| 
+Latência é o intervalo de tempo entre uma solicitação, como para um comando de leitura ou gravação, e a resposta do host ou do storage array.
+
+
+
+ a| 
+LUN
+ a| 
+Um número de unidade lógica (LUN) é o número atribuído ao espaço de endereço que um host usa para acessar um volume. O volume é apresentado ao host como capacidade na forma de um LUN.
+
+Cada host tem seu próprio espaço de endereço LUN. Portanto, o mesmo LUN pode ser usado por diferentes hosts para acessar diferentes volumes.
+
+
+
+ a| 
+MIB
+ a| 
+MIB é uma abreviatura de mebibyte (mega byte binário). Um MIB é 220, ou 1.048.576 bytes. Compare com MB, que significa um valor base 10. Um MB equivale a 1.024 bytes.
+
+
+
+ a| 
+Objeto
+ a| 
+Um objeto é qualquer componente de storage lógico ou físico.
+
+Os objetos lógicos incluem grupos de volumes, pools e volumes. Os objetos físicos incluem o storage array, controladores de array, hosts e unidades.
+
+
+
+ a| 
+Piscina
+ a| 
+Um pool é um conjunto de unidades que é agrupado logicamente. Você pode usar um pool para criar um ou mais volumes acessíveis a um host. (Você cria volumes a partir de um pool ou de um grupo de volumes.)
+
+
+
+ a| 
+Leia
+ a| 
+A leitura é abreviada para "operação de leitura", que ocorre quando o host solicita dados do storage array.
+
+
+
+ a| 
+Volume
+ a| 
+Um volume é um contêiner no qual aplicativos, bancos de dados e sistemas de arquivos armazenam dados. É o componente lógico criado para que o host acesse o storage no storage array.
+
+Um volume é criado a partir da capacidade disponível em um pool ou em um grupo de volumes. Um volume tem uma capacidade definida. Embora um volume possa consistir em mais de uma unidade, um volume aparece como um componente lógico para o host.
+
+
+
+ a| 
+Nome do volume
+ a| 
+Um nome de volume é uma cadeia de carateres atribuída ao volume quando é criado. Você pode aceitar o nome padrão ou fornecer um nome mais descritivo indicando o tipo de dados armazenados no volume.
+
+
+
+ a| 
+Grupo de volume
+ a| 
+Um grupo de volumes é um contentor para volumes com caraterísticas compartilhadas. Um grupo de volumes tem uma capacidade definida e um nível RAID. Você pode usar um grupo de volumes para criar um ou mais volumes acessíveis a um host. (Você cria volumes a partir de um grupo de volumes ou de um pool.)
+
+
+
+ a| 
+Workload
+ a| 
+Um workload é um objeto de storage compatível com uma aplicação. Você pode definir uma ou mais cargas de trabalho ou instâncias por aplicação. Para alguns aplicativos, o sistema configura a carga de trabalho para conter volumes com caraterísticas de volume subjacentes semelhantes. Essas características de volume são otimizadas com base no tipo de aplicação compatível com o workload. Por exemplo, se você criar uma carga de trabalho que suporte um aplicativo Microsoft SQL Server e, posteriormente, criar volumes para essa carga de trabalho, as caraterísticas de volume subjacentes serão otimizadas para oferecer suporte ao Microsoft SQL Server.
+
+
+
+ a| 
+Escreva
+ a| 
+A gravação é curta para "operação de gravação", quando os dados são enviados do host para o array para armazenamento.
+
+|===

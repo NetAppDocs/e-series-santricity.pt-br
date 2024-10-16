@@ -1,0 +1,41 @@
+---
+permalink: sm-support/view-autosupport-log.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, view, autosupport, log 
+summary: O log do AutoSupport fornece informações sobre status, histórico de despacho e erros encontrados durante a entrega de despachos do AutoSupport. 
+---
+= Ver log do AutoSupport
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O log do AutoSupport fornece informações sobre status, histórico de despacho e erros encontrados durante a entrega de despachos do AutoSupport.
+
+.Sobre esta tarefa
+Podem existir vários ficheiros de registo. Quando o arquivo de log atual atinge 200 KB, ele é arquivado e um novo arquivo de log é criado. O nome do arquivo de log arquivado é `ASUPMessages.n`, onde _n_ é um número inteiro de 1 a 9. Se existirem vários ficheiros de registo, pode optar por visualizar o registo mais atual ou um registo anterior.
+
+* * Registro atual* -- mostra uma lista dos últimos eventos capturados.
+* *Registro arquivado* -- mostra uma lista de eventos anteriores.
+
+
+.Passos
+. Selecione menu:suporte[Centro de suporte > AutoSupport].
+. Selecione *Ver Registo AutoSupport*.
++
+É apresentada uma caixa de diálogo que lista o registo AutoSupport atual.
+
+. Se você quiser ver os logs anteriores do AutoSupport, selecione o botão de opção *Arquivado* e selecione um log na lista suspensa *Selecionar log* AutoSupport.
++
+A opção Arquivado aparece apenas se existirem registos arquivados na matriz de armazenamento.
+
++
+O log AutoSupport selecionado é exibido na caixa de diálogo.
+
+. *Opcional:* para pesquisar o log do AutoSupport, digite um termo na caixa *Localizar* e clique em *Localizar*.
++
+Clique em *Find* novamente para procurar ocorrências adicionais do termo.
+
+

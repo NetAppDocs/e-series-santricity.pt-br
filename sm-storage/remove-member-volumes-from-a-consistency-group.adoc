@@ -1,0 +1,34 @@
+---
+permalink: sm-storage/remove-member-volumes-from-a-consistency-group.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, remove, member volume, snapshot, consistency group 
+summary: Você pode remover um volume de membro de um grupo de consistência de snapshot existente. 
+---
+= Remover um volume de membro de um grupo de consistência de snapshot
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode remover um volume de membro de um grupo de consistência de snapshot existente.
+
+.Sobre esta tarefa
+Quando você remove um volume de membro de um grupo de consistência de snapshot, o System Manager exclui automaticamente os objetos de snapshot associados a esse volume de membro.
+
+.Passos
+. Selecione menu:armazenamento[instantâneos].
+. Clique na guia *Snapshot Consistency Groups* (grupos de consistência de instantâneos).
+. Expanda o grupo de consistência de snapshot que você deseja modificar selecionando o sinal de mais ao lado dele.
+. Selecione o volume do membro que deseja remover e clique em *Remover*.
+. Confirme se deseja executar a operação e clique em *Remover*.
+
+
+.Resultados
+O System Manager executa as seguintes ações:
+
+* Elimina todas as imagens instantâneas e volumes instantâneos associados ao volume membro.
+* Exclui o grupo instantâneo associado ao volume do membro.
+* O volume do membro não é alterado ou eliminado de outra forma.
+

@@ -1,0 +1,80 @@
+---
+permalink: sm-settings/configure-snmp-alerts.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, configure, snmp, alerts, 
+summary: 'Para configurar alertas SNMP (Simple Network Management Protocol), você deve identificar pelo menos um servidor onde o monitor de eventos da matriz de armazenamento pode enviar traps SNMP. A configuração requer um nome de comunidade ou um nome de usuário e um endereço IP para o servidor.' 
+---
+= Configurar alertas SNMP
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Para configurar alertas SNMP (Simple Network Management Protocol), você deve identificar pelo menos um servidor onde o monitor de eventos da matriz de armazenamento pode enviar traps SNMP. A configuração requer um nome de comunidade ou um nome de usuário e um endereço IP para o servidor.
+
+.Antes de começar
+* Um servidor de rede deve ser configurado com um aplicativo de serviço SNMP. Você precisa do endereço de rede deste servidor (um endereço IPv4 ou IPv6), para que o monitor de eventos possa enviar mensagens de intercetação para esse endereço. Você pode usar mais de um servidor (até 10 servidores são permitidos).
+* O arquivo de base de informações de gerenciamento (MIB) foi copiado e compilado no servidor com o aplicativo de serviço SNMP. Este arquivo MIB define os dados que estão sendo monitorados e gerenciados.
++
+Se você não tiver o arquivo MIB, poderá obtê-lo no site de suporte da NetApp:
+
++
+** Vá para https://mysupport.netapp.com/site/global/dashboard["Suporte à NetApp"^].
+** Clique na guia *Downloads* e selecione *Downloads*.
+** Clique em *e-Series SANtricity os Controller Software*.
+** Selecione *Download Latest Release*.
+** Inicie sessão.
+** Aceite a declaração de precaução e o contrato de licença.
+** Role para baixo até ver o arquivo MIB para o tipo de controlador e clique no link para fazer o download do arquivo.
+
+
+
+
+.Sobre esta tarefa
+Esta tarefa descreve como identificar o servidor SNMP para destinos de intercetação e, em seguida, testar sua configuração.
+
+.Passos
+. Selecione menu:Definições[Alertas].
+. Selecione a guia *SNMP*.
++
+Na primeira configuração, a guia SNMP exibe "Configurar Comunidades/usuários".
+
+. Selecione *Configurar Comunidades/usuários*.
++
+Abre-se a caixa de diálogo Selecionar versão SNMP.
+
+. Selecione a versão SNMP para os alertas, *SNMPv2c* ou *SNMPv3*.
++
+Dependendo da seleção, a caixa de diálogo Configurar Comunidades ou a caixa de diálogo Configurar usuários SNMPv3 será aberta.
+
+. Siga as instruções apropriadas para SNMPv2c (comunidades) ou SNMPv3 (usuários):
++
+** *SNMPv2c (comunidades)* -- na caixa de diálogo Configurar Comunidades, insira uma ou mais strings de comunidade para os servidores de rede. Um nome de comunidade é uma cadeia de carateres que identifica um conjunto conhecido de estações de gerenciamento e é normalmente criado por um administrador de rede. Consiste apenas em carateres ASCII imprimíveis. Você pode adicionar até 256 comunidades. Quando terminar, clique em *Guardar*.
+** *SNMPv3 (usuários)* -- na caixa de diálogo Configurar SNMPv3 usuários, clique em *Adicionar* e insira as seguintes informações:
++
+*** *Nome do usuário* -- Digite um nome para identificar o usuário, que pode ter até 31 carateres.
+*** *Engine ID* -- Selecione o Engine ID, que é usado para gerar chaves de autenticação e criptografia para mensagens, e deve ser exclusivo no domínio administrativo. Na maioria dos casos, você deve selecionar *local*. Se você tiver uma configuração não padrão, selecione *Custom*; outro campo aparece onde você deve inserir o ID do mecanismo autorizado como uma cadeia hexadecimal, com um número par de carateres entre 10 e 32 carateres.
+*** *Credenciais de autenticação* -- Selecione um protocolo de autenticação, que garante a identidade dos usuários. Em seguida, introduza uma palavra-passe de autenticação, que é necessária quando o protocolo de autenticação é definido ou alterado. A senha deve ter entre 8 e 128 carateres.
+*** *Credenciais de privacidade* -- Selecione um protocolo de privacidade, que é usado para criptografar o conteúdo das mensagens. Em seguida, introduza uma palavra-passe de privacidade, que é necessária quando o protocolo de privacidade é definido ou alterado. A senha deve ter entre 8 e 128 carateres. Quando terminar, clique em *Adicionar* e, em seguida, clique em *Fechar*.
+
+
+
+
+. Na página Alertas com a guia SNMP selecionada, clique em *Adicionar destinos de armadilha*.
++
+A caixa de diálogo Adicionar destinos de armadilha é aberta.
+
+. Insira um ou mais destinos de armadilha, selecione seus nomes de comunidade ou de usuário associados e clique em *Adicionar*.
++
+** *Trap Destination* -- Digite um endereço IPv4 ou IPv6 do servidor executando um serviço SNMP.
+** *Nome da comunidade ou Nome do usuário* -- na lista suspensa, selecione o nome da comunidade (SNMPv2c) ou nome de usuário (SNMPv3) para esse destino de armadilha. (Se você definiu apenas um, o nome já aparece neste campo.)
+** *Send Authentication Failure Trap* -- Selecione essa opção (a caixa de seleção) se você quiser alertar o destino da armadilha sempre que uma solicitação SNMP for rejeitada por causa de um nome de comunidade ou nome de usuário não reconhecido. Depois de clicar em *Add*, os destinos de intercetação e os nomes associados aparecem na guia *SNMP* da página *Alerts*.
+
+
+. Para se certificar de que uma armadilha é válida, selecione um destino de armadilha na tabela e clique em *destino de armadilha de teste* para enviar uma armadilha de teste para o endereço configurado.
+
+
+.Resultados
+O monitor de eventos envia traps SNMP para o(s) servidor(es) sempre que ocorre um evento alertable.

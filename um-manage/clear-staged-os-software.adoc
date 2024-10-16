@@ -1,0 +1,28 @@
+---
+permalink: um-manage/clear-staged-os-software.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, clear, staged, os, software 
+summary: Você pode remover o software de sistema operacional em estágios para garantir que uma versão pendente não seja ativada inadvertidamente posteriormente. A remoção do software do SO em estágio não afeta a versão atual que está sendo executada nos storages de armazenamento. 
+---
+= Limpar o software de SO faseado
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode remover o software de sistema operacional em estágios para garantir que uma versão pendente não seja ativada inadvertidamente posteriormente. A remoção do software do SO em estágio não afeta a versão atual que está sendo executada nos storages de armazenamento.
+
+.Passos
+. Na visualização principal, selecione *Manage* e, em seguida, selecione menu:Centro de Atualização[Clear Staged os Software].
++
+A caixa de diálogo Clear Staged os Software abre e lista todos os sistemas de armazenamento descobertos com software pendente ou NVSRAM.
+
+. Se necessário, filtre ou classifique os sistemas de storage na lista para que você possa visualizar todos os sistemas que tenham feito o software em estágios.
+. Marque as caixas de seleção dos sistemas de armazenamento com software pendente que você deseja desmarcar.
+. Clique em *Limpar*.
++
+O estado da operação é apresentado na caixa de diálogo.
+
+

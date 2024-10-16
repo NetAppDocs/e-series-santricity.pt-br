@@ -1,0 +1,28 @@
+---
+permalink: sm-settings/what-is-cache-flushing.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, cache, flushing, 
+summary: Quando a quantidade de dados não escritos no cache atinge um determinado nível, o controlador grava periodicamente dados em cache em uma unidade. Este processo de gravação é chamado de lavagem. 
+---
+= O que é a lavagem de cache?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Quando a quantidade de dados não escritos no cache atinge um determinado nível, o controlador grava periodicamente dados em cache em uma unidade. Este processo de gravação é chamado de "lavagem".
+
+O controlador usa dois algoritmos para a lavagem do cache: Baseado na demanda e baseado em idade. O controlador usa um algoritmo baseado em demanda até que a quantidade de dados em cache caia abaixo do limite de descarga do cache. Por padrão, um flush começa quando 80% do cache está em uso.
+
+No System Manager, você pode definir o limite "'Start Demand cache flushing'" para melhor suportar o tipo de e/S usado em seu ambiente. Em um ambiente que é principalmente operações de gravação, você deve definir a porcentagem de ""Limpeza de cache de demanda inicial"" alta para aumentar a probabilidade de que quaisquer novas solicitações de gravação possam ser processadas pelo cache sem ter que ir para o disco. Uma configuração de porcentagem alta limita o número de fluxos de cache para que mais dados permaneçam no cache, o que aumenta a chance de mais acertos no cache.
+
+Em um ambiente onde a e/S é irregular (com picos de dados), você pode usar a lavagem de cache baixo para que o sistema flushes o cache frequentemente entre picos de dados. Em um ambiente de e/S diversificado que processa uma variedade de cargas, ou quando o tipo de cargas é desconhecido, defina o limite em 50% como um bom meio-terra. Esteja ciente de que, se você escolher uma porcentagem inicial inferior a 80%, poderá ver uma redução no desempenho porque os dados necessários para uma leitura de host podem não estar disponíveis. Escolher uma porcentagem menor também aumenta o número de gravações de disco necessárias para manter o nível de cache, o que aumenta a sobrecarga do sistema.
+
+O algoritmo baseado em idade especifica o período de tempo durante o qual os dados de gravação podem permanecer no cache antes de serem elegíveis para serem lavados para os discos. Os controladores usam o algoritmo baseado em idade até que o limite de descarga do cache seja atingido. O padrão é de 10 segundos, mas esse período de tempo é contado apenas durante períodos de inatividade. Você não pode modificar o tempo de flush no System Manager; em vez disso, você deve usar o comando *Set Storage Array* na interface de linha de comando (CLI).
+
+[CAUTION]
+====
+*Possível perda de dados* -- se você ativar a opção *armazenamento em cache sem baterias* e não tiver uma fonte de alimentação universal para proteção, você pode perder dados. Além disso, você pode perder dados se não tiver baterias do controlador e ativar a opção *armazenamento em cache sem baterias*.
+
+====

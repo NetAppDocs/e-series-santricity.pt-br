@@ -1,0 +1,31 @@
+---
+permalink: sm-settings/why-cant-i-log-in.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, log, in, login 
+summary: Se receber um erro ao tentar iniciar sessão no System Manager, reveja estas possíveis causas. 
+---
+= Por que não consigo fazer login?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se receber um erro ao tentar iniciar sessão no System Manager, reveja estas possíveis causas.
+
+Erros de login no System Manager podem ocorrer por um destes motivos:
+
+* Introduziu um nome de utilizador ou palavra-passe incorreto.
+* Você não tem Privileges suficiente.
+* O servidor de diretório (se configurado) pode estar indisponível. Se for esse o caso, tente fazer login com uma função de usuário local.
+* Tentou iniciar sessão sem sucesso várias vezes, o que acionou o modo de bloqueio. Aguarde 10 minutos para voltar a iniciar sessão.
+* Uma condição de bloqueio foi acionada e seu log de auditoria pode estar cheio. Aceda a Gestão de Acesso e elimine eventos antigos do registo de auditoria.
+* A autenticação SAML está ativada. Atualize seu navegador para fazer login.
+
+
+Erros de login em um storage array remoto para tarefas de espelhamento podem ocorrer por um destes motivos:
+
+* Introduziu uma palavra-passe incorreta.
+* Tentou iniciar sessão sem sucesso várias vezes, o que acionou o modo de bloqueio. Aguarde 10 minutos para iniciar sessão novamente.
+* O número máximo de conexões de cliente usadas no controlador foi atingido. Verifique se há vários usuários ou clientes.
+

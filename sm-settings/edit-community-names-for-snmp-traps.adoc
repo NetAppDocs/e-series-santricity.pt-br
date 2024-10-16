@@ -1,0 +1,31 @@
+---
+permalink: sm-settings/edit-community-names-for-snmp-traps.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, edit, communities, smpv2c, traps, 
+summary: Você pode editar nomes de comunidade para SNMPv2c armadilhas. 
+---
+= Edite comunidades para SNMPv2c armadilhas
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode editar nomes de comunidade para SNMPv2c armadilhas.
+
+.Antes de começar
+Um nome de comunidade deve ser criado.
+
+.Passos
+. Selecione menu:Definir[Alertas].
+. Selecione a guia *SNMP*.
++
+Os destinos da armadilha e os nomes da comunidade aparecem na tabela.
+
+. Selecione *Configurar Comunidades*.
+. Digite o novo nome da comunidade e clique em *Salvar*. Os nomes da comunidade podem consistir apenas em carateres ASCII imprimíveis.
+
+
+.Resultados
+A guia SNMP da página Alertas exibe o nome da comunidade atualizado.

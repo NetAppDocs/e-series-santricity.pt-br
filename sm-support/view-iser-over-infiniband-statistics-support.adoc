@@ -1,0 +1,34 @@
+---
+permalink: sm-support/view-iser-over-infiniband-statistics-support.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, view, iser, over, infiniband, statistics 
+summary: Se a controladora do storage array incluir uma porta iSER over InfiniBand, você poderá visualizar os dados sobre as conexões de host. 
+---
+= Visualizar estatísticas do iSER em InfiniBand
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se a controladora do storage array incluir uma porta iSER over InfiniBand, você poderá visualizar dados sobre as conexões de host.
+
+.Sobre esta tarefa
+O System Manager mostra os seguintes tipos de estatísticas iSER over InfiniBand. Todas as estatísticas são apenas de leitura e não podem ser definidas.
+
+* *Estatísticas locais de destino (protocolo)* -- fornece estatísticas para o destino iSER over InfiniBand, que mostra acesso em nível de bloco a sua Mídia de storage.
+* *ISER over InfiniBand Interface statistics* -- fornece estatísticas para todas as portas iSER na interface InfiniBand, que inclui estatísticas de desempenho e informações de erro de link associadas a cada porta de switch.
+
+
+Você pode visualizar cada uma dessas estatísticas como estatísticas em bruto ou como estatísticas de linha de base. As estatísticas em bruto são todas as estatísticas que foram coletadas desde que os controladores foram iniciados. As estatísticas da linha de base são estatísticas pontuais que foram reunidas desde que você definiu o tempo da linha de base.
+
+.Passos
+. Selecione menu:guia Support [Support Center > Diagnostics] (suporte > Centro de suporte > Diagnóstico).
+. Selecione *View iSER over InfiniBand Statistics*.
+. Clique num separador para ver os diferentes conjuntos de estatísticas.
+. Para definir a linha de base, clique em *Definir nova linha de base*.
++
+Definir a linha de base define um novo ponto de partida para a coleção das estatísticas. A mesma linha de base é usada para todas as estatísticas iSER over InfiniBand.
+
+

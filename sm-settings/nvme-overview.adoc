@@ -1,0 +1,48 @@
+---
+permalink: sm-settings/nvme-overview.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, nvme, 
+summary: 'Algumas controladoras incluem uma porta para implementar o NVMe (Non-Volatile Memory Express) em Fabrics. O NVMe possibilita a comunicação de alto desempenho entre os hosts e o storage array.' 
+---
+= Visão geral do NVMe
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Algumas controladoras incluem uma porta para implementar o NVMe (Non-Volatile Memory Express) em Fabrics. O NVMe possibilita a comunicação de alto desempenho entre os hosts e o storage array.
+
+
+
+== O que é o NVMe?
+
+_NVM_ significa "memória não volátil" e é memória persistente usada em muitos tipos de dispositivos de armazenamento. O _NVMe_ (NVM Express) é uma interface ou protocolo padronizado projetado especificamente para comunicação em várias filas de alto desempenho com dispositivos NVM.
+
+
+
+== O que é o NVMe sobre Fabrics?
+
+O _NVMe over Fabrics (NVMe-of)_ é uma especificação de tecnologia que permite que comandos e dados baseados em mensagens NVMe transfiram entre um computador host e o storage em uma rede. Um storage array NVMe (chamado de _subsistema_) pode ser acessado por um host usando uma malha. Os comandos NVMe são ativados e encapsulados em camadas de abstração de transporte no lado do host e no lado do subsistema. Isso estende a interface NVMe de alto desempenho de ponta a ponta do host para o storage, padronizando e simplificando o conjunto de comandos.
+
+O storage NVMe-of é apresentado a um host como um dispositivo de storage de bloco local. O volume (chamado de _namespace_) pode ser montado em um sistema de arquivos como em qualquer outro dispositivo de armazenamento de bloco. Você pode usar a API REST, o SMcli ou o Gerenciador de sistemas do SANtricity para provisionar seu storage conforme necessário.
+
+
+
+== O que é um nome qualificado do NVMe (NQN)?
+
+O nome qualificado do NVMe (NQN) é usado para identificar o destino do storage remoto. O nome qualificado do NVMe para o storage array sempre é atribuído pelo subsistema e não pode ser modificado. Há apenas um nome qualificado do NVMe para todo o array. O nome qualificado do NVMe está limitado a 223 carateres. Pode compará-lo com um nome qualificado iSCSI.
+
+
+
+== O que é um namespace e um ID de namespace?
+
+Um namespace é o equivalente a uma unidade lógica no SCSI, que se relaciona a um volume no array. O ID do namespace (NSID) é equivalente a um número de unidade lógica (LUN) no SCSI. Você cria o NSID no tempo de criação do namespace e pode configurá-lo para um valor entre 1 e 255.
+
+
+
+== O que é uma controladora NVMe?
+
+Semelhante a um Nexus I_T SCSI, que representa o caminho do iniciador do host para o destino do sistema de storage, uma controladora NVMe criada durante o processo de conexão do host fornece um caminho de acesso entre um host e os namespaces no storage array. Um NQN para o host, além de um identificador de porta do host, identifica exclusivamente um controlador NVMe. Embora um controlador NVMe só possa ser associado a um único host, ele pode acessar vários namespaces.
+
+Você configura quais hosts podem acessar quais namespaces e definir o ID do namespace para o host usando o Gerenciador de sistema do SANtricity. Em seguida, quando a controladora NVMe é criada, a lista de IDs de namespace acessíveis pela controladora NVMe é criada e usada para configurar as conexões permitidas.

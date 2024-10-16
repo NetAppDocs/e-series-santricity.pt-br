@@ -1,0 +1,16 @@
+---
+permalink: sm-storage/what-does-the-cpu-graph-show.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, cpu, graph, show, capacity, statistics, controller 
+summary: 'O gráfico da CPU exibe estatísticas de capacidade de processamento para cada controlador (controlador A e controlador B). CPU é uma abreviatura para unidade de processamento central. Na página inicial, este gráfico exibe estatísticas para a matriz de armazenamento. Na guia Exibição física do bloco desempenho, esse gráfico exibe estatísticas para o storage de armazenamento e unidades.' 
+---
+= O que o gráfico da CPU mostra?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O gráfico da CPU exibe estatísticas de capacidade de processamento para cada controlador (controlador A e controlador B). CPU é uma abreviatura para _central processing unit_. Na página inicial, este gráfico exibe estatísticas para a matriz de armazenamento. Na guia Exibição física do bloco desempenho, esse gráfico exibe estatísticas para o storage de armazenamento e unidades.
+
+O gráfico da CPU mostra a porcentagem da capacidade de processamento da CPU que está sendo usada em relação às operações no array. Mesmo quando nenhuma e/S externa está ocorrendo, a porcentagem de utilização da CPU pode não ser zero porque o sistema operacional de armazenamento pode estar fazendo operações e monitoramento em segundo plano. Passe o cursor sobre um ponto no gráfico para ver uma percentagem da capacidade de processamento que está a ser utilizada nesse momento.

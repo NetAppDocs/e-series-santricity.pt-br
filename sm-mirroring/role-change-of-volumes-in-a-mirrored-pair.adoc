@@ -1,0 +1,58 @@
+---
+permalink: sm-mirroring/role-change-of-volumes-in-a-mirrored-pair.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, role, change, between, volume, mirrored, pair, 
+summary: Você pode alterar a função entre volumes em um par espelhado. Você pode fazer isso rebaixando o volume primário para a função secundária ou promovendo o volume secundário para a função principal. 
+---
+= Mudança de função entre volumes em um par espelhado
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode alterar a função entre volumes em um par espelhado. Você pode fazer isso rebaixando o volume primário para a função secundária ou promovendo o volume secundário para a função principal.
+
+[NOTE]
+====
+O espelhamento síncrono não está disponível no sistema de storage EF600 ou EF300.
+
+====
+Reveja as seguintes informações sobre a operação de mudança de função:
+
+* Quando um volume primário é rebaixado para a função secundária, o volume secundário nesse par espelhado é promovido para a função primária e vice-versa.
+* Quando o volume primário é rebaixado para a função secundária, os hosts que foram atribuídos a esse volume não têm mais acesso de gravação a ele.
+* Quando o volume secundário é promovido à função principal, todos os hosts que estiverem acessando esse volume agora poderão gravar nele.
+* Se a matriz de armazenamento local não conseguir se comunicar com a matriz de armazenamento remoto, você pode forçar a alteração de função na matriz de armazenamento local.
+
+
+
+
+== Forçar mudança de função
+
+Você pode forçar uma mudança de função entre volumes em um par espelhado quando um problema de comunicação entre o storage array local e o storage array remoto estiver impedindo a promoção do volume secundário ou a rebaixamento do volume primário.
+
+Você pode forçar o volume no lado secundário a fazer a transição para a função principal. Em seguida, o host de recuperação pode acessar o volume recém-promovido e as operações de negócios podem continuar.
+
+[NOTE]
+====
+Quando a matriz de armazenamento remoto for recuperada e quaisquer problemas de comunicação tiverem sido resolvidos, ocorre uma condição de conflito de espelhamento síncrono - volume primário. As etapas de recuperação incluem ressincronizar os volumes. Use o Recovery Guru para recuperar desse erro.
+
+====
+
+
+== Quando é permitida uma promoção forçada e não é permitida?
+
+A promoção forçada de um volume em um par espelhado não é permitida nas seguintes condições:
+
+* Qualquer um dos volumes em um par espelhado está no processo de uma sincronização inicial.
+* O par espelhado está nos estados Falha, mudança de função pendente ou mudança de função em andamento ou se algum dos volumes de capacidade reservada associados estiver com falha.
+
+
+
+
+== Mudança de função no estado em andamento
+
+Se dois storage arrays em uma configuração de espelhamento forem desconetados e o volume primário de um par espelhado for forçado a ser rebaixado para uma função secundária, e o volume secundário de um par espelhado for forçado a uma função primária, então, quando a comunicação for restaurada, os volumes em ambos os storage arrays serão colocados no estado de mudança de função em andamento.
+
+O sistema concluirá o processo de mudança de função transferindo os logs de mudança, sincronizando novamente, definindo o estado do par espelhado de volta para um estado operacional normal e continuando com as sincronizações.

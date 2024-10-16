@@ -1,0 +1,55 @@
+---
+permalink: sm-hardware/overview-hardware.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, hardware, page, 
+summary: Você pode verificar o status do componente na página hardware e executar algumas funções relacionadas a esses componentes. 
+---
+= Visão geral dos componentes de hardware
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode verificar o status do componente na página hardware e executar algumas funções relacionadas a esses componentes.
+
+
+
+== Que componentes posso gerir?
+
+Pode verificar o estado do componente e executar algumas funções relacionadas com estes componentes:
+
+* **Prateleiras** -- Um _shelf_ é um componente que contém o hardware do storage array (controladores, coletores de energia/ventilador e unidades). As gavetas estão disponíveis em três tamanhos para acomodar até 12, 24 ou 60 unidades.
+* **Controladores** -- Um _controller_ é o hardware e firmware combinados que implementa funções de storage e gerenciamento. Ele inclui a memória cache, o suporte da unidade e as portas para conexões de host.
+* **Unidades** -- Uma _unidade_ pode ser uma unidade de disco rígido (HDD) ou uma unidade de estado sólido (SSD). Dependendo do tamanho da gaveta, até 12, 24 ou 60 unidades podem ser instaladas na gaveta.
+
+
+Saiba mais:
+
+* link:hardware-page-overview.html["Página de hardware"]
+* link:hardware-terminology.html["Terminologia de hardware"]
+
+
+
+
+== Como posso ver componentes de hardware?
+
+Vá para a página hardware, que fornece uma representação gráfica dos componentes físicos da matriz de armazenamento. Você pode alternar entre as vistas frontal e traseira das prateleiras de matriz selecionando a guia *Drives* ou *Controllers* no canto superior direito da exibição de prateleira.
+
+Saiba mais:
+
+* link:view-shelf-component-status-and-settings.html["Exibir o status e as configurações do componente do compartimento"]
+* link:view-controller-settings.html["Ver as definições do controlador"]
+* link:view-drive-status-and-settings.html["Ver o estado e as definições da unidade"]
+
+
+
+
+= Informações relacionadas
+
+Saiba mais sobre conceitos relacionados ao hardware:
+
+* link:controller-states.html["estados do controlador"]
+* link:drive-states.html["estados da unidade"]
+* link:what-is-shelf-loss-protection-and-drawer-loss-protection.html["Proteção contra perda de prateleira e proteção contra perda de gaveta"]
+

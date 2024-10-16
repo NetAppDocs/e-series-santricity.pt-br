@@ -1,0 +1,25 @@
+---
+permalink: um-manage/what-settings-will-be-imported.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, settings, imported, feature, loads, configurations 
+summary: O recurso Importar configurações é uma operação em lote que carrega configurações de uma matriz de armazenamento para várias matrizes de armazenamento. As configurações que são importadas durante essa operação dependem de como o storage de origem é configurado no Gerenciador do sistema do SANtricity. 
+---
+= Que definições serão importadas?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O recurso Importar configurações é uma operação em lote que carrega configurações de uma matriz de armazenamento para várias matrizes de armazenamento. As configurações importadas durante essa operação dependem de como o storage de armazenamento de origem é configurado no System Manager.
+
+As seguintes configurações podem ser importadas para vários storages de armazenamento:
+
+* *Alertas por e-mail* -- as configurações incluem um endereço de servidor de e-mail e os endereços de e-mail dos destinatários do alerta.
+* *Alertas Syslog* -- as configurações incluem um endereço de servidor syslog e uma porta UDP.
+* *Alertas SNMP* -- as configurações incluem um nome de comunidade e endereço IP para o servidor SNMP.
+* *AutoSupport* -- as configurações incluem os recursos separados (AutoSupport Básico, OnDemand do AutoSupport e Diagnóstico remoto), a janela de manutenção, o método de entrega e o cronograma de envio.
+* *Serviços de diretório* -- a configuração inclui o nome de domínio e URL de um servidor LDAP (Lightweight Directory Access Protocol), juntamente com os mapeamentos para os grupos de usuários do servidor LDAP para as funções predefinidas do storage array.
+* *Configuração de armazenamento* -- as configurações incluem volumes (somente volumes espessos e somente não-repositórios), grupos de volumes, pools e atribuições de unidades hot spare.
+* * Configurações do sistema* -- as configurações incluem configurações de varredura de Mídia para um volume, cache SSD para controladores e balanceamento de carga automático (não inclui relatórios de conetividade do host).
+

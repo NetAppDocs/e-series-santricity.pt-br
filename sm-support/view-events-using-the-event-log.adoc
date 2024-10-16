@@ -1,0 +1,167 @@
+---
+permalink: sm-support/view-events-using-the-event-log.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, view, events, 
+summary: Você pode exibir o log de eventos, que fornece um Registro histórico de eventos que ocorreram no storage array. 
+---
+= Exibir eventos usando o log de eventos
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode exibir o log de eventos, que fornece um Registro histórico de eventos que ocorreram no storage array.
+
+.Passos
+. Selecione menu:suporte[Registo de eventos].
++
+É apresentada a página Registo de eventos.
+
++
+.Detalhes da página
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Item | Descrição 
+
+
+ a| 
+Exibir todos campo
+ a| 
+Alterna entre todos os eventos e apenas os eventos críticos e de aviso.
+
+
+
+ a| 
+Campo de filtro
+ a| 
+Filtra os eventos. Útil para exibir apenas eventos relacionados a um componente específico, um evento específico, etc.
+
+
+
+ a| 
+Selecione o ícone colunas.
+ a| 
+Permite selecionar outras colunas para visualizar. Outras colunas fornecem informações adicionais sobre o evento.
+
+
+
+ a| 
+Caixas de verificação
+ a| 
+Permite-lhe selecionar os eventos a guardar. A caixa de seleção no cabeçalho da tabela seleciona todos os eventos.
+
+
+
+ a| 
+Coluna Data/hora
+ a| 
+O carimbo de data e hora do evento, de acordo com o relógio do controlador.
+
+
+NOTE: O log de eventos inicialmente classifica os eventos com base no número de sequência. Normalmente, esta sequência corresponde à data e hora. No entanto, os dois relógios do controlador no storage de armazenamento podem ser dessincronizados. Nesse caso, algumas inconsistências percebidas podem aparecer no log de eventos em relação aos eventos e à data e hora mostradas.
+
+
+
+ a| 
+Coluna de prioridade
+ a| 
+Estes valores de prioridade existem:
+
+** *Critical* -- existe um problema com a matriz de armazenamento. No entanto, se você tomar medidas imediatas, pode impedir a perda de acesso aos dados. Eventos críticos são usados para notificações de alerta. Todos os eventos críticos são enviados para qualquer cliente de gerenciamento de rede (por meio de traps SNMP) ou para o destinatário de e-mail que você configurou.
+** *Aviso* -- ocorreu um erro que degradou o desempenho e a capacidade do storage de recuperar de outro erro.
+** *Informational* -- informações não críticas relacionadas ao storage array.
+
+
+
+
+ a| 
+Coluna tipo componente
+ a| 
+O componente que é afetado pelo evento. O componente pode ser hardware, como uma unidade ou um controlador, ou pode ser software, como firmware do controlador.
+
+
+
+ a| 
+Coluna localização dos componentes
+ a| 
+A localização física do componente no storage array.
+
+
+
+ a| 
+Coluna de descrição
+ a| 
+Uma descrição do evento.
+
+*Exemplo* -- `Drive write failure - retries exhausted`
+
+
+
+ a| 
+Coluna de número de sequência
+ a| 
+Um número de 64 bits que identifica exclusivamente uma entrada de log específica para uma matriz de armazenamento. Esse número aumenta em um com cada nova entrada de log de eventos. Para exibir essas informações, clique no ícone *Selecionar colunas*.
+
+
+
+ a| 
+Coluna tipo evento
+ a| 
+Um número de 4 dígitos que identifica cada tipo de evento registrado. Para exibir essas informações, clique no ícone *Selecionar colunas*.
+
+
+
+ a| 
+Coluna códigos específicos do evento
+ a| 
+Esta informação é usada pelo suporte técnico. Para exibir essas informações, clique no ícone *Selecionar colunas*.
+
+
+
+ a| 
+Coluna Categoria evento
+ a| 
+** **Falha** – Um componente no storage de armazenamento falhou; por exemplo, falha na unidade ou falha da bateria.
+** **Mudança de estado** – um elemento da matriz de armazenamento que mudou de estado; por exemplo, um volume fez a transição para o status ideal ou um controlador fez a transição para o status Offline.
+** **Interno** – operações internas do controlador que não exigem ação do usuário; por exemplo, o controlador concluiu o início do dia.
+** **Comando** – Um comando que foi emitido para o storage array; por exemplo, um hot spare foi atribuído.
+** **Erro** – uma condição de erro foi detetada no storage de armazenamento; por exemplo, um controlador não consegue sincronizar e purgar o cache, ou um erro de redundância é detetado no storage de armazenamento.
+** **Geral** – qualquer evento que não se encaixe bem em qualquer outra categoria. Para exibir essas informações, clique no ícone **Selecionar colunas**.
+
+
+
+
+ a| 
+Registrado por coluna
+ a| 
+O nome do controlador que registrou o evento. Para exibir essas informações, clique no ícone **Selecionar colunas**.
+
+|===
+====
+. Para recuperar novos eventos da matriz de armazenamento, clique em **Atualizar**.
++
+Pode demorar vários minutos para que um evento seja registrado e fique visível na página Registro de eventos.
+
+. Para salvar o log de eventos em um arquivo:
++
+.. Marque a caixa de seleção ao lado de cada evento que você deseja salvar.
+.. Clique em *Salvar*.
++
+O arquivo é salvo na pasta Downloads do navegador com o nome `major-event-log-timestamp.log`.
+
+
+
+. Para limpar eventos do log de eventos:
++
+O log de eventos armazena aproximadamente 8.000 eventos antes de substituir um evento por um novo evento. Se você quiser manter os eventos, você pode salvá-los e limpá-los do log de eventos.
+
++
+.. Primeiro, salve o log de eventos.
+.. Clique em *Clear All* (Limpar tudo) e confirme que pretende executar a operação.
+
+
+

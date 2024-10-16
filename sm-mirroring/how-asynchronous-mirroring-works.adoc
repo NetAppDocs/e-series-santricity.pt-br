@@ -1,0 +1,85 @@
+---
+permalink: sm-mirroring/how-asynchronous-mirroring-works.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, asynchronous, mirroring, 
+summary: O espelhamento assíncrono copia volumes de dados sob demanda ou de acordo com o cronograma, o que minimiza ou evita o tempo de inatividade que pode resultar de corrupção ou perda de dados. 
+---
+= Como o espelhamento assíncrono funciona
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O espelhamento assíncrono copia volumes de dados sob demanda ou de acordo com o cronograma, o que minimiza ou evita o tempo de inatividade que pode resultar de corrupção ou perda de dados.
+
+O espelhamento assíncrono captura o estado do volume primário em um determinado momento no tempo e copia apenas os dados que foram alterados desde a última captura de imagem. O site principal pode ser atualizado imediatamente e o site secundário pode ser atualizado como a largura de banda permite. As informações são armazenadas em cache e enviadas posteriormente, à medida que os recursos de rede ficam disponíveis.
+
+Esse tipo de espelhamento é ideal para atender a demanda por operações ininterruptas e, em geral, é muito mais eficiente em rede para processos periódicos, como backup e arquivamento. Os motivos para usar o espelhamento assíncrono incluem o seguinte:
+
+* Consolidação remota de backup.
+* Proteja-se contra desastres locais ou em áreas amplas.
+* Desenvolvimento e teste de aplicativos em uma imagem pontual de dados ao vivo.
+
+
+
+
+== Sessão de espelhamento assíncrono
+
+O espelhamento assíncrono captura o estado do volume primário em um determinado momento no tempo e copia apenas os dados que foram alterados desde a última captura de imagem. O espelhamento assíncrono permite que o site primário seja atualizado imediatamente e o site secundário seja atualizado conforme a largura de banda o permita. As informações são armazenadas em cache e enviadas posteriormente, à medida que os recursos de rede ficam disponíveis.
+
+Há quatro etapas principais em uma sessão de espelhamento assíncrono ativo.
+
+image::../media/sam-1130-dwg-async-mirroring-session.gif[sam 1130 dwg sessão de espelhamento assíncrono]
+
+. Uma operação de gravação ocorre primeiro no storage array do volume primário.
+. O status da operação é retornado ao host.
+. Todas as alterações no volume primário são registadas e monitorizadas.
+. Todas as alterações são enviadas para a matriz de armazenamento do volume secundário como um processo em segundo plano.
+
+
+Estes passos são repetidos de acordo com os intervalos de sincronização definidos ou os passos podem ser repetidos manualmente se não forem definidos intervalos.
+
+O espelhamento assíncrono transfere dados para o local remoto apenas em intervalos definidos, para que a e/S local não seja afetada quase tanto por conexões de rede lentas. Como essa transferência não está vinculada à e/S local, ela não afeta o desempenho do aplicativo. Portanto, o espelhamento assíncrono pode usar conexões mais lentas, como iSCSI, e executar em distâncias maiores entre os sistemas de armazenamento local e remoto.
+
+Os storage arrays devem ter uma versão mínima de firmware de 7,84. (Cada um deles pode executar diferentes versões do sistema operacional.)
+
+
+
+== Grupos de consistência espelhada e pares espelhados
+
+Você cria um grupo de consistência de espelho para estabelecer a relação de espelhamento entre o storage array local e o storage array remoto. A relação de espelhamento assíncrono consiste em um par espelhado: Um volume primário em um storage array e um volume secundário em outro storage array.
+
+O storage array que contém o volume primário geralmente está localizado no local principal e serve os hosts ativos. O storage array que contém o volume secundário geralmente fica em um local secundário e contém uma réplica dos dados. O volume secundário normalmente contém uma cópia de backup dos dados e é usado para recuperação de desastres.
+
+
+
+== Definições de sincronização
+
+Ao criar um par espelhado, você também define a prioridade de sincronização e a política de ressincronização que o par espelhado usa para concluir a operação de ressincronização após uma interrupção de comunicação.
+
+Ao criar um grupo de consistência de espelho, você também define a prioridade de sincronização e a política de ressincronização para todos os pares espelhados dentro do grupo. Os pares espelhados usam a política de prioridade de sincronização e ressincronização para concluir a operação de ressincronização após uma interrupção de comunicação.
+
+Os volumes primário e secundário em um par espelhado podem ficar não sincronizados quando o storage array do volume primário não consegue gravar dados no volume secundário. Esta condição pode ser causada pelos seguintes problemas:
+
+* Problemas de rede entre os storages de armazenamento local e remoto.
+* Um volume secundário com falha.
+* Sincronização sendo suspensa manualmente no par espelhado.
+* Conflito de função do grupo de espelhos.
+
+
+É possível sincronizar dados no storage de armazenamento remoto manualmente ou automaticamente.
+
+
+
+== Capacidade reservada e espelhamento assíncrono
+
+A capacidade reservada é usada para acompanhar as diferenças entre o volume primário e secundário quando a sincronização não está ocorrendo. Ele também mantém o controle das estatísticas de sincronização para cada par espelhado.
+
+Cada volume em um par espelhado requer sua própria capacidade reservada.
+
+
+
+== Configuração e gerenciamento
+
+Para ativar e configurar o espelhamento entre dois arrays, você deve usar a interface do Unified Manager. Quando o espelhamento estiver ativado, você poderá gerenciar pares espelhados e configurações de sincronização no System Manager.

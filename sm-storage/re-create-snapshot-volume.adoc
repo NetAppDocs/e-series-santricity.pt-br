@@ -1,0 +1,61 @@
+---
+permalink: sm-storage/re-create-snapshot-volume.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, re-create, snapshot, volume 
+summary: Você pode criar novamente um volume instantâneo ou um volume instantâneo do grupo de consistência de snapshot que você desativou anteriormente. A recriação de um volume instantâneo demora menos tempo do que a criação de um novo. 
+---
+= Recriar o volume instantâneo
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode criar novamente um volume instantâneo ou um volume instantâneo do grupo de consistência de snapshot que você desativou anteriormente. A recriação de um volume instantâneo demora menos tempo do que a criação de um novo.
+
+.Antes de começar
+* O volume instantâneo deve estar no estado ideal ou Desativado.
+* Todos os volumes instantâneos de membros devem estar em um estado Desativado antes de poder recriar o volume instantâneo do grupo de consistência de instantâneos.
+
+
+.Sobre esta tarefa
+Não é possível recriar um volume de instantâneo individual de membro; você pode recriar apenas o volume de instantâneo geral do grupo de consistência de instantâneo.
+
+[NOTE]
+====
+Se o volume instantâneo do volume do instantâneo ou do grupo de consistência do instantâneo fizer parte de uma relação de cópia online, não poderá efetuar a opção recriar no volume.
+
+====
+.Passos
+. Selecione menu:armazenamento[instantâneos].
+. Selecione a guia *volumes instantâneos*.
++
+A tabela volumes de Snapshot é exibida e exibe todos os volumes de snapshot associados ao storage array.
+
+. Selecione o volume instantâneo que pretende recriar e, em seguida, selecione menu:tarefas incomuns[recriar].
++
+A caixa de diálogo recriar volume instantâneo é exibida.
+
+. Selecione uma das seguintes opções:
++
+** *Uma imagem instantânea existente criada a partir do volume <name>*
++
+Selecione esta opção para indicar uma imagem instantânea existente a partir da qual pretende recriar o volume instantâneo.
+
+** *Uma nova imagem instantânea do volume <name>*
++
+Selecione esta opção para criar uma nova imagem instantânea a partir da qual recriar o volume instantâneo.
+
+
+
+. Clique em *recriar*.
+
+
+.Resultados
+O System Manager executa as seguintes ações:
+
+* Exclui todos `write` os dados em qualquer volume de repositório instantâneo associado.
+* Os parâmetros do volume instantâneo do volume do instantâneo do grupo de consistência do instantâneo permanecem os mesmos que os parâmetros de volume anteriormente desativados.
+* Retém os nomes originais do volume instantâneo ou do volume instantâneo do grupo de consistência de instantâneos.
+

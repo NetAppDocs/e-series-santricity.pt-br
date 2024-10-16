@@ -1,0 +1,87 @@
+---
+permalink: sm-settings/change-saml-role-mappings.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, change, saml, role, mappings, 
+summary: Se você configurou o SAML para Gerenciamento de Acesso anteriormente, poderá alterar os mapeamentos de função entre os grupos de IDP e as funções predefinidas do storage array. 
+---
+= Alterar mapeamentos de função SAML
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se você configurou o SAML para Gerenciamento de Acesso anteriormente, poderá alterar os mapeamentos de função entre os grupos de IDP e as funções predefinidas do storage array.
+
+.Antes de começar
+* Você deve estar conetado com um perfil de usuário que inclua permissões de administrador de segurança. Caso contrário, as funções de Gerenciamento de Acesso não aparecem.
+* Um administrador de IDP configurou atributos de usuário e associação de grupo no sistema de IDP.
+* O SAML está configurado e ativado.
+
+
+.Passos
+. Selecione menu:Definições[Gestão de Acesso].
+. Selecione a guia *SAML*.
+. Selecione *Mapeamento de função*.
++
+A caixa de diálogo Mapeamento de função é aberta.
+
+. Atribua atributos de usuário e grupos IDP às funções predefinidas. Um grupo pode ter várias funções atribuídas.
++
+[CAUTION]
+====
+Tenha cuidado para não remover suas permissões enquanto o SAML estiver habilitado, ou você perderá o acesso ao System Manager.
+
+====
++
+.Detalhes do campo
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Definição | Descrição 
+
+
+ a| 
+*Mapeamentos*
+
+
+
+ a| 
+Atributo do utilizador
+ a| 
+Especifique o atributo (por exemplo, "membro de") para o grupo SAML a ser mapeado.
+
+
+
+ a| 
+Valor do atributo
+ a| 
+Especifique o valor do atributo para o grupo a ser mapeado.
+
+
+
+ a| 
+Funções
+ a| 
+Clique no campo e selecione uma das funções do storage array a ser mapeada para o atributo. Você deve selecionar individualmente cada função que deseja incluir para esse grupo. A função Monitor é necessária em combinação com as outras funções para iniciar sessão no System Manager. Uma função de administrador de segurança deve ser atribuída a pelo menos um grupo. As funções mapeadas incluem as seguintes permissões:
+
+** *Storage admin* -- Acesso completo de leitura/gravação aos objetos de armazenamento (por exemplo, volumes e pools de discos), mas sem acesso à configuração de segurança.
+** *Admin de segurança* -- Acesso à configuração de segurança em Gerenciamento de acesso, gerenciamento de certificados, gerenciamento de log de auditoria e a capacidade de ativar ou desativar a interface de gerenciamento legada (símbolo).
+** *Support admin* -- Acesso a todos os recursos de hardware na matriz de armazenamento, dados de falha, eventos mel e atualizações de firmware do controlador. Sem acesso a objetos de armazenamento ou à configuração de segurança.
+** *Monitor* -- Acesso somente leitura a todos os objetos de armazenamento, mas sem acesso à configuração de segurança.
+
+
+|===
+====
++
+
+NOTE: A função Monitor é necessária para todos os usuários, incluindo o administrador. O System Manager não funcionará corretamente para nenhum usuário sem a função Monitor presente.
+
+. Opcionalmente, clique em *Adicionar outro mapeamento* para inserir mais mapeamentos de grupo para função.
+. Clique em *Salvar*.
+
+
+.Resultados
+Depois de concluir esta tarefa, todas as sessões ativas do utilizador são encerradas. Apenas a sessão de utilizador atual é mantida.

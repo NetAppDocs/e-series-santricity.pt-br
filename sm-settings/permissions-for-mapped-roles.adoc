@@ -1,0 +1,27 @@
+---
+permalink: sm-settings/permissions-for-mapped-roles.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, permissions, mapped, roles, 
+summary: 'Os recursos RBAC (controle de acesso baseado em função) aplicados no storage array incluem perfis de usuário predefinidos com uma ou mais funções mapeadas. Cada função inclui permissões para acessar tarefas no Gerenciador de sistema do SANtricity.' 
+---
+= Permissões para funções mapeadas
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Os recursos RBAC (controle de acesso baseado em função) aplicados no storage array incluem perfis de usuário predefinidos com uma ou mais funções mapeadas. Cada função inclui permissões para acessar tarefas no System Manager.
+
+Os perfis de utilizador e as funções mapeadas são acessíveis a partir do menu:Definições[Gestão de acessos > funções de utilizador local] na interface de utilizador de qualquer Gestor de sistema.
+
+As funções fornecem acesso do usuário a tarefas, como segue:
+
+* *Storage admin* -- Acesso completo de leitura/gravação aos objetos de armazenamento (por exemplo, volumes e pools de discos), mas sem acesso à configuração de segurança.
+* *Admin de segurança* -- Acesso à configuração de segurança em Gerenciamento de acesso, gerenciamento de certificados, gerenciamento de log de auditoria e a capacidade de ativar ou desativar a interface de gerenciamento legada (símbolo).
+* *Support admin* -- Acesso a todos os recursos de hardware na matriz de armazenamento, dados de falha, eventos mel e atualizações de firmware do controlador. Sem acesso a objetos de armazenamento ou à configuração de segurança.
+* *Monitor* -- Acesso somente leitura a todos os objetos de armazenamento, mas sem acesso à configuração de segurança.
+
+
+Se um usuário não tiver permissões para uma determinada tarefa, essa tarefa será exibida em cinza ou não será exibida na interface do usuário.

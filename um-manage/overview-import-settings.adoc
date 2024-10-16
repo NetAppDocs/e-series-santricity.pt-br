@@ -1,0 +1,41 @@
+---
+permalink: um-manage/overview-import-settings.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, import, settings 
+summary: Você pode importar configurações de um storage array para outro, incluindo alertas, AutoSupport e serviços de diretório. 
+---
+= Descrição geral das definições de importação
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O recurso Importar configurações permite que você execute uma operação em lote para importar as configurações de uma matriz para várias matrizes. Esse recurso economiza tempo quando você precisa configurar vários arrays na rede.
+
+
+
+== Que definições podem ser importadas?
+
+Você pode importar métodos de alerta, configurações do AutoSupport, configurações dos Serviços de diretório, configurações de armazenamento (como grupos de volumes e pools) e configurações do sistema (como balanceamento de carga automático).
+
+Saiba mais:
+
+* link:how-import-settings-works.html["Como as Configurações de importação funcionam"]
+* link:requirements-for-replicating-storage-configurations.html["Requisitos para replicação de configurações de storage"]
+
+
+
+
+== Como faço para executar uma importação em lote?
+
+Em uma matriz de armazenamento a ser usada como fonte, abra o System Manager e configure as configurações desejadas. Em seguida, no Unified Manager, vá para a página Gerenciar e importe as configurações para um ou mais arrays.
+
+Saiba mais:
+
+* link:import-alert-settings.html["Importar definições de alerta"]
+* link:import-autosupport-settings.html["Importar definições do AutoSupport"]
+* link:import-directory-services-settings.html["Importar definições dos serviços de diretório"]
+* link:import-storage-configuration-settings.html["Importar definições de configuração de armazenamento"]
+* link:import-system-settings.html["Importar definições do sistema"]
+

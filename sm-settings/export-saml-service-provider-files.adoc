@@ -1,0 +1,48 @@
+---
+permalink: sm-settings/export-saml-service-provider-files.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, export, saml, Service Provider, files, 
+summary: 'Se necessário, você pode exportar metadados do provedor de serviços para o storage array e importar novamente o(s) arquivo(s) para o sistema de provedor de identidade (IDP).' 
+---
+= Exporte arquivos do provedor de serviços SAML
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se necessário, você pode exportar metadados do provedor de serviços para o storage array e importar novamente o(s) arquivo(s) para o sistema de provedor de identidade (IDP).
+
+.Antes de começar
+* Você deve estar conetado com um perfil de usuário que inclua permissões de administrador de segurança. Caso contrário, as funções de Gerenciamento de Acesso não aparecem.
+* O SAML está configurado e ativado.
+
+
+.Sobre esta tarefa
+Nessa tarefa, você exporta metadados dos controladores (um arquivo para cada controlador). O IDP precisa desses metadados para estabelecer uma relação de confiança com os controladores e processar solicitações de autenticação. O arquivo inclui informações como o nome de domínio do controlador ou endereço IP que o IDP pode usar para enviar solicitações.
+
+.Passos
+. Selecione menu:Definições[Gestão de Acesso].
+. Selecione a guia *SAML*.
+. Selecione *Exportar*.
++
+A caixa de diálogo Exportar ficheiros do fornecedor de serviços abre-se.
+
+. Para cada controlador, clique em *Exportar* para guardar o ficheiro de metadados no sistema local.
++
+[NOTE]
+====
+Os campos de nome de domínio para cada controlador são somente leitura.
+
+====
++
+Anote onde o arquivo é armazenado.
+
+. No sistema local, localize o(s) arquivo(s) de metadados do provedor de serviços que você exportou.
++
+Há um arquivo formatado em XML para cada controlador.
+
+. No servidor IDP, importe o(s) arquivo(s) de metadados do provedor de serviços. Você pode importar os arquivos diretamente ou inserir manualmente as informações do controlador a partir deles.
+. Clique em *Fechar*.
+

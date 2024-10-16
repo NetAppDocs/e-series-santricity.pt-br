@@ -1,0 +1,58 @@
+---
+permalink: sm-settings/cache-settings-and-performance.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, cache, settings, performance, 
+summary: A memória cache é uma área de armazenamento temporário volátil no controlador que tem um tempo de acesso mais rápido do que a Mídia da unidade. 
+---
+= Configurações de cache e desempenho
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A memória cache é uma área de armazenamento temporário volátil no controlador que tem um tempo de acesso mais rápido do que a Mídia da unidade.
+
+Com o armazenamento em cache, o desempenho geral de e/S pode ser aumentado da seguinte forma:
+
+* Os dados solicitados do host para uma leitura podem já estar no cache de uma operação anterior, eliminando assim a necessidade de acesso à unidade.
+* Gravar dados é gravado inicialmente no cache, o que libera o aplicativo para continuar em vez de esperar que os dados sejam gravados na unidade.
+
+
+As configurações padrão de cache atendem aos requisitos da maioria dos ambientes, mas você pode alterá-las se desejar.
+
+
+
+== Configurações de cache da matriz de armazenamento
+
+Para todos os volumes no storage array, você pode especificar os seguintes valores na página sistema:
+
+* *Valor inicial para lavagem* -- a porcentagem de dados não escritos no cache que aciona um flush cache (gravação no disco). Quando o cache mantém a porcentagem de início especificada de dados não escritos, um flush é acionado. Por padrão, o controlador começa a limpar o cache quando o cache atinge 80 por cento cheio.
+* *Cache block size* -- o tamanho máximo de cada bloco de cache, que é uma unidade organizacional para gerenciamento de cache. O tamanho do bloco de cache é por padrão 8 KiB, mas pode ser definido como 4, 8, 16 ou 32 KiB. Idealmente, o tamanho do bloco de cache deve ser definido para o tamanho de e/S predominante de suas aplicações. Sistemas de arquivos ou aplicativos de banco de dados geralmente usam tamanhos menores, enquanto um tamanho maior é bom para aplicativos que exigem transferência de dados grande ou e/S sequenciais
+
+
+
+
+== Definições de cache de volume
+
+Para volumes individuais em uma matriz de armazenamento, você pode especificar os seguintes valores na página volumes (menu:armazenamento[volumes]):
+
+* *Read caching* -- o cache de leitura é um buffer que armazena dados que foram lidos das unidades. Os dados para uma operação de leitura podem já estar no cache de uma operação anterior, o que elimina a necessidade de acessar as unidades. Os dados permanecem no cache de leitura até que sejam lavados.
++
+** * Pré-busca de cache de leitura dinâmica* -- Pré-busca de leitura de cache dinâmico permite que o controlador copie blocos de dados sequenciais adicionais para o cache enquanto ele está lendo blocos de dados de uma unidade para o cache. Esse armazenamento em cache aumenta a chance de que futuras solicitações de dados possam ser preenchidas a partir do cache. A pré-busca de leitura de cache dinâmico é importante para aplicativos Multimídia que usam e/S sequenciais A taxa e a quantidade de dados pré-obtidos no cache são auto-ajustáveis com base na taxa e no tamanho da solicitação das leituras do host. O acesso aleatório não faz com que os dados sejam pré-obtidos no cache. Este recurso não se aplica quando o armazenamento em cache de leitura está desativado.
+
+
+* *Write caching* -- o cache de gravação é um buffer que armazena dados do host que ainda não foram gravados nas unidades. Os dados permanecem no cache de gravação até que sejam gravados nas unidades. O armazenamento em cache de gravação pode aumentar a performance de e/S.
++
+[CAUTION]
+====
+*Possível perda de dados* -- se você ativar a opção *armazenamento em cache sem baterias* e não tiver uma fonte de alimentação universal para proteção, você pode perder dados. Além disso, você pode perder dados se não tiver baterias do controlador e ativar a opção *armazenamento em cache sem baterias*.
+
+====
++
+** *Armazenamento em cache sem baterias* -- a configuração armazenamento em cache sem baterias permite que o armazenamento em cache continue, mesmo quando as baterias estiverem faltando, falharem, descarregadas completamente ou não estiverem totalmente carregadas. Normalmente, a escolha do armazenamento em cache sem baterias não é recomendada, pois os dados podem ser perdidos se perder energia. Normalmente, o armazenamento em cache de gravação é desligado temporariamente pelo controlador até que as baterias sejam carregadas ou uma bateria com falha seja substituída.
+** *Armazenamento em cache com espelhamento* -- o armazenamento em cache com espelhamento ocorre quando os dados gravados na memória cache de um controlador também são gravados na memória de cache do outro controlador. Portanto, se um controlador falhar, o outro pode concluir todas as operações de gravação pendentes. O espelhamento do cache de gravação estará disponível somente se o armazenamento em cache de gravação estiver habilitado e duas controladoras estiverem presentes. O armazenamento em cache de gravação com espelhamento é a configuração padrão na criação de volume.
+
+
+

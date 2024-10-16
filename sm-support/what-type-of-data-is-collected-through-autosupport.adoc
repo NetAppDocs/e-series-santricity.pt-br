@@ -1,0 +1,42 @@
+---
+permalink: sm-support/what-type-of-data-is-collected-through-autosupport.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, data, collected, autosupport, ASUP 
+summary: 'O recurso AutoSupport contém três tipos de despacho padrão: Despachos de eventos, despachos programados e despachos de diagnóstico remoto e sob demanda.' 
+---
+= Que tipo de dados são recolhidos através da funcionalidade AutoSupport?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O recurso AutoSupport contém três tipos de despacho padrão: Despachos de eventos, despachos programados e despachos de diagnóstico remoto e sob demanda.
+
+Os dados do AutoSupport não contêm nenhum dado de usuário.
+
+* *Envios de eventos*
++
+Quando ocorrem eventos no sistema que garantem uma notificação proativa ao suporte técnico, o recurso AutoSupport envia automaticamente um despacho acionado por evento.
+
++
+** Enviado quando ocorre um evento de suporte no storage array gerenciado.
+** Inclui um snapshot abrangente do que estava acontecendo com o storage array no momento em que o evento ocorreu.
+
+
+* *Despachos programados*
++
+O recurso AutoSupport envia automaticamente vários despachos em um horário regular.
+
++
+** *Despachos diários* -- enviados uma vez por dia durante um intervalo de tempo configurável pelo usuário. Inclui os registos de eventos e dados de desempenho do sistema atuais.
+** *Expedições semanais* -- enviadas uma vez por semana durante um intervalo de tempo e dia configuráveis pelo usuário. Inclui informações de configuração e estado do sistema.
+
+
+* *AutoSupport OnDemand e despachos de Diagnóstico remoto*
++
+** *AutoSupport OnDemand* -- permite que o suporte técnico solicite a retransmissão de um despacho AutoSupport anterior quando necessário para solucionar um problema. Todas as transmissões são iniciadas a partir da matriz de armazenamento, não do servidor AutoSupport. A matriz de armazenamento verifica periodicamente com o servidor AutoSupport para determinar se existem solicitações de retransmissão pendentes e responde de acordo.
+** *Diagnóstico remoto* -- permite que o suporte técnico solicite um novo e atualizado despacho do AutoSupport quando necessário para solucionar um problema. Todas as transmissões são iniciadas a partir da matriz de armazenamento, não do servidor AutoSupport. O storage array verifica periodicamente com o servidor AutoSupport para determinar se há novas solicitações pendentes e responde de acordo.
+
+
+

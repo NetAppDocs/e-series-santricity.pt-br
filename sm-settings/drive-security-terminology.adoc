@@ -1,0 +1,91 @@
+---
+permalink: sm-settings/drive-security-terminology.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, drive, security, terms, 
+summary: Saiba como os termos de segurança da unidade se aplicam à sua matriz de armazenamento. 
+---
+= Terminologia de segurança da unidade
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Saiba como os termos de segurança da unidade se aplicam à sua matriz de armazenamento.
+
+[cols="25h,~"]
+|===
+| Prazo | Descrição 
+
+
+ a| 
+Recurso de segurança da unidade
+ a| 
+O Drive Security é um recurso de storage array que fornece uma camada extra de segurança com unidades de criptografia completa de disco (FDE) ou unidades FIPS (Federal Information Processing Standard). Quando essas unidades são usadas com o recurso Segurança da Unidade, elas precisam de uma chave de segurança para acessar seus dados. Quando as unidades são fisicamente removidas do array, elas não podem operar até serem instaladas em outro array, em que ponto, elas estarão em um estado de segurança bloqueado até que a chave de segurança correta seja fornecida.
+
+
+
+ a| 
+Unidades FDE
+ a| 
+As unidades Full Disk Encryption (FDE) executam a encriptação na unidade de disco no nível do hardware. O disco rígido contém um chip ASIC que criptografa dados durante gravações e, em seguida, descriptografa dados durante leituras.
+
+
+
+ a| 
+Unidades FIPS
+ a| 
+As unidades FIPS usam Federal Information Processing Standards (FIPS) 140-2 nível 2. Eles são essencialmente unidades FDE que aderem aos padrões do governo dos Estados Unidos para garantir algoritmos e métodos de criptografia fortes. As unidades FIPS têm padrões de segurança mais altos do que as unidades FDE.
+
+
+
+ a| 
+Cliente de gestão
+ a| 
+Um sistema local (computador, tablet, etc.) que inclui um navegador para acessar o System Manager.
+
+
+
+ a| 
+Frase-passe
+ a| 
+A frase-passe é usada para criptografar a chave de segurança para fins de backup. A mesma frase-passe usada para criptografar a chave de segurança deve ser fornecida quando a chave de segurança de backup for importada como resultado de uma migração de unidade ou troca de cabeça. Uma frase-passe pode ter entre 8 e 32 carateres.
+
+[NOTE]
+====
+A frase-passe para o Drive Security é independente da senha do Administrador do storage.
+
+====
+
+
+ a| 
+Unidades com capacidade de segurança
+ a| 
+As unidades com capacidade segura podem ser unidades com criptografia total de disco (FDE) ou unidades FIPS (Federal Information Processing Standard), que criptografam dados durante gravações e descriptografam dados durante leituras. Essas unidades são consideradas seguras-_Capable_ porque podem ser usadas para segurança adicional usando o recurso Segurança da Unidade. Se o recurso Segurança da unidade estiver habilitado para grupos de volume e pools usados com essas unidades, as unidades se tornarão seguras-_enabled_.
+
+
+
+ a| 
+Unidades habilitadas para segurança
+ a| 
+As unidades habilitadas para segurança são usadas com o recurso Segurança da unidade. Quando você ativa o recurso de Segurança da Unidade e, em seguida, aplica o Drive Security a um pool ou grupo de volume em unidades seguras-_capazes_, as unidades ficam seguras___ ativadas. O acesso de leitura e gravação está disponível somente por meio de um controlador configurado com a chave de segurança correta. Essa segurança adicional impede o acesso não autorizado aos dados em uma unidade que é fisicamente removida do storage array.
+
+
+
+ a| 
+Chave de segurança
+ a| 
+Uma chave de segurança é uma cadeia de carateres que é compartilhada entre as unidades e controladores habilitados para segurança em um storage array. Sempre que a alimentação das unidades é desligada e ligada, as unidades ativadas por segurança mudam para um estado de Segurança bloqueada até que o controlador aplique a chave de segurança. Se uma unidade habilitada para segurança for removida da matriz de armazenamento, os dados da unidade serão bloqueados. Quando a unidade é reinstalada em uma matriz de armazenamento diferente, ela procura a chave de segurança antes de tornar os dados acessíveis novamente. Para desbloquear os dados, tem de aplicar a chave de segurança original. Você pode criar e gerenciar chaves de segurança usando um dos seguintes métodos:
+
+* Gerenciamento de chaves internas -- criar e manter chaves de segurança na memória persistente do controlador.
+* Gerenciamento de chaves externas -- Crie e mantenha chaves de segurança em um servidor de gerenciamento de chaves externo.
+
+
+
+
+ a| 
+Identificador da chave de segurança
+ a| 
+O identificador da chave de segurança é uma cadeia de carateres associada à chave de segurança durante a criação da chave. O identificador é armazenado no controlador e em todas as unidades associadas à chave de segurança.
+
+|===

@@ -1,0 +1,46 @@
+---
+permalink: sm-settings/synchronize-storage-array-clocks.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, synchronize, storage, array, clocks, 
+summary: 'Se o Protocolo de tempo de rede (NTP) não estiver ativado, você poderá definir manualmente os relógios nos controladores para que eles sejam sincronizados com o cliente de gerenciamento (o sistema usado para executar o navegador que acessa o Gerenciador de sistema do SANtricity).' 
+---
+= Sincronizar relógios de storage array
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se o Network Time Protocol (NTP) não estiver ativado, você poderá definir manualmente os relógios nos controladores para que eles sejam sincronizados com o cliente de gerenciamento (o sistema usado para executar o navegador que acessa o System Manager).
+
+.Sobre esta tarefa
+A sincronização garante que os carimbos de hora do evento no registo de eventos correspondem aos carimbos de hora gravados nos ficheiros de registo do anfitrião. Durante o processo de sincronização, os controladores permanecem disponíveis e operacionais.
+
+[NOTE]
+====
+Se o NTP estiver ativado no System Manager, não use esta opção para sincronizar relógios. Em vez disso, o NTP sincroniza automaticamente os relógios com um host externo usando SNTP (Simple Network Time Protocol).
+
+====
+[NOTE]
+====
+Após a sincronização, você pode notar que as estatísticas de desempenho são perdidas ou distorcidas, as programações são afetadas (ASUP, snapshots, etc.) e os carimbos de hora nos dados de log são distorcidos. O uso do NTP evita esse problema.
+
+====
+.Passos
+. Selecione menu:Definições[sistema].
+. Em *General*, clique em *Synchronize Storage Array Clocks*.
++
+A caixa de diálogo Sincronizar relógios de matriz de armazenamento é aberta. Mostra a data e hora atuais do(s) controlador(es) e do computador usado como cliente de gerenciamento.
+
++
+[NOTE]
+====
+Para matrizes de armazenamento simplex, apenas um controlador é apresentado.
+
+====
+. Se os horários mostrados na caixa de diálogo não corresponderem, clique em *Sincronizar*.
+
+
+.Resultados
+Depois que a sincronização for bem-sucedida, os carimbos de hora do evento são os mesmos para o log de eventos e os logs do host.

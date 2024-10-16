@@ -1,0 +1,49 @@
+---
+permalink: um-manage/import-system-settings.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, import, system, settings 
+summary: Você pode importar a configuração do sistema de um storage array para outros storage arrays. Esta operação em lote economiza tempo quando você precisa configurar vários arrays na rede. 
+---
+= Importar definições do sistema
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode importar a configuração do sistema de um storage array para outros storage arrays. Esta operação em lote economiza tempo quando você precisa configurar vários arrays na rede.
+
+.Antes de começar
+* As configurações do sistema são configuradas no System Manager para a matriz de armazenamento que você deseja usar como origem.
+* A configuração existente para os storages de armazenamento de destino é feita com backup no System Manager (menu:Configurações[sistema > Salvar configuração da matriz de armazenamento]).
+
+
+.Sobre esta tarefa
+As definições importadas incluem definições de digitalização de multimédia para um volume, definições de SSD para controladores e balanceamento de carga automático (não inclui relatórios de conetividade do anfitrião).
+
+.Passos
+. Na página Gerenciar, clique em *Importar configurações*.
++
+O assistente Importar configurações é aberto.
+
+. Na caixa de diálogo Selecionar configurações, selecione *sistema* e clique em *Avançar*.
++
+Abre-se uma caixa de diálogo para selecionar a matriz de origem.
+
+. Na caixa de diálogo Selecionar fonte, selecione a matriz com as configurações que deseja importar e clique em *Avançar*.
+. Na caixa de diálogo Selecionar destinos, selecione um ou mais arrays para receber as novas configurações.
++
+[NOTE]
+====
+Matrizes de armazenamento com firmware abaixo de 8,50 não estão disponíveis para seleção. Além disso, uma matriz não aparece nesta caixa de diálogo se o Unified Manager não puder se comunicar com essa matriz (por exemplo, se estiver offline ou se tiver problemas de certificado, senha ou rede).
+
+====
+. Clique em *Finish*.
++
+A página operações exibe os resultados da operação de importação. Se a operação falhar, você pode clicar em sua linha para ver mais informações.
+
+
+
+.Resultados
+Os storages de armazenamento de destino agora são configurados com as mesmas configurações do sistema que o array de origem.

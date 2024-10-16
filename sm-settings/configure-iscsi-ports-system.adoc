@@ -1,0 +1,147 @@
+---
+permalink: sm-settings/configure-iscsi-ports-system.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, configure, iSCSI, ports, systems 
+summary: Se o controlador incluir uma ligação de anfitrião iSCSI, pode configurar as definições da porta iSCSI a partir da página sistema. 
+---
+= Configurar portas iSCSI
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se o controlador incluir uma ligação de anfitrião iSCSI, pode configurar as definições da porta iSCSI a partir da página sistema.
+
+.Antes de começar
+* O controlador tem de incluir portas iSCSI; caso contrário, as definições iSCSI não estão disponíveis.
+* Você deve saber a velocidade da rede (a taxa de transferência de dados entre as portas e o host).
+
+
+[NOTE]
+====
+As definições e funções iSCSI só aparecem se a sua matriz de armazenamento suportar iSCSI.
+
+====
+.Passos
+. Selecione menu:Definições[sistema].
+. Em *Definições iSCSI*, selecione *Configurar portas iSCSI*.
++
+[NOTE]
+====
+A opção Configurar portas iSCSI aparece apenas se o System Manager detetar portas iSCSI no controlador.
+
+====
+. Selecione o controlador com as portas iSCSI que pretende configurar.
+. Na lista suspensa, selecione a porta que deseja configurar e clique em *Avançar*.
+. Selecione as definições da porta de configuração e, em seguida, clique em *seguinte*.
++
+Para ver todas as configurações de porta, clique no link *Mostrar mais configurações de porta* à direita da caixa de diálogo.
+
++
+.Detalhes do campo
+[%collapsible]
+====
+[cols="1a,1a"]
+|===
+| Definição da porta | Descrição 
+
+
+ a| 
+Velocidade da porta ethernet configurada (aparece apenas para determinados tipos de placas de interface de host)
+ a| 
+Selecione a velocidade que corresponde à capacidade de velocidade do SFP na porta.
+
+
+
+ a| 
+Modo de correção de erro de avanço (FEC) (aparece apenas para determinados tipos de placas de interface de host)
+ a| 
+Se desejar, selecione um dos modos FEC para a porta de host especificada.
+
+
+NOTE: O modo Reed Solomon não suporta a velocidade da porta de 25 Gbps.
+
+
+
+ a| 
+Ativar IPv4 / ativar IPv6
+ a| 
+Selecione uma ou ambas as opções para ativar o suporte para redes IPv4G e IPv6G.
+
+
+NOTE: Se pretender desativar o acesso à porta, desmarque ambas as caixas de verificação.
+
+
+
+ a| 
+Porta de escuta TCP (disponível clicando em *Mostrar mais configurações de porta*.)
+ a| 
+Se necessário, introduza um novo número de porta.
+
+A porta de escuta é o número da porta TCP que o controlador usa para ouvir logins iSCSI de iniciadores iSCSI do host. A porta de escuta padrão é 3260. Tem de introduzir 3260 ou um valor entre 49152 e 65535.
+
+
+
+ a| 
+Tamanho MTU (disponível clicando em *Mostrar mais configurações de porta*.)
+ a| 
+Se necessário, introduza um novo tamanho em bytes para a unidade máxima de transmissão (MTU).
+
+O tamanho padrão da unidade máxima de transmissão (MTU) é de 1500 bytes por quadro. Tem de introduzir um valor entre 1500 e 9000.
+
+
+
+ a| 
+Ative as respostas ICMP PING
+ a| 
+Selecione esta opção para ativar o ICMP (Internet Control Message Protocol). Os sistemas operativos dos computadores em rede utilizam este protocolo para enviar mensagens. Essas mensagens ICMP determinam se um host é acessível e quanto tempo leva para obter pacotes de e para esse host.
+
+|===
+====
++
+Se você selecionou *Ativar IPv4*, uma caixa de diálogo será aberta para selecionar IPv4 configurações depois de clicar em *Avançar*. Se você selecionou *Ativar IPv6*, uma caixa de diálogo será aberta para selecionar IPv6 configurações depois de clicar em *Avançar*. Se você selecionou ambas as opções, a caixa de diálogo para configurações IPv4 será aberta primeiro e, depois de clicar em *Avançar*, a caixa de diálogo para configurações IPv6 será aberta.
+
+. Configure as definições IPv4 e/ou IPv6, automática ou manualmente. Para ver todas as configurações de porta, clique no link *Mostrar mais configurações* à direita da caixa de diálogo.
++
+.Detalhes do campo
+[%collapsible]
+====
+[cols="1a,1a"]
+|===
+| Definição da porta | Descrição 
+
+
+ a| 
+Obter automaticamente a configuração
+ a| 
+Selecione esta opção para obter a configuração automaticamente.
+
+
+
+ a| 
+Especifique manualmente a configuração estática
+ a| 
+Selecione esta opção e, em seguida, introduza um endereço estático nos campos. (Se desejado, você pode cortar e colar endereços nos campos.) Para IPv4, inclua a máscara de sub-rede e o gateway. Para IPv6, inclua o endereço IP roteável e o endereço IP do roteador.
+
+
+
+ a| 
+Ative o suporte a VLAN (disponível clicando em *Mostrar mais configurações*.)
+ a| 
+Selecione esta opção para ativar uma VLAN e introduzir a respetiva ID. Uma VLAN é uma rede lógica que se comporta como se estivesse fisicamente separada de outras redes locais (LANs) físicas e virtuais suportadas pelos mesmos switches, os mesmos roteadores ou ambos.
+
+
+
+ a| 
+Ativar prioridade ethernet (disponível clicando em *Mostrar mais definições*.)
+ a| 
+Selecione esta opção para ativar o parâmetro que determina a prioridade de acesso à rede. Use o controle deslizante para selecionar uma prioridade entre 1 (mais baixa) e 7 (mais alta).
+
+Em um ambiente de rede local compartilhada (LAN), como Ethernet, muitas estações podem competir pelo acesso à rede. O acesso é por ordem de chegada. Duas estações podem tentar acessar a rede ao mesmo tempo, o que faz com que ambas as estações voltem e esperem antes de tentar novamente. Este processo é minimizado para Ethernet comutada, onde apenas uma estação está conetada a uma porta de switch.
+
+|===
+====
+. Clique em *Finish*.
+

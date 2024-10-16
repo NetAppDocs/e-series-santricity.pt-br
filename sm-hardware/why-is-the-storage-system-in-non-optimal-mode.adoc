@@ -1,0 +1,22 @@
+---
+permalink: sm-hardware/why-is-the-storage-system-in-non-optimal-mode.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, non-optimal, mode, 
+summary: Um sistema de armazenamento em modo não otimizado deve-se a um estado de Configuração do sistema inválido. Apesar desse estado, o acesso normal de e/S aos volumes existentes é totalmente suportado; no entanto, o System Manager proibirá algumas operações. 
+---
+= Por que o sistema de armazenamento está no modo não ideal?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Um sistema de armazenamento em modo não otimizado deve-se a um estado de Configuração do sistema inválido. Apesar desse estado, o acesso normal de e/S aos volumes existentes é totalmente suportado; no entanto, o System Manager proibirá algumas operações.
+
+Um sistema de armazenamento pode ser transferido para Configuração de sistema inválida por um destes motivos:
+
+* O controlador está fora de conformidade, possivelmente porque tem um código de ID de submodelo (SMID) incorreto ou excedeu o limite de recursos premium.
+* Uma operação de serviço interno está em andamento, como um download do firmware da unidade.
+* O controlador excedeu o limite de erro de paridade e entrou em bloqueio.
+* Ocorreu uma condição geral de bloqueio.
+

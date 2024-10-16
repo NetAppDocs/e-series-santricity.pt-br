@@ -1,0 +1,71 @@
+---
+permalink: sm-storage/how-reserved-capacity-works.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, reserved, capacity, 
+summary: A capacidade reservada é criada automaticamente quando operações de serviço de cópia, como snapshots ou operações de espelhamento assíncrono, são fornecidas para seus volumes. 
+---
+= Como funciona a capacidade reservada
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A capacidade reservada é criada automaticamente quando operações de serviço de cópia, como snapshots ou operações de espelhamento assíncrono, são fornecidas para seus volumes.
+
+O objetivo da capacidade reservada é armazenar alterações de dados nesses volumes, caso algo dê errado. Assim como volumes, a capacidade reservada é criada a partir de pools ou grupos de volumes.
+
+
+
+== Copiar objetos de serviço que usam capacidade reservada
+
+A capacidade reservada é o mecanismo de storage subjacente usado por esses objetos de serviço de cópia:
+
+* Grupos de instantâneos
+* Leitura/gravação de volumes instantâneos
+* Volumes de membros do grupo de consistência
+* Volumes de pares espelhados
+
+
+Ao criar ou expandir esses objetos de serviço de cópia, você deve criar uma nova capacidade reservada a partir de um pool ou grupo de volumes. A capacidade reservada geralmente é de 40% do volume base para operações de snapshot e 20% do volume base para operações de espelhamento assíncrono. A capacidade reservada, no entanto, varia dependendo do número de alterações nos dados originais.
+
+
+
+== Volumes finos e capacidade reservada
+
+Para um volume fino, se a capacidade máxima comunicada de 256 TIB tiver sido atingida, não poderá aumentar a sua capacidade. Certifique-se de que a capacidade reservada do volume fino está definida para um tamanho maior do que a capacidade máxima comunicada. (Um volume fino é sempre provisionado de forma fina, o que significa que a capacidade é alocada à medida que os dados estão sendo gravados no volume.)
+
+Se você criar capacidade reservada usando um thin volume em um pool, revise as seguintes ações e resultados na capacidade reservada:
+
+* Se a capacidade reservada de um volume fino falhar, o próprio volume fino não será automaticamente transferido para o estado Failed (Falha). No entanto, como todas as operações de e/S em um volume fino exigem acesso ao volume de capacidade reservada, as operações de e/S sempre farão com que uma condição de verificação seja retornada ao host solicitante. Se o problema subjacente com o volume de capacidade reservada puder ser resolvido, o volume de capacidade reservada será retornado a um estado ideal e o volume fino ficará funcional novamente.
+* Se você usar um volume thin existente para concluir um par espelhado assíncrono, esse volume fino será reinicializado com um novo volume de capacidade reservada. Somente blocos provisionados no lado primário são transferidos durante o processo de sincronização inicial.
+
+
+
+
+== Alertas de capacidade
+
+O objeto de serviço de cópia tem um aviso de capacidade configurável e um limite de alerta, bem como uma resposta configurável quando a capacidade reservada está cheia.
+
+Quando a capacidade reservada de um volume de objeto de serviço de cópia está próxima do ponto de preenchimento, um alerta é emitido para o usuário. Por padrão, esse alerta é emitido quando o volume da capacidade reservada estiver 75% cheio; no entanto, você pode ajustar esse ponto de alerta para cima ou para baixo, conforme necessário. Se você receber esse alerta, poderá aumentar a capacidade do volume de capacidade reservada nesse momento. Cada objeto de serviço de cópia pode ser configurado independentemente a este respeito.
+
+
+
+== Volumes de capacidade reservados órfãos
+
+Um volume de capacidade reservada órfão é um volume que não está mais armazenando dados para operações de serviço de cópia porque seu objeto de serviço de cópia associado foi excluído. Quando o objeto de serviço de cópia foi excluído, seu volume de capacidade reservada também deve ter sido excluído. No entanto, o volume da capacidade reservada não foi eliminado.
+
+Como os volumes de capacidade reservada órfãos não são acessados por nenhum host, eles são candidatos à recuperação. Exclua manualmente o volume de capacidade reservada órfã para que você possa usar sua capacidade para outras operações.
+
+O System Manager alerta-o sobre volumes de capacidade reservada órfãos com uma mensagem "recuperar capacidade não utilizada" na área notificações na página inicial. Você pode clicar em *recuperar capacidade não utilizada* para exibir a caixa de diálogo recuperar capacidade não utilizada, onde você pode excluir o volume de capacidade reservada órfã.
+
+
+
+== Caraterísticas da capacidade reservada
+
+* A capacidade atribuída à capacidade reservada deve ser considerada durante a criação do volume para manter uma capacidade livre suficiente.
+* A capacidade reservada pode ser menor do que o volume base (o tamanho mínimo é de 8 MIB).
+* Algum espaço é consumido por metadados, mas é muito pouco (192 KiB), por isso não precisa ser levado em consideração ao determinar o tamanho do volume de capacidade reservada.
+* A capacidade reservada não é diretamente legível ou gravável de um host.
+* Existe capacidade reservada para cada volume de snapshot de leitura/gravação, grupo de snapshot, volume de membro do grupo de consistência e volume de par espelhado.
+

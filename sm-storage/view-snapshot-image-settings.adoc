@@ -1,0 +1,28 @@
+---
+permalink: sm-storage/view-snapshot-image-settings.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, view, snapshot, image, settings 
+summary: Você pode exibir as propriedades, o status, a capacidade reservada e os objetos associados atribuídos a cada imagem instantânea. 
+---
+= Ver definições de imagem instantânea
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode exibir as propriedades, o status, a capacidade reservada e os objetos associados atribuídos a cada imagem instantânea.
+
+.Sobre esta tarefa
+Os objetos associados a uma imagem instantânea incluem o volume base ou o grupo de consistência de instantâneos para o qual esta imagem instantânea é um ponto de restauração, o grupo de instantâneos associado e quaisquer volumes de instantâneos criados a partir da imagem instantânea. Utilize as definições de instantâneos para determinar se pretende copiar ou converter a imagem instantânea.
+
+.Passos
+. Selecione menu:armazenamento[instantâneos].
+. Clique no separador *Snapshot Images* (imagens instantâneas).
+. Selecione a imagem instantânea que você deseja exibir e clique em *Exibir configurações*.
++
+É apresentada a caixa de diálogo Definições de imagem instantânea.
+
+. Ver as definições da imagem instantânea.
+

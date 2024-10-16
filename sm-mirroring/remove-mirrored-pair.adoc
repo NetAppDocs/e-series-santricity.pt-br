@@ -1,0 +1,41 @@
+---
+permalink: sm-mirroring/remove-mirrored-pair.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, remove, asynchronous, mirror, relationship, 
+summary: Você remove um par espelhado para remover a relação de espelhamento do volume primário no storage array local e o volume secundário no storage array remoto. 
+---
+= Remova a relação assíncrona do espelho
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você remove um par espelhado para remover a relação de espelhamento do volume primário no storage array local e o volume secundário no storage array remoto.
+
+.Sobre esta tarefa
+Revise as seguintes informações sobre pares espelhados órfãos:
+
+* Um par espelhado órfão existe quando um volume de membro em um grupo de espelhos de consistência foi removido de um lado (do lado do storage array local ou do lado do storage array remoto), mas não do outro lado.
+* Pares espelhados órfãos são detetados quando a comunicação inter-array é restaurada e os dois lados da configuração do espelho reconcitam os parâmetros do espelho.
+* Você pode remover um par espelhado para corrigir um estado de par espelhado órfão.
+
+
+.Passos
+. Selecione menu:armazenamento[Espelhamento assíncrono].
+. Selecione a guia *Mirrored Pair* (par espelhado).
++
+A tabela pares espelhados é exibida e exibe todos os pares espelhados associados ao storage array.
+
+. Selecione o par espelhado que deseja remover e clique em *Remover*.
+. Confirme se deseja remover o par espelhado e clique em *Remover*.
+
+
+.Resultados
+O System Manager executa as seguintes ações:
+
+* Remove a relação de espelhamento do grupo de consistência de espelho no storage de armazenamento local e no storage de armazenamento remoto e exclui a capacidade reservada.
+* Retorna o volume primário e o volume secundário para volumes não espelhados acessíveis ao host.
+* Atualiza a telha de espelhamento assíncrono com a remoção do par espelhado assíncrono.
+

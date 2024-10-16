@@ -1,0 +1,61 @@
+---
+permalink: sm-storage/add-member-volumes-to-a-snapshot-consistency-group.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, add, member, volume, snapshot consistency group 
+summary: Você pode adicionar um novo volume de membro a um grupo de consistência de snapshot existente. Quando você adiciona um novo volume de membro, você também deve reservar capacidade para o volume de membro. 
+---
+= Adicionar volume de membro a um grupo de consistência de snapshot
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode adicionar um novo volume de membro a um grupo de consistência de snapshot existente. Quando você adiciona um novo volume de membro, você também deve reservar capacidade para o volume de membro.
+
+.Antes de começar
+* O volume do membro deve ser ótimo.
+* O grupo de consistência de snapshot deve ter menos do que o número máximo de volumes permitidos (conforme definido pela configuração).
+* Cada volume de capacidade reservada deve ter as mesmas configurações de garantia de dados (DA) e segurança que o volume associado.
+
+
+.Sobre esta tarefa
+É possível adicionar volumes padrão ou volumes finos ao grupo de consistência de snapshot. O volume base pode residir em um pool ou grupo de volumes.
+
+.Passos
+. Selecione menu:armazenamento[instantâneos].
+. Selecione a guia *grupos de consistência de instantâneos*.
++
+A tabela é exibida e exibe todos os grupos de consistência de snapshot associados ao storage array.
+
+. Selecione o grupo de consistência de instantâneos que deseja modificar e clique em *Adicionar membros*.
++
+A caixa de diálogo Adicionar membros é exibida.
+
+. Selecione o(s) volume(s) de membro que pretende adicionar e clique em *seguinte*.
++
+É apresentado o passo de reserva da capacidade. A tabela volume Candidate exibe apenas os candidatos que suportam a capacidade reservada especificada.
+
+. Use a caixa giratório para alocar a capacidade reservada para o volume do membro. Execute uma das seguintes ações:
++
+** *Aceite as configurações padrão.*
++
+Use esta opção recomendada para alocar a capacidade reservada para o volume do membro com as configurações padrão.
+
+** *Aloque suas próprias configurações de capacidade reservada para atender às suas necessidades de armazenamento de dados.*
++
+Se você alterar a configuração de capacidade reservada padrão, clique em *Atualizar candidatos* para atualizar a lista de candidatos para a capacidade reservada especificada.
+
++
+Alocar a capacidade reservada usando as diretrizes a seguir.
+
++
+*** A configuração padrão para capacidade reservada é de 40% da capacidade do volume base e, geralmente, essa capacidade é suficiente.
+*** A capacidade necessária varia, dependendo da frequência e do tamanho das gravações de e/S nos volumes e da quantidade e duração da coleção de imagens instantâneas.
+
+
+
+
+. Clique em *Finish* para adicionar os volumes de membros.
+

@@ -1,0 +1,16 @@
+---
+permalink: sm-support/which-data-am-i-collecting-in-a-customer-support-bundle.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, data, collection, autosupport, ASUP 
+summary: O recurso AutoSupport e o recurso manual de coleta de dados de suporte fornecem maneiras de coletar dados em um pacote de suporte ao cliente para solução remota de problemas e análise de problemas por suporte técnico. 
+---
+= Que dados estou coletando?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O recurso AutoSupport e o recurso manual de coleta de dados de suporte fornecem maneiras de coletar dados em um pacote de suporte ao cliente para solução remota de problemas e análise de problemas por suporte técnico.
+
+O pacote de suporte ao cliente reúne todos os tipos de informações sobre a matriz de armazenamento em um único arquivo compactado. As informações coletadas incluem a configuração física, configuração lógica, informações de versão, eventos, arquivos de log e dados de desempenho. As informações são usadas apenas pelo suporte técnico para resolver problemas com o storage array.

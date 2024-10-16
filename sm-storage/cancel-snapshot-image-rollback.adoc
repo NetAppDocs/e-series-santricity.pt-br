@@ -1,0 +1,43 @@
+---
+permalink: sm-storage/cancel-snapshot-image-rollback.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, cancel, snapshot, image, rollback 
+summary: 'Você pode cancelar uma reversão ativa em andamento (cópia ativa de dados), uma reversão pendente (em uma fila pendente aguardando recursos para iniciar) ou uma reversão que tenha sido pausada devido a um erro.' 
+---
+= Cancelar reversão de imagem instantânea
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode cancelar uma reversão ativa em andamento (cópia ativa de dados), uma reversão pendente (em uma fila pendente aguardando recursos para iniciar) ou uma reversão que tenha sido pausada devido a um erro.
+
+.Sobre esta tarefa
+Quando você cancela uma operação de reversão em andamento, o volume base reverte para um estado inutilizável e aparece como falhou. Portanto, considere cancelar uma operação de reversão somente quando existirem opções de recuperação para restaurar o conteúdo do volume base.
+
+[NOTE]
+====
+Se o grupo de instantâneos no qual a imagem instantânea reside tiver uma ou mais imagens instantâneas que foram eliminadas automaticamente, a imagem instantânea usada para a operação de reversão pode não estar disponível para futuros rollbacks.
+
+====
+.Passos
+. Selecione menu:armazenamento[instantâneos].
+. Clique no separador *Snapshot Images* (imagens instantâneas).
+. Selecione a reversão ativa ou pausada e, em seguida, selecione menu:Repor[Cancelar].
++
+A caixa de diálogo confirmar Cancelar reversão é exibida.
+
+. Clique em *Yes* para confirmar.
+
+
+.Resultados
+O System Manager pára a operação de reversão. O volume base é utilizável, mas pode ter dados inconsistentes ou não intactos.
+
+.Depois de terminar
+Depois de cancelar uma operação de reversão, você deve executar uma das seguintes ações:
+
+* Reinicializar o conteúdo do volume base.
+* Execute uma nova operação de reversão para restaurar o volume base usando a mesma imagem de snapshot usada na operação Cancelar reversão ou uma imagem de snapshot diferente para executar a nova operação de reversão.
+

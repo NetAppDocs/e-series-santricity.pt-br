@@ -1,0 +1,58 @@
+---
+permalink: sm-settings/access-management-tokens-create.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, access management, create tokens 
+summary: Você pode criar tokens de acesso, que são usados para autenticar com a API REST ou interface de linha de comando em vez de um nome de usuário e senha. 
+---
+= Crie tokens de acesso
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode criar um token de acesso para autenticar com a API REST ou a interface de linha de comando (CLI) no lugar de um nome de usuário e senha.
+
+
+NOTE: Os tokens não têm senhas, então você deve gerenciá-los com cuidado.
+
+.Passos
+. Selecione menu:Definições[Gestão de Acesso].
+. Selecione a guia *Access tokens*.
+. Selecione *Exibir/Editar Configurações do token de acesso*. Na caixa de diálogo, certifique-se de que a caixa de verificação *Ativar tokens de acesso* está selecionada. Clique em *Salvar* para fechar a caixa de diálogo.
+. Selecione *Create Access Token*.
+. Na caixa de diálogo, selecione a duração para o token ser válido.
++
+
+NOTE: Depois que o token expirar, as tentativas de autenticação do usuário falharão.
+
+. Clique em *criar.*
+. Na caixa de diálogo, selecione uma das seguintes opções:
++
+** *Copiar* para salvar o texto do token na área de transferência.
+** *Download* para salvar o texto do token em um arquivo.
++
+
+NOTE: Certifique-se de salvar o texto do token. Esta é a sua única oportunidade de ver o texto antes de fechar o diálogo.
+
+
+
+. Clique em *Fechar*.
+. Use o token da seguinte forma:
++
+** *API REST*: Para usar um token em uma solicitação de API REST, adicione um cabeçalho HTTP às suas solicitações. Por exemplo:
+`Authorization: Bearer _<access-token-value>_`
+** *CLI segura*: Para usar um token na CLI, adicione o valor do token na linha de comando ou use o caminho para um arquivo contendo o valor do token. Por exemplo:
++
+*** Valor do token na linha de comando: `-t _access-token-value_`
+*** Caminho para um arquivo contendo o valor do token: `-T _access-token-file_`
++
+
+NOTE: A CLI solicita ao usuário um valor de token de acesso na linha de comando se nenhum nome de usuário, senha ou token for especificado.
+
+
+
+
+
+

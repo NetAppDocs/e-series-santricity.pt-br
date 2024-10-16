@@ -1,0 +1,59 @@
+---
+permalink: sm-storage/data-integrity-and-data-security-for-volumes.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, data, integrity, security, volumes 
+summary: 'Pode ativar os volumes para utilizar a funcionalidade Data Assurance (DA) e a funcionalidade Drive Security (Segurança da unidade). Esses recursos são apresentados no nível de grupo de volume e pool.' 
+---
+= Integridade de dados e segurança de dados para volumes
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Pode ativar os volumes para utilizar a funcionalidade Data Assurance (DA) e a funcionalidade Drive Security (Segurança da unidade). Esses recursos são apresentados no nível de grupo de volume e pool.
+
+
+
+== Garantia de dados
+
+A Data Assurance (DA) implementa a norma T10 Protection Information (PI), que aumenta a integridade dos dados verificando e corrigindo erros que possam ocorrer à medida que os dados são transferidos ao longo do caminho de e/S. O uso típico do recurso Data Assurance verificará a parte do caminho de e/S entre os controladores e as unidades. As capacidades DA são apresentadas no nível de grupo de volume e pool.
+
+Quando esse recurso está ativado, o storage de armazenamento anexa códigos de verificação de erros (também conhecidos como verificações de redundância cíclica ou CRCs) a cada bloco de dados no volume. Depois que um bloco de dados é movido, o storage array usa esses códigos CRC para determinar se ocorreram erros durante a transmissão. Os dados potencialmente corrompidos não são gravados no disco nem devolvidos ao host. Se você quiser usar o recurso DA, selecione um pool ou grupo de volume que seja capaz DE DA quando você criar um novo volume (procure "Sim" ao lado de "DA" na tabela de candidatos ao grupo de grupo de volume e grupo de volume).
+
+
+
+== Segurança da unidade
+
+O Drive Security é um recurso que impede o acesso não autorizado aos dados em unidades habilitadas para segurança quando removido do storage array. Essas unidades podem ser unidades com criptografia total de disco (FDE) ou unidades certificadas para atender aos padrões federais de processamento de informações 140-2 nível 2 (unidades FIPS).
+
+
+
+=== Como o Drive Security funciona no nível da unidade
+
+Uma unidade com capacidade segura, FDE ou FIPS, criptografa os dados durante gravações e descriptografa dados durante leituras. Essa criptografia e descriptografia não afetam o desempenho ou o fluxo de trabalho do usuário. Cada unidade tem sua própria chave de criptografia exclusiva, que nunca pode ser transferida da unidade.
+
+
+
+=== Como o Drive Security funciona no nível do volume
+
+Ao criar um pool ou grupo de volumes a partir de unidades com capacidade segura, também é possível ativar a Segurança da unidade para esses pools ou grupos de volumes. A opção Segurança da unidade torna as unidades e os grupos de volume e pools associados seguros-_enabled_. Um pool ou grupo de volumes pode conter unidades com capacidade de segurança e não seguras, mas todas as unidades devem ser seguras para usar seus recursos de criptografia.
+
+
+
+=== Como implementar o Drive Security
+
+Para implementar o Drive Security, execute as etapas a seguir.
+
+. Equipe seu storage array com unidades com capacidade segura, unidades FDE ou FIPS. (Para volumes que exigem suporte FIPS, use apenas unidades FIPS. A combinação de unidades FIPS e FDE em um grupo de volumes ou pool resultará no tratamento de todas as unidades como unidades FDE. Além disso, uma unidade FDE não pode ser adicionada ou usada como sobressalente em um grupo ou pool de volumes totalmente FIPS.)
+. Crie uma chave de segurança, que é uma cadeia de carateres que é compartilhada pelo controlador e unidades para acesso de leitura/gravação. Você pode criar uma chave interna a partir da memória persistente do controlador ou uma chave externa de um servidor de gerenciamento de chaves. Para o gerenciamento de chaves externas, a autenticação deve ser estabelecida com o servidor de gerenciamento de chaves.
+. Ative a segurança da unidade para pools e grupos de volumes:
++
+** Crie um pool ou grupo de volumes (procure *Sim* na coluna *compatível com segurança* na tabela candidatos).
+** Selecione um pool ou grupo de volumes quando criar um novo volume (procure *Sim* ao lado de *compatível com segurança* na tabela de candidatos ao grupo de grupos de volumes e pool).
++
+Com o recurso Segurança da unidade, você cria uma chave de segurança compartilhada entre as unidades e os controladores habilitados para segurança em um storage de armazenamento. Sempre que a alimentação das unidades é desligada e ligada, as unidades ativadas por segurança mudam para um estado de Segurança bloqueada até que o controlador aplique a chave de segurança.
+
+
+
+

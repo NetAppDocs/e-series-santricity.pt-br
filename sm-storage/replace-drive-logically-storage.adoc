@@ -1,0 +1,61 @@
+---
+permalink: sm-storage/replace-drive-logically-storage.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, replace, drive, logically 
+summary: Se uma unidade falhar ou você quiser substituí-la por qualquer outro motivo, e você tiver uma unidade não atribuída em sua matriz de armazenamento, você pode logicamente substituir a unidade com falha pela unidade não atribuída. Se você não tiver uma unidade não atribuída, pode substituir fisicamente a unidade. 
+---
+= Substitua a unidade logicamente
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se uma unidade falhar ou você quiser substituí-la por qualquer outro motivo, e você tiver uma unidade não atribuída em sua matriz de armazenamento, você pode logicamente substituir a unidade com falha pela unidade não atribuída. Se você não tiver uma unidade não atribuída, pode substituir fisicamente a unidade.
+
+.Sobre esta tarefa
+Quando você substitui logicamente uma unidade por uma unidade não atribuída, a unidade não atribuída torna-se atribuída e é, então, um membro permanente do pool ou grupo de volumes associado. Você usa a opção de substituição lógica para substituir os seguintes tipos de unidades:
+
+* Unidades com falha
+* Unidades em falta
+* Unidades SSD que o Recovery Guru avisou que estão se aproximando do fim da vida útil
+* Discos rígidos que o Recovery Guru avisou que tem uma falha iminente na unidade
+* Unidades atribuídas (disponível apenas para unidades em um grupo de volumes, não em um pool)
+
+
+O acionamento de substituição deve ter as seguintes caraterísticas:
+
+* No estado ideal
+* No estado não atribuído
+* Os mesmos atributos que a unidade que está sendo substituída (tipo de Mídia, tipo de interface, etc.)
+* A mesma capacidade FDE (recomendada, mas não necessária)
+* A mesma capacidade DA (recomendada, mas não necessária)
+
+
+.Passos
+. Selecione *hardware*.
+. Se o gráfico mostrar os controladores, clique na guia *Drives*.
++
+O gráfico muda para mostrar as unidades em vez dos controladores.
+
+. Clique na unidade que você deseja substituir logicamente.
++
+É apresentado o menu de contexto da unidade.
+
+. Clique em *logicamente Substituir*.
+. *Opcional:* Selecione a caixa de seleção *Fail drive após a substituição* para falhar a unidade original após a substituição.
++
+Esta caixa de verificação só está ativada se a unidade atribuída original não tiver falhado ou estiver em falta.
+
+. Na tabela *Selecione uma unidade de substituição*, selecione a unidade de substituição que deseja usar.
++
+A tabela lista apenas as unidades que são compatíveis com a unidade que você está substituindo. Se possível, selecione uma unidade que mantenha a proteção contra perda de gaveta e a proteção contra perda de gaveta.
+
+. Clique em *Substituir*.
++
+Se a unidade original estiver com falha ou ausente, os dados serão reconstruídos na unidade de substituição usando as informações de paridade. Esta reconstrução começa automaticamente. As luzes indicadoras de falha da unidade apagam-se e as luzes indicadoras de atividade das unidades no pool ou grupo de volume começam a piscar.
+
++
+Se a unidade original não estiver com falha ou ausente, seus dados serão copiados para a unidade de substituição. Esta operação de cópia começa automaticamente. Após a conclusão da operação de cópia, o sistema transfere a unidade original para o estado não atribuído ou, se a caixa de verificação tiver sido selecionada, para o estado Falha.
+
+

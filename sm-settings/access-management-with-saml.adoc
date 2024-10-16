@@ -1,0 +1,74 @@
+---
+permalink: sm-settings/access-management-with-saml.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, access management, saml 
+summary: 'Para Gerenciamento de Acesso, os administradores podem usar os recursos de Security Assertion Markup Language (SAML) 2,0 incorporados no array.' 
+---
+= Gerenciamento de acesso com SAML
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Para Gerenciamento de Acesso, os administradores podem usar os recursos de Security Assertion Markup Language (SAML) 2,0 incorporados no array.
+
+
+
+== Fluxo de trabalho de configuração
+
+A configuração SAML funciona da seguinte forma:
+
+. Um administrador faz login no System Manager com um perfil de usuário que inclui permissões de administrador de segurança.
++
+[NOTE]
+====
+O `admin` utilizador tem acesso total a todas as funções do System Manager.
+
+====
+. O administrador vai para a guia *SAML* em Gerenciamento de Acesso.
+. Um administrador configura as comunicações com o Provedor de identidade (IDP). Um IDP é um sistema externo usado para solicitar credenciais de um usuário e determinar se o usuário foi autenticado com êxito. Para configurar as comunicações com a matriz de armazenamento, o administrador transfere o ficheiro de metadados IDP do sistema IDP e, em seguida, utiliza o System Manager para carregar o ficheiro para a matriz de armazenamento.
+. Um administrador estabelece uma relação de confiança entre o Fornecedor de Serviços e o IDP. Um Fornecedor de Serviços controla a autorização do utilizador; neste caso, o controlador na matriz de armazenamento atua como o Fornecedor de Serviços. Para configurar comunicações, o administrador usa o System Manager para exportar um arquivo de metadados do provedor de serviços para cada controlador. A partir do sistema IDP, o administrador então importa esses arquivos de metadados para o IDP.
++
+[NOTE]
+====
+Os administradores também devem certificar-se de que o IDP suporta a capacidade de retornar um ID de nome na autenticação.
+
+====
+. O administrador mapeia as funções do storage array para atributos de usuário definidos no IDP. Para fazer isso, o administrador usa o System Manager para criar os mapeamentos.
+. O administrador testa o login SSO para o URL do IDP. Este teste garante que a matriz de armazenamento e o IDP possam se comunicar.
++
+[CAUTION]
+====
+Uma vez que o SAML está ativado, você _não pode_ desabilitá-lo através da interface do usuário, nem pode editar as configurações de IDP. Se você precisar desativar ou editar a configuração SAML, entre em Contato com o suporte técnico para obter assistência.
+
+====
+. No System Manager, o administrador habilita o SAML para o storage array.
+. Os usuários fazem login no sistema com suas credenciais SSO.
+
+
+
+
+== Gerenciamento
+
+Ao usar o SAML para autenticação, os administradores podem executar as seguintes tarefas de gerenciamento:
+
+* Modificar ou criar novos mapeamentos de função
+* Exportar ficheiros do fornecedor de serviços
+
+
+
+
+== Restrições de acesso
+
+Quando o SAML está ativado, os usuários não podem descobrir ou gerenciar o storage desse array a partir do Unified Manager ou da interface herdada do Storage Manager.
+
+Além disso, os seguintes clientes não podem acessar os serviços e recursos do storage array:
+
+* Janela de gerenciamento empresarial (EMW)
+* Interface de linha de comando (CLI)
+* Clientes de Software Developer Kits (SDK)
+* Clientes na banda
+* Clientes API REST de Autenticação básica HTTP
+* Faça login usando o endpoint padrão da API REST
+

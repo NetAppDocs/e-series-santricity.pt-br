@@ -1,0 +1,141 @@
+---
+permalink: sm-storage/copy-volume-function.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, copy, volume, 
+summary: A função volume de cópia permite criar uma cópia pontual de um volume criando dois volumes separados, o volume de origem e o volume de destino, na mesma matriz de armazenamento. 
+---
+= Visão geral do volume de cópia
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A função volume de cópia permite criar uma cópia pontual de um volume criando dois volumes separados, o volume de origem e o volume de destino, na mesma matriz de armazenamento.
+
+Esta função executa uma cópia byte por byte do volume de origem para o volume de destino, tornando os dados no volume de destino idênticos aos dados no volume de origem.
+
+
+
+== Cópia de dados para maior acesso
+
+À medida que os requisitos de storage para uma alteração de volume, você pode usar a função Copiar volume para copiar dados de pools ou grupos de volumes que usam unidades de capacidade menor para pools ou grupos de volumes que usam unidades de capacidade maior. Por exemplo, você pode usar a função volume de cópia para fazer o seguinte:
+
+* Mover dados para unidades maiores.
+* Mude para unidades com uma taxa de transferência de dados mais alta.
+* Mudança para unidades que usam novas tecnologias para obter maior desempenho.
+* Altere um volume fino para um volume grosso.
+
+
+Os volumes de origem e destino da cópia devem ter os mesmos tamanhos de bloco lógico/endereçável para host relatados (tamanho do setor).
+
+Os tamanhos de bloco de volume relatados são:
+
+* *Tamanho de bloco nativo* – o tamanho do bloco do volume corresponde ao tamanho do bloco da unidade, 512 ou 4K.
+* * Tamanho de bloco emulado 512 * - as unidades são 4K, mas o tamanho de bloco relatado é 512.
+
+
+
+
+== Altere um volume fino para um volume grosso
+
+Se você quiser alterar um volume fino para um volume espesso, use a operação volume de cópia para criar uma cópia do volume fino. O destino de uma operação de volume de cópia é sempre um volume grosso.
+
+[NOTE]
+====
+O System Manager não oferece uma opção para criar thin volumes. Se você quiser criar volumes finos, use a interface de linha de comando (CLI).
+
+====
+
+
+== Dados de backup
+
+A função volume de cópia permite fazer backup de um volume copiando dados de um volume para outro volume na mesma matriz de armazenamento. Você pode usar o volume de destino como um backup para o volume de origem, para teste do sistema ou para fazer backup em outro dispositivo, como uma unidade de fita.
+
+
+
+== Restaure os dados do volume do Snapshot para o volume base
+
+Se precisar restaurar dados para o volume base do volume instantâneo associado, use a função Copiar volume para copiar dados do volume instantâneo para o volume base. Você pode criar uma cópia de volume dos dados no volume instantâneo e, em seguida, copiar os dados para o volume base.
+
+
+
+== Volumes de origem e destino
+
+A tabela a seguir especifica os tipos de volumes que podem ser usados para volumes de origem e destino com a função volume de cópia.
+
+[cols="1a,1a,1a,1a"]
+|===
+| Tipo de volume | Volume off-line de cópia de volume de origem | Volume de origem de cópia de volume on-line | Volume alvo online e offline 
+
+
+ a| 
+Volume grosso em uma piscina
+ a| 
+Sim
+ a| 
+Sim
+ a| 
+Sim
+
+
+
+ a| 
+Volume grosso em um grupo de volume
+ a| 
+Sim
+ a| 
+Sim
+ a| 
+Sim
+
+
+
+ a| 
+Volume fino
+ a| 
+Sim, 1
+ a| 
+Sim
+ a| 
+Não
+
+
+
+ a| 
+Volume do Snapshot
+ a| 
+Sim, 2
+ a| 
+Não
+ a| 
+Não
+
+
+
+ a| 
+Volume de base do Snapshot
+ a| 
+Sim
+ a| 
+Sim
+ a| 
+Não
+
+
+
+ a| 
+Volume primário do espelho remoto
+ a| 
+Sim, 3
+ a| 
+Sim
+ a| 
+Não
+
+|===
+1 o volume-alvo deve ter uma capacidade igual ou superior à capacidade de volume fino reportada.
+
+2 não é possível usar a cópia do volume instantâneo até que a operação de cópia online seja concluída.
+
+3 se o volume de origem for um volume primário, a capacidade do volume de destino deve ser igual ou superior à capacidade utilizável do volume de origem.

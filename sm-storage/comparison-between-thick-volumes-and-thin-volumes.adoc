@@ -1,0 +1,61 @@
+---
+permalink: sm-storage/comparison-between-thick-volumes-and-thin-volumes.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, comparison, thick volumes, thin volumes 
+summary: Um volume grosso é sempre totalmente provisionado, o que significa que toda a capacidade é alocada quando o volume é criado. Um volume fino é sempre provisionado de forma fina, o que significa que a capacidade é alocada à medida que os dados estão sendo gravados no volume. 
+---
+= Comparação entre volumes grossos e volumes finos
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Um volume grosso é sempre totalmente provisionado, o que significa que toda a capacidade é alocada quando o volume é criado. Um volume fino é sempre provisionado de forma fina, o que significa que a capacidade é alocada à medida que os dados estão sendo gravados no volume.
+
+[NOTE]
+====
+O System Manager não oferece uma opção para criar thin volumes. Se você quiser criar volumes finos, use a interface de linha de comando (CLI).
+
+====
+[cols="25h,~"]
+|===
+| Tipo de volume | Descrição 
+
+
+ a| 
+Volumes grossos
+ a| 
+* Volumes espessos são criados a partir de um pool ou grupo de volumes.
+* Com volumes espessos, uma grande quantidade de espaço de armazenamento é fornecida antecipadamente, antes de futuras necessidades de storage.
+* Os volumes espessos são criados com todo o tamanho do volume pré-alocado no armazenamento físico no momento em que o volume é criado. Essa pré-alocação significa que a criação de um volume de 100 GiB realmente consome 100 GiB de capacidade alocada em suas unidades. No entanto, o espaço pode permanecer sem uso, causando subutilização da capacidade de storage.
+* Ao criar volumes espessos, certifique-se de não alocar a capacidade em excesso para um único volume. A alocação excessiva de capacidade para um único volume pode consumir rapidamente todo o storage físico do sistema.
+* Tenha em mente que a capacidade de storage também é necessária para serviços de cópia (imagens snapshot, volumes snapshot, cópias de volume e espelhamento assíncrono). Assim, não aloque toda a capacidade para volumes espessos. Espaço insuficiente pode bloquear gravações no pool ou grupo de volumes. Se esta situação ocorrer, receberá um aviso de limite de alerta de capacidade livre.
+
+
+
+
+ a| 
+Volumes finos
+ a| 
+* Os volumes finos são criados apenas a partir de um pool, não de um grupo de volumes.
+* Os volumes finos devem ser RAID 6.
+* Os volumes finos não estão disponíveis no sistema de armazenamento EF600 ou EF300.
+* Você deve usar a CLI para criar thin volumes.
+* Ao contrário dos volumes espessos, o espaço necessário para o volume fino não é alocado durante a criação, mas é fornecido, sob demanda em um momento posterior.
+* Um volume fino permite que você superaloque seu tamanho. Ou seja, você pode atribuir um tamanho de LUN maior que o tamanho do volume. Em seguida, você pode expandir o volume conforme necessário (se necessário, adicionando unidades no processo) sem expandir o tamanho do LUN e, portanto, sem desconetar os usuários.
+* Você pode usar a recuperação de espaço em bloco de provisionamento reduzido (UNMAP) para recuperar blocos de um volume provisionado com thin no storage array por meio de um comando SCSI UNMAP emitido pelo host. Um storage array compatível com thin Provisioning pode reutilizar o espaço recuperado para atender às solicitações de alocação de algum outro volume thin Provisioning no mesmo storage array, o que permite melhores relatórios sobre o consumo de espaço em disco e uso mais eficiente dos recursos.
+
+
+|===
+
+
+== Restrições de volume fino
+
+Os thin volumes suportam todas as operações como volumes espessos, com as seguintes exceções:
+
+* Não é possível alterar o tamanho do segmento de um volume fino.
+* Não é possível ativar a verificação de redundância de pré-leitura para um volume fino.
+* Não é possível usar um volume fino como o volume de destino em uma operação volume de cópia.
+* Você pode alterar o limite de capacidade alocada e o limite de aviso de um volume fino apenas no lado principal de um par espelhado assíncrono. Quaisquer alterações a estes parâmetros no lado primário são propagadas automaticamente para o lado secundário.
+

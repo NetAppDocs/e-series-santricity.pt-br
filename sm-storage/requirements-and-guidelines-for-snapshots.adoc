@@ -1,0 +1,110 @@
+---
+permalink: sm-storage/requirements-and-guidelines-for-snapshots.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, requirements, guidelines, snapshots 
+summary: Ao criar e usar snapshots, revise os requisitos e diretrizes a seguir. 
+---
+= Requisitos e diretrizes para snapshots
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Ao criar e usar snapshots, revise os requisitos e diretrizes a seguir.
+
+
+
+== Imagens instantâneas e grupos de instantâneos
+
+* Cada imagem instantânea está associada a exatamente um grupo de instantâneos.
+* Um grupo de instantâneos é criado na primeira vez que você cria uma imagem de instantâneo agendada ou instantânea para um objeto associado. Isso cria capacidade reservada.
++
+Pode visualizar grupos de instantâneos a partir da página pools e grupos de volume.
+
+* As imagens instantâneas programadas não ocorrem quando a matriz de armazenamento está offline ou desligada.
+* Se eliminar um grupo de instantâneos que tenha uma agenda de instantâneos, a agenda de instantâneos também é eliminada.
+* Se você tiver um volume instantâneo que não precisa mais, poderá reutilizá-lo, juntamente com qualquer capacidade reservada associada, em vez de excluí-lo. Isso cria um volume instantâneo diferente do mesmo volume base. Pode associar novamente o volume instantâneo ou o volume instantâneo do grupo de consistência de instantâneos à mesma imagem instantânea ou a uma imagem de instantâneo diferente, desde que a imagem de instantâneo esteja no mesmo volume base.
+
+
+
+
+== Grupo de consistência do Snapshot
+
+* Um grupo de consistência de snapshot contém um grupo de snapshot para cada volume que é membro do grupo de consistência de snapshot.
+* Você pode associar um grupo de consistência de snapshot a apenas uma programação.
+* Se você excluir um grupo de consistência de snapshot que tenha uma programação de snapshot, a programação de snapshot também será excluída.
+* Não é possível gerenciar individualmente um grupo de snapshot associado a um grupo de consistência de snapshot. Em vez disso, você deve executar as operações de gerenciamento (criar imagem instantânea, excluir imagem instantânea ou grupo instantâneo e reverter imagem instantânea) no nível do grupo de consistência de snapshot.
+
+
+
+
+== Volume base
+
+* Um volume instantâneo deve ter as mesmas configurações de segurança e garantia de dados que o volume base associado.
+* Não é possível criar um volume instantâneo de um volume base com falha.
+* Se o volume base residir em um grupo de volumes, os volumes membros de qualquer grupo de consistência de snapshot associado poderão residir em um pool ou grupo de volumes.
+* Se um volume base residir em um pool, todos os volumes de membros de qualquer grupo de consistência de snapshot associado deverão residir no mesmo pool que o volume base.
+
+
+
+
+== Capacidade reservada
+
+* A capacidade reservada está associada a apenas um volume base.
+* A utilização de um agendamento pode resultar num grande número de imagens instantâneas. Certifique-se de ter capacidade reservada suficiente para snapshots programados.
+* O volume de capacidade reservada para um grupo de consistência de instantâneos deve ter as mesmas configurações de segurança e garantia de dados que seu volume base associado para o volume membro do grupo de consistência de snapshot.
+
+
+
+
+== Imagens instantâneas pendentes
+
+A criação de imagens instantâneas pode permanecer em um estado pendente nas seguintes condições:
+
+* O volume base que contém esta imagem instantânea é membro de um grupo de espelhos assíncrono.
+* O volume base está atualmente em uma operação de sincronização. A criação da imagem instantânea é concluída assim que a operação de sincronização for concluída.
+
+
+
+
+== Número máximo de imagens instantâneas
+
+* Se um volume for membro de um grupo de consistência de snapshot, o System Manager criará um grupo de snapshot para esse volume de membro. Este grupo de instantâneos conta para o número máximo permitido de grupos de instantâneos por volume base.
+* Se tentar criar uma imagem instantânea num grupo de instantâneos ou num grupo de consistência de instantâneos, mas o grupo associado tiver atingido o número máximo de imagens instantâneas, tem duas opções:
++
+** Ative a exclusão automática para o grupo de snapshot ou grupo de consistência de snapshot.
+** Elimine manualmente uma ou mais imagens de instantâneos do grupo de instantâneos ou do grupo de consistência de instantâneos e repita a operação.
+
+
+
+
+
+
+== Eliminação automática
+
+Se o grupo de instantâneos ou o grupo de consistência de instantâneos estiver ativado para eliminação automática, o System Manager eliminará a imagem de instantâneo mais antiga quando o sistema criar uma nova para o grupo.
+
+
+
+== Operação de reversão
+
+* Você não pode executar as seguintes ações quando uma operação de reversão estiver em andamento:
++
+** Exclua a imagem instantânea que está sendo usada para a reversão.
+** Crie uma nova imagem instantânea para um volume base que esteja participando de uma operação de reversão.
+** Altere a Política de Repositório completo do grupo de instantâneos associado.
+
+
+* Não é possível iniciar uma operação de reversão quando qualquer uma dessas operações estiver em andamento:
++
+** Expansão de capacidade (adição de capacidade a um pool ou grupo de volumes)
+** Expansão de volume (aumentando a capacidade de um volume)
+** Alteração de nível RAID para um grupo de volumes
+** Alteração do tamanho do segmento para um volume
+
+
+* Não é possível iniciar uma operação de reversão se o volume base estiver participando de uma cópia de volume.
+* Não é possível iniciar uma operação de reversão se o volume base for um volume secundário em um espelho remoto.
+* Uma operação de reversão falhará se alguma da capacidade usada no volume do repositório instantâneo associado tiver setores ilegíveis.
+

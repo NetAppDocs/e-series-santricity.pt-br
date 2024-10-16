@@ -1,0 +1,47 @@
+---
+permalink: sm-interface/what-are-the-supported-browsers.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, browser support 
+summary: O System Manager suporta essas versões do navegador. 
+---
+= Quais são os navegadores suportados?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O System Manager suporta essas versões do navegador.
+
+[cols="1a,1a"]
+|===
+| Navegador | Versão mínima 
+
+
+ a| 
+Google Chrome
+ a| 
+89
+
+
+
+ a| 
+Mozilla Firefox
+ a| 
+80
+
+
+
+ a| 
+Safari
+ a| 
+14
+
+
+
+ a| 
+Microsoft Edge
+ a| 
+90
+
+|===

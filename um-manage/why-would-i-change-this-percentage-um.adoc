@@ -1,0 +1,20 @@
+---
+permalink: um-manage/why-would-i-change-this-percentage-um.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, change, percentage 
+summary: 'A capacidade reservada costuma ser de 20% do volume base para operações de espelhamento assíncrono. Normalmente, essa capacidade é suficiente.' 
+---
+= Por que eu alteraria essa porcentagem?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A capacidade reservada costuma ser de 20% do volume base para operações de espelhamento assíncrono. Normalmente, essa capacidade é suficiente.
+
+A capacidade necessária varia, dependendo da frequência e tamanho das gravações de e/S no volume base e quanto tempo você pretende usar a operação de serviço de cópia do objeto de armazenamento. Em geral, escolha uma porcentagem maior para a capacidade reservada se uma ou ambas as condições existirem:
+
+* Se a vida útil de uma operação de serviço de cópia de um objeto de armazenamento específico será muito longa.
+* Se uma grande porcentagem de blocos de dados mudar no volume base devido à intensa atividade de e/S. Use dados históricos de desempenho ou outros utilitários do sistema operacional para ajudá-lo a determinar a atividade típica de e/S para o volume base.
+

@@ -1,0 +1,140 @@
+---
+permalink: sm-storage/create-snapshot-consistency-group.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, create, snapshot, consistency group 
+summary: Para garantir que você tenha cópias consistentes, crie um conjunto de vários volumes chamado de grupo de consistência de snapshot. 
+---
+= Criar grupo de consistência de snapshot
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Para garantir que você tenha cópias consistentes, você pode criar um conjunto de vários volumes chamado _snapshot consistency group_.
+
+Este grupo permite-lhe criar imagens instantâneas de todos os volumes ao mesmo tempo para obter consistência. Cada volume que pertence a um grupo de consistência de snapshot é referido como um _volume de membro_. Quando você adiciona um volume a um grupo de consistência de snapshot, o sistema cria automaticamente um novo grupo de snapshot que corresponde a esse volume de membro.
+
+.Sobre esta tarefa
+A sequência de criação do grupo de consistência de instantâneos permite selecionar volumes de membros para o grupo e alocar capacidade para os volumes de membros.
+
+O processo para criar um grupo de consistência de instantâneos é um procedimento de várias etapas.
+
+
+
+== Etapa 1: Adicionar membros ao grupo de consistência de snapshot
+
+Selecione membros para especificar uma coleção de volumes que compõem o grupo de consistência de snapshot. Todas as ações executadas no grupo de consistência de snapshot se estendem uniformemente para os volumes de membros selecionados.
+
+.Antes de começar
+Os volumes dos membros devem ser ótimos.
+
+.Passos
+. Selecione menu:armazenamento[instantâneos].
+. Clique na guia *Snapshot Consistency Groups* (grupos de consistência de instantâneos).
+. Selecione menu:criar[Snapshot consistency group].
++
+A caixa de diálogo criar grupo de consistência de instantâneo é exibida.
+
+. Selecione o(s) volume(s) a ser(em) adicionado(s) como volumes membros ao grupo de consistência de instantâneos.
+. Clique em *seguinte* e vá para <<Etapa 2: Reserva de capacidade para o grupo de consistência de snapshot>>.
+
+
+
+
+== Etapa 2: Reserva de capacidade para o grupo de consistência de snapshot
+
+Associe a capacidade reservada ao grupo de consistência de snapshot. O System Manager sugere os volumes e a capacidade com base nas propriedades do grupo de consistência de snapshot. Pode aceitar a configuração de capacidade reservada recomendada ou personalizar o armazenamento alocado.
+
+.Sobre esta tarefa
+Na caixa de diálogo capacidade de reserva, a tabela de candidatos ao volume exibe apenas os candidatos que suportam a capacidade reservada especificada. A capacidade reservada é a capacidade alocada física usada para qualquer operação de serviço de cópia e objeto de storage. Não é diretamente legível pelo host.
+
+.Passos
+. Use a caixa giratório para alocar a capacidade reservada para o grupo de consistência de snapshot. Execute uma das seguintes ações:
++
+** *Aceite as configurações padrão*.
++
+Use esta opção recomendada para alocar a capacidade reservada para cada volume de membro com as configurações padrão.
+
+** *Aloque suas próprias configurações de capacidade reservada para atender às suas necessidades de armazenamento de dados.*
++
+Alocar a capacidade reservada usando as diretrizes a seguir.
+
++
+*** A configuração padrão para capacidade reservada é de 40% da capacidade do volume base. Normalmente, essa capacidade é suficiente.
+*** A capacidade necessária varia, dependendo da frequência e do tamanho das gravações de e/S nos volumes e da quantidade e duração da coleção de imagens instantâneas.
+
+
+
+
+. *Opcional:* se você alterar a configuração de capacidade reservada padrão, clique em *Atualizar candidatos* para atualizar a lista de candidatos para a capacidade reservada especificada.
+. Clique em *seguinte* e vá para <<Etapa 3: Edite as configurações para o grupo de consistência de snapshot>>.
+
+
+
+
+== Etapa 3: Edite as configurações para o grupo de consistência de snapshot
+
+Aceite ou escolha configurações de exclusão automática e limites de alerta de capacidade reservada para o grupo de consistência de snapshot.
+
+.Sobre esta tarefa
+A sequência de criação do grupo de consistência de instantâneos permite selecionar volumes de membros para o grupo e alocar capacidade para os volumes de membros.
+
+.Passos
+. Aceite ou altere as configurações padrão para o grupo de consistência de snapshot, conforme apropriado.
++
+.Detalhes do campo
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Definição | Descrição 
+
+
+ a| 
+* Configurações do grupo de consistência do instantâneo*
+
+
+
+ a| 
+Nome
+ a| 
+Especifique o nome para o grupo de consistência de snapshot.
+
+
+
+ a| 
+Ativar eliminação automática de imagens instantâneas quando...
+ a| 
+Mantenha a caixa de verificação selecionada se pretender que as imagens instantâneas sejam eliminadas automaticamente após o limite especificado; utilize a caixa de seleção para alterar o limite. Se desmarcar esta caixa de verificação, a criação de imagens instantâneas pára após 32 imagens.
+
+
+
+ a| 
+* Configurações de capacidade reservada*
+
+
+
+ a| 
+Alerta-me quando...
+ a| 
+Use a caixa giratório para ajustar o ponto percentual no qual o sistema envia uma notificação de alerta quando a capacidade reservada para um grupo de consistência de snapshot estiver quase cheia.
+
+Quando a capacidade reservada para o grupo de consistência de snapshot exceder o limite especificado, use o aviso prévio para aumentar a capacidade reservada ou excluir objetos desnecessários antes que o espaço restante se esgote.
+
+
+
+ a| 
+Política de capacidade reservada completa
+ a| 
+Escolha uma das seguintes políticas:
+
+** *Limpar imagem de snapshot mais antiga* -- o sistema limpa automaticamente a imagem de snapshot mais antiga no grupo consistência de snapshot, que libera a capacidade reservada da imagem de snapshot para reutilização dentro do grupo.
+** *Rejeitar gravações no volume base* -- quando a capacidade reservada atinge sua porcentagem máxima definida, o sistema rejeita qualquer solicitação de gravação de e/S para o volume base que acionou o acesso à capacidade reservada.
+
+
+|===
+====
+. Depois de ficar satisfeito com a configuração do grupo de consistência de instantâneos, clique em *Finish*.
+

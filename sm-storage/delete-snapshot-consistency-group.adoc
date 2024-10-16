@@ -1,0 +1,40 @@
+---
+permalink: sm-storage/delete-snapshot-consistency-group.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, delete, snapshot, consistency, group 
+summary: Você pode excluir grupos de consistência de snapshot que não são mais necessários. 
+---
+= Eliminar grupo de consistência de instantâneos
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode excluir grupos de consistência de snapshot que não são mais necessários.
+
+.Antes de começar
+Confirme se as imagens de todos os volumes de membros não são mais necessárias para fins de backup ou teste.
+
+.Sobre esta tarefa
+Esta operação elimina todas as imagens instantâneas ou programações associadas ao grupo de consistência de instantâneos.
+
+.Passos
+. Selecione menu:armazenamento[instantâneos].
+. Selecione a guia *grupos de consistência de instantâneos*.
+. Selecione o grupo de consistência de instantâneos que deseja excluir e, em seguida, selecione menu:tarefas incomuns[Excluir].
++
+A caixa de diálogo Confirm Delete Snapshot consistency Group (confirmar Grupo de consistência de instantâneos)
+
+. Confirme se deseja executar esta operação e clique em *Excluir*.
+
+
+.Resultados
+O System Manager executa as seguintes ações:
+
+* Elimina todas as imagens instantâneas e volumes instantâneos existentes do grupo de consistência de instantâneos.
+* Elimina todas as imagens de instantâneos associadas existentes para cada volume de membro no grupo de consistência de instantâneos.
+* Exclui todos os volumes de snapshot associados que existem para cada volume de membro no grupo de consistência de snapshot.
+* Exclui toda a capacidade reservada associada para cada volume de membro no grupo de consistência de instantâneos (se selecionado).
+

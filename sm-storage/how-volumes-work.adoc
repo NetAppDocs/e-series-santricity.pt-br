@@ -1,0 +1,65 @@
+---
+permalink: sm-storage/how-volumes-work.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, volume, copy, 
+summary: Os volumes são recipientes de dados que gerenciam e organizam o espaço de armazenamento em seu storage array. 
+---
+= Como os volumes funcionam
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Os volumes são recipientes de dados que gerenciam e organizam o espaço de armazenamento em seu storage array.
+
+Você cria volumes a partir da capacidade de armazenamento disponível em sua matriz de armazenamento e facilita a organização e o uso dos recursos do sistema. Este conceito é semelhante ao uso de pastas/diretórios em um computador para organizar arquivos para acesso fácil e rápido.
+
+Os volumes são a única camada de dados visível para os hosts. Em um ambiente SAN, os volumes são mapeados para números de unidade lógica (LUNs), que são visíveis para os hosts. Os LUNs armazenam os dados de usuário acessíveis por meio de um ou mais protocolos de acesso ao host compatíveis com o storage array, incluindo FC, iSCSI e SAS.
+
+
+
+== Tipos de volume que você pode criar a partir de pools e grupos de volumes
+
+Os volumes tiram sua capacidade de pools ou grupos de volumes. Você pode criar os seguintes tipos de volumes a partir dos pools ou grupos de volumes que existem no storage array.
+
+* *De pools* -- você pode criar volumes de um pool como volumes _totalmente provisionados (espessos)_ ou volumes _finamente provisionados (finos)._
++
+[NOTE]
+====
+A interface do System Manager não oferece uma opção para criar thin volumes. Se você quiser criar volumes finos, use a interface de linha de comando (CLI).
+
+====
+* *De grupos de volumes* -- você pode criar volumes de um grupo de volumes apenas como volumes _totalmente provisionados (espessos)_.
+
+
+Volumes espessos e volumes finos extraem a capacidade do storage array de maneiras diferentes:
+
+* A capacidade de um volume espesso é alocada quando o volume é criado.
+* A capacidade de um volume fino é alocada como dados quando gravados no volume.
+
+
+O thin Provisioning ajuda a evitar o desperdício de capacidade alocada e pode economizar às empresas em custos iniciais de storage. No entanto, o provisionamento total beneficia de menos latência porque todo o storage é alocado de uma só vez quando volumes espessos são criados.
+
+[NOTE]
+====
+Os sistemas de storage EF600 e EF300 não oferecem suporte ao thin Provisioning.
+
+====
+
+
+== Caraterísticas dos volumes
+
+Cada volume em um pool ou grupo de volumes pode ter suas próprias caraterísticas individuais com base em que tipo de dados serão armazenados nele. Algumas dessas caraterísticas incluem:
+
+* *Tamanho do segmento* -- Um segmento é a quantidade de dados em kilobytes (KiB) que é armazenada em uma unidade antes que a matriz de armazenamento se mova para a próxima unidade na faixa (grupo RAID). O tamanho do segmento é igual ou inferior à capacidade do grupo de volume. O tamanho do segmento é fixo e não pode ser alterado para pools.
+* * Capacidade* -- você cria um volume a partir da capacidade gratuita disponível em um pool ou grupo de volume. Antes de criar um volume, o pool ou grupo de volumes já deve existir e deve ter capacidade livre suficiente para criar o volume.
+* *Propriedade do controlador* -- todos os storages de armazenamento podem ter um ou dois controladores. Em um array de controlador único, o workload de um volume é gerenciado por um único controlador. Em um array de controladora dupla, um volume terá um controlador preferido (A ou B) que "possua" o volume. Em uma configuração de controladora dupla, a propriedade de volume é ajustada automaticamente usando o recurso balanceamento de carga automático para corrigir quaisquer problemas de balanceamento de carga quando as cargas de trabalho mudam entre os controladores. O balanceamento automático de carga fornece balanceamento automatizado de carga de trabalho de e/S e garante que o tráfego de e/S recebido dos hosts seja gerenciado e balanceado dinamicamente entre os dois controladores.
+* * Atribuição de volume* -- você pode dar aos hosts acesso a um volume quando você cria o volume ou em um momento posterior. Todo o acesso ao host é gerenciado por meio de um número de unidade lógica (LUN). Os hosts detetam LUNs que, por sua vez, estão atribuídos a volumes. Se você estiver atribuindo um volume a vários hosts, use o software de cluster para garantir que o volume esteja disponível para todos os hosts.
++
+O tipo de host pode ter limites específicos sobre quantos volumes o host pode acessar. Mantenha essa limitação em mente quando você cria volumes para uso por um host específico.
+
+* * Nome descritivo* -- você pode nomear um volume qualquer que seja o nome que você gosta, mas recomendamos fazer o nome descritivo.
+
+
+Durante a criação do volume, cada volume é alocada a capacidade e recebe um nome, tamanho do segmento (somente grupos de volume), propriedade do controlador e atribuição de volume para host. Os dados de volume são balanceados automaticamente entre os controladores, conforme necessário.

@@ -1,0 +1,51 @@
+---
+permalink: sm-settings/change-cache-settings-for-storage-array.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, change, cache, settings, 
+summary: Para todos os volumes na matriz de armazenamento, você pode ajustar as configurações de memória de cache para limpeza e tamanho de bloco. 
+---
+= Altere as configurações de cache para a matriz de armazenamento
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Para todos os volumes na matriz de armazenamento, você pode ajustar as configurações de memória de cache para limpeza e tamanho de bloco.
+
+.Sobre esta tarefa
+A memória cache é uma área de armazenamento temporário volátil no controlador, que tem um tempo de acesso mais rápido do que a Mídia da unidade. Para ajustar o desempenho do cache, você pode ajustar as seguintes configurações:
+
+[cols="25h,~"]
+|===
+| Definição de cache | Descrição 
+
+
+ a| 
+Inicie a lavagem do cache de demanda
+ a| 
+Especifica a porcentagem de dados não escritos no cache que aciona uma descarga de cache (gravação no disco). Por padrão, a lavagem do cache começa quando os dados não escritos atingem a capacidade de 80%. Uma porcentagem maior é uma boa escolha para ambientes com operações de gravação principalmente, portanto, novas solicitações de gravação podem ser processadas pelo cache sem precisar ir para o disco. Configurações mais baixas são melhores em ambientes onde a e/S é irregular (com picos de dados), de modo que o sistema limpa o cache frequentemente entre picos de dados. No entanto, uma porcentagem inicial inferior a 80% pode causar diminuição do desempenho.
+
+
+
+ a| 
+Tamanho do bloco de cache
+ a| 
+O tamanho do bloco de cache determina o tamanho máximo de cada bloco de cache, que é uma unidade organizacional para gerenciamento de cache. Por padrão, o tamanho do bloco é 32 KiB. O sistema permite que o tamanho do bloco de cache seja de 4, 8, 16 ou 32 KiBs. Os aplicativos usam tamanhos de bloco diferentes, o que afeta o desempenho do storage. Um tamanho menor é uma boa escolha para sistemas de arquivos ou aplicativos de banco de dados. Um tamanho maior é ideal para aplicações que geram e/S sequenciais, como Multimídia.
+
+|===
+.Passos
+. Selecione menu:Definições[sistema].
+. Role para baixo até *Configurações adicionais* e clique em *alterar configurações de cache*.
++
+A caixa de diálogo alterar configurações de cache é aberta.
+
+. Ajuste os seguintes valores:
++
+** * Iniciar lavagem de cache de demanda* -- escolha uma porcentagem apropriada para a e/S usada em seu ambiente. Se escolher um valor inferior a 80%, poderá notar uma diminuição do desempenho.
+** **Tamanho do bloco de cache -- **escolha um tamanho apropriado para seus aplicativos.
+
+
+. Clique em *Salvar*.
+

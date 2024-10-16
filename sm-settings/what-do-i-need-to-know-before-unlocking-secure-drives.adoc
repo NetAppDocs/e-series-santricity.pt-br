@@ -1,0 +1,22 @@
+---
+permalink: sm-settings/what-do-i-need-to-know-before-unlocking-secure-drives.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, unlocking, secure, drives, 
+summary: Para desbloquear os dados de uma unidade ativada de forma segura, tem de importar a respetiva chave de segurança. 
+---
+= O que eu preciso saber antes de desbloquear unidades seguras?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Para desbloquear os dados de uma unidade ativada de forma segura, tem de importar a respetiva chave de segurança.
+
+Antes de desbloquear unidades seguras, tenha em mente as seguintes diretrizes:
+
+* O storage array já deve ter uma chave de segurança. As unidades migradas serão recodificadas para o storage de armazenamento de destino.
+* Para as unidades que você está migrando, você deve saber o identificador da chave de segurança e a frase-passe que corresponde ao arquivo da chave de segurança.
+* O arquivo da chave de segurança deve estar disponível no cliente de gerenciamento (o sistema com um navegador usado para acessar o System Manager).
+* Se estiver a repor uma unidade NVMe bloqueada, tem de introduzir a ID de segurança da unidade. Para localizar a ID de segurança, você deve remover fisicamente a unidade e encontrar a cadeia PSID (máximo de 32 carateres) na etiqueta da unidade. Certifique-se de que a unidade é reinstalada antes de iniciar a operação.
+

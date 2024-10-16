@@ -1,0 +1,32 @@
+---
+permalink: sm-settings/download-cli.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, download, command line interface, CLI, 
+summary: 'No System Manager, você pode baixar o pacote de interface de linha de comando (CLI).' 
+---
+= Baixar a interface de linha de comando (CLI)
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+No System Manager, você pode baixar o pacote de interface de linha de comando (CLI).
+
+A CLI fornece um método baseado em texto para configurar e monitorar matrizes de armazenamento. Ele se comunica via https e usa a mesma sintaxe que a CLI disponível no pacote de software de gerenciamento instalado externamente. Nenhuma chave é necessária para baixar o CLI.
+
+.Antes de começar
+Um Java Runtime Environment (JRE), versão 8 e superior, deve estar disponível no sistema de gerenciamento onde você planeja executar os comandos CLI.
+
+.Passos
+. Selecione menu:Definições[sistema].
+. Em *Complementos*, selecione *Interface de linha de comando*.
++
+O pacote ZIP é baixado para o navegador.
+
+. Salve o arquivo ZIP no sistema de gerenciamento onde você planeja executar comandos CLI para o storage array e, em seguida, extraia o arquivo.
++
+Agora você pode executar comandos CLI a partir de um prompt do sistema operacional, como o prompt dos C:. Uma referência de comando CLI está disponível no menu Ajuda no canto superior direito da interface do usuário do System Manager.
+
+

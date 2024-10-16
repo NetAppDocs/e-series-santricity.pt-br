@@ -1,0 +1,65 @@
+---
+permalink: sm-storage/start-snapshot-image-rollback-for-base-volume.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, start, snapshot, image, rollback, base, volume 
+summary: Você pode executar uma operação de reversão para alterar o conteúdo de um volume base para corresponder ao conteúdo que é salvo em uma imagem instantânea. A operação de reversão não altera o conteúdo das imagens instantâneas associadas ao volume base. 
+---
+= Iniciar reversão de imagem instantânea para um volume base
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode executar uma operação de reversão para alterar o conteúdo de um volume base para corresponder ao conteúdo que é salvo em uma imagem instantânea.
+
+A operação de reversão não altera o conteúdo das imagens instantâneas associadas ao volume base.
+
+.Antes de começar
+* A capacidade reservada suficiente está disponível para iniciar uma operação de reversão.
+* A imagem instantânea selecionada é ideal e o volume selecionado é ideal.
+* O volume selecionado não tem uma operação de reversão já em andamento.
+
+
+.Sobre esta tarefa
+A sequência de início de reversão permite que você comece a reversão em uma imagem instantânea de um volume base, ao mesmo tempo em que fornece opções para adicionar capacidade de armazenamento. Não é possível iniciar mais de uma operação de reversão para um volume base de cada vez.
+
+[NOTE]
+====
+O host pode acessar imediatamente o novo volume base revertido, mas o volume base existente não permite o acesso de leitura e gravação do host após o início da reversão. Você pode criar um snapshot do volume base antes de iniciar o rollback para preservar o volume base pré-rollback para recuperação.
+
+====
+.Passos
+. Selecione menu:armazenamento[instantâneos].
+. Selecione o separador *Snapshot Images* (imagens instantâneas).
+. Selecione a imagem de instantâneo e, em seguida, selecione menu:Reverter[Start].
++
+A caixa de diálogo confirmar início de reversão é exibida.
+
+. *Opcional:* Selecione a opção para *aumentar a capacidade*, se necessário.
++
+A caixa de diálogo aumentar capacidade reservada é exibida.
+
++
+.. Utilize a caixa de rotação para ajustar a percentagem de capacidade.
++
+Se a capacidade livre não existir no pool ou grupo de volumes que contém o objeto de armazenamento selecionado e o storage de armazenamento tiver capacidade não atribuída, você poderá adicionar capacidade. Você pode criar um novo pool ou grupo de volumes e tentar novamente essa operação usando a nova capacidade livre nesse pool ou grupo de volumes.
+
+.. Clique em *aumentar*.
+
+
+. Confirme se deseja executar esta operação e clique em *Rollback*.
+
+
+.Resultados
+O System Manager executa as seguintes ações:
+
+* Restaura o volume com o conteúdo guardado na imagem instantânea selecionada.
+* Torna os volumes revertidos imediatamente disponíveis para acesso ao host. Não é necessário esperar que a operação de reversão seja concluída.
+
+
+.Depois de terminar
+Selecione menu:Home[View Operations in Progress] (Ver operações em curso) para ver o progresso da operação de reversão.
+
+Se a operação de reversão não for bem-sucedida, a operação será interrompida. Você pode retomar a operação em pausa e, se ainda não tiver êxito, siga o procedimento Recovery Guru para corrigir o problema ou entre em Contato com o suporte técnico.

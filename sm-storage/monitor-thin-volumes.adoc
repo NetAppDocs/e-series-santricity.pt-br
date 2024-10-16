@@ -1,0 +1,25 @@
+---
+permalink: sm-storage/monitor-thin-volumes.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, monitor, thin, volumes 
+summary: É possível monitorar thin volumes em busca de espaço e gerar alertas apropriados para evitar condições fora da capacidade. 
+---
+= Monitore volumes finos
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+É possível monitorar thin volumes em busca de espaço e gerar alertas apropriados para evitar condições fora da capacidade.
+
+[NOTE]
+====
+Este recurso não está disponível no sistema de armazenamento EF600 ou EF300.
+
+====
+[NOTE]
+====
+O Gerenciador de sistema do SANtricity não oferece uma opção para criar thin volumes. Se você quiser criar volumes finos, use a interface de linha de comando (CLI).
+
+====

@@ -1,0 +1,21 @@
+---
+permalink: sm-settings/what-do-i-need-to-know-about-validating-the-security-key.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, validating, security, key, 
+summary: Depois de criar uma chave de segurança, você deve validar o arquivo de chave para se certificar de que ele não está corrompido. 
+---
+= O que eu preciso saber sobre a validação da chave de segurança?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Depois de criar uma chave de segurança, você deve validar o arquivo de chave para se certificar de que ele não está corrompido.
+
+Se a validação falhar, faça o seguinte:
+
+* Se o identificador da chave de segurança não corresponder ao identificador no controlador, localize o ficheiro de chave de segurança correto e, em seguida, tente a validação novamente.
+* Se o controlador não conseguir desencriptar a chave de segurança para validação, poderá ter introduzido incorretamente a frase-passe. Verifique novamente a frase-passe, volte a introduzi-la, se necessário, e tente a validação novamente. Se a mensagem de erro aparecer novamente, selecione uma cópia de segurança do ficheiro de chave (se disponível) e volte a tentar a validação.
+* Se você ainda não conseguir validar a chave de segurança, o arquivo original pode estar corrompido. Crie um novo backup da chave e valide essa cópia.
+

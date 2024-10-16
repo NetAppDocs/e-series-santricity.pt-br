@@ -1,0 +1,148 @@
+---
+permalink: um-manage/create-synchronous-mirrored-pair-um.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, create, synchronous, mirrored, pair 
+summary: Para configurar o espelhamento síncrono, você cria um par espelhado que inclui um volume primário no array local e um volume secundário no array remoto. 
+---
+= Crie par espelhado síncrono
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Para configurar o espelhamento síncrono, você cria um par espelhado que inclui um volume primário no array local e um volume secundário no array remoto.
+
+[NOTE]
+====
+Este recurso não está disponível no sistema de armazenamento EF600 ou EF300.
+
+====
+.Antes de começar
+Antes de criar um par espelhado, atenda aos seguintes requisitos do Unified Manager:
+
+* O serviço Web Services Proxy deve estar em execução.
+* O Unified Manager deve estar em execução em seu host local por meio de uma conexão HTTPS.
+* O Unified Manager deve mostrar certificados SSL válidos para a matriz de armazenamento. Você pode aceitar um certificado autoassinado ou instalar seu próprio certificado de segurança usando o Unified Manager e navegando para o menu:certificado[Gerenciamento de certificados].
+
+
+Certifique-se também de atender aos seguintes requisitos para storage arrays e volumes:
+
+* Os dois storage arrays que você planeja usar para espelhamento são descobertos no Unified Manager.
+* Cada storage array deve ter duas controladoras.
+* Cada controlador no array primário e no array secundário deve ter uma porta de gerenciamento Ethernet configurada e estar conetado à rede.
+* As matrizes de armazenamento têm uma versão mínima de firmware de 7,84. (Cada um deles pode executar diferentes versões do sistema operacional.)
+* Você deve saber a senha para os storages de armazenamento local e remoto.
+* Seus storage arrays locais e remotos são conectados por meio de uma malha Fibre Channel.
+* Você criou os volumes primário e secundário que deseja usar na relação de espelhamento síncrono.
+* O volume primário deve ser um volume padrão. Não pode ser um volume fino ou um volume instantâneo.
+* O volume secundário deve ser um volume padrão. Não pode ser um volume fino ou um volume instantâneo.
+* O volume secundário deve ser pelo menos tão grande quanto o volume primário.
+
+
+.Sobre esta tarefa
+O processo para criar pares espelhados síncronos é um procedimento de várias etapas.
+
+
+
+== Passo 1: Selecione o volume principal
+
+Nesta etapa, você seleciona o volume primário a ser usado na relação de espelhamento síncrono. Quando você seleciona um volume primário no storage array local, o sistema exibe uma lista de todos os volumes elegíveis para esse par espelhado. Quaisquer volumes que não sejam elegíveis para serem usados não são exibidos nessa lista. O volume selecionado mantém a função principal na relação de espelhamento.
+
+.Passos
+. Na página *Gerenciar*, selecione a matriz de armazenamento local que você deseja usar para a origem.
+. Selecione menu:ações[Create Synchronous Mirrored Pair] (criar par espelhado síncrono).
++
+O assistente criar par espelhado síncrono é aberto.
+
+. Na lista de volumes elegíveis, selecione um volume que você deseja usar como o volume principal no espelho.
+. Selecione *seguinte* e vá para <<Passo 2: Selecione o volume secundário>>.
+
+
+
+
+== Passo 2: Selecione o volume secundário
+
+Nesta etapa, você seleciona o volume secundário a ser usado na relação de espelhamento. Quando você seleciona um volume secundário no storage array remoto, o sistema exibe uma lista de todos os volumes elegíveis para esse par espelhado. Quaisquer volumes que não sejam elegíveis para serem usados não são exibidos nessa lista. O volume selecionado manterá a função secundária na relação de espelho.
+
+.Passos
+. Selecione a matriz de armazenamento remoto na qual você deseja estabelecer uma relação de espelhamento com a matriz de armazenamento local.
++
+[NOTE]
+====
+Se a matriz de armazenamento remota estiver protegida por palavra-passe, o sistema solicitará uma palavra-passe.
+
+====
++
+** Os storage arrays são listados pelo nome do storage array. Se você não nomeou um storage array, ele será listado como "sem nome".
+** Se o storage array que você deseja usar não estiver na lista, verifique se ele foi descoberto no Unified Manager.
+
+
+. Na lista de volumes elegíveis, selecione um volume que pretende utilizar como volume secundário no espelho.
++
+[NOTE]
+====
+Se um volume secundário for escolhido com uma capacidade maior que o volume primário, a capacidade utilizável será restrita ao tamanho do volume primário.
+
+====
+. Clique em *seguinte* e vá para <<Passo 3: Selecione as configurações de sincronização>>.
+
+
+
+
+== Passo 3: Selecione as configurações de sincronização
+
+Nesta etapa, você seleciona as configurações que determinam como os dados são sincronizados após uma interrupção de comunicação. Você pode definir a prioridade na qual o proprietário do controlador do volume primário ressincroniza os dados com o volume secundário após uma interrupção de comunicação. Você também deve selecionar a política de ressincronização, manual ou automática.
+
+.Passos
+. Utilize a barra deslizante para definir a prioridade de sincronização.
++
+A prioridade de sincronização determina quanto dos recursos do sistema são usados para concluir a sincronização inicial e a operação de ressincronização após uma interrupção de comunicação em comparação com as solicitações de e/S de serviço.
+
++
+A prioridade definida nesta caixa de diálogo aplica-se tanto ao volume primário como ao volume secundário. Você pode modificar a taxa no volume primário posteriormente acessando o System Manager e selecionando menu:armazenamento[Espelhamento síncrono > mais > Editar configurações].
+
++
+Existem cinco taxas de prioridade de sincronização:
+
++
+** Mais baixo
+** Baixo
+** Média
+** Alta
+** Mais alto
++
+Se a prioridade de sincronização estiver definida para a taxa mais baixa, a atividade de e/S será priorizada e a operação de ressincronização demorará mais tempo. Se a prioridade de sincronização estiver definida para a taxa mais alta, a operação de ressincronização será priorizada, mas a atividade de e/S para o storage array pode ser afetada.
+
+
+
+. Escolha se deseja ressincronizar os pares espelhados na matriz de armazenamento remoto manualmente ou automaticamente.
++
+** *Manual* (a opção recomendada) -- Selecione essa opção para exigir que a sincronização seja reiniciada manualmente após a comunicação ser restaurada para um par espelhado. Essa opção oferece a melhor oportunidade para recuperar dados.
+** *Automático* -- Selecione esta opção para iniciar a ressincronização automaticamente após a comunicação ser restaurada para um par espelhado.
++
+Para retomar manualmente a sincronização, vá para System Manager e selecione menu:armazenamento[Espelhamento síncrono], realce o par espelhado na tabela e selecione *Resume* em *More*.
+
+
+
+. Clique em *Finish* para concluir a sequência de espelhamento síncrono.
+
+
+.Resultados
+Quando o espelhamento é ativado, o sistema executa as seguintes ações:
+
+* Inicia a sincronização inicial entre a matriz de armazenamento local e a matriz de armazenamento remoto.
+* Define a prioridade de sincronização e a política de ressincronização.
+* Reserva a porta com o número mais alto do HIC do controlador para transmissão de dados espelhados.
++
+As solicitações de e/S recebidas nesta porta são aceitas somente pelo proprietário do controlador preferido remoto do volume secundário no par espelhado. (São permitidas reservas no volume primário.)
+
+* Cria dois volumes de capacidade reservados, um para cada controlador, que são usados para Registrar informações de gravação para recuperar de reinicializações do controlador e outras interrupções temporárias.
++
+A capacidade de cada volume é de 128 MIB. No entanto, se os volumes forem colocados em um pool, 4 GiB serão reservados para cada volume.
+
+
+
+.Depois de terminar
+Vá para System Manager e selecione menu:Home[View Operations in Progress] (Visualizar operações em andamento) para ver o progresso da operação de espelhamento síncrono. Esta operação pode ser demorada e pode afetar o desempenho do sistema.

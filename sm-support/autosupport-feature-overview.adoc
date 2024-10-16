@@ -1,0 +1,55 @@
+---
+permalink: sm-support/autosupport-feature-overview.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, autosupport, ASUP 
+summary: O recurso AutoSupport monitora a integridade de um storage array e envia patches automáticos para o suporte técnico. 
+---
+= Visão geral do recurso AutoSupport
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O recurso AutoSupport monitora a integridade de um storage array e envia patches automáticos para o suporte técnico.
+
+O suporte técnico usa os dados do AutoSupport de forma reativa para acelerar o diagnóstico e a resolução de problemas do cliente, além de detectar e evitar problemas em potencial proativamente.
+
+Os dados do AutoSupport incluem informações sobre a configuração, o status, o desempenho e os eventos do sistema de um storage array. Os dados do AutoSupport não contêm nenhum dado de usuário. Os envios podem ser enviados imediatamente ou de acordo com um horário (diário e semanal).
+
+
+
+== Principais benefícios
+
+Alguns dos principais benefícios do recurso AutoSupport incluem:
+
+* Tempos acelerados de resolução de casos
+* Monitoramento sofisticado para gerenciamento mais rápido de incidentes
+* Relatórios automatizados de acordo com um cronograma, bem como relatórios automatizados sobre eventos críticos
+* Solicitações automatizadas de substituição de hardware para componentes selecionados, como unidades
+* Alerta não intrusivo para notificá-lo de um problema e fornecer informações para suporte técnico para tomar medidas corretivas
+* Ferramentas de análise do AutoSupport que monitoram despachos para problemas de configuração conhecidos
+
+
+
+
+== Recursos individuais do AutoSupport
+
+O recurso AutoSupport é composto por três recursos individuais que você ativa separadamente.
+
+* *Basic AutoSupport* -- permite que sua matriz de armazenamento colete e envie dados automaticamente para o suporte técnico.
+* *AutoSupport OnDemand* -- permite que o suporte técnico solicite a retransmissão de um despacho AutoSupport anterior quando necessário para solucionar um problema. Todas as transmissões são iniciadas a partir da matriz de armazenamento, não do servidor AutoSupport. A matriz de armazenamento verifica periodicamente com o servidor AutoSupport para determinar se existem solicitações de retransmissão pendentes e responde de acordo.
+* *Diagnóstico remoto* -- permite que o suporte técnico solicite um novo e atualizado despacho do AutoSupport quando necessário para solucionar um problema. Todas as transmissões são iniciadas a partir da matriz de armazenamento, não do servidor AutoSupport. O storage array verifica periodicamente com o servidor AutoSupport para determinar se há novas solicitações pendentes e responde de acordo.
+
+
+
+
+== Diferença entre AutoSupport e coletar dados de suporte
+
+Existem dois métodos de coleta de dados de suporte na matriz de armazenamento:
+
+* *Recurso AutoSupport* -- os dados são coletados automaticamente.
+* *Opção coletar dados de suporte* -- os dados devem ser coletados e enviados manualmente.
+
+
+O recurso AutoSupport é mais fácil de usar porque os dados são coletados e enviados automaticamente. Os dados do AutoSupport podem ser usados proativamente para evitar problemas antes que eles ocorram. O recurso AutoSupport acelera a solução de problemas porque o suporte técnico já tem acesso aos dados. Por esses motivos, o recurso AutoSupport é o método de coleta de dados preferido a ser usado.

@@ -1,0 +1,71 @@
+---
+permalink: sm-hardware/view-hardware-components.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, view, hardware, components, filtering, 
+summary: A página hardware fornece funções de ordenação e filtragem que facilitam a localização de componentes. 
+---
+= Veja os componentes de hardware
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A página hardware fornece funções de ordenação e filtragem que facilitam a localização de componentes.
+
+.Passos
+. Selecione *hardware*.
+. Use as funções descritas na tabela a seguir para exibir componentes de hardware.
+
+
+[cols="25h,~"]
+|===
+| Função | Descrição 
+
+
+ a| 
+Exibições de unidades, controladores e componentes
+ a| 
+Para alternar entre as exibições frontal e traseira, selecione *Drives* ou *Controllers & Components* na extrema direita (o link que aparece depende da exibição atual). A visualização *Drives* mostra as unidades e quaisquer compartimentos de unidade vazios. A visualização *Controllers & Components* mostra os controladores e quaisquer módulos IOM (ESM), coletores de alimentação/ventilador ou compartimentos de controlador vazios. Na parte inferior da página, você também pode selecionar *Mostrar todas as unidades*.
+
+
+
+ a| 
+Filtros de vista da unidade
+ a| 
+Se o storage de armazenamento contiver unidades com diferentes tipos de atributos físicos e lógicos, a página *hardware* inclui filtros de exibição de unidade. Esses campos de filtro ajudam a localizar rapidamente unidades específicas, limitando os tipos de unidades exibidos na página. Em *Mostrar unidades que são...*, clique no campo de filtro à esquerda (por padrão, mostra *qualquer tipo de unidade*) para ver uma lista suspensa de atributos físicos (por exemplo, capacidade e velocidade). Clique no campo de filtro à direita (por padrão, mostra *em qualquer lugar na matriz de armazenamento*) para ver uma lista suspensa de atributos lógicos (por exemplo, atribuição de grupo de volume). Você pode usar esses filtros juntos ou separadamente.
+
+[NOTE]
+====
+Se a matriz de armazenamento contiver unidades que compartilham os mesmos atributos físicos, o campo *qualquer tipo de unidade* à esquerda não será exibido. Se todas as unidades estiverem no mesmo local lógico, o campo *em qualquer lugar no storage de armazenamento* à direita não será exibido.
+
+====
+
+
+ a| 
+Legenda
+ a| 
+Os componentes são exibidos em certas cores para descrever seus estados de função. Para expandir e recolher as descrições destes estados, clique em *Legenda*.
+
+
+
+ a| 
+Mostrar detalhes do ícone de status
+ a| 
+Os indicadores de status podem incluir descrições de texto para os estados de disponibilidade. Clique em *Mostrar detalhes do ícone de status* para mostrar ou ocultar este texto de status.
+
+
+
+ a| 
+Ícones de prateleira/prateleira
+ a| 
+Cada exibição de prateleira fornece uma lista de comandos relacionados, juntamente com propriedades e status. Clique em *Shelf* para ver uma lista suspensa de comandos. Você também pode selecionar um dos ícones ao longo da parte superior para ver o status e as propriedades de componentes individuais: Controladores, IOMs (ESMs), fontes de alimentação, ventiladores, temperatura, baterias e SFPs.
+
+
+
+ a| 
+Ordem de prateleira
+ a| 
+As prateleiras podem ser reorganizadas na página hardware. Use as setas para cima e para baixo no canto superior direito de cada exibição de prateleira para alterar a ordem superior/inferior das prateleiras.
+
+|===

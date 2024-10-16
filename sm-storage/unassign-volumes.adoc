@@ -1,0 +1,37 @@
+---
+permalink: sm-storage/unassign-volumes.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, unassign, volumes 
+summary: Desmarque a atribuição de volumes de hosts ou clusters de host se você não precisar mais de acesso de e/S a esse volume a partir do cluster de host ou host. 
+---
+= Anular atribuição de volumes
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Desmarque a atribuição de volumes de hosts ou clusters de host se você não precisar mais de acesso de e/S a esse volume a partir do cluster de host ou host.
+
+.Sobre esta tarefa
+Mantenha estas diretrizes em mente quando você anular a atribuição de um volume:
+
+* Se você estiver removendo o último volume atribuído de um cluster de host e o cluster de host também tiver hosts com volumes atribuídos específicos, certifique-se de remover ou mover essas atribuições antes de remover a última atribuição para o cluster de host.
+* Se um cluster de host, um host ou uma porta de host for atribuído a um volume registrado no sistema operacional, você deverá limpar esse Registro antes de remover esses nós.
+
+
+.Passos
+. Selecione menu:armazenamento[hosts].
+. Selecione o host ou cluster de host que você deseja editar e clique em *UnAssign volumes*.
++
+É apresentada uma caixa de diálogo que mostra todos os volumes que estão atualmente atribuídos.
+
+. Marque a caixa de seleção ao lado de cada volume que você deseja cancelar a atribuição ou marque a caixa de seleção no cabeçalho da tabela para selecionar todos os volumes.
+. Clique em *UnAssign*.
+
+
+.Resultados
+* Os volumes que não foram atribuídos estão disponíveis para uma nova atribuição.
+* Até que as alterações sejam configuradas no host, o volume ainda é reconhecido pelo sistema operacional do host.
+

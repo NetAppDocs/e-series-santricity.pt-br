@@ -1,0 +1,45 @@
+---
+permalink: um-certificates/export-saml-service-provider-files.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, export, saml, Service Provider, files, 
+summary: 'Se necessário, você pode exportar metadados do provedor de serviços para o storage array e reimportar o arquivo para o sistema de provedor de identidade (IDP).' 
+---
+= Exporte arquivos do provedor de serviços SAML
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se necessário, você pode exportar metadados do provedor de serviços para o storage array e reimportar o arquivo para o sistema de provedor de identidade (IDP).
+
+.Antes de começar
+* Você deve estar conetado com um perfil de usuário que inclua permissões de administrador de segurança. Caso contrário, as funções de Gerenciamento de Acesso não aparecem.
+* O SAML está configurado e ativado.
+
+
+.Sobre esta tarefa
+Nesta tarefa, você exporta metadados do controlador. O IDP precisa desses metadados para estabelecer uma relação de confiança com o controlador e processar solicitações de autenticação. O arquivo inclui informações como o nome de domínio do controlador ou endereço IP que o IDP pode usar para enviar solicitações.
+
+.Passos
+. Selecione menu:Definições[Gestão de Acesso].
+. Selecione a guia *SAML*.
+. Selecione *Exportar*.
++
+A caixa de diálogo Exportar ficheiros do fornecedor de serviços abre-se.
+
+. Clique em *Exportar* para salvar o arquivo de metadados no sistema local.
++
+[NOTE]
+====
+O campo de nome de domínio é somente leitura.
+
+====
++
+Anote onde o arquivo é armazenado.
+
+. No sistema local, localize o arquivo de metadados do provedor de serviços formatado em XML que você exportou.
+. No servidor IDP, importe o arquivo de metadados do provedor de serviços. Você pode importar o arquivo diretamente ou inserir manualmente as informações do controlador.
+. Clique em *Fechar*.
+

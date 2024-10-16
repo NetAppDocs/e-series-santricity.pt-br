@@ -1,0 +1,35 @@
+---
+permalink: sm-settings/enable-or-disable-legacy-management-interface.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, enable, disable, legacy, management, interface, 
+summary: 'Você pode ativar ou desativar a interface de gerenciamento legado (símbolo), que é um método de comunicação entre o storage array e o cliente de gerenciamento.' 
+---
+= Ative ou desative a interface de gerenciamento legada
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode ativar ou desativar a interface de gerenciamento legado (símbolo), que é um método de comunicação entre o storage array e o cliente de gerenciamento.
+
+.Sobre esta tarefa
+Por padrão, a interface de gerenciamento legada está ativada. Se você desativá-lo, o storage array e o cliente de gerenciamento usarão um método de comunicação mais seguro (API REST sobre https); no entanto, certas ferramentas e tarefas podem ser afetadas se estiverem desativadas.
+
+[NOTE]
+====
+Para o sistema de armazenamento EF600, esta funcionalidade está desativada por predefinição.
+
+====
+A definição afeta as operações da seguinte forma:
+
+* *On* (padrão) -- a configuração necessária para configurar o espelhamento com a CLI e algumas outras ferramentas, como o adaptador OCI.
+* *Off* -- definição necessária para impor a confidencialidade nas comunicações entre o storage array e o cliente de gerenciamento, e para acessar ferramentas externas. Configuração recomendada ao configurar um servidor de diretório (LDAP).
+
+
+.Passos
+. Selecione menu:Definições[sistema].
+. Role para baixo até *Configurações adicionais* e clique em *alterar Interface de Gerenciamento*.
+. Na caixa de diálogo, clique em *Yes* para continuar.
+

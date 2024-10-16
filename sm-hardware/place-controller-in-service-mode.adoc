@@ -1,0 +1,37 @@
+---
+permalink: sm-hardware/place-controller-in-service-mode.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, place, controller, service, mode, 
+summary: Se você for instruído a fazê-lo, você pode colocar um controlador no modo de serviço. 
+---
+= Coloque o controlador no modo de serviço
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se você for instruído a fazê-lo, você pode colocar um controlador no modo de serviço.
+
+.Antes de começar
+* O storage array deve ter duas controladoras. O controlador que você não está colocando no modo de serviço deve estar on-line (no estado ideal).
+* Certifique-se de que não há volumes em uso ou de que você tenha um driver multipath instalado em todos os hosts que usam esses volumes.
+
+
+[NOTE]
+====
+Colocar um controlador no modo de serviço pode reduzir significativamente o desempenho. Não coloque um controlador no modo de assistência, a menos que seja instruído a fazê-lo através do suporte técnico.
+
+====
+.Passos
+. Selecione *hardware*.
+. Se o gráfico mostrar as unidades, clique na guia *Controllers & Components* (Controladores e componentes).
++
+O gráfico muda para mostrar os controladores em vez das unidades.
+
+. Clique no controlador que pretende colocar no modo de serviço.
++
+É apresentado o menu de contexto do controlador.
+
+. Selecione *coloque no modo de serviço* e confirme se deseja executar a operação.
+

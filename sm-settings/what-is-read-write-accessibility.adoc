@@ -1,0 +1,17 @@
+---
+permalink: sm-settings/what-is-read-write-accessibility.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, read/write, accessibility, 
+summary: A janela Configurações da unidade inclui informações sobre os atributos de segurança da unidade. Leitura/gravação acessível é um dos atributos que é exibido se os dados de uma unidade foram bloqueados. 
+---
+= O que é acessibilidade de leitura/escrita?
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A janela Configurações da unidade inclui informações sobre os atributos de segurança da unidade. "Leitura/gravação acessível" é um dos atributos que é exibido se os dados de uma unidade foram bloqueados.
+
+Para exibir os atributos de segurança da unidade, vá para a página hardware. Selecione uma unidade, clique em *View settings* e, em seguida, clique em *Show more settings* (Mostrar mais definições). Na parte inferior da página, o valor do atributo leitura/gravação acessível é *Sim* quando a unidade é desbloqueada. O valor do atributo leitura/gravação acessível é *não, chave de segurança inválida* quando a unidade está bloqueada. Pode desbloquear uma unidade segura importando uma chave de segurança (aceda ao menu:Definições[sistema > desbloquear unidades seguras]).

@@ -1,0 +1,93 @@
+---
+permalink: sm-storage/change-the-settings-for-a-snapshot-volume.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, volume, settings, snapshot, volume 
+summary: 'Você pode alterar as configurações de um volume instantâneo ou volume instantâneo do grupo de consistência de snapshot para renomeá-lo, ativar ou desativar o cache SSD ou alterar a atribuição do host, cluster de host ou número de unidade lógica (LUN).' 
+---
+= Alterar as definições de volume de um volume instantâneo
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode alterar as configurações de um volume instantâneo ou volume instantâneo do grupo de consistência de snapshot para renomeá-lo, ativar ou desativar o cache SSD ou alterar a atribuição do host, cluster de host ou número de unidade lógica (LUN).
+
+.Passos
+. Selecione menu:armazenamento[instantâneos].
+. Clique na guia *volumes instantâneos*.
+. Selecione o volume instantâneo que deseja alterar e clique em *Exibir/Editar configurações*.
++
+A caixa de diálogo Configurações de volume instantâneo é exibida.
+
+. Veja ou edite as definições do volume instantâneo, conforme apropriado.
++
+.Detalhes do campo
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Definição | Descrição 
+
+
+ a| 
+*Volume instantâneo*
+
+
+
+ a| 
+Nome
+ a| 
+Pode alterar o nome do volume instantâneo.
+
+
+
+ a| 
+Atribuído a
+ a| 
+Você pode alterar a atribuição de cluster de host ou host para o volume de snapshot.
+
+
+
+ a| 
+LUN
+ a| 
+Pode alterar a atribuição LUN para o volume instantâneo.
+
+
+
+ a| 
+Cache SSD
+ a| 
+Você pode ativar/desativar o armazenamento em cache somente leitura em discos de estado sólido (SSDs).
+
+
+
+ a| 
+*Objetos associados*
+
+
+
+ a| 
+Imagem instantânea
+ a| 
+Pode visualizar as imagens instantâneas associadas ao volume instantâneo. Uma imagem instantânea é uma cópia lógica dos dados de volume, capturados em um determinado ponto no tempo. Como um ponto de restauração, as imagens instantâneas permitem que você role de volta para um conjunto de dados em boas condições. Embora o host possa acessar a imagem instantânea, ele não pode ler ou gravar diretamente nela.
+
+
+
+ a| 
+Volume base
+ a| 
+É possível exibir o volume base associado ao volume instantâneo. Um volume base é a origem a partir da qual uma imagem instantânea é criada. Pode ser um volume grosso ou fino e é normalmente atribuído a um host. O volume base pode residir em um grupo de volumes ou em um pool de discos.
+
+
+
+ a| 
+Grupo de instantâneos
+ a| 
+Você pode exibir o grupo de snapshot associado ao volume de snapshot. Um grupo de instantâneos é uma coleção de imagens instantâneas a partir de um único volume base.
+
+|===
+====
+

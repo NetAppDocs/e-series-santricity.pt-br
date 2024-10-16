@@ -1,0 +1,19 @@
+---
+permalink: um-certificates/what-do-i-need-to-know-before-adding-a-directory-server-unified.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, adding, directory, server 
+summary: Antes de adicionar um servidor de diretório no Gerenciamento de Acesso, você deve atender a certos requisitos. 
+---
+= O que eu preciso saber antes de adicionar um servidor de diretório?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Antes de adicionar um servidor de diretório no Gerenciamento de Acesso, você deve atender a certos requisitos.
+
+* Os grupos de usuários devem ser definidos em seu serviço de diretório.
+* As credenciais do servidor LDAP devem estar disponíveis, incluindo o nome de domínio, o URL do servidor e, opcionalmente, o nome de usuário e a senha da conta BIND.
+* Para servidores LDAPS que usam um protocolo seguro, a cadeia de certificados do servidor LDAP deve ser instalada na sua máquina local.
+

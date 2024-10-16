@@ -1,0 +1,62 @@
+---
+permalink: sm-settings/change-security-key.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, change, security, key, 
+summary: A qualquer momento, você pode substituir uma chave de segurança por uma nova chave. Talvez seja necessário alterar uma chave de segurança nos casos em que você tenha uma potencial violação de segurança em sua empresa e queira garantir que funcionários não autorizados não possam acessar os dados das unidades. 
+---
+= Altere a chave de segurança
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A qualquer momento, você pode substituir uma chave de segurança por uma nova chave. Talvez seja necessário alterar uma chave de segurança nos casos em que você tenha uma potencial violação de segurança em sua empresa e queira garantir que funcionários não autorizados não possam acessar os dados das unidades.
+
+.Passos
+. Selecione menu:Definições[sistema].
+. Em *Gerenciamento de chaves de segurança*, selecione *alterar chave*.
++
+A caixa de diálogo alterar chave de segurança é aberta.
+
+. Introduza as informações nos seguintes campos.
++
+** *Defina um identificador de chave de segurança* -- (apenas para chaves de segurança internas.) Aceite o valor padrão (nome da matriz de armazenamento e carimbo de data/hora, que é gerado pelo firmware da controladora) ou insira seu próprio valor. Pode introduzir até 189 carateres alfanuméricos sem espaços, pontuação ou símbolos.
++
+[NOTE]
+====
+Os carateres adicionais são gerados automaticamente e são anexados a ambas as extremidades da cadeia de carateres inserida. Os carateres gerados ajudam a garantir que o identificador é exclusivo.
+
+====
+** *Defina uma frase-passe/digite novamente a frase-passe* -- em cada um desses campos, insira sua frase-passe. O valor pode ter entre 8 e 32 carateres e deve incluir cada um dos seguintes:
++
+*** Uma letra maiúscula (uma ou mais). Tenha em mente que a frase-passe é sensível a maiúsculas e minúsculas.
+*** Um número (um ou mais).
+*** Um caráter não alfanumérico, como !, *, at (um ou mais).
+
+
+
+
+. Para chaves de segurança externas, se você quiser excluir a chave de segurança antiga quando a nova for criada, marque a caixa de seleção "Excluir chave de segurança atual..." na parte inferior da caixa de diálogo.
++
+[CAUTION]
+====
+*Certifique-se de gravar suas entradas para uso posterior* -- se você precisar mover uma unidade habilitada para segurança da matriz de armazenamento, você deve saber o identificador e a frase-passe para desbloquear os dados da unidade.
+
+====
+. Clique em *alterar*.
++
+A nova chave de segurança substitui a chave anterior, que não é mais válida.
+
++
+[NOTE]
+====
+O caminho para o arquivo baixado pode depender do local de download padrão do seu navegador.
+
+====
+. Grave o identificador da chave, a frase-passe e a localização do ficheiro de chave transferido e, em seguida, clique em *Fechar*.
+
+
+.Depois de terminar
+Você deve validar a chave de segurança para se certificar de que o arquivo de chave não está corrompido.

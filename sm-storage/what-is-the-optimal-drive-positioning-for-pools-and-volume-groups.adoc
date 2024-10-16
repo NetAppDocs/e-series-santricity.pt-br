@@ -1,0 +1,16 @@
+---
+permalink: sm-storage/what-is-the-optimal-drive-positioning-for-pools-and-volume-groups.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, optimal, drive, positioning, pools, volume groups 
+summary: Ao criar pools e grupos de volume, certifique-se de equilibrar a seleção de unidade entre os slots de unidade superior e inferior. 
+---
+= Qual é o posicionamento ideal da unidade para pools e grupos de volume?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Ao criar pools e grupos de volume, certifique-se de equilibrar a seleção de unidade entre os slots de unidade superior e inferior.
+
+Para os controladores EF600 e EF300, os slots de unidade 0-11 são conetados a uma ponte PCI, enquanto os slots 12-23 são conetados a uma ponte PCI diferente. Para um desempenho ideal, você deve equilibrar a seleção de unidade para incluir um número aproximadamente igual de unidades dos slots superior e inferior. Esse posicionamento garante que seus volumes não atinjam um limite de largura de banda mais cedo do que o necessário.

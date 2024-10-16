@@ -1,0 +1,96 @@
+---
+permalink: sm-settings/access-management-terminology.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, access management, terms 
+summary: Saiba como os termos do Gerenciamento de Acesso se aplicam ao storage array. 
+---
+= Terminologia de Gerenciamento de Acesso
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Saiba como os termos do Gerenciamento de Acesso se aplicam ao storage array.
+
+[cols="25h,~"]
+|===
+| Prazo | Descrição 
+
+
+ a| 
+Token de acesso
+ a| 
+Os tokens de acesso são usados para autenticar com a API REST ou interface de linha de comando (CLI) no lugar de um nome de usuário e senha. Os tokens são associados a um usuário específico (incluindo usuários LDAP) e incluem um conjunto de permissões e uma expiração.
+
+
+
+ a| 
+Ative Directory
+ a| 
+O ative Directory (AD) é um serviço de diretório da Microsoft que usa LDAP para redes de domínio do Windows.
+
+
+
+ a| 
+Encadernação
+ a| 
+As operações de vinculação são usadas para autenticar clientes no servidor de diretórios. A vinculação geralmente requer credenciais de conta e senha, mas alguns servidores permitem operações anônimas de vinculação.
+
+
+
+ a| 
+CA
+ a| 
+Uma autoridade de certificação (CA) é uma entidade confiável que emite documentos eletrônicos, chamados certificados digitais, para segurança na Internet. Esses certificados identificam proprietários de sites, o que permite conexões seguras entre clientes e servidores.
+
+
+
+ a| 
+Certificado
+ a| 
+Um certificado identifica o proprietário de um site para fins de segurança, o que impede que atacantes personificem o site. O certificado contém informações sobre o proprietário do site e a identidade da entidade confiável que certifica (assina) essas informações.
+
+
+
+ a| 
+IDP
+ a| 
+Um Provedor de identidade (IDP) é um sistema externo usado para solicitar credenciais de um usuário e para determinar se esse usuário foi autenticado com êxito. O IDP pode ser configurado para fornecer autenticação multifator e usar qualquer banco de dados de usuários, como o ative Directory. Sua equipe de segurança é responsável por manter o IDP.
+
+
+
+ a| 
+LDAP
+ a| 
+O LDAP (Lightweight Directory Access Protocol) é um protocolo de aplicação para aceder e manter serviços de informação de diretório distribuído. Este protocolo permite que vários aplicativos e serviços diferentes se conetem ao servidor LDAP para validar usuários.
+
+
+
+ a| 
+RBAC
+ a| 
+O controle de acesso baseado em função (RBAC) é um método de regular o acesso a recursos de computador ou rede com base nas funções de usuários individuais. Os controles RBAC são aplicados no storage array e incluem funções predefinidas.
+
+
+
+ a| 
+SAML
+ a| 
+Security Assertion Markup Language (SAML) é um padrão baseado em XML para autenticação e autorização entre duas entidades. O SAML permite a autenticação multifator, na qual os usuários devem fornecer dois ou mais itens para provar sua identidade (por exemplo, uma senha e uma impressão digital). O recurso SAML incorporado do storage array é compatível com SAML2,0 para afirmação, autenticação e autorização de identidade.
+
+
+
+ a| 
+SP
+ a| 
+Um provedor de serviços (SP) é um sistema que controla a autenticação e o acesso do usuário. Quando o Gerenciamento de Acesso é configurado com SAML, o storage array atua como o provedor de serviços para solicitar autenticação do provedor de identidade.
+
+
+
+ a| 
+SSO
+ a| 
+Logon único (SSO) é um serviço de autenticação que permite que um conjunto de credenciais de login acesse vários aplicativos.
+
+|===

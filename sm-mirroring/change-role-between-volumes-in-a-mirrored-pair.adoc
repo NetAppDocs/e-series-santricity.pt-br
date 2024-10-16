@@ -1,0 +1,39 @@
+---
+permalink: sm-mirroring/change-role-between-volumes-in-a-mirrored-pair.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, change, role, volumes, mirrored, pair, 
+summary: Você pode realizar uma reversão de função entre os dois volumes em um par espelhado que esteja participando do espelhamento síncrono para fins administrativos ou no caso de um desastre no storage array local. 
+---
+= Alterar função entre volumes em um par espelhado
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode realizar uma reversão de função entre os dois volumes em um par espelhado que estão participando do espelhamento síncrono. Essa tarefa pode ser necessária para fins administrativos ou em caso de desastre no storage array local.
+
+.Sobre esta tarefa
+Você pode rebaixar o volume primário para a função secundária ou promover o volume secundário para a função principal. Todos os hosts que estiverem acessando o volume primário têm acesso de leitura/gravação ao volume. Quando o volume primário se torna um volume secundário, apenas as gravações remotas iniciadas pelo controlador principal são gravadas no volume.
+
+.Passos
+. Selecione menu:armazenamento[Espelhamento síncrono].
+. Selecione o par espelhado que contém os volumes para os quais você deseja alterar a função e, em seguida, selecione menu:mais[alterar função].
++
+O sistema apresenta uma confirmação.
+
+. Confirme se deseja alterar a função dos volumes e selecione *alterar função*.
++
+[NOTE]
+====
+Se a matriz de armazenamento local não puder se comunicar com a matriz de armazenamento remota, o sistema exibirá a caixa de diálogo não pode entrar em Contato com a matriz de armazenamento quando uma alteração de função for solicitada, mas a matriz de armazenamento remota não pode ser contatada. Clique em *Sim* para forçar a mudança de função.
+
+====
+
+
+.Resultados
+O System Manager executa a seguinte ação:
+
+* Se o volume associado no par espelhado puder ser contatado, as funções entre os volumes serão alteradas. O System Manager promove o volume secundário no par espelhado para a função principal ou rebaixa o volume primário no par espelhado para a função secundária (dependendo da sua seleção).
+

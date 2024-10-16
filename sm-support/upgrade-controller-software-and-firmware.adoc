@@ -1,0 +1,100 @@
+---
+permalink: sm-support/upgrade-controller-software-and-firmware.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, upgrade, software, firmware 
+summary: 'Você pode atualizar o software do seu storage array e, opcionalmente, o firmware IOM e a memória de acesso aleatório estática não volátil (NVSRAM) para garantir que você tenha todos os recursos e correções de bugs mais recentes.' 
+---
+= Atualize o software e o firmware do controlador
+:allow-uri-read: 
+
+
+[role="lead"]
+Você pode atualizar o software do seu storage array e, opcionalmente, o firmware IOM e a memória de acesso aleatório estática não volátil (NVSRAM) para garantir que você tenha todos os recursos e correções de bugs mais recentes.
+
+.Antes de começar
+* Você sabe se deseja atualizar seu firmware IOM.
++
+Normalmente, você deve atualizar todos os componentes ao mesmo tempo. No entanto, você pode decidir não atualizar o firmware IOM se não quiser atualizá-lo como parte da atualização do software SANtricity os ou se o suporte técnico tiver instruído a fazer o downgrade do firmware IOM (você só pode fazer o downgrade do firmware usando a interface de linha de comando).
+
+* Você sabe se deseja atualizar o arquivo NVSRAM da controladora.
++
+Normalmente, você deve atualizar todos os componentes ao mesmo tempo. No entanto, você pode decidir não atualizar o arquivo NVSRAM do controlador se o arquivo tiver sido corrigido ou for uma versão personalizada e você não quiser sobrescrevê-lo.
+
+* Você sabe se deseja ativar a atualização do sistema operacional agora ou mais tarde.
++
+As razões para ativar mais tarde podem incluir:
+
++
+** *Hora do dia* -- a ativação do software e do firmware pode demorar muito tempo, então você pode querer esperar até que as cargas de e/S sejam mais leves. Os controladores fazem failover durante a ativação, portanto, o desempenho pode ser menor do que o normal até a atualização ser concluída.
+** * Tipo de pacote* -- você pode querer testar o novo software e firmware em uma matriz de armazenamento antes de atualizar os arquivos em outras matrizes de armazenamento.
+
+
+* Você sabe se deseja mudar de unidades não protegidas ou unidades protegidas internamente para usar um servidor de gerenciamento de chaves externo (KMS) para segurança da unidade.
+* Você sabe se deseja usar o controle de acesso baseado em funções em seu storage array.
+
+
+.Sobre esta tarefa
+Você pode optar por atualizar apenas o arquivo de software do sistema operacional ou apenas o arquivo NVSRAM do controlador ou pode optar por atualizar ambos os arquivos.
+
+Execute esta operação somente quando instruído a fazê-lo pelo suporte técnico.
+
+[CAUTION]
+====
+*Risco de perda de dados ou risco de danos à matriz de armazenamento* -- não faça alterações na matriz de armazenamento enquanto a atualização estiver ocorrendo. Mantenha o poder do storage array.
+
+====
+.Passos
+. Se o storage array contiver apenas uma controladora ou você não tiver um driver multipath instalado, interrompa a atividade de e/S para o storage array para evitar erros de aplicativos. Se o seu storage array tiver duas controladoras e você tiver um driver multipath instalado, não será necessário interromper a atividade de e/S.
+. Selecione menu:suporte[Centro de atualizações].
+. Transfira o novo ficheiro do site de suporte para o seu cliente de gestão.
++
+.. Clique em *suporte NetApp* para iniciar o site de suporte.
+.. No site de suporte, clique na guia *Downloads* e selecione *Downloads*.
+.. Selecione *Software do controlador SANtricity os da série e*.
+.. Siga as instruções restantes.
+
+
++
+[NOTE]
+====
+O firmware assinado digitalmente é necessário na versão 8,42 e superior. Se tentar transferir firmware não assinado, é apresentado um erro e a transferência é cancelada.
+
+====
+. Se NÃO pretender atualizar o firmware IOM neste momento, clique em *suspender a sincronização automática IOM*.
++
+Se você tiver um storage array com uma única controladora, o firmware IOM não será atualizado.
+
+. Em Atualização de software do SANtricity os, clique em *Begin Upgrade*.
++
+A caixa de diálogo Atualizar software SANtricity os é exibida.
+
+. Selecione um ou mais arquivos para iniciar o processo de atualização:
++
+.. Selecione o arquivo de software do sistema operacional SANtricity clicando em *Procurar* e navegando até o arquivo de software do sistema operacional baixado do site de suporte.
+.. Selecione o arquivo NVSRAM da controladora clicando em *Procurar* e navegando até o arquivo NVSRAM baixado do site de suporte. Os arquivos NVSRAM do controlador têm um nome de arquivo semelhante `N2800-830000-000.dlp` ao .
+
+
++
+Estas ações ocorrem:
+
++
+** Por padrão, apenas os arquivos compatíveis com a configuração atual da matriz de armazenamento aparecem.
+** Quando você seleciona um arquivo para atualização, o nome e o tamanho do arquivo são exibidos.
+
+
+. *Opcional:* se você selecionou um arquivo de software do SANtricity os para atualizar, você pode transferir os arquivos para o controlador sem ativá-los selecionando a caixa de seleção *Transferir arquivos agora, mas não atualizar (ativar atualização mais tarde)*.
+. Clique em *Start* (Iniciar) e confirme que deseja executar a operação.
++
+Pode cancelar a operação durante a verificação de estado de pré-atualização, mas não durante a transferência ou ativação.
+
+. *Opcional:* para ver uma lista do que foi atualizado, clique em *Salvar Registro*.
++
+O arquivo é salvo na pasta Downloads do navegador com o nome `drive_upgrade_log-timestamp.txt`.
+
+
+
+.Depois de terminar
+* Verifique se todos os componentes aparecem na página hardware.
+* Verifique as novas versões de software e firmware marcando a caixa de diálogo Inventário de Software e firmware (vá para o menu:suporte[Centro de Atualização] e clique no link *Inventário de Software e firmware*).
+* Se você atualizou a NVSRAM da controladora, quaisquer configurações personalizadas aplicadas à NVSRAM existente serão perdidas durante o processo de ativação. Você precisa aplicar as configurações personalizadas à NVSRAM novamente depois que o processo de ativação for concluído.
+

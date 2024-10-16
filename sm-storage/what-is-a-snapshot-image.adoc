@@ -1,0 +1,20 @@
+---
+permalink: sm-storage/what-is-a-snapshot-image.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, snapshot, image, 
+summary: Uma imagem instantânea é uma cópia lógica do conteúdo do volume, capturada em um determinado ponto no tempo. As imagens instantâneas usam espaço de armazenamento mínimo. 
+---
+= O que é uma imagem instantânea?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Uma imagem instantânea é uma cópia lógica do conteúdo do volume, capturada em um determinado ponto no tempo. As imagens instantâneas usam espaço de armazenamento mínimo.
+
+Os dados de imagem instantânea são armazenados da seguinte forma:
+
+* Quando uma imagem instantânea é criada, ela corresponde exatamente ao volume base. Depois que o snapshot é capturado, quando a primeira solicitação de gravação ocorre para qualquer bloco ou conjunto de blocos no volume base, os dados originais são copiados para a capacidade reservada do snapshot antes que os novos dados sejam gravados no volume base.
+* Os instantâneos subsequentes incluem apenas blocos de dados que foram alterados desde que a primeira imagem instantânea foi criada. Cada operação de cópia em gravação subsequente salva os dados originais que estão prestes a ser sobrescritos no volume base para a capacidade reservada do snapshot antes que os novos dados sejam gravados no volume base.
+

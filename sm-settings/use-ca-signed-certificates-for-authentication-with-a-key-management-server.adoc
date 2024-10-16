@@ -1,0 +1,85 @@
+---
+permalink: sm-settings/use-ca-signed-certificates-for-authentication-with-a-key-management-server.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, ca-signed, certificates, authentication, key, management, server, 
+summary: Para comunicações seguras entre um servidor de gerenciamento de chaves e os controladores de storage array, você deve configurar os conjuntos apropriados de certificados. 
+---
+= Use certificados assinados pela CA para autenticação com um servidor de gerenciamento de chaves
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Para comunicações seguras entre um servidor de gerenciamento de chaves e os controladores de storage array, você deve configurar os conjuntos apropriados de certificados.
+
+.Antes de começar
+Você deve estar conetado com um perfil de usuário que inclua permissões de administrador de segurança. Caso contrário, as funções do certificado não aparecem.
+
+.Sobre esta tarefa
+A autenticação entre os controladores e um servidor de gerenciamento de chaves é um procedimento de duas etapas.
+
+
+
+== Etapa 1: Conclua e envie CSR para autenticação com um servidor de gerenciamento de chaves
+
+Primeiro, você deve gerar um arquivo de solicitação de assinatura de certificado (CSR) e usar o CSR para solicitar um certificado de cliente assinado de uma autoridade de certificação (CA) confiável pelo servidor de gerenciamento de chaves. Você também pode criar e baixar um certificado de cliente a partir do servidor de gerenciamento de chaves usando o arquivo CSR baixado. Um certificado de cliente valida os controladores do storage array, para que o servidor de gerenciamento de chaves possa confiar em suas solicitações KMIP (Key Management Interoperability Protocol).
+
+.Passos
+. Selecione menu:Definições[certificados].
+. Na guia Gerenciamento de chaves, selecione *Complete CSR*.
+. Introduza as seguintes informações:
++
+** * Nome comum* -- um nome que identifica este CSR, como o nome da matriz de armazenamento, que será exibido nos arquivos de certificado.
+** *Organização* -- o nome completo e legal de sua empresa ou organização. Inclua sufixos, como Inc. Ou Corp.
+** * Unidade organizacional (opcional) * -- a divisão da sua organização que está a lidar com o certificado.
+** *Cidade/localidade* -- a cidade ou localidade onde sua organização está localizada.
+** *Estado/região (opcional)* -- o estado ou a região onde sua organização está localizada.
+** *Código ISO do país* -- o código ISO de dois dígitos (Organização Internacional para Padronização), como EUA, onde sua organização está localizada.
+
+
+. Clique em *Download*.
++
+Um ficheiro CSR é guardado no seu sistema local.
+
+. Solicite um certificado de cliente assinado a partir de uma CA confiável pelo servidor de gerenciamento de chaves.
+. Quando tiver um certificado de cliente, vá para <<Etapa 2: Importar certificados para o servidor de gerenciamento de chaves>>.
+
+
+
+
+== Etapa 2: Importar certificados para o servidor de gerenciamento de chaves
+
+Como próxima etapa, você importa certificados para autenticação entre o storage array e o servidor de gerenciamento de chaves. Existem dois tipos de certificados: O certificado do cliente valida os controladores da matriz de armazenamento, enquanto o certificado do servidor de gestão de chaves valida o servidor. Você deve carregar o arquivo de certificado do cliente para os controladores e o arquivo de certificado do servidor para o servidor de gerenciamento de chaves.
+
+.Antes de começar
+* Você tem um arquivo de certificado de cliente assinado (<<Etapa 1: Conclua e envie CSR para autenticação com um servidor de gerenciamento de chaves>>consulte ) e copiou esse arquivo para o host onde está acessando o System Manager. Um certificado de cliente valida os controladores do storage array, para que o servidor de gerenciamento de chaves possa confiar em suas solicitações KMIP (Key Management Interoperability Protocol).
+* Você deve recuperar um arquivo de certificado do servidor de gerenciamento de chaves e, em seguida, copiar esse arquivo para o host onde você está acessando o System Manager. Um certificado do servidor de gerenciamento de chaves valida o servidor de gerenciamento de chaves, de modo que o storage array possa confiar em seu endereço IP. Você pode usar um certificado raiz, intermediário ou servidor para o servidor de gerenciamento de chaves.
++
+[NOTE]
+====
+Para obter mais informações sobre o certificado do servidor, consulte a documentação do servidor de gerenciamento de chaves.
+
+====
+
+
+.Passos
+. Selecione menu:Definições[certificados].
+. Na guia Gerenciamento de chaves, selecione *Importar*.
++
+Abre-se uma caixa de diálogo para importar os ficheiros de certificado.
+
+. Ao lado de *Selecionar certificado de cliente*, clique no botão *Procurar* para selecionar o arquivo de certificado de cliente para os controladores da matriz de armazenamento.
++
+O nome do arquivo é exibido na caixa de diálogo.
+
+. Ao lado de *Selecione o certificado do servidor de gerenciamento de chaves*, clique no botão *Procurar* para selecionar o arquivo de certificado do servidor para o servidor de gerenciamento de chaves. Você pode escolher um certificado de raiz, intermediário ou servidor para o servidor de gerenciamento de chaves.
++
+O nome do arquivo é exibido na caixa de diálogo.
+
+. Clique em *Importar*.
++
+Os arquivos são carregados e validados.
+
+

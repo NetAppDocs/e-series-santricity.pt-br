@@ -1,0 +1,43 @@
+---
+permalink: sm-settings/access-management-with-local-user-roles.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, access management, local, user, roles, 
+summary: 'Para Gerenciamento de acesso, os administradores podem usar os recursos RBAC (controle de acesso baseado em função) aplicados no storage array. Esses recursos são chamados de funções de usuário local.' 
+---
+= Gerenciamento de acesso com funções de usuário local
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Para Gerenciamento de acesso, os administradores podem usar os recursos RBAC (controle de acesso baseado em função) aplicados no storage array. Esses recursos são chamados de "funções de usuário local".
+
+
+
+== Fluxo de trabalho de configuração
+
+As funções de usuário local são pré-configuradas para o storage array. Para usar funções de usuário local para autenticação, os administradores podem fazer o seguinte:
+
+. Um administrador faz login no System Manager com um perfil de usuário que inclui permissões de administrador de segurança.
++
+[NOTE]
+====
+O `admin` utilizador tem acesso total a todas as funções do sistema.
+
+====
+. Um administrador analisa os perfis de usuário, que são predefinidos e não podem ser modificados.
+. Opcionalmente, o administrador atribui novas senhas para cada perfil de usuário.
+. Os usuários fazem login no sistema com suas credenciais atribuídas.
+
+
+
+
+== Gerenciamento
+
+Ao usar apenas funções de usuário local para autenticação, os administradores podem executar as seguintes tarefas de gerenciamento:
+
+* Alterar senhas.
+* Defina um comprimento mínimo para senhas.
+* Permitir que os usuários façam login sem senhas.
+

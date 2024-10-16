@@ -1,0 +1,21 @@
+---
+permalink: sm-settings/when-should-i-synchronize-storage-array-clocks.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, synchronize, storage, array, clock, 
+summary: 'Você deve sincronizar manualmente os relógios do controlador na matriz de armazenamento se notar que os carimbos de hora mostrados no System Manager não estão alinhados com os carimbos de hora mostrados no cliente de gerenciamento (o computador que está acessando o System Manager através do navegador). Esta tarefa só é necessária se o NTP (Network Time Protocol) não estiver ativado no System Manager.' 
+---
+= Quando devo sincronizar relógios de storage?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você deve sincronizar manualmente os relógios do controlador na matriz de armazenamento se notar que os carimbos de hora mostrados no System Manager não estão alinhados com os carimbos de hora mostrados no cliente de gerenciamento (o computador que está acessando o System Manager através do navegador). Esta tarefa só é necessária se o NTP (Network Time Protocol) não estiver ativado no System Manager.
+
+[NOTE]
+====
+É altamente recomendável que você use um servidor NTP em vez de sincronizar manualmente os relógios. NTP sincroniza automaticamente os relógios com um servidor externo usando SNTP (Simple Network Time Protocol).
+
+====
+Você pode verificar o status da sincronização na caixa de diálogo Sincronizar relógios de storage de armazenamento, que está disponível na página sistema. Se os horários mostrados na caixa de diálogo não corresponderem, execute uma sincronização. Você pode visualizar periodicamente essa caixa de diálogo, que indica se as exibições de tempo dos relógios do controlador se afastaram e não estão mais sincronizadas.

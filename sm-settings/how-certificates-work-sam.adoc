@@ -1,0 +1,52 @@
+---
+permalink: sm-settings/how-certificates-work-sam.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, certificates, 
+summary: Certificados são arquivos digitais que identificam entidades online, como sites e servidores, para comunicações seguras na internet. 
+---
+= Como os certificados funcionam
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Certificados são arquivos digitais que identificam entidades online, como sites e servidores, para comunicações seguras na internet.
+
+Os certificados garantem que as comunicações da Web sejam transmitidas de forma encriptada, privada e inalterada, apenas entre o servidor e o cliente especificados. Usando o System Manager, você pode gerenciar certificados entre o navegador em um sistema de gerenciamento de host (atuando como cliente) e os controladores em um sistema de storage (atuando como servidores).
+
+Um certificado pode ser assinado por uma autoridade confiável ou pode ser autoassinado. "Assinatura" significa simplesmente que alguém validou a identidade do proprietário e determinou que seus dispositivos podem ser confiáveis. As matrizes de armazenamento são fornecidas com um certificado auto-assinado gerado automaticamente em cada controlador. Você pode continuar usando os certificados autoassinados ou obter certificados assinados pela CA para uma conexão mais segura entre os controladores e os sistemas host.
+
+[NOTE]
+====
+Embora os certificados assinados pela CA forneçam melhor proteção de segurança (por exemplo, evitando ataques man-in-the-middle), eles também exigem taxas que podem ser caras se você tiver uma rede grande. Em contraste, os certificados autoassinados são menos seguros, mas são gratuitos. Portanto, os certificados autoassinados são mais usados para ambientes de teste internos, não em ambientes de produção.
+
+====
+
+
+== Certificados assinados
+
+Um certificado assinado é validado por uma autoridade de certificação (CA), que é uma organização de terceiros confiável. Os certificados assinados incluem detalhes sobre o proprietário da entidade (normalmente, um servidor ou site), data de emissão e expiração do certificado, domínios válidos para a entidade e uma assinatura digital composta por letras e números.
+
+Quando você abre um navegador e insere um endereço da Web, o sistema executa um processo de verificação de certificados em segundo plano para determinar se você está se conetando a um site que inclui um certificado válido assinado pela CA. Geralmente, um site protegido com um certificado assinado inclui um ícone de cadeado e uma designação https no endereço. Se você tentar se conetar a um site que não contenha um certificado assinado pela CA, o navegador exibirá um aviso de que o site não está seguro.
+
+A CA toma medidas para verificar sua identidade durante o processo de inscrição. Eles podem enviar um e-mail para sua empresa registrada, verificar seu endereço comercial e executar uma verificação HTTP ou DNS. Quando o processo de aplicação estiver concluído, a CA envia arquivos digitais para serem carregados em um sistema de gerenciamento de host. Normalmente, esses arquivos incluem uma cadeia de confiança, como segue:
+
+* *Root* -- na parte superior da hierarquia está o certificado raiz, que contém uma chave privada usada para assinar outros certificados. A raiz identifica uma organização de CA específica. Se você usar a mesma CA para todos os dispositivos de rede, precisará de apenas um certificado raiz.
+* *Intermediate* -- ramificação fora da raiz são os certificados intermediários. A CA emite um ou mais certificados intermediários para atuar como intermediários entre uma raiz protegida e certificados de servidor.
+* *Servidor* -- na parte inferior da cadeia está o certificado do servidor, que identifica sua entidade específica, como um site ou outro dispositivo. Cada controlador em um storage array requer um certificado de servidor separado.
+
+
+
+
+== Certificados autoassinados
+
+Cada controladora no storage inclui um certificado pré-instalado e autoassinado. Um certificado autoassinado é semelhante a um certificado assinado pela CA, exceto que ele é validado pelo proprietário da entidade em vez de um terceiro. Como um certificado assinado pela CA, um certificado autoassinado contém sua própria chave privada e também garante que os dados sejam criptografados e enviados por uma conexão HTTPS entre um servidor e um cliente. No entanto, um certificado autoassinado não usa a mesma cadeia de confiança que um certificado assinado pela CA.
+
+Os certificados autoassinados não são "confiáveis" pelos navegadores. Cada vez que você tenta se conetar a um site que contém apenas um certificado autoassinado, o navegador exibe uma mensagem de aviso. Você deve clicar em um link na mensagem de aviso que permite que você prossiga para o site; ao fazê-lo, você está essencialmente aceitando o certificado auto-assinado.
+
+
+
+== Certificados usados para o servidor de gerenciamento de chaves
+
+Se você estiver usando um servidor de gerenciamento de chaves externo com o recurso Segurança da unidade, também poderá gerenciar certificados para autenticação entre esse servidor e os controladores.

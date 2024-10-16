@@ -1,0 +1,14 @@
+---
+permalink: sm-storage/why-arent-these-volumes-associated-with-a-workload.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, volumes, associated, workload 
+summary: 'Os volumes não são associados a uma carga de trabalho se tiverem sido criados usando a interface de linha de comando (CLI) ou se tiverem sido migrados (importados/exportados) de um storage array diferente.' 
+---
+= Por que esses volumes não estão associados a uma carga de trabalho?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Os volumes não são associados a uma carga de trabalho se tiverem sido criados usando a interface de linha de comando (CLI) ou se tiverem sido migrados (importados/exportados) de um storage array diferente.

@@ -1,0 +1,89 @@
+---
+permalink: sm-storage/change-ssd-cache-settings.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, ssd, cache, settings 
+summary: Você pode editar o nome do cache SSD e exibir seu status, capacidade máxima e atual, segurança da unidade e status de garantia de dados e seus volumes e unidades associados. 
+---
+= Altere as configurações de cache SSD
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode editar o nome do cache SSD e exibir seu status, capacidade máxima e atual, segurança da unidade e status de garantia de dados e seus volumes e unidades associados.
+
+.Passos
+. Selecione menu:armazenamento[pools & grupos de volume].
+. Selecione o cache SSD que você deseja editar e clique em *Exibir/Editar configurações*.
++
+A caixa de diálogo Configurações de cache SSD é exibida.
+
+. Revise ou edite as configurações do cache SSD conforme apropriado.
++
+.Detalhes do campo
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Definição | Descrição 
+
+
+ a| 
+Nome
+ a| 
+Exibe o nome do cache SSD, que você pode alterar. É necessário um nome para o cache SSD.
+
+
+
+ a| 
+Caraterísticas
+ a| 
+Mostra o status do cache SSD. Os Estados possíveis incluem:
+
+** Ideal
+** Desconhecido
+** Degradada
+** Falha (Um estado com falha resulta em um evento de mel crítico.)
+** Suspenso
+
+
+
+
+ a| 
+Capacidades
+ a| 
+Mostra a capacidade atual e a capacidade máxima permitida para o cache SSD.
+
+A capacidade máxima permitida para o cache SSD depende do tamanho de cache principal da controladora:
+
+** Até 1 GiB
+** 1 GiB a 2 GiB
+** 2 GiB a 4 GiB
+** Mais de 4 GiB
+
+
+
+
+ a| 
+Segurança e DA
+ a| 
+Mostra o status de Segurança da unidade e garantia de dados para o cache SSD.
+
+** *Secure-Capable* -- indica se o cache SSD é composto inteiramente de unidades seguras. Uma unidade com capacidade segura é uma unidade com autocriptografia que protege os dados contra acesso não autorizado.
+** *Secure-enabled* -- indica se a segurança está ativada no cache SSD.
+** *DA Capable* -- indica se o cache SSD é composto inteiramente de unidades compatíveis com DA. Uma unidade capaz de DA pode verificar e corrigir erros que possam ocorrer à medida que os dados são comunicados entre o host e o storage array.
+
+
+
+
+ a| 
+Objetos associados
+ a| 
+Mostra os volumes e unidades associados ao cache SSD.
+
+|===
+====
+. Clique em *Salvar*.
+

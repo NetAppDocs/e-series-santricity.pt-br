@@ -1,0 +1,41 @@
+---
+permalink: sm-settings/edit-storage-array-name.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, edit, storage array, name, 
+summary: Você pode alterar o nome da matriz de armazenamento que aparece na barra de título do Gerenciador de sistema do SANtricity. 
+---
+= Edite o nome da matriz de armazenamento
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode alterar o nome da matriz de armazenamento que aparece na barra de título do Gerenciador de sistema do SANtricity.
+
+.Passos
+. Selecione menu:Definições[sistema].
+. Em *Geral*, procure o campo *Nome:*.
++
+Se o nome de uma matriz de armazenamento não tiver sido definido, este campo exibirá "desconhecido".
+
+. Clique no ícone *Edit* (lápis) ao lado do nome da matriz de armazenamento.
++
+O campo torna-se editável.
+
+. Introduza um novo nome.
++
+Um nome pode conter letras, números e os carateres especiais sublinhado (_), traço (-) e sinal de hash ( Um nome não pode conter espaços. Um nome pode ter um comprimento máximo de 30 carateres. O nome deve ser único.
+
+. Clique no ícone *Save* (marca de seleção).
++
+[NOTE]
+====
+Se quiser fechar o campo editável sem fazer alterações, clique no ícone *Cancelar* (X).
+
+====
+
+
+.Resultados
+O novo nome é exibido na barra de título do Gerenciador de sistema do SANtricity.

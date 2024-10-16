@@ -1,0 +1,68 @@
+---
+permalink: sm-storage/convert-a-snapshot-volume-to-read-write-mode.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, convert, snapshot, volume, read-write mode 
+summary: Você pode converter um volume de snapshot somente leitura ou um volume de snapshot de grupo de consistência de snapshot para o modo leitura-gravação, se necessário. 
+---
+= Converta o volume instantâneo para o modo de leitura-gravação
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode converter um volume de snapshot somente leitura ou um volume de snapshot de grupo de consistência de snapshot para o modo leitura-gravação, se necessário.
+
+Um volume de snapshot que é convertido para leitura-gravação acessível contém sua própria capacidade reservada. Essa capacidade é usada para salvar quaisquer modificações subsequentes feitas pelo aplicativo host no volume base sem afetar a imagem de snapshot referenciada.
+
+.Passos
+. Selecione menu:armazenamento[instantâneos].
+. Selecione a guia *volumes instantâneos*.
++
+A tabela volumes de Snapshot é exibida e exibe todos os volumes de snapshot associados ao storage array.
+
+. Selecione o volume instantâneo somente leitura que deseja converter e clique em *Converter para ler/escrever*.
++
+A caixa de diálogo Converter para ler/escrever é exibida com a etapa *reserva de capacidade* ativada. A tabela volume Candidate exibe apenas os candidatos que suportam a capacidade reservada especificada.
+
+. Para alocar a capacidade reservada para o volume de snapshot de leitura e gravação, execute uma das seguintes ações:
++
+** *Accept the default settings* -- Use esta opção recomendada para alocar a capacidade reservada para o volume instantâneo com as configurações padrão.
+** *Aloque suas próprias configurações de capacidade reservada para atender às suas necessidades de armazenamento de dados* -- aloque a capacidade reservada usando as seguintes diretrizes.
++
+*** A configuração padrão para capacidade reservada é de 40% da capacidade do volume base e, geralmente, essa capacidade é suficiente.
+*** A capacidade necessária varia, dependendo da frequência e do tamanho das gravações de e/S no volume.
+
+
+
+
+. Selecione *seguinte* para rever ou editar as definições.
++
+A caixa de diálogo Editar configurações é exibida.
+
+. Aceite ou especifique as configurações do volume instantâneo conforme apropriado e selecione *Finish* para converter o volume instantâneo.
++
+.Detalhes do campo
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Definição | Descrição 
+
+
+ a| 
+* Configurações de capacidade reservada*
+
+
+
+ a| 
+Alerta-me quando...
+ a| 
+Use a caixa giratório para ajustar o ponto percentual no qual o sistema envia uma notificação de alerta quando a capacidade reservada para um grupo de instantâneos estiver quase cheia.
+
+Quando a capacidade reservada para o volume instantâneo excede o limite especificado, o sistema envia um alerta, permitindo-lhe tempo para aumentar a capacidade reservada ou eliminar objetos desnecessários.
+
+|===
+====
+

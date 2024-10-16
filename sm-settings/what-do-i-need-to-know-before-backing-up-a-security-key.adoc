@@ -1,0 +1,33 @@
+---
+permalink: sm-settings/what-do-i-need-to-know-before-backing-up-a-security-key.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, backing up, security, key, 
+summary: Se a chave de segurança original ficar corrompida e você não tiver um backup, perderá o acesso aos dados nas unidades se eles forem migrados de um storage array para outro. 
+---
+= O que eu preciso saber antes de fazer backup de uma chave de segurança?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se a chave de segurança original ficar corrompida e você não tiver um backup, perderá o acesso aos dados nas unidades se eles forem migrados de um storage array para outro.
+
+Antes de fazer backup de uma chave de segurança, tenha em mente estas diretrizes:
+
+* Certifique-se de que conhece o identificador da chave de segurança e a frase-passe do ficheiro de chave original.
++
+[NOTE]
+====
+Somente chaves internas usam identificadores. Quando você criou o identificador, carateres adicionais foram gerados automaticamente e anexados a ambas as extremidades da cadeia de carateres do identificador. Os carateres gerados garantem que o identificador é exclusivo.
+
+====
+* Você cria uma nova frase-passe para o backup. Essa frase-passe não precisa corresponder à frase-passe usada quando a chave original foi criada ou alterada pela última vez. A frase-passe é aplicada apenas ao backup que você está criando.
++
+[NOTE]
+====
+A frase-passe para o Drive Security não deve ser confundida com a senha de Administrador do storage. A frase-passe do Drive Security protege os backups de uma chave de segurança. A senha do administrador protege toda a matriz de armazenamento contra acesso não autorizado.
+
+====
+* O arquivo de chave de segurança de backup é baixado para o seu cliente de gerenciamento. O caminho para o arquivo baixado pode depender do local de download padrão do seu navegador. Certifique-se de fazer um Registro de onde as informações da chave de segurança estão armazenadas.
+

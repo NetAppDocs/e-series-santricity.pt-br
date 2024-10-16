@@ -1,0 +1,153 @@
+---
+permalink: um-certificates/edit-directory-server-settings-unified.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, edit, directory, server, settings, role, mappings 
+summary: Se você configurou anteriormente um servidor de diretório em Gerenciamento de Acesso, poderá alterar suas configurações a qualquer momento. As configurações incluem as informações de conexão do servidor e os mapeamentos de grupo para função. 
+---
+= Edite as configurações do servidor de diretório e mapeamentos de função
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se você configurou anteriormente um servidor de diretório em Gerenciamento de Acesso, poderá alterar suas configurações a qualquer momento. As configurações incluem as informações de conexão do servidor e os mapeamentos de grupo para função.
+
+.Antes de começar
+* Você deve estar conetado com um perfil de usuário que inclua permissões de administrador de segurança. Caso contrário, as funções de Gerenciamento de Acesso não aparecem.
+* Um servidor de diretório deve ser definido.
+
+
+.Passos
+. Selecione *Gerenciamento de Acesso*.
+. Selecione a guia *Serviços de diretório*.
+. Se mais de um servidor estiver definido, selecione o servidor que deseja editar na tabela.
+. Selecione *Exibir/Editar configurações*.
++
+A caixa de diálogo Configurações do servidor de diretório é aberta.
+
+. Na guia *Configurações do servidor*, altere as configurações desejadas.
++
+.Detalhes do campo
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Definição | Descrição 
+
+
+ a| 
+*Configurações de configuração*
+
+
+
+ a| 
+Domínio(s)
+ a| 
+O(s) nome(s) de domínio do(s) servidor(es) LDAP. Para vários domínios, insira os domínios em uma lista separada por vírgulas. O nome de domínio é usado no login (_username__domain_) para especificar em qual servidor de diretório se autenticar.
+
+
+
+ a| 
+URL do servidor
+ a| 
+O URL para acessar o servidor LDAP na forma `ldap[s]://host:port` de .
+
+
+
+ a| 
+Vincular conta (opcional)
+ a| 
+A conta de usuário somente leitura para consultas de pesquisa no servidor LDAP e para pesquisa dentro dos grupos.
+
+
+
+ a| 
+Vincular senha (opcional)
+ a| 
+A senha para a conta vincular. (Este campo é exibido quando uma conta BIND é inserida.)
+
+
+
+ a| 
+Teste a conexão do servidor antes de salvar
+ a| 
+Verifica se o sistema pode comunicar com a configuração do servidor LDAP. O teste ocorre depois de clicar em *Salvar*. Se esta caixa de verificação estiver selecionada e o teste falhar, a configuração não será alterada. Você deve resolver o erro ou desmarcar a caixa de seleção para ignorar o teste e reeditar a configuração.
+
+
+
+ a| 
+* Configurações de privilégio*
+
+
+
+ a| 
+Pesquisar DN base
+ a| 
+O contexto LDAP para procurar usuários, normalmente na forma `CN=Users, DC=cpoc, DC=local` de .
+
+
+
+ a| 
+Atributo de nome de usuário
+ a| 
+O atributo que está vinculado ao ID do usuário para autenticação. Por exemplo
+`sAMAccountName`: .
+
+
+
+ a| 
+Atributo(s) de grupo
+ a| 
+Uma lista de atributos de grupo no usuário, que é usada para mapeamento de grupo para função. Por exemplo
+`memberOf, managedObjects`: .
+
+|===
+====
+. Na guia *Mapeamento de função*, altere o mapeamento desejado.
++
+.Detalhes do campo
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Definição | Descrição 
+
+
+ a| 
+*Mapeamentos*
+
+
+
+ a| 
+DN do grupo
+ a| 
+O nome de domínio para o grupo de utilizadores LDAP a ser mapeado. Expressões regulares são suportadas. Esses carateres especiais de expressão regular devem ser escapados com uma barra invertida () se não fizerem parte de um padrão de expressão regular:
+
+O que é que é que não é possível
+
+
+
+ a| 
+Funções
+ a| 
+As funções a serem mapeadas para o DN do grupo. Você deve selecionar individualmente cada função que deseja incluir para esse grupo. A função Monitor é necessária em combinação com as outras funções para fazer login no Gerenciador Unificado do SANtricity. As funções incluem o seguinte:
+
+** *Storage admin* -- Acesso completo de leitura/gravação a objetos de armazenamento nas matrizes, mas sem acesso à configuração de segurança.
+** *Security admin* -- Acesso à configuração de segurança em Gerenciamento de Acesso e Gerenciamento de certificados.
+** *Support admin* -- Acesso a todos os recursos de hardware em matrizes de armazenamento, dados de falha e eventos mel. Sem acesso a objetos de armazenamento ou à configuração de segurança.
+** *Monitor* -- Acesso somente leitura a todos os objetos de armazenamento, mas sem acesso à configuração de segurança.
+
+
+|===
+====
++
+
+NOTE: A função Monitor é necessária para todos os usuários, incluindo o administrador.
+
+. Se desejar, clique em *Adicionar outro mapeamento* para inserir mais mapeamentos de grupo para função.
+. Clique em *Salvar*.
+
+
+.Resultados
+Depois de concluir esta tarefa, todas as sessões ativas do utilizador são encerradas. Apenas a sessão de utilizador atual é mantida.

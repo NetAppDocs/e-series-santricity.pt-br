@@ -1,0 +1,38 @@
+---
+permalink: sm-settings/set-host-connectivity-reporting.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, set, host, connectivity, reporting, 
+summary: Você pode ativar os relatórios de conetividade do host para que o storage array monitore continuamente a conexão entre os controladores e os hosts configurados e, em seguida, alerte se a conexão for interrompida. Esta funcionalidade está ativada por predefinição. 
+---
+= Definir relatórios de conetividade de host
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode ativar os relatórios de conetividade do host para que o storage array monitore continuamente a conexão entre os controladores e os hosts configurados e, em seguida, alerte se a conexão for interrompida. Esta funcionalidade está ativada por predefinição.
+
+.Sobre esta tarefa
+Se você desativar os relatórios de conetividade do host, o sistema não monitora mais os problemas de conetividade ou driver multipath com um host conetado ao storage array.
+
+[NOTE]
+====
+A desativação do relatório de conetividade do host também desativa o balanceamento automático de carga, que monitora e equilibra a utilização de recursos do controlador.
+
+====
+.Passos
+. Selecione menu:Definições[sistema].
+. Role para baixo até *Configurações adicionais* e clique em *Ativar/Desativar relatórios de conetividade do host*.
++
+O texto abaixo dessa opção indica se ela está atualmente ativada ou desativada.
+
++
+Abre-se uma caixa de diálogo de confirmação.
+
+. Clique em *Yes* para continuar.
++
+Ao selecionar esta opção, pode alternar a funcionalidade entre activado/desativado.
+
+

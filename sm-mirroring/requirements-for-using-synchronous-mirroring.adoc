@@ -1,0 +1,87 @@
+---
+permalink: sm-mirroring/requirements-for-using-synchronous-mirroring.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, requirements, synchronous, mirroring, 
+summary: Se você planeja usar o espelhamento síncrono, tenha em mente os seguintes requisitos. 
+---
+= Requisitos para o uso do espelhamento síncrono
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se você planeja usar o espelhamento síncrono, tenha em mente os seguintes requisitos.
+
+
+
+== Unified Manager
+
+Para ativar e configurar o espelhamento entre dois arrays, você deve usar a interface do Unified Manager. O Unified Manager é instalado em um sistema host juntamente com o Web Services Proxy.
+
+* O serviço Web Services Proxy deve estar em execução.
+* O Unified Manager deve estar em execução em seu host local por meio de uma conexão HTTPS.
+* O Unified Manager deve mostrar certificados SSL válidos para a matriz de armazenamento. Você pode aceitar um certificado autoassinado ou instalar seu próprio certificado de segurança usando o Unified Manager e navegando para o menu:certificado[Gerenciamento de certificados].
+
+
+
+
+== Storage arrays
+
+[NOTE]
+====
+O espelhamento síncrono não está disponível no storage array EF300 ou EF600.
+
+====
+* Você precisa ter dois storage arrays.
+* Cada storage array deve ter duas controladoras.
+* Os dois storage arrays devem ser descobertos no Unified Manager.
+* Cada controlador no array primário e no array secundário deve ter uma porta de gerenciamento Ethernet configurada e estar conetado à rede.
+* As matrizes de armazenamento têm uma versão mínima de firmware de 7,84. (Cada um deles pode executar diferentes versões do sistema operacional.)
+* Você deve saber a senha para os storages de armazenamento local e remoto.
+* Você precisa ter capacidade livre suficiente no storage array remoto para criar um volume secundário igual ou maior que o volume principal que deseja espelhar.
+* Seus storage arrays locais e remotos são conectados por meio de uma malha Fibre Channel.
+
+
+
+
+== Conexões suportadas
+
+A comunicação para espelhamento síncrono é compatível apenas com controladoras com portas de host Fibre Channel (FC).
+
+O espelhamento síncrono usa a porta de host com número mais alto em cada controlador, no storage array local e no storage array remoto. A porta de host 4 do adaptador de barramento do host do controlador (HBA) é normalmente reservada para transmissão de dados espelhados.
+
+
+
+== Candidatos a volume espelhado
+
+* O nível RAID, os parâmetros de armazenamento em cache e o tamanho do segmento podem ser diferentes nos volumes primário e secundário de um par espelhado síncrono.
+* Os volumes primário e secundário em um par espelhado síncrono devem ser volumes padrão. Não podem ser volumes finos ou volumes instantâneos.
+* O volume secundário deve ser pelo menos tão grande quanto o volume primário.
+* Somente o volume principal pode ter snapshots associados a ele e/ou ser o volume de origem ou destino em uma operação de cópia de volume.
+* Um volume pode participar de apenas um relacionamento de espelho.
+* Há limites para o número de volumes suportados em um determinado storage array. Certifique-se de que o número de volumes configurados na matriz de armazenamento seja inferior ao limite suportado. Quando o espelhamento síncrono está ativo, os dois volumes de capacidade reservada criados contam para o limite de volume.
+
+
+
+
+== Capacidade reservada
+
+* A capacidade reservada é necessária para um volume primário e para um volume secundário para registar informações de gravação para recuperar de reinicializações do controlador e outras interrupções temporárias.
+* Os volumes de capacidade reservada são criados automaticamente quando o espelhamento síncrono é ativado. Como o volume principal e o volume secundário em um par espelhado exigem capacidade reservada, você precisa garantir que tenha capacidade livre suficiente disponível em ambos os storage arrays que participam do relacionamento de espelhamento síncrono.
+
+
+
+
+== Recurso de segurança da unidade
+
+* Se você estiver usando unidades com capacidade de segurança, o volume primário e o volume secundário devem ter configurações de segurança compatíveis. Esta restrição não é imposta; portanto, você deve verificá-la por conta própria.
+* Se você estiver usando unidades com capacidade segura, o volume primário e o volume secundário deverão usar o mesmo tipo de unidade. Esta restrição não é imposta; portanto, você deve verificá-la por conta própria.
++
+** Se o volume principal utilizar unidades de encriptação total de disco (FDE), o volume secundário deverá utilizar unidades FDE.
+** Se o volume primário usar unidades validadas FIPS (Federal Information Processing Standards 140-2), o volume secundário deverá usar unidades validadas FIPS 140-2-2.
+
+
+* Se estiver a utilizar o Data Assurance (DA), o volume primário e o volume secundário têm de ter as mesmas definições DE DA.
+

@@ -1,0 +1,35 @@
+---
+permalink: sm-support/enable-autosupport-maintenance-window.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, enable, autosupport, ASUP, maintenance window 
+summary: Ative a janela de manutenção do AutoSupport para suprimir a criação automática de tickets em eventos de erro. No modo de operação normal, o storage array usa o AutoSupport para abrir um caso com suporte se houver um problema. 
+---
+= Ative a janela de manutenção do AutoSupport
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Ative a janela de manutenção do AutoSupport para suprimir a criação automática de tickets em eventos de erro. No modo de operação normal, o storage array usa o AutoSupport para abrir um caso com suporte se houver um problema.
+
+.Passos
+. Selecione menu:suporte[Centro de suporte > AutoSupport].
+. Selecione *Ativar janela de manutenção do AutoSupport*.
+. Introduza o endereço de e-mail para receber uma confirmação de que o pedido da janela de manutenção foi processado.
++
+Dependendo da configuração, você poderá inserir até cinco endereços de e-mail. Se quiser adicionar mais de um endereço, selecione *Adicionar outro email* para abrir outro campo.
+
+. Especifique a duração (em horas) para ativar a janela de manutenção.
++
+A duração máxima suportada é de 72 horas.
+
+. Clique em *Sim*.
++
+A criação automática de tickets do AutoSupport em eventos de erro é temporariamente suprimida para a janela de duração especificada.
+
+
+
+.Depois de terminar
+A janela de manutenção não começa até que a solicitação do storage array seja processada pelos servidores AutoSupport. Aguarde até receber um e-mail de confirmação antes de realizar quaisquer atividades de manutenção no seu storage array.

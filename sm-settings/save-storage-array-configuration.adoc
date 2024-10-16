@@ -1,0 +1,72 @@
+---
+permalink: sm-settings/save-storage-array-configuration.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, save, storage array, configuration, 
+summary: Você pode salvar as informações de configuração de um storage array em um arquivo de script para economizar tempo configurando matrizes de armazenamento adicionais com a mesma configuração. 
+---
+= Salve a configuração do storage array
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode salvar as informações de configuração de uma matriz de armazenamento em um arquivo de script para economizar tempo configurando matrizes de armazenamento adicionais com a mesma configuração.
+
+.Antes de começar
+O storage array não deve estar passando por nenhuma operação que altere suas configurações lógicas. Exemplos dessas operações incluem a criação ou exclusão de volumes, o download do firmware do controlador, a atribuição ou modificação de unidades hot spare ou a adição de capacidade (unidades) a um grupo de volumes.
+
+.Sobre esta tarefa
+Salvar a configuração do storage array gera um script de interface de linha de comando (CLI) que contém configurações de storage array, configuração de volume, configuração de host ou atribuições de host para volume para um storage array. Você pode usar esse script de CLI gerado para replicar uma configuração para outro storage array com a mesma configuração de hardware.
+
+No entanto, você não deve usar esse script CLI gerado para recuperação de desastres. Em vez disso, para fazer uma restauração do sistema, use o arquivo de backup do banco de dados de configuração que você cria manualmente ou entre em Contato com o suporte técnico para obter esses dados dos dados mais recentes do Auto-Support.
+
+Esta operação _não_ salva essas configurações:
+
+* A vida útil da bateria
+* A hora do dia do controlador
+* As configurações de memória de acesso aleatório estático não volátil (NVSRAM)
+* Quaisquer funcionalidades premium
+* A senha do storage array
+* O estado de funcionamento e os estados dos componentes de hardware
+* O estado de funcionamento (exceto ótimo) e os estados dos grupos de volume
+* Serviços de cópia, como espelhamento e cópia de volume
+
+
+[CAUTION]
+====
+*Risco de erros de aplicativo* -- não use essa opção se o storage array estiver passando por uma operação que mudará qualquer configuração lógica. Exemplos dessas operações incluem a criação ou exclusão de volumes, o download do firmware do controlador, a atribuição ou modificação de unidades hot spare ou a adição de capacidade (unidades) a um grupo de volumes.
+
+====
+.Passos
+. Selecione menu:Definições[sistema].
+. Selecione *Save Storage Array Configuration*.
+. Selecione os itens da configuração que deseja salvar:
++
+** Configurações da matriz de armazenamento
+** Configuração do volume
+** Configuração de host
+** Atribuições de host para volume
+
+
++
+[NOTE]
+====
+Se você selecionar o item *atribuição de host para volume*, o item *Configuração de volume* e o item *Configuração do host* também serão selecionados por padrão. Você não pode salvar "atribuições de host para volume" sem salvar também "Configuração de volume" e "Configuração de host".
+
+====
+. Clique em *Salvar*.
++
+O arquivo é salvo na pasta Downloads do navegador com o nome `storage-array-configuration.cfg`.
+
+
+
+.Depois de terminar
+Para carregar a configuração do storage array salvo em outro storage array, use a interface de linha de comando (SMcli) do SANtricity com a `-f` opção de aplicar o `.cfg` arquivo.
+
+[NOTE]
+====
+Você também pode carregar uma configuração de storage array para outros storage arrays usando a interface do Unified Manager (selecione menu:Gerenciar[Importar configurações]).
+
+====

@@ -1,0 +1,74 @@
+---
+permalink: um-manage/mirroring-configuration-workflow.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, mirroring, configuration, workflow 
+summary: Você configura o espelhamento assíncrono ou síncrono no Unified Manager e, em seguida, usa o System Manager para gerenciar sincronizações. 
+---
+= Fluxo de trabalho de configuração de espelhamento
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você configura o espelhamento assíncrono ou síncrono no Unified Manager e, em seguida, usa o System Manager para gerenciar sincronizações.
+
+
+
+== Fluxo de trabalho de espelhamento assíncrono
+
+O espelhamento assíncrono envolve o seguinte fluxo de trabalho:
+
+. Execute a configuração inicial no Unified Manager:
++
+.. Selecione a matriz de armazenamento local como a origem para a transferência de dados.
+.. Crie ou selecione um grupo de consistência de espelho existente, que é um contentor para o volume primário no array local e o volume secundário no array remoto. Os volumes primário e secundário são referidos como o "par espelhado". Se você estiver criando o grupo de consistência de espelho pela primeira vez, especifique se deseja executar sincronizações manuais ou agendadas.
+.. Selecione um volume primário no storage array local e, em seguida, determine sua capacidade reservada. A capacidade reservada é a capacidade física alocada a ser usada para a operação de cópia.
+.. Selecione um storage array remoto como o destino da transferência, um volume secundário e, em seguida, determine sua capacidade reservada.
+.. Inicie a transferência de dados inicial do volume primário para o volume secundário. Dependendo do tamanho do volume, esta transferência inicial pode demorar várias horas.
+
+
+. Verifique o progresso da sincronização inicial:
++
+.. No Unified Manager, inicie o System Manager para o array local.
+.. No System Manager, visualize o status da operação de espelhamento. Quando o espelhamento estiver concluído, o status do par espelhado é "ótimo".
+
+
+. Opcionalmente, você pode reagendar ou realizar manualmente transferências de dados subsequentes no System Manager. Somente blocos novos e alterados são transferidos do volume primário para o volume secundário.
++
+[NOTE]
+====
+Como a replicação assíncrona é periódica, o sistema pode consolidar os blocos alterados e conservar a largura de banda da rede. Há impacto mínimo na taxa de transferência de gravação e na latência de gravação.
+
+====
+
+
+
+
+== Fluxo de trabalho de espelhamento síncrono
+
+O espelhamento síncrono envolve o seguinte fluxo de trabalho:
+
+. Execute a configuração inicial no Unified Manager:
++
+.. Selecione uma matriz de armazenamento local como a origem para a transferência de dados.
+.. Selecione um volume primário no storage array local.
+.. Selecione uma matriz de armazenamento remota como destino para a transferência de dados e, em seguida, selecione um volume secundário.
+.. Selecione as prioridades de sincronização e ressincronização.
+.. Inicie a transferência de dados inicial do volume primário para o volume secundário. Dependendo do tamanho do volume, esta transferência inicial pode demorar várias horas.
+
+
+. Verifique o progresso da sincronização inicial:
++
+.. No Unified Manager, inicie o System Manager para o array local.
+.. No System Manager, visualize o status da operação de espelhamento. Quando o espelhamento estiver concluído, o status do par espelhado é "ótimo". Os dois arrays tentam permanecer sincronizados através de operações normais. Somente blocos novos e alterados são transferidos do volume primário para o volume secundário.
+
+
+. Opcionalmente, você pode alterar as configurações de sincronização no System Manager.
++
+[NOTE]
+====
+Como a replicação síncrona é contínua, o link de replicação entre os dois locais precisa fornecer recursos de largura de banda suficientes.
+
+====
+

@@ -1,0 +1,34 @@
+---
+permalink: sm-mirroring/test-communication-for-synchronous-mirroring.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, test, communication, synchronous, mirroring, 
+summary: Você pode testar a comunicação entre um storage array local e um storage array remoto para diagnosticar possíveis problemas de comunicação de um par espelhado que esteja participando do espelhamento síncrono. 
+---
+= Teste a comunicação para espelhamento síncrono
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode testar a comunicação entre um storage array local e um storage array remoto para diagnosticar possíveis problemas de comunicação de um par espelhado que esteja participando do espelhamento síncrono.
+
+.Sobre esta tarefa
+Dois testes diferentes são executados:
+
+* *Comunicação* -- verifica se os dois storages de armazenamento têm um caminho de comunicação. O teste de comunicação valida que a matriz de armazenamento local pode comunicar com a matriz de armazenamento remoto e que o volume secundário associado ao par espelhado existe na matriz de armazenamento remoto.
+* *Latência* -- envia um comando SCSI test unit para o volume secundário na matriz de armazenamento remoto associada ao par espelhado para testar a latência mínima, média e máxima.
+
+
+.Passos
+. Selecione menu:armazenamento[Espelhamento síncrono].
+. Selecione o par espelhado que deseja testar e, em seguida, selecione *Test Communication*.
+. Reveja as informações apresentadas na janela resultados e, se necessário, siga a ação corretiva indicada.
++
+[NOTE]
+====
+Se o teste de comunicação falhar, o teste continuará a ser executado depois de fechar esta caixa de diálogo até que a comunicação entre o par espelhado seja restaurada.
+
+====
+

@@ -1,0 +1,64 @@
+---
+permalink: sm-storage/overview-pools-volume-groups.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, pools, volume groups 
+summary: É possível criar capacidade de armazenamento lógica a partir de um subconjunto de unidades não atribuídas no storage array. Essa capacidade lógica pode assumir a forma de um pool ou de um grupo de volumes, dependendo das necessidades do seu ambiente. 
+---
+= Visão geral de pools e grupos de volume
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+É possível criar capacidade de armazenamento lógica a partir de um subconjunto de unidades não atribuídas no storage array. Essa capacidade lógica pode assumir a forma de um pool ou de um grupo de volumes, dependendo das necessidades do seu ambiente.
+
+
+
+== O que são pools e grupos de volume?
+
+Um _pool_ é um conjunto de unidades agrupadas logicamente. Um _volume group_ é um contentor para volumes com caraterísticas compartilhadas. Você pode usar um pool ou um grupo de volumes para criar volumes acessíveis a um host.
+
+Saiba mais:
+
+* link:how-pools-and-volume-groups-work.html["Como os pools e os grupos de volume funcionam"]
+* link:capacity-terminology.html["Terminologia de capacidade"]
+* link:decide-to-use-a-pool-or-volume-group.html["Decida se deseja usar um pool ou um grupo de volume"]
+
+
+
+
+== Como você cria piscinas?
+
+Você pode permitir que o System Manager crie pools automaticamente quando detetar capacidade não atribuída em um storage array. Alternativamente, quando a criação automática não pode determinar a melhor configuração, você pode criar pools manualmente a partir do menu:armazenamento[pools & grupos de volume].
+
+Saiba mais:
+
+* link:automatic-versus-manual-pool-creation.html["Criação automática versus manual de pool"]
+* link:create-pool-automatically.html["Criar pool automaticamente"]
+* link:create-pool-manually.html["Criar pool manualmente"]
+* link:add-capacity-to-a-pool-or-volume-group.html["Adicionar capacidade a um pool ou grupo de volumes"]
+
+
+
+
+== Como criar grupos de volume?
+
+Pode criar grupos de volume a partir do menu:armazenamento[pools & grupos de volume].
+
+Saiba mais:
+
+* link:create-volume-group.html["Crie um grupo de volumes"]
+* link:add-capacity-to-a-pool-or-volume-group.html["Adicionar capacidade a um pool ou grupo de volumes"]
+
+
+
+
+== Informações relacionadas
+
+Saiba mais sobre conceitos relacionados a pools e grupos de volumes:
+
+* link:how-reserved-capacity-works.html["Como funciona a capacidade reservada"]
+* link:how-ssd-cache-works.html["Como o cache SSD funciona"]
+

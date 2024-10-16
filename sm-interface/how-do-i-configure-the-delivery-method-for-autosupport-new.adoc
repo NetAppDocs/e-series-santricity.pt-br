@@ -1,0 +1,17 @@
+---
+permalink: sm-interface/how-do-i-configure-the-delivery-method-for-autosupport-new.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, AutoSupport, ASUP 
+summary: Para acessar tarefas de configuração para métodos de entrega do AutoSupport, vá para suporte > Centro de suporte e clique na guia AutoSupport. 
+---
+= Como faço para configurar o método de entrega para o AutoSupport?
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Para acessar as tarefas de configuração para os métodos de entrega do AutoSupport, vá para o menu:suporte[Centro de suporte] e clique na guia *AutoSupport*.
+
+Os seguintes protocolos são suportados: HTTPS, HTTP e SMTP.

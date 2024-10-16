@@ -1,0 +1,26 @@
+---
+permalink: sm-storage/why-would-i-create-a-snapshot-consistency-group.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, create, snapshot, consistency, group 
+summary: Você cria um grupo de consistência de instantâneos quando deseja garantir que as imagens instantâneas sejam tiradas em vários volumes ao mesmo tempo. 
+---
+= Por que eu criaria um grupo de consistência de snapshot?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você cria um grupo de consistência de instantâneos quando deseja garantir que as imagens instantâneas sejam tiradas em vários volumes ao mesmo tempo.
+
+Por exemplo, um banco de dados composto por vários volumes que precisam permanecer consistentes para fins de recuperação exigiria que um grupo de consistência de snapshot coletasse snapshots coordenados de todos os volumes e os usasse para restaurar todo o banco de dados.
+
+Os volumes incluídos em um grupo de consistência de snapshot são chamados _volumes de membros_.
+
+Você pode executar as seguintes operações de snapshot em um grupo de consistência de snapshot:
+
+* Crie uma imagem instantânea de um grupo de consistência de instantâneos para obter imagens simultâneas dos volumes de membros.
+* Crie uma programação para que o grupo de consistência de instantâneos capture automaticamente imagens simultâneas periódicas dos volumes de membros.
+* Crie um volume instantâneo acessível ao host de uma imagem de grupo de consistência de snapshot.
+* Execute uma operação de reversão para um grupo de consistência de snapshot.
+

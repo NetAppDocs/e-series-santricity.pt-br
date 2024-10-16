@@ -1,0 +1,47 @@
+---
+permalink: sm-storage/decrease-reserved-capacity.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, decrease, reserved, capacity 
+summary: 'Você usa a opção diminuir capacidade para diminuir a capacidade reservada para os seguintes objetos de storage: Grupo de snapshot, volume de snapshot e volume de membro do grupo de consistência. Você pode diminuir a capacidade reservada somente pelo(s) valor(s) usado(s) para aumentá-la.' 
+---
+= Diminuir a capacidade reservada
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você usa a opção diminuir capacidade para diminuir a capacidade reservada para os seguintes objetos de armazenamento: Grupo de snapshot, volume de snapshot e volume de membro do grupo de consistência. Você pode diminuir a capacidade reservada somente pelo(s) valor(s) usado(s) para aumentá-la.
+
+.Antes de começar
+* O objeto de storage deve conter mais de um volume de capacidade reservado.
+* O objeto de storage não deve ser um volume de par espelhado.
+* Se o objeto de storage for um volume instantâneo, ele deverá ser um volume instantâneo desativado.
+* Se o objeto de armazenamento for um grupo de instantâneos, não deve conter quaisquer imagens instantâneas associadas.
+
+
+.Sobre esta tarefa
+Reveja as seguintes diretrizes:
+
+* Você pode remover volumes de capacidade reservada somente na ordem inversa em que foram adicionados.
+* Não é possível diminuir a capacidade reservada para um volume instantâneo que seja somente leitura porque não tem nenhuma capacidade reservada associada. Somente os volumes snapshot que são leitura-gravação exigem capacidade reservada.
+
+
+.Passos
+. Selecione menu:armazenamento[pools & grupos de volume].
+. Clique na guia *capacidade reservada*.
+. Selecione o objeto de armazenamento para o qual você deseja diminuir a capacidade reservada e clique em *diminuir a capacidade*.
++
+A caixa de diálogo diminuir capacidade reservada é exibida.
+
+. Selecione a quantidade de capacidade pela qual você deseja diminuir a capacidade reservada e clique em *diminuir*.
+
+
+.Resultados
+O System Manager executa as seguintes ações:
+
+* Atualiza a capacidade do objeto de armazenamento.
+* Exibe a capacidade reservada recém-atualizada para o objeto de armazenamento.
+* Quando você diminui a capacidade de um volume de snapshot, o System Manager faz a transição automática do volume de snapshot para um estado Desativado. Desativado significa que o volume instantâneo não está atualmente associado a uma imagem instantânea e, portanto, não pode ser atribuído a um host para e/S.
+

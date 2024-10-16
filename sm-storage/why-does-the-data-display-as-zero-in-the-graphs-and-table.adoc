@@ -1,0 +1,69 @@
+---
+permalink: sm-storage/why-does-the-data-display-as-zero-in-the-graphs-and-table.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, zero, graphs, table 
+summary: Quando um zero é exibido para um ponto de dados nos gráficos e tabela, significa que não há atividade de e/S para o objeto para esse ponto no tempo. Essa situação pode ocorrer porque o host não está iniciando e/S para esse objeto, ou pode ser um problema com o próprio objeto. 
+---
+= Por que os dados são exibidos como zero nos gráficos e na tabela?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Quando um zero é exibido para um ponto de dados nos gráficos e tabela, significa que não há atividade de e/S para o objeto para esse ponto no tempo. Essa situação pode ocorrer porque o host não está iniciando e/S para esse objeto, ou pode ser um problema com o próprio objeto.
+
+Os dados históricos do objeto ainda estão disponíveis para visualização. Os gráficos e a tabela mostrarão dados não-zero assim que a atividade de e/S começar a ocorrer para o objeto.
+
+A tabela a seguir lista as razões mais comuns pelas quais um valor de ponto de dados pode ser zero para qualquer objeto.
+
+[cols="25h,~"]
+|===
+| Tipo de objeto no nível do array | Os dados de motivo são exibidos como zero 
+
+
+ a| 
+Volume
+ a| 
+* O volume não tinha atribuição de host.
+
+
+
+
+ a| 
+Grupo de volume
+ a| 
+* O grupo de volume está a ser importado.
+* O grupo de volumes não contém um volume atribuído a um host, o grupo de volumes *_e_* não contém nenhuma capacidade reservada.
+
+
+
+
+ a| 
+Condução
+ a| 
+* A unidade falhou.
+* A unidade foi removida.
+* A unidade está num estado desconhecido.
+
+
+
+
+ a| 
+Controlador
+ a| 
+* O controlador está offline.
+* O controlador falhou.
+* O controlador foi removido.
+* O controlador está num estado desconhecido.
+
+
+
+
+ a| 
+Storage array
+ a| 
+* Storage array não contém volumes.
+
+
+|===

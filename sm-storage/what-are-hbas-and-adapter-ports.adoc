@@ -1,0 +1,16 @@
+---
+permalink: sm-storage/what-are-hbas-and-adapter-ports.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, hbas, adapter, ports 
+summary: 'Um adaptador de barramento de host (HBA) é uma placa que reside em um host e contém uma ou mais portas de host. Uma porta de host é uma porta em um adaptador de barramento de host (HBA) que fornece a conexão física a um controlador e é usada para operações de e/S.' 
+---
+= O que são HBAs e portas adaptadoras?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Um adaptador de barramento de host (HBA) é uma placa que reside em um host e contém uma ou mais portas de host. Uma porta de host é uma porta em um adaptador de barramento de host (HBA) que fornece a conexão física a um controlador e é usada para operações de e/S.
+
+As portas do adaptador no HBA são chamadas de portas de host. A maioria dos HBAs tem uma ou duas portas de host. O HBA tem um identificador mundial único (WWID), e cada porta de host HBA tem um WWID exclusivo. Os identificadores de porta do host são usados para associar o HBA apropriado ao host físico quando você estiver criando manualmente o host por meio do Gerenciador de sistema do SANtricity.

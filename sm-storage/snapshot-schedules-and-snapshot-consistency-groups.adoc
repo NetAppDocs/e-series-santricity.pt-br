@@ -1,0 +1,38 @@
+---
+permalink: sm-storage/snapshot-schedules-and-snapshot-consistency-groups.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, snapshot, schedules, snapshot, consistency groups 
+summary: Use programações para coleta de imagens instantâneas e use grupos de consistência de snapshot para gerenciar vários volumes base. 
+---
+= Agendamentos de snapshot e grupos de consistência de snapshot
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Use programações para coleta de imagens instantâneas e use grupos de consistência de snapshot para gerenciar vários volumes base.
+
+Para gerenciar facilmente operações de snapshot de volumes base, você pode usar os seguintes recursos:
+
+* *Agendamento de instantâneos* -- Automatize instantâneos para um único volume base.
+* *Snapshot consistency group* -- Gerencie vários volumes base como uma entidade.
+
+
+
+
+== Agendamento do Snapshot
+
+Se você quiser tirar snapshots automaticamente para um volume base, você pode criar um agendamento. Por exemplo, você pode definir uma programação que tira imagens instantâneas todos os sábados à meia-noite, no primeiro de cada mês ou em quaisquer datas e horas que você decidir. Depois que o máximo de 32 instantâneos for alcançado para um único agendamento, você poderá suspender snapshots programados, criar mais capacidade reservada ou excluir snapshots. Os instantâneos podem ser excluídos manualmente ou automatizando o processo de exclusão. Depois de eliminar uma imagem instantânea, a capacidade reservada adicional está disponível para reutilização.
+
+
+
+== Grupo de consistência do Snapshot
+
+Você cria um grupo de consistência de instantâneos quando deseja garantir que as imagens instantâneas sejam tiradas em vários volumes ao mesmo tempo. As ações de imagem instantânea são executadas no grupo de consistência de instantâneos como um todo. Por exemplo, você pode agendar snapshots sincronizados de todos os volumes com o mesmo carimbo de data/hora. Os grupos de consistência de snapshot são ideais para aplicativos que abrangem vários volumes, como aplicativos de banco de dados que armazenam Registros em um volume e os arquivos de banco de dados em outro volume.
+
+Os volumes incluídos em um grupo de consistência de snapshot são chamados de volumes de membros. Quando você adiciona um volume a um grupo de consistência, o System Manager cria automaticamente uma nova capacidade reservada que corresponde a esse volume de membro. Pode definir uma agenda para criar automaticamente uma imagem instantânea de cada volume de membro.
+
+image::../media/sam1130-dwg-snapshots-consistency-groups-overview.gif[visão geral dos grupos de consistência de instantâneos sam1130d dwg]
+
+1 capacidade reservada; 2 volume de Membros; 3 imagens de instantâneos de grupo de consistência

@@ -1,0 +1,37 @@
+---
+permalink: sm-settings/view-local-user-roles.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, view, local, user, roles, 
+summary: 'Na guia funções de usuário local, você pode exibir os mapeamentos dos perfis de usuário para as funções padrão. Esses mapeamentos fazem parte do RBAC (controles de acesso baseados em função) aplicado no storage array.' 
+---
+= Ver funções de utilizador locais
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Na guia funções de usuário local, você pode exibir os mapeamentos dos perfis de usuário para as funções padrão. Esses mapeamentos fazem parte do RBAC (controles de acesso baseados em função) aplicado no storage array.
+
+.Antes de começar
+Você deve estar conetado com um perfil de usuário que inclua permissões de administrador de segurança. Caso contrário, as funções de Gerenciamento de Acesso não aparecem.
+
+.Sobre esta tarefa
+Os perfis de usuário e mapeamentos não podem ser alterados. Apenas as senhas podem ser modificadas.
+
+.Passos
+. Selecione menu:Definições[Gestão de Acesso].
+. Selecione a guia *funções de usuário local*.
++
+Os perfis de utilizador são apresentados na tabela:
+
++
+** * Admin root* (admin) -- Super administrador que tem acesso a todas as funções do sistema. Este perfil de usuário inclui todas as funções.
+** *Storage admin* (armazenamento) -- o administrador responsável por todo o provisionamento de armazenamento. Esse perfil de usuário inclui as seguintes funções: Administrador de storage, administrador de suporte e monitor.
+** *Security admin* (security) -- o usuário responsável pela configuração de segurança, incluindo gerenciamento de acesso, gerenciamento de certificados e funções de unidade habilitadas para segurança. Este perfil de usuário inclui as seguintes funções: Admin de segurança e Monitor.
+** *Support admin* (suporte) -- o usuário responsável por recursos de hardware, dados de falha e atualizações de firmware. Este perfil de usuário inclui as seguintes funções: Admin de suporte e Monitor.
+** *Monitor* (monitor) -- Um usuário com acesso somente leitura ao sistema. Este perfil de usuário inclui apenas a função Monitor.
+
+
+

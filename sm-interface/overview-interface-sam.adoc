@@ -1,0 +1,97 @@
+---
+permalink: sm-interface/overview-interface-sam.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, 
+summary: Você navega na interface principal para acessar recursos e tarefas do System Manager. 
+---
+= Visão geral da interface do System Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O System Manager é uma interface baseada na Web que permite gerenciar um storage array em uma única visualização.
+
+
+
+== Página inicial
+
+A página inicial fornece uma visualização de painel para o gerenciamento diário de seu storage array. Ao iniciar sessão no System Manager, a página inicial é a primeira tela exibida.
+
+A visualização do dashboard compreende quatro áreas de resumo que contêm informações importantes sobre o estado e a integridade do storage array. Pode encontrar mais informações na área de resumo.
+
+[cols="25h,~"]
+|===
+| Área | Descrição 
+
+
+ a| 
+Notificações
+ a| 
+A área notificações exibe notificações de problemas que indicam o status do storage array e seus componentes. Além disso, esse portlet exibe alertas automatizados que podem ajudar você a solucionar problemas antes que isso afete outras áreas do seu ambiente de storage.
+
+
+
+ a| 
+Desempenho
+ a| 
+A área desempenho permite comparar e contrastar o uso de recursos ao longo do tempo. É possível visualizar as métricas de desempenho de um storage array para tempo de resposta (IOPS), taxas de transferência (MIB/s) e a quantidade de capacidade de processamento usada (CPU).
+
+
+
+ a| 
+Capacidade
+ a| 
+A área capacidade exibe uma visualização de gráfico da capacidade alocada, da capacidade de armazenamento livre e da capacidade de armazenamento não atribuída no storage.
+
+
+
+ a| 
+Hierarquia de armazenamento
+ a| 
+A área hierarquia de armazenamento fornece uma visualização organizada dos vários componentes de hardware e objetos de armazenamento gerenciados pelo seu storage array. Clique na seta suspensa para executar uma determinada ação nesse componente de hardware ou objeto de armazenamento.
+
+|===
+
+
+== Definições de interface
+
+Pode alterar as preferências de apresentação e outras definições a partir da interface principal.
+
+[cols="25h,~"]
+|===
+| Definição | Descrição 
+
+
+ a| 
+Preferências de visualização
+ a| 
+Altere os valores de capacidade e o período de tempo na lista suspensa Preferências no canto superior direito da interface.
+
+
+
+ a| 
+Tempos limite da sessão
+ a| 
+Configure tempos limite para que as sessões inativas dos usuários sejam desconetadas após um tempo especificado.
+
+
+
+ a| 
+Ajuda
+ a| 
+Acesse a documentação da Ajuda e outros recursos no menu suspenso no canto superior direito da interface.
+
+|===
+
+
+== Logins de usuário e senhas
+
+O usuário atual conetado ao sistema é mostrado no canto superior direito da interface.
+
+Para obter mais informações sobre usuários e senhas, consulte:
+
+* link:administrator-password-protection.html["Defina a proteção de senha de administrador"]
+* link:../sm-settings/change-passwords.html["Alterar senhas"]
+

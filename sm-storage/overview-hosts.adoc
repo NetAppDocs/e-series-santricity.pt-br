@@ -1,0 +1,55 @@
+---
+permalink: sm-storage/overview-hosts.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, hosts 
+summary: Você pode configurar hosts e clusters de host, que definem as conexões entre o storage array e os servidores de dados. 
+---
+= Visão geral dos clusters de hosts e host
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode configurar hosts e clusters de host, que definem as conexões entre o storage array e os servidores de dados.
+
+
+
+== O que são hosts e clusters de host?
+
+Um _host_ é um servidor que envia e/S para um volume em um storage array. Um cluster _host_ é um grupo de hosts, que você pode criar para atribuir os mesmos volumes a vários hosts.
+
+Saiba mais:
+
+* link:host-terminology.html["Terminologia do host"]
+* link:access-volumes.html["Volumes de acesso"]
+* link:maximum-number-of-luns.html["Número máximo de LUNs"]
+
+
+
+
+== Como configuro hosts e clusters de host?
+
+Para definir conexões de host, você pode ir para menu:armazenamento[hosts] para configurar manualmente o host. Se quiser que dois ou mais hosts compartilhem o acesso ao mesmo conjunto de volumes, você poderá definir um cluster e atribuir os volumes a esse cluster.
+
+Saiba mais:
+
+* link:manual-host-creation.html["Criação manual do host"]
+* link:how-volumes-are-assigned-to-hosts-and-host-clusters.html["Como os volumes são atribuídos a hosts e clusters de host"]
+* link:workflow-for-creating-hosts-and-assigning-volumes.html["Fluxo de trabalho para criação de host e atribuição de volume"]
+* link:create-host-manually.html["Criar host manualmente"]
+* link:create-host-cluster.html["Criar cluster de host"]
+* link:assign-volumes.html["Atribuir volumes aos hosts"]
+
+
+
+
+== Informações relacionadas
+
+Saiba mais sobre as tarefas relacionadas aos hosts:
+
+* link:../sm-settings/set-automatic-load-balancing.html["Definir o balanceamento de carga automático"]
+* link:../sm-settings/set-host-connectivity-reporting.html["Definir relatórios de conetividade de host"]
+* link:../sm-settings/change-default-host-type.html["Altere o tipo de host padrão"]
+

@@ -1,0 +1,31 @@
+---
+permalink: sm-settings/delete-trap-destinations.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, delete, trap, destinations, 
+summary: Você pode excluir um endereço de destino de armadilha para que o monitor de eventos da matriz de armazenamento não envie mais traps SNMP para esse endereço. 
+---
+= Eliminar destinos de armadilha
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode excluir um endereço de destino de armadilha para que o monitor de eventos da matriz de armazenamento não envie mais traps SNMP para esse endereço.
+
+.Passos
+. Selecione menu:Definições[Alertas].
+. Selecione a guia *SNMP*.
++
+Os endereços de destino da armadilha aparecem na tabela.
+
+. Selecione um destino de armadilha e clique em *Excluir* no canto superior direito da página.
+. Confirme a operação e, em seguida, clique em *Delete*.
++
+O endereço de destino não aparece mais na página Alertas.
+
+
+
+.Resultados
+O destino da armadilha excluída não recebe mais traps SNMP do monitor de eventos da matriz de armazenamento.

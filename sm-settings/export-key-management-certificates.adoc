@@ -1,0 +1,30 @@
+---
+permalink: sm-settings/export-key-management-certificates.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, export, key, management, server, certificates, 
+summary: Pode guardar um certificado para um servidor de gestão de chaves na sua máquina local. 
+---
+= Exportar certificados do servidor de gerenciamento de chaves
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Pode guardar um certificado para um servidor de gestão de chaves na sua máquina local.
+
+.Antes de começar
+* Você deve estar conetado com um perfil de usuário que inclua permissões de administrador de segurança. Caso contrário, as funções do certificado não aparecem.
+* Os certificados devem ser importados anteriormente.
+
+
+.Passos
+. Selecione menu:Definições[certificados].
+. Selecione a guia *Key Management*.
+. Na tabela, selecione o certificado que deseja exportar e clique em *Exportar*.
++
+Abre-se uma caixa de diálogo Guardar.
+
+. Digite um nome de arquivo e clique em *Salvar*.
+

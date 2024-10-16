@@ -1,0 +1,194 @@
+---
+permalink: sm-storage/how-do-i-view-and-interpret-all-ssd-cache-statistics.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, ssd cache, statistics 
+summary: Você pode ver estatísticas nominais e estatísticas detalhadas para cache SSD. As estatísticas nominais são um subconjunto das estatísticas detalhadas. 
+---
+= Como posso visualizar e interpretar todas as estatísticas de cache SSD?
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode ver estatísticas nominais e estatísticas detalhadas para cache SSD. As estatísticas nominais são um subconjunto das estatísticas detalhadas.
+
+As estatísticas detalhadas só podem ser visualizadas quando você exporta todas as estatísticas SSD para um `.csv` arquivo. Ao rever e interpretar as estatísticas, tenha em mente que algumas interpretações são derivadas olhando para uma combinação de estatísticas.
+
+
+
+== Estatísticas nominais
+
+Para exibir estatísticas de cache SSD, selecione menu:armazenamento[pools & grupos de volume]. Selecione o cache SSD para o qual deseja exibir estatísticas e, em seguida, selecione menu:mais[View Statistics]. As estatísticas nominais são apresentadas na caixa de diálogo View SSD Cache Statistics (Ver estatísticas de cache SSD).
+
+A lista a seguir inclui estatísticas nominais, que são um subconjunto das estatísticas detalhadas.
+
+[cols="25h,~"]
+|===
+| Estatística nominal | Descrição 
+
+
+ a| 
+Lê/escreve
+ a| 
+O número total de leituras de host ou gravações de host nos volumes habilitados para cache SSD. Compare as leituras relativas às gravações. As leituras precisam ser maiores do que as gravações para uma operação de cache SSD eficaz. Quanto maior a proporção de leituras para gravações, melhor a operação do cache.
+
+
+
+ a| 
+Cache hits
+ a| 
+Uma contagem do número de acessos de cache.
+
+
+
+ a| 
+Acertos de cache (%)
+ a| 
+Derivado de hits de cache / (lê e escreve). A porcentagem de acerto do cache deve ser superior a 50 por cento para operação efetiva do cache SSD. Um pequeno número pode indicar várias coisas:
+
+* A proporção de leituras para gravações é muito pequena
+* As leituras não são repetidas
+* A capacidade do cache é muito pequena
+
+
+
+
+ a| 
+Alocação de cache (%)
+ a| 
+A quantidade de armazenamento em cache SSD alocada, expressa como uma porcentagem do armazenamento em cache SSD disponível para este controlador. Derivado de bytes alocados / bytes disponíveis. A porcentagem de alocação de cache normalmente aparece como 100 por cento. Se esse número for inferior a 100 por cento, significa que o cache não foi aquecido ou a capacidade do cache SSD é maior do que todos os dados que estão sendo acessados. Neste último caso, uma capacidade de cache SSD menor poderia fornecer o mesmo nível de desempenho. Observe que isso não indica que os dados armazenados em cache foram colocados no cache SSD; é simplesmente uma etapa de preparação antes que os dados possam ser colocados no cache SSD.
+
+
+
+ a| 
+Utilização de cache (%)
+ a| 
+A quantidade de armazenamento em cache SSD que contém dados de volumes ativados, expressa como uma porcentagem de armazenamento em cache SSD alocada. Este valor representa a utilização ou densidade do cache SSD derivado de bytes de dados do usuário / bytes alocados. A porcentagem de utilização do cache normalmente é inferior a 100%, talvez muito menor. Esse número mostra a porcentagem da capacidade do cache SSD que é preenchida com dados de cache. Esse número é inferior a 100 por cento porque cada unidade de alocação do cache SSD, o bloco cache SSD, é dividido em unidades menores chamadas sub-blocos, que são preenchidos de forma um pouco independente. Um número maior geralmente é melhor, mas os ganhos de desempenho podem ser significativos mesmo com um número menor.
+
+|===
+
+
+== Estatísticas detalhadas
+
+As estatísticas detalhadas consistem nas estatísticas nominais, mais estatísticas adicionais. Essas estatísticas adicionais são salvas juntamente com as estatísticas nominais, mas, ao contrário das estatísticas nominais, elas não são exibidas na caixa de diálogo View SSD Cache Statistics (Exibir estatísticas de cache SSD). Você pode exibir as estatísticas detalhadas somente depois de exportar as estatísticas para um `.csv` arquivo.
+
+Ao visualizar o `.csv` arquivo, observe que as estatísticas detalhadas são listadas após as estatísticas nominais:
+
+[cols="25h,~"]
+|===
+| Estatísticas detalhadas | Descrição 
+
+
+ a| 
+Ler blocos
+ a| 
+O número de blocos no host lê.
+
+
+
+ a| 
+Escrever blocos
+ a| 
+O número de blocos nas gravações do host.
+
+
+
+ a| 
+Blocos completos
+ a| 
+O número de blocos no cache atinge. Os blocos de hit completos indicam o número de blocos que foram lidos inteiramente a partir do cache SSD. O cache SSD só é benéfico para o desempenho para as operações que são hits de cache completo.
+
+
+
+ a| 
+Acertos parciais
+ a| 
+O número de leituras de host onde pelo menos um bloco, mas não todos os blocos, estavam no cache SSD. Um hit parcial é um SSD Cache *miss* onde as leituras foram satisfeitas a partir do volume base.
+
+
+
+ a| 
+Acessos parciais - blocos
+ a| 
+O número de blocos em Partial Hits. Acessos parciais de cache e blocos parciais de acertos de cache resultam de uma operação que tem apenas uma parte de seus dados no cache SSD. Neste caso, a operação deve obter os dados do volume da unidade de disco rígido em cache (HDD). O cache SSD não oferece nenhum benefício de desempenho para esse tipo de acerto. Se a contagem de blocos de acerto de cache parcial for maior do que os blocos de acerto de cache completo, um tipo de caraterística de e/S diferente (sistema de arquivos, banco de dados ou servidor da Web) poderia melhorar o desempenho. Espera-se que haja um número maior de acertos parciais e falhas em comparação com os acertos do cache enquanto o cache SSD está aquecendo.
+
+
+
+ a| 
+Falha
+ a| 
+O número de leituras de host onde nenhum dos blocos estava no cache SSD. Uma falta de cache SSD ocorre quando as leituras foram satisfeitas a partir do volume base. Espera-se que haja um número maior de acertos parciais e falhas em comparação com os acertos do cache enquanto o cache SSD está aquecendo.
+
+
+
+ a| 
+Misses - quadras
+ a| 
+O número de blocos em misses.
+
+
+
+ a| 
+Preencher ações (leituras do host)
+ a| 
+O número de host lê onde os dados foram copiados do volume base para o cache SSD.
+
+
+
+ a| 
+Preencher ações (leituras do host) - blocos
+ a| 
+O número de blocos em ações de preenchimento (Host lê).
+
+
+
+ a| 
+Preencher ações (gravações do host)
+ a| 
+O número de gravações do host onde os dados foram copiados do volume base para o cache SSD. A contagem de ações de preenchimento (gravações de host) pode ser zero para as configurações de cache que não preenchem o cache como resultado de uma operação de e/S de gravação.
+
+
+
+ a| 
+Preencher ações (gravações do host) - blocos
+ a| 
+O número de blocos em ações de preenchimento (gravações do host).
+
+
+
+ a| 
+Invalidar ações
+ a| 
+O número de vezes que os dados foram invalidados ou removidos do cache SSD. Uma operação de invalidação de cache é executada para cada solicitação de gravação do host, cada solicitação de leitura do host com Acesso forçado à Unidade (FUA), cada solicitação de verificação e em algumas outras circunstâncias.
+
+
+
+ a| 
+Ações de reciclagem
+ a| 
+O número de vezes que o bloco cache SSD foi reutilizado para outro volume base e/ou um intervalo de endereçamento de bloco lógico (LBA) diferente. Para uma operação de cache eficaz, o número de reciclagens deve ser pequeno em comparação com o número combinado de operações de leitura e gravação. Se o número de ações de reciclagem estiver próximo ao número combinado de leituras e gravações, o cache SSD está em alta. A capacidade do cache precisa ser aumentada ou a carga de trabalho não é favorável para uso com cache SSD.
+
+
+
+ a| 
+Bytes disponíveis
+ a| 
+O número de bytes disponíveis no cache SSD para uso por este controlador.
+
+
+
+ a| 
+Bytes alocados
+ a| 
+O número de bytes alocados do cache SSD por este controlador. Os bytes alocados a partir do cache SSD podem estar vazios ou podem conter dados de volumes base.
+
+
+
+ a| 
+Bytes de dados do usuário
+ a| 
+O número de bytes alocados no cache SSD que contêm dados de volumes base. Os bytes disponíveis, os bytes alocados e os bytes de dados do usuário são usados para calcular a porcentagem de alocação de cache e a porcentagem de utilização de cache.
+
+|===

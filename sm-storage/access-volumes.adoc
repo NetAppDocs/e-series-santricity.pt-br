@@ -1,0 +1,29 @@
+---
+permalink: sm-storage/access-volumes.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, access volumes 
+summary: 'Um volume de acesso é um volume configurado de fábrica no storage array que é usado para comunicação com o storage array e o host por meio da conexão de e/S do host. O volume de acesso requer um LUN (Logical Unit Number).' 
+---
+= Volumes de acesso
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Um volume de acesso é um volume configurado de fábrica no storage array que é usado para comunicação com o storage array e o host por meio da conexão de e/S do host. O volume de acesso requer um LUN (Logical Unit Number).
+
+O volume de acesso é usado na seguinte instância:
+
+* *Gerenciamento na banda* -- o volume de acesso é usado para uma conexão na banda para gerenciar o storage array. Isso só pode ser feito se você estiver gerenciando o storage array com a interface de linha de comando (CLI).
++
+[NOTE]
+====
+O gerenciamento na banda não está disponível para sistemas de storage EF600 ou EF300.
+
+====
+
+
+Um volume de acesso é criado automaticamente na primeira vez que você atribui um volume a um host. Por exemplo, se você atribuir volume_1 e volume_2 a um host, ao visualizar os resultados dessa atribuição, verá três volumes (volume_1, volume_2 e Access).
+
+Se você não estiver criando automaticamente hosts ou gerenciando um storage array na banda com a CLI, não precisará do volume de acesso e poderá liberar o LUN excluindo o volume de acesso. Essa ação remove a atribuição de volume para LUN, bem como quaisquer conexões de gerenciamento na banda para o host.

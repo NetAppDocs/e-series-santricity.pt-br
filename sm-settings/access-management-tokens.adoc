@@ -1,0 +1,50 @@
+---
+permalink: sm-settings/access-management-tokens.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, access management, tokens 
+summary: Os tokens de acesso fornecem acesso ao array sem expor o nome de usuário e a senha. 
+---
+= Acesse tokens
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Os tokens de acesso fornecem um método de autenticação com a API REST ou interface de linha de comando (CLI), sem expor nomes de usuário e senhas. Um token é associado a um usuário específico (incluindo usuários LDAP) e inclui um conjunto de permissões e uma expiração.
+
+
+
+== Acesso a token web SAML e JSON
+
+Por padrão, um sistema com SAML habilitado não permite o acesso a ferramentas de linha de comando tradicionais. A API REST e a CLI efetivamente tornam-se inoperáveis porque o fluxo de trabalho MFA requer um redirecionamento para um servidor do Identity Provider para autenticação. Portanto, você deve gerar tokens no System Manager, o que exige que um usuário seja autenticado por meio de MFA.
+
+
+NOTE: Não é necessário ter o SAML habilitado para usar tokens da Web, mas o SAML é recomendado para o mais alto nível de segurança.
+
+
+
+== Fluxo de trabalho para criar e usar tokens
+
+. Crie um token no System Manager e determine sua expiração.
+. Copie o texto do token para a área de transferência ou faça o download em um arquivo e salve o texto do token em um local seguro.
+. Use o token da seguinte forma:
++
+** *API REST*: Para usar um token em uma solicitação de API REST, adicione um cabeçalho HTTP às suas solicitações. Por exemplo:
+`Authorization: Bearer _<access-token-value>_`
+** *CLI segura*: Para usar um token na CLI, adicione o valor do token na linha de comando ou use o caminho para um arquivo contendo o valor do token. Por exemplo:
++
+*** Valor do token na linha de comando: `-t _access-token-value_`
+*** Caminho para um arquivo contendo o valor do token: `-T _access-token-file_`
+
+
+
+
+
+
+Saiba mais:
+
+* link:access-management-tokens-create.html["Crie tokens de acesso"]
+* link:access-management-tokens-edit.html["Editar tokens de acesso"]
+* link:access-management-tokens-revoke.html["Revogar tokens de acesso"]
+

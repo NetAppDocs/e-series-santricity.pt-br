@@ -1,0 +1,46 @@
+---
+permalink: sm-settings/edit-mail-server-for-alerts.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, edit, mail, server, alerts, 
+summary: Você pode alterar o endereço do servidor de e-mail e o endereço do remetente usado para alertas de e-mail. 
+---
+= Edite o servidor de e-mail para alertas
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode alterar o endereço do servidor de e-mail e o endereço do remetente usado para alertas de e-mail.
+
+.Antes de começar
+O endereço do servidor de correio que está a alterar tem de estar disponível. O endereço pode ser um endereço IPv4 ou IPv6, ou um nome de domínio totalmente qualificado.
+
+[NOTE]
+====
+Para usar um nome de domínio totalmente qualificado, você deve configurar um servidor DNS em ambos os controladores. Pode configurar um servidor DNS a partir da página hardware.
+
+====
+.Passos
+. Selecione menu:Definições[Alertas].
+. Selecione a guia *Email*.
+. Selecione *Configure Mail Server*.
++
+A caixa de diálogo Configurar servidor de correio abre-se.
+
+. Edite o endereço do servidor de correio, as informações do remetente e as informações de contacto.
++
+** *Endereço do servidor de correio* -- edite o nome de domínio totalmente qualificado, endereço IPv4 ou endereço IPv6 do servidor de correio.
++
+[NOTE]
+====
+Para usar um nome de domínio totalmente qualificado, você deve configurar um servidor DNS em ambos os controladores. Pode configurar um servidor DNS a partir da página hardware.
+
+====
+** *Endereço do remetente de e-mail* -- edite o endereço de e-mail a ser usado como remetente do e-mail. Este endereço é exibido no campo "de" da mensagem de e-mail.
+** *Inclua informações de Contato no e-mail* -- para editar as informações de Contato do remetente, selecione esta opção e edite o nome e o número de telefone.
+
+
+. Clique em *Salvar*.
+

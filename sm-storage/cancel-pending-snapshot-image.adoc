@@ -1,0 +1,29 @@
+---
+permalink: sm-storage/cancel-pending-snapshot-image.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, cancel, pending, snapshot, image 
+summary: Você pode cancelar uma imagem instantânea pendente antes de ser concluída. Os instantâneos ocorrem de forma assíncrona, e o status do instantâneo está pendente até que o instantâneo seja concluído. A imagem instantânea é concluída assim que a operação de sincronização for concluída. 
+---
+= Cancelar imagem instantânea pendente
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode cancelar uma imagem instantânea pendente antes de ser concluída. Os instantâneos ocorrem de forma assíncrona, e o status do instantâneo está pendente até que o instantâneo seja concluído. A imagem instantânea é concluída assim que a operação de sincronização for concluída.
+
+.Sobre esta tarefa
+Uma imagem instantânea está em um estado pendente devido às seguintes condições simultâneas:
+
+* O volume base de um grupo de instantâneos ou um ou mais volumes de membros de um grupo de consistência que contém esta imagem de instantâneo é membro de um grupo de espelhos assíncrono.
+* O volume ou os volumes estão atualmente em uma operação de sincronização de espelhamento assíncrono.
+
+
+.Passos
+. Selecione menu:armazenamento[pools & grupos de volume].
+. Clique na guia *capacidade reservada*.
+. Selecione o grupo de instantâneos para o qual pretende cancelar uma imagem de instantâneo pendente e, em seguida, clique em menu:tarefas incomuns[Cancelar imagem de instantâneo pendente].
+. Clique em *Sim* para confirmar que deseja cancelar a imagem de instantâneo pendente.
+

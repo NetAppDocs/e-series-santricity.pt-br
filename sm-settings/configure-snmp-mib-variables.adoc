@@ -1,0 +1,56 @@
+---
+permalink: sm-settings/configure-snmp-mib-variables.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, configure, snmp, mib, variables, 
+summary: 'Para alertas SNMP, você pode opcionalmente configurar variáveis de base de informações de gerenciamento (MIB) que aparecem em traps SNMP. Essas variáveis podem retornar o nome do storage array, o local do array e uma pessoa de Contato.' 
+---
+= Configurar variáveis MIB SNMP
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Para alertas SNMP, você pode opcionalmente configurar variáveis de base de informações de gerenciamento (MIB) que aparecem em traps SNMP. Essas variáveis podem retornar o nome do storage array, o local do array e uma pessoa de Contato.
+
+.Antes de começar
+O arquivo MIB deve ser copiado e compilado no servidor com o aplicativo de serviço SNMP.
+
+Se não tiver um ficheiro MIB, pode obtê-lo da seguinte forma:
+
+* Vá para https://mysupport.netapp.com/site/global/dashboard["Suporte à NetApp"^].
+* Clique em *Downloads* e selecione *Downloads*.
+* Clique em *e-Series SANtricity os Controller Software*.
+* Selecione *Download Latest Release*.
+* Inicie sessão.
+* Aceite a declaração de precaução e o contrato de licença.
+* Role para baixo até ver o arquivo MIB para o tipo de controlador e clique no link para fazer o download do arquivo.
+
+
+.Sobre esta tarefa
+Esta tarefa descreve como definir variáveis MIB para traps SNMP. Essas variáveis podem retornar os seguintes valores em resposta ao SNMP GetRequests:
+
+* `sysName` (nome do storage array)
+* `sysLocation` (local do storage array)
+* `sysContact` (nome de um administrador)
+
+
+.Passos
+. Selecione menu:Definições[Alertas].
+. Selecione a guia *SNMP*.
+. Selecione *Configurar variáveis MIB SNMP*.
++
+A caixa de diálogo Configurar variáveis MIB SNMP é aberta.
+
+. Introduza um ou mais dos seguintes valores e, em seguida, clique em *Guardar*.
++
+** *Name* -- o valor para a variável MIB `sysName` . Por exemplo, insira um nome para a matriz de armazenamento.
+** *Localização* -- o valor para a variável MIB `sysLocation` . Por exemplo, insira um local da matriz de armazenamento.
+** *Contact* -- o valor da variável MIB `sysContact` . Por exemplo, insira um administrador responsável pelo storage array.
+
+
+
+
+.Resultados
+Esses valores aparecem em mensagens de intercetação SNMP para alertas de storage array.

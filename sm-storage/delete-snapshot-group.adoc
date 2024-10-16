@@ -1,0 +1,36 @@
+---
+permalink: sm-storage/delete-snapshot-group.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, delete, snapshot, group 
+summary: Você exclui um grupo de instantâneos quando deseja excluir permanentemente seus dados e removê-los do sistema. A exclusão de um grupo de snapshot reclama a capacidade reservada para reutilização no pool ou no grupo de volumes. 
+---
+= Eliminar grupo instantâneo
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você exclui um grupo de instantâneos quando deseja excluir permanentemente seus dados e removê-los do sistema. A exclusão de um grupo de snapshot reclama a capacidade reservada para reutilização no pool ou no grupo de volumes.
+
+.Sobre esta tarefa
+Quando um grupo de instantâneos é eliminado, todas as imagens de instantâneos no grupo também são eliminadas.
+
+.Passos
+. Selecione menu:armazenamento[pools & grupos de volume].
+. Clique na guia *capacidade reservada*.
+. Selecione o grupo de instantâneos que pretende eliminar e, em seguida, clique em menu:tarefas pouco comuns[Eliminar grupo de instantâneos].
++
+É exibida a caixa de diálogo confirmar Excluir grupo de instantâneos.
+
+. Digite `delete` para confirmar.
+
+
+.Resultados
+O System Manager executa as seguintes ações:
+
+* Elimina todas as imagens instantâneas associadas ao grupo de instantâneos.
+* Desativa todos os volumes instantâneos associados às imagens do grupo de instantâneos.
+* Exclui a capacidade reservada que existe para o grupo de instantâneos.
+

@@ -1,0 +1,47 @@
+---
+permalink: sm-storage/automatic-versus-manual-pool-creation.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, automatic, manual, pool 
+summary: Você cria pools automaticamente ou manualmente para permitir que o storage físico seja agrupado e alocado dinamicamente conforme necessário. Quando um pool é criado, você pode adicionar unidades físicas. 
+---
+= Criação automática versus manual de pool
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você cria pools automaticamente ou manualmente para permitir que o storage físico seja agrupado e alocado dinamicamente conforme necessário. Quando um pool é criado, você pode adicionar unidades físicas.
+
+
+
+== Criação automática
+
+A criação automática de pool é iniciada quando o System Manager deteta capacidade não atribuída em um storage array. Quando a capacidade não atribuída é detetada, o System Manager solicita automaticamente que você crie um ou mais pools ou adicione a capacidade não atribuída a um pool existente ou a ambos.
+
+A criação automática de pool ocorre quando uma destas condições é verdadeira:
+
+* Os pools não existem no storage array e há unidades similares suficientes para criar um novo pool.
+* Novas unidades são adicionadas a um storage array que tenha pelo menos um pool.
+
+
+Cada unidade em um pool deve ser do mesmo tipo de unidade (HDD ou SSD) e ter capacidade semelhante. O System Manager solicitará que você conclua as seguintes tarefas:
+
+* Crie um único pool se houver um número suficiente de unidades desses tipos.
+* Crie vários pools se a capacidade não atribuída consistir em diferentes tipos de unidade.
+* Adicione as unidades ao pool existente se um pool já estiver definido no storage de armazenamento e adicione novas unidades do mesmo tipo de unidade ao pool.
+* Adicione as unidades do mesmo tipo de unidade ao pool existente e use os outros tipos de unidade para criar pools diferentes se as novas unidades forem de tipos de unidade diferentes.
+
+
+
+
+== Criação manual
+
+Você pode querer criar um pool manualmente quando a criação automática não puder determinar a melhor configuração. Esta situação pode ocorrer por uma das seguintes razões:
+
+* As novas unidades podem ser potencialmente adicionadas a mais de um pool.
+* Um ou mais dos novos candidatos à piscina podem usar proteção contra perda de prateleira ou proteção contra perda de gaveta.
+* Um ou mais dos candidatos atuais ao pool não podem manter seu status de proteção contra perda de prateleira ou proteção contra perda de gaveta.
+
+
+Você também pode querer criar um pool manualmente se tiver vários aplicativos em seu storage array e não quiser que eles concorram pelos mesmos recursos de unidade. Nesse caso, você pode considerar a criação manual de um pool menor para um ou mais aplicativos. Você pode atribuir apenas um ou dois volumes em vez de atribuir a carga de trabalho a um pool grande que tenha muitos volumes para distribuir os dados. A criação manual de um pool separado dedicado ao workload de uma aplicação específica pode permitir que as operações de storage array tenham performance mais rápida, com menos contenção.

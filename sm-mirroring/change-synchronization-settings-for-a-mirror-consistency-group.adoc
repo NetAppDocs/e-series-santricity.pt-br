@@ -1,0 +1,66 @@
+---
+permalink: sm-mirroring/change-synchronization-settings-for-a-mirror-consistency-group.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, change, synchronization, settings, mirror, consistency, group, 
+summary: Você pode alterar as configurações de sincronização e os limites de aviso que o grupo de consistência de espelho no storage array local usa quando os dados são sincronizados inicialmente ou quando os dados são sincronizados novamente durante operações de espelhamento assíncrono. 
+---
+= Altere as configurações de sincronização para um grupo de consistência de espelho
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode alterar as configurações de sincronização e os limites de aviso que o grupo de consistência de espelho no storage array local usa quando os dados são sincronizados inicialmente ou quando os dados são sincronizados novamente durante operações de espelhamento assíncrono.
+
+.Sobre esta tarefa
+Alterar as configurações de sincronização afeta as operações de sincronização de todos os pares espelhados dentro do grupo de consistência de espelho.
+
+.Passos
+. Selecione menu:armazenamento[Espelhamento assíncrono].
+. Selecione a guia *Espelhar grupos de consistência*.
++
+A tabela Grupo de consistência espelhada é exibida e exibe todos os grupos de consistência de espelho associados ao storage array.
+
+. Selecione o grupo de consistência de espelho que você deseja editar e, em seguida, selecione menu:mais[Editar configurações].
++
+O sistema exibe a caixa de diálogo Editar configurações.
+
+. Edite as configurações de sincronização e alerta conforme apropriado e clique em *Salvar*.
++
+.Detalhes do campo
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Campo | Descrição 
+
+
+ a| 
+Sincronizar os pares espelhados...
+ a| 
+Especifique se deseja sincronizar os pares espelhados na matriz de armazenamento remoto manualmente ou automaticamente.
+
+** **Manualmente** – Selecione essa opção para sincronizar manualmente os pares espelhados no storage de armazenamento remoto.
+** **Automaticamente, a cada** – Selecione esta opção para sincronizar automaticamente os pares espelhados na matriz de armazenamento remoto especificando o intervalo de tempo desde o início da atualização anterior até o início da próxima atualização. O intervalo padrão é de 10 minutos.
+
+
+
+
+ a| 
+Alerta-me...
+ a| 
+Se você definir o método de sincronização para ocorrer automaticamente, defina os seguintes alertas:
+
+** **Sincronização** – defina o período de tempo após o qual o System Manager envia um alerta de que a sincronização não foi concluída.
+** **Ponto de recuperação remota** – defina um limite de tempo após o qual o System Manager envia um alerta indicando que os dados do ponto de recuperação na matriz de armazenamento remoto são mais antigos do que o limite de tempo definido. Defina o limite de tempo a partir do final da atualização anterior.
+** **Limite de capacidade reservada** – defina um valor de capacidade reservada no qual o System Manager envia um alerta de que você está se aproximando do limite de capacidade reservada. Defina o limite por porcentagem da capacidade restante.
+
+
+|===
+====
+
+
+.Resultados
+O System Manager altera as configurações de sincronização para cada par espelhado no grupo de consistência espelhada.

@@ -1,0 +1,69 @@
+---
+permalink: sm-mirroring/what-impact-does-synchronization-priority-have-on-synchronization-rates.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, synchronization, priority, rates, 
+summary: A prioridade de sincronização define quanto tempo de processamento é alocado para atividades de sincronização em relação ao desempenho do sistema. 
+---
+= Qual o impactos que a prioridade de sincronização tem nas taxas de sincronização?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A prioridade de sincronização define quanto tempo de processamento é alocado para atividades de sincronização em relação ao desempenho do sistema.
+
+O proprietário do controlador do volume primário executa esta operação em segundo plano. Ao mesmo tempo, o proprietário do controlador processa gravações de e/S locais no volume principal e gravações remotas associadas no volume secundário. Como a ressincronização desvia os recursos de processamento do controlador da atividade de e/S, a ressincronização pode ter um impacto no desempenho do aplicativo host.
+
+Mantenha essas diretrizes em mente para ajudá-lo a determinar quanto tempo uma prioridade de sincronização pode levar e como as prioridades de sincronização podem afetar o desempenho do sistema.
+
+.Sobre as taxas de prioridade de sincronização
+[%collapsible]
+====
+Estas tarifas prioritárias estão disponíveis:
+
+* Mais baixo
+* Baixo
+* Média
+* Alta
+* Mais alto
+
+
+A taxa de prioridade mais baixa suporta o desempenho do sistema, mas a ressincronização leva mais tempo. A taxa de prioridade mais alta é compatível com a ressincronização, mas o desempenho do sistema pode estar comprometido.
+
+====
+Estas orientações aproximam aproximadamente as diferenças entre as prioridades.
+
+[cols="35h,~"]
+|===
+| Taxa de prioridade para sincronização completa | Tempo decorrido em comparação com a taxa de sincronização mais elevada 
+
+
+ a| 
+Mais baixo
+ a| 
+Aproximadamente oito vezes, desde que na taxa de prioridade mais alta.
+
+
+
+ a| 
+Baixo
+ a| 
+Aproximadamente seis vezes, desde que na taxa de prioridade mais alta.
+
+
+
+ a| 
+Média
+ a| 
+Aproximadamente três vezes e meia, desde que com a taxa de prioridade mais alta.
+
+
+
+ a| 
+Alta
+ a| 
+Aproximadamente o dobro do tempo na taxa de prioridade mais alta.
+
+|===
+As cargas de tamanho de volume e taxa de e/S do host afetam as comparações de tempo de sincronização.

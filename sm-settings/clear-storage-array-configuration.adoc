@@ -1,0 +1,111 @@
+---
+permalink: sm-settings/clear-storage-array-configuration.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, clear, storage, array, configuration, 
+summary: Use a operação Limpar configuração quando quiser excluir todos os pools, grupos de volume, volumes, definições de host e atribuições de host do storage de armazenamento. 
+---
+= Limpar a configuração do storage array
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Use a operação Limpar configuração quando quiser excluir todos os pools, grupos de volume, volumes, definições de host e atribuições de host do storage de armazenamento.
+
+.Antes de começar
+Antes de limpar a configuração do storage array, faça backup dos dados.
+
+.Sobre esta tarefa
+Existem duas opções de Configuração de matrizes de armazenamento claras:
+
+* *Volume* -- normalmente, você pode usar a opção volume para reconfigurar um storage de armazenamento de teste como um storage de produção. Por exemplo, você pode configurar um storage array para teste e, quando terminar de testar, remover a configuração de teste e configurar o storage array para um ambiente de produção.
+* *Storage Array* -- normalmente, você pode usar a opção Storage Array para mover uma matriz de armazenamento para outro departamento ou grupo. Por exemplo, você pode estar usando um storage array no Engineering, e agora o Engineering está recebendo um novo storage array, então você deseja mover o storage array atual para Administração, onde ele será reconfigurado.
++
+A opção Storage Array (Matriz de armazenamento) exclui algumas configurações adicionais.
+
+
+
+[cols="1a,1a,1a"]
+|===
+|  | Volume | Storage array 
+
+
+ a| 
+Desativa o ARVM
+ a| 
+X
+ a| 
+X
+
+
+
+ a| 
+Exclui pools e grupos de volume
+ a| 
+X
+ a| 
+X
+
+
+
+ a| 
+Elimina volumes
+ a| 
+X
+ a| 
+X
+
+
+
+ a| 
+Exclui hosts e clusters de host
+ a| 
+X
+ a| 
+X
+
+
+
+ a| 
+Exclui atribuições de host
+ a| 
+X
+ a| 
+X
+
+
+
+ a| 
+Exclui o nome da matriz de armazenamento
+ a| 
+ a| 
+X
+
+
+
+ a| 
+Redefine as configurações de cache do storage array para padrão
+ a| 
+ a| 
+X
+
+|===
+[CAUTION]
+====
+*Risco de perda de dados* -- esta operação exclui todos os dados da matriz de armazenamento. (Ele não faz uma eliminação segura.) Não é possível cancelar esta operação depois de iniciada. Execute esta operação somente quando instruído a fazê-lo pelo suporte técnico.
+
+====
+.Passos
+. Selecione menu:Definições[sistema].
+. Selecione *Limpar configuração da matriz de armazenamento*.
+. Na lista suspensa, selecione *volume* ou *Storage Array*.
+. *Opcional:* se você quiser salvar a configuração (não os dados), use os links na caixa de diálogo.
+. Confirme se pretende efetuar a operação.
+
+
+.Resultados
+* A configuração atual é excluída, destruindo todos os dados existentes no storage array.
+* Todas as unidades não são atribuídas.
+

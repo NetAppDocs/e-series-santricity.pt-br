@@ -1,0 +1,12 @@
+---
+permalink: sm-support/index.html 
+sidebar: sidebar 
+keywords:  
+summary:  
+---
+= Gerenciador de sistemas SANtricity 11,8
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+

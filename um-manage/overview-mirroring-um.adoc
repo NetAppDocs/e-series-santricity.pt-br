@@ -1,0 +1,45 @@
+---
+permalink: um-manage/overview-mirroring-um.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, mirroring 
+summary: Use os recursos de espelhamento para replicar dados entre um storage array local e um storage array remoto, seja de forma assíncrona ou síncrona. 
+---
+= Visão geral do espelhamento
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Use os recursos de espelhamento para replicar dados entre um storage array local e um storage array remoto, seja de forma assíncrona ou síncrona.
+
+[NOTE]
+====
+O espelhamento síncrono não está disponível no sistema de storage EF600 ou EF300.
+
+====
+
+
+== O que é espelhamento?
+
+As aplicações SANtricity incluem dois tipos de espelhamento: Assíncrono e síncrono. O espelhamento assíncrono copia volumes de dados sob demanda ou de acordo com o cronograma, o que minimiza ou evita o tempo de inatividade que pode resultar de corrupção ou perda de dados. O espelhamento síncrono replica volumes de dados em tempo real para garantir disponibilidade contínua.
+
+Saiba mais:
+
+* link:mirroring-overview.html["Como o espelhamento funciona"]
+* link:mirroring-terminology.html["Terminologia de espelhamento"]
+
+
+
+
+== Como faço para configurar o espelhamento?
+
+Você configura o espelhamento assíncrono ou síncrono no Unified Manager e, em seguida, usa o System Manager para gerenciar sincronizações.
+
+Saiba mais:
+
+* link:mirroring-configuration-workflow.html["Fluxo de trabalho de configuração de espelhamento"]
+* link:requirements-for-using-mirroring.html["Requisitos para uso do espelhamento"]
+* link:create-asynchronous-mirrored-pair-um.html["Crie um par espelhado assíncrono"]
+* link:create-synchronous-mirrored-pair-um.html["Crie par espelhado síncrono"]
+

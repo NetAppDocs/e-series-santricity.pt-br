@@ -1,0 +1,50 @@
+---
+permalink: sm-settings/obtain-a-feature-key-file.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, obtain, feature, key, file, 
+summary: Para habilitar um recurso premium ou um pacote de recursos em seu storage array, primeiro você deve obter um arquivo de chave de recurso. Uma chave é associada a apenas um storage array. 
+---
+= Obter um arquivo de chave de recurso
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Para habilitar um recurso premium ou um pacote de recursos em seu storage array, primeiro você deve obter um arquivo de chave de recurso. Uma chave é associada a apenas um storage array.
+
+.Sobre esta tarefa
+Esta tarefa descreve como reunir as informações necessárias para o recurso e, em seguida, enviar uma solicitação para um arquivo de chave de recurso. As informações necessárias incluem:
+
+* Número de série do chassis
+* Identificador de ativação de funcionalidade
+* Código de ativação do recurso
+
+
+.Passos
+. No System Manager, localize e registe o número de série do chassis. Você pode visualizar este número de série passando o Mouse sobre o bloco do Centro de suporte.
+. No System Manager, localize o identificador de ativação da funcionalidade. Vá para menu:Configurações[sistema] e role para baixo até *Complementos*. Procure o *Feature Enable Identifier*. Registe o número do identificador de ativação da funcionalidade.
+. Localize e grave o código para a ativação da funcionalidade. Para pacotes de recursos, esse código é fornecido nas instruções apropriadas para executar a conversão.
++
+As instruções do NetApp estão disponíveis em https://www.netapp.com/support-and-training/documentation/eseries-santricity/["Centro de Documentação de sistemas NetApp e-Series"^].
+
++
+Para recursos premium, você pode acessar o código de ativação no site de suporte, como segue:
+
++
+.. Inicie sessão no https://mysupport.netapp.com/site/global/dashboard["Suporte à NetApp"^].
+.. Aceda a *licenças de software* para o seu produto.
+.. Insira o número de série do chassi do storage de armazenamento e clique em *Go*.
+.. Procure os códigos de ativação da funcionalidade na coluna *chave de licença*.
+.. Registre o Código de ativação do recurso para o recurso desejado.
+
+
+. Solicite um arquivo de chave de recurso enviando um e-mail ou um documento de texto para o fornecedor de armazenamento com as seguintes informações: Número de série do chassi, o identificador de ativação e o código para ativação de recursos.
++
+Também pode aceder http://partnerspfk.netapp.com["Ativação de licença do NetApp: Ativação do recurso Premium do storage array"^] e introduzir as informações necessárias para obter a funcionalidade ou o pacote de funcionalidades. (As instruções neste site são para recursos premium, não pacotes de recursos.)
+
+
+
+.Depois de terminar
+Quando você tem um arquivo de chave de recurso, você pode ativar o recurso premium ou o pacote de recursos.

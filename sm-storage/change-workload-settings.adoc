@@ -1,0 +1,29 @@
+---
+permalink: sm-storage/change-workload-settings.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, workload, settings 
+summary: Você pode alterar o nome de uma carga de trabalho e exibir seu tipo de aplicativo associado. Altere o nome de uma carga de trabalho quando o nome atual não for mais significativo ou aplicável. 
+---
+= Altere as configurações da carga de trabalho
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode alterar o nome de uma carga de trabalho e exibir seu tipo de aplicativo associado. Altere o nome de uma carga de trabalho quando o nome atual não for mais significativo ou aplicável.
+
+.Passos
+. Selecione menu:armazenamento[volumes].
+. Selecione a guia *aplicativos e cargas de trabalho*.
++
+A exibição aplicações e cargas de trabalho é exibida.
+
+. Selecione a carga de trabalho que você deseja alterar e selecione *Exibir/Editar configurações*.
++
+A caixa de diálogo Configurações de aplicativos e cargas de trabalho é exibida.
+
+. *Opcional:* altere o nome fornecido pelo usuário da carga de trabalho.
+. Clique em *Salvar*.
+

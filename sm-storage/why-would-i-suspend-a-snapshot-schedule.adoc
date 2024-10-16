@@ -1,0 +1,16 @@
+---
+permalink: sm-storage/why-would-i-suspend-a-snapshot-schedule.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series,  suspend, snapshot, schedule 
+summary: Quando um agendamento é suspenso, as criações de imagem instantânea programadas não ocorrem. Você pode pausar uma programação de snapshot para economizar espaço de armazenamento e, em seguida, retomar os snapshots programados posteriormente. 
+---
+= Por que eu suspenderia uma programação de instantâneos?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Quando um agendamento é suspenso, as criações de imagem instantânea programadas não ocorrem. Você pode pausar uma programação de snapshot para economizar espaço de armazenamento e, em seguida, retomar os snapshots programados posteriormente.
+
+Se você não precisar da programação de instantâneos, você deve excluir a programação em vez de suspendê-la.

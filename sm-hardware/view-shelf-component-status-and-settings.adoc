@@ -1,0 +1,127 @@
+---
+permalink: sm-hardware/view-shelf-component-status-and-settings.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, view, shelf, component, status, settings, 
+summary: A página hardware fornece status e configurações para os componentes do compartimento, incluindo fontes de alimentação, ventiladores e baterias. 
+---
+= Exibir o status e as configurações do componente do compartimento
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A página hardware fornece status e configurações para os componentes do compartimento, incluindo fontes de alimentação, ventiladores e baterias.
+
+.Sobre esta tarefa
+Os componentes disponíveis dependem do tipo de prateleira:
+
+* *Compartimento de unidade* -- contém um conjunto de unidades, coletores de energia/ventilador, módulos de entrada/saída (IOMs) e outros componentes de suporte em uma única gaveta.
+* *Compartimento de controladora* -- contém um conjunto de unidades, um ou dois coletores de controladora, coletores de energia/ventilador e outros componentes de suporte em uma única gaveta.
+
+
+.Passos
+. Selecione *hardware*.
+. Selecione a lista suspensa para o compartimento do controlador ou compartimento de unidade e selecione *Exibir configurações*.
++
+A caixa de diálogo Configurações de componentes do compartimento é aberta, com guias que mostram o status e as configurações relacionadas aos componentes do compartimento. Dependendo do tipo de prateleira selecionado, algumas guias descritas na tabela podem não aparecer.
+
++
+[cols="25h,~"]
+|===
+| Separador | Descrição 
+
+
+ a| 
+Gaveta
+ a| 
+A guia *Shelf* mostra as seguintes propriedades:
+
+** *ID do compartimento* -- identifica exclusivamente uma prateleira na matriz de armazenamento. O firmware do controlador atribui esse número, mas você pode alterá-lo selecionando menu:shelf[Change ID].
+** *Redundância do caminho do compartimento* -- especifica se as conexões entre o compartimento e o controlador têm métodos alternativos no lugar (Sim) ou não (não).
+** *Tipos de unidade atuais* -- mostra o tipo de tecnologia incorporada nas unidades (por exemplo, uma unidade SAS com capacidade segura). Se houver mais de um tipo de unidade, ambas as tecnologias são mostradas.
+** *Número de série* -- mostra o número de série da prateleira.
+
+
+
+
+ a| 
+IOMs (ESMs)
+ a| 
+A guia *IOMs (ESMs)* mostra o status do módulo de entrada/saída (IOM), que também é chamado de módulo de serviço ambiental (ESM). Ele monitora o status dos componentes em um compartimento de unidades e serve como ponto de conexão entre a bandeja de unidades e a controladora.
+
+O estado pode ser ótimo, falhou, ótimo (Miswire) ou não certificado. Outras informações incluem a versão do firmware e a versão das definições de configuração.
+
+Selecione *Mostrar mais definições* para ver as taxas de dados máximas e atuais e o estado da comunicação do cartão (Sim ou não).
+
+[NOTE]
+====
+Você também pode exibir esse status selecionando o ícone IOM image:../media/sam1130-ss-hardware-iom-icon.gif[""], ao lado da lista suspensa prateleira.
+
+====
+
+
+ a| 
+Fontes de alimentação
+ a| 
+O separador *fontes de alimentação* mostra o estado do recipiente da fonte de alimentação e da própria fonte de alimentação. O status pode ser ótimo, Falha, removido ou desconhecido. Também mostra o número de peça da fonte de alimentação.
+
+[NOTE]
+====
+Também é possível exibir esse status selecionando o ícone fonte de alimentação image:../media/sam1130-ss-hardware-power-icon.gif[""], ao lado da lista suspensa prateleira.
+
+====
+
+
+ a| 
+Fãs
+ a| 
+O separador *Fans* mostra o estado do recipiente do ventilador e do próprio ventilador. O status pode ser ótimo, Falha, removido ou desconhecido.
+
+[NOTE]
+====
+Você também pode exibir esse status selecionando o ícone ventilador image:../media/sam1130-ss-hardware-fan-icon.gif[""], ao lado da lista suspensa prateleira.
+
+====
+
+
+ a| 
+Temperatura
+ a| 
+A guia *temperatura* mostra o status da temperatura dos componentes da prateleira, como sensores, controladores e coletores de energia/ventilador. O estado pode ser ideal, temperatura nominal excedida, temperatura máxima excedida ou desconhecido.
+
+[NOTE]
+====
+Você também pode exibir esse status selecionando o ícone temperatura image:../media/sam1130-ss-hardware-temp-icon.gif[""], ao lado da lista suspensa prateleira.
+
+====
+
+
+ a| 
+Baterias
+ a| 
+O separador *baterias* mostra o estado das pilhas do controlador. O estado pode ser ótimo, falhou, removido ou desconhecido. Outras informações incluem a idade da bateria, dias até a substituição, ciclos de aprendizagem e semanas entre ciclos de aprendizagem.
+
+[NOTE]
+====
+Também pode visualizar este estado selecionando o ícone de pilhas image:../media/sam1130-ss-hardware-battery-icon.gif[""], junto à lista pendente prateleira.
+
+====
+
+
+ a| 
+SFPs
+ a| 
+A guia *SFPs* mostra o status dos transcetores Small Form-factor Pluggable (SFP) nos controladores. O status pode ser ótimo, Falha ou desconhecido.
+
+Selecione *Mostrar mais definições* para ver o número de peça, o número de série e o fornecedor dos SFPs.
+
+[NOTE]
+====
+Você também pode exibir esse status selecionando o ícone SFP image:../media/sam1130-ss-hardware-sfp-icon.gif[""], ao lado da lista suspensa prateleira.
+
+====
+|===
+. Clique em *Fechar*.
+

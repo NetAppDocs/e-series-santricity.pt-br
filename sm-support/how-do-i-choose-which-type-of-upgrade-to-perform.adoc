@@ -1,0 +1,24 @@
+---
+permalink: sm-support/how-do-i-choose-which-type-of-upgrade-to-perform.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, upgrade, perform 
+summary: Você escolhe o tipo de atualização a ser executada na unidade, dependendo do estado do pool ou do grupo de volume. 
+---
+= Como faço para escolher qual tipo de atualização deve ser executada?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você escolhe o tipo de atualização a ser executada na unidade, dependendo do estado do pool ou do grupo de volume.
+
+* *Online*
++
+Se o pool ou grupo de volumes suportar redundância e for ideal, você pode usar o método on-line para atualizar o firmware da unidade. O método Online faz o download do firmware _enquanto o storage array está processando I/o_ para os volumes associados usando essas unidades. Não é necessário interromper a e/S para os volumes associados usando essas unidades. Essas unidades são atualizadas uma de cada vez para os volumes associados às unidades. Se a unidade não estiver atribuída a um pool ou grupo de volumes, o firmware poderá ser atualizado pelo método Online ou Offline. O desempenho do sistema pode ser afetado quando você usa o método on-line para atualizar o firmware da unidade.
+
+* *Offline*
++
+Se o pool ou grupo de volumes não suportar redundância (RAID 0) ou estiver degradado, você deve usar o método Offline para atualizar o firmware da unidade. O método Offline atualizará o firmware _somente enquanto toda a atividade de e/S estiver parada_ para os volumes associados usando essas unidades. Você deve parar todas as e/S para quaisquer volumes associados usando essas unidades. Se a unidade não estiver atribuída a um pool ou grupo de volumes, o firmware poderá ser atualizado pelo método Online ou Offline.
+
+

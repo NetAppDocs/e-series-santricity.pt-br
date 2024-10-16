@@ -1,0 +1,49 @@
+---
+permalink: sm-settings/set-automatic-load-balancing.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, set, automatic, load, balancing, 
+summary: O recurso balanceamento de carga automático garante que o tráfego de e/S de entrada dos hosts seja gerenciado e balanceado dinamicamente em ambos os controladores. Esta funcionalidade está ativada por predefinição, mas pode desativá-la a partir do System Manager. 
+---
+= Definir o balanceamento de carga automático
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O recurso balanceamento de carga automático garante que o tráfego de e/S de entrada dos hosts seja gerenciado e balanceado dinamicamente em ambos os controladores. Esta funcionalidade está ativada por predefinição, mas pode desativá-la a partir do System Manager.
+
+.Sobre esta tarefa
+Quando o balanceamento de carga automático está ativado, ele executa as seguintes funções:
+
+* Monitora e equilibra automaticamente a utilização de recursos do controlador.
+* Ajusta automaticamente a propriedade do controlador de volume quando necessário, otimizando assim a largura de banda de e/S entre os hosts e o storage array.
+
+
+Você pode querer desativar o balanceamento de carga automático em seu storage array pelos seguintes motivos:
+
+* Você não deseja alterar automaticamente a propriedade de um volume específico para equilibrar a carga de trabalho.
+* Você está operando em um ambiente altamente ajustado onde a distribuição de carga é propositadamente configurada para alcançar uma distribuição específica entre os controladores.
+
+
+.Passos
+. Selecione menu:Definições[sistema].
+. Role para baixo até *Configurações adicionais* e clique em *Ativar/Desativar balanceamento de carga automático*.
++
+O texto abaixo dessa opção indica se o recurso está ativado ou desativado no momento.
+
++
+Abre-se uma caixa de diálogo de confirmação.
+
+. Confirme clicando em *Sim* para continuar.
++
+Ao selecionar esta opção, pode alternar a funcionalidade entre activado/desativado.
+
++
+[NOTE]
+====
+Se esse recurso for movido de desativado para ativado, o recurso Relatório de conetividade do host também será ativado automaticamente.
+
+====
+

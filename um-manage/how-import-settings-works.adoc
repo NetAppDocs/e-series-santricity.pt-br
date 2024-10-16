@@ -1,0 +1,51 @@
+---
+permalink: um-manage/how-import-settings-works.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, import, settings, 
+summary: Você pode usar o Unified Manager para importar configurações de um storage array para vários storage arrays. O recurso Importar configurações é uma operação em lote que economiza tempo quando você precisa configurar vários arrays na rede. 
+---
+= Como as Configurações de importação funcionam
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode usar o Unified Manager para importar configurações de um storage array para vários storage arrays. O recurso Importar configurações é uma operação em lote que economiza tempo quando você precisa configurar vários arrays na rede.
+
+
+
+== Definições disponíveis para importação
+
+As configurações a seguir podem ser importadas para vários storages:
+
+* *Alertas* -- métodos de alertas para enviar eventos importantes para administradores, usando e-mail, um servidor syslog ou um servidor SNMP.
+* *AutoSupport* -- um recurso que monitora a integridade de um storage array e envia envios automáticos para o suporte técnico.
+* *Serviços de diretório* -- Um método de autenticação de usuário gerenciado por meio de um servidor LDAP (Lightweight Directory Access Protocol) e serviço de diretório, como o ative Directory da Microsoft.
+* *Configuração de armazenamento* -- Configurações relacionadas ao seguinte:
++
+** Volumes (somente volumes espessos e não-repositórios)
+** Grupos de volume e pools
+** Atribuições de unidades hot spare
+
+
+* *Configurações do sistema* -- Configurações relacionadas ao seguinte:
++
+** Definições de digitalização de multimédia para um volume
+** Definições SSD
+** Balanceamento de carga automático (não inclui relatórios de conectividade de host)
+
+
+
+
+
+
+== Fluxo de trabalho de configuração
+
+Para importar configurações, siga este fluxo de trabalho:
+
+. Em uma matriz de armazenamento a ser usada como origem, configure as configurações usando o System Manager.
+. Nos storages a serem usados como destinos, faça backup de sua configuração usando o System Manager.
+. No Unified Manager, vá para a página *Manage* e importe as configurações.
+. Na página *operações*, revise os resultados da operação Importar configurações.
+

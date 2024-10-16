@@ -1,0 +1,34 @@
+---
+permalink: sm-storage/activate-or-suspend-snapshot-schedule.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, snapshot schedule 
+summary: Você pode suspender temporariamente a coleção programada de imagens instantâneas quando precisar conservar espaço de armazenamento. Esse método é mais eficiente do que excluir e recriar posteriormente o agendamento de instantâneos. 
+---
+= Ativar e suspender a programação de instantâneos
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode suspender temporariamente a coleção programada de imagens instantâneas quando precisar conservar espaço de armazenamento. Esse método é mais eficiente do que excluir e recriar posteriormente o agendamento de instantâneos.
+
+.Sobre esta tarefa
+O estado da programação de instantâneos permanece suspenso até que você use a opção *Activate* para retomar a atividade de snapshot agendada.
+
+.Passos
+. Selecione menu:armazenamento[instantâneos].
+. Se ainda não for exibido, clique na guia *horários*.
++
+Os horários estão listados na página.
+
+. Selecione uma agenda de instantâneos ativa que pretende suspender e, em seguida, clique em *Ativar/suspender*.
++
+O estado da coluna Estado muda para *suspenso* e o agendamento de instantâneos interrompe a coleta de todas as imagens instantâneas.
+
+. Para retomar a recolha de imagens instantâneas, selecione a agenda de instantâneos suspensos que pretende retomar e, em seguida, clique em *Ativar/suspender*.
++
+O status da coluna Estado muda para *Ativo*.
+
+

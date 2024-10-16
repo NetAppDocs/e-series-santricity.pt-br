@@ -1,0 +1,35 @@
+---
+permalink: um-certificates/reset-management-certificates-unified.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, reset, management, certificates 
+summary: Você pode reverter o certificado de gerenciamento para o estado original, autoassinado de fábrica. 
+---
+= Repor certificados de gestão
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode reverter o certificado de gerenciamento para o estado original, autoassinado de fábrica.
+
+.Antes de começar
+Você deve estar conetado com um perfil de usuário que inclua permissões de administrador de segurança. Caso contrário, as funções do certificado não aparecem.
+
+.Sobre esta tarefa
+Esta tarefa exclui o certificado de gerenciamento atual do sistema host onde o Proxy de serviços da Web e o Unified Manager estão instalados. Depois que o certificado é redefinido, o sistema host reverte para usando o certificado autoassinado.
+
+.Passos
+. Selecione *Definições > certificados*.
+. Selecione a guia *Array Management* e, em seguida, selecione *Reset*.
++
+Uma caixa de diálogo confirmar certificado de gerenciamento de redefinição é aberta.
+
+. Digite `reset` o campo e clique em *Reset*.
++
+Após a atualização do navegador, o navegador pode bloquear o acesso ao site de destino e informar que o site está usando HTTP Strict Transport Security. Essa condição surge quando você volta para certificados autoassinados. Para limpar a condição que está bloqueando o acesso ao destino, você deve limpar os dados de navegação do navegador.
+
+
+
+.Resultados
+O sistema reverte para o uso do certificado autoassinado do servidor. Como resultado, o sistema solicita aos usuários que aceitem manualmente o certificado autoassinado para suas sessões.

@@ -1,0 +1,75 @@
+---
+permalink: sm-mirroring/complete-mirrored-pair-for-primary-volumes-created-on-legacy-system.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, complete, mirrored, pair, volumes, created, legacy, 
+summary: Se você criou um volume primário em um storage array herdado que não pode ser gerenciado pelo SANtricity System Manager, poderá criar o volume secundário nesse array com o System Manager. 
+---
+= Par espelhado completo para volumes primários criados no sistema legado
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se você criou um volume primário em um storage array herdado que não pode ser gerenciado pelo System Manager, poderá criar o volume secundário nesse array com o System Manager.
+
+.Sobre esta tarefa
+É possível executar o espelhamento assíncrono entre arrays legados que usam uma interface diferente e arrays mais recentes que podem ser gerenciados pelo System Manager.
+
+* Se você estiver espelhando entre dois storage arrays que usam o System Manager, poderá ignorar essa tarefa porque já concluiu o par espelhado na sequência de criação de par espelhado.
+* Execute esta tarefa na matriz de armazenamento remoto.
+
+
+.Passos
+. Selecione menu:armazenamento[Espelhamento assíncrono].
+. Selecione a guia *Mirrored Pair* (par espelhado).
++
+A tabela pares espelhados é exibida e exibe todos os pares espelhados associados ao storage array.
+
+. Localize o volume do par espelhado com um status de incompleto e clique no link *Complete Mirrored pair* exibido na coluna Mirrored pair.
+. Escolha se deseja concluir a sequência de criação de par espelhado automaticamente ou manualmente selecionando um dos seguintes botões de opção:
++
+** *Automático* -- Crie um novo volume secundário.
++
+Aceite as configurações padrão do lado remoto do par espelhado selecionando um pool ou grupo de volume existente onde você deseja criar o volume secundário. Utilize esta opção recomendada para alocar a capacidade reservada para o volume secundário com as predefinições.
+
+** *Manual* -- Selecione um volume existente.
++
+Defina seus próprios parâmetros para o volume secundário.
+
++
+... Clique em *Next* para selecionar o volume secundário.
+... Selecione um volume existente que você deseja usar como volume secundário e clique em *Next* para alocar a capacidade reservada.
+... Alocar a capacidade reservada. Execute um dos seguintes procedimentos:
++
+**** Aceite as predefinições.
++
+A configuração padrão para capacidade reservada é de 20% da capacidade do volume base e, geralmente, essa capacidade é suficiente.
+
+**** Aloque suas próprias configurações de capacidade reservada para atender às necessidades de storage de dados relacionadas ao espelhamento assíncrono.
++
+A capacidade necessária varia, dependendo da frequência e do tamanho das gravações de e/S no volume principal e por quanto tempo você precisa manter a capacidade. Em geral, escolha uma capacidade maior para a capacidade reservada se uma ou ambas as condições existirem:
+
++
+***** Você pretende manter o par espelhado por um longo período de tempo.
+***** Uma grande porcentagem de blocos de dados mudará no volume primário devido à intensa atividade de e/S. Use dados históricos de desempenho ou outros utilitários do sistema operacional para ajudá-lo a determinar a atividade típica de e/S para o volume principal.
+
+
+
+
+
+
+
+
+. Selecione *Complete*.
+
+
+.Resultados
+O System Manager executa as seguintes ações:
+
+* Cria o volume secundário no storage array remoto e aloca a capacidade reservada para o lado remoto do par espelhado.
+* Inicia a sincronização inicial entre a matriz de armazenamento local e a matriz de armazenamento remoto.
+* Se o volume espelhado for um volume fino, apenas os blocos alocados serão transferidos para o volume secundário durante a sincronização inicial. Essa transferência reduz a quantidade de dados que devem ser transferidos para concluir a sincronização inicial.
+* Cria a capacidade reservada para o par espelhado no storage array local e no storage array remoto.
+

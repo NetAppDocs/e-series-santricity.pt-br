@@ -1,0 +1,16 @@
+---
+permalink: sm-storage/what-is-a-volume.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, volume 
+summary: Um volume é um contêiner no qual aplicativos, bancos de dados e sistemas de arquivos armazenam dados. É o componente lógico criado para que o host acesse o storage no storage array. 
+---
+= O que é um volume?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Um volume é um contêiner no qual aplicativos, bancos de dados e sistemas de arquivos armazenam dados. É o componente lógico criado para que o host acesse o storage no storage array.
+
+Um volume é criado a partir da capacidade disponível em um pool ou em um grupo de volumes. Um volume tem uma capacidade definida. Embora um volume possa consistir em mais de uma unidade, um volume aparece como um componente lógico para o host.

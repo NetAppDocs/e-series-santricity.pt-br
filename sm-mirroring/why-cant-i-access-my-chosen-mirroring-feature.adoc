@@ -1,0 +1,33 @@
+---
+permalink: sm-mirroring/why-cant-i-access-my-chosen-mirroring-feature.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, mirroring, access 
+summary: O espelhamento é configurado na interface do Unified Manager. 
+---
+= Por que não consigo acessar meu recurso de espelhamento escolhido?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O espelhamento é configurado na interface do Unified Manager.
+
+[NOTE]
+====
+O espelhamento síncrono não está disponível no storage array EF600 ou EF300.
+
+====
+Para ativar e configurar o espelhamento entre dois arrays, verifique o seguinte:
+
+* O serviço Web Services Proxy deve estar em execução. (O Unified Manager é instalado em um sistema host juntamente com o Web Services Proxy.)
+* O Unified Manager deve estar em execução em seu host local por meio de uma conexão HTTPS.
+* Os dois storage arrays que você deseja usar para espelhamento devem ser descobertos no Unified Manager.
+* O Unified Manager deve ter certificados SSL válidos para as matrizes de armazenamento. Você pode aceitar um certificado autoassinado ou instalar certificados assinados pela CA do Unified Manager.
+
+
+Para obter instruções de configuração, consulte o seguinte:
+
+* link:../um-manage/create-asynchronous-mirrored-pair-um.html["Criar par espelhado assíncrono (no Unified Manager)"]
+* link:../um-manage/create-synchronous-mirrored-pair-um.html["Criar par espelhado síncrono (no Unified Manager)"]
+

@@ -1,0 +1,48 @@
+---
+permalink: sm-storage/base-volumes-reserved-capacity-and-snapshot-groups.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, base volumes, reserved capacity, snapshot groups 
+summary: O recurso Snapshots faz uso de volumes base, capacidade reservada e grupos de snapshot. 
+---
+= Volumes base, capacidade reservada e grupos de snapshot
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O recurso Snapshots faz uso de volumes base, capacidade reservada e grupos de snapshot.
+
+
+
+== Volumes base
+
+Um _volume base_ é o volume usado como a origem de uma imagem instantânea. Um volume base pode ser um volume grosso ou um volume fino e pode residir em um pool ou grupo de volumes.
+
+Para tirar instantâneos do volume base, você pode criar uma imagem instantânea a qualquer momento ou automatizar o processo definindo uma programação regular para instantâneos.
+
+A figura a seguir mostra a relação entre os objetos snapshot e o volume base.
+
+image::../media/sam1130-dwg-snapshots-images-overview.gif[visão geral de imagens de instantâneos sam1130 dwg]
+
+1. Volume base; 2 objetos instantâneos no grupo (imagens e capacidade reservada); 3 capacidade reservada para o grupo instantâneo.
+
+
+
+== Capacidade reservada e grupos de snapshot
+
+O System Manager organiza imagens instantâneas em _grupos de instantâneos_. Quando o System Manager estabelece o grupo de instantâneos, cria automaticamente a capacidade reservada associada _para manter as imagens instantâneas para o grupo e para acompanhar as alterações subsequentes a instantâneos adicionais.
+
+Se o volume base residir em um grupo de volumes, a capacidade reservada poderá ser localizada em um pool ou grupo de volumes. Se o volume base residir em um pool, a capacidade reservada deverá estar localizada no mesmo pool que o volume base.
+
+Os grupos de snapshot não exigem nenhuma ação do usuário, mas você pode ajustar a capacidade reservada em um grupo de snapshot a qualquer momento. Além disso, você pode ser solicitado a criar capacidade reservada quando as seguintes condições forem atendidas:
+
+* Sempre que você tirar um snapshot de um volume base que ainda não tenha um grupo de snapshot, o System Manager cria automaticamente um grupo de snapshot. Esta ação também cria capacidade reservada para o volume base que é utilizado para armazenar imagens instantâneas subsequentes.
+* Sempre que você criar uma programação de snapshot para um volume base, o System Manager cria automaticamente um grupo de snapshot.
+
+
+
+
+== Eliminação automática
+
+Ao trabalhar com instantâneos, use a opção padrão para ativar a exclusão automática. A eliminação automática elimina automaticamente a imagem instantânea mais antiga quando o grupo de instantâneos atinge o limite de 32 imagens do grupo de instantâneos. Se você desativar a exclusão automática, os limites do grupo instantâneo serão eventualmente excedidos e você deverá tomar ações manuais para configurar as configurações do grupo instantâneo e gerenciar a capacidade reservada.

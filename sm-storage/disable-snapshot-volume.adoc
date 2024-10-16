@@ -1,0 +1,48 @@
+---
+permalink: sm-storage/disable-snapshot-volume.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, disable, snapshot, volume 
+summary: Você pode desabilitar um volume instantâneo ou um volume instantâneo em um grupo de consistência de snapshot quando não precisar mais dele ou desejar parar temporariamente de usá-lo. 
+---
+= Desativar volume instantâneo
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode desabilitar um volume instantâneo ou um volume instantâneo em um grupo de consistência de snapshot quando não precisar mais dele ou desejar parar temporariamente de usá-lo.
+
+.Sobre esta tarefa
+Utilize a opção Desativar se uma destas condições se aplicar:
+
+* Você terminou com o volume instantâneo ou o volume instantâneo do grupo de consistência de snapshot por enquanto.
+* Você pretende recriar o volume instantâneo ou o volume instantâneo do grupo de consistência de instantâneo (que é designado como leitura-gravação) posteriormente e deseja manter a capacidade reservada associada para que você não precise criá-lo novamente.
+* Você deseja aumentar a performance do storage array interrompendo a atividade de gravação em um volume de snapshot de leitura e gravação.
+
+
+Se o volume instantâneo do grupo de consistência de snapshot for designado como leitura-gravação, essa opção também permitirá que você interrompa qualquer atividade de gravação adicional no volume de capacidade reservada associado. Se decidir recriar o volume instantâneo ou o volume instantâneo do grupo de consistência de instantâneos, terá de escolher uma imagem instantânea a partir do mesmo volume base.
+
+[NOTE]
+====
+Se o volume instantâneo do volume do instantâneo ou do grupo de consistência do instantâneo fizer parte de uma relação de cópia online, não poderá efetuar a opção Desativar no volume.
+
+====
+.Passos
+. Selecione menu:armazenamento[instantâneos].
+. Selecione a guia *volumes instantâneos*.
++
+O System Manager exibe todos os volumes instantâneos associados ao storage array.
+
+. Selecione o volume instantâneo que pretende desativar e, em seguida, selecione menu:tarefas incomuns[Desativar].
+. Confirme se deseja executar a operação e clique em *Desativar*.
+
+
+.Resultados
+* O volume do Snapshot permanece associado ao volume base.
+* O volume do instantâneo mantém seu nome mundial (WWN).
+* Se a leitura-gravação for lida, o volume do Snapshot manterá sua capacidade reservada associada.
+* O volume de snapshot retém todas as atribuições e acessos do host. No entanto, as solicitações de leitura e gravação falham.
+* O volume instantâneo perde a sua associação com a sua imagem instantânea.
+

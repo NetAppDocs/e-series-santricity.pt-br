@@ -1,0 +1,71 @@
+---
+permalink: sm-settings/define-log-policies.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, define, audit, log, policies, 
+summary: Pode alterar a política de substituição e os tipos de eventos registados no registo de auditoria. 
+---
+= Definir políticas de log de auditoria
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Pode alterar a política de substituição e os tipos de eventos registados no registo de auditoria.
+
+.Antes de começar
+Você deve estar conetado com um perfil de usuário que inclua permissões de administrador de segurança. Caso contrário, as funções de Gerenciamento de Acesso não aparecem.
+
+.Sobre esta tarefa
+Esta tarefa descreve como alterar as definições do registo de auditoria, que incluem a política de substituição de eventos antigos e a política de gravação de tipos de eventos.
+
+.Passos
+. Selecione menu:Definições[Gestão de Acesso].
+. Selecione o separador *Registo de auditoria*.
+. Selecione *Exibir/Editar configurações*.
++
+A caixa de diálogo Configurações do Registro de auditoria é aberta.
+
+. Altere a política de substituição ou os tipos de eventos gravados.
++
+.Detalhes do campo
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Definição | Descrição 
+
+
+ a| 
+Substituir a política
+ a| 
+Determina a política de substituição de eventos antigos quando a capacidade máxima é atingida:
+
+** *Permitir que os eventos mais antigos do log de auditoria sejam sobrescritos quando o log de auditoria estiver cheio* -- sobrescreve os eventos antigos quando o log de auditoria atinge 50.000 Registros.
+** *Exigir que os eventos de log de auditoria sejam excluídos manualmente* -- especifica que os eventos não serão excluídos automaticamente; em vez disso, um aviso de limite aparece na porcentagem definida. Os eventos devem ser excluídos manualmente.
++
+
+NOTE: Se a política de substituição estiver desativada e as entradas do log de auditoria atingirem o limite máximo, o acesso ao System Manager será negado aos usuários sem permissões de Administrador de Segurança. Para restaurar o acesso do sistema a usuários sem permissões de Administrador de Segurança, um usuário atribuído à função Administrador de Segurança deve excluir os Registros de eventos antigos.
+
++
+
+NOTE: As diretivas de substituição não se aplicam se um servidor syslog estiver configurado para arquivar logs de auditoria.
+
+
+
+
+
+ a| 
+Nível de acões a registar
+ a| 
+Determina os tipos de eventos a serem registrados:
+
+** *Gravar eventos de modificação somente* -- mostra apenas os eventos em que uma ação do usuário envolve fazer uma alteração no sistema.
+** *Grave todos os eventos de modificação e somente leitura* -- mostra todos os eventos, incluindo uma ação do usuário que envolve a leitura ou download de informações.
+
+
+|===
+====
+. Clique em *Salvar*.
+

@@ -1,0 +1,59 @@
+---
+permalink: sm-mirroring/overview-mirroring-sync.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, RVM, synchronous, mirroring, controllers, 
+summary: O recurso de espelhamento síncrono oferece replicação de dados on-line em tempo real entre storage arrays em uma distância remota. 
+---
+= Visão geral do espelhamento síncrono
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O recurso de espelhamento síncrono oferece replicação de dados on-line em tempo real entre storage arrays em uma distância remota.
+
+[NOTE]
+====
+Este recurso não está disponível no sistema de armazenamento EF600 ou EF300.
+
+====
+
+
+== O que é espelhamento síncrono?
+
+O _espelhamento síncrono_ replica volumes de dados em tempo real para garantir disponibilidade contínua. Os controladores de storage array gerenciam a operação de espelhamento, que é transparente para máquinas host e aplicações de software.
+
+Esse tipo de espelhamento é ideal para fins de continuidade dos negócios, como recuperação de desastres.
+
+Saiba mais:
+
+* link:how-synchronous-mirroring-works.html["Como o espelhamento síncrono funciona"]
+* link:synchronous-mirroring-terminology.html["Terminologia de espelhamento síncrono"]
+* link:synchronous-mirroring-status.html["Status do espelhamento síncrono"]
+* link:volume-ownership-sync.html["Propriedade do volume"]
+* link:role-change-of-volumes-in-a-mirrored-pair.html["Mudança de função entre volumes em um par espelhado"]
+
+
+
+
+== Como faço para configurar o espelhamento síncrono?
+
+Você deve usar a interface do Unified Manager para executar a configuração de espelhamento inicial entre os arrays. Uma vez configurado, você pode gerenciar pares espelhados no System Manager.
+
+Saiba mais:
+
+* link:requirements-for-using-synchronous-mirroring.html["Requisitos para o uso do espelhamento síncrono"]
+* link:workflow-for-mirroring-a-volume-synchronously.html["Fluxo de trabalho para espelhar um volume de forma síncrona"]
+* link:../um-manage/create-synchronous-mirrored-pair-um.html["Criar par espelhado síncrono (no Unified Manager)"]
+
+
+
+
+== Informações relacionadas
+
+Saiba mais sobre conceitos relacionados ao espelhamento síncrono:
+
+* link:synchronous-mirroring-what-do-i-need-to-know-before-creating-a-mirrored-pair.html["O que você precisa saber antes de criar um par espelhado"]
+* link:how-does-asynchronous-mirroring-differ-from-synchronous-mirroring-async.html["Como o espelhamento assíncrono difere do espelhamento síncrono"]
+

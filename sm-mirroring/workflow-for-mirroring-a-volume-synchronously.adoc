@@ -1,0 +1,43 @@
+---
+permalink: sm-mirroring/workflow-for-mirroring-a-volume-synchronously.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, workflow, mirroring, synchronously, 
+summary: Você configura o espelhamento síncrono usando o fluxo de trabalho a seguir. 
+---
+= Fluxo de trabalho para espelhar um volume de forma síncrona
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você configura o espelhamento síncrono usando o fluxo de trabalho a seguir.
+
+[NOTE]
+====
+Este recurso não está disponível no sistema de armazenamento EF600 ou EF300.
+
+====
+. Execute a configuração inicial no Unified Manager:
++
+.. Selecione uma matriz de armazenamento local como a origem para a transferência de dados.
+.. Selecione um volume primário no storage array local.
+.. Selecione uma matriz de armazenamento remota como destino para a transferência de dados e, em seguida, selecione um volume secundário.
+.. Selecione as prioridades de sincronização e ressincronização.
+.. Inicie a transferência de dados inicial do volume primário para o volume secundário. Dependendo do tamanho do volume, esta transferência inicial pode demorar várias horas.
+
+
+. Verifique o progresso da sincronização inicial:
++
+.. No Unified Manager, inicie o System Manager para o array local.
+.. No System Manager, visualize o status da operação de espelhamento. Quando o espelhamento estiver concluído, o status do par espelhado é "ótimo". Os dois arrays tentam permanecer sincronizados através de operações normais. Somente blocos novos e alterados são transferidos do volume primário para o volume secundário.
+
+
+. *Opcional:* você pode alterar as configurações de sincronização no System Manager.
++
+[NOTE]
+====
+Como a replicação síncrona é contínua, o link de replicação entre os dois locais precisa fornecer recursos de largura de banda suficientes.
+
+====
+

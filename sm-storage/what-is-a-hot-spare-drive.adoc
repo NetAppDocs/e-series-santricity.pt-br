@@ -1,0 +1,24 @@
+---
+permalink: sm-storage/what-is-a-hot-spare-drive.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, hot, spare, drive 
+summary: As peças sobressalentes ativas funcionam como unidades de reserva nos grupos de volumes RAID 1, RAID 5 ou RAID 6. São unidades totalmente funcionais que não contêm dados. Se uma unidade falhar no grupo de volumes, o controlador reconstrói automaticamente os dados da unidade com falha para um hot spare. 
+---
+= O que é uma unidade de reserva quente?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+As peças sobressalentes ativas funcionam como unidades de reserva nos grupos de volumes RAID 1, RAID 5 ou RAID 6. São unidades totalmente funcionais que não contêm dados. Se uma unidade falhar no grupo de volumes, o controlador reconstrói automaticamente os dados da unidade com falha para um hot spare.
+
+Se uma unidade falhar no storage de armazenamento, a unidade hot spare será automaticamente substituída pela unidade com falha sem exigir uma troca física. Se a unidade hot spare estiver disponível quando uma unidade falhar, a controladora usará dados de redundância para reconstruir os dados da unidade com falha para a unidade hot spare.
+
+Uma unidade hot spare não é dedicada a um grupo de volume específico. Em vez disso, você pode usar uma unidade hot spare para qualquer unidade com falha no storage de armazenamento com a mesma capacidade ou capacidade menor. Uma unidade hot spare deve ser do mesmo tipo de Mídia (HDD ou SSD) que as unidades que está protegendo.
+
+[NOTE]
+====
+Unidades hot spare não são suportadas com pools. Em vez de unidades hot spare, os pools usam a capacidade de preservação dentro de cada unidade que compreende o pool.
+
+====

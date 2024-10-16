@@ -1,0 +1,240 @@
+---
+permalink: sm-settings/view-iscsi-sessions-system.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, view, iscsi, sessions, 
+summary: Pode visualizar informações detalhadas sobre as ligações iSCSI à sua matriz de armazenamento. Sessões iSCSI podem ocorrer com anfitriões ou matrizes de armazenamento remotas numa relação de espelhamento assíncrono. 
+---
+= Ver sessões iSCSI
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Pode visualizar informações detalhadas sobre as ligações iSCSI à sua matriz de armazenamento. Sessões iSCSI podem ocorrer com anfitriões ou matrizes de armazenamento remotas numa relação de espelhamento assíncrono.
+
+.Passos
+. Selecione menu:Definições[sistema].
+. Selecione *View/End iSCSI Sessions* (Ver/terminar sessões iSCSI).
++
+É apresentada uma lista das sessões iSCSI atuais.
+
+. *Opcional:* para ver informações adicionais sobre uma sessão iSCSI específica, selecione uma sessão e clique em *Exibir detalhes*.
++
+.Detalhes do campo
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Item | Descrição 
+
+
+ a| 
+Identificador de sessão (SSID)
+ a| 
+Uma cadeia hexadecimal que identifica uma sessão entre um iniciador iSCSI e um destino iSCSI. O SSID é composto pelo ISID e pelo TPGT.
+
+
+
+ a| 
+Session ID do iniciador (ISID)
+ a| 
+A parte do iniciador do identificador da sessão. O iniciador especifica o ISID durante o login.
+
+
+
+ a| 
+Target Portal Group
+ a| 
+O destino iSCSI.
+
+
+
+ a| 
+Tag de grupo do Portal de destino (TPGT)
+ a| 
+A parte alvo do identificador da sessão. Um identificador numérico de 16 bits para um grupo de portal de destino iSCSI.
+
+
+
+ a| 
+Nome iSCSI do iniciador
+ a| 
+O nome único mundial do iniciador.
+
+
+
+ a| 
+Etiqueta iSCSI do iniciador
+ a| 
+A etiqueta de utilizador definida no System Manager.
+
+
+
+ a| 
+Alias iSCSI do iniciador
+ a| 
+Um nome que também pode ser associado a um nó iSCSI. O alias permite que uma organização associe uma cadeia de carateres amigável ao nome iSCSI. No entanto, o alias não substitui o nome iSCSI. O alias iSCSI do iniciador só pode ser definido no host, não no System Manager
+
+
+
+ a| 
+Host
+ a| 
+Um servidor que envia entrada e saída para o storage array.
+
+
+
+ a| 
+ID de ligação (CID)
+ a| 
+Um nome exclusivo para uma conexão dentro da sessão entre o iniciador e o destino. O iniciador gera esse ID e o apresenta ao alvo durante as solicitações de login. O ID da conexão também é apresentado durante os logouts que fecham as conexões.
+
+
+
+ a| 
+Identificador da porta
+ a| 
+A porta do controlador associada à ligação.
+
+
+
+ a| 
+Endereço IP do iniciador
+ a| 
+O endereço IP do iniciador.
+
+
+
+ a| 
+Parâmetros de login negociados
+ a| 
+Os parâmetros que são transacionados durante o início de sessão da sessão iSCSI.
+
+
+
+ a| 
+Método de autenticação
+ a| 
+A técnica para autenticar usuários que desejam acesso à rede iSCSI. Os valores válidos são *CHAP* e *None*.
+
+
+
+ a| 
+Método de resumo do cabeçalho
+ a| 
+A técnica para mostrar possíveis valores de cabeçalho para a sessão iSCSI. HeaderDigest e DataDigest podem ser *None* ou *CRC32C*. O valor padrão para ambos é *nenhum*.
+
+
+
+ a| 
+Método de resumo de dados
+ a| 
+A técnica para mostrar possíveis valores de dados para a sessão iSCSI. HeaderDigest e DataDigest podem ser *None* ou *CRC32C*. O valor padrão para ambos é *nenhum*.
+
+
+
+ a| 
+Máximo de ligações
+ a| 
+O maior número de conexões permitido para a sessão iSCSI. O número máximo de conexões pode ser de 1 a 4. O valor padrão é *1*.
+
+
+
+ a| 
+Alias de destino
+ a| 
+O rótulo associado ao alvo.
+
+
+
+ a| 
+Alias do iniciador
+ a| 
+O rótulo associado ao iniciador.
+
+
+
+ a| 
+Endereço IP de destino
+ a| 
+O endereço IP do destino para a sessão iSCSI. Nomes DNS não são suportados.
+
+
+
+ a| 
+Inicial R2T
+ a| 
+O estado inicial pronto para transferir. O status pode ser *Sim* ou *não*.
+
+
+
+ a| 
+Comprimento máximo de rutura
+ a| 
+A carga útil máxima SCSI em bytes para esta sessão iSCSI. O comprimento máximo de rutura pode ser de 512 a 262.144 (256 KB). O valor padrão é *262.144 (256 KB)*.
+
+
+
+ a| 
+Comprimento da primeira explosão
+ a| 
+O payload SCSI em bytes para dados não solicitados para esta sessão iSCSI. O primeiro comprimento de rutura pode ser de 512 a 131.072 (128 KB). O valor padrão é *65.536 (64 KB)*.
+
+
+
+ a| 
+Tempo predefinido para aguardar
+ a| 
+O número mínimo de segundos a aguardar antes de tentar efetuar uma ligação após o encerramento da ligação ou uma reposição da ligação. O valor de tempo de espera padrão pode ser de 0 a 3600. A predefinição é *2*.
+
+
+
+ a| 
+Tempo predefinido para reter
+ a| 
+O número máximo de segundos em que a conexão ainda é possível após o término de uma conexão ou uma reinicialização da conexão. O tempo padrão para reter pode ser de 0 a 3600. O valor padrão é *20*.
+
+
+
+ a| 
+Máximo de R2T
+ a| 
+O número máximo de "pronto para transferências" pendentes para esta sessão iSCSI. O valor máximo de pronto a transferir pode ser de 1 a 16. A predefinição é *1*.
+
+
+
+ a| 
+Nível de recuperação de erro
+ a| 
+O nível de recuperação de erros para esta sessão iSCSI. O valor do nível de recuperação de erros é sempre definido como *0*.
+
+
+
+ a| 
+Comprimento máximo do segmento de dados de receção
+ a| 
+A quantidade máxima de dados que o iniciador ou o destino podem receber em qualquer unidade de dados de carga útil iSCSI (PDU).
+
+
+
+ a| 
+Nome de destino
+ a| 
+O nome oficial do alvo (não o alias). O nome de destino com o formato _iqn_.
+
+
+
+ a| 
+Nome do iniciador
+ a| 
+O nome oficial do iniciador (não o alias). O nome do iniciador que usa o formato _iqn_ ou _eui_.
+
+|===
+====
+. *Opcional:* para salvar o relatório em um arquivo, clique em *Salvar*.
++
+O arquivo é salvo na pasta Downloads do navegador com o nome do `iscsi-session-connections.txt`arquivo .
+
+

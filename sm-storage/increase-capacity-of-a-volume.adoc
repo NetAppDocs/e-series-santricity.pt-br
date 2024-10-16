@@ -1,0 +1,58 @@
+---
+permalink: sm-storage/increase-capacity-of-a-volume.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, increase, capacity, volume 
+summary: 'Você pode aumentar a capacidade reportada (a capacidade relatada aos hosts) de um volume usando a capacidade livre disponível no pool ou no grupo de volumes.' 
+---
+= Aumentar a capacidade de um volume
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode aumentar a capacidade reportada (a capacidade relatada aos hosts) de um volume usando a capacidade livre disponível no pool ou no grupo de volumes.
+
+.Antes de começar
+* A capacidade livre suficiente está disponível no pool ou grupo de volumes associados ao volume.
+* O volume é ótimo e não em nenhum estado de modificação.
+* A capacidade máxima reportada de 256 TIB não foi atingida para volumes finos.
+* Não há unidades hot spare em uso no volume. (Aplica-se apenas a volumes em grupos de volumes.)
+
+
+
+NOTE: Você só pode expandir a capacidade de volume até 128 TIB em um único momento.
+
+.Sobre esta tarefa
+Lembre-se de quaisquer requisitos de capacidade futuros que você possa ter para outros volumes nesse pool ou grupo de volumes. Certifique-se de que permite uma capacidade livre suficiente para criar imagens instantâneas, volumes instantâneos ou espelhos remotos.
+
+[NOTE]
+====
+O aumento da capacidade de um volume é suportado apenas em determinados sistemas operacionais. Se você aumentar a capacidade de volume em um sistema operacional host que não é suportado, a capacidade expandida será inutilizável e você não poderá restaurar a capacidade de volume original.
+
+====
+.Passos
+. Selecione menu:armazenamento[volumes].
+. Selecione o volume para o qual deseja aumentar a capacidade e, em seguida, selecione *aumentar a capacidade*.
++
+A caixa de diálogo confirmar aumento de capacidade é exibida.
+
+. Selecione *Sim* para continuar.
++
+É apresentada a caixa de diálogo aumentar capacidade comunicada.
+
++
+Esta caixa de diálogo exibe a capacidade atual reportada do volume e a capacidade livre disponível no pool ou grupo de volumes associados do volume.
+
+. Use a caixa *aumente a capacidade reportada adicionando...* para adicionar capacidade à capacidade reportada disponível atual. Você pode alterar o valor de capacidade para exibir em mebibytes (MIB), gibibytes (GiB) ou tebibytes (TIB).
+. Clique em *aumentar*.
+
+
+.Resultados
+* O System Manager aumenta a capacidade do volume com base na sua seleção.
+* Selecione menu:Home[View Operations in Progress] (Ver operações em curso) para ver o progresso da operação de aumento de capacidade que está atualmente em execução para o volume selecionado. Esta operação pode ser demorada e pode afetar o desempenho do sistema.
+
+
+.Depois de terminar
+Depois de expandir a capacidade de volume, você deve aumentar manualmente o tamanho do sistema de arquivos para corresponder. A forma como você faz isso depende do sistema de arquivos que você está usando. Consulte a documentação do sistema operacional do host para obter detalhes.

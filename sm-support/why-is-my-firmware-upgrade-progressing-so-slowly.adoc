@@ -1,0 +1,16 @@
+---
+permalink: sm-support/why-is-my-firmware-upgrade-progressing-so-slowly.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, firmware, upgrade, slow 
+summary: O progresso da atualização do firmware depende da carga geral do sistema. 
+---
+= Por que minha atualização de firmware está progredindo tão lentamente?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O progresso da atualização do firmware depende da carga geral do sistema.
+
+Durante uma atualização online do firmware da unidade, se ocorrer uma transferência de volume durante o processo de reconstrução rápida, o sistema inicia uma reconstrução completa do volume transferido. Esta operação pode levar uma quantidade considerável de tempo. O tempo real de reconstrução total depende de vários fatores, incluindo a quantidade de atividade de e/S que ocorre durante a operação de reconstrução, o número de unidades no grupo de volumes, a definição de prioridade de reconstrução e o desempenho da unidade.

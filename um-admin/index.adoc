@@ -1,0 +1,12 @@
+---
+permalink: um-admin/index.html 
+sidebar: sidebar 
+keywords: santricity, unified, manager 6 
+summary: SANtricity Unified Manager 6 
+---
+= SANtricity Unified Manager 6
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+

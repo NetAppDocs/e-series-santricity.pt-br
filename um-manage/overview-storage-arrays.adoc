@@ -1,0 +1,42 @@
+---
+permalink: um-manage/overview-storage-arrays.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, discover, storage, arrays 
+summary: Para gerenciar recursos de armazenamento, primeiro você deve descobrir os storages de armazenamento na rede. 
+---
+= Descrição geral da descoberta
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Para gerenciar recursos de armazenamento, primeiro você deve descobrir os storages de armazenamento na rede.
+
+
+
+== Como faço para descobrir arrays?
+
+Use a página Adicionar/descobrir para localizar e adicionar os storages de armazenamento que você deseja gerenciar na rede da sua organização. Você pode descobrir vários arrays ou descobrir um único array. Para fazer isso, você insere endereços IP de rede e, em seguida, o Unified Manager tenta conexões individuais para cada endereço IP nesse intervalo.
+
+Saiba mais:
+
+* link:considerations-for-discovering-arrays.html["Considerações para descobrir arrays"]
+* link:discover-multiple-arrays.html["Descubra vários storages de armazenamento"]
+* link:discover-single-array.html["Descubra um único array"]
+
+
+
+
+== Como faço para gerenciar arrays?
+
+Depois de descobrir arrays, vá para a página *Gerenciar - todos*. Nesta página, você pode rolar por uma lista de matrizes de armazenamento descobertas na sua rede, ver o seu status e executar operações em uma única matriz ou em um grupo de matrizes.
+
+Se você quiser gerenciar um único array, selecione-o e abra o System Manager.
+
+Saiba mais:
+
+* link:launch-considerations.html["Considerações para acessar o System Manager"]
+* link:launch-system-manager.html["Gerenciar um storage array individual"]
+* link:storage-array-status.html["Ver o status do storage array"]
+

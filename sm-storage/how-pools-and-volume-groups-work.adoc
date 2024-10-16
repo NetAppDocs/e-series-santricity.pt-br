@@ -1,0 +1,83 @@
+---
+permalink: sm-storage/how-pools-and-volume-groups-work.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, pools, volume group, 
+summary: 'Para provisionar o armazenamento, você cria um pool ou um grupo de volumes que conterá as unidades de disco rígido (HDD) ou de disco de estado sólido (SSD) que você deseja usar em seu storage array.' 
+---
+= Como os pools e os grupos de volume funcionam
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Para provisionar o armazenamento, você cria um pool ou um grupo de volumes que conterá as unidades de disco rígido (HDD) ou de disco de estado sólido (SSD) que você deseja usar em seu storage array.
+
+O hardware físico é provisionado em componentes lógicos para que os dados possam ser organizados e facilmente recuperados. Há dois tipos de agrupamentos suportados:
+
+* Piscinas
+* Grupos de volume RAID
+
+
+Os pools e grupos de volumes são as unidades de armazenamento de nível superior em um storage array: Dividem a capacidade das unidades em divisões gerenciáveis. Dentro dessas divisões lógicas estão os volumes individuais ou LUNs onde os dados são armazenados. A figura a seguir ilustra esse conceito.
+
+image::../media/sam1130-dwg-volumes-drive-structure-pools-and-volume-groups.gif[sam1130 volumes dwg acionam conjuntos de estruturas e grupos de volumes]
+
+1 unidades de disco rígido ou SSD; 2 unidades de disco rígido ou SSD; 4 unidades de disco rígido ou SSD. 3 unidades de disco rígido ou SSD
+
+Quando um sistema de storage é implantado, a primeira etapa é apresentar a capacidade de unidade disponível para os vários hosts:
+
+* Criação de pools ou grupos de volumes com capacidade suficiente
+* Adicionar o número de unidades necessárias para atender aos requisitos de desempenho ao pool ou ao grupo de volumes
+* Selecionar o nível desejado de proteção RAID (se estiver usando grupos de volume) para atender a requisitos empresariais específicos
+
+
+Você pode ter pools ou grupos de volume no mesmo sistema de armazenamento, mas uma unidade não pode fazer parte de mais de um pool ou grupo de volumes. Os volumes que são apresentados aos hosts para e/S são então criados, usando o espaço no pool ou grupo de volumes.
+
+
+
+== Piscinas
+
+Os pools foram projetados para agregar unidades de disco rígido físicas em um grande espaço de armazenamento e oferecer proteção RAID aprimorada para ele. Um pool cria muitos conjuntos de RAID virtuais a partir do número total de unidades atribuídas ao pool e distribui os dados uniformemente entre todas as unidades participantes. Se uma unidade for perdida ou adicionada, o System Manager reequilibra dinamicamente os dados em todas as unidades ativas.
+
+Os pools funcionam como outro nível RAID, virtualizando a arquitetura RAID subjacente para otimizar o desempenho e a flexibilidade ao executar tarefas como reconstrução, expansão da unidade e manipulação da perda da unidade. O System Manager define automaticamente o nível RAID em 6 em uma 2 configuração de mais de 8 GB (oito discos de dados mais dois discos de paridade).
+
+
+
+=== Correspondência de condução
+
+Você pode escolher entre HDD ou SSDs para uso em pools. No entanto, assim como nos grupos de volumes, todas as unidades do pool precisam usar a mesma tecnologia. Os controladores selecionam automaticamente quais unidades incluir, portanto, você deve ter certeza de que tem um número suficiente de unidades para a tecnologia escolhida.
+
+
+
+=== Gerenciamento de unidades com falha
+
+Os pools têm uma capacidade mínima de 11 unidades; no entanto, uma unidade de capacidade é reservada para capacidade extra em caso de falha da unidade. Esta capacidade sobressalente é chamada de "capacidade de preservação".
+
+Quando os pools são criados, uma certa quantidade de capacidade é preservada para uso de emergência. Essa capacidade é expressa em termos de várias unidades no System Manager, mas a implementação real está espalhada por todo o pool de unidades. A quantidade padrão de capacidade preservada é baseada no número de unidades no pool.
+
+Depois que o pool é criado, você pode alterar o valor da capacidade de preservação para mais ou menos capacidade, ou até mesmo configurá-lo para nenhuma capacidade de preservação (valor de 0 unidade). A quantidade máxima de capacidade que pode ser preservada (expressa como um número de unidades) é de 10 TB, mas a capacidade disponível pode ser menor, com base no número total de unidades no pool.
+
+
+
+== Grupos de volume
+
+Os grupos de volume definem como a capacidade é alocada no sistema de storage para volumes. As unidades de disco são organizadas em grupos RAID e os volumes residem nas unidades de um grupo RAID. Portanto, as configurações do grupo de volume identificam quais unidades fazem parte do grupo e qual nível RAID é usado.
+
+Quando você cria um grupo de volumes, os controladores selecionam automaticamente as unidades a serem incluídas no grupo. Você deve escolher manualmente o nível RAID para o grupo. A capacidade do grupo de volumes é o total do número de unidades selecionadas, multiplicado pela sua capacidade.
+
+
+
+=== Correspondência de condução
+
+Você deve corresponder as unidades no grupo de volumes para tamanho e desempenho. Se houver unidades menores e maiores no grupo de volumes, todas as unidades serão reconhecidas como o menor tamanho de capacidade. Se houver unidades mais lentas e mais rápidas no grupo de volumes, todas as unidades são reconhecidas na velocidade mais lenta. Esses fatores afetam o desempenho e a capacidade geral do sistema de storage.
+
+Não é possível misturar diferentes tecnologias de unidade (unidades HDD e SSD). RAID 3, 5 e 6 estão limitados a um máximo de 30 unidades. RAID 1 e RAID 10 usam espelhamento, portanto, esses grupos de volume devem ter um número par de discos.
+
+
+
+=== Gerenciamento de unidades com falha
+
+Os grupos de volume usam unidades hot spare como modo de espera no caso de uma unidade falhar nos volumes RAID 1/10, RAID 3, RAID 5 ou RAID 6 contidos em um grupo de volumes. Uma unidade hot spare não contém dados e adiciona outro nível de redundância à sua matriz de armazenamento.
+
+Se uma unidade falhar no storage de armazenamento, a unidade hot spare será automaticamente substituída pela unidade com falha sem exigir uma troca física. Se a unidade hot spare estiver disponível quando uma unidade falhar, a controladora usará dados de redundância para reconstruir os dados da unidade com falha para a unidade hot spare.

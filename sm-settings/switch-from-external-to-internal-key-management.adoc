@@ -1,0 +1,50 @@
+---
+permalink: sm-settings/switch-from-external-to-internal-key-management.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, switch, external, internal, key, management, 
+summary: Você pode alterar o método de gerenciamento de segurança de unidade de um servidor de chaves externo para o método interno usado pelo storage array. A chave de segurança definida anteriormente para o gerenciamento de chaves externas é então usada para o gerenciamento de chaves internas. 
+---
+= Mude do gerenciamento de chaves externas para internas
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode alterar o método de gerenciamento de segurança de unidade de um servidor de chaves externo para o método interno usado pelo storage array. A chave de segurança definida anteriormente para o gerenciamento de chaves externas é então usada para o gerenciamento de chaves internas.
+
+.Sobre esta tarefa
+Nesta tarefa, desative o gerenciamento de chaves externas e baixe uma nova cópia de backup para o host local. A chave existente ainda é usada para o Drive Security, mas será gerenciada internamente na matriz de armazenamento.
+
+.Passos
+. Selecione menu:Definições[sistema].
+. Em *Gerenciamento de chaves de segurança*, selecione *Desativar Gerenciamento de chaves externas*.
++
+A caixa de diálogo Desativar gerenciamento de chaves externas é aberta.
+
+. Em *defina uma frase-passe/insira novamente a frase-passe*, insira e confirme uma frase-passe para o backup da chave. O valor pode ter entre 8 e 32 carateres e deve incluir cada um dos seguintes:
++
+** Uma letra maiúscula (uma ou mais). Tenha em mente que a frase-passe é sensível a maiúsculas e minúsculas.
+** Um número (um ou mais).
+** Um caráter não alfanumérico, como !, *, at (um ou mais).
+
+
++
+[CAUTION]
+====
+_Certifique-se de gravar suas entradas para uso posterior_. Se você precisar mover uma unidade habilitada para segurança do storage, você deve saber o identificador e a frase-passe para desbloquear os dados da unidade.
+
+====
+. Clique em *Desativar*.
++
+A chave de cópia de segurança é transferida para o seu anfitrião local.
+
+. Grave o identificador da chave, a frase-passe e a localização do ficheiro de chave transferido e, em seguida, clique em *Fechar*.
+
+
+.Resultados
+O Drive Security agora é gerenciado internamente por meio do storage array.
+
+.Depois de terminar
+Você deve validar a chave de segurança para se certificar de que o arquivo de chave não está corrompido.

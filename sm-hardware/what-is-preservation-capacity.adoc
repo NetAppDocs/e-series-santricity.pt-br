@@ -1,0 +1,18 @@
+---
+permalink: sm-hardware/what-is-preservation-capacity.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, preservation, capacity, reserved, pool, 
+summary: 'Capacidade de preservação é a quantidade de capacidade (número de unidades) reservada em um pool para dar suporte a possíveis falhas de unidade.' 
+---
+= O que é a capacidade de preservação?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Capacidade de preservação é a quantidade de capacidade (número de unidades) reservada em um pool para dar suporte a possíveis falhas de unidade.
+
+Quando um pool é criado, o sistema reserva automaticamente uma quantidade padrão de capacidade de preservação, dependendo do número de unidades no pool.
+
+Os pools usam capacidade de preservação durante a reconstrução, enquanto os grupos de volume usam unidades hot spare para o mesmo propósito. O método de capacidade de preservação é uma melhoria em relação às unidades hot spare porque permite que a reconstrução aconteça mais rapidamente. A capacidade de preservação é espalhada por várias unidades no pool em vez de em uma unidade no caso de uma unidade hot spare, portanto, você não está limitado pela velocidade ou disponibilidade de uma unidade.

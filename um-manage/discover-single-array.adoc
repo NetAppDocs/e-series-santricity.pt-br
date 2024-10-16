@@ -1,0 +1,57 @@
+---
+permalink: um-manage/discover-single-array.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, discover, single, array 
+summary: Use a opção Add/Discover Single Storage Array para descobrir e adicionar manualmente uma única matriz de armazenamento à rede da sua organização. 
+---
+= Descubra um único array
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Use a opção Add/Discover Single Storage Array (Adicionar/descobrir matriz de armazenamento única) para descobrir e adicionar manualmente uma única matriz de armazenamento à rede da sua organização.
+
+.Antes de começar
+* A matriz de armazenamento deve ser corretamente configurada e configurada.
+* As senhas do storage array devem ser configuradas usando o bloco Gerenciamento de Acesso do System Manager.
+
+
+.Passos
+. Na página Gerenciar, selecione *Adicionar/descobrir*.
++
+A caixa de diálogo Adicionar/descobrir é exibida.
+
+. Selecione o botão de opção *Discover a single storage array*.
+. Insira o endereço IP de um dos controladores na matriz de armazenamento e clique em *Start Discovery*.
++
+Pode levar alguns minutos para que o Unified Manager se conecte ao storage array especificado.
+
++
+[NOTE]
+====
+A mensagem Storage Array Not Accessible (Matriz de armazenamento não acessível) é exibida quando a conexão com o endereço IP do controlador especificado não for bem-sucedida.
+
+====
+. Se solicitado, resolva quaisquer certificados autoassinados.
++
+Como parte do processo de descoberta, o sistema verifica se os storages descobertos estão usando certificados por uma fonte confiável. Se não conseguir localizar um certificado digital para uma matriz de armazenamento, ele solicitará que você resolva o certificado que não está assinado por uma autoridade de certificação (CA) reconhecida adicionando uma exceção de segurança.
+
+. Se solicitado, resolva quaisquer certificados não confiáveis.
++
+Certificados não confiáveis ocorrem quando um storage array tenta estabelecer uma conexão segura com o Unified Manager, mas a conexão não consegue confirmar como segura. Resolva certificados não confiáveis importando um certificado de autoridade de certificação (CA) emitido por um terceiro confiável.
+
+. Clique em *seguinte*.
+. *Opcional:* associar a matriz de armazenamento descoberta a um grupo: Na lista suspensa, selecione o grupo desejado a ser associado à matriz de armazenamento.
++
+O grupo "All" (todos) é selecionado por predefinição.
+
+. Insira a senha de administrador do storage que você deseja adicionar ao domínio de gerenciamento e clique em *OK*.
+
+
+.Depois de terminar
+O storage array é adicionado ao Unified Manager e, se especificado, também é adicionado ao grupo selecionado.
+
+Se a coleta automática de dados de suporte estiver ativada, os dados de suporte serão coletados automaticamente para um storage array que você adicionar.

@@ -1,0 +1,99 @@
+---
+permalink: sm-storage/create-snapshot-image.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, create, snapshot, image 
+summary: Você pode criar manualmente uma imagem de snapshot a partir de um volume base ou grupo de consistência de snapshot. Isso também é chamado de instantâneo instantâneo ou imagem instantânea. 
+---
+= Criar imagem instantânea
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode criar manualmente uma imagem de snapshot a partir de um volume base ou grupo de consistência de snapshot. Isso também é chamado de _instantâneo instantâneo_ ou _imagem instantânea_.
+
+.Antes de começar
+* O volume de base deve ser ideal.
+* A unidade deve ser ideal.
+* O grupo instantâneo não pode ser designado como "reservido".
+* O volume de capacidade reservada deve ter as mesmas definições de Data Assurance (DA) que o volume base associado para o grupo de instantâneos.
+
+
+.Passos
+. Execute uma das seguintes ações para criar uma imagem instantânea:
++
+** Selecione menu:armazenamento[volumes]. Selecione o objeto (volume base ou grupo de consistência de instantâneos) e, em seguida, selecione menu:Serviços de cópia[criar instantâneo instantâneo instantâneo].
+** Selecione menu:armazenamento[instantâneos]. Selecione o separador *Snapshot Images* (imagens instantâneas) e, em seguida, selecione menu:Create[Instant snapshot] (criar instantâneo instantâneo).
++
+A caixa de diálogo criar imagem Instantânea é exibida. Selecione o objeto (volume base ou grupo de consistência de instantâneos) e clique em *Next*. Se uma imagem snapshot anterior foi criada para o grupo de consistência de volume ou snapshot, o sistema cria o instantâneo imediatamente. Caso contrário, se for a primeira vez que uma imagem instantânea for criada para o grupo de consistência de volume ou instantâneo, a caixa de diálogo confirmar criar imagem instantânea será exibida.
+
+
+
+. Clique em *Create* para aceitar a notificação de que a capacidade reservada é necessária e para avançar para a etapa de reserva de capacidade.
++
+A caixa de diálogo capacidade de reserva é exibida.
+
+. Use a caixa giratório para ajustar a porcentagem de capacidade e clique em *Next* para aceitar o volume do candidato destacado na tabela.
++
+A caixa de diálogo Editar configurações é exibida.
+
+. Selecione as definições da imagem instantânea conforme adequado e confirme que pretende executar a operação.
++
+.Detalhes do campo
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Definição | Descrição 
+
+
+ a| 
+*Configurações de imagem instantânea*
+
+
+
+ a| 
+Limite de imagem instantânea
+ a| 
+Mantenha a caixa de verificação selecionada se pretender que as imagens instantâneas sejam eliminadas automaticamente após o limite especificado; utilize a caixa de seleção para alterar o limite. Se desmarcar esta caixa de verificação, a criação de imagens instantâneas pára após 32 imagens.
+
+
+
+ a| 
+* Configurações de capacidade reservada*
+
+
+
+ a| 
+Alerta-me quando...
+ a| 
+Use a caixa giratório para ajustar o ponto percentual no qual o sistema envia uma notificação de alerta quando a capacidade reservada para um grupo de instantâneos estiver quase cheia.
+
+Quando a capacidade reservada para o grupo de instantâneos exceder o limite especificado, use o aviso prévio para aumentar a capacidade reservada ou excluir objetos desnecessários antes que o espaço restante se esgote.
+
+
+
+ a| 
+Política de capacidade reservada completa
+ a| 
+Escolha uma das seguintes políticas:
+
+** *Limpar imagem de snapshot mais antiga* -- o sistema limpa automaticamente a imagem de snapshot mais antiga no grupo de instantâneos, que libera a capacidade reservada da imagem de snapshot para reutilização dentro do grupo.
+** *Rejeitar gravações no volume base* -- quando a capacidade reservada atinge sua porcentagem máxima definida, o sistema rejeita qualquer solicitação de gravação de e/S para o volume base que acionou o acesso à capacidade reservada.
+
+
+|===
+====
+
+
+.Resultados
+* O System Manager (Gestor do sistema) apresenta a nova imagem instantânea na tabela Snapshot Images (imagens instantâneas). A tabela lista a nova imagem por carimbo de data/hora e o volume base associado ou grupo de consistência de instantâneos.
+* A criação de instantâneos pode permanecer em um estado pendente devido às seguintes condições:
++
+** O volume base que contém esta imagem instantânea é membro de um grupo de espelhos assíncrono.
+** O volume base está atualmente em uma operação de sincronização. A criação da imagem instantânea é concluída assim que a operação de sincronização for concluída.
+
+
+

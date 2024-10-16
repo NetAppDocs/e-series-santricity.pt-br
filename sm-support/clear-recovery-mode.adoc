@@ -1,0 +1,43 @@
+---
+permalink: sm-support/clear-recovery-mode.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, clear, recovery, mode 
+summary: Depois de restaurar uma configuração de storage array, use a operação Clear Recovery Mode para retomar a e/S no storage array e retornar às operações normais. 
+---
+= Limpar o modo de recuperação
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Depois de restaurar uma configuração de storage array, use a operação Clear Recovery Mode para retomar a e/S no storage array e retornar às operações normais.
+
+.Antes de começar
+* Se você quiser retornar a matriz de armazenamento para uma configuração anterior, você deve restaurar a configuração do backup antes de limpar o modo de recuperação.
+* Você deve executar verificações de validação ou verificar com o suporte técnico para garantir que a restauração foi bem-sucedida. Depois de determinar que a restauração foi bem-sucedida, o modo de recuperação pode ser limpo.
+
+
+.Sobre esta tarefa
+O storage array contém um banco de dados de configuração que inclui um Registro de sua configuração lógica (pools, grupos de volumes, volumes, etc.). Se você limpar intencionalmente a configuração do storage array ou se o banco de dados de configuração for corrompido, o storage array entrará no modo de recuperação. O modo de recuperação pára e/S e congela o banco de dados de configuração, o que lhe dá tempo para fazer um dos seguintes procedimentos:
+
+* Restaure a configuração a partir do backup automático armazenado nos dispositivos flash do controlador. Você deve entrar em Contato com o suporte técnico para fazer isso.
+* Restaure a configuração a partir de uma operação anterior Guardar base de dados de configuração. As operações do banco de dados de configuração são realizadas através da interface de linha de comando (CLI).
+* Reconfigure a matriz de armazenamento do zero.
+
+
+Depois que a configuração do storage array for restaurada ou redefinida e você tiver verificado que tudo está bem, você deve limpar manualmente o modo de recuperação.
+
+[NOTE]
+====
+Não é possível cancelar a operação Clear Recovery Mode (Limpar modo de recuperação) depois de iniciada. Limpar o modo de recuperação pode demorar muito tempo. Execute esta operação somente quando instruído a fazê-lo pelo suporte técnico.
+
+====
+.Passos
+. Selecione menu:guia Support [Support Center > Diagnostics] (suporte > Centro de suporte > Diagnóstico).
+. Selecione *Clear Recovery Mode* (Limpar modo de recuperação) e confirme que pretende executar esta operação.
++
+Esta opção aparece apenas se a matriz de armazenamento estiver no modo de recuperação.
+
+

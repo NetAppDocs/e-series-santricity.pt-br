@@ -1,0 +1,30 @@
+---
+permalink: sm-mirroring/view-unsynchronized-data-amount-between-mirror-consistency-groups.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, view, unsynchronized, data, mirror, consistency, groups, 
+summary: Você pode exibir a quantidade de dados não sincronizados entre os grupos de consistência de espelho no storage array local e no storage array remoto. Embora o grupo de consistência de espelho esteja em um status não sincronizado, nenhuma atividade de espelhamento ocorre. 
+---
+= Exibir a quantidade de dados não sincronizados entre grupos de consistência de espelho
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode exibir a quantidade de dados não sincronizados entre os grupos de consistência de espelho no storage array local e no storage array remoto. Embora o grupo de consistência de espelho esteja em um status não sincronizado, nenhuma atividade de espelhamento ocorre.
+
+.Sobre esta tarefa
+Você pode executar essa tarefa quando o grupo de consistência de espelho selecionado contiver pares espelhados e quando a sincronização não estiver em andamento.
+
+.Passos
+. Selecione menu:armazenamento[Espelhamento assíncrono].
+. Selecione a guia *Espelhar grupos de consistência*.
++
+A tabela Mirror Consistency Group (Grupo de consistência de espelho) é exibida e exibe todos os grupos de consistência de espelho associados ao storage array.
+
+. Clique em menu:mais[Ver quantidade de dados não sincronizados].
++
+Se houver dados não sincronizados, os valores da tabela refletem isso. A coluna quantidade de dados lista a quantidade de dados não sincronizados no MIB.
+
+

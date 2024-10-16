@@ -1,0 +1,47 @@
+---
+permalink: sm-mirroring/change-the-reserved-capacity-settings-for-a-mirrored-pair-volume.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, change, reserved, capacity, settings, mirrored, pair, volume, 
+summary: Você pode alterar as configurações de um volume de par espelhado para ajustar o ponto percentual no qual o System Manager envia uma notificação de alerta quando a capacidade reservada para um volume de par espelhado estiver quase cheia. 
+---
+= Altere as configurações de capacidade reservada para um volume de par espelhado
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode alterar as configurações de um volume de par espelhado para ajustar o ponto percentual no qual o System Manager envia uma notificação de alerta quando a capacidade reservada para um volume de par espelhado estiver quase cheia.
+
+.Passos
+. Selecione menu:armazenamento[pools & grupos de volume].
+. Selecione a guia *capacidade reservada*.
+. Selecione o volume do par espelhado que você deseja editar e clique em *Exibir/Editar configurações*.
++
+A caixa de diálogo Configurações de capacidade reservada do volume do par espelhado é exibida.
+
+. Altere as configurações de capacidade reservada para o volume do par espelhado, conforme apropriado.
++
+.Detalhes do campo
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Definição | Descrição 
+
+
+ a| 
+Alerta-me quando...
+ a| 
+Use a caixa giratório para ajustar o ponto percentual no qual o System Manager envia uma notificação de alerta quando a capacidade reservada para um par espelhado estiver quase cheia.
+
+Quando a capacidade reservada para o par espelhado excede o limite especificado, o System Manager envia um alerta, permitindo que você aumente a capacidade reservada.
+
+
+NOTE: Alterar a configuração Alerta para um par espelhado altera a configuração Alerta para todos os pares espelhados que pertencem ao mesmo grupo de consistência de espelho.
+
+|===
+====
+. Clique em *Salvar* para aplicar suas alterações.
+

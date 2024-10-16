@@ -1,0 +1,34 @@
+---
+permalink: sm-settings/default-host-operating-system-type.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, default, host, operating, system, 
+summary: O tipo de host padrão é usado pelo storage array quando os hosts são conetados inicialmente. Ele define como os controladores no storage array funcionam com o sistema operacional do host quando os volumes são acessados. 
+---
+= Tipo de sistema operacional de host padrão
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O tipo de host padrão é usado pelo storage array quando os hosts são conetados inicialmente. Ele define como os controladores no storage array funcionam com o sistema operacional do host quando os volumes são acessados.
+
+Você pode alterar o tipo de host se houver a necessidade de alterar o modo como o storage array opera, em relação aos hosts que estão conetados a ele. Geralmente, você alterará o tipo de host padrão antes de conetar os hosts ao storage array ou quando conetar hosts adicionais.
+
+Tenha em mente estas diretrizes:
+
+* Se todos os hosts que você planeja se conetar ao storage de armazenamento tiverem o mesmo sistema operacional (ambiente de host homogêneo), altere o tipo de host para corresponder ao sistema operacional.
+* Se houver hosts com sistemas operacionais diferentes que você planeja se conetar ao storage array (ambiente de host heterogêneo), altere o tipo de host para corresponder à maioria dos sistemas operacionais dos hosts.
++
+Por exemplo, se você estiver conetando oito hosts diferentes ao storage array e seis desses hosts estiverem executando um sistema operacional Windows, você deverá selecionar o Windows como o tipo de sistema operacional de host padrão.
+
+* Se a maioria dos hosts conetados tiver uma combinação de diferentes sistemas operacionais, altere o tipo de host para padrão de fábrica.
++
+Por exemplo, se você estiver conetando oito hosts diferentes ao storage array e dois desses hosts estiverem executando um sistema operacional Windows, três estiverem executando um sistema operacional VMware e outros três estiverem executando um sistema operacional Linux, você deverá selecionar padrão de fábrica como o tipo de sistema operacional padrão de host.
+
+
+
+[]
+====
+
+====

@@ -1,0 +1,96 @@
+---
+permalink: um-certificates/certificate-terminology-unified.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, certificate, terminology 
+summary: Os termos a seguir se aplicam ao gerenciamento de certificados. 
+---
+= Terminologia do certificado
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Os termos a seguir se aplicam ao gerenciamento de certificados.
+
+[cols="25h,~"]
+|===
+| Prazo | Descrição 
+
+
+ a| 
+CA
+ a| 
+Uma autoridade de certificação (CA) é uma entidade confiável que emite documentos eletrônicos, chamados certificados digitais, para segurança na Internet. Esses certificados identificam proprietários de sites, o que permite conexões seguras entre clientes e servidores.
+
+
+
+ a| 
+CSR
+ a| 
+Uma solicitação de assinatura de certificado (CSR) é uma mensagem enviada de um requerente para uma autoridade de certificação (CA). O CSR valida as informações que a CA precisa para emitir um certificado.
+
+
+
+ a| 
+Certificado
+ a| 
+Um certificado identifica o proprietário de um site para fins de segurança, o que impede que atacantes personificem o site. O certificado contém informações sobre o proprietário do site e a identidade da entidade confiável que certifica (assina) essas informações.
+
+
+
+ a| 
+Cadeia de certificados
+ a| 
+Uma hierarquia de arquivos que adiciona uma camada de segurança aos certificados. Normalmente, a cadeia inclui um certificado raiz na parte superior da hierarquia, um ou mais certificados intermediários e os certificados de servidor que identificam as entidades.
+
+
+
+ a| 
+Certificado intermédio
+ a| 
+Um ou mais certificados intermediários ramificam da raiz na cadeia de certificados. A CA emite um ou mais certificados intermediários para atuar como intermediários entre uma raiz protegida e certificados de servidor.
+
+
+
+ a| 
+Armazenamento de chaves
+ a| 
+Um keystore é um repositório no seu sistema de gerenciamento de host que contém chaves privadas, juntamente com suas chaves públicas e certificados correspondentes. Essas chaves e certificados identificam suas próprias entidades, como os controladores.
+
+
+
+ a| 
+Certificado raiz
+ a| 
+O certificado raiz está no topo da hierarquia na cadeia de certificados e contém uma chave privada usada para assinar outros certificados. A raiz identifica uma organização de CA específica. Se você usar a mesma CA para todos os dispositivos de rede, precisará de apenas um certificado raiz.
+
+
+
+ a| 
+Certificado assinado
+ a| 
+Um certificado validado por uma autoridade de certificação (CA). Este arquivo de dados contém uma chave privada e garante que os dados sejam enviados de forma criptografada entre um servidor e um cliente através de uma conexão HTTPS. Além disso, um certificado assinado inclui detalhes sobre o proprietário da entidade (normalmente, um servidor ou site) e uma assinatura digital composta por letras e números. Um certificado assinado usa uma cadeia de confiança e, portanto, é mais frequentemente usado em ambientes de produção. Também referido como um "certificado assinado pela CA" ou um "certificado de gestão".
+
+
+
+ a| 
+Certificado auto-assinado
+ a| 
+Um certificado autoassinado é validado pelo proprietário da entidade. Este arquivo de dados contém uma chave privada e garante que os dados sejam enviados de forma criptografada entre um servidor e um cliente através de uma conexão HTTPS. Também inclui uma assinatura digital composta por letras e números. Um certificado autoassinado não usa a mesma cadeia de confiança que um certificado assinado pela CA e, portanto, é mais frequentemente usado em ambientes de teste. Também referido como um certificado "pré-instalado".
+
+
+
+ a| 
+Certificado do servidor
+ a| 
+O certificado do servidor está na parte inferior da cadeia de certificados. Ele identifica sua entidade específica, como um site ou outro dispositivo. Cada controlador em um sistema de storage requer um certificado de servidor separado.
+
+
+
+ a| 
+Loja de confiança
+ a| 
+Um repositório de confiança é um repositório que contém certificados de terceiros confiáveis, como CAs.
+
+|===

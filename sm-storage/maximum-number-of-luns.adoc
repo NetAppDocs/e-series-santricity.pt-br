@@ -1,0 +1,16 @@
+---
+permalink: sm-storage/maximum-number-of-luns.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, maximum, luns 
+summary: O storage array tem um número máximo de LUNs que podem ser usados para cada host. 
+---
+= Número máximo de LUNs
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O storage array tem um número máximo de LUNs que podem ser usados para cada host.
+
+O número máximo depende do sistema operacional do host. A matriz de armazenamento rastreia o número de LUNs usados. Se você tentar atribuir um volume a um host que exceda o número máximo de LUNs, o host não poderá acessar o volume.

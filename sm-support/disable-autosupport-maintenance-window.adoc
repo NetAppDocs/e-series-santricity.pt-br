@@ -1,0 +1,31 @@
+---
+permalink: sm-support/disable-autosupport-maintenance-window.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, disable, autosupport, ASUP, maintenance window 
+summary: Desative a janela de manutenção do AutoSupport para permitir a criação automática de tickets em eventos de erro. Quando a janela de manutenção do AutoSupport estiver desativada, o storage array usará o AutoSupport para abrir um caso com suporte se houver um problema. 
+---
+= Desative a janela de manutenção do AutoSupport
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Desative a janela de manutenção do AutoSupport para permitir a criação automática de tickets em eventos de erro. Quando a janela de manutenção do AutoSupport estiver desativada, o storage array usará o AutoSupport para abrir um caso com suporte se houver um problema.
+
+.Passos
+. Selecione menu:suporte[Centro de suporte > AutoSupport].
+. Selecione *Desativar a janela de manutenção do AutoSupport*.
+. Insira o endereço de e-mail para receber uma confirmação de que a solicitação da janela de desativação de manutenção foi processada.
++
+Dependendo da configuração, você poderá inserir até cinco endereços de e-mail. Se quiser adicionar mais de um endereço, selecione *Adicionar outro email* para abrir outro campo.
+
+. Clique em *Sim*.
++
+A criação automática de ticket do AutoSupport em eventos de erro está ativada.
+
+
+
+.Depois de terminar
+A janela de manutenção não terminará até que a solicitação do storage array tenha sido processada pelos servidores AutoSupport. Aguarde até receber um e-mail de confirmação antes de prosseguir.

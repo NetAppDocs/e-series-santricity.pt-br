@@ -1,0 +1,23 @@
+---
+permalink: sm-interface/how-do-i-know-if-i-should-accept-the-recommended-pool-configuration.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, pool config 
+summary: Se você aceitar a configuração de pool recomendada depende de alguns fatores. 
+---
+= Como sei se devo aceitar a configuração recomendada do pool?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se você aceitar a configuração de pool recomendada depende de alguns fatores.
+
+Determine o tipo de armazenamento mais adequado aos seus requisitos respondendo às seguintes perguntas:
+
+* Você prefere vários pools de capacidades menores, em vez dos maiores pools possíveis?
+* Você prefere grupos de volume RAID em pools?
+* Você prefere provisionar manualmente suas unidades, em vez de ter uma configuração recomendada para você?
+
+
+Se você respondeu Sim a qualquer uma dessas perguntas, considere rejeitar a configuração recomendada do pool.

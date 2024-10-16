@@ -1,0 +1,16 @@
+---
+permalink: sm-mirroring/why-do-i-see-more-than-one-reserved-capacity-candidate.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, volume, pool, 
+summary: Se houver mais de um volume em um pool ou grupo de volumes que atenda ao valor percentual de capacidade selecionado para o objeto de armazenamento, você verá vários candidatos. 
+---
+= Por que vejo mais de um candidato à capacidade reservada?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se houver mais de um volume em um pool ou grupo de volumes que atenda ao valor percentual de capacidade selecionado para o objeto de armazenamento, você verá vários candidatos.
+
+Você pode atualizar a lista de candidatos recomendados alterando a porcentagem de espaço físico da unidade que deseja reservar no volume base para operações de serviço de cópia. Os melhores candidatos são exibidos com base na sua seleção.

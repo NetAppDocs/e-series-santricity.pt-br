@@ -1,0 +1,28 @@
+---
+permalink: sm-mirroring/volume-ownership-async.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, volume, ownership, async, change, preferred, controller, owner, mirrored, pair, 
+summary: Você pode alterar o proprietário do controlador preferido em um par espelhado. 
+---
+= Propriedade do volume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode alterar o proprietário do controlador preferido em um par espelhado.
+
+Se o volume primário do par espelhado for de propriedade da controladora A, o volume secundário também será de propriedade da controladora A do storage array remoto. Alterar o proprietário do volume primário mudará automaticamente o proprietário do volume secundário para garantir que ambos os volumes sejam propriedade do mesmo controlador. As alterações de propriedade atuais no lado primário propagam-se automaticamente para as alterações de propriedade atuais correspondentes no lado secundário.
+
+Por exemplo, um volume primário é de propriedade da controladora A e, em seguida, você altera o proprietário da controladora para a controladora B. nesse caso, a próxima gravação remota altera o proprietário do volume secundário da controladora A para B. como as alterações de propriedade da controladora no lado secundário são controladas pelo lado primário, elas não exigem nenhuma intervenção especial do administrador de storage.
+
+
+
+== O controlador é reiniciado
+
+Uma reinicialização do controlador causa uma alteração de propriedade de volume no lado primário do proprietário do controlador preferido para o controlador alternativo no storage de armazenamento.
+
+Às vezes, uma gravação remota é interrompida por uma reinicialização do controlador ou por um ciclo de energia do storage antes de poder ser gravada no volume secundário. O controlador não precisa executar uma sincronização completa do par espelhado, neste caso.
+
+Quando uma gravação remota foi interrompida durante uma reinicialização do controlador, o novo proprietário do controlador no lado principal lê as informações armazenadas em um arquivo de log no volume de capacidade reservada do proprietário do controlador preferido. Em seguida, o novo proprietário da controladora copia os blocos de dados afetados do volume primário para o volume secundário, eliminando a necessidade de uma sincronização completa dos volumes espelhados.

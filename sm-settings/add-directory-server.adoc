@@ -1,0 +1,174 @@
+---
+permalink: sm-settings/add-directory-server.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, add, directory, server, 
+summary: Para configurar a autenticação para o Gerenciamento de Acesso, é possível estabelecer comunicações entre o storage array e um servidor LDAP e mapear os grupos de usuários LDAP para as funções predefinidas do array. 
+---
+= Adicione um servidor de diretório LDAP
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Para configurar a autenticação para o Gerenciamento de Acesso, você pode estabelecer comunicações entre o storage array e um servidor LDAP e mapear os grupos de usuários LDAP para as funções predefinidas do array.
+
+.Antes de começar
+* Você deve estar conetado com um perfil de usuário que inclua permissões de administrador de segurança. Caso contrário, as funções de Gerenciamento de Acesso não aparecem.
+* Os grupos de usuários devem ser definidos em seu serviço de diretório.
+* As credenciais do servidor LDAP devem estar disponíveis, incluindo o nome de domínio, o URL do servidor e, opcionalmente, o nome de usuário e a senha da conta BIND.
+* Para servidores LDAPS que usam um protocolo seguro, a cadeia de certificados do servidor LDAP deve ser instalada na sua máquina local.
+
+
+.Sobre esta tarefa
+Adicionar um servidor de diretório é um processo de duas etapas. Primeiro você insere o nome de domínio e URL. Se o servidor usar um protocolo seguro, você também deve carregar um certificado de CA para autenticação se ele for assinado por uma autoridade de assinatura não padrão. Se tiver credenciais para uma conta BIND, também poderá introduzir o nome da conta de utilizador e a palavra-passe. Em seguida, você mapeia os grupos de usuários do servidor LDAP para as funções predefinidas do storage array.
+
+[NOTE]
+====
+Durante o procedimento para adicionar um servidor LDAP, a interface de gerenciamento herdada será desativada. A interface de gerenciamento legada (símbolo) é um método de comunicação entre o storage array e o cliente de gerenciamento. Quando desabilitado, o storage array e o cliente de gerenciamento usam um método de comunicação mais seguro (API REST sobre https).
+
+====
+.Passos
+. Selecione menu:Definições[Gestão de Acesso].
+. Na guia Serviços de diretório, selecione *Adicionar servidor de diretório*.
++
+A caixa de diálogo Adicionar servidor de diretório é aberta.
+
+. Na guia Configurações do servidor , insira as credenciais do servidor LDAP.
++
+.Detalhes do campo
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Definição | Descrição 
+
+
+ a| 
+*Configurações de configuração*
+
+
+
+ a| 
+Domínio(s)
+ a| 
+Introduza o nome de domínio do servidor LDAP. Para vários domínios, insira os domínios em uma lista separada por vírgulas. O nome de domínio é usado no login (_username__domain_) para especificar em qual servidor de diretório se autenticar.
+
+
+
+ a| 
+URL do servidor
+ a| 
+Insira o URL para acessar o servidor LDAP na forma `ldap[s]://*host*:*port*` de .
+
+
+
+ a| 
+Carregar certificado (opcional)
+ a| 
+
+NOTE: Este campo aparece apenas se um protocolo LDAPS for especificado no campo URL do servidor acima.
+
+Clique em *Procurar* e selecione um certificado de CA para carregar. Este é o certificado confiável ou cadeia de certificados usada para autenticar o servidor LDAP.
+
+
+
+ a| 
+Vincular conta (opcional)
+ a| 
+Insira uma conta de usuário somente leitura para consultas de pesquisa no servidor LDAP e para pesquisar nos grupos. Introduza o nome da conta num formato de tipo LDAP. Por exemplo, se o usuário bind é chamado de "bindacct", então você pode digitar um valor como "bindacct,cpoc,DC_local".
+
+
+
+ a| 
+Vincular senha (opcional)
+ a| 
+
+NOTE: Este campo é exibido quando você insere uma conta BIND acima.
+
+Introduza a palavra-passe para a conta vincular.
+
+
+
+ a| 
+Teste a conexão do servidor antes de adicionar
+ a| 
+Selecione esta caixa de verificação se pretender certificar-se de que a matriz de armazenamento pode comunicar com a configuração do servidor LDAP introduzida. O teste ocorre depois de clicar em *Add* na parte inferior da caixa de diálogo. Se esta caixa de verificação estiver selecionada e o teste falhar, a configuração não será adicionada. Você deve resolver o erro ou desmarcar a caixa de seleção para ignorar o teste e adicionar a configuração.
+
+
+
+ a| 
+**Configurações de privilégio**
+
+
+
+ a| 
+Pesquisar DN base
+ a| 
+Introduza o contexto LDAP para procurar utilizadores, normalmente na forma `CN=Users, DC=cpoc, DC=local` de .
+
+
+
+ a| 
+Atributo de nome de usuário
+ a| 
+Insira o atributo que está vinculado ao ID do usuário para autenticação. Por exemplo `sAMAccountName`: .
+
+
+
+ a| 
+Atributo(s) de grupo
+ a| 
+Insira uma lista de atributos de grupo no usuário, que é usada para mapeamento de grupo para função. Por exemplo `memberOf, managedObjects`: .
+
+|===
+====
+. Clique na guia **Mapeamento de função**.
+. Atribua grupos LDAP às funções predefinidas. Um grupo pode ter várias funções atribuídas.
++
+.Detalhes do campo
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Definição | Descrição 
+
+
+ a| 
+*Mapeamentos*
+
+
+
+ a| 
+DN do grupo
+ a| 
+Especifique o nome distinto do grupo (DN) para o grupo de usuários LDAP a ser mapeado. Expressões regulares são suportadas. Esses carateres especiais de expressão regular devem ser escapados com uma barra invertida (`\`) se eles não forem parte de um padrão de expressão regular
+
+
+
+ a| 
+Funções
+ a| 
+Clique no campo e selecione uma das funções da matriz de armazenamento a ser mapeada para o DN do grupo. Você deve selecionar individualmente cada função que deseja incluir para esse grupo. A função Monitor é necessária em combinação com as outras funções para iniciar sessão no Gestor do sistema SANtricity. As funções mapeadas incluem as seguintes permissões:
+
+** *Storage admin* -- Acesso completo de leitura/gravação aos objetos de armazenamento (por exemplo, volumes e pools de discos), mas sem acesso à configuração de segurança.
+** *Admin de segurança* -- Acesso à configuração de segurança em Gerenciamento de acesso, gerenciamento de certificados, gerenciamento de log de auditoria e a capacidade de ativar ou desativar a interface de gerenciamento legada (símbolo).
+** *Support admin* -- Acesso a todos os recursos de hardware na matriz de armazenamento, dados de falha, eventos mel e atualizações de firmware do controlador. Sem acesso a objetos de armazenamento ou à configuração de segurança.
+** *Monitor* -- Acesso somente leitura a todos os objetos de armazenamento, mas sem acesso à configuração de segurança.
+
+
+|===
+====
++
+[NOTE]
+====
+A função Monitor é necessária para todos os usuários, incluindo o administrador. O System Manager não funcionará corretamente para nenhum usuário sem a função Monitor presente.
+
+====
+. Se desejar, clique em *Adicionar outro mapeamento* para inserir mais mapeamentos de grupo para função.
+. Quando terminar com os mapeamentos, clique em *Add*.
++
+O sistema executa uma validação, certificando-se de que a matriz de armazenamento e o servidor LDAP possam se comunicar. Se for apresentada uma mensagem de erro, assinale as credenciais introduzidas na caixa de diálogo e volte a introduzir as informações, se necessário.
+
+

@@ -1,0 +1,39 @@
+---
+permalink: sm-settings/edit-user-names-for-snmp-traps.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, edit, user, settings, snmpv3, traps, 
+summary: Você pode editar definições de usuário para SNMPv3 traps. 
+---
+= Edite as configurações do usuário para SNMPv3 traps
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode editar definições de usuário para SNMPv3 traps.
+
+.Antes de começar
+Um usuário deve ser criado para o trap SNMPv3.
+
+.Passos
+. Selecione menu:Definições[Alertas].
+. Selecione a guia *SNMP*.
++
+Os destinos e os nomes de utilizador da armadilha são apresentados na tabela.
+
+. Para editar uma definição de usuário, selecione o usuário na tabela e clique em *Configurar usuários*.
+. Na caixa de diálogo, clique em *Exibir/Editar configurações*.
+. Edite as seguintes informações:
++
+** *Nome do usuário* -- altere o nome que identifica o usuário, que pode ter até 31 carateres.
+** *Engine ID* -- Selecione o Engine ID, que é usado para gerar chaves de autenticação e criptografia para mensagens, e deve ser exclusivo no domínio administrativo. Na maioria dos casos, você deve selecionar *local*. Se você tiver uma configuração não padrão, selecione *Custom*; outro campo aparece onde você deve inserir o ID do mecanismo autorizado como uma cadeia hexadecimal, com um número par de carateres entre 10 e 32 carateres.
+** *Credenciais de autenticação* -- Selecione um protocolo de autenticação, que garante a identidade dos usuários. Em seguida, introduza uma palavra-passe de autenticação, que é necessária quando o protocolo de autenticação é definido ou alterado. A senha deve ter entre 8 e 128 carateres.
+** *Credenciais de privacidade* -- Selecione um protocolo de privacidade, que é usado para criptografar o conteúdo das mensagens. Em seguida, introduza uma palavra-passe de privacidade, que é necessária quando o protocolo de privacidade é definido ou alterado. A senha deve ter entre 8 e 128 carateres.
+
+
+
+
+.Resultados
+O separador SNMP da página Alertas apresenta as definições atualizadas.

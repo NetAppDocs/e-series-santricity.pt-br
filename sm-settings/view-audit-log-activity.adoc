@@ -1,0 +1,120 @@
+---
+permalink: sm-settings/view-audit-log-activity.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, view, audit, log, activity, 
+summary: Ao visualizar logs de auditoria, os usuários com permissões de administrador de segurança podem monitorar as ações do usuário, falhas de autenticação, tentativas de login inválidas e a vida útil da sessão do usuário. 
+---
+= Exibir atividade do log de auditoria
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Ao visualizar logs de auditoria, os usuários com permissões de administrador de segurança podem monitorar as ações do usuário, falhas de autenticação, tentativas de login inválidas e a vida útil da sessão do usuário.
+
+.Antes de começar
+Você deve estar conetado com um perfil de usuário que inclua permissões de administrador de segurança. Caso contrário, as funções de Gerenciamento de Acesso não aparecem.
+
+.Passos
+. Selecione menu:Definições[Gestão de Acesso].
+. Selecione a guia **Audit Log**.
++
+A atividade do log de auditoria aparece em formato tabular, que inclui as seguintes colunas de informações:
+
++
+** *Date/time* -- Timestamp de quando a matriz de armazenamento detetou o evento (em GMT).
+** *Nome de usuário* -- o nome de usuário associado ao evento. Para quaisquer ações não autenticadas na matriz de armazenamento, "N/A" aparece como o nome de usuário. Ações não autenticadas podem ser acionadas pelo proxy interno ou por algum outro mecanismo.
+** *Status Code* -- Código de status HTTP da operação (200, 400, etc.) e texto descritivo associado ao evento.
+** *URL acessado* -- URL completa (incluindo host) e string de consulta.
+** *Endereço IP do cliente* -- Endereço IP do cliente associado ao evento.
+** *Source* -- fonte de Registro associada ao evento, que pode ser System Manager, CLI, Web Services ou Support Shell.
+** *Descrição* -- informações adicionais sobre o evento, se aplicável.
+
+
+. Utilize as seleções na página Registo de auditoria para ver e gerir eventos.
++
+.Detalhes da seleção
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Seleção | Descrição 
+
+
+ a| 
+Mostrar eventos do...
+ a| 
+Limite eventos mostrados por intervalo de datas (últimas 24 horas, últimos 7 dias, últimos 30 dias ou um intervalo de datas personalizado).
+
+
+
+ a| 
+Filtro
+ a| 
+Limite eventos mostrados pelos carateres inseridos no campo. Use aspas (""") para uma correspondência exata de palavras, digite `OR` para retornar uma ou mais palavras ou insira um traço ( -- ) para omitir palavras.
+
+
+
+ a| 
+Atualizar
+ a| 
+Selecione *Atualizar* para atualizar a página para os eventos mais atuais.
+
+
+
+ a| 
+Ver/Editar definições
+ a| 
+Selecione *Exibir/Editar configurações* para abrir uma caixa de diálogo que permite especificar uma política de log completa e o nível de ações a serem registradas.
+
+
+
+ a| 
+Eliminar eventos
+ a| 
+Selecione *Excluir* para abrir uma caixa de diálogo que permite remover eventos antigos da página.
+
+
+
+ a| 
+Mostrar/ocultar colunas
+ a| 
+Clique no ícone da coluna *Mostrar/Ocultar* image:../media/sam-1140-ss-access-columns.gif[""]para selecionar colunas adicionais para exibição na tabela. Colunas adicionais incluem:
+
+** *Método* -- o método HTTP (por exemplo, POST, GET, DELETE, etc.).
+** * Comando CLI executado* -- o comando CLI (gramática) executado para solicitações de CLI segura.
+** *CLI Return Status* -- Um código de status CLI ou uma solicitação de arquivos de entrada do cliente.
+** *Procedimento de símbolo* -- procedimento de símbolo executado.
+** * Tipo de evento SSH* -- tipo de eventos Secure Shell (SSH), como login, logout e login_fail.
+** *SSH Session PID* -- número de ID do processo da sessão SSH.
+** *Duração(s) da sessão SSH* -- o número de segundos em que o usuário foi conetado.
+** *Tipo de autenticação* -- os tipos podem incluir usuário local, LDAP, SAML e token de acesso.
+** *ID de autenticação* -- ID da sessão autenticada.
+
+
+
+
+ a| 
+Alternar filtros de coluna
+ a| 
+Clique no ícone *alternar* image:../media/sam-1140-ss-access-toggle.gif[""]para abrir campos de filtragem para cada coluna. Insira carateres dentro de um campo de coluna para limitar eventos mostrados por esses carateres. Clique novamente no ícone para fechar os campos de filtragem.
+
+
+
+ a| 
+Anular alterações
+ a| 
+Clique no ícone *Desfazer* image:../media/sam-1140-ss-access-undo.gif[""]para retornar a tabela à configuração padrão.
+
+
+
+ a| 
+Exportação
+ a| 
+Clique em *Export* para salvar os dados da tabela em um arquivo CSV (Comma Separated Value).
+
+|===
+====
+

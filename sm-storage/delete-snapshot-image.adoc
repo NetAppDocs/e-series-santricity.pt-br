@@ -1,0 +1,39 @@
+---
+permalink: sm-storage/delete-snapshot-image.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, delete, snapshot, image 
+summary: Elimina imagens de instantâneos para limpar a imagem de instantâneos mais antiga de um grupo de instantâneos ou de um grupo de consistência de instantâneos. 
+---
+= Eliminar imagem instantânea
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Elimina imagens de instantâneos para limpar a imagem de instantâneos mais antiga de um grupo de instantâneos ou de um grupo de consistência de instantâneos.
+
+.Sobre esta tarefa
+Você pode excluir uma única imagem de snapshot ou excluir imagens de snapshot de grupos de consistência de snapshot que tenham o mesmo carimbo de data/hora de criação. Também pode eliminar imagens instantâneas de um grupo de instantâneos.
+
+Não é possível excluir uma imagem instantânea se ela não for a imagem de snapshot mais antiga para o volume base associado ou grupo de consistência de snapshot.
+
+.Passos
+. Selecione menu:armazenamento[instantâneos].
+. Clique no separador *Snapshot Images* (imagens instantâneas).
+. Selecione a imagem instantânea que pretende eliminar e confirme que pretende executar a operação.
++
+Se tiver selecionado uma imagem instantânea de um grupo de consistência de instantâneos, selecione cada volume de membro que pretende eliminar e confirme que pretende executar a operação.
+
+. Clique em *Excluir*.
+
+
+.Resultados
+O System Manager executa as seguintes ações:
+
+* Elimina a imagem instantânea da matriz de armazenamento.
+* Libera a capacidade reservada para reutilização no grupo de snapshot ou no grupo de consistência de snapshot.
+* Desativa todos os volumes instantâneos associados que existem para a imagem de instantâneo eliminada.
+* A partir de uma exclusão de grupo de consistência de snapshot, move qualquer volume de membro associado à imagem de snapshot excluída para um estado parado.
+

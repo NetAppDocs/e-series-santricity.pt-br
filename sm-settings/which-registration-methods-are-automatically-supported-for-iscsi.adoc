@@ -1,0 +1,18 @@
+---
+permalink: sm-settings/which-registration-methods-are-automatically-supported-for-iscsi.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, registration, methods,  automatically, supported, iscsi, 
+summary: 'A implementação iSCSI suporta o método de deteção iSNS (Internet Storage Name Service) ou o uso do comando Enviar destinos.' 
+---
+= Que métodos de registo são suportados automaticamente para iSCSI?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A implementação iSCSI suporta o método de deteção iSNS (Internet Storage Name Service) ou o uso do comando Enviar destinos.
+
+O método iSNS permite a descoberta do iSNS entre os iniciadores (hosts iSCSI) e os destinos (os controladores). Você Registra o controlador de destino para fornecer ao servidor iSNS o nome qualificado iSCSI (IQN) e as informações de porta do controlador.
+
+Se você não configurar o iSNS, o host iSCSI poderá enviar o comando Enviar destinos durante uma sessão de descoberta iSCSI. Em resposta, o controlador retorna as informações da porta (por exemplo, IQN de destino, endereço IP da porta, porta de escuta e Grupo de portas de destino). Esse método de descoberta não é necessário se você usar o iSNS, porque o iniciador do host pode recuperar os IPs de destino do servidor iSNS.

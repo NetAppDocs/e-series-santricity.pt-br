@@ -1,0 +1,41 @@
+---
+permalink: sm-interface/recover-from-problems-using-recovery-guru.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, Recovery Guru 
+summary: O Recovery Guru é um componente do System Manager que diagnostica problemas de storage array e recomenda procedimentos de recuperação para corrigir os problemas. 
+---
+= Recuperar de problemas usando Recovery Guru
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O Recovery Guru é um componente do System Manager que diagnostica problemas de storage array e recomenda procedimentos de recuperação para corrigir os problemas.
+
+.Passos
+. Selecione *Home*.
+. Clique no link *Recover from _n_ problems* no centro da janela.
++
+A caixa de diálogo Recovery Guru (Guru de recuperação) é exibida.
+
+. Selecione o primeiro problema mostrado na lista de resumo e siga as instruções no procedimento de recuperação para corrigir o problema. Sempre que necessário, utilize as instruções de substituição para substituir os componentes avariados. Repita esta etapa para cada problema listado.
++
+Vários problemas em um storage array podem ser relacionados. Neste caso, a ordem em que os problemas são corrigidos pode afetar o resultado. Selecione e corrija os problemas na ordem em que eles estão listados na lista de resumo.
+
++
+Várias falhas para um recipiente de fonte de alimentação são agrupadas e listadas como um problema na lista de resumo. Várias falhas para um recipiente do ventilador também são listadas como um problema.
+
+. Para se certificar de que o procedimento de recuperação foi bem-sucedido, clique em *verificar novamente*.
++
+Se você selecionou um problema para um grupo de espelhos assíncronos ou um membro de um grupo de espelhos assíncronos, clique em *Clear* primeiro para apagar a falha do controlador e clique em *Reverifique* para remover o evento do Recovery Guru.
+
++
+Se todos os problemas tiverem sido corrigidos, o ícone do storage array eventualmente transita de precisa de atenção para o ideal. Para alguns problemas, aparece um ícone de fixação enquanto uma operação, como a reconstrução, está em andamento.
+
+. *Opcional:* para salvar as informações do Recovery Guru em um arquivo, clique no ícone *Salvar*.
++
+O arquivo é salvo na pasta Downloads do navegador com o nome `recovery-guru-failure-yyyy-mm-dd-hh-mm-ss-mmm.html`.
+
+. Para imprimir as informações do Recovery Guru, clique no ícone *Print*.
+

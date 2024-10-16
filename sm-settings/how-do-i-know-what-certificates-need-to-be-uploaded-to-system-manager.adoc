@@ -1,0 +1,18 @@
+---
+permalink: sm-settings/how-do-i-know-what-certificates-need-to-be-uploaded-to-system-manager.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, certificates, external, key, management, 
+summary: Para o gerenciamento de chaves externas, você importa dois tipos de certificados para autenticação entre o storage array e o servidor de gerenciamento de chaves para que as duas entidades possam confiar umas nas outras. 
+---
+= Como sei quais certificados precisam ser carregados no System Manager para gerenciamento de chaves externas?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Para o gerenciamento de chaves externas, você importa dois tipos de certificados para autenticação entre o storage array e o servidor de gerenciamento de chaves para que as duas entidades possam confiar umas nas outras.
+
+Um certificado de cliente valida os controladores do storage array, para que o servidor de gerenciamento de chaves possa confiar em suas solicitações KMIP (Key Management Interoperability Protocol). Para obter um certificado de cliente, use o System Manager para concluir um CSR para a matriz de armazenamento. Em seguida, você pode fazer o upload do CSR para um servidor de gerenciamento de chaves e gerar um certificado de cliente a partir daí. Depois de ter um certificado de cliente, copie esse arquivo para o host onde você está acessando o System Manager.
+
+Um certificado do servidor de gerenciamento de chaves valida o servidor de gerenciamento de chaves, de modo que o storage array possa confiar em seu endereço IP. Recupere o arquivo de certificado do servidor do servidor de gerenciamento de chaves e copie esse arquivo para o host onde você está acessando o System Manager.

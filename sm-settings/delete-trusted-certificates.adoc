@@ -1,0 +1,42 @@
+---
+permalink: sm-settings/delete-trusted-certificates.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, delete, trusted, certificates, 
+summary: Você pode excluir os certificados instalados pelo usuário importados anteriormente da guia confiável. 
+---
+= Excluir certificados confiáveis
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode excluir os certificados instalados pelo usuário importados anteriormente da guia confiável.
+
+.Antes de começar
+* Você deve estar conetado com um perfil de usuário que inclua permissões de administrador de segurança. Caso contrário, as funções do certificado não aparecem.
+* Se você estiver atualizando um certificado confiável com uma nova versão, o certificado atualizado deve ser importado antes de excluir o certificado antigo.
+
+
+[CAUTION]
+====
+Poderá perder o acesso a um sistema se eliminar um certificado utilizado para autenticar os controladores e outro servidor, como um servidor LDAP, antes de importar um certificado de substituição.
+
+====
+.Sobre esta tarefa
+Esta tarefa descreve como eliminar certificados instalados pelo utilizador. Os certificados pré-instalados e auto-assinados não podem ser eliminados.
+
+.Passos
+. Selecione menu:Definições[certificados].
+. Selecione a guia *Trusted*.
++
+A tabela mostra os certificados confiáveis do storage array.
+
+. Na tabela, selecione o certificado que deseja remover.
+. Clique em menu:tarefas incomuns[Delete].
++
+Uma caixa de diálogo confirmar Excluir certificado confiável é aberta.
+
+. Digite `delete` o campo e clique em *Excluir*.
+

@@ -1,0 +1,46 @@
+---
+permalink: um-certificates/overview-access-management-um.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, access management, authentication 
+summary: O Gerenciamento de Acesso é um método de configuração da autenticação de usuário no Gerenciador Unificado do SANtricity. 
+---
+= Visão geral do Gerenciamento de Acesso
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O Access Management é um método de configuração da autenticação de usuário no Unified Manager.
+
+
+
+== Quais métodos de autenticação estão disponíveis?
+
+Estão disponíveis os seguintes métodos de autenticação:
+
+* *Funções de usuário local* -- a autenticação é gerenciada por meio de recursos RBAC (controle de acesso baseado em função). As funções de usuário local incluem perfis de usuário predefinidos e funções com permissões de acesso específicas.
+* *Serviços de diretório* -- a autenticação é gerenciada por meio de um servidor LDAP (Lightweight Directory Access Protocol) e serviço de diretório, como o ative Directory da Microsoft.
+* *SAML* -- a autenticação é gerenciada por meio de um Provedor de identidade (IDP) usando SAML 2,0.
+
+
+Saiba mais:
+
+* link:how-access-management-works-unified.html["Como o Gerenciamento de Acesso funciona"]
+* link:access-management-terminology-unified.html["Terminologia de Gerenciamento de Acesso"]
+* link:permissions-for-mapped-roles-unified.html["Permissões para funções mapeadas"]
+* link:access-management-with-saml.html["SAML"]
+
+
+
+
+== Como faço para configurar o Gerenciamento de Acesso?
+
+O software SANtricity está pré-configurado para utilizar funções de utilizador locais. Se pretender utilizar o LDAP, pode configurá-lo na página Gestão de acessos.
+
+Saiba mais:
+
+* link:access-management-with-local-user-roles-unified.html["Gerenciamento de acesso com funções de usuário local"]
+* link:access-management-with-directory-services-unified.html["Gerenciamento de acesso com serviços de diretório"]
+* link:configure-saml.html["Configurar SAML"]
+

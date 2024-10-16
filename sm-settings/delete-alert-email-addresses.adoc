@@ -1,0 +1,27 @@
+---
+permalink: sm-settings/delete-alert-email-addresses.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, delete, mail, server, email, addresses, alerts, 
+summary: Você pode remover o servidor de e-mail definido anteriormente para que os alertas não sejam mais enviados para os endereços de e-mail ou remover endereços de e-mail individuais. 
+---
+= Excluir servidor de e-mail ou endereços de e-mail para alertas
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode remover o servidor de e-mail definido anteriormente para que os alertas não sejam mais enviados para os endereços de e-mail ou remover endereços de e-mail individuais.
+
+.Passos
+. Selecione menu:Definições[Alertas].
+. Selecione a guia *Email*.
+. Na tabela, execute um dos seguintes procedimentos:
++
+** Para remover um servidor de e-mail para que os alertas não sejam mais enviados para os endereços de e-mail, selecione a linha para o servidor de e-mail.
+** Para remover um endereço de e-mail para que os alertas não sejam mais enviados para esse endereço, selecione a linha do endereço de e-mail que deseja excluir. O botão *Delete* no canto superior direito da tabela fica disponível para seleção.
+
+
+. Clique em *Delete* e confirme a operação.
+

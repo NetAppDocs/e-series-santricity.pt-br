@@ -1,0 +1,39 @@
+---
+permalink: sm-mirroring/remove-synchronous-mirror-relationship.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, remove, synchronous, mirror, relationship, 
+summary: Você remove um par espelhado para remover a relação de espelhamento do volume primário no storage array local e o volume secundário no storage array remoto. 
+---
+= Remova a relação do espelho síncrono
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você remove um par espelhado para remover a relação de espelhamento do volume primário no storage array local e o volume secundário no storage array remoto.
+
+.Sobre esta tarefa
+Você também pode remover um par espelhado para corrigir um estado de par espelhado órfão. Revise as seguintes informações sobre pares espelhados órfãos:
+
+* Existe um par espelhado órfão quando um volume de membro foi removido de um lado (local/remoto), mas não do outro lado.
+* Pares espelhados órfãos são detetados quando a comunicação entre arrays é restaurada.
+
+
+.Passos
+. Selecione menu:armazenamento[Espelhamento síncrono].
+. Selecione o par espelhado que pretende remover e, em seguida, selecione o menu:tarefas incomuns[Remover].
++
+A caixa de diálogo Remover relação de espelho é exibida.
+
+. Confirme se deseja remover o par espelhado e clique em *Remover*.
+
+
+.Resultados
+O System Manager executa as seguintes ações:
+
+* Remove a relação de espelhamento do par espelhado na matriz de armazenamento local e na matriz de armazenamento remoto.
+* Retorna o volume primário e o volume secundário para volumes não espelhados acessíveis ao host.
+* Atualiza o mosaico Espelhamento síncrono com a remoção do par espelhado síncrono.
+

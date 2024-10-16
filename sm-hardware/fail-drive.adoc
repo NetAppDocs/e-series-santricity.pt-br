@@ -1,0 +1,49 @@
+---
+permalink: sm-hardware/fail-drive.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, fail, drive, 
+summary: Se instruído a fazê-lo, você pode falhar manualmente uma unidade. 
+---
+= Falha na unidade
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se instruído a fazê-lo, você pode falhar manualmente uma unidade.
+
+.Sobre esta tarefa
+O System Manager monitora as unidades na matriz de armazenamento. Quando ele deteta que uma unidade está gerando muitos erros, o Recovery Guru notifica você sobre uma falha iminente de unidade. Se isso acontecer e você tiver uma unidade de substituição disponível, você pode querer falhar a unidade para tomar uma ação preventiva. Se você não tiver uma unidade de substituição disponível, você pode esperar que a unidade falhe por conta própria.
+
+[CAUTION]
+====
+*Possível perda de acesso a dados* -- esta operação pode resultar em perda de dados ou perda de redundância de dados. Execute esta operação somente quando instruído a fazê-lo pelo suporte técnico ou pelo Recovery Guru.
+
+====
+.Passos
+. Selecione *hardware*.
+. Se o gráfico mostrar os controladores, clique na guia *Drives*.
++
+O gráfico muda para mostrar as unidades em vez dos controladores.
+
+. Clique na unidade que você deseja falhar.
++
+É apresentado o menu de contexto da unidade.
+
+. Selecione *Fail*.
+. Mantenha a caixa de seleção *Copiar conteúdo da unidade antes de falhar* selecionada.
++
+A opção de cópia aparece apenas para unidades atribuídas e para grupos de volume não RAID 0.
+
++
+Antes de falhar a unidade, certifique-se de copiar o conteúdo da unidade. Dependendo da sua configuração, você pode potencialmente perder toda a redundância de dados ou dados no pool ou grupo de volumes associado se você não copiar o conteúdo da unidade primeiro.
+
++
+A opção de cópia permite uma recuperação mais rápida da unidade do que a reconstrução e reduz a possibilidade de uma falha de volume se outra unidade falhar durante a operação de cópia.
+
+. Confirme se deseja falhar a unidade.
++
+Depois que a unidade falhar, aguarde pelo menos 30 segundos antes de removê-la.
+
+

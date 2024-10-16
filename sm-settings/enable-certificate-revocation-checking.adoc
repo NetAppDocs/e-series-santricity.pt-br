@@ -1,0 +1,45 @@
+---
+permalink: sm-settings/enable-certificate-revocation-checking.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, enable, certificate, revocation checking, 
+summary: 'Você pode habilitar verificações automáticas para certificados revogados, de modo que um servidor OCSP (Online Certificate Status Protocol) bloqueie os usuários de fazer conexões não seguras.' 
+---
+= Ativar verificação de revogação de certificado
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode habilitar verificações automáticas para certificados revogados, de modo que um servidor OCSP (Online Certificate Status Protocol) bloqueie os usuários de fazer conexões não seguras.
+
+.Antes de começar
+* Você deve estar conetado com um perfil de usuário que inclua permissões de administrador de segurança. Caso contrário, as funções do certificado não aparecem.
+* Um servidor DNS é configurado em ambos os controladores, o que permite o uso de um nome de domínio totalmente qualificado para o servidor OCSP. Esta tarefa está disponível na página hardware.
+* Se você quiser especificar seu próprio servidor OCSP, você deve saber a URL desse servidor.
+
+
+.Sobre esta tarefa
+A verificação automática de revogação é útil nos casos em que a autoridade de certificação emitiu incorretamente um certificado ou uma chave privada é comprometida.
+
+Durante essa tarefa, você pode configurar um servidor OCSP ou usar o servidor especificado no arquivo de certificado. O servidor OCSP determina se a CA revogou quaisquer certificados antes da data de expiração agendada e, em seguida, bloqueia o usuário de acessar um site se o certificado for revogado.
+
+.Passos
+. Selecione menu:Definições[certificados].
+. Selecione a guia *Trusted*.
++
+[NOTE]
+====
+Você também pode ativar a verificação de revogação na guia *Key Management*.
+
+====
+. Clique em *tarefas incomuns* e selecione *Ativar Verificação de revogação* no menu suspenso.
+. Selecione *quero ativar a verificação de revogação* para que uma marca de seleção apareça na caixa de seleção e campos adicionais apareçam na caixa de diálogo.
+. No campo *OCSP respondedor address*, você pode opcionalmente inserir um URL para um servidor de resposta OCSP. Se não introduzir um endereço, o sistema utiliza a URL do servidor OCSP a partir do ficheiro de certificado.
+. Clique em *Endereço de teste* para garantir que o sistema possa abrir uma conexão com o URL especificado.
+. Clique em *Salvar*.
+
+
+.Resultados
+Se o storage de armazenamento tentar se conetar a um servidor com um certificado revogado, a conexão será negada e um evento será registrado.

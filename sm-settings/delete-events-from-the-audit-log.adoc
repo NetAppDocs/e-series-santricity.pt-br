@@ -1,0 +1,37 @@
+---
+permalink: sm-settings/delete-events-from-the-audit-log.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, delete, events, audit, log, 
+summary: 'Você pode limpar o log de auditoria de eventos antigos, o que torna a pesquisa através de eventos mais gerenciável. Você tem a opção de salvar eventos antigos em um arquivo CSV (valores separados por vírgulas) após a exclusão.' 
+---
+= Excluir eventos do log de auditoria
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode limpar o log de auditoria de eventos antigos, o que torna a pesquisa através de eventos mais gerenciável. Você tem a opção de salvar eventos antigos em um arquivo CSV (valores separados por vírgulas) após a exclusão.
+
+.Antes de começar
+Você deve estar conetado com um perfil de usuário que inclua permissões de administrador de segurança. Caso contrário, as funções de Gerenciamento de Acesso não aparecem.
+
+.Passos
+. Selecione menu:Definições[Gestão de Acesso].
+. Selecione o separador *Registo de auditoria*.
+. Selecione *Eliminar*.
++
+A caixa de diálogo Excluir Registro de auditoria é aberta.
+
+. Selecione ou introduza o número de eventos mais antigos que pretende eliminar.
+. Se pretender exportar os eventos eliminados para um ficheiro CSV (recomendado), mantenha a caixa de verificação selecionada. Você será solicitado a inserir um nome de arquivo e um local quando clicar em *Excluir* na próxima etapa. Caso contrário, se você não quiser salvar eventos em um arquivo CSV, clique na caixa de seleção para desmarcá-lo.
+. Clique em *Excluir*.
++
+Abre-se uma caixa de diálogo de confirmação.
+
+. Digite `delete` o campo e clique em *Excluir*.
++
+Os eventos mais antigos são removidos da página Registo de Auditoria.
+
+

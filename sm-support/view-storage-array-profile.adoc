@@ -1,0 +1,107 @@
+---
+permalink: sm-support/view-storage-array-profile.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, view, storage, array, profile 
+summary: O perfil do storage array fornece uma descrição de todos os componentes e propriedades do storage array. 
+---
+= Ver o perfil da matriz de armazenamento
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O perfil do storage array fornece uma descrição de todos os componentes e propriedades do storage array.
+
+.Sobre esta tarefa
+Você pode usar o perfil do storage array como auxiliar durante a recuperação ou como uma visão geral da configuração atual do storage array. Talvez você queira salvar uma cópia do perfil do storage array no cliente de gerenciamento e manter uma cópia impressa do perfil do storage array com o storage array. Crie uma nova cópia do perfil de storage array se a configuração mudar.
+
+.Passos
+. Selecione o menu:guia Support [Support Center > Support Resources] (suporte > recursos de suporte).
+. Role para baixo até *Launch detailed storage array information* e selecione *Storage Array Profile*.
++
+O relatório é apresentado no ecrã.
+
++
+.Detalhes do campo
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Secção | Descrição 
+
+
+ a| 
+Storage array
+ a| 
+Mostra todas as opções que você pode configurar e as opções estáticas do sistema para sua matriz de armazenamento. Essas opções incluem o número de controladores, compartimentos de unidades, unidades, pools de discos, grupos de volumes, volumes e unidades hot spare; o número máximo de compartimentos de unidades, unidades, discos de estado sólido (SSDs) e volumes permitidos; o número de grupos de snapshot, imagens de snapshot, volumes de snapshot e grupos de consistência; AutoSupport informações sobre recursos AutoSupport
+
+
+
+ a| 
+Armazenamento
+ a| 
+Mostra uma lista de todos os dispositivos de armazenamento na matriz de armazenamento. Dependendo da configuração do storage array, a seção armazenamento pode mostrar essas subseções.
+
+** *Disk Pools* -- mostra uma lista de todos os pools de discos na matriz de armazenamento.
+** *Grupos de volume* -- mostra uma lista de todos os grupos de volume na matriz de armazenamento. Volumes e capacidade livre são listados na ordem em que foram criados.
+** *Volumes* -- mostra uma lista de todos os volumes na matriz de armazenamento. As informações listadas incluem o nome do volume, o status do volume, a capacidade, o nível RAID, o grupo de volumes ou o pool de discos, o tipo de unidade e detalhes adicionais.
+** *Volumes ausentes* -- mostra uma lista de todos os volumes na matriz de armazenamento que atualmente têm um status ausente. As informações listadas incluem o World Wide Identifier (WWID) para cada volume em falta.
+
+
+
+
+ a| 
+Serviços de cópia
+ a| 
+Mostra uma lista de todos os serviços de cópia usados para o storage array. Dependendo da configuração do storage array, a seção Serviços de cópia pode mostrar estas subseções:
+
+** *Cópias de volume* -- mostra uma lista de todos os pares de cópias na matriz de armazenamento. As informações listadas incluem o número de cópias, os nomes dos pares de cópias, o status, o carimbo de data/hora inicial e detalhes adicionais.
+** *Grupos de instantâneos* -- mostra uma lista de todos os grupos de instantâneos na matriz de armazenamento.
+** *Snapshot Images* -- mostra uma lista de todos os instantâneos no storage array.
+** *Volumes instantâneos* -- mostra uma lista de todos os volumes instantâneos no storage array.
+** *Grupos de consistência* -- mostra uma lista de todos os grupos de consistência na matriz de armazenamento.
+** *Volumes de membros* -- mostra uma lista de todos os volumes de membros do grupo de consistência na matriz de armazenamento.
+** *Grupos de espelho* -- mostra uma lista de todos os volumes espelhados.
+** *Capacidade reservada* -- mostra uma lista de todos os volumes de capacidade reservada na matriz de armazenamento.
+
+
+
+
+ a| 
+Atribuições do host
+ a| 
+Mostra uma lista de atribuições de host no storage array. As informações listadas incluem o nome do volume, o número de unidade lógica (LUN), o ID do controlador, o nome do host ou o nome do cluster do host e o status do volume. As informações adicionais listadas incluem definições de topologia e definições de tipo de host.
+
+
+
+ a| 
+Hardware
+ a| 
+Mostra uma lista de todo o hardware na matriz de armazenamento. Dependendo da configuração da matriz de armazenamento, a seção hardware pode mostrar essas subseções.
+
+** *Controllers* -- mostra uma lista de todos os controladores na matriz de armazenamento e inclui a localização, o estado e a configuração do controlador. Além disso, ele inclui informações do canal da unidade, informações do canal do host e informações da porta Ethernet.
+** *Drives* -- mostra uma lista de todas as unidades no storage de armazenamento. As unidades são listadas em ID do compartimento, ID da gaveta, ordem de ID do slot. As informações listadas incluem o ID do compartimento, o ID da gaveta, o ID do slot, o status, a capacidade bruta, o tipo de Mídia, o tipo de interface, a taxa de dados atual, o ID do produto e a versão do firmware para cada unidade. A seção Drive também inclui informações sobre o canal da unidade, informações sobre a cobertura hot spare e informações sobre a vida útil (somente para unidades SSD). As informações de vida útil incluem a porcentagem de resistência usada, que é a quantidade de dados gravados nas unidades SSD até o momento, dividida pelo limite teórico total de gravação para as unidades.
+** *Canais de unidade* -- mostra informações para todos os canais de unidade na matriz de armazenamento. As informações listadas incluem o status do canal, o status do link (se aplicável), contagens de unidades e contagens de erros cumulativos.
+** * Prateleiras* -- mostra informações para todas as prateleiras no storage array. As informações listadas incluem tipos de unidade e informações de status para cada componente do compartimento. Os componentes da gaveta podem incluir pacotes de bateria, transcetores SFP (Small Form-factor Pluggable), coletores de ventilador de energia ou latas de IOM (módulo de entrada/saída). A seção hardware também mostra o identificador da chave de segurança se uma chave de segurança for usada pelo storage array.
+
+
+
+
+ a| 
+Caraterísticas
+ a| 
+Mostra uma lista dos pacotes de recursos instalados e o número máximo permitido de grupos de snapshots, snapshots (legados) e volumes por host ou cluster de host. As informações na seção recursos também incluem Segurança da unidade; ou seja, se a matriz de armazenamento está habilitada para segurança ou a segurança está desativada.
+
+|===
+====
+. Para pesquisar o perfil do storage array, digite um termo de pesquisa na caixa de texto *Localizar* e clique em *Localizar*.
++
+Todos os termos correspondentes são realçados. Para percorrer todos os resultados um de cada vez, continue a clicar em *Localizar*.
+
+. Para salvar o perfil da matriz de armazenamento, clique em *Salvar*.
++
+O arquivo é salvo na pasta Downloads do navegador com o nome `storage-array-profile.txt`.
+
+

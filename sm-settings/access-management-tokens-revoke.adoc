@@ -1,0 +1,26 @@
+---
+permalink: sm-settings/access-management-tokens-revoke.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, access management, revoke tokens 
+summary: Você pode revogar todos os tokens de acesso se determinar que um token foi comprometido. 
+---
+= Revogar tokens de acesso
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode revogar todos os tokens de acesso se determinar que um token foi comprometido ou se deseja executar uma rotação manual de chaves para as chaves criptográficas usadas para assinar e validar os tokens de acesso.
+
+Esta operação regenera as chaves usadas para assinar os tokens. Uma vez que as chaves são redefinidas, _todos_ tokens emitidos são imediatamente invalidados. Como o storage array não rastreia tokens, tokens individuais não podem ser revogados.
+
+.Passos
+. Selecione menu:Definições[Gestão de Acesso].
+. Selecione a guia *Access tokens*.
+. Selecione *revogar todos os tokens de acesso*.
+. Na caixa de diálogo, clique em *Yes*.
+
+
+Depois de revogar todos os tokens, você pode criar novos tokens e usá-los imediatamente.

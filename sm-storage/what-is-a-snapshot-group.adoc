@@ -1,0 +1,20 @@
+---
+permalink: sm-storage/what-is-a-snapshot-group.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, snapshot, group, 
+summary: Um grupo de instantâneos é uma coleção de imagens instantâneas pontuais de um único volume base associado. 
+---
+= O que é um grupo de instantâneos?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Um grupo de instantâneos é uma coleção de imagens instantâneas pontuais de um único volume base associado.
+
+O System Manager organiza imagens instantâneas em _grupos de instantâneos_. Os grupos de snapshot não exigem nenhuma ação do usuário, mas você pode ajustar a capacidade reservada em um grupo de snapshot a qualquer momento. Além disso, você pode ser solicitado a criar capacidade reservada quando as seguintes condições forem atendidas:
+
+* Sempre que você tirar um snapshot de um volume base que ainda não tenha um grupo de snapshot, o System Manager cria automaticamente um grupo de snapshot. Isso cria capacidade reservada para o volume base que é usado para armazenar imagens instantâneas subsequentes.
+* Sempre que você criar uma programação de snapshot para um volume base, o System Manager cria automaticamente um grupo de snapshot.
+

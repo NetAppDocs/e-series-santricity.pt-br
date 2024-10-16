@@ -1,0 +1,77 @@
+---
+permalink: sm-settings/configure-mail-server-and-recipients-for-alerts.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, configure, mail, server, recipients, alerts, 
+summary: Para configurar alertas de e-mail, você deve especificar um endereço de servidor de e-mail e os endereços de e-mail dos destinatários do alerta. São permitidos até 20 endereços de correio eletrónico. 
+---
+= Configure o servidor de e-mail e os destinatários para alertas
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Para configurar alertas de e-mail, você deve especificar um endereço de servidor de e-mail e os endereços de e-mail dos destinatários do alerta. São permitidos até 20 endereços de correio eletrónico.
+
+.Antes de começar
+* O endereço do servidor de e-mail deve estar disponível. O endereço pode ser um endereço IPv4 ou IPv6, ou um nome de domínio totalmente qualificado.
++
+[NOTE]
+====
+Para usar um nome de domínio totalmente qualificado, você deve configurar um servidor DNS em ambos os controladores. Pode configurar um servidor DNS a partir da página hardware.
+
+====
+* O endereço de e-mail a ser usado como remetente de alerta deve estar disponível. Este é o endereço que aparece no campo "de" da mensagem de alerta. Um endereço de remetente é necessário no protocolo SMTP; sem ele, um erro resulta.
+* O(s) endereço(s) de e-mail do(s) destinatário(s) alerta(s) deve(m) estar disponível(s) Normalmente, o destinatário é um endereço para um administrador de rede ou administrador de armazenamento. Pode introduzir até 20 endereços de correio eletrónico.
+
+
+.Sobre esta tarefa
+Esta tarefa descreve como configurar o servidor de e-mail, inserir endereços de e-mail para o remetente e destinatários e testar todos os endereços de e-mail inseridos na página Alertas.
+
+[NOTE]
+====
+Os alertas de e-mail também podem ser configurados a partir do assistente de configuração inicial.
+
+====
+.Passos
+. Selecione menu:Definições[Alertas].
+. Selecione a guia *Email*.
++
+Se um servidor de e-mail ainda não estiver configurado, a guia e-mail exibirá "Configurar servidor de e-mail".
+
+. Selecione *Configure Mail Server*.
++
+A caixa de diálogo Configurar servidor de correio abre-se.
+
+. Insira as informações do servidor de e-mail e clique em *Salvar*.
++
+** *Endereço do servidor de correio* -- Insira um nome de domínio totalmente qualificado, endereço IPv4 ou endereço IPv6 do servidor de correio.
++
+[NOTE]
+====
+Para usar um nome de domínio totalmente qualificado, você deve configurar um servidor DNS em ambos os controladores. Pode configurar um servidor DNS a partir da página hardware.
+
+====
+** *Endereço do remetente de e-mail* -- Digite um endereço de e-mail válido para ser usado como remetente do e-mail. Este endereço é exibido no campo "de" da mensagem de e-mail.
+** *Criptografia* -- se você quiser criptografar mensagens, selecione *SMTPS* ou *STARTTLS* para o tipo de criptografia e, em seguida, selecione o número da porta para mensagens criptografadas. Caso contrário, selecione *nenhum*.
+** *Nome de usuário e senha* -- se necessário, insira um nome de usuário e senha para autenticação com o remetente de saída e o servidor de e-mail.
+** *Inclua informações de Contato no e-mail* -- para incluir as informações de Contato do remetente com a mensagem de alerta, selecione esta opção e insira um nome e número de telefone.
++
+Depois de clicar em *Salvar*, os endereços de e-mail aparecem na guia e-mail da página Alertas.
+
+
+
+. Selecione *Adicionar e-mails*.
++
+A caixa de diálogo Adicionar e-mails é aberta.
+
+. Insira um ou mais endereços de e-mail para os destinatários do alerta e clique em *Adicionar*.
++
+Os endereços de e-mail aparecem na página Alertas.
+
+. Se você quiser garantir que os endereços de e-mail sejam válidos, clique em *testar todos os e-mails* para enviar mensagens de teste aos destinatários.
+
+
+.Resultados
+Depois de configurar alertas por e-mail, o monitor de eventos envia mensagens de e-mail para os destinatários especificados sempre que ocorre um evento alertable.

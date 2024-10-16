@@ -1,0 +1,16 @@
+---
+permalink: sm-storage/what-is-reserved-capacity.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, reserved, capacity 
+summary: A capacidade reservada é a capacidade alocada fisicamente que armazena dados para objetos de serviço de cópia, como imagens snapshot, volumes de membros do grupo de consistência e volumes de pares espelhados. 
+---
+= O que é a capacidade reservada?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A capacidade reservada é a capacidade alocada fisicamente que armazena dados para objetos de serviço de cópia, como imagens snapshot, volumes de membros do grupo de consistência e volumes de pares espelhados.
+
+O volume de capacidade reservada associado a uma operação de serviço de cópia reside em um pool ou em um grupo de volumes. Você cria capacidade reservada de um pool ou grupo de volumes.

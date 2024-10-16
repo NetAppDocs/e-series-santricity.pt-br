@@ -1,0 +1,135 @@
+---
+permalink: sm-hardware/drive-states.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, drive, states, 
+summary: O System Manager relata vários estados para unidades. 
+---
+= estados da unidade
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O System Manager relata vários estados para unidades.
+
+
+
+== estados de acessibilidade
+
+[cols="25h,~"]
+|===
+| Estado | Definição 
+
+
+ a| 
+Ignorado
+ a| 
+A unidade está fisicamente presente, mas o controlador não pode se comunicar com ela em qualquer uma das portas.
+
+
+
+ a| 
+Incompatível
+ a| 
+Existe uma das seguintes condições:
+
+* A unidade não é certificada para uso no storage de armazenamento.
+* A unidade tem um tamanho de setor diferente.
+* A unidade tem dados de configuração inutilizáveis de uma versão de firmware mais antiga ou mais recente.
+
+
+
+
+ a| 
+Removido
+ a| 
+A unidade foi removida indevidamente do storage de armazenamento.
+
+
+
+ a| 
+Presente
+ a| 
+O controlador pode se comunicar com a unidade em ambas as portas.
+
+
+
+ a| 
+Sem resposta
+ a| 
+A unidade não está respondendo aos comandos.
+
+|===
+
+
+== estados de função
+
+[cols="25h,~"]
+|===
+| Estado | Definição 
+
+
+ a| 
+Atribuído
+ a| 
+A unidade é membro de um pool ou grupo de volume.
+
+
+
+ a| 
+Hot spare in-use
+ a| 
+A unidade está sendo usada atualmente como um substituto para uma unidade que falhou. As peças sobressalentes quentes são usadas apenas em grupos de volume, não em pools.
+
+
+
+ a| 
+Reserva quente em espera
+ a| 
+A unidade está pronta para ser usada como substituição de uma unidade que falhou. As peças sobressalentes quentes são usadas apenas em grupos de volume, não em pools.
+
+
+
+ a| 
+Não atribuído
+ a| 
+A unidade não é membro de um pool ou grupo de volume.
+
+|===
+
+
+== estados de disponibilidade
+
+[cols="25h,~"]
+|===
+| Estado | Definição 
+
+
+ a| 
+Falha
+ a| 
+A unidade não está funcionando. Os dados na unidade não estão disponíveis.
+
+
+
+ a| 
+Avaria iminente
+ a| 
+Foi detetado que a unidade poderia falhar em breve. Os dados na unidade ainda estão disponíveis.
+
+
+
+ a| 
+Offline
+ a| 
+A unidade não está disponível para armazenar dados normalmente porque faz parte de um grupo de volumes que está sendo exportado ou está passando por uma atualização de firmware.
+
+
+
+ a| 
+Ideal
+ a| 
+A unidade está funcionando normalmente.
+
+|===

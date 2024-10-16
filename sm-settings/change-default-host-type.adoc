@@ -1,0 +1,36 @@
+---
+permalink: sm-settings/change-default-host-type.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, change, default, host, type, 
+summary: Use a configuração alterar sistema operacional padrão do host para alterar o tipo de host padrão no nível do storage de armazenamento. Geralmente, você alterará o tipo de host padrão antes de conetar os hosts ao storage array ou quando conetar hosts adicionais. 
+---
+= Altere o tipo de host padrão
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Use a configuração alterar sistema operacional padrão do host para alterar o tipo de host padrão no nível do storage de armazenamento. Geralmente, você alterará o tipo de host padrão antes de conetar os hosts ao storage array ou quando conetar hosts adicionais.
+
+.Sobre esta tarefa
+Tenha em mente estas diretrizes:
+
+* Se todos os hosts que você planeja se conetar ao storage de armazenamento tiverem o mesmo sistema operacional (ambiente de host homogêneo), altere o tipo de host para corresponder ao sistema operacional.
+* Se houver hosts com sistemas operacionais diferentes que você planeja se conetar ao storage array (ambiente de host heterogêneo), altere o tipo de host para corresponder à maioria dos sistemas operacionais dos hosts.
++
+Por exemplo, se você estiver conetando oito hosts diferentes ao storage array e seis desses hosts estiverem executando um sistema operacional Windows, você deverá selecionar o Windows como o tipo de sistema operacional de host padrão.
+
+* Se a maioria dos hosts conetados tiver uma combinação de diferentes sistemas operacionais, altere o tipo de host para padrão de fábrica.
++
+Por exemplo, se você estiver conetando oito hosts diferentes ao storage array e dois desses hosts estiverem executando um sistema operacional Windows, três estiverem executando um sistema operacional VMware e outros três estiverem executando um sistema operacional Linux, você deverá selecionar padrão de fábrica como o tipo de sistema operacional padrão de host.
+
+
+
+.Passos
+. Selecione menu:Definições[sistema].
+. Role para baixo até *Configurações adicionais* e clique em *alterar o tipo de sistema operacional padrão do host*.
+. Selecione o tipo de sistema operacional do host que você deseja usar como padrão.
+. Clique em *alterar*.
+

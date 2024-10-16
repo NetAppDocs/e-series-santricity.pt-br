@@ -1,0 +1,103 @@
+---
+permalink: sm-support/what-else-do-i-need-to-do-to-configure-or-diagnose-iscsi.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, configure, diagnose, iscsi 
+summary: Sessões iSCSI podem ocorrer com hosts ou matrizes de armazenamento remoto em uma relação de espelhamento assíncrono. As tabelas a seguir listam as funções do System Manager que podem ser usadas para configurar e gerenciar essas sessões iSCSI. 
+---
+= O que mais preciso fazer para configurar ou diagnosticar iSCSI?
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sessões iSCSI podem ocorrer com hosts ou matrizes de armazenamento remoto em uma relação de espelhamento assíncrono. As tabelas a seguir listam as funções do System Manager que podem ser usadas para configurar e gerenciar essas sessões iSCSI.
+
+[NOTE]
+====
+As definições iSCSI só estão disponíveis se a sua matriz de armazenamento suportar iSCSI.
+
+====
+
+
+== Configurar iSCSI
+
+[cols="1a,1a"]
+|===
+| Ação | Localização 
+
+
+ a| 
+Gerir as definições iSCSI
+ a| 
+. Selecione menu:Definições[sistema].
+. Role para baixo até *iSCSI settings* para visualizar todas as funções de gerenciamento.
+
+
+
+
+ a| 
+Configurar portas iSCSI
+ a| 
+. Selecione *hardware*.
+. Selecione a guia *Controllers & Components* (Controladores e componentes).
+. Selecione um controlador.
+. Selecione *Configurar portas iSCSI*.
+
+
+
+
+ a| 
+Defina o segredo CHAP host
+ a| 
+. Selecione menu:Definições[sistema].
+. Role para baixo até *iSCSI settings* e selecione *Configure Authentication*.
+
+
+ou
+
+. Selecione menu:armazenamento[hosts].
+. Selecione um membro anfitrião.
+. Clique no menu:Exibir/Editar Configurações[Host Ports] guia.
+
+
+|===
+
+
+== Diagnosticar iSCSI
+
+[cols="1a,1a"]
+|===
+| Ação | Localização 
+
+
+ a| 
+Visualizar ou terminar sessões iSCSI
+ a| 
+. Selecione menu:Definições[sistema].
+. Role para baixo até *iSCSI settings* e selecione *View/End iSCSI Sessions*.
+
+
+ou
+
+. Selecione menu:guia Support [Support Center > Diagnostics] (suporte > Centro de suporte > Diagnóstico).
+. Selecione *View/End iSCSI Sessions* (Ver/terminar sessões iSCSI).
+
+
+
+
+ a| 
+Ver estatísticas iSCSI
+ a| 
+. Selecione menu:Definições[sistema].
+. Role para baixo até *iSCSI settings* e selecione *View iSCSI Statistics Packages*.
+
+
+ou
+
+. Selecione menu:guia Support [Support Center > Diagnostics] (suporte > Centro de suporte > Diagnóstico).
+. Selecione *Ver Pacotes de Estatísticas iSCSI*.
+
+
+|===

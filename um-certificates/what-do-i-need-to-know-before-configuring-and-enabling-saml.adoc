@@ -1,0 +1,49 @@
+---
+permalink: um-certificates/what-do-i-need-to-know-before-configuring-and-enabling-saml.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, configuring, enabling, SAML, 
+summary: 'Antes de configurar e habilitar os recursos de Security Assertion Markup Language (SAML) para autenticação, certifique-se de atender aos requisitos a seguir e entender as restrições SAML.' 
+---
+= O que eu preciso saber antes de configurar e ativar o SAML?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Antes de configurar e habilitar os recursos de Security Assertion Markup Language (SAML) para autenticação, certifique-se de atender aos requisitos a seguir e entender as restrições SAML.
+
+
+
+== Requisitos
+
+Antes de começar, certifique-se de que:
+
+* Um Provedor de identidade (IDP) está configurado na sua rede. Um IDP é um sistema externo usado para solicitar credenciais de um usuário e determinar se o usuário foi autenticado com êxito. Sua equipe de segurança é responsável por manter o IDP.
+* Um administrador de IDP configurou atributos de usuário e grupos no sistema de IDP.
+* Um administrador de IDP garantiu que o IDP suporta a capacidade de retornar um ID de nome na autenticação.
+* Um administrador garantiu que o servidor IDP e o relógio do controlador são sincronizados (através de um servidor NTP ou ajustando as definições do relógio do controlador).
+* Um arquivo de metadados IDP é baixado do sistema IDP e está disponível no sistema local usado para acessar o Unified Manager.
+* Você sabe o endereço IP ou o nome de domínio do controlador na matriz de armazenamento.
+
+
+
+
+== Restrições
+
+Além dos requisitos acima, certifique-se de que compreende as seguintes restrições:
+
+* Uma vez que o SAML está ativado, você _não pode_ desabilitá-lo através da interface do usuário, nem pode editar as configurações de IDP. Se você precisar desativar ou editar a configuração SAML, entre em Contato com o suporte técnico para obter assistência. Recomendamos que você teste os logins SSO antes de ativar o SAML na etapa final de configuração. (O sistema também executa um teste de login SSO antes de ativar o SAML.)
+* Se você desabilitar o SAML no futuro, o sistema restaurará automaticamente a configuração anterior (funções de usuário local e/ou Serviços de diretório).
+* Se os Serviços de diretório estiverem configurados atualmente para autenticação de usuário, o SAML substituirá essa configuração.
+* Quando o SAML é configurado, os seguintes clientes não podem acessar os recursos do storage array:
++
+** Janela de gerenciamento empresarial (EMW)
+** Interface de linha de comando (CLI)
+** Clientes de Software Developer Kits (SDK)
+** Clientes na banda
+** Clientes API REST de Autenticação básica HTTP
+** Faça login usando o endpoint padrão da API REST
+
+
+

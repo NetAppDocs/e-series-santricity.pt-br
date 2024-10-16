@@ -1,0 +1,95 @@
+---
+permalink: sm-mirroring/how-synchronous-mirroring-works.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, synchronous, mirroring, 
+summary: O espelhamento síncrono replica volumes de dados em tempo real para garantir disponibilidade contínua. 
+---
+= Como o espelhamento síncrono funciona
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O espelhamento síncrono replica volumes de dados em tempo real para garantir disponibilidade contínua.
+
+[NOTE]
+====
+O espelhamento síncrono não está disponível no storage array EF600 ou EF300.
+
+====
+O espelhamento síncrono alcança um objetivo de ponto de recuperação (RPO) sem perda de dados ao dispor uma cópia dos dados importantes se um desastre ocorrer em um dos dois storage arrays. A cópia é idêntica aos dados de produção a cada momento, porque cada vez que uma gravação é feita no volume primário, uma gravação é feita no volume secundário. O host não recebe uma confirmação de que a gravação foi bem-sucedida até que o volume secundário seja atualizado com êxito com as alterações feitas no volume primário.
+
+Esse tipo de espelhamento é ideal para fins de continuidade dos negócios, como recuperação de desastres.
+
+
+
+== Relação de espelhamento síncrono
+
+Uma relação de espelhamento síncrono consiste em um volume primário e um volume secundário em storage arrays separados. O storage array que contém o volume primário geralmente está localizado no local principal e serve os hosts ativos. O storage array que contém o volume secundário geralmente fica em um local secundário e contém uma réplica dos dados. O volume secundário será usado se o storage array do volume primário não estiver disponível devido, por exemplo, a uma interrupção completa de energia, um incêndio ou uma falha de hardware no local primário.
+
+
+
+== Sessão de espelhamento síncrono
+
+O processo de configuração de espelhamento síncrono envolve a configuração de volumes em pares. Depois de criar um par espelhado, que consiste em um volume primário em um storage array e um volume secundário em outro storage array, é possível iniciar o espelhamento síncrono. Os passos no espelhamento síncrono são apresentados abaixo.
+
+image::../media/sam-1130-dwg-sync-mirroring-session.gif[sessão de espelhamento de sincronização sam 1130 dwg]
+
+. Uma escrita vem do host.
+. A gravação é comprometida com o volume primário, propagada para o sistema remoto e, em seguida, comprometida com o volume secundário.
+. O storage array do volume primário envia uma mensagem de conclusão de e/S para o sistema host _após_ ambas as operações de gravação foram concluídas com sucesso.
+
+
+A capacidade reservada é usada para Registrar informações sobre a solicitação de gravação recebida de um host.
+
+Quando o proprietário atual do controlador do volume primário recebe uma solicitação de gravação de um host, o controlador primeiro Registra informações sobre a gravação na capacidade reservada do volume primário. Em seguida, ele grava os dados no volume primário. Em seguida, o controlador inicia uma operação de gravação remota para copiar os blocos de dados afetados para o volume secundário no storage array remoto.
+
+Como o aplicativo host deve esperar que a gravação ocorra no storage array local e na rede no storage array remoto, uma conexão muito rápida entre o storage array local e o storage array remoto é necessária para manter o relacionamento espelhado sem reduzir excessivamente o desempenho de e/S local.
+
+
+
+== Recuperação de desastres
+
+O espelhamento síncrono mantém uma cópia dos dados que está fisicamente distante do local onde os dados residem. Se um desastre ocorrer no local principal, como uma interrupção de energia ou uma inundação, os dados podem ser acessados rapidamente a partir do local secundário.
+
+O volume secundário não está disponível para hospedar aplicações enquanto a operação de espelhamento síncrono está em andamento. Portanto, em caso de desastre no storage array local, você pode fazer failover para o storage array remoto. Para fazer failover, promova o volume secundário para o papel principal. Em seguida, o host de recuperação pode acessar o volume recém-promovido e as operações de negócios podem continuar.
+
+
+
+== Definições de sincronização
+
+Ao criar um par espelhado, você também define a prioridade de sincronização e a política de ressincronização que o par espelhado usa para concluir a operação de ressincronização após uma interrupção de comunicação.
+
+Se o link de comunicação entre os dois storages parar de funcionar, os hosts continuarão recebendo confirmações do storage array local, impedindo a perda de acesso. Quando o link de comunicação está funcionando novamente, qualquer dado não replicado pode ser ressinced automaticamente ou manualmente para o storage array remoto.
+
+Se os dados são ressincronizados automaticamente depende da política de ressincronização do par espelhado. Uma política de ressincronização automática permite que o par espelhado ressincronize automaticamente quando o link estiver funcionando novamente. Uma política de ressincronização manual requer que você retome manualmente a sincronização após um problema de comunicação. A ressincronização manual é a política recomendada.
+
+Você pode editar as configurações de sincronização para um par espelhado somente na matriz de armazenamento que contém o volume primário.
+
+
+
+== Dados não sincronizados
+
+Os volumes primário e secundário ficam não sincronizados quando o storage array do volume primário não consegue gravar dados no volume secundário. Isso pode ser causado pelos seguintes problemas:
+
+* Problemas de rede entre os storages de armazenamento local e remoto
+* Um volume secundário com falha
+* Sincronização sendo suspensa manualmente no par espelhado
+
+
+
+
+== Par espelhado órfão
+
+Existe um volume de par espelhado órfão quando um volume de membro foi removido de um lado (do lado primário ou secundário), mas não do outro lado.
+
+Volumes de pares espelhados órfãos são detetados quando a comunicação entre arrays é restaurada e os dois lados da configuração do espelho reconciliam parâmetros de espelho.
+
+Você pode remover um par espelhado para corrigir um estado de par espelhado órfão.
+
+
+
+== Configuração e gerenciamento
+
+Para ativar e configurar o espelhamento entre dois arrays, você deve usar a interface do Unified Manager. Quando o espelhamento estiver ativado, você poderá gerenciar pares espelhados e configurações de sincronização no System Manager.

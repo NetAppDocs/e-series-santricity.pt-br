@@ -1,0 +1,48 @@
+---
+permalink: sm-settings/configure-syslog-server-for-alerts.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, configure, syslog, server, alerts, 
+summary: Para configurar alertas syslog, você deve inserir um endereço de servidor syslog e uma porta UDP. São permitidos até cinco servidores syslog. 
+---
+= Configure o servidor syslog para alertas
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Para configurar alertas syslog, você deve inserir um endereço de servidor syslog e uma porta UDP. São permitidos até cinco servidores syslog.
+
+.Antes de começar
+* O endereço do servidor syslog deve estar disponível. Este endereço pode ser um nome de domínio totalmente qualificado, um endereço IPv4 ou um endereço IPv6.
+* O número da porta UDP do servidor syslog deve estar disponível. Esta porta é tipicamente 514.
+
+
+.Sobre esta tarefa
+Esta tarefa descreve como inserir o endereço e a porta para o servidor syslog e, em seguida, testar o endereço digitado.
+
+.Passos
+. Selecione menu:Definições[Alertas].
+. Selecione a guia *Syslog*.
++
+Se um servidor syslog ainda não estiver definido, a página Alertas exibirá "Adicionar servidores Syslog".
+
+. Clique em *Add Syslog Servers*.
++
+A caixa de diálogo Add Syslog Server (Adicionar servidor Syslog) é aberta.
+
+. Insira informações para um ou mais servidores syslog (máximo de cinco) e clique em *Adicionar*.
++
+** *Endereço do servidor* -- Digite um nome de domínio totalmente qualificado, um endereço IPv4 ou um endereço IPv6.
+** *Porta UDP* -- normalmente, a porta UDP para syslog é 514. A tabela exibe os servidores syslog configurados.
+
+
+. Para enviar um alerta de teste aos endereços do servidor, selecione *testar todos os servidores Syslog*.
+
+
+.Resultados
+O monitor de eventos envia alertas para o servidor syslog sempre que ocorre um evento alertable. Para configurar ainda mais as configurações do syslog para logs de auditoria, https://docs.netapp.com/us-en/e-series-santricity/sm-settings/configure-syslog-server-for-audit-logs.html["Configure o servidor syslog para logs de auditoria"] consulte .
+
+
+NOTE: Se vários servidores syslog estiverem configurados, todos os servidores syslog configurados receberão um log de auditoria.

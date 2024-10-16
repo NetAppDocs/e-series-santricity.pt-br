@@ -1,0 +1,33 @@
+---
+permalink: sm-support/schedule-autosupport-dispatches.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, schedule, autosupport, dispatches 
+summary: O Gerenciador do sistema cria automaticamente uma programação padrão para envios do AutoSupport. Se preferir, você pode especificar sua própria programação. 
+---
+= Agendar envios do AutoSupport
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O Gerenciador do sistema cria automaticamente uma programação padrão para envios do AutoSupport. Se preferir, você pode especificar sua própria programação.
+
+.Antes de começar
+O recurso AutoSupport deve estar ativado. Você pode ver se ele está habilitado na página AutoSupport.
+
+.Sobre esta tarefa
+* *Hora diária* -- os envios diários são coletados e enviados todos os dias durante o intervalo de tempo que você especificar. O System Manager seleciona um tempo aleatório durante o intervalo. Todos os tempos estão em tempo Universal coordenado (UTC), que pode ser diferente da hora local do storage array. Você deve converter a hora local do seu storage array em UTC.
+* *Dia semanal* -- as expedições semanais são coletadas e enviadas uma vez por semana. O System Manager seleciona um dia aleatório a partir dos dias especificados. Desmarque todos os dias em que você não deseja permitir que um envio semanal ocorra. O System Manager seleciona um dia aleatório a partir dos dias permitidos.
+* *Horário semanal* -- os envios semanais são coletados e enviados uma vez por semana durante o intervalo de tempo que você especificar. O System Manager seleciona um tempo aleatório durante o intervalo. Todos os tempos estão em tempo Universal coordenado (UTC), que pode ser diferente da hora local do storage array. Você deve converter a hora local do seu storage array em UTC.
+
+
+.Passos
+. Selecione menu:suporte[Centro de suporte > AutoSupport].
+. Selecione *Agendar envios AutoSupport*.
++
+O assistente Agendar envios AutoSupport é exibido.
+
+. Siga as etapas do assistente.
+

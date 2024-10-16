@@ -1,0 +1,14 @@
+---
+permalink: sm-storage/manage-application-workloads.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, applications, workloads 
+summary: É possível gerenciar aplicações e workloads para visualizar todos os volumes existentes no storage array agrupados por nome do workload e tipo de aplicação. Você também pode adicionar volumes a um workload novo ou existente, alterar as configurações de um workload existente e criar novos volumes e workloads. 
+---
+= Gerenciar aplicações e workloads
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+É possível gerenciar aplicações e workloads para visualizar todos os volumes existentes no storage array agrupados por nome do workload e tipo de aplicação. Você também pode adicionar volumes a um workload novo ou existente, alterar as configurações de um workload existente e criar novos volumes e workloads.

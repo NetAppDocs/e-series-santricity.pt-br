@@ -1,0 +1,47 @@
+---
+indexpage:
+  title: Gerenciamento de vários arrays com o Unified Manager 6
+  summary: A documentação do software SANtricity permite instalar, configurar e manter
+    seu storage array.
+  keywords: santricity, install, setup, maintain, storage array
+  lead: A documentação do software SANtricity permite instalar, configurar e manter
+    seu storage array.
+  tiles:
+  - title: Configuração
+    links:
+    - title: Visão geral da interface do Unified Manager
+      url: "../um-admin/overview-interface-unified.html"
+    - title: Definir a palavra-passe de administrador
+      url: "../um-admin/administrator-password-protection-unified.html"
+  - title: Descubra arrays
+    links:
+    - title: Considerações sobre a descoberta
+      url: "../um-manage/considerations-for-discovering-arrays.html"
+    - title: Array único
+      url: "../um-manage/discover-single-array.html"
+    - title: Vários arrays
+      url: "../um-manage/discover-multiple-arrays.html"
+  - title: Gerenciar arrays
+    links:
+    - title: Grupos de storage array
+      url: "../um-manage/overview-manage-groups.html"
+    - title: Status do storage array
+      url: "../um-manage/storage-array-status.html"
+    - title: Atualizar o software
+      url: "../um-manage/upgrade-controller-firmware.html"
+  - title: Gerenciar o acesso
+    links:
+    - title: Acesso do utilizador
+      url: "../um-certificates/how-access-management-works-unified.html"
+    - title: Certificados
+      url: "../um-certificates/how-certificates-work-unified.html"
+    - title: Serviços de diretório
+      url: "../um-certificates/access-management-with-directory-services-unified.html"
+  - title: Gerir definições
+    links:
+    - title: Importar definições
+      url: "../um-manage/how-import-settings-works.html"
+    - title: Altere as definições de palavra-passe
+      url: "../um-certificates/change-local-user-passwords-settings-unified.html"
+    - title: Altere as configurações do Directory Server
+      url: "../um-certificates/edit-directory-server-settings-unified.html"

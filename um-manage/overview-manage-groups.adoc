@@ -1,0 +1,37 @@
+---
+permalink: um-manage/overview-manage-groups.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, manage, groups 
+summary: Na página Gerenciar grupos, você pode criar um conjunto de grupos de storage para facilitar o gerenciamento. 
+---
+= Visão geral dos grupos
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Na página Gerenciar grupos, você pode criar um conjunto de grupos de storage para facilitar o gerenciamento.
+
+
+
+== O que são grupos de matriz?
+
+Você pode gerenciar sua infraestrutura física e virtualizada agrupando um conjunto de storage arrays. Você pode querer agrupar storages para facilitar a execução de tarefas de monitoramento ou geração de relatórios.
+
+Existem dois tipos de grupos:
+
+* *All group* -- o grupo All é o grupo padrão e inclui todos os storages de armazenamento descobertos em sua organização. O grupo todos pode ser acessado a partir da vista principal.
+* *Grupo criado pelo usuário* -- Um grupo criado pelo usuário inclui os storages que você seleciona manualmente para adicionar a esse grupo. Os grupos criados pelo utilizador podem ser acedidos a partir da vista principal.
+
+
+
+
+== Como configuro grupos?
+
+Na página Gerenciar grupos, você pode criar um grupo e adicionar matrizes a esse grupo.
+
+Saiba mais:
+
+* link:create-storage-array-group.html["Configurar o grupo de storage array"]
+

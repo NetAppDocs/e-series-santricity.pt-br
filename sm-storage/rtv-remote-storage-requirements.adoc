@@ -1,0 +1,61 @@
+---
+permalink: sm-storage/rtv-remote-storage-requirements.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, remote, storage, requirements 
+summary: Antes de usar o recurso de armazenamento remoto, revise os seguintes requisitos e restrições. 
+---
+= Requisitos do recurso de armazenamento remoto
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Antes de usar o recurso de armazenamento remoto, revise os seguintes requisitos e restrições.
+
+
+
+== Protocolos compatíveis
+
+São suportados os seguintes protocolos:
+
+* ISCSI
+* IPv4
+
+
+Para obter informações atualizadas sobre suporte e configuração do e-Series, consulte https://imt.netapp.com/matrix/#welcome["Ferramenta de Matriz de interoperabilidade do NetApp"^].
+
+
+
+== Requisitos de hardware
+
+O sistema de storage e-Series deve incluir:
+
+* Dois controladores (modo duplex)
+* Conexões iSCSI para ambos os controladores e-Series para se comunicar com o sistema de armazenamento remoto através de uma ou mais conexões iSCSI
+* SANtricity os 11,71 ou superior
+* Recurso de armazenamento remoto habilitado no ID do submodelo (SMID)
+
+
+O sistema remoto pode ser um sistema de storage e-Series ou um sistema de outro fornecedor. Deve incluir:
+
+* Interfaces compatíveis com iSCSI
+
+
+
+
+== Restrições
+
+O recurso de armazenamento remoto tem as seguintes restrições:
+
+* O espelhamento deve estar desativado.
+* O volume de destino no sistema e-Series não deve ter instantâneos.
+* O volume de destino no sistema e-Series não deve ser mapeado para nenhum host antes que a importação seja iniciada.
+* O volume de destino no sistema e-Series deve ter o provisionamento de recursos desativado.
+* Mapeamentos diretos do volume de armazenamento remoto para um host ou vários hosts não são suportados.
+* O proxy de serviços da Web não é suportado.
+* Segredos CHAP iSCSI não são suportados.
+* O smcli não é suportado.
+* O VMware datastore não é compatível.
+* Apenas um sistema de armazenamento no par de relacionamento/importação pode ser atualizado de uma vez em que há um par de importação presente.
+

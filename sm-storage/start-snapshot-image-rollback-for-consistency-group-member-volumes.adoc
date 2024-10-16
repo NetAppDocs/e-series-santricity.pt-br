@@ -1,0 +1,102 @@
+---
+permalink: sm-storage/start-snapshot-image-rollback-for-consistency-group-member-volumes.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, start, snapshot, image, rollback, snapshot, consistency, group, member, volumes 
+summary: Você pode executar uma operação de reversão para alterar o conteúdo dos volumes de membros do grupo de consistência de instantâneos para corresponder ao conteúdo que é salvo em uma imagem instantânea. 
+---
+= Iniciar reversão de imagem instantânea para volumes de membros do grupo de consistência de instantâneos
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode executar uma operação de reversão para alterar o conteúdo dos volumes de membros do grupo de consistência de instantâneos para corresponder ao conteúdo que é salvo em uma imagem instantânea.
+
+A operação de reversão não altera o conteúdo das imagens instantâneas associadas ao grupo de consistência de instantâneos.
+
+.Antes de começar
+* A capacidade reservada suficiente está disponível para iniciar uma operação de reversão.
+* A imagem instantânea selecionada é ideal e o volume selecionado é ideal.
+* O volume selecionado não tem uma operação de reversão já em andamento.
+
+
+.Sobre esta tarefa
+A sequência de início de reversão permite que você comece a reversão em uma imagem instantânea de um grupo de consistência de snapshot, ao mesmo tempo em que fornece opções para adicionar capacidade de armazenamento. Você não pode iniciar mais de uma operação de reversão para um grupo de consistência de snapshot de cada vez.
+
+[NOTE]
+====
+O host tem acesso imediato aos novos volumes revertidos, mas os volumes de membros existentes não permitem mais o acesso de leitura e gravação do host após o início da reversão. Você pode criar uma imagem instantânea dos volumes membros antes de iniciar o rollback para preservar os volumes base pré-rollback para fins de recuperação.
+
+====
+O processo para iniciar a reversão de uma imagem instantânea de um grupo de consistência de instantâneos é um procedimento de várias etapas.
+
+
+
+== Passo 1: Selecione membros
+
+Você deve selecionar os volumes de membros a serem revertidos.
+
+.Passos
+. Selecione menu:armazenamento[instantâneos].
+. Selecione o separador *Snapshot Images* (imagens instantâneas).
+. Selecione a imagem instantânea do grupo de consistência de instantâneos e, em seguida, selecione menu:Repor[Iniciar].
++
+A caixa de diálogo Start Rollback (Iniciar reversão) é exibida.
+
+. Selecione o volume ou volumes do membro.
+. Clique em *seguinte* e siga um destes procedimentos:
++
+** Se algum dos volumes de membros selecionados estiver associado a mais de um objeto de capacidade reservada que armazena imagens instantâneas, a caixa de diálogo capacidade de revisão é exibida. Vá para <<Passo 2: Rever a capacidade>>.
+** Se nenhum dos volumes de membros selecionados estiver associado a mais de um objeto de capacidade reservada que armazena imagens instantâneas, a caixa de diálogo Editar prioridade será exibida. Vá para <<Passo 3: Editar prioridade>>.
+
+
+
+
+
+
+== Passo 2: Rever a capacidade
+
+Se você selecionou volumes de membros associados a mais de um objeto de capacidade reservada, como um grupo de snapshot e um volume de capacidade reservada, poderá analisar e aumentar a capacidade reservada para o(s) volume(s) revertido(s).
+
+.Passos
+. Ao lado de qualquer volume de membro com capacidade reservada muito baixa (ou zero), clique no link *aumentar capacidade* na coluna *Editar*.
++
+A caixa de diálogo aumentar capacidade reservada é exibida.
+
+. Use a caixa giratório para ajustar a porcentagem de capacidade e clique em *aumentar*.
++
+Se a capacidade livre não existir no pool ou grupo de volumes que contém o objeto de armazenamento selecionado e o storage de armazenamento tiver capacidade não atribuída, você poderá adicionar capacidade. Você pode criar um novo pool ou grupo de volumes e tentar novamente essa operação usando a nova capacidade livre nesse pool ou grupo de volumes.
+
+. Clique em *seguinte* e vá para <<Passo 3: Editar prioridade>>.
++
+A caixa de diálogo Editar prioridade é exibida.
+
+
+
+
+
+== Passo 3: Editar prioridade
+
+Você pode editar a prioridade da operação de reversão, se necessário.
+
+.Sobre esta tarefa
+A prioridade de reversão determina quantos recursos do sistema são dedicados à operação de reversão à custa do desempenho do sistema.
+
+.Passos
+. Use o controle deslizante para ajustar a prioridade de reversão conforme necessário.
+. Confirme se deseja executar esta operação e clique em *Finish*.
+
+
+.Resultados
+O System Manager executa as seguintes ações:
+
+* Restaura os volumes dos membros do grupo de consistência de instantâneos com o conteúdo guardado na imagem de instantâneo selecionada.
+* Torna os volumes revertidos imediatamente disponíveis para acesso ao host. Não é necessário esperar que a operação de reversão seja concluída.
+
+
+.Depois de terminar
+Selecione menu:Home[View Operations in Progress] (Ver operações em curso) para ver o progresso da operação de reversão.
+
+Se a operação de reversão não for bem-sucedida, a operação será interrompida. Você pode retomar a operação em pausa e, se ainda não tiver êxito, siga o procedimento Recovery Guru para corrigir o problema ou entre em Contato com o suporte técnico.

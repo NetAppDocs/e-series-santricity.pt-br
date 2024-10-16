@@ -1,0 +1,39 @@
+---
+permalink: sm-storage/overview-performance.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, performance 
+summary: A página desempenho fornece maneiras fáceis de monitorar a performance do storage array. 
+---
+= Visão geral do desempenho
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A página desempenho fornece maneiras fáceis de monitorar a performance do storage array.
+
+
+
+== O que posso aprender com os dados de desempenho?
+
+Os gráficos e tabelas de desempenho mostram dados de desempenho quase em tempo real, o que ajuda a determinar se um storage array está enfrentando problemas. Você também pode salvar dados de performance para criar uma visualização histórica de um storage array e identificar quando um problema foi iniciado ou o que causou um problema.
+
+Saiba mais:
+
+* link:performance-graphs-guidelines.html["Gráficos de desempenho e diretrizes"]
+* link:performance-terminology.html["Termos de desempenho"]
+
+
+
+
+== Como posso visualizar dados de desempenho?
+
+Os dados de desempenho estão disponíveis na página inicial e na página armazenamento.
+
+Saiba mais:
+
+* link:view-performance-data-graphical.html["Visualizar dados gráficos de desempenho"]
+* link:view-and-save-performance-data-tabular.html["Visualizar e guardar dados de desempenho tabulares"]
+* link:interpret-performance-data.html["Interpretar dados de performance"]
+

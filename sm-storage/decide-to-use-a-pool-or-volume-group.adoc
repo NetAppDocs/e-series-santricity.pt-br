@@ -1,0 +1,355 @@
+---
+permalink: sm-storage/decide-to-use-a-pool-or-volume-group.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, pool, volume group 
+summary: Você pode criar volumes usando um pool ou um grupo de volumes. A melhor seleção depende principalmente dos principais requisitos de storage, como o workload de e/S esperado, os requisitos de performance e os requisitos de proteção de dados. 
+---
+= Decida se deseja usar um pool ou um grupo de volume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode criar volumes usando um pool ou um grupo de volumes. A melhor seleção depende principalmente dos principais requisitos de storage, como o workload de e/S esperado, os requisitos de performance e os requisitos de proteção de dados.
+
+
+
+== Razões para escolher um pool ou grupo de volume
+
+*Escolha uma piscina*
+
+* Se você precisar de reconstruções de unidades mais rápidas e administração simplificada de storage, exija thin volumes e/ou tenha um workload altamente aleatório.
+* Se você quiser distribuir os dados para cada volume aleatoriamente em um conjunto de unidades que compõem o pool.
++
+Não é possível definir ou alterar o nível RAID de pools ou volumes nos pools. Os pools usam RAID nível 6.
+
+
+
+*Escolha um grupo de volume*
+
+* Se você precisar de largura de banda máxima do sistema, a capacidade de ajustar as configurações de storage e um workload altamente sequencial.
+* Se você quiser distribuir os dados entre as unidades com base em um nível RAID. Você pode especificar o nível RAID ao criar o grupo de volumes.
+* Se você quiser gravar os dados para cada volume sequencialmente no conjunto de unidades que compõem o grupo de volumes.
+
+
+[NOTE]
+====
+Como os pools podem coexistir com grupos de volume, um storage array pode conter pools e grupos de volume.
+
+====
+
+
+== Diferenças de recursos entre pools e grupos de volume
+
+A tabela a seguir fornece uma comparação de recursos entre grupos de volume e pools.
+
+[cols="1a,1a,1a"]
+|===
+| Utilização | Piscina | Grupo de volume 
+
+
+ a| 
+Carga de trabalho aleatória
+ a| 
+Melhor
+ a| 
+Bom
+
+
+
+ a| 
+Workload sequencial
+ a| 
+Bom
+ a| 
+Melhor
+
+
+
+ a| 
+Tempo de recriação da unidade
+ a| 
+Mais rápido
+ a| 
+Mais lento
+
+
+
+ a| 
+Desempenho (modo ideal)
+ a| 
+Bom: Melhor para bloco pequeno, carga de trabalho aleatória.
+ a| 
+Bom: Melhor para cargas de trabalho sequenciais e em blocos grandes
+
+
+
+ a| 
+Desempenho (modo de recriação da unidade)
+ a| 
+Melhor: Geralmente melhor que RAID 6
+ a| 
+Degradada: Queda de até 40% no desempenho
+
+
+
+ a| 
+Várias falhas de unidade
+ a| 
+Maior proteção de dados: Reconstruções com maior rapidez e prioridade
+ a| 
+Menos proteção de dados: Reconstruções lentas, maior risco de perda de dados
+
+
+
+ a| 
+Adicionar unidades
+ a| 
+Mais rápido: Adicionar à piscina em tempo real
+ a| 
+Mais lento: Requer operação de expansão de capacidade dinâmica
+
+
+
+ a| 
+Suporte a volumes finos
+ a| 
+Sim
+ a| 
+Não
+
+
+
+ a| 
+Suporte a disco de estado sólido (SSD)
+ a| 
+Sim
+ a| 
+Sim
+
+
+
+ a| 
+Administração simplificada
+ a| 
+Sim: Não hot spares ou configurações RAID para configurar
+ a| 
+Não: Deve alocar hot spares, configurar RAID
+
+
+
+ a| 
+Desempenho ajustável
+ a| 
+Não
+ a| 
+Sim
+
+|===
+
+
+== Comparação funcional de piscinas e grupos de volume
+
+A função e o propósito de um pool e um grupo de volume são os mesmos. Ambos os objetos são um conjunto de unidades agrupadas logicamente em um storage array e são usados para criar volumes que um host pode acessar.
+
+A tabela a seguir ajuda você a decidir se um pool ou um grupo de volumes se adapta melhor às suas necessidades de armazenamento.
+
+[cols="1a,1a,1a"]
+|===
+| Função | Piscina | Grupo de volume 
+
+
+ a| 
+Nível RAID diferente suportado
+ a| 
+Não. Sempre RAID 6 no System Manager.
+ a| 
+Sim. RAID 0, 1, 10, 5 e 6 disponíveis.
+
+
+
+ a| 
+Thin volumes suportados
+ a| 
+Sim
+ a| 
+Não
+
+
+
+ a| 
+Suporte a criptografia completa de disco (FDE)
+ a| 
+Sim
+ a| 
+Sim
+
+
+
+ a| 
+Garantia de dados (DA) suportada
+ a| 
+Sim
+ a| 
+Sim
+
+
+
+ a| 
+Proteção contra perda de prateleira suportada
+ a| 
+Sim
+ a| 
+Sim
+
+
+
+ a| 
+Proteção contra perda de gaveta suportada
+ a| 
+Sim
+ a| 
+Sim
+
+
+
+ a| 
+Velocidades de transmissão mistas suportadas
+ a| 
+Recomendado para ser o mesmo, mas não necessário. A unidade mais lenta determina a velocidade para todas as unidades.
+ a| 
+Recomendado para ser o mesmo, mas não necessário. A unidade mais lenta determina a velocidade para todas as unidades.
+
+
+
+ a| 
+Capacidade de unidade mista com suporte
+ a| 
+Recomendado para ser o mesmo, mas não necessário. A menor unidade determina a capacidade de todas as unidades.
+ a| 
+Recomendado para ser o mesmo, mas não necessário. A menor unidade determina a capacidade de todas as unidades.
+
+
+
+ a| 
+Número mínimo de unidades
+ a| 
+11
+ a| 
+Depende do nível RAID. RAID 0 precisa de 1. RAID 1 ou 10 precisa de 2 (requer um número par). RAID 5 mínimo é 3. RAID 6 mínimo é 5.
+
+
+
+ a| 
+Número máximo de unidades
+ a| 
+Até o limite máximo para a matriz de armazenamento
+ a| 
+RAID 1 e 10 - até o limite máximo das unidades RAID 5, 6--30 da matriz de armazenamento
+
+
+
+ a| 
+Pode escolher unidades individuais ao criar um volume
+ a| 
+Não
+ a| 
+Sim
+
+
+
+ a| 
+Pode especificar o tamanho do segmento ao criar um volume
+ a| 
+Sim. 128K suportado.
+ a| 
+Sim
+
+
+
+ a| 
+Pode especificar as caraterísticas de e/S ao criar um volume
+ a| 
+Não
+ a| 
+Sim. Sistema de arquivos, banco de dados, Multimídia e personalizado suportados.
+
+
+
+ a| 
+Proteção contra falha da unidade
+ a| 
+Usa capacidade de preservação em cada unidade na piscina, tornando a reconstrução mais rápida.
+ a| 
+Utiliza uma unidade hot spare. A reconstrução é limitada pelos IOPs da unidade.
+
+
+
+ a| 
+Aviso ao atingir o limite de capacidade
+ a| 
+Sim. Pode definir um alerta quando a capacidade utilizada atinge uma percentagem da capacidade máxima.
+ a| 
+Não
+
+
+
+ a| 
+Suporte à migração para um storage array diferente
+ a| 
+Não. Requer que você migre para um grupo de volumes primeiro.
+ a| 
+Sim
+
+
+
+ a| 
+Tamanho dinâmico do segmento (DSS)
+ a| 
+Não
+ a| 
+Sim
+
+
+
+ a| 
+Pode alterar o nível RAID
+ a| 
+Não
+ a| 
+Sim
+
+
+
+ a| 
+Expansão de volume (aumentar a capacidade)
+ a| 
+Sim
+ a| 
+Sim
+
+
+
+ a| 
+Expansão de capacidade (adicionar capacidade)
+ a| 
+Sim
+ a| 
+Sim
+
+
+
+ a| 
+Redução de capacidade
+ a| 
+Sim
+ a| 
+Não
+
+|===
+[NOTE]
+====
+Os tipos de unidades mistas (HDD, SSD) não são compatíveis com pools ou grupos de volumes.
+
+====

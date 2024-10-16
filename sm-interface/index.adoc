@@ -1,0 +1,12 @@
+---
+permalink: sm-interface/index.html 
+sidebar: sidebar 
+keywords: santricity, system, manager, 
+summary: Gerenciador de sistemas SANtricity 11,7 
+---
+= Gerenciador de sistemas SANtricity 11,8
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+

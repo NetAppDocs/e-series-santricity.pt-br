@@ -1,0 +1,223 @@
+---
+permalink: sm-storage/schedule-snapshot-images.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, schedule, snapshot, images 
+summary: Você cria uma programação de snapshot para habilitar a recuperação em caso de problema com o volume base e executar backups programados. Snapshots de volumes base ou grupos de consistência de snapshot podem ser criados em uma programação diária, semanal ou mensal, a qualquer hora do dia. 
+---
+= Agendar imagens instantâneas
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você cria uma programação de snapshot para habilitar a recuperação em caso de problema com o volume base e executar backups programados. Snapshots de volumes base ou grupos de consistência de snapshot podem ser criados em uma programação diária, semanal ou mensal, a qualquer hora do dia.
+
+.Antes de começar
+O volume de base deve ser ideal.
+
+.Sobre esta tarefa
+Esta tarefa descreve como criar uma programação de instantâneos para um grupo de consistência de instantâneos existente ou volume base.
+
+[NOTE]
+====
+Você também pode criar um agendamento de snapshot ao mesmo tempo em que cria uma imagem de snapshot de um volume base ou grupo de consistência de snapshot.
+
+====
+.Passos
+. Execute uma das seguintes ações para criar uma programação de instantâneos:
++
+** Selecione menu:armazenamento[volumes].
++
+Selecione o objeto (grupo de consistência de volume ou snapshot) para esta programação de instantâneos e, em seguida, selecione menu:Serviços de cópia[criar agendamento de instantâneos].
+
+** Selecione menu:armazenamento[instantâneos].
++
+Selecione a guia *horários* e clique em *criar*.
+
+
+
+. Selecione o objeto (grupo de consistência de volume ou snapshot) para essa programação de snapshot e clique em *Avançar*.
++
+A caixa de diálogo criar agendamento instantâneo é exibida.
+
+. Execute uma das seguintes ações:
++
+** *Use um agendamento previamente definido de outro objeto snapshot*.
++
+Certifique-se de que as opções avançadas são apresentadas. Clique em *Mostrar mais opções*. Clique em *Import Schedule*, selecione o objeto com a programação que deseja importar e clique em *Import*.
+
+** *Modificar as opções básicas ou avançadas*.
++
+No canto superior direito da caixa de diálogo, clique em *Mostrar mais opções* para exibir todas as opções e, em seguida, consulte a tabela a seguir.
+
+
+
++
+.Detalhes do campo
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Campo | Descrição 
+
+
+ a| 
+*Definições básicas*
+
+
+
+ a| 
+Selecione dias
+ a| 
+Selecione dias individuais da semana para imagens instantâneas.
+
+
+
+ a| 
+Hora de início
+ a| 
+Na lista suspensa, selecione uma nova hora de início para os instantâneos diários (as seleções são fornecidas em incrementos de meia hora). A hora de início é predefinida para meia hora à frente da hora atual.
+
+
+
+ a| 
+Fuso horário
+ a| 
+Na lista suspensa, selecione o fuso horário da matriz.
+
+
+
+ a| 
+* Configurações avançadas*
+
+
+
+ a| 
+Dia / mês
+ a| 
+Escolha uma das seguintes opções:
+
+** *Daily / Weekly* -- Selecione dias individuais para instantâneos de sincronização. Você também pode selecionar a caixa de seleção *Selecionar todos os dias* no canto superior direito, se desejar uma programação diária.
+** *Mensal / anual* -- Selecione meses individuais para instantâneos de sincronização. No campo *no(s) dia(s)*, insira os dias do mês para que as sincronizações ocorram. As inscrições válidas são *1* a *31* e *Last*. Você pode separar vários dias com uma vírgula ou ponto e vírgula. Use um hífen para datas inclusivas. Por exemplo: 1,3,4,10-15,último. Você também pode selecionar a caixa de seleção *Selecionar todos os meses* no canto superior direito, se desejar um agendamento mensal.
+
+
+
+
+ a| 
+Hora de início
+ a| 
+Na lista suspensa, selecione uma nova hora de início para os instantâneos diários (as seleções são fornecidas em incrementos de meia hora). A hora de início é predefinida para meia hora à frente da hora atual.
+
+
+
+ a| 
+Fuso horário
+ a| 
+Na lista suspensa, selecione o fuso horário da matriz.
+
+
+
+ a| 
+Instantâneos por dia/hora entre instantâneos
+ a| 
+Selecione o número de imagens instantâneas a criar por dia. Se selecionar mais de um, selecione também a hora entre as imagens instantâneas. Para várias imagens instantâneas, certifique-se de que tem capacidade reservada adequada.
+
+
+
+ a| 
+Criar imagem instantânea agora?
+ a| 
+Selecione esta caixa de verificação para criar uma imagem instantânea, além das imagens automáticas que está a programar.
+
+
+
+ a| 
+Data de início/fim ou sem data de fim
+ a| 
+Introduza a data de início para que as sincronizações comecem. Introduza também uma data de fim ou selecione *sem data de fim*.
+
+|===
+====
+. Execute uma das seguintes ações:
++
+** Se o objeto for um grupo de consistência de instantâneos, clique em *criar* para aceitar as configurações e criar a programação.
+** Se o objeto for um volume, clique em *Next* (seguinte) para alocar a capacidade reservada para as imagens instantâneas.
++
+A tabela de candidatos ao volume exibe apenas os candidatos que suportam a capacidade reservada especificada. A capacidade reservada é a capacidade alocada física usada para qualquer operação de serviço de cópia e objeto de storage. Não é diretamente legível pelo host.
+
+
+
+. Utilize a caixa de rotação para atribuir a capacidade reservada às imagens instantâneas. Execute uma das seguintes ações:
++
+** *Aceite as configurações padrão.*
++
+Utilize esta opção recomendada para alocar a capacidade reservada para as imagens instantâneas com as predefinições.
+
+** *Aloque suas próprias configurações de capacidade reservada para atender às suas necessidades de armazenamento de dados.*
++
+Se você alterar a configuração de capacidade reservada padrão, clique em *Atualizar candidatos* para atualizar a lista de candidatos para a capacidade reservada especificada.
+
++
+Alocar a capacidade reservada usando as seguintes diretrizes:
+
++
+*** A configuração padrão para capacidade reservada é de 40% da capacidade do volume base. Normalmente, essa capacidade é suficiente.
+*** A capacidade necessária varia, dependendo da frequência e do tamanho das gravações de e/S nos volumes e da quantidade e duração da coleção de imagens instantâneas.
+
+
+
+
+. Clique em *seguinte*.
++
+A caixa de diálogo Editar configurações é exibida.
+
+. Edite as configurações para a programação de instantâneos conforme necessário e clique em *Finish*.
++
+.Detalhes do campo
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Definição | Descrição 
+
+
+ a| 
+*Limite de imagem instantâneo*
+
+
+
+ a| 
+Ativar eliminação automática de imagens instantâneas quando...
+ a| 
+Mantenha a caixa de verificação selecionada se pretender que as imagens instantâneas sejam eliminadas automaticamente após o limite especificado; utilize a caixa de seleção para alterar o limite. Se desmarcar esta caixa de verificação, a criação de imagens instantâneas pára após 32 imagens.
+
+
+
+ a| 
+* Configurações de capacidade reservada*
+
+
+
+ a| 
+Alerta-me quando...
+ a| 
+Use a caixa giratório para ajustar o ponto percentual no qual o sistema envia uma notificação de alerta quando a capacidade reservada para um agendamento estiver quase cheia.
+
+Quando a capacidade reservada para o agendamento exceder o limite especificado, use o aviso prévio para aumentar a capacidade reservada ou excluir objetos desnecessários antes que o espaço restante se esgote.
+
+
+
+ a| 
+Política de capacidade reservada completa
+ a| 
+Escolha uma das seguintes políticas:
+
+** *Limpar imagem instantânea mais antiga* -- o sistema limpa automaticamente a imagem instantânea mais antiga, que libera a capacidade reservada da imagem instantânea para reutilização dentro do grupo de instantâneos.
+** *Rejeitar gravações no volume base* -- quando a capacidade reservada atinge sua porcentagem máxima definida, o sistema rejeita qualquer solicitação de gravação de e/S para o volume base que acionou o acesso à capacidade reservada.
+
+
+|===
+====
+

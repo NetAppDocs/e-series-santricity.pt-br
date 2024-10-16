@@ -1,0 +1,71 @@
+---
+permalink: sm-settings/configure-iscsi-authentication.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, configure, iscsi, authentication, 
+summary: 'Para segurança adicional numa rede iSCSI, pode definir a autenticação entre controladores (destinos) e hosts (iniciadores).' 
+---
+= Configurar a autenticação iSCSI
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Para segurança adicional numa rede iSCSI, pode definir a autenticação entre controladores (destinos) e hosts (iniciadores).
+
+O System Manager usa o método CHAP (Challenge Handshake Authentication Protocol), que valida a identidade de alvos e iniciadores durante o link inicial. A autenticação é baseada em uma chave de segurança compartilhada chamada _CHAP secret_.
+
+.Antes de começar
+Você pode definir o segredo CHAP para os iniciadores (hosts iSCSI) antes ou depois de definir o segredo CHAP para os alvos (controladores). Antes de seguir as instruções nesta tarefa, você deve esperar até que os hosts tenham feito uma conexão iSCSI primeiro e, em seguida, definir o segredo CHAP nos hosts individuais. Após as conexões serem feitas, os nomes IQN dos hosts e seus segredos CHAP são listados na caixa de diálogo para autenticação iSCSI (descrita nesta tarefa), e você não precisa inseri-los manualmente.
+
+.Sobre esta tarefa
+Você pode selecionar um dos seguintes métodos de autenticação:
+
+* *Autenticação unidirecional* -- Use esta configuração para permitir que o controlador autentique a identidade dos hosts iSCSI (autenticação unidirecional).
+* *Autenticação bidirecional* -- Use esta configuração para permitir que o controlador e os hosts iSCSI executem a autenticação (autenticação bidirecional). Esta configuração fornece um segundo nível de segurança, permitindo que o controlador autentique a identidade dos hosts iSCSI e, por sua vez, os hosts iSCSI para autenticar a identidade do controlador.
+
+
+[NOTE]
+====
+As definições e funções iSCSI só são apresentadas na página Definições se a sua matriz de armazenamento suportar iSCSI.
+
+====
+.Passos
+. Selecione menu:Definições[sistema].
+. Em Configurações iSCSI, clique em *Configurar autenticação*.
++
+A caixa de diálogo Configurar autenticação é exibida, que mostra o método atualmente definido. Ele também mostra se algum host tem segredos CHAP configurados.
+
+. Selecione uma das seguintes opções:
++
+** *Sem autenticação* -- se você não quiser que o controlador autentique a identidade de hosts iSCSI, selecione esta opção e clique em *Finish*. A caixa de diálogo fecha-se e você termina com a configuração.
+** *Autenticação unidirecional* -- para permitir que o controlador autentique a identidade dos hosts iSCSI, selecione esta opção e clique em *Next* para exibir a caixa de diálogo Configurar CHAP de destino.
+** *Autenticação bidirecional* -- para permitir que o controlador e os hosts iSCSI executem a autenticação, selecione esta opção e clique em *Next* para exibir a caixa de diálogo Configurar CHAP de destino.
+
+
+. Para autenticação unidirecional ou bidirecional, insira ou confirme o segredo CHAP para o controlador (o destino). O segredo CHAP deve ter entre 12 e 57 carateres ASCII imprimíveis.
++
+[NOTE]
+====
+Se o segredo CHAP para o controlador foi configurado anteriormente, os carateres no campo são mascarados. Se necessário, você pode substituir os carateres existentes (novos carateres não são mascarados).
+
+====
+. Execute um dos seguintes procedimentos:
++
+** Se você estiver configurando a autenticação _one-way_, clique em *Finish*. A caixa de diálogo fecha-se e você termina com a configuração.
+** Se você estiver configurando a autenticação _bidirecional_, clique em *Next* para exibir a caixa de diálogo Configure Initiator CHAP.
+
+
+. Para autenticação bidirecional, insira ou confirme um segredo CHAP para qualquer um dos hosts iSCSI (os iniciadores), que pode ter entre 12 e 57 carateres ASCII imprimíveis. Se você não quiser configurar a autenticação bidirecional para um host específico, deixe o campo segredo do iniciador CHAP em branco.
++
+[NOTE]
+====
+Se o segredo CHAP de um host foi configurado anteriormente, os carateres no campo são mascarados. Se necessário, você pode substituir os carateres existentes (novos carateres não são mascarados).
+
+====
+. Clique em *Finish*.
+
+
+.Resultados
+A autenticação ocorre durante a sequência de login iSCSI entre os controladores e hosts iSCSI, a menos que você não tenha especificado nenhuma autenticação.

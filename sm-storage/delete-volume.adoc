@@ -1,0 +1,64 @@
+---
+permalink: sm-storage/delete-volume.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, delete, volume 
+summary: Normalmente, você exclui volumes se os volumes tiverem sido criados com os parâmetros ou a capacidade errados, não atenderem mais às necessidades de configuração de storage ou forem imagens snapshot que não são mais necessárias para backup ou teste de aplicativos. 
+---
+= Eliminar volume
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Normalmente, você exclui volumes se os volumes tiverem sido criados com os parâmetros ou a capacidade errados, não atenderem mais às necessidades de configuração de storage ou forem imagens snapshot que não são mais necessárias para backup ou teste de aplicativos.
+
+A exclusão de um volume aumenta a capacidade livre no pool ou grupo de volumes. Pode selecionar um ou mais volumes para eliminar.
+
+.Antes de começar
+Nos volumes que pretende eliminar, certifique-se do seguinte:
+
+* É feito backup de todos os dados.
+* Todas as entradas/saídas (e/S) estão paradas.
+* Todos os dispositivos e sistemas de arquivos são desmontados.
+
+
+.Sobre esta tarefa
+Não é possível eliminar um volume que tenha uma destas condições:
+
+* O volume está a ser inicializado.
+* O volume está reconstruindo.
+* O volume faz parte de um grupo de volumes que contém uma unidade que está passando por uma operação de cópia.
+* O volume está passando por uma operação de modificação, como uma alteração do tamanho do segmento, a menos que o volume esteja agora no status Failed (Falha).
+* O volume está mantendo qualquer tipo de reserva persistente.
+* O volume é um volume de origem ou um volume de destino em um volume de cópia que tem um status de pendente, em andamento ou Falha.
+
+
+[CAUTION]
+====
+A exclusão de um volume causa a perda de todos os dados nesses volumes.
+
+====
+[NOTE]
+====
+Quando um volume excede um determinado tamanho (atualmente 128 TB), a exclusão está sendo executada em segundo plano e o espaço livre pode não estar imediatamente disponível.
+
+====
+.Passos
+. Selecione menu:armazenamento[volumes].
+. Clique em *Excluir*.
++
+A caixa de diálogo Excluir volumes é exibida.
+
+. Selecione um ou mais volumes que pretende eliminar e confirme que pretende executar a operação.
+. Clique em *Excluir*.
+
+
+.Resultados
+O System Manager executa as seguintes ações:
+
+* Elimina quaisquer imagens instantâneas, agendas e volumes instantâneos associados.
+* Remove quaisquer relações de espelhamento.
+* Aumenta a capacidade livre no pool ou grupo de volume.
+

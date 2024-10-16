@@ -1,0 +1,30 @@
+---
+permalink: sm-hardware/turn-on-drive-locator-light.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, turn, drive, locator, light, LEDs 
+summary: Na página hardware, você pode ativar a luz localizador para encontrar a localização física de uma unidade no storage de armazenamento. 
+---
+= Ligue a luz de localização da unidade
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Na página hardware, você pode ativar a luz localizador para encontrar a localização física de uma unidade no storage de armazenamento.
+
+.Sobre esta tarefa
+Você pode localizar unidades individuais ou várias unidades mostradas na página hardware.
+
+.Passos
+. Selecione *hardware*.
+. Para localizar uma ou mais unidades, execute um dos seguintes procedimentos:
++
+** * Unidade única* -- a partir do gráfico da prateleira, encontre a unidade que você deseja localizar fisicamente no array. (Se o gráfico mostrar os controladores, clique na guia *Drives*.) Clique na unidade para exibir seu menu de contexto e selecione *Ativar luz localizador*.
++
+A luz de localização da unidade acende-se. Quando tiver localizado fisicamente a unidade, volte à caixa de diálogo e selecione *Desligar*.
+
+** * Várias unidades* -- nos campos de filtro, selecione um tipo de unidade física na lista suspensa esquerda e um tipo de unidade lógica na lista suspensa direita. O número de unidades que correspondem aos seus critérios é mostrado na extrema direita dos campos. Em seguida, você pode clicar em *ligar as luzes do localizador* ou selecionar *Localizar todas as unidades filtradas* no menu de contexto. Quando tiver localizado fisicamente as unidades, volte à caixa de diálogo e selecione *Desligar*.
+
+
+

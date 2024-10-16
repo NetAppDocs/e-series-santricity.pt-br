@@ -1,0 +1,42 @@
+---
+permalink: sm-mirroring/suspend-or-resume-mirror-consistency-group.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, suspend, resume, synchronization, mirror, consistency, group, 
+summary: Você pode suspender ou retomar a sincronização de dados em todos os pares espelhados dentro de um grupo de consistência de espelho, o que é mais eficiente do que suspender ou retomar a sincronização em pares espelhados individuais. 
+---
+= Suspender ou retomar a sincronização para o grupo de consistência do espelho
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode suspender ou retomar a sincronização de dados em todos os pares espelhados dentro de um grupo de consistência de espelho, o que é mais eficiente do que suspender ou retomar a sincronização em pares espelhados individuais.
+
+.Sobre esta tarefa
+Suspender e retomar a sincronização em grupos ajuda a reduzir qualquer impactos no desempenho do aplicativo host, que pode ocorrer enquanto quaisquer dados alterados no storage array local são copiados para o storage array remoto.
+
+O estado do grupo de consistência do espelho e seus pares espelhados permanecem suspensos até que você use a opção Retomar para retomar a atividade de sincronização.
+
+.Passos
+. Selecione menu:armazenamento[Espelhamento assíncrono].
+. Selecione a guia *Espelhar grupos de consistência*.
++
+A tabela Grupo de consistência espelhada é exibida e exibe todos os grupos de consistência de espelho associados ao storage array.
+
+. Selecione o grupo de consistência de espelho que deseja suspender ou retomar e selecione menu:mais[suspender] ou menu:mais[Retomar].
++
+O sistema apresenta uma confirmação.
+
+. Selecione *Sim* para confirmar.
+
+
+.Resultados
+O System Manager executa as seguintes ações:
+
+* Suspende ou retoma a transferência de dados entre todos os pares espelhados em um grupo de consistência de espelho sem remover a relação de espelhamento.
+* Regista todos os dados que foram gravados no lado primário do grupo de consistência do espelho enquanto o grupo de espelhos está suspenso e grava os dados automaticamente no lado secundário do grupo de consistência do espelho quando o grupo de espelhos é retomado. Não é necessária uma sincronização completa.
+* Para grupos de consistência de espelho _suspenso_, exibe *suspenso pelo usuário* na tabela grupos de consistência de espelho.
+* Para um grupo de consistência de espelho _retomado_, os dados gravados nos volumes primários enquanto o grupo de consistência de espelho foi suspenso são gravados nos volumes secundários imediatamente. A sincronização periódica é retomada se tiver sido definido um intervalo de sincronização automática.
+

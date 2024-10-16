@@ -1,0 +1,120 @@
+---
+permalink: um-manage/requirements-for-using-mirroring.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, requirements, using, mirroring 
+summary: Se você planeja configurar o espelhamento, tenha em mente os seguintes requisitos. 
+---
+= Requisitos para uso do espelhamento
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se você planeja configurar o espelhamento, tenha em mente os seguintes requisitos.
+
+
+
+== Unified Manager
+
+* O serviço Web Services Proxy deve estar em execução.
+* O Unified Manager deve estar em execução em seu host local por meio de uma conexão HTTPS.
+* O Unified Manager deve mostrar certificados SSL válidos para a matriz de armazenamento. Você pode aceitar um certificado autoassinado ou instalar seu próprio certificado de segurança usando o Unified Manager e navegando para o menu:certificado[Gerenciamento de certificados].
+
+
+
+
+== Storage arrays
+
+[NOTE]
+====
+O espelhamento síncrono não está disponível no storage array EF600 ou EF300.
+
+====
+* Você precisa ter dois storage arrays.
+* Cada storage array deve ter duas controladoras.
+* Os dois storage arrays devem ser descobertos no Unified Manager.
+* Cada controlador no array primário e no array secundário deve ter uma porta de gerenciamento Ethernet configurada e estar conetado à rede.
+* As matrizes de armazenamento têm uma versão mínima de firmware de 7,84. (Cada um deles pode executar diferentes versões do sistema operacional.)
+* Você deve saber a senha para os storages de armazenamento local e remoto.
+* Você precisa ter capacidade livre suficiente no storage array remoto para criar um volume secundário igual ou maior que o volume principal que deseja espelhar.
+* O espelhamento assíncrono é compatível com controladoras com portas de host Fibre Channel (FC) ou iSCSI, enquanto o espelhamento síncrono é compatível somente com controladoras com portas de host FC.
+
+
+
+
+== Requisitos de conetividade
+
+O espelhamento por meio de uma interface FC (assíncrona ou síncrona) requer o seguinte:
+
+* Cada controladora do storage array dedica sua porta de host FC de maior número às operações de espelhamento.
+* Se o controlador tiver portas FC de base e portas FC da placa de interface do host (HIC), a porta numerada mais alta estará em um HIC. Qualquer host conetado à porta dedicada é desconetado e nenhuma solicitação de login do host é aceita. As solicitações de e/S nessa porta são aceitas somente de controladores que participam de operações de espelhamento.
+* As portas de espelhamento dedicadas devem ser conectadas a um ambiente de malha FC que suporte as interfaces do serviço de diretório e serviço de nomes. Em particular, FC-AL e ponto a ponto não são compatíveis como opções de conectividade entre as controladoras que estão participando de relacionamentos espelhados.
+
+
+O espelhamento através de uma interface iSCSI (apenas assíncrona) requer o seguinte:
+
+* Ao contrário do FC, o iSCSI não requer uma porta dedicada. Quando o espelhamento assíncrono é usado em ambientes iSCSI, não é necessário dedicar nenhuma das portas iSCSI de front-end do storage array para uso com espelhamento assíncrono. Essas portas são compartilhadas para tráfego de espelhamento assíncrono e conexões de e/S de host para array.
+* O controlador mantém uma lista de sistemas de armazenamento remoto com os quais o iniciador iSCSI tenta estabelecer uma sessão. A primeira porta que estabelece com êxito uma conexão iSCSI é usada para toda a comunicação subsequente com esse storage de armazenamento remoto. Se a comunicação falhar, uma nova sessão é tentada usando todas as portas disponíveis.
+* As portas iSCSI são configuradas no nível da matriz, porta a porta. A comunicação entre controladores para mensagens de configuração e transferência de dados usa as configurações globais, incluindo configurações para:
++
+** VLAN: Os sistemas locais e remotos devem ter a mesma configuração de VLAN para se comunicar
+** Porta de escuta iSCSI
+** Jumbo Frames
+** Prioridade Ethernet
+
+
+
+
+[NOTE]
+====
+A comunicação do intercontrolador iSCSI deve usar uma porta de conexão de host e não a porta Ethernet de gerenciamento.
+
+====
+
+
+== Candidatos a volume espelhado
+
+* O nível RAID, os parâmetros de armazenamento em cache e o tamanho do segmento podem ser diferentes nos volumes primário e secundário de um par espelhado.
++
+
+NOTE: Para controladores EF600 e EF300, os volumes primário e secundário de um par espelhado assíncrono devem corresponder ao mesmo protocolo, nível da bandeja, tamanho do segmento, tipo de segurança e nível RAID. Pares espelhados assíncronos não elegíveis não aparecerão na lista de volumes disponíveis.
+
+* O volume secundário deve ser pelo menos tão grande quanto o volume primário.
+* Um volume pode participar de apenas um relacionamento de espelho.
+* Para um par espelhado síncrono, os volumes primário e secundário devem ser volumes padrão. Não podem ser volumes finos ou volumes instantâneos.
+* Para o espelhamento síncrono, há limites para o número de volumes compatíveis com um determinado storage array. Certifique-se de que o número de volumes configurados na matriz de armazenamento seja inferior ao limite suportado. Quando o espelhamento síncrono está ativo, os dois volumes de capacidade reservada criados contam para o limite de volume.
+* Para o espelhamento assíncrono, o volume primário e o volume secundário devem ter os mesmos recursos de Segurança da Unidade.
++
+** Se o volume primário for compatível com FIPS, o volume secundário deve ser capaz de FIPS.
+** Se o volume principal for compatível com FDE, o volume secundário tem de ser capaz de FDE.
+** Se o volume principal não estiver usando o Drive Security, o volume secundário não deve estar usando o Drive Security.
+
+
+
+
+
+
+== Capacidade reservada
+
+Espelhamento assíncrono:
+
+* Um volume de capacidade reservada é necessário para um volume primário e para um volume secundário em um par espelhado para Registrar informações de gravação para recuperar de reinicializações do controlador e outras interrupções temporárias.
+* Como o volume principal e o volume secundário em um par espelhado exigem capacidade reservada adicional, você precisa garantir que tenha capacidade livre disponível em ambos os storage arrays na relação espelhada.
+
+
+Espelhamento síncrono:
+
+* A capacidade reservada é necessária para um volume primário e para um volume secundário para registar informações de gravação para recuperar de reinicializações do controlador e outras interrupções temporárias.
+* Os volumes de capacidade reservada são criados automaticamente quando o espelhamento síncrono é ativado. Como o volume principal e o volume secundário em um par espelhado exigem capacidade reservada, você precisa garantir que tenha capacidade livre suficiente disponível em ambos os storage arrays que participam do relacionamento de espelhamento síncrono.
+
+
+
+
+== Recurso de segurança da unidade
+
+* Se você estiver usando unidades com capacidade de segurança, o volume primário e o volume secundário devem ter configurações de segurança compatíveis. Esta restrição não é imposta; portanto, você deve verificá-la por conta própria.
+* Se você estiver usando unidades com capacidade segura, o volume primário e o volume secundário deverão usar o mesmo tipo de unidade. Esta restrição não é imposta; portanto, você deve verificá-la por conta própria.
+* Se estiver a utilizar o Data Assurance (DA), o volume primário e o volume secundário têm de ter as mesmas definições DE DA.
+

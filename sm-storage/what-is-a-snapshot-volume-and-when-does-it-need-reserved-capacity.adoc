@@ -1,0 +1,20 @@
+---
+permalink: sm-storage/what-is-a-snapshot-volume-and-when-does-it-need-reserved-capacity.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, snapshot, volume, reserved, capacity 
+summary: Um volume instantâneo permite que o host acesse dados na imagem instantânea. O volume instantâneo contém a sua própria capacidade reservada, que guarda quaisquer modificações no volume base sem afetar a imagem instantânea original. As imagens instantâneas não são acessíveis para leitura ou gravação para os hosts. Se você quiser ler ou gravar dados de snapshot, crie um volume de snapshot e atribua-o a um host. 
+---
+= O que é um volume snapshot e quando ele precisa de capacidade reservada?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Um volume instantâneo permite que o host acesse dados na imagem instantânea. O volume instantâneo contém a sua própria capacidade reservada, que guarda quaisquer modificações no volume base sem afetar a imagem instantânea original. As imagens instantâneas não são acessíveis para leitura ou gravação para os hosts. Se você quiser ler ou gravar dados de snapshot, crie um volume de snapshot e atribua-o a um host.
+
+Você pode criar dois tipos de volumes de snapshot. O tipo de volume instantâneo determina se ele usa a capacidade reservada.
+
+* *Somente leitura* -- Um volume instantâneo criado como somente leitura fornece um aplicativo host com acesso de leitura a uma cópia dos dados contidos na imagem instantânea. Um volume snapshot somente leitura não usa a capacidade reservada.
+* *Read-write* -- Um volume instantâneo que é criado como read-write permite que você faça alterações no volume instantâneo sem afetar a imagem de snapshot referenciada. Um volume instantâneo de leitura e gravação usa a capacidade reservada para armazenar essas alterações. Você pode converter um volume instantâneo somente leitura para leitura e gravação a qualquer momento.
+

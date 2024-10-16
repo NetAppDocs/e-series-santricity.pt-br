@@ -1,0 +1,30 @@
+---
+permalink: sm-hardware/change-shelf-ids.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, change, shelf, ids, 
+summary: O ID do compartimento é um número que identifica exclusivamente uma gaveta no storage array. As prateleiras são numeradas consecutivamente, começando com 00 ou 01, no canto superior esquerdo de cada vista da prateleira. 
+---
+= Alterar as IDs de gaveta
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O ID do compartimento é um número que identifica exclusivamente uma gaveta no storage array. As prateleiras são numeradas consecutivamente, começando com 00 ou 01, no canto superior esquerdo de cada vista da prateleira.
+
+.Sobre esta tarefa
+O firmware do controlador atribui automaticamente o ID do compartimento, mas você pode alterar esse número se quiser criar um esquema de pedidos diferente.
+
+.Passos
+. Selecione *hardware*.
+. Selecione a lista suspensa para o compartimento de controladora ou compartimento de unidade e selecione *alterar ID*.
+. Na caixa de diálogo alterar ID do compartimento, selecione a lista suspensa para exibir os números disponíveis.
++
+Essa caixa de diálogo não exibe os IDs atribuídos atualmente às gavetas ativas.
+
+. Selecione um número disponível e clique em *Salvar*.
++
+Dependendo do número selecionado, a ordem do compartimento pode ser reorganizada na página hardware. Se desejar, você pode usar as setas para cima/para baixo na parte superior direita de cada prateleira para reajustar a ordem.
+
+

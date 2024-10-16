@@ -1,0 +1,64 @@
+---
+permalink: sm-storage/change-the-reserved-capacity-settings-for-a-consistency-group-member-volume.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, reserved capacity, settings, consistency group, member volume 
+summary: Você pode alterar as configurações de um volume de membro do grupo de consistência para ajustar o ponto percentual no qual o System Manager envia uma notificação de alerta quando a capacidade reservada para um volume de membro estiver quase cheia e para alterar a política a ser usada quando a capacidade reservada atingir sua porcentagem máxima definida. 
+---
+= Altere as configurações de capacidade reservada para um volume de membro do grupo de consistência
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode alterar as configurações de um volume de membro do grupo de consistência para ajustar o ponto percentual no qual o System Manager envia uma notificação de alerta quando a capacidade reservada para um volume de membro estiver quase cheia e para alterar a política a ser usada quando a capacidade reservada atingir sua porcentagem máxima definida.
+
+.Sobre esta tarefa
+Alterar as configurações de capacidade reservada para um volume de membro individual também altera as configurações de capacidade reservada para todos os volumes associados a um grupo de consistência.
+
+.Passos
+. Selecione menu:armazenamento[pools & grupos de volume].
+. Clique na guia *capacidade reservada*.
+. Selecione o volume do membro do grupo de consistência que você deseja editar e clique em *Exibir/Editar configurações*.
++
+A caixa de diálogo Configurações de capacidade reservada do volume do membro é exibida.
+
+. Altere as configurações de capacidade reservada para o volume do membro, conforme apropriado.
++
+.Detalhes do campo
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Definição | Descrição 
+
+
+ a| 
+Alerta-me quando...
+ a| 
+Use a caixa giratório para ajustar o ponto percentual no qual o System Manager envia uma notificação de alerta quando a capacidade reservada para um volume de membro estiver quase cheia.
+
+Quando a capacidade reservada para o volume do membro excede o limite especificado, o System Manager envia um alerta, permitindo-lhe tempo para aumentar a capacidade reservada ou eliminar objetos desnecessários.
+
+
+NOTE: Alterar a configuração Alerta para um volume de membro irá alterá-la para _todos_ volumes de membros que pertencem ao mesmo grupo de consistência.
+
+
+
+ a| 
+Política de capacidade reservada completa
+ a| 
+Você pode escolher uma das seguintes políticas:
+
+** *Limpar imagem de snapshot mais antiga* -- o System Manager limpa automaticamente a imagem de snapshot mais antiga do grupo consistência, que libera a capacidade reservada do membro para reutilização dentro do grupo.
+** *Rejeitar gravações no volume base* -- quando a capacidade reservada atinge sua porcentagem máxima definida, o System Manager rejeita qualquer solicitação de gravação de e/S para o volume base que acionou o acesso à capacidade reservada.
+
+
+|===
+====
+. Clique em *Salvar* para aplicar suas alterações.
+
+
+.Resultados
+O System Manager altera as configurações de capacidade reservada para o volume do membro, bem como as configurações de capacidade reservada para todos os volumes do membro no grupo consistência.

@@ -1,0 +1,52 @@
+---
+permalink: sm-hardware/considerations-for-assigning-ip-addresses.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, considerations, assigning, ip, addresses 
+summary: Por padrão, os controladores são fornecidos com DHCP ativado em ambas as portas de rede. Você pode atribuir endereços IP estáticos, usar os endereços IP estáticos padrão ou usar endereços IP atribuídos por DHCP. Você também pode usar a configuração automática sem monitoração de estado IPv6. 
+---
+= Considerações para atribuir endereços IP
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Por padrão, os controladores são fornecidos com DHCP ativado em ambas as portas de rede. Você pode atribuir endereços IP estáticos, usar os endereços IP estáticos padrão ou usar endereços IP atribuídos por DHCP. Você também pode usar a configuração automática sem monitoração de estado IPv6.
+
+[NOTE]
+====
+O IPv6 é desativado por padrão em novos controladores, mas você pode configurar os endereços IP da porta de gerenciamento usando um método alternativo e, em seguida, ativar o IPv6 nas portas de gerenciamento usando o System Manager.
+
+====
+Quando a porta de rede está em um estado "link down", ou seja, desconetado de uma LAN, o sistema relata sua configuração como estática, exibindo um endereço IP de 0.0.0.0 (versões anteriores) ou DHCP habilitado sem endereço IP relatado (versões posteriores). Depois que a porta de rede estiver em um estado "link up" (ou seja, conetada a uma LAN), ela tentará obter um endereço IP através do DHCP.
+
+Se o controlador não conseguir obter um endereço DHCP numa determinada porta de rede, este reverte para um endereço IP predefinido, o que poderá demorar até 3 minutos. Os endereços IP padrão são os seguintes:
+
+[listing]
+----
+Controller 1 (port 1): IP Address: 192.168.128.101
+----
+[listing]
+----
+Controller 1 (port 2): IP Address: 192.168.129.101
+----
+[listing]
+----
+Controller 2 (port 1): IP Address: 192.168.128.102
+----
+[listing]
+----
+Controller 2 (port 2): IP Address: 192.168.129.102
+----
+Ao atribuir endereços IP:
+
+* Reserva a porta 2 nos controladores para utilização do suporte ao Cliente. Não altere as definições de rede predefinidas (DHCP ativado).
+* Para definir endereços IP estáticos para os controladores E2800 e E5700, use o Gerenciador do sistema SANtricity. Para definir endereços IP estáticos para os controladores E2700 e E5600, use SANtricity Storage Manager. Depois que um endereço IP estático é configurado, ele permanece definido através de todos os eventos de link down/up.
+* Para utilizar DHCP para atribuir o endereço IP do controlador, ligue o controlador a uma rede que possa processar pedidos DHCP. Use uma concessão DHCP permanente.
++
+[NOTE]
+====
+Os endereços padrão não são persistidos em eventos de link para baixo. Quando uma porta de rede em um controlador está definida para usar DHCP, o controlador tenta obter um endereço DHCP em cada evento de ligação, incluindo inserções de cabos, reinicializações e ciclos de alimentação. Sempre que uma tentativa de DHCP falhar, é utilizado o endereço IP estático predefinido para essa porta.
+
+====
+

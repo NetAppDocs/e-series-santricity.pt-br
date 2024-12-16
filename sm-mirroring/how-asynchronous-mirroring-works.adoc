@@ -30,7 +30,7 @@ O espelhamento assíncrono captura o estado do volume primário em um determinad
 
 Há quatro etapas principais em uma sessão de espelhamento assíncrono ativo.
 
-image::../media/sam-1130-dwg-async-mirroring-session.gif[sam 1130 dwg sessão de espelhamento assíncrono]
+image::../media/sam-1130-dwg-async-mirroring-session.gif[Sessão de espelhamento assíncrono]
 
 . Uma operação de gravação ocorre primeiro no storage array do volume primário.
 . O status da operação é retornado ao host.

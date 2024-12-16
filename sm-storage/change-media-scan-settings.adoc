@@ -28,6 +28,9 @@ Se a verificação de redundância encontrar uma inconsistência entre os dados 
 
 
 
+
+NOTE: O período de digitalização do material predefinido é de 120 dias.
+
 .Sobre esta tarefa
 As digitalizações de Mídia detetam e reparam erros de Mídia em blocos de disco que são raramente lidos por aplicativos. Isso pode impedir a perda de dados em caso de falha de unidade, uma vez que os dados para unidades com falha são reconstruídos usando informações de redundância e dados de outras unidades no grupo de volumes ou pool.
 

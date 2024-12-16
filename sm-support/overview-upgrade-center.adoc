@@ -33,7 +33,7 @@ Vários componentes de storage array contêm software ou hardware que você pode
 * *Software Supervisor* -- o software Supervisor é a máquina virtual em um controlador no qual o software é executado.
 
 
-image::../media/sam1130-dwg-upgrade-firmware-locations.gif[sam1130 dwg atualizar localizações de firmware]
+image::../media/sam1130-dwg-upgrade-firmware-locations.gif[Atualizar localizações de firmware]
 
 1 GB, 2 GB, firmware da controladora, software supervisor; 3 GB, firmware da unidade; 4 GB, firmware da unidade; 5 GB, firmware da unidade; 6 GB, firmware da unidade
 

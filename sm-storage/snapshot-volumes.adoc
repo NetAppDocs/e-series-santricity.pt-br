@@ -17,6 +17,6 @@ Ao criar um volume instantâneo, você pode designá-lo como __read-onl__y ou _r
 
 Quando você cria volumes snapshot somente leitura, não é necessário adicionar capacidade reservada. Ao criar volumes snapshot de leitura e gravação, você deve adicionar capacidade reservada para fornecer acesso de gravação.
 
-image::../media/sam1130-dwg-snapshots-volumes-overview.gif[visão geral dos volumes de instantâneos sam1130d dwg]
+image::../media/sam1130-dwg-snapshots-volumes-overview.gif[Visão geral dos volumes Snapshot]
 
 1 volume base; 2 Host; 3 volume de instantâneos só de leitura; 4 volume de instantâneos de leitura-escrita; 5 capacidade reservada

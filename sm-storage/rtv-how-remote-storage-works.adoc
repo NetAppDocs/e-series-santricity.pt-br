@@ -24,6 +24,9 @@ Use o fluxo de trabalho a seguir para preparar as conexões de hardware.
 
 Estas etapas são descritas mais adiante no guia do usuário do recurso armazenamento remoto, que está disponível no centro de documentação da série e e SANtricity em https://docs.netapp.com/us-en/e-series/remote-storage-volumes/index.html["Visão geral dos volumes de armazenamento remoto"^] , e no https://www.netapp.com/pdf.html?item=/media/28697-tr-4893-deploy.pdf["Relatório técnico de armazenamento remoto"^].
 
+
+NOTE: Atualmente, os volumes de armazenamento remoto SANtricity não são suportados em sistemas E4000.
+
 No sistema de storage local e-Series:
 
 . Certifique-se de que cada controlador tem uma ligação iSCSI ao sistema de armazenamento remoto. Com essa conexão, o sistema local e-Series atua como um iniciador iSCSI que pode ser configurado como um host no sistema remoto.

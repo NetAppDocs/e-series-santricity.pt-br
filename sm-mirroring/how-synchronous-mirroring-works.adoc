@@ -34,7 +34,7 @@ Uma relação de espelhamento síncrono consiste em um volume primário e um vol
 
 O processo de configuração de espelhamento síncrono envolve a configuração de volumes em pares. Depois de criar um par espelhado, que consiste em um volume primário em um storage array e um volume secundário em outro storage array, é possível iniciar o espelhamento síncrono. Os passos no espelhamento síncrono são apresentados abaixo.
 
-image::../media/sam-1130-dwg-sync-mirroring-session.gif[sessão de espelhamento de sincronização sam 1130 dwg]
+image::../media/sam-1130-dwg-sync-mirroring-session.gif[Sessão de espelhamento síncrono]
 
 . Uma escrita vem do host.
 . A gravação é comprometida com o volume primário, propagada para o sistema remoto e, em seguida, comprometida com o volume secundário.

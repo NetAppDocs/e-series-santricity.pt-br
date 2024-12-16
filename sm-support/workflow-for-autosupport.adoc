@@ -13,4 +13,4 @@ summary: No Gerenciador de sistema do SANtricity, você configura o recurso Auto
 [role="lead"]
 No Gerenciador de sistema, você configura o recurso AutoSupport seguindo estas etapas.
 
-image::../media/sam1130-flw-support-asup-setup.gif[sam1130 flw suporte configuração asup]
+image::../media/sam1130-flw-support-asup-setup.gif[Fluxo de trabalho do AutoSupport]

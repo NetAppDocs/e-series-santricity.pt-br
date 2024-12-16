@@ -25,7 +25,7 @@ A expansão faz com que a capacidade livre adicional seja incluída no pool ou n
 +
 ** 2.048 volumes (séries EF600 e E5700)
 ** 1.024 volumes (EF300)
-** 512 volumes (série E2800)
+** 512 volumes (séries E4000 e E2800)
 
 
 * Se o pool ou grupo de volumes contiver todas as unidades com capacidade segura, adicione apenas unidades com capacidade segura para continuar a usar as habilidades de criptografia das unidades com capacidade segura.

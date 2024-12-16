@@ -25,13 +25,6 @@ Você pode atualizar o firmware das suas unidades para se certificar de que voc�
 .Passos
 . Selecione menu:suporte[Centro de atualizações].
 . Transfira os novos ficheiros do site de suporte para o seu cliente de gestão.
-+
-.. Em Atualização do firmware da unidade, clique em *suporte NetApp*.
-.. No site de suporte da NetApp, clique na guia *Downloads*.
-.. Selecione *Unidade de disco e Matriz de firmware*.
-.. Siga as instruções restantes.
-
-
 . Em Drive firmware upgrade, clique em *Begin Upgrade* (Iniciar atualização).
 +
 É apresentada uma caixa de diálogo que lista os ficheiros de firmware da unidade atualmente em utilização.

@@ -23,7 +23,7 @@ Para tirar instantâneos do volume base, você pode criar uma imagem instantâne
 
 A figura a seguir mostra a relação entre os objetos snapshot e o volume base.
 
-image::../media/sam1130-dwg-snapshots-images-overview.gif[visão geral de imagens de instantâneos sam1130 dwg]
+image::../media/sam1130-dwg-snapshots-images-overview.gif[Objetos snapshot e volume base]
 
 1. Volume base; 2 objetos instantâneos no grupo (imagens e capacidade reservada); 3 capacidade reservada para o grupo instantâneo.
 

@@ -81,7 +81,7 @@ Selecione *Excluir* para abrir uma caixa de diálogo que permite remover eventos
  a| 
 Mostrar/ocultar colunas
  a| 
-Clique no ícone da coluna *Mostrar/Ocultar* image:../media/sam-1140-ss-access-columns.gif[""]para selecionar colunas adicionais para exibição na tabela. Colunas adicionais incluem:
+Clique no ícone da coluna *Mostrar/Ocultar* image:../media/sam-1140-ss-access-columns.gif["Mostrar/Ocultar coluna"]para selecionar colunas adicionais para exibição na tabela. Colunas adicionais incluem:
 
 ** *Método* -- o método HTTP (por exemplo, POST, GET, DELETE, etc.).
 ** * Comando CLI executado* -- o comando CLI (gramática) executado para solicitações de CLI segura.
@@ -99,14 +99,14 @@ Clique no ícone da coluna *Mostrar/Ocultar* image:../media/sam-1140-ss-access-c
  a| 
 Alternar filtros de coluna
  a| 
-Clique no ícone *alternar* image:../media/sam-1140-ss-access-toggle.gif[""]para abrir campos de filtragem para cada coluna. Insira carateres dentro de um campo de coluna para limitar eventos mostrados por esses carateres. Clique novamente no ícone para fechar os campos de filtragem.
+Clique no ícone *alternar* image:../media/sam-1140-ss-access-toggle.gif["Alternar"]para abrir campos de filtragem para cada coluna. Insira carateres dentro de um campo de coluna para limitar eventos mostrados por esses carateres. Clique novamente no ícone para fechar os campos de filtragem.
 
 
 
  a| 
 Anular alterações
  a| 
-Clique no ícone *Desfazer* image:../media/sam-1140-ss-access-undo.gif[""]para retornar a tabela à configuração padrão.
+Clique no ícone *Desfazer* image:../media/sam-1140-ss-access-undo.gif["Desfazer"]para retornar a tabela à configuração padrão.
 
 
 

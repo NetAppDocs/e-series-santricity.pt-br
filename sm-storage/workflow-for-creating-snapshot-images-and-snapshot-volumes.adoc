@@ -17,10 +17,10 @@ No System Manager, pode criar imagens instantâneas e volumes instantâneos segu
 
 == Fluxo de trabalho para criar imagens instantâneas
 
-image::../media/sam1130-flw-snapshots-create-ss-images.gif[sam1130 instantâneos flw criam imagens ss]
+image::../media/sam1130-flw-snapshots-create-ss-images.gif[Criar fluxo de trabalho de imagens instantâneas]
 
 
 
 == Fluxo de trabalho para criar volumes instantâneos
 
-image::../media/sam1130-flw-snapshots-create-ss-volumes.gif[sam1130 instantâneos flw criam volumes ss]
+image::../media/sam1130-flw-snapshots-create-ss-volumes.gif[Criar fluxo de trabalho do Snapshot volumes]

@@ -27,8 +27,3 @@ Por exemplo, se você estiver conetando oito hosts diferentes ao storage array e
 Por exemplo, se você estiver conetando oito hosts diferentes ao storage array e dois desses hosts estiverem executando um sistema operacional Windows, três estiverem executando um sistema operacional VMware e outros três estiverem executando um sistema operacional Linux, você deverá selecionar padrão de fábrica como o tipo de sistema operacional padrão de host.
 
 
-
-[]
-====
-
-====

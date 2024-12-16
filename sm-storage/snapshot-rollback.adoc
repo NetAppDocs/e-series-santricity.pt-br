@@ -23,6 +23,6 @@ Durante a reversão, o recurso Snapshots preserva todas as imagens instantâneas
 
 Quando uma reversão é iniciada, um processo em segundo plano varre os endereços de bloco lógico (LBAs) para o volume base e, em seguida, encontra dados de cópia na gravação na imagem de snapshot de reversão a ser restaurada. Como o volume base é acessível ao host para leituras e gravações e todos os dados gravados anteriormente estão disponíveis imediatamente, o volume de capacidade reservada deve ser grande o suficiente para conter todas as alterações enquanto a reversão está sendo processada. A transferência de dados continua como uma operação em segundo plano até que a reversão seja concluída.
 
-image::../media/sam1130-dwg-snapshots-rollback-overview.gif[visão geral de reversão de instantâneos sam1130d dwg]
+image::../media/sam1130-dwg-snapshots-rollback-overview.gif[Visão geral da reversão do Snapshot]
 
 1. Volume base; 2 objetos instantâneos em grupo; 3 capacidade reservada para o grupo

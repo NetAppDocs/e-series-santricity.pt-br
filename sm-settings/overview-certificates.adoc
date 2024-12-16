@@ -29,7 +29,7 @@ Saiba mais:
 
 == Como configuro certificados assinados?
 
-Primeiro, você gera uma solicitação de assinatura do System Manager e, em seguida, envia o arquivo para uma CA. Quando a CA retornar os arquivos de certificado, você os importará usando o System Manager.
+Você pode gerar uma solicitação de assinatura do System Manager ou externamente usando um par de chaves privadas e públicas. A solicitação de assinatura é enviada a uma CA para gerar os arquivos de certificado. Quando a CA retornar os arquivos de certificado, você os importará usando o System Manager.
 
 Saiba mais:
 

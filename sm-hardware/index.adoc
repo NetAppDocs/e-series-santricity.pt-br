@@ -4,9 +4,11 @@ sidebar: sidebar
 keywords:  
 summary:  
 ---
-= Gerenciador de sistemas SANtricity 11,8
+= Gerenciador de sistemas SANtricity 11,9
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
+[role="lead"]
+Você pode verificar o status do componente na página hardware e executar algumas funções relacionadas a esses componentes.

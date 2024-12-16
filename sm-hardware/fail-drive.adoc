@@ -44,6 +44,6 @@ A opção de cópia permite uma recuperação mais rápida da unidade do que a r
 
 . Confirme se deseja falhar a unidade.
 +
-Depois que a unidade falhar, aguarde pelo menos 30 segundos antes de removê-la.
+Depois que a unidade falhar, aguarde pelo menos 60 segundos antes de removê-la.
 
 

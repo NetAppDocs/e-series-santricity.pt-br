@@ -13,4 +13,4 @@ summary: No Gerenciador de sistemas do SANtricity, você pode criar volumes segu
 [role="lead"]
 No System Manager, você pode criar volumes seguindo estas etapas.
 
-image::../media/sam1130-flw-volumes-create.gif[sam1130 volumes flw criar]
+image::../media/sam1130-flw-volumes-create.gif[Criar fluxo de trabalho volumes]

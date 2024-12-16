@@ -33,6 +33,6 @@ Você cria um grupo de consistência de instantâneos quando deseja garantir que
 
 Os volumes incluídos em um grupo de consistência de snapshot são chamados de volumes de membros. Quando você adiciona um volume a um grupo de consistência, o System Manager cria automaticamente uma nova capacidade reservada que corresponde a esse volume de membro. Pode definir uma agenda para criar automaticamente uma imagem instantânea de cada volume de membro.
 
-image::../media/sam1130-dwg-snapshots-consistency-groups-overview.gif[visão geral dos grupos de consistência de instantâneos sam1130d dwg]
+image::../media/sam1130-dwg-snapshots-consistency-groups-overview.gif[Visão geral do grupo de consistência de snapshot]
 
 1 capacidade reservada; 2 volume de Membros; 3 imagens de instantâneos de grupo de consistência

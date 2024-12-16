@@ -1,12 +1,14 @@
 ---
 permalink: um-admin/index.html 
 sidebar: sidebar 
-keywords: santricity, unified, manager 6 
-summary: SANtricity Unified Manager 6 
+keywords: santricity, unified, manager 7 
+summary: SANtricity Unified Manager 7 
 ---
-= SANtricity Unified Manager 6
+= SANtricity Unified Manager 7
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
+[role="lead"]
+O Unified Manager é uma interface baseada na Web que permite gerenciar vários storage arrays em uma única visualização.

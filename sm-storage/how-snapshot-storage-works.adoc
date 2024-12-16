@@ -30,7 +30,7 @@ As imagens instantâneas também são úteis para ambientes de teste. Ao criar u
 * Quando uma imagem instantânea é criada, ela corresponde exatamente ao volume base. O recurso Snapshots usa tecnologia copy-on-write. Depois que o snapshot é capturado, a primeira gravação em qualquer bloco ou conjunto de blocos no volume base faz com que os dados originais sejam copiados para a capacidade reservada antes de gravar os novos dados no volume base.
 * Os instantâneos subsequentes incluem apenas blocos de dados alterados. Antes que os dados sejam sobrescritos no volume base, o recurso Snapshots usa sua tecnologia copy-on-write para salvar as imagens necessárias dos setores afetados na capacidade reservada do snapshot.
 +
-image::../media/sam1130-dwg-snapshots-cow-overview.gif[sam1130 dwg instantâneos visão geral da vaca]
+image::../media/sam1130-dwg-snapshots-cow-overview.gif[Visão geral do Snapshot]
 
 
 

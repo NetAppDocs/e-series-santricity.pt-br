@@ -104,7 +104,7 @@ O System Manager pode sugerir uma configuração de volume com base na aplicaç�
 +
 ** 2.048 volumes (séries EF600 e E5700)
 ** 1.024 volumes (EF300)
-** 512 volumes (série E2800)
+** 512 volumes (séries E4000 e E2800)
 
 
 * Para criar um volume habilitado para Data Assurance (DA), a conexão de host que você está planejando usar deve suportar DA.
@@ -346,6 +346,6 @@ O System Manager cria os novos volumes nos pools e grupos de volumes selecionado
 * Execute todas as modificações do sistema operacional necessárias no host do aplicativo para que os aplicativos possam usar o volume.
 * Execute o utilitário específico do sistema operacional (disponível a partir de um fornecedor de terceiros) e execute o comando SMcli `-identifyDevices` para correlacionar nomes de volume com nomes de storage de host.
 +
-O SMcli está disponível diretamente através do Gerenciador do sistema SANtricity. Esta versão para download do SMcli está disponível nos controladores EF600, EF300, E5700, EF570, E2800 e EF280. Para fazer o download do SMcli no Gerenciador do sistema SANtricity, selecione *Configurações* > *sistema* e *Complementos* > *Interface de linha de comando* .
+O SMcli está disponível diretamente através do Gerenciador do sistema SANtricity. Esta versão para download do SMcli está disponível nos controladores E4000, EF600, EF300, E5700, EF570, E2800 e EF280. Para fazer o download do SMcli no Gerenciador do sistema SANtricity, selecione *Configurações* > *sistema* e *Complementos* > *Interface de linha de comando* .
 
 

@@ -21,7 +21,7 @@ O hardware físico é provisionado em componentes lógicos para que os dados pos
 
 Os pools e grupos de volumes são as unidades de armazenamento de nível superior em um storage array: Dividem a capacidade das unidades em divisões gerenciáveis. Dentro dessas divisões lógicas estão os volumes individuais ou LUNs onde os dados são armazenados. A figura a seguir ilustra esse conceito.
 
-image::../media/sam1130-dwg-volumes-drive-structure-pools-and-volume-groups.gif[sam1130 volumes dwg acionam conjuntos de estruturas e grupos de volumes]
+image::../media/sam1130-dwg-volumes-drive-structure-pools-and-volume-groups.gif[Estrutura de pools e grupos de volume]
 
 1 unidades de disco rígido ou SSD; 2 unidades de disco rígido ou SSD; 4 unidades de disco rígido ou SSD. 3 unidades de disco rígido ou SSD
 

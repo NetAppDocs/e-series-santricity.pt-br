@@ -26,12 +26,15 @@ A autenticação entre os controladores e um servidor de gerenciamento de chaves
 
 Primeiro, você deve gerar um arquivo de solicitação de assinatura de certificado (CSR) e usar o CSR para solicitar um certificado de cliente assinado de uma autoridade de certificação (CA) confiável pelo servidor de gerenciamento de chaves. Você também pode criar e baixar um certificado de cliente a partir do servidor de gerenciamento de chaves usando o arquivo CSR baixado. Um certificado de cliente valida os controladores do storage array, para que o servidor de gerenciamento de chaves possa confiar em suas solicitações KMIP (Key Management Interoperability Protocol).
 
+
+NOTE: Os arquivos CSR gerados externamente por meio de pares de chaves privadas e públicas podem ser importados através da caixa de diálogo criar chave de segurança externa. Para obter mais informações sobre como importar um arquivo CSR gerado externamente, https://docs.netapp.com/us-en/e-series-santricity/sm-settings/use-ca-signed-certificates-for-authentication-with-a-key-management-server.html#step-2-import-certificates-for-the-key-management-server["Etapa 2: Importar certificados para o servidor de gerenciamento de chaves"] consulte .
+
 .Passos
 . Selecione menu:Definições[certificados].
 . Na guia Gerenciamento de chaves, selecione *Complete CSR*.
 . Introduza as seguintes informações:
 +
-** * Nome comum* -- um nome que identifica este CSR, como o nome da matriz de armazenamento, que será exibido nos arquivos de certificado.
+** * Nome comum* -- Um nome que identifica o cliente. É prática comum combinar o que está no nome comum com os requisitos do servidor KMS para convenções de nomenclatura de certificados de cliente. O nome comum geralmente ajuda o KMS a identificar o certificado do cliente quando ele é apresentado durante um handshake.
 ** *Organização* -- o nome completo e legal de sua empresa ou organização. Inclua sufixos, como Inc. Ou Corp.
 ** * Unidade organizacional (opcional) * -- a divisão da sua organização que está a lidar com o certificado.
 ** *Cidade/localidade* -- a cidade ou localidade onde sua organização está localizada.
@@ -43,7 +46,11 @@ Primeiro, você deve gerar um arquivo de solicitação de assinatura de certific
 +
 Um ficheiro CSR é guardado no seu sistema local.
 
-. Solicite um certificado de cliente assinado a partir de uma CA confiável pelo servidor de gerenciamento de chaves.
+. Solicite um certificado de cliente assinado da CA confiável pelo servidor de gerenciamento de chaves.
++
+
+NOTE: É comum que o servidor de gerenciamento de chaves tenha um recurso que gera certificados assinados diretamente, pois ele funciona como sua própria CA.
+
 . Quando tiver um certificado de cliente, vá para <<Etapa 2: Importar certificados para o servidor de gerenciamento de chaves>>.
 
 
@@ -71,6 +78,10 @@ Para obter mais informações sobre o certificado do servidor, consulte a docume
 Abre-se uma caixa de diálogo para importar os ficheiros de certificado.
 
 . Ao lado de *Selecionar certificado de cliente*, clique no botão *Procurar* para selecionar o arquivo de certificado de cliente para os controladores da matriz de armazenamento.
++
+O nome do arquivo é exibido na caixa de diálogo.
+
+. Se você gerou um arquivo de certificado externamente usando um par de chaves privadas e públicas, clique no botão *Procurar* ao lado de *Selecionar arquivo de chave privada* para selecionar o arquivo de certificado para os controladores do storage array.
 +
 O nome do arquivo é exibido na caixa de diálogo.
 

@@ -48,6 +48,7 @@ As chaves externas são mantidas em um servidor de gerenciamento de chaves separ
 .. Primeiro, você conclui e faz o download de uma solicitação de assinatura de certificado de cliente (CSR). Aceda ao menu:Definições[certificados > Gestão de chaves > CSR completo].
 .. Em seguida, você solicita um certificado de cliente assinado de uma CA confiável pelo servidor de gerenciamento de chaves. (Você também pode criar e baixar um certificado de cliente a partir do servidor de gerenciamento de chaves usando o arquivo CSR.)
 .. Depois de ter um arquivo de certificado de cliente, copie esse arquivo para o host onde você está acessando o System Manager.
+.. Como alternativa, você pode gerar uma solicitação de assinatura de certificado externamente usando um par de chaves privadas e públicas.
 
 
 . Recupere um arquivo de certificado do servidor de gerenciamento de chaves e copie esse arquivo para o host onde você está acessando o System Manager. Um certificado do servidor de gerenciamento de chaves valida o servidor de gerenciamento de chaves, de modo que o storage array possa confiar em seu endereço IP. Você pode usar um certificado raiz, intermediário ou servidor para o servidor de gerenciamento de chaves.

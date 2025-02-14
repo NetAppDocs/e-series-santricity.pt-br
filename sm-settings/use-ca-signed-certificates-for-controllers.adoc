@@ -12,7 +12,7 @@ summary: Você pode obter certificados assinados pela CA para comunicações seg
 
 
 [role="lead"]
-Você pode obter certificados assinados pela CA para comunicações seguras entre os controladores e o navegador usado para acessar o System Manager.
+Você pode obter certificados assinados pela CA para comunicações seguras entre os controladores e o navegador usado para acessar o Gerenciador de sistema do SANtricity.
 
 .Antes de começar
 * Você deve estar conetado com um perfil de usuário que inclua permissões de administrador de segurança. Caso contrário, as funções do certificado não aparecem.

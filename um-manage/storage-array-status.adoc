@@ -11,7 +11,7 @@ summary: O Unified Manager exibe o status de cada storage array descoberto.
 
 
 [role="lead"]
-O Unified Manager exibe o status de cada storage array descoberto.
+O SANtricity Unified Manager exibe o status de cada storage array descoberto.
 
 Vá para a página *Gerenciar - todos*. Nesta página, você pode visualizar o status da conexão entre o Proxy de Serviços Web e esse storage array.
 

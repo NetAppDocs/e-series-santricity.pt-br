@@ -11,7 +11,7 @@ summary: O recurso Importar configurações é uma operação em lote que carreg
 
 
 [role="lead"]
-O recurso Importar configurações é uma operação em lote que carrega configurações de uma matriz de armazenamento para várias matrizes de armazenamento. As configurações importadas durante essa operação dependem de como o storage de armazenamento de origem é configurado no System Manager.
+O recurso Importar configurações é uma operação em lote que carrega configurações de uma matriz de armazenamento para várias matrizes de armazenamento. As configurações que são importadas durante essa operação dependem de como o storage de origem é configurado no Gerenciador do sistema do SANtricity.
 
 As seguintes configurações podem ser importadas para vários storages de armazenamento:
 

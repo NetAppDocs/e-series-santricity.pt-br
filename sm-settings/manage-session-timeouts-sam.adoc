@@ -12,7 +12,7 @@ summary: Você pode configurar tempos limite no Gerenciador de sistema do SANtri
 
 
 [role="lead"]
-É possível configurar tempos limite no System Manager para que as sessões inativas dos usuários sejam desconetadas após um tempo especificado.
+Você pode configurar timeouts no Gerenciador de sistema do SANtricity, para que as sessões inativas dos usuários sejam desconetadas após um tempo especificado.
 
 .Sobre esta tarefa
 Por padrão, o tempo limite da sessão para o System Manager é de 30 minutos. Você pode ajustar esse tempo ou pode desativar os tempos limite da sessão por completo.

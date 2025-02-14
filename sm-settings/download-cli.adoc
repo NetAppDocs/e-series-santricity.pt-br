@@ -12,7 +12,7 @@ summary: 'No System Manager, você pode baixar o pacote de interface de linha de
 
 
 [role="lead"]
-No System Manager, você pode baixar o pacote de interface de linha de comando (CLI).
+A partir do Gerenciador de sistema do SANtricity, você pode baixar o pacote de interface de linha de comando (CLI).
 
 A CLI fornece um método baseado em texto para configurar e monitorar matrizes de armazenamento. Ele se comunica via https e usa a mesma sintaxe que a CLI disponível no pacote de software de gerenciamento instalado externamente. Nenhuma chave é necessária para baixar o CLI.
 

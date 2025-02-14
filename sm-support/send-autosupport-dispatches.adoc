@@ -12,7 +12,7 @@ summary: O System Manager permite enviar despachos AutoSupport para o suporte t�
 
 
 [role="lead"]
-O System Manager permite enviar despachos AutoSupport para o suporte técnico, sem esperar por um despacho agendado.
+O Gerenciador de sistemas do SANtricity permite enviar despachos do AutoSupport para o suporte técnico, sem esperar por um despacho agendado.
 
 .Antes de começar
 O recurso AutoSupport deve estar ativado. Você pode ver se ele está habilitado na página AutoSupport.

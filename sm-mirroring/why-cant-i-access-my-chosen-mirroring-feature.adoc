@@ -11,7 +11,7 @@ summary: O espelhamento é configurado na interface do Unified Manager.
 
 
 [role="lead"]
-O espelhamento é configurado na interface do Unified Manager.
+O espelhamento é configurado na interface do SANtricity Unified Manager.
 
 [NOTE]
 ====

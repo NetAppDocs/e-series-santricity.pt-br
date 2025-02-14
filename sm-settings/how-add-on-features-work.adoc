@@ -11,7 +11,7 @@ summary: Complementos são recursos que não estão incluídos na configuração
 
 
 [role="lead"]
-Complementos são recursos que não estão incluídos na configuração padrão do System Manager e podem exigir uma chave para habilitar. Um recurso complementar pode ser um único recurso premium ou um pacote de recursos.
+Complementos são recursos que não estão incluídos na configuração padrão do Gerenciador de sistema do SANtricity e podem exigir uma chave para habilitar. Um recurso complementar pode ser um único recurso premium ou um pacote de recursos.
 
 As etapas a seguir fornecem uma visão geral para habilitar um recurso ou um pacote de recursos premium:
 

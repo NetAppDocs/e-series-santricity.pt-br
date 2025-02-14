@@ -12,7 +12,7 @@ summary: Sessões iSCSI podem ocorrer com hosts ou matrizes de armazenamento rem
 
 
 [role="lead"]
-Sessões iSCSI podem ocorrer com hosts ou matrizes de armazenamento remoto em uma relação de espelhamento assíncrono. As tabelas a seguir listam as funções do System Manager que podem ser usadas para configurar e gerenciar essas sessões iSCSI.
+Sessões iSCSI podem ocorrer com hosts ou matrizes de armazenamento remoto em uma relação de espelhamento assíncrono. As tabelas a seguir listam as funções do Gerenciador de sistema do SANtricity que você pode usar para configurar e gerenciar essas sessões iSCSI.
 
 [NOTE]
 ====

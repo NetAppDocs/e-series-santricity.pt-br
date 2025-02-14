@@ -12,7 +12,7 @@ summary: 'Se o Protocolo de tempo de rede (NTP) não estiver ativado, você pode
 
 
 [role="lead"]
-Se o Network Time Protocol (NTP) não estiver ativado, você poderá definir manualmente os relógios nos controladores para que eles sejam sincronizados com o cliente de gerenciamento (o sistema usado para executar o navegador que acessa o System Manager).
+Se o Protocolo de tempo de rede (NTP) não estiver ativado, você poderá definir manualmente os relógios nos controladores para que eles sejam sincronizados com o cliente de gerenciamento (o sistema usado para executar o navegador que acessa o Gerenciador de sistema do SANtricity).
 
 .Sobre esta tarefa
 A sincronização garante que os carimbos de hora do evento no registo de eventos correspondem aos carimbos de hora gravados nos ficheiros de registo do anfitrião. Durante o processo de sincronização, os controladores permanecem disponíveis e operacionais.

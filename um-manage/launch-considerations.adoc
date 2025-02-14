@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, considerations, access system manager 
 summary: Selecione um ou mais storages e use a opção Iniciar para abrir o Gerenciador de sistemas do SANtricity quando quiser configurar e gerenciar storages. 
 ---
-= Considerações para acessar o System Manager
+= Considerações para acessar o Gerenciador de sistema do SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-Selecione um ou mais storages e use a opção Iniciar para abrir o System Manager quando quiser configurar e gerenciar storages.
+Selecione um ou mais storages e use a opção Iniciar para abrir o Gerenciador de sistemas do SANtricity quando quiser configurar e gerenciar storages.
 
 O System Manager é uma aplicação incorporada nos controladores, que está ligada à rede através de uma porta de gestão Ethernet. Ele inclui todas as funções baseadas em array.
 

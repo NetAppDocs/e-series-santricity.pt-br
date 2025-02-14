@@ -11,7 +11,7 @@ summary: Antes que o Unified Manager possa exibir e gerenciar recursos de storag
 
 
 [role="lead"]
-Antes que o Unified Manager possa exibir e gerenciar recursos de storage, ele deve descobrir os storages que você deseja gerenciar na rede da organização. Você pode descobrir vários arrays ou descobrir um único array.
+Antes que o SANtricity Unified Manager possa exibir e gerenciar recursos de storage, ele deve descobrir os storages que você deseja gerenciar na rede da organização. Você pode descobrir vários arrays ou descobrir um único array.
 
 
 

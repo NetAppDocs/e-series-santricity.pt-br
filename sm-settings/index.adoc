@@ -11,4 +11,4 @@ summary:
 
 
 [role="lead"]
-Você pode configurar o System Manager para algumas configurações gerais de array e recursos adicionais.
+Você pode configurar o Gerenciador de sistema do SANtricity para algumas configurações gerais de array e recursos adicionais.

@@ -11,7 +11,7 @@ summary: Use o Gerenciamento de acesso para estabelecer a autenticação de usu�
 
 
 [role="lead"]
-Use o Gerenciamento de acesso para estabelecer a autenticação de usuário no Unified Manager.
+Use o Gerenciamento de acesso para estabelecer a autenticação de usuários no Gerenciador Unificado do SANtricity.
 
 
 

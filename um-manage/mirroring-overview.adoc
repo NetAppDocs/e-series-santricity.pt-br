@@ -11,7 +11,7 @@ summary: O Unified Manager inclui opções de configuração para os recursos de
 
 
 [role="lead"]
-O Unified Manager inclui opções de configuração para os recursos de espelhamento do SANtricity, que permitem que os administradores repliquem dados entre dois storage arrays para proteção de dados.
+O SANtricity Unified Manager inclui opções de configuração para os recursos de espelhamento do SANtricity, que permitem que os administradores repliquem dados entre dois storage arrays para proteção de dados.
 
 [NOTE]
 ====

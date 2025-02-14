@@ -11,7 +11,7 @@ summary: Você configura o espelhamento assíncrono ou síncrono no Unified Mana
 
 
 [role="lead"]
-Você configura o espelhamento assíncrono ou síncrono no Unified Manager e, em seguida, usa o System Manager para gerenciar sincronizações.
+Você configura o espelhamento assíncrono ou síncrono no Gerenciador Unificado do SANtricity e, em seguida, usa o Gerenciador de sistemas do SANtricity para gerenciar sincronizações.
 
 
 

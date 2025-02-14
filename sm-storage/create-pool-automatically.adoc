@@ -12,7 +12,7 @@ summary: A criação de pool é iniciada automaticamente quando o System Manager
 
 
 [role="lead"]
-A criação de pool é iniciada automaticamente quando o System Manager deteta unidades não atribuídas no storage array. Você pode usar a criação automática de pool para configurar facilmente todas as unidades não atribuídas no storage em um pool e adicionar unidades a pools existentes.
+A criação de pool é iniciada automaticamente quando o Gerenciador de sistema do SANtricity deteta unidades não atribuídas no storage array. Você pode usar a criação automática de pool para configurar facilmente todas as unidades não atribuídas no storage em um pool e adicionar unidades a pools existentes.
 
 .Antes de começar
 Você pode iniciar a caixa de diálogo Pool Auto-Configuration (Configuração automática do pool) quando uma destas condições for verdadeira:

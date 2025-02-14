@@ -12,7 +12,7 @@ summary: 'Se necessário, você pode importar certificados para os storage array
 
 
 [role="lead"]
-Se necessário, você pode importar certificados para os storages de armazenamento para que eles possam se autenticar com o sistema que hospeda o Unified Manager. Os certificados podem ser assinados por uma autoridade de certificação (CA) ou podem ser autoassinados.
+Se necessário, você pode importar certificados para os storage arrays para que eles possam se autenticar com o sistema que hospeda o SANtricity Unified Manager. Os certificados podem ser assinados por uma autoridade de certificação (CA) ou podem ser autoassinados.
 
 .Antes de começar
 * Você deve estar conetado com um perfil de usuário que inclua permissões de administrador de segurança. Caso contrário, as funções do certificado não aparecem.

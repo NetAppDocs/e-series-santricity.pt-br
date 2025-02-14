@@ -11,7 +11,7 @@ summary: Quando você faz certas alterações no System Manager, como alternar a
 
 
 [role="lead"]
-Quando você faz certas alterações no System Manager, como alternar a interface de gerenciamento ou usar o SAML para um método de autenticação, algumas ferramentas e recursos externos podem ser restritos ao uso.
+Quando você faz certas alterações no Gerenciador de sistema do SANtricity, como alternar a interface de gerenciamento ou usar o SAML para um método de autenticação, algumas ferramentas e recursos externos podem ser restritos ao uso.
 
 
 

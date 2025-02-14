@@ -11,7 +11,7 @@ summary: O SANtricity Unified Manager pode ser acessado de vários tipos de nave
 
 
 [role="lead"]
-O Unified Manager pode ser acessado de vários tipos de navegadores.
+O SANtricity Unified Manager pode ser acessado de vários tipos de navegadores.
 
 Os seguintes navegadores e versões são suportados.
 

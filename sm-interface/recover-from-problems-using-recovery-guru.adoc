@@ -11,7 +11,7 @@ summary: O Recovery Guru é um componente do System Manager que diagnostica prob
 
 
 [role="lead"]
-O Recovery Guru é um componente do System Manager que diagnostica problemas de storage array e recomenda procedimentos de recuperação para corrigir os problemas.
+O Recovery Guru é um componente do SANtricity System Manager que diagnostica problemas de storage array e recomenda procedimentos de recuperação para corrigir os problemas.
 
 .Passos
 . Selecione *Home*.

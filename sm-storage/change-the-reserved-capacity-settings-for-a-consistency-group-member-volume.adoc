@@ -12,7 +12,7 @@ summary: Você pode alterar as configurações de um volume de membro do grupo d
 
 
 [role="lead"]
-Você pode alterar as configurações de um volume de membro do grupo de consistência para ajustar o ponto percentual no qual o System Manager envia uma notificação de alerta quando a capacidade reservada para um volume de membro estiver quase cheia e para alterar a política a ser usada quando a capacidade reservada atingir sua porcentagem máxima definida.
+Você pode alterar as configurações de um volume de membro do grupo de consistência para ajustar o ponto percentual no qual o Gerenciador de sistema do SANtricity envia uma notificação de alerta quando a capacidade reservada para um volume de membro estiver quase cheia e alterar a política a ser usada quando a capacidade reservada atingir sua porcentagem máxima definida.
 
 .Sobre esta tarefa
 Alterar as configurações de capacidade reservada para um volume de membro individual também altera as configurações de capacidade reservada para todos os volumes associados a um grupo de consistência.

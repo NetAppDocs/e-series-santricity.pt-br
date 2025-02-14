@@ -11,7 +11,7 @@ summary: O System Manager suporta essas versões do navegador.
 
 
 [role="lead"]
-O System Manager suporta essas versões do navegador.
+O Gerenciador de sistema do SANtricity suporta essas versões do navegador.
 
 [cols="1a,1a"]
 |===

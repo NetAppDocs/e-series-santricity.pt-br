@@ -12,7 +12,7 @@ summary: Você pode usar o Unified Manager para atualizar o software SANtricity 
 
 
 [role="lead"]
-Você pode usar o Unified Manager para atualizar o software SANtricity os em vários storage arrays do mesmo tipo para uma versão mais recente.
+Você pode usar o Gerenciador Unificado do SANtricity para atualizar o software SANtricity os em vários storages do mesmo tipo para uma versão mais recente.
 
 
 

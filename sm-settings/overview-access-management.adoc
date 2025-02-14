@@ -12,7 +12,7 @@ summary: 'O Gerenciamento de Acesso é um método para estabelecer a autenticaç
 
 
 [role="lead"]
-O Gerenciamento de Acesso é um método para estabelecer a autenticação do usuário no System Manager.
+O Gerenciamento de Acesso é um método para estabelecer a autenticação do usuário no Gerenciador de sistema do SANtricity.
 
 
 

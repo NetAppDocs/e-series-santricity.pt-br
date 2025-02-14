@@ -31,9 +31,9 @@ sidebar:
       url: "/san-getstarted/santricity-overview.html"
     - title: Navegadores e sistemas operacionais suportados
       url: "/san-getstarted/supported-browsers-os.html"
-    - title: Configuração do System Manager
+    - title: Configuração do Gerenciador de sistema do SANtricity
       entries:
-      - title: Acesse o System Manager
+      - title: Acesse o Gerenciador do sistema do SANtricity
         url: "/san-getstarted/access-sam.html"
       - title: Descrição geral do assistente de configuração
         url: "/sm-interface/setup-wizard-overview.html"
@@ -52,20 +52,21 @@ sidebar:
           url: "/sm-interface/how-do-i-configure-the-delivery-method-for-autosupport-new.html"
         - title: Como sei se devo aceitar a configuração recomendada do pool?
           url: "/sm-interface/how-do-i-know-if-i-should-accept-the-recommended-pool-configuration.html"
-        - title: O System Manager não detetou nenhum host. O que faço?
+        - title: O Gerenciador de sistema do SANtricity não detetou nenhum host. O
+            que faço?
           url: "/sm-interface/system-manager-has-not-detected-any-hosts-what-do-i-do.html"
-    - title: Configuração do Unified Manager
+    - title: Configuração do SANtricity Unified Manager
       entries:
-      - title: Instale o Unified Manager
+      - title: Instale o SANtricity Unified Manager
         url: "/san-getstarted/install-um.html"
-      - title: Acesse o Unified Manager
+      - title: Acesse o SANtricity Unified Manager
         url: "/san-getstarted/login-um.html"
-  - title: System Manager
+  - title: Gerente do sistema da SANtricity
     url: "/system-manager/index.html"
     entries:
     - title: Interface principal
       entries:
-      - title: Visão geral da interface do System Manager
+      - title: Visão geral da interface do Gerenciador de sistema do SANtricity
         url: "/sm-interface/overview-interface-sam.html"
       - title: Visualizar dados de desempenho
         entries:
@@ -1170,8 +1171,8 @@ sidebar:
         - title: Por que a caixa de diálogo não é possível acessar outro controlador
             aparece?
           url: "/sm-settings/why-does-the-cannot-access-other-controller-dialog-appear.html"
-        - title: Como sei quais certificados precisam ser carregados no System Manager
-            para gerenciamento de chaves externas?
+        - title: Como sei quais certificados precisam ser carregados para o Gerenciador
+            de sistemas do SANtricity para gerenciamento de chaves externas?
           url: "/sm-settings/how-do-i-know-what-certificates-need-to-be-uploaded-to-system-manager.html"
         - title: O que eu preciso saber sobre a verificação de revogação de certificados?
           url: "/sm-settings/what-do-i-need-to-know-about-certificate-revocation-checking.html"
@@ -1276,12 +1277,12 @@ sidebar:
           url: "/sm-support/what-do-i-need-to-know-before-upgrading-drive-firmware.html"
         - title: Como faço para escolher qual tipo de atualização deve ser executada?
           url: "/sm-support/how-do-i-choose-which-type-of-upgrade-to-perform.html"
-  - title: Unified Manager
+  - title: Gerenciador unificado do SANtricity
     url: "/unified-manager/index.html"
     entries:
     - title: Interface principal
       entries:
-      - title: Visão geral da interface do Unified Manager
+      - title: Visão geral da interface do SANtricity Unified Manager
         url: "/um-admin/overview-interface-unified.html"
       - title: Navegadores suportados
         url: "/um-admin/supported-browsers-unified.html"
@@ -1299,7 +1300,7 @@ sidebar:
         entries:
         - title: Considerações para descobrir arrays
           url: "/um-manage/considerations-for-discovering-arrays.html"
-        - title: Considerações para acessar o System Manager
+        - title: Considerações para acessar o Gerenciador de sistema do SANtricity
           url: "/um-manage/launch-considerations.html"
       - title: Descubra arrays
         entries:
@@ -1311,7 +1312,7 @@ sidebar:
         entries:
         - title: Exibir status da matriz
           url: "/um-manage/storage-array-status.html"
-        - title: Inicie o System Manager
+        - title: Gerenciar um storage array individual
           url: "/um-manage/launch-system-manager.html"
         - title: Altere as senhas da matriz
           url: "/um-admin/change-storage-array-passwords.html"

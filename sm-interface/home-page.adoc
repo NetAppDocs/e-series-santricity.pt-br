@@ -11,7 +11,7 @@ summary: A página inicial fornece uma visualização de painel para o gerenciam
 
 
 [role="lead"]
-A página inicial fornece uma visualização de painel para o gerenciamento diário de seu storage array. Ao iniciar sessão no System Manager, a página inicial é a primeira tela exibida.
+A página inicial fornece uma visualização de painel para o gerenciamento diário de seu storage array. Quando inicia sessão no Gestor do sistema SANtricity, a página inicial é a primeira tela apresentada.
 
 A visualização do dashboard compreende quatro áreas de resumo que contêm informações importantes sobre o estado e a integridade do storage array. Pode encontrar mais informações na área de resumo.
 

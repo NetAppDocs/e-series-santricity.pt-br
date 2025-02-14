@@ -11,7 +11,7 @@ summary: Antes de usar o Unified Manager para atualizar vários storage arrays, 
 
 
 [role="lead"]
-Antes de usar o Unified Manager para atualizar vários storage arrays, consulte as principais considerações como parte do Planejamento.
+Antes de usar o SANtricity Unified Manager para atualizar vários storage arrays, consulte as principais considerações como parte do Planejamento.
 
 
 

@@ -11,7 +11,7 @@ summary: 'Você pode usar o System Manager para criar solicitações de assinatu
 
 
 [role="lead"]
-Você pode usar o System Manager para criar solicitações de assinatura de certificado (CSRs), importar certificados e gerenciar certificados existentes.
+Você pode usar o Gerenciador de sistema do SANtricity para criar solicitações de assinatura de certificado (CSRs), importar certificados e gerenciar certificados existentes.
 
 
 

@@ -11,4 +11,4 @@ summary: SANtricity Unified Manager 7
 
 
 [role="lead"]
-O Unified Manager é uma interface baseada na Web que permite gerenciar vários storage arrays em uma única visualização.
+O SANtricity Unified Manager é uma interface baseada na Web que permite gerenciar vários storage arrays em uma única visualização.

@@ -12,7 +12,7 @@ summary: Você pode obter e importar certificados assinados pela CA para acesso 
 
 
 [role="lead"]
-Você pode obter e importar certificados assinados pela CA para acesso seguro ao sistema de gerenciamento que hospeda o Unified Manager.
+Você pode obter e importar certificados assinados por CA para acesso seguro ao sistema de gerenciamento que hospeda o Gerenciador Unificado do SANtricity.
 
 .Antes de começar
 Você deve estar conetado com um perfil de usuário que inclua permissões de administrador de segurança. Caso contrário, as funções do certificado não aparecem.

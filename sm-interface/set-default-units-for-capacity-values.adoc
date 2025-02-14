@@ -12,7 +12,7 @@ summary: 'O System Manager pode exibir os valores de capacidade em gibibibytes (
 
 
 [role="lead"]
-O System Manager pode exibir os valores de capacidade em gibibibytes (GiB) ou tebibytes (TIB).
+O Gerenciador do sistema SANtricity pode exibir valores de capacidade em gibibibibytes (GiB) ou tebibytes (TIB).
 
 As preferências são armazenadas no armazenamento local do navegador para que todos os usuários possam ter suas próprias configurações.
 

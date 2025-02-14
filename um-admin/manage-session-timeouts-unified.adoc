@@ -11,7 +11,7 @@ summary: Você pode configurar tempos limite para o SANtricity Unified Manager p
 
 
 [role="lead"]
-É possível configurar tempos limite para o Unified Manager para que os usuários de sessões inativas sejam desconetadas após um tempo especificado.
+É possível configurar tempos limite para o Gerenciador Unificado do SANtricity para que os usuários de sessões inativas sejam desconetadas após um tempo especificado.
 
 .Sobre esta tarefa
 Por padrão, o tempo limite da sessão para o Unified Manager é de 30 minutos. Você pode ajustar esse tempo ou pode desativar os tempos limite da sessão por completo.

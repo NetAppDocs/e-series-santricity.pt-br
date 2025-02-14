@@ -11,7 +11,7 @@ summary: Você pode usar a opção Iniciar para abrir o Gerenciador de sistema d
 
 
 [role="lead"]
-Você pode usar a opção Iniciar para abrir o System Manager baseado em navegador para um ou mais arrays de storage quando quiser executar operações de gerenciamento.
+Você pode usar a opção Iniciar para abrir o Gerenciador de sistema do SANtricity baseado em navegador para um ou mais arrays de storage quando desejar executar operações de gerenciamento.
 
 .Passos
 . Na página Gerenciar, selecione um ou mais arrays de armazenamento que você deseja gerenciar.

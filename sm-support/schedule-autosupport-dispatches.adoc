@@ -12,7 +12,7 @@ summary: O Gerenciador do sistema cria automaticamente uma programação padrão
 
 
 [role="lead"]
-O Gerenciador do sistema cria automaticamente uma programação padrão para envios do AutoSupport. Se preferir, você pode especificar sua própria programação.
+O Gerenciador de sistema do SANtricity cria automaticamente uma programação padrão para envios do AutoSupport. Se preferir, você pode especificar sua própria programação.
 
 .Antes de começar
 O recurso AutoSupport deve estar ativado. Você pode ver se ele está habilitado na página AutoSupport.

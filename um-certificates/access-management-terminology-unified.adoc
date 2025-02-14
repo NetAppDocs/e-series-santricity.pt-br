@@ -11,7 +11,7 @@ summary: Saiba como os termos do Gerenciamento de Acesso se aplicam ao Gerenciad
 
 
 [role="lead"]
-Saiba como os termos do Gerenciamento de Acesso se aplicam ao Unified Manager.
+Saiba como os termos do Gerenciamento de Acesso se aplicam ao Gerenciador Unificado do SANtricity.
 
 [cols="25h,~"]
 |===

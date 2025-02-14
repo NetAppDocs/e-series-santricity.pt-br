@@ -11,7 +11,7 @@ summary: Um sistema de armazenamento em modo não otimizado deve-se a um estado 
 
 
 [role="lead"]
-Um sistema de armazenamento em modo não otimizado deve-se a um estado de Configuração do sistema inválido. Apesar desse estado, o acesso normal de e/S aos volumes existentes é totalmente suportado; no entanto, o System Manager proibirá algumas operações.
+Um sistema de armazenamento em modo não otimizado deve-se a um estado de Configuração do sistema inválido. Apesar desse estado, o acesso normal de e/S a volumes existentes é totalmente suportado. No entanto, o Gerenciador de sistemas da SANtricity proibirá algumas operações.
 
 Um sistema de armazenamento pode ser transferido para Configuração de sistema inválida por um destes motivos:
 

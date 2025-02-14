@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, certificates, external, key, management, 
 summary: Para o gerenciamento de chaves externas, você importa dois tipos de certificados para autenticação entre o storage array e o servidor de gerenciamento de chaves para que as duas entidades possam confiar umas nas outras. 
 ---
-= Como sei quais certificados precisam ser carregados no System Manager para gerenciamento de chaves externas?
+= Como sei quais certificados precisam ser carregados para o Gerenciador de sistemas do SANtricity para gerenciamento de chaves externas?
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

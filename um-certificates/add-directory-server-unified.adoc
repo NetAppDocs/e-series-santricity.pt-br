@@ -11,7 +11,7 @@ summary: Para configurar a autenticação para o Gerenciamento de Acesso, você 
 
 
 [role="lead"]
-Para configurar a autenticação para o Gerenciamento de Acesso, você estabelece comunicações entre um servidor LDAP e o host que executa o Proxy de Serviços Web para Unified Manager. Em seguida, mapeia os grupos de utilizadores LDAP para as funções de utilizador local.
+Para configurar a autenticação para o Gerenciamento de Acesso, você estabelece comunicações entre um servidor LDAP e o host que executa o Proxy de Serviços da Web para o Gerenciador Unificado do SANtricity. Em seguida, mapeia os grupos de utilizadores LDAP para as funções de utilizador local.
 
 .Antes de começar
 * Você deve estar conetado com um perfil de usuário que inclua permissões de administrador de segurança. Caso contrário, as funções de Gerenciamento de Acesso não aparecem.

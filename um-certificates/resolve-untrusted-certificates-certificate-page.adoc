@@ -12,7 +12,7 @@ summary: Certificados não confiáveis ocorrem quando um storage array tenta est
 
 
 [role="lead"]
-Certificados não confiáveis ocorrem quando um storage array tenta estabelecer uma conexão segura com o Unified Manager, mas a conexão não consegue confirmar como segura.
+Certificados não confiáveis ocorrem quando um storage array tenta estabelecer uma conexão segura com o Gerenciador Unificado do SANtricity, mas a conexão não confirma como segura.
 
 Na página certificado, você pode resolver certificados não confiáveis importando um certificado autoassinado da matriz de armazenamento ou importando um certificado de autoridade de certificação (CA) emitido por um terceiro confiável.
 

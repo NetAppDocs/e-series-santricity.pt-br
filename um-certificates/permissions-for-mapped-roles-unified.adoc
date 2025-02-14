@@ -11,7 +11,7 @@ summary: 'Os recursos RBAC (controle de acesso baseado em função) incluem usu�
 
 
 [role="lead"]
-Os recursos RBAC (controle de acesso baseado em função) incluem usuários predefinidos com uma ou mais funções mapeadas para eles. Cada função inclui permissões para acessar tarefas no Unified Manager.
+Os recursos RBAC (controle de acesso baseado em função) incluem usuários predefinidos com uma ou mais funções mapeadas para eles. Cada função inclui permissões para acessar tarefas no Gerenciador Unificado do SANtricity.
 
 As funções fornecem acesso do usuário a tarefas, como segue:
 

@@ -11,7 +11,7 @@ summary: 'O System Manager permite verificar se há certificados revogados usand
 
 
 [role="lead"]
-O System Manager permite verificar se há certificados revogados usando um servidor OCSP (Online Certificate Status Protocol), em vez de carregar listas de revogação de certificados (CRLs).
+O Gerenciador de sistema do SANtricity permite que você verifique se há certificados revogados usando um servidor OCSP (protocolo de status de certificado on-line), em vez de carregar listas de revogação de certificados (CRLs).
 
 Os certificados revogados não devem mais ser confiáveis. Um certificado pode ser revogado por vários motivos; por exemplo, se a Autoridade de Certificação (CA) emitiu incorretamente o certificado, uma chave privada foi comprometida ou a entidade identificada não aderiu aos requisitos da política.
 

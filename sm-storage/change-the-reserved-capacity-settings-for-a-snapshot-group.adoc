@@ -12,7 +12,7 @@ summary: Pode alterar as definições de um grupo de instantâneos para alterar 
 
 
 [role="lead"]
-Pode alterar as definições de um grupo de instantâneos para alterar o seu nome, as definições de eliminação automática, o número máximo de imagens instantâneas permitidas, o ponto percentual no qual o Gestor do sistema envia uma notificação de alerta de capacidade reservada ou a política a utilizar quando a capacidade reservada atinge a sua percentagem máxima definida.
+Pode alterar as definições de um grupo de instantâneos para alterar o seu nome, as definições de eliminação automática, o número máximo de imagens instantâneas permitidas, o ponto percentual no qual o Gestor do sistema SANtricity envia uma notificação de alerta de capacidade reservada ou a política a utilizar quando a capacidade reservada atinge a sua percentagem máxima definida.
 
 Durante a criação de um grupo de instantâneos, a capacidade reservada é criada para armazenar os dados de todas as imagens instantâneas contidas no grupo.
 

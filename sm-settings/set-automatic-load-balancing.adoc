@@ -12,7 +12,7 @@ summary: O recurso balanceamento de carga automático garante que o tráfego de 
 
 
 [role="lead"]
-O recurso balanceamento de carga automático garante que o tráfego de e/S de entrada dos hosts seja gerenciado e balanceado dinamicamente em ambos os controladores. Esta funcionalidade está ativada por predefinição, mas pode desativá-la a partir do System Manager.
+O recurso balanceamento de carga automático garante que o tráfego de e/S de entrada dos hosts seja gerenciado e balanceado dinamicamente em ambos os controladores. Esta funcionalidade está ativada por predefinição, mas pode desativá-la a partir do Gestor do sistema SANtricity.
 
 .Sobre esta tarefa
 Quando o balanceamento de carga automático está ativado, ele executa as seguintes funções:

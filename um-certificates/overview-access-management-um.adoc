@@ -11,7 +11,7 @@ summary: O Gerenciamento de Acesso é um método de configuração da autentica�
 
 
 [role="lead"]
-O Access Management é um método de configuração da autenticação de usuário no Unified Manager.
+O Gerenciamento de Acesso é um método de configuração da autenticação de usuário no Gerenciador Unificado do SANtricity.
 
 
 

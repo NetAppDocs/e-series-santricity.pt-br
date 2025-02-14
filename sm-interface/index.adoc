@@ -11,4 +11,4 @@ summary: Gerenciador de sistemas SANtricity 11,9
 
 
 [role="lead"]
-O System Manager é uma interface baseada na Web que permite gerenciar um storage array em uma única visualização.
+O SANtricity System Manager é uma interface baseada na Web que permite gerenciar um storage array em uma única visualização.

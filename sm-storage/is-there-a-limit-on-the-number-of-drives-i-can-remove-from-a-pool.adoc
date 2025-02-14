@@ -11,7 +11,7 @@ summary: O System Manager define limites para quantas unidades você pode remove
 
 
 [role="lead"]
-O System Manager define limites para quantas unidades você pode remover de um pool.
+O Gerenciador de sistema do SANtricity define limites para quantas unidades você pode remover de um pool.
 
 * Não é possível reduzir o número de unidades em um pool para ser inferior a 11 unidades.
 * Não é possível remover unidades se não houver capacidade livre suficiente no pool para conter os dados das unidades removidas quando esses dados são redistribuídos para as unidades restantes no pool.

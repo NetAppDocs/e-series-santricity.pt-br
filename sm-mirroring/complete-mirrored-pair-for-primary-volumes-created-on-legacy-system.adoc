@@ -12,7 +12,7 @@ summary: Se você criou um volume primário em um storage array herdado que não
 
 
 [role="lead"]
-Se você criou um volume primário em um storage array herdado que não pode ser gerenciado pelo System Manager, poderá criar o volume secundário nesse array com o System Manager.
+Se você criou um volume primário em um storage array herdado que não pode ser gerenciado pelo SANtricity System Manager, poderá criar o volume secundário nesse array com o SANtricity System Manager.
 
 .Sobre esta tarefa
 É possível executar o espelhamento assíncrono entre arrays legados que usam uma interface diferente e arrays mais recentes que podem ser gerenciados pelo System Manager.

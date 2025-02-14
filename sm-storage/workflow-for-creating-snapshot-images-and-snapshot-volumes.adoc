@@ -11,7 +11,7 @@ summary: No System Manager, pode criar imagens instantâneas e volumes instantâ
 
 
 [role="lead"]
-No System Manager, pode criar imagens instantâneas e volumes instantâneos seguindo estes passos.
+No Gerenciador do sistema do SANtricity, você pode criar imagens instantâneas e volumes instantâneos seguindo estas etapas.
 
 
 

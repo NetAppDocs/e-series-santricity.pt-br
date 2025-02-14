@@ -11,7 +11,7 @@ summary: Se receber um erro ao tentar iniciar sessão no System Manager, reveja 
 
 
 [role="lead"]
-Se receber um erro ao tentar iniciar sessão no System Manager, reveja estas possíveis causas.
+Se você receber um erro ao tentar fazer login no Gerenciador de sistema do SANtricity, revise essas possíveis causas.
 
 Erros de login no System Manager podem ocorrer por um destes motivos:
 

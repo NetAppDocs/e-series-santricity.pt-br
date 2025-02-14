@@ -12,7 +12,7 @@ summary: Se você alterou o endereço IP do storage array, talvez queira atualiz
 
 
 [role="lead"]
-Se você tiver alterado o endereço IP da matriz de armazenamento, talvez queira atualizar a exibição global do array no Unified Manager.
+Se você alterou o endereço IP do storage array, talvez queira atualizar a exibição global do array no Gerenciador Unificado do SANtricity.
 
 Para atualizar a exibição de matriz global no Unified Manager, abra a interface e vá para menu:Gerenciar[Discover].
 

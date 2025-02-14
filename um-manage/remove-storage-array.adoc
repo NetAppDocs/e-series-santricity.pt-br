@@ -12,7 +12,7 @@ summary: Você pode remover um ou mais arrays de storage se não quiser mais ger
 
 
 [role="lead"]
-Você pode remover um ou mais arrays de storage se não quiser mais gerenciá-lo do Unified Manager.
+Você pode remover um ou mais arrays de storage se não quiser mais gerenciá-lo do SANtricity Unified Manager.
 
 .Sobre esta tarefa
 Não é possível acessar nenhum dos storages de armazenamento que você remover. Você pode, no entanto, estabelecer uma conexão com qualquer um dos storages removidos apontando um navegador diretamente para seu endereço IP ou nome de host.

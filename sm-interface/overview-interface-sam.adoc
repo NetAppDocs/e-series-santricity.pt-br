@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, 
 summary: Você navega na interface principal para acessar recursos e tarefas do System Manager. 
 ---
-= Visão geral da interface do System Manager
+= Visão geral da interface do Gerenciador de sistema do SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-O System Manager é uma interface baseada na Web que permite gerenciar um storage array em uma única visualização.
+O SANtricity System Manager é uma interface baseada na Web que permite gerenciar um storage array em uma única visualização.
 
 
 

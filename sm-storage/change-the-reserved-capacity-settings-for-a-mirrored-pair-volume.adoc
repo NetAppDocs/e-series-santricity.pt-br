@@ -12,7 +12,7 @@ summary: Você pode alterar as configurações de um volume de par espelhado par
 
 
 [role="lead"]
-Você pode alterar as configurações de um volume de par espelhado para ajustar o ponto percentual no qual o System Manager envia uma notificação de alerta quando a capacidade reservada para um volume de par espelhado estiver quase cheia.
+Você pode alterar as configurações de um volume de par espelhado para ajustar o ponto percentual no qual o Gerenciador de sistema do SANtricity envia uma notificação de alerta quando a capacidade reservada para um volume de par espelhado estiver quase cheia.
 
 .Passos
 . Selecione menu:armazenamento[pools & grupos de volume].

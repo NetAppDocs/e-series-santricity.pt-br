@@ -11,7 +11,7 @@ summary: 'Você deve sincronizar manualmente os relógios do controlador na matr
 
 
 [role="lead"]
-Você deve sincronizar manualmente os relógios do controlador na matriz de armazenamento se notar que os carimbos de hora mostrados no System Manager não estão alinhados com os carimbos de hora mostrados no cliente de gerenciamento (o computador que está acessando o System Manager através do navegador). Esta tarefa só é necessária se o NTP (Network Time Protocol) não estiver ativado no System Manager.
+Você deve sincronizar manualmente os relógios do controlador na matriz de armazenamento se notar que os carimbos de hora mostrados no Gerenciador do sistema do SANtricity não estão alinhados com os carimbos de hora mostrados no cliente de gerenciamento (o computador que está acessando o Gerenciador do sistema do SANtricity pelo navegador). Esta tarefa só é necessária se o NTP (Network Time Protocol) não estiver ativado no Gestor do sistema SANtricity.
 
 [NOTE]
 ====

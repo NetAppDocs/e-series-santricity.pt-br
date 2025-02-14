@@ -11,7 +11,7 @@ summary: O System Manager relata vários estados para unidades.
 
 
 [role="lead"]
-O System Manager relata vários estados para unidades.
+O SANtricity System Manager relata vários estados para unidades.
 
 
 

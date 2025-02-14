@@ -11,7 +11,7 @@ summary: O System Manager usa ícones e vários outros métodos para notificá-l
 
 
 [role="lead"]
-O System Manager usa ícones e vários outros métodos para notificá-lo de que existem problemas com a matriz de armazenamento.
+O Gerenciador de sistema do SANtricity usa ícones e vários outros métodos para notificá-lo de que existem problemas com o storage array.
 
 
 

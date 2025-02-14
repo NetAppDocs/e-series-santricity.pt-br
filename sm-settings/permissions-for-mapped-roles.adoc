@@ -12,7 +12,7 @@ summary: 'Os recursos RBAC (controle de acesso baseado em função) aplicados no
 
 
 [role="lead"]
-Os recursos RBAC (controle de acesso baseado em função) aplicados no storage array incluem perfis de usuário predefinidos com uma ou mais funções mapeadas. Cada função inclui permissões para acessar tarefas no System Manager.
+Os recursos RBAC (controle de acesso baseado em função) aplicados no storage array incluem perfis de usuário predefinidos com uma ou mais funções mapeadas. Cada função inclui permissões para acessar tarefas no Gerenciador de sistema do SANtricity.
 
 Os perfis de utilizador e as funções mapeadas são acessíveis a partir do menu:Definições[Gestão de acessos > funções de utilizador local] na interface de utilizador de qualquer Gestor de sistema.
 

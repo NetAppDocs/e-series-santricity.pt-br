@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, host detection 
 summary: Se você não vir seus hosts conetados, a deteção automática falhou, os hosts estão conetados incorretamente ou nenhum host está conetado atualmente. 
 ---
-= O System Manager não detetou nenhum host. O que faço?
+= O Gerenciador de sistema do SANtricity não detetou nenhum host. O que faço?
 :allow-uri-read: 
 :experimental: 
 :icons: font

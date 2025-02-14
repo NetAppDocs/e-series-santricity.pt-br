@@ -11,7 +11,7 @@ summary: Você pode usar o Unified Manager para importar configurações de um s
 
 
 [role="lead"]
-Você pode usar o Unified Manager para importar configurações de um storage array para vários storage arrays. O recurso Importar configurações é uma operação em lote que economiza tempo quando você precisa configurar vários arrays na rede.
+Você pode usar o Gerenciador Unificado do SANtricity para importar configurações de um storage array para vários storage arrays. O recurso Importar configurações é uma operação em lote que economiza tempo quando você precisa configurar vários arrays na rede.
 
 
 

@@ -1,13 +1,13 @@
 ---
 indexpage:
-  title: Documentação do software SANtricity 11,90
+  title: Documentação do software SANtricity 11,9
   summary: Gerenciador de sistemas e Gerenciador Unificado da SANtricity
   keywords: santricity, all-flash arrays, heavy workload applications, video surveillance,
     data analytics
-  lead: O software SANtricity 11,90 permite que você atinja o máximo de performance
-    e utilização dos arrays de flash híbrido e-Series e EF-Series all-flash para aplicações
-    de workloads pesados, incluindo análise de dados, vigilância por vídeo, backup
-    e recuperação.
+  lead: Com o software SANtricity 11,9, você atinge o máximo de performance e utilização
+    dos arrays de flash híbrido e-Series e EF-Series all-flash para aplicações de
+    workloads pesados, incluindo análise de dados, vigilância por vídeo, backup e
+    recuperação.
   tiles:
   - title: Comece agora
     links:

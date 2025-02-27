@@ -16,7 +16,7 @@ Para configurar o espelhamento síncrono, você cria um par espelhado que inclui
 
 [NOTE]
 ====
-Este recurso não está disponível no sistema de armazenamento EF600 ou EF300.
+Esse recurso não está disponível no sistema de storage EF600/EF600C ou EF300/EF300C.
 
 ====
 .Antes de começar

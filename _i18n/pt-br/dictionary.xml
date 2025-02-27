@@ -129,7 +129,6 @@
   <block id="ba3a0fdc8434a7821716045b35ac5b56" category="paragraph">Este site descreve como usar as seguintes interfaces de gerenciamento do SANtricity:</block>
   <block id="8067406a66fe34c09bf78be3e6ae6fc1" category="list-text">System Manager -- uma interface baseada na Web usada para gerenciar um storage array individual em sua rede.</block>
   <block id="4c8fa256f7bb6a36c0dff2d7c9f2a7d3" category="list-text">Unified Manager -- uma interface baseada na Web usada para visualizar e gerenciar todos os storages de armazenamento em sua rede.</block>
-  <block id="9cd5d105b8b19ef4ba01cc21ecc14cdc" category="admonition">Os storage arrays EF600 e EF300 não são compatíveis com espelhamento síncrono ou thin volumes.</block>
   <block id="0472921e1ddce2239a2bd92ea276d1c2" category="section-title">Gerente do sistema da SANtricity</block>
   <block id="12491fe4846acc1919e62f4155149b40" category="paragraph">O System Manager é um software de gerenciamento baseado na Web incorporado a cada controlador. Para acessar a interface do usuário, aponte um navegador para o endereço IP do controlador. Um assistente de configuração ajuda você a começar com a configuração do sistema.</block>
   <block id="e6f420d96363bcc9439b0954a152e61f" category="paragraph">O System Manager oferece uma variedade de recursos de gerenciamento, incluindo:</block>
@@ -1605,7 +1604,6 @@
   <block id="53321121376cbf9cfb46a577dee29de0" category="paragraph">Normalmente, deve estar a cerca de 10 km (6,2 milhas) do storage array local para atender aos requisitos de latência e desempenho do aplicativo.</block>
   <block id="2674ee15229a9426f143cd4d388c4f64" category="summary">O espelhamento síncrono replica volumes de dados em tempo real para garantir disponibilidade contínua.</block>
   <block id="056f32c2f708736098c46799ad3bd5e2" category="doc">Como o espelhamento síncrono funciona</block>
-  <block id="b84bb83d3d8cd48ddc066fe0c6d41ead" category="paragraph">O espelhamento síncrono não está disponível no storage array EF600 ou EF300.</block>
   <block id="b899ad76c405a74be329c23b00b3e97c" category="paragraph">O espelhamento síncrono alcança um objetivo de ponto de recuperação (RPO) sem perda de dados ao dispor uma cópia dos dados importantes se um desastre ocorrer em um dos dois storage arrays. A cópia é idêntica aos dados de produção a cada momento, porque cada vez que uma gravação é feita no volume primário, uma gravação é feita no volume secundário. O host não recebe uma confirmação de que a gravação foi bem-sucedida até que o volume secundário seja atualizado com êxito com as alterações feitas no volume primário.</block>
   <block id="beb80eb40ddf731a8581da9d26fa3fbb" category="paragraph">Esse tipo de espelhamento é ideal para fins de continuidade dos negócios, como recuperação de desastres.</block>
   <block id="054721f325f782101975d39bd636ee64" category="section-title">Relação de espelhamento síncrono</block>
@@ -1680,7 +1678,6 @@
   <block id="3daca167043ca93f9e451c47976f3077" category="list-text"><block ref="3daca167043ca93f9e451c47976f3077" category="inline-link-macro-rx"></block></block>
   <block id="9298215bd55bd7c3aa8a21b50a88e28e" category="summary">O recurso de espelhamento síncrono oferece replicação de dados on-line em tempo real entre storage arrays em uma distância remota.</block>
   <block id="460f1e8c3e603bf77d64ce3d701324a5" category="doc">Visão geral do espelhamento síncrono</block>
-  <block id="04bbd2c132c1093db28e447b3653bb4f" category="paragraph">Este recurso não está disponível no sistema de armazenamento EF600 ou EF300.</block>
   <block id="10d68dbaa5a809daf171f782598d85b7" category="section-title">O que é espelhamento síncrono?</block>
   <block id="6ba3fbf7a6558dc81522aedb59e1d590" category="paragraph">O _espelhamento síncrono_ replica volumes de dados em tempo real para garantir disponibilidade contínua. Os controladores de storage array gerenciam a operação de espelhamento, que é transparente para máquinas host e aplicações de software.</block>
   <block id="38bc026807a6898c592650e1d72a5852" category="list-text"><block ref="38bc026807a6898c592650e1d72a5852" category="inline-link-macro-rx"></block></block>
@@ -1766,7 +1763,6 @@
   <block id="2fbc03618bdd79bd2b648cf60c4a4587" category="list-text">Se você estiver usando unidades com capacidade de segurança, o volume primário e o volume secundário devem ter configurações de segurança compatíveis. Esta restrição não é imposta; portanto, você deve verificá-la por conta própria.</block>
   <block id="509ffc09fff4e17a95981281c2c55ffa" category="list-text">Se você estiver usando unidades com capacidade segura, o volume primário e o volume secundário deverão usar o mesmo tipo de unidade. Esta restrição não é imposta; portanto, você deve verificá-la por conta própria.</block>
   <block id="60d7e2cd5292c4fbff9e9a4350dcfbbf" category="summary">Se você planeja usar o espelhamento síncrono, tenha em mente os seguintes requisitos.</block>
-  <block id="ada2454c6d83cd46018f8d1e49aa4123" category="paragraph">O espelhamento síncrono não está disponível no storage array EF300 ou EF600.</block>
   <block id="7c064296b0790330119d00fd4683a7bf" category="list-text">Seus storage arrays locais e remotos são conectados por meio de uma malha Fibre Channel.</block>
   <block id="27d2299651367750033b7027a7ecc725" category="paragraph">A comunicação para espelhamento síncrono é compatível apenas com controladoras com portas de host Fibre Channel (FC).</block>
   <block id="997916cd9c2054e70af916414c1f152b" category="paragraph">O espelhamento síncrono usa a porta de host com número mais alto em cada controlador, no storage array local e no storage array remoto. A porta de host 4 do adaptador de barramento do host do controlador (HBA) é normalmente reservada para transmissão de dados espelhados.</block>
@@ -1802,7 +1798,6 @@
   <block id="8bebe193e8263bbdbb6d3251ed6d4283" category="paragraph">Se dois storage arrays em uma configuração de espelhamento forem desconetados e o lado primário de um grupo de consistência de espelho for forçado a uma função secundária, e o lado secundário de um grupo de consistência de espelho for promovido a uma função primária, então, quando a comunicação for restaurada, os grupos de consistência de espelho em ambos os storage arrays serão colocados no estado de mudança de função em andamento.</block>
   <block id="9951fc13f78fa9806a3512b46bdf9717" category="paragraph">O sistema concluirá o processo de mudança de função transferindo os logs de mudança, sincronizando novamente, definindo o estado do grupo de consistência do espelho de volta para um estado operacional normal e continuando com sincronizações periódicas.</block>
   <block id="2f59e5e07529259b42cbcffc6e0119dd" category="summary">Você pode alterar a função entre volumes em um par espelhado. Você pode fazer isso rebaixando o volume primário para a função secundária ou promovendo o volume secundário para a função principal.</block>
-  <block id="cd038504338f9921b8afe6d5ed6c6232" category="paragraph">O espelhamento síncrono não está disponível no sistema de storage EF600 ou EF300.</block>
   <block id="0245f98be9f226714787bc74dbd48f43" category="list-text">Quando um volume primário é rebaixado para a função secundária, o volume secundário nesse par espelhado é promovido para a função primária e vice-versa.</block>
   <block id="a72c809a31c6627b4b96d6e129a3b049" category="list-text">Quando o volume primário é rebaixado para a função secundária, os hosts que foram atribuídos a esse volume não têm mais acesso de gravação a ele.</block>
   <block id="9a0818e3b9bcfa44978ce5beb3948bb5" category="list-text">Quando o volume secundário é promovido à função principal, todos os hosts que estiverem acessando esse volume agora poderão gravar nele.</block>
@@ -1911,7 +1906,6 @@
   <block id="06ec0a3e9cca78e8802e665f8824bd35" category="paragraph">Uma reinicialização do controlador causa uma alteração de propriedade de volume no lado primário do proprietário do controlador preferido para o controlador alternativo no storage de armazenamento.</block>
   <block id="a5f1724da2375d10d5b700c9a4e1b4c9" category="paragraph">Às vezes, uma gravação remota é interrompida por uma reinicialização do controlador ou por um ciclo de energia do storage antes de poder ser gravada no volume secundário. O controlador não precisa executar uma sincronização completa do par espelhado, neste caso.</block>
   <block id="ef7c0136fda8298ef70bc3f610d1faed" category="paragraph">Quando uma gravação remota foi interrompida durante uma reinicialização do controlador, o novo proprietário do controlador no lado principal lê as informações armazenadas em um arquivo de log no volume de capacidade reservada do proprietário do controlador preferido. Em seguida, o novo proprietário da controladora copia os blocos de dados afetados do volume primário para o volume secundário, eliminando a necessidade de uma sincronização completa dos volumes espelhados.</block>
-  <block id="2df1194323f38bb1b30fdb6a9b3d4da3" category="paragraph">Esse recurso não está disponível para espelhamento síncrono no sistema de storage EF600 ou EF300.</block>
   <block id="c55f402947317db9e18ccc8a27f96d43" category="summary">Siga estas diretrizes antes de criar um grupo de consistência espelhada.</block>
   <block id="49273afd5fb66a23636df7a2212b8255" category="doc">O que eu preciso saber antes de criar um grupo de consistência de espelho?</block>
   <block id="894004f68675fec0d6e9c10e77dac3df" category="paragraph">Você cria um grupo de consistência no Unified Manager no assistente criar pares espelhados.</block>
@@ -3133,8 +3127,6 @@
   <block id="2ab0aa4e6f963bdda6156f57930e7a34" category="list-text">No System Manager, localize e registe o número de série do chassis. Você pode visualizar este número de série passando o Mouse sobre o bloco do Centro de suporte.</block>
   <block id="d8ab4f4f4bd758e305ce24ae089739e7" category="list-text">No System Manager, localize o identificador de ativação da funcionalidade. Vá para menu:Configurações[sistema] e role para baixo até *Complementos*. Procure o *Feature Enable Identifier*. Registe o número do identificador de ativação da funcionalidade.</block>
   <block id="1e892535381bacc3eae14862eb515b1a" category="list-text">Localize e grave o código para a ativação da funcionalidade. Para pacotes de recursos, esse código é fornecido nas instruções apropriadas para executar a conversão.</block>
-  <block id="b7c76db9b2472e615129452598c32a70" category="inline-link">Centro de Documentação de sistemas NetApp e-Series</block>
-  <block id="19c1dae7ed1abf9eb3b6c5146df9b1d5" category="paragraph">As instruções do NetApp estão disponíveis em<block ref="da76044833cc021823434c8291982304" category="inline-link-rx"></block>.</block>
   <block id="ead7d7ce373cd886b6b7a1a60db53284" category="paragraph">Para recursos premium, você pode acessar o código de ativação no site de suporte, como segue:</block>
   <block id="e7626dadbaccf1c6de0466c8e9271bce" category="list-text">Inicie sessão no<block ref="9a6f401ca1e7e89d8a0c29fb0cbe81b7" category="inline-link-rx"></block>.</block>
   <block id="78e85ed9fdf2fdf631f1825f112c9596" category="list-text">Aceda a *licenças de software* para o seu produto.</block>
@@ -3958,7 +3950,6 @@
   <block id="33241b5eb2658e3585f8eaba05ba2f89" category="doc">Volumes de acesso</block>
   <block id="e6d11ff06b4fbf2dfe6c6c9c235884bd" category="paragraph">O volume de acesso é usado na seguinte instância:</block>
   <block id="da5b269ce13f310ea60da5646f66f4df" category="list-text">*Gerenciamento na banda* -- o volume de acesso é usado para uma conexão na banda para gerenciar o storage array. Isso só pode ser feito se você estiver gerenciando o storage array com a interface de linha de comando (CLI).</block>
-  <block id="b07f190bd057ec5ae997cb6fe0661683" category="paragraph">O gerenciamento na banda não está disponível para sistemas de storage EF600 ou EF300.</block>
   <block id="c77cfe09f0da7405a83c73fb323b653d" category="paragraph">Um volume de acesso é criado automaticamente na primeira vez que você atribui um volume a um host. Por exemplo, se você atribuir volume_1 e volume_2 a um host, ao visualizar os resultados dessa atribuição, verá três volumes (volume_1, volume_2 e Access).</block>
   <block id="1f7334c99cc83f3bab939dd30e1ec973" category="paragraph">Se você não estiver criando automaticamente hosts ou gerenciando um storage array na banda com a CLI, não precisará do volume de acesso e poderá liberar o LUN excluindo o volume de acesso. Essa ação remove a atribuição de volume para LUN, bem como quaisquer conexões de gerenciamento na banda para o host.</block>
   <block id="29cc125c3ada656cc9ed54964f238cdf" category="summary">Você pode executar várias ações diferentes em um volume: Aumentar a capacidade, excluir, copiar, inicializar, redistribuir, alterar a propriedade, alterar as configurações de cache e alterar as configurações de digitalização de Mídia.</block>
@@ -4634,7 +4625,6 @@
   <block id="824735b7ccd41f0f46e67057d1a5caa5" category="paragraph">Volumes finos</block>
   <block id="52334a81da7547dbe0a5723b5066a830" category="list-text">Os volumes finos são criados apenas a partir de um pool, não de um grupo de volumes.</block>
   <block id="ea7a3e597c665a39ba483dcd4c6f8800" category="list-text">Os volumes finos devem ser RAID 6.</block>
-  <block id="5b48e77fd7668c15e4d278280b54ae19" category="list-text">Os volumes finos não estão disponíveis no sistema de armazenamento EF600 ou EF300.</block>
   <block id="ab1005edb422f1f2812bee5e6a3ee9b1" category="list-text">Você deve usar a CLI para criar thin volumes.</block>
   <block id="eca1fedfbba5199344e1611bffc12099" category="list-text">Ao contrário dos volumes espessos, o espaço necessário para o volume fino não é alocado durante a criação, mas é fornecido, sob demanda em um momento posterior.</block>
   <block id="e2ecdd5ccb060b8eb5cdc94fe0dbc8ca" category="list-text">Um volume fino permite que você superaloque seu tamanho. Ou seja, você pode atribuir um tamanho de LUN maior que o tamanho do volume. Em seguida, você pode expandir o volume conforme necessário (se necessário, adicionando unidades no processo) sem expandir o tamanho do LUN e, portanto, sem desconetar os usuários.</block>
@@ -5046,7 +5036,6 @@
   <block id="638b5ec826787200f55db76541b5b778" category="paragraph">Um grupo de volumes pode conter unidades que são capazes de DA ou não, mas todas as unidades devem ser capazes de DA para você usar esse recurso.</block>
   <block id="67f499ebbd7fdad55cde14381c77d246" category="paragraph">Mostra se o provisionamento de recursos está disponível para este grupo. O provisionamento de recursos é um recurso disponível nas matrizes de armazenamento EF300 e EF600, que permite que os volumes sejam colocados em uso imediatamente sem processo de inicialização em segundo plano.</block>
   <block id="583c0f2e390971cb9f4ba4ce9747868e" category="paragraph">Mostra se a proteção contra perda de prateleira está disponível. A proteção contra perda de prateleira garante a acessibilidade aos dados nos volumes de um grupo de volumes se ocorrer uma perda total de comunicação com uma prateleira.</block>
-  <block id="fd12b513859f856de91f86c6941047de" category="paragraph">Mostra se a proteção contra perda de gaveta está disponível, que é fornecida somente se você estiver usando uma prateleira de unidade que contém gavetas. A proteção contra perda de gaveta garante a acessibilidade aos dados nos volumes em um grupo de volumes se ocorrer uma perda total de comunicação com uma única gaveta em um compartimento de unidades.</block>
   <block id="145bb60ec8160f7c202bcdea28c6a17a" category="paragraph">Mostra os tamanhos de bloco que podem ser criados para os volumes no grupo:</block>
   <block id="f94466cc14329c7744e6e57db10ed742" category="example-title">Caraterísticas de acionamento do método manual</block>
   <block id="5ca219b54399500b176823f866ee1383" category="paragraph">Tipo de material</block>
@@ -5650,7 +5639,6 @@
   <block id="23509c39f2453599ca0877d32956ae09" category="list-text">A capacidade de um volume espesso é alocada quando o volume é criado.</block>
   <block id="5310bc5e64d1f64e025eb1c642e2bba8" category="list-text">A capacidade de um volume fino é alocada como dados quando gravados no volume.</block>
   <block id="059801af7cde1a87cf3c098887a187f9" category="paragraph">O thin Provisioning ajuda a evitar o desperdício de capacidade alocada e pode economizar às empresas em custos iniciais de storage. No entanto, o provisionamento total beneficia de menos latência porque todo o storage é alocado de uma só vez quando volumes espessos são criados.</block>
-  <block id="e2b8fbf01b4ff47fbb96c92ac379ea78" category="paragraph">Os sistemas de storage EF600 e EF300 não oferecem suporte ao thin Provisioning.</block>
   <block id="089e479d3dc64139ab1266d151b32d32" category="section-title">Caraterísticas dos volumes</block>
   <block id="796dfd432b6f644d61e91352515bb6d2" category="paragraph">Cada volume em um pool ou grupo de volumes pode ter suas próprias caraterísticas individuais com base em que tipo de dados serão armazenados nele. Algumas dessas caraterísticas incluem:</block>
   <block id="7c1d052253e33c65465a5eb406bb3dc2" category="list-text">*Tamanho do segmento* -- Um segmento é a quantidade de dados em kilobytes (KiB) que é armazenada em uma unidade antes que a matriz de armazenamento se mova para a próxima unidade na faixa (grupo RAID). O tamanho do segmento é igual ou inferior à capacidade do grupo de volume. O tamanho do segmento é fixo e não pode ser alterado para pools.</block>
@@ -8570,7 +8558,6 @@
   <block id="e4709a73a287a5f033f5b1b5142cb74d" category="inline-image-macro">Definições do sistema</block>
   <block id="de8011abde4e4344c82af51912b3ce19" category="paragraph"><block ref="2bce2265bb1e82bb0d0858adf2dafedf" category="inline-image-macro-rx" type="image"></block> *Configurações do sistema*</block>
   <block id="9dcfdd4141be874fb7eb13880a5fd525" category="paragraph"><block ref="1cb7eabea009b4b9cfe98093989eadbf" category="inline-image-macro-rx" type="image"></block> *Suporte*</block>
-  <block id="a06a26693ca66f654ff2c2dcecc3e13f" category="paragraph">O Unified Manager é um software baseado na Web usado para gerenciar todo o seu domínio. Em uma visualização central, você pode ver o status de todos os arrays e-Series e EF-Series mais recentes, como E4000, E2800, EF280, EF300, E5700, EF570 e EF600. Você também pode executar operações em lote em matrizes de armazenamento selecionadas.</block>
   <block id="bb426997d075117a34b0e82e716e9988" category="inline-image-macro">Descubra o storage array</block>
   <block id="49e4791fdcd34bdf6b59ed172268d67f" category="paragraph"><block ref="9ff56b9b0514866913bcdc835ac16829" category="inline-image-macro-rx" type="image"></block> *Descubra matrizes de armazenamento*</block>
   <block id="9506f0fd0f7f1b07960b15b4c9e68d1a" category="inline-image-macro">Lançamento</block>
@@ -8615,7 +8602,6 @@
   <block id="f1683bd5111055cff52f3434b437bc43" category="admonition">O período de digitalização do material predefinido é de 120 dias.</block>
   <block id="630fb851299f40643b158fbf236a2e8c" category="list-text">*Tamanho de bloco nativo* – o tamanho do bloco do volume corresponde ao tamanho do bloco da unidade, 512 ou 4K.</block>
   <block id="f6c667584c393a129ba0a1a453306311" category="list-text">* Tamanho de bloco emulado 512 * - as unidades são 4K, mas o tamanho de bloco relatado é 512.</block>
-  <block id="478ac1c2fc93cbde8a7f38011e1743e9" category="paragraph">O SMcli está disponível diretamente através do Gerenciador do sistema SANtricity. Esta versão para download do SMcli está disponível nos controladores E4000, EF600, EF300, E5700, EF570, E2800 e EF280. Para fazer o download do SMcli no Gerenciador do sistema SANtricity, selecione *Configurações* &gt; *sistema* e *Complementos* &gt; *Interface de linha de comando* .</block>
   <block id="8372cda02b92707718d83873eed70eff" category="image-alt">Estrutura de pools e grupos de volume</block>
   <block id="861b7c78b853932749bb7fa53551562a" category="image-alt">Visão geral do Snapshot</block>
   <block id="454b39575eef78952a66832d854eb9a8" category="paragraph">Você pode gerenciar o storage do sistema por meio do Gerenciador de sistemas do SANtricity.</block>
@@ -8742,4 +8728,25 @@
   <block id="3ff0cf51d8c2e66a61c1a36c2258ffb7" category="sidebar">Com o software SANtricity 11,9, você atinge o máximo de performance e utilização dos arrays de flash híbrido e-Series e EF-Series all-flash para aplicações de workloads pesados, incluindo análise de dados, vigilância por vídeo, backup e recuperação.</block>
   <block id="18ca0e475e67b79b5c1367dc3fece234" category="sidebar">Documentação do software SANtricity 11,9</block>
   <block id="1bde2299408b1369159daef73cb92e8b" category="sidebar">SANtricity software 11,9 docs</block>
+  <block id="bea9b4f39c26a537662fed44c4b4ab7e" category="admonition">Os storage arrays EF600/EF600C e EF300/EF300C não são compatíveis com espelhamento síncrono ou thin volumes.</block>
+  <block id="07ceb34078b6425ead2bdf25c28b4765" category="paragraph">O Unified Manager é um software baseado na Web usado para gerenciar todo o seu domínio. Em uma visualização central, você pode ver o status de todos os arrays e-Series e EF-Series mais recentes, como E4000, E2800, EF280, EF300, E5700, EF570, EF600, EF300C e EF600C. Você também pode executar operações em lote em matrizes de armazenamento selecionadas.</block>
+  <block id="a8d536a226bc5040b931337a7644185d" category="paragraph">O espelhamento síncrono não está disponível no storage array EF600/EF600C ou EF300/EF300C.</block>
+  <block id="68d28abd2b869bd5795d298dfa9e846e" category="paragraph">Esse recurso não está disponível no sistema de storage EF600/EF600C ou EF300/EF300C.</block>
+  <block id="465143b73392c408d4e639ff6ed7cf18" category="paragraph">O espelhamento síncrono não está disponível no storage array EF300/EF300C ou EF600/EF600C.</block>
+  <block id="c1ef781eafa3554e3ab8e8623b4e5a71" category="paragraph">O espelhamento síncrono não está disponível no sistema de storage EF600/EF600C ou EF300/EF300C.</block>
+  <block id="5a7b6df104eae510976ebef6d294bbc2" category="paragraph">Esse recurso não está disponível para espelhamento síncrono no sistema de storage EF600/EF600C ou EF300/EF300C.</block>
+  <block id="b9e88ad6836c4f5d794f382de8f1f2c9" category="admonition">O DULBE não é compatível com storage arrays EF300C ou EF600C no momento.</block>
+  <block id="4b8add2dc8ff6506b02ecbd9ce368929" category="summary">O provisionamento de recursos é um recurso disponível nas matrizes de armazenamento EF300, EF300C, EF600 e EF600C, que permite que os volumes sejam colocados em uso imediatamente sem processo de inicialização em segundo plano.</block>
+  <block id="90992e53bcf79cefee988e4147be01b6" category="paragraph">O gerenciamento na banda usando o volume de acesso não está disponível para sistemas de storage E4000, EF600/EF600C ou EF300/EF300C.</block>
+  <block id="16ebf1283fdb23275c2211d15a82e2cd" category="list-text">Os volumes finos não estão disponíveis no sistema de armazenamento EF600/EF600C ou EF300/EF300C.</block>
+  <block id="1ac9fe85275ed11ba0a95e5559f5af80" category="paragraph">Mostra se a proteção contra perda de gaveta está disponível, que é fornecida somente se você estiver usando uma prateleira de unidade que contém gavetas. A proteção contra perda de gaveta garante a acessibilidade aos dados nos volumes em um grupo de volumes se ocorrer uma perda total de comunicação com uma única gaveta em um compartimento de unidades.</block>
+  <block id="d1395fc90f77b84babf353a6d9d715db" category="list-text">2.048 volumes (séries EF600, EF600C e E5700)</block>
+  <block id="896a61fe313f0f38c6a4575f53d2958d" category="list-text">1.024 volumes (EF300 e EF300C)</block>
+  <block id="61c9873f4f28e9fd9310c86bf6f0e33f" category="paragraph">O SMcli está disponível diretamente através do Gerenciador do sistema SANtricity. Esta versão para download do SMcli está disponível nos controladores E4000, EF600, EF600C, EF300, EF300C, E5700, EF570, E2800 e EF280. Para fazer o download do SMcli no Gerenciador do sistema SANtricity, selecione *Configurações* &gt; *sistema* e *Complementos* &gt; *Interface de linha de comando* .</block>
+  <block id="4f0494c1ee4d34a0be2e413265889dcb" category="paragraph">Os sistemas de storage EF600/EF600C e EF300/EF300C não oferecem suporte ao thin Provisioning.</block>
+  <block id="baee5b8c18b240b4edfcc1ae3fe154f0" category="section-title">Novos recursos na versão 11.90R1</block>
+  <block id="efe2c9d7be92af10ac48d790dd8ccfed" category="paragraph">Novos modelos de sistemas de armazenamento – EF300C e EF600C</block>
+  <block id="0b2fb9383075b5994701c94b27e4b6ee" category="paragraph">Esta versão apresenta os sistemas de storage all-flash NVMe EF300C e EF600C. O EF300C e o EF600C são versões flash de alta capacidade dos sistemas de storage EF300 e EF600 existentes. As unidades SSD NVMe de alta capacidade de tamanhos 30TB ou 60TB são compatíveis com o EF300C e o EF600C. O EF300C/EF600C é compatível para uso do Dynamic Disk Pool somente sem suporte a RAID legado.</block>
+  <block id="c4c050a1cbe127eb24c705844a070872" category="paragraph">Suporte para interfaces SAS de 12GB GB no EF4000</block>
+  <block id="e8b3561f4b15fa164cdd5717ae511188" category="paragraph">A controladora E4000 agora oferece suporte a placas de interface de host SAS de 12GB GB.</block>
 </blocks>

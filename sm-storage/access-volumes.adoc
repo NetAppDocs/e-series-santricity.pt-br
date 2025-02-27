@@ -19,7 +19,7 @@ O volume de acesso é usado na seguinte instância:
 +
 [NOTE]
 ====
-O gerenciamento na banda não está disponível para sistemas de storage EF600 ou EF300.
+O gerenciamento na banda usando o volume de acesso não está disponível para sistemas de storage E4000, EF600/EF600C ou EF300/EF300C.
 
 ====
 

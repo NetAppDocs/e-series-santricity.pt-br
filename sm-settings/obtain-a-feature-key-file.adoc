@@ -27,9 +27,6 @@ Esta tarefa descreve como reunir as informações necessárias para o recurso e,
 . No System Manager, localize o identificador de ativação da funcionalidade. Vá para menu:Configurações[sistema] e role para baixo até *Complementos*. Procure o *Feature Enable Identifier*. Registe o número do identificador de ativação da funcionalidade.
 . Localize e grave o código para a ativação da funcionalidade. Para pacotes de recursos, esse código é fornecido nas instruções apropriadas para executar a conversão.
 +
-As instruções do NetApp estão disponíveis em https://www.netapp.com/support-and-training/documentation/eseries-santricity/["Centro de Documentação de sistemas NetApp e-Series"^].
-
-+
 Para recursos premium, você pode acessar o código de ativação no site de suporte, como segue:
 
 +

@@ -15,7 +15,7 @@ O SANtricity Unified Manager inclui opções de configuração para os recursos 
 
 [NOTE]
 ====
-O espelhamento síncrono não está disponível no sistema de storage EF600 ou EF300.
+O espelhamento síncrono não está disponível no sistema de storage EF600/EF600C ou EF300/EF300C.
 
 ====
 

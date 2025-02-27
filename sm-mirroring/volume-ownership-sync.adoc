@@ -15,7 +15,7 @@ Você pode alterar o proprietário do controlador preferido em um par espelhado.
 
 [NOTE]
 ====
-Esse recurso não está disponível para espelhamento síncrono no sistema de storage EF600 ou EF300.
+Esse recurso não está disponível para espelhamento síncrono no sistema de storage EF600/EF600C ou EF300/EF300C.
 
 ====
 Se o volume primário do par espelhado for de propriedade da controladora A, o volume secundário também será de propriedade da controladora A do storage array remoto. Alterar o proprietário do volume primário mudará automaticamente o proprietário do volume secundário para garantir que ambos os volumes sejam propriedade do mesmo controlador. As alterações de propriedade atuais no lado primário propagam-se automaticamente para as alterações de propriedade atuais correspondentes no lado secundário.

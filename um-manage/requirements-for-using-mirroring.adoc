@@ -29,7 +29,7 @@ Se você planeja configurar o espelhamento, tenha em mente os seguintes requisit
 
 [NOTE]
 ====
-O espelhamento síncrono não está disponível no storage array EF600 ou EF300.
+O espelhamento síncrono não está disponível no storage array EF600/EF600C ou EF300/EF300C.
 
 ====
 * Você precisa ter dois storage arrays.

@@ -224,7 +224,7 @@ O System Manager não oferece uma opção para criar thin volumes. Se você quis
 ====
 [NOTE]
 ====
-Os volumes finos não estão disponíveis no sistema de armazenamento EF600 ou EF300.
+Os volumes finos não estão disponíveis no sistema de armazenamento EF600/EF600C ou EF300/EF300C.
 
 ====
 [cols="25h,~"]

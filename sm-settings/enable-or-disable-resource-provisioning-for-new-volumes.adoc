@@ -22,6 +22,10 @@ NOTE: Por padrão, o provisionamento de recursos é ativado em sistemas onde as 
 .Antes de começar
 * Você precisa ter um storage array EF300 ou EF600.
 * Você precisa ter grupos ou pools de volume SSD, em que todas as unidades sejam compatíveis com a funcionalidade de recuperação de erro de ativação de erro de bloco lógico (DULBE) desalocada ou não escrita do NVMe.
++
+
+NOTE: O DULBE não é compatível com storage arrays EF300C ou EF600C no momento.
+
 
 
 .Sobre esta tarefa

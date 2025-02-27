@@ -15,7 +15,7 @@ O espelhamento síncrono replica volumes de dados em tempo real para garantir di
 
 [NOTE]
 ====
-O espelhamento síncrono não está disponível no storage array EF600 ou EF300.
+O espelhamento síncrono não está disponível no storage array EF600/EF600C ou EF300/EF300C.
 
 ====
 O espelhamento síncrono alcança um objetivo de ponto de recuperação (RPO) sem perda de dados ao dispor uma cópia dos dados importantes se um desastre ocorrer em um dos dois storage arrays. A cópia é idêntica aos dados de produção a cada momento, porque cada vez que uma gravação é feita no volume primário, uma gravação é feita no volume secundário. O host não recebe uma confirmação de que a gravação foi bem-sucedida até que o volume secundário seja atualizado com êxito com as alterações feitas no volume primário.

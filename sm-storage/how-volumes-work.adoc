@@ -43,7 +43,7 @@ O thin Provisioning ajuda a evitar o desperdício de capacidade alocada e pode e
 
 [NOTE]
 ====
-Os sistemas de storage EF600 e EF300 não oferecem suporte ao thin Provisioning.
+Os sistemas de storage EF600/EF600C e EF300/EF300C não oferecem suporte ao thin Provisioning.
 
 ====
 

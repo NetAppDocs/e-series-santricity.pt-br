@@ -31,7 +31,7 @@ Para ativar e configurar o espelhamento entre dois arrays, você deve usar a int
 
 [NOTE]
 ====
-O espelhamento síncrono não está disponível no storage array EF300 ou EF600.
+O espelhamento síncrono não está disponível no storage array EF300/EF300C ou EF600/EF600C.
 
 ====
 * Você precisa ter dois storage arrays.

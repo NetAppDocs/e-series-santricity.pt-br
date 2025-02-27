@@ -15,7 +15,7 @@ O espelhamento é configurado na interface do SANtricity Unified Manager.
 
 [NOTE]
 ====
-O espelhamento síncrono não está disponível no storage array EF600 ou EF300.
+O espelhamento síncrono não está disponível no storage array EF600/EF600C ou EF300/EF300C.
 
 ====
 Para ativar e configurar o espelhamento entre dois arrays, verifique o seguinte:

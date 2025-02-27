@@ -16,7 +16,7 @@ Siga estas diretrizes antes de criar um grupo de consistência espelhada.
 
 [NOTE]
 ====
-O espelhamento síncrono não está disponível no sistema de storage EF600 ou EF300.
+O espelhamento síncrono não está disponível no sistema de storage EF600/EF600C ou EF300/EF300C.
 
 ====
 Você cria um grupo de consistência no Unified Manager no assistente criar pares espelhados.

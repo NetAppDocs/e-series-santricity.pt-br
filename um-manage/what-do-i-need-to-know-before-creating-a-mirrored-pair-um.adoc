@@ -25,6 +25,6 @@ Antes de criar um par espelhado, siga estas diretrizes.
 
 [NOTE]
 ====
-O espelhamento síncrono não está disponível no sistema de storage EF600 ou EF300.
+O espelhamento síncrono não está disponível no sistema de storage EF600/EF600C ou EF300/EF300C.
 
 ====

@@ -18,7 +18,7 @@ Você também pode alterar o ponto percentual no qual um alerta (limite de aviso
 
 [NOTE]
 ====
-Este recurso não está disponível no sistema de armazenamento EF600 ou EF300.
+Esse recurso não está disponível no sistema de storage EF600/EF600C ou EF300/EF300C.
 
 ====
 O sistema expande automaticamente a capacidade alocada com base no limite de capacidade alocado. O limite de capacidade alocado permite limitar o crescimento automático do volume fino abaixo da capacidade reportada. Quando a quantidade de dados gravados se aproxima da capacidade alocada, você pode alterar o limite de capacidade alocada.

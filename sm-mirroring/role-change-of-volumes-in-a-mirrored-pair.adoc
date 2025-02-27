@@ -15,7 +15,7 @@ Você pode alterar a função entre volumes em um par espelhado. Você pode faze
 
 [NOTE]
 ====
-O espelhamento síncrono não está disponível no sistema de storage EF600 ou EF300.
+O espelhamento síncrono não está disponível no sistema de storage EF600/EF600C ou EF300/EF300C.
 
 ====
 Reveja as seguintes informações sobre a operação de mudança de função:

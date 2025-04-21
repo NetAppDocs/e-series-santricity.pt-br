@@ -7465,8 +7465,6 @@
   <block id="fb7e65669e5874b9e0b75fbd623f7da4" category="paragraph">Durante uma atualização online do firmware da unidade, se ocorrer uma transferência de volume durante o processo de reconstrução rápida, o sistema inicia uma reconstrução completa do volume transferido. Esta operação pode levar uma quantidade considerável de tempo. O tempo real de reconstrução total depende de vários fatores, incluindo a quantidade de atividade de e/S que ocorre durante a operação de reconstrução, o número de unidades no grupo de volumes, a definição de prioridade de reconstrução e o desempenho da unidade.</block>
   <block id="53f6e38bfb8737cd78f3afe40356d59e" category="summary">No Gerenciador de sistema do SANtricity, você configura o recurso AutoSupport seguindo estas etapas.</block>
   <block id="abcd71b1bdd83d175115a06e7bd6993c" category="doc">Fluxo de trabalho para o recurso AutoSupport</block>
-  <block id="0053cb3da5cd9357da42c9285388e7c5" category="summary">No Gerenciador de sistema do SANtricity, você pode atualizar o software e o firmware do controlador seguindo estas etapas.</block>
-  <block id="638e87c9a312fe766009341e23b4dbd4" category="doc">Fluxo de trabalho para atualização de software e firmware do controlador</block>
   <block id="c5140ae7574b7c90722120fd0af36a50" category="summary">Você deve configurar o SANtricity Unified Manager com uma senha de administrador para protegê-lo contra acesso não autorizado.</block>
   <block id="1115a6e562080201b09b1af0e9c4f13a" category="section-title">Senha de administrador e perfis de usuário</block>
   <block id="95bd4ed85be27a910b2d6e09c064718e" category="paragraph">Ao iniciar o Unified Manager pela primeira vez, você será solicitado a definir uma senha de administrador. Qualquer usuário que tenha a senha de administrador pode fazer alterações de configuração nos storages.</block>
@@ -7960,11 +7958,7 @@
   <block id="ab3de8f388e157ef857eff24de2bed3e" category="list-text">Nos storages a serem usados como destinos, faça backup de sua configuração usando o System Manager.</block>
   <block id="00f9c2b4277d32e82da963383072cd9d" category="list-text">No Unified Manager, vá para a página *Manage* e importe as configurações.</block>
   <block id="8f71af4dbe4497365aac35b2058f89d7" category="list-text">Na página *operações*, revise os resultados da operação Importar configurações.</block>
-  <block id="7d63fa7b66beb048adb4cb5412f78f29" category="summary">Você pode usar o Unified Manager para atualizar o software SANtricity os em vários storage arrays do mesmo tipo para uma versão mais recente.</block>
-  <block id="35a02fabedaff63c9eea49354c0479c7" category="doc">Como as atualizações funcionam</block>
   <block id="5b416e1633d16aad217a2e0fc2d097f8" category="section-title">Atualizar fluxo de trabalho</block>
-  <block id="37e1222cab25890a0cd0d01b19f4489d" category="paragraph">As etapas a seguir fornecem um fluxo de trabalho de alto nível para a realização de atualizações de software:</block>
-  <block id="bc2ada3b24f486f7b98ff3159828f426" category="list-text">Você faz o download do arquivo de software mais recente do SANtricity os a partir do site de suporte (um link está disponível no Unified Manager na página *suporte*). Salve o arquivo no sistema host de gerenciamento (o host onde você acessa o Unified Manager em um navegador) e, em seguida, descompacte o arquivo.</block>
   <block id="a200f8c4b71a38169e50e4e1757c92f0" category="list-text">No Gerenciador Unificado, você carrega o arquivo de software do SANtricity os e o arquivo NVSRAM no repositório (uma área do servidor proxy de serviços da Web onde os arquivos são armazenados). Pode adicionar ficheiros a partir do menu:Centro de Atualização[Atualizar software SANtricity os ou a partir do Centro de Atualização &gt; gerir repositório de software].</block>
   <block id="d1ba3ebc5172c097a542cb59c46118f4" category="list-text">Depois que os arquivos são carregados no repositório, você pode selecionar o arquivo a ser usado na atualização. Na página Atualizar o software SANtricity os (menu:Centro de atualização[Atualizar software SANtricity os]), selecione o ficheiro de software SANtricity os e o ficheiro NVSRAM. Depois de selecionar um ficheiro de software, é apresentada nesta página uma lista de matrizes de armazenamento compatíveis. Em seguida, selecione as matrizes de armazenamento que pretende atualizar com o novo software. (Não é possível selecionar matrizes incompatíveis.)</block>
   <block id="d07fed7a91e9b5ecf1b7a376a13d3c4e" category="list-text">Em seguida, você pode iniciar uma transferência e ativação imediata de software, ou você pode optar por preparar os arquivos para ativação posteriormente. Durante o processo de atualização, o Unified Manager executa as seguintes tarefas:</block>
@@ -8620,7 +8614,6 @@
   <block id="22ec79b8668bcaf4a33eed694079e8b1" category="summary">O recurso AutoSupport oferece suporte aos protocolos HTTPS e SMTP para entrega de despachos AutoSupport para suporte técnico.</block>
   <block id="dd0ab6e042458857b9d76ede295a637e" category="image-alt">Atualizar localizações de firmware</block>
   <block id="da31bdea5b9fdfa2bf077a70c49a1d66" category="image-alt">Fluxo de trabalho do AutoSupport</block>
-  <block id="0ceabfdc68af97f8a0c7393faf135de8" category="image-alt">Fluxo de trabalho de atualização de software e firmware do controlador</block>
   <block id="ece14770330886bc2d41238acbfe48aa" category="summary">SANtricity Unified Manager 7</block>
   <block id="3cd6f83d0a9a8330c077dfc98649ab8a" category="paragraph">Você pode configurar as configurações usadas pelo Gerenciador Unificado do SANtricity.</block>
   <block id="0be150145c60047c6667d2bfbc4085d9" category="image-alt">Conexão fora da banda ao cliente de gerenciamento de rede com um navegador da Web.</block>
@@ -8713,7 +8706,6 @@
   <block id="f0254fcd04a8e1df1dc8c778e6189b01" category="paragraph">Você pode obter e importar certificados assinados por CA para acesso seguro ao sistema de gerenciamento que hospeda o Gerenciador Unificado do SANtricity.</block>
   <block id="c5f9375676cadbc97263ea339c65e0df" category="paragraph">Antes que o SANtricity Unified Manager possa exibir e gerenciar recursos de storage, ele deve descobrir os storages que você deseja gerenciar na rede da organização. Você pode descobrir vários arrays ou descobrir um único array.</block>
   <block id="8205965c706fda540f0df394d1fd7df5" category="paragraph">Você pode usar o Gerenciador Unificado do SANtricity para importar configurações de um storage array para vários storage arrays. O recurso Importar configurações é uma operação em lote que economiza tempo quando você precisa configurar vários arrays na rede.</block>
-  <block id="2b8e903f9231328c5dd4ac194fe0ed99" category="paragraph">Você pode usar o Gerenciador Unificado do SANtricity para atualizar o software SANtricity os em vários storages do mesmo tipo para uma versão mais recente.</block>
   <block id="c5cdef1d414ec599aa9b2d1f28c67d4b" category="doc">Considerações para acessar o Gerenciador de sistema do SANtricity</block>
   <block id="cdaae564ece8b6f3561a5e657337c464" category="paragraph">Você configura o espelhamento assíncrono ou síncrono no Gerenciador Unificado do SANtricity e, em seguida, usa o Gerenciador de sistemas do SANtricity para gerenciar sincronizações.</block>
   <block id="69ffe5f70c823700a785fa58e3fbca15" category="paragraph">O SANtricity Unified Manager inclui opções de configuração para os recursos de espelhamento do SANtricity, que permitem que os administradores repliquem dados entre dois storage arrays para proteção de dados.</block>
@@ -8749,4 +8741,7 @@
   <block id="0b2fb9383075b5994701c94b27e4b6ee" category="paragraph">Esta versão apresenta os sistemas de storage all-flash NVMe EF300C e EF600C. O EF300C e o EF600C são versões flash de alta capacidade dos sistemas de storage EF300 e EF600 existentes. As unidades SSD NVMe de alta capacidade de tamanhos 30TB ou 60TB são compatíveis com o EF300C e o EF600C. O EF300C/EF600C é compatível para uso do Dynamic Disk Pool somente sem suporte a RAID legado.</block>
   <block id="c4c050a1cbe127eb24c705844a070872" category="paragraph">Suporte para interfaces SAS de 12GB GB no EF4000</block>
   <block id="e8b3561f4b15fa164cdd5717ae511188" category="paragraph">A controladora E4000 agora oferece suporte a placas de interface de host SAS de 12GB GB.</block>
+  <block id="bd720a6ead0034815d9206b7292e06e5" category="section-title">Novos recursos na versão 11.90R2</block>
+  <block id="15829e6cc8b585193d8f6910a672107c" category="inline-link">Notas de versão do e-Series 11,90</block>
+  <block id="a4c34f83987821dd1d99ef73febdd962" category="paragraph">Esta versão contém apenas pequenas alterações e não há novos recursos. Para obter mais informações sobre as alterações nesta versão, consulte o<block ref="1f7d7124974a1c2e3017c1729625e686" category="inline-link-rx"></block>.</block>
 </blocks>

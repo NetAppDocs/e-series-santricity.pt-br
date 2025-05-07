@@ -8744,4 +8744,6 @@
   <block id="bd720a6ead0034815d9206b7292e06e5" category="section-title">Novos recursos na versão 11.90R2</block>
   <block id="15829e6cc8b585193d8f6910a672107c" category="inline-link">Notas de versão do e-Series 11,90</block>
   <block id="a4c34f83987821dd1d99ef73febdd962" category="paragraph">Esta versão contém apenas pequenas alterações e não há novos recursos. Para obter mais informações sobre as alterações nesta versão, consulte o<block ref="1f7d7124974a1c2e3017c1729625e686" category="inline-link-rx"></block>.</block>
+  <block id="9f9aad17803bf869c53f2fdb3d1834b0" category="section-title">Conetividade limitada com SAML habilitado</block>
+  <block id="0961bfa4d0f83cb13b7f923407264db9" category="paragraph">Os seguintes recursos de storage array têm conetividade limitada com a autenticação JSON Web Token sempre que o SAML está habilitado.</block>
 </blocks>

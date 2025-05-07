@@ -66,9 +66,17 @@ Quando o SAML está ativado, os usuários não podem descobrir ou gerenciar o st
 Além disso, os seguintes clientes não podem acessar os serviços e recursos do storage array:
 
 * Janela de gerenciamento empresarial (EMW)
-* Interface de linha de comando (CLI)
 * Clientes de Software Developer Kits (SDK)
 * Clientes na banda
-* Clientes API REST de Autenticação básica HTTP
 * Faça login usando o endpoint padrão da API REST
+
+
+
+
+=== Conetividade limitada com SAML habilitado
+
+Os seguintes recursos de storage array têm conetividade limitada com a autenticação JSON Web Token sempre que o SAML está habilitado.
+
+* Interface de linha de comando (CLI)
+* Clientes API REST de Autenticação básica HTTP
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, mirroring, 
 summary: O Unified Manager inclui opções de configuração para os recursos de espelhamento do SANtricity, que permitem que os administradores repliquem dados entre dois storage arrays para proteção de dados. 
 ---
-= Como o espelhamento funciona
+= Saiba mais sobre o espelhamento SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

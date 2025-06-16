@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, re-create, snapshot, volume 
 summary: Você pode criar novamente um volume instantâneo ou um volume instantâneo do grupo de consistência de snapshot que você desativou anteriormente. A recriação de um volume instantâneo demora menos tempo do que a criação de um novo. 
 ---
-= Recriar o volume instantâneo
+= Recriar um volume de snapshot no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

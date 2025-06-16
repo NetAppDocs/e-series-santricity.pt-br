@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, view, act, operations, progress, 
 summary: Para ver e agir em operações de longa duração, use a página operações em andamento. 
 ---
-= Visualizar e agir sobre as operações em andamento
+= Visualize e atue nas operações em andamento no SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

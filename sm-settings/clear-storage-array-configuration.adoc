@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, clear, storage, array, configuration, 
 summary: Use a operação Limpar configuração quando quiser excluir todos os pools, grupos de volume, volumes, definições de host e atribuições de host do storage de armazenamento. 
 ---
-= Limpar a configuração do storage array
+= Limpar configuração do array de armazenamento no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font
@@ -108,4 +108,8 @@ X
 .Resultados
 * A configuração atual é excluída, destruindo todos os dados existentes no storage array.
 * Todas as unidades não são atribuídas.
++
+
+NOTE: O conjunto de armazenamento será ativado no modo de recuperação. Você deve sair do modo de recuperação antes de usar o conjunto de armazenamento. Consulte https://docs.netapp.com/us-en/e-series-santricity/sm-support/clear-recovery-mode.html["Limpar o modo de recuperação"^] para obter mais informações.
+
 

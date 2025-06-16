@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, perform, pre-upgrade, health, check 
 summary: Uma verificação de integridade é executada como parte do processo de atualização, mas você também pode executar uma verificação de integridade separadamente antes de começar. A verificação de integridade avalia os componentes do storage array para garantir que a atualização possa prosseguir. 
 ---
-= Execute a verificação de integridade pré-atualização
+= Execute uma verificação de integridade de pré-atualização no SANtricity Unified Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

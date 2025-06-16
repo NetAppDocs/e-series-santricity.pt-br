@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, delete, syslog, servers, alerts, 
 summary: Você pode excluir um servidor syslog para que ele não receba mais alertas. 
 ---
-= Exclua servidores syslog para alertas
+= Excluir servidores syslog para alertas no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

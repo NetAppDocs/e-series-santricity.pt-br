@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, locator, lights, 
 summary: 'Para encontrar a localização física de uma matriz de armazenamento em um gabinete, você pode ligar suas luzes de localizador (LED).' 
 ---
-= Ligue as luzes de localização da matriz de armazenamento
+= Ativar luzes do localizador de matriz de armazenamento no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, cancel, pending, snapshot, image 
 summary: Você pode cancelar uma imagem instantânea pendente antes de ser concluída. Os instantâneos ocorrem de forma assíncrona, e o status do instantâneo está pendente até que o instantâneo seja concluído. A imagem instantânea é concluída assim que a operação de sincronização for concluída. 
 ---
-= Cancelar imagem instantânea pendente
+= Cancelar uma imagem de instantâneo pendente no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, retrieve, health, image 
 summary: Pode rever uma imagem de estado do controlador. Uma imagem de integridade é um despejo de dados brutos da memória do processador do controlador que o suporte técnico pode usar para diagnosticar um problema com um controlador. 
 ---
-= Recupere a imagem de integridade
+= Recuperar imagem de saúde no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

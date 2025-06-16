@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, host port, identifiers, host 
 summary: Altere os identificadores de porta do host quando você quiser alterar o rótulo de usuário em um identificador de porta do host, adicionar um novo identificador de porta do host ao host ou excluir um identificador de porta do host do host. 
 ---
-= Alterar identificadores de porta do host para um host
+= Alterar os identificadores de porta do host para um host no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

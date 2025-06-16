@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, limit, drive, view, 
 summary: Se a matriz de armazenamento incluir unidades com diferentes tipos de atributos físicos e lógicos, a página hardware fornece campos de filtro que ajudam a limitar a visualização da unidade e localizar unidades específicas. 
 ---
-= Limite a vista da unidade
+= Filtrar a visualização da unidade no SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

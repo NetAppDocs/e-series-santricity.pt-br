@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, pools, volume group, 
 summary: 'Para provisionar o armazenamento, você cria um pool ou um grupo de volumes que conterá as unidades de disco rígido (HDD) ou de disco de estado sólido (SSD) que você deseja usar em seu storage array.' 
 ---
-= Como os pools e os grupos de volume funcionam
+= Como pools e grupos de volumes funcionam no software SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

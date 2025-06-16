@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, import, alert, settings 
 summary: Você pode importar configurações de alerta de um storage array para outros storage arrays. Esta operação em lote economiza tempo quando você precisa configurar vários arrays na rede. 
 ---
-= Importar definições de alerta
+= Importar configurações de alerta no SANtricity Unified Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

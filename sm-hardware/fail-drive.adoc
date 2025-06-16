@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, fail, drive, 
 summary: Se instruído a fazê-lo, você pode falhar manualmente uma unidade. 
 ---
-= Falha na unidade
+= Efetuar falha manual de uma unidade no SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

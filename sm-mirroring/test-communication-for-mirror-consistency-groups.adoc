@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, test, communication, mirror, consistency, groups, 
 summary: Você pode testar o link de comunicação para diagnosticar possíveis problemas de comunicação entre o storage de armazenamento local e o storage de armazenamento remoto associado a um grupo de consistência de espelho. 
 ---
-= Teste a comunicação para grupos de consistência de espelhos
+= Teste de comunicação para grupos de consistência espelhados no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, create, volume, group 
 summary: Você usa um grupo de volumes para criar um ou mais volumes acessíveis ao host. Um grupo de volumes é um contêiner para volumes com características compartilhadas, como nível e capacidade de RAID. 
 ---
-= Crie um grupo de volumes
+= Crie um grupo de volumes no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, resume, snapshot, image, rollback 
 summary: Se ocorrer um erro durante uma operação de reversão de imagem instantânea, a operação é pausada automaticamente. Você pode retomar uma operação de reversão que está em um estado de pausa. 
 ---
-= Retomar a reversão da imagem instantânea
+= Retomar uma reversão de imagem de instantâneo no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

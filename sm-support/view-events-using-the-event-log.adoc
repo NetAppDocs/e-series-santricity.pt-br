@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, view, events, 
 summary: Você pode exibir o log de eventos, que fornece um Registro histórico de eventos que ocorreram no storage array. 
 ---
-= Exibir eventos usando o log de eventos
+= Visualizar eventos usando o log de eventos no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

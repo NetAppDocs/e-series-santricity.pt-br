@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, add, syslog, servers, alerts, 
 summary: Você pode adicionar um máximo de cinco servidores para alertas syslog. 
 ---
-= Adicione servidores syslog para alertas
+= Adicionar servidores syslog para alertas no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

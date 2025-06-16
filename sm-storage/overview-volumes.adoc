@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, volumes 
 summary: Você pode criar um volume como um contentor no qual aplicativos, bancos de dados e sistemas de arquivos armazenam dados. Ao criar um volume, você também seleciona uma carga de trabalho para personalizar a configuração do storage array para um aplicativo específico. 
 ---
-= Visão geral de volumes e workloads
+= Saiba mais sobre volumes e cargas de trabalho no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

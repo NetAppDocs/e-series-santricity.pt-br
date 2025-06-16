@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, enable, autosupport, ASUP, maintenance window 
 summary: Ative a janela de manutenção do AutoSupport para suprimir a criação automática de tickets em eventos de erro. No modo de operação normal, o storage array usa o AutoSupport para abrir um caso com suporte se houver um problema. 
 ---
-= Ative a janela de manutenção do AutoSupport
+= Habilitar a janela de manutenção do AutoSupport no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

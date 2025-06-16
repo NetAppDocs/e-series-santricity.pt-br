@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, snapshots 
 summary: O recurso Snapshot permite que você crie imagens pontuais de volumes de storage array a serem usados para backup ou teste. 
 ---
-= Visão geral dos instantâneos
+= Saiba mais sobre snapshots no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

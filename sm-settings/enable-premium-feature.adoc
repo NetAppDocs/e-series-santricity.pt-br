@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, enable, premium, feature, 
 summary: Um recurso premium é uma opção extra que requer uma chave para ativar. 
 ---
-= Ative um recurso premium
+= Habilitar um recurso premium no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

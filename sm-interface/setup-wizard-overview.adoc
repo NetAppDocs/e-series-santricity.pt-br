@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, setup wizard 
 summary: Use o assistente de configuração para configurar seu storage array, incluindo hardware, hosts, aplicativos, workloads, pools, alertas e AutoSupport. 
 ---
-= Descrição geral do assistente de configuração
+= Saiba mais sobre o assistente de configuração do SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

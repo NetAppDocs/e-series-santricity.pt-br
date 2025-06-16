@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, view, unsynchronized, data, mirror, consistency, groups, 
 summary: Você pode exibir a quantidade de dados não sincronizados entre os grupos de consistência de espelho no storage array local e no storage array remoto. Embora o grupo de consistência de espelho esteja em um status não sincronizado, nenhuma atividade de espelhamento ocorre. 
 ---
-= Exibir a quantidade de dados não sincronizados entre grupos de consistência de espelho
+= Exibir quantidade de dados não sincronizados entre grupos de consistência espelhados no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

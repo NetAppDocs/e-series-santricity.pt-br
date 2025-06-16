@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, ca certificates, csr file, 
 summary: Certificados são arquivos digitais que identificam entidades online, como sites e servidores, para comunicações seguras na internet. 
 ---
-= Como os certificados funcionam
+= Como os certificados funcionam no SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

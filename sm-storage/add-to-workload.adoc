@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, add workload, volume 
 summary: Você pode adicionar um ou mais volumes a um workload novo ou existente para volumes que não estão associados atualmente a um workload. 
 ---
-= Adicionar volumes ao workload
+= Adicionar volumes a uma carga de trabalho no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

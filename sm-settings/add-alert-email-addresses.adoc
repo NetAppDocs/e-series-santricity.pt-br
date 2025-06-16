@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, add, email, addresses, alerts, 
 summary: Você pode adicionar até 20 destinatários para alertas de e-mail. 
 ---
-= Adicionar endereços de e-mail para alertas
+= Adicionar endereços de e-mail para alertas no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

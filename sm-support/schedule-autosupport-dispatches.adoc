@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, schedule, autosupport, dispatches 
 summary: O Gerenciador do sistema cria automaticamente uma programação padrão para envios do AutoSupport. Se preferir, você pode especificar sua própria programação. 
 ---
-= Agendar envios do AutoSupport
+= Agende despachos do AutoSupport no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

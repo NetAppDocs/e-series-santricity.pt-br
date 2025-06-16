@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, change, cache, settings, 
 summary: Para todos os volumes na matriz de armazenamento, você pode ajustar as configurações de memória de cache para limpeza e tamanho de bloco. 
 ---
-= Altere as configurações de cache para a matriz de armazenamento
+= Alterar as configurações de cache do array de armazenamento no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

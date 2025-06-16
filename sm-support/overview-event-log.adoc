@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, event, log 
 summary: Use o log de eventos para exibir um Registro histórico de alterações e eventos que aconteceram no storage array. 
 ---
-= Visão geral do log de eventos
+= Saiba mais sobre o log de eventos no software SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

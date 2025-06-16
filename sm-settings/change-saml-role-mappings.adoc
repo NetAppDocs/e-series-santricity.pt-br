@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, change, saml, role, mappings, 
 summary: Se você configurou o SAML para Gerenciamento de Acesso anteriormente, poderá alterar os mapeamentos de função entre os grupos de IDP e as funções predefinidas do storage array. 
 ---
-= Alterar mapeamentos de função SAML
+= Alterar mapeamentos de funções SAML no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

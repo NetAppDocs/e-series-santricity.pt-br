@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, comparison, thick volumes, thin volumes 
 summary: Um volume grosso é sempre totalmente provisionado, o que significa que toda a capacidade é alocada quando o volume é criado. Um volume fino é sempre provisionado de forma fina, o que significa que a capacidade é alocada à medida que os dados estão sendo gravados no volume. 
 ---
-= Comparação entre volumes grossos e volumes finos
+= Aprenda sobre volumes grossos e finos no software SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

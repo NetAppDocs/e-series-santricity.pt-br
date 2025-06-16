@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, configure, saml, 
 summary: 'Para configurar a autenticação para o Access Management, você pode usar os recursos de Security Assertion Markup Language (SAML) incorporados no storage array. Esta configuração estabelece uma conexão entre um Provedor de identidade e o Provedor de armazenamento.' 
 ---
-= Configurar SAML
+= Configurar SAML no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

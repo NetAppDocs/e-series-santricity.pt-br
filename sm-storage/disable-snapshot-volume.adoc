@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, disable, snapshot, volume 
 summary: Você pode desabilitar um volume instantâneo ou um volume instantâneo em um grupo de consistência de snapshot quando não precisar mais dele ou desejar parar temporariamente de usá-lo. 
 ---
-= Desativar volume instantâneo
+= Desabilitar um volume de snapshot no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

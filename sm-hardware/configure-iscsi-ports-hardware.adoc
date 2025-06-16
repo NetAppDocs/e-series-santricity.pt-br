@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, configure, iscsi, ports, 
 summary: Se o controlador incluir uma ligação de anfitrião iSCSI, pode configurar as definições da porta iSCSI a partir da página hardware. 
 ---
-= Configurar portas iSCSI
+= Configurar portas iSCSI no SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

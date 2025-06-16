@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, synchronous, mirroring, status, 
 summary: O status de um par espelhado síncrono indica se os dados no volume primário e no volume secundário estão sincronizados. Um status de espelho é independente do status do componente dos volumes no par espelhado. 
 ---
-= Status do espelhamento síncrono
+= Saiba mais sobre o status de espelhamento síncrono no SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

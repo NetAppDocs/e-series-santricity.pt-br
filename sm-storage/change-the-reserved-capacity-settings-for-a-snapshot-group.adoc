@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, reserved capacity, settings, snapshot, group 
 summary: Pode alterar as definições de um grupo de instantâneos para alterar o seu nome, as definições de eliminação automática, o número máximo de imagens instantâneas permitidas, o ponto percentual no qual o Gestor do sistema envia uma notificação de alerta de capacidade reservada ou a política a utilizar quando a capacidade reservada atinge a sua percentagem máxima definida. 
 ---
-= Altere as definições de capacidade reservada para um grupo de instantâneos
+= Alterar as configurações de capacidade reservada para um grupo de instantâneos no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

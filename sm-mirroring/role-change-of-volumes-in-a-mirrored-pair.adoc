@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, role, change, between, volume, mirrored, pair, 
 summary: Você pode alterar a função entre volumes em um par espelhado. Você pode fazer isso rebaixando o volume primário para a função secundária ou promovendo o volume secundário para a função principal. 
 ---
-= Mudança de função entre volumes em um par espelhado
+= Aprenda sobre mudanças na função de volume em um par espelhado no software SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

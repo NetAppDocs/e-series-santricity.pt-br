@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, configure, dns, server, addresses, 
 summary: 'O sistema de nomes de domínio (DNS) é usado para resolver nomes de domínio totalmente qualificados para os controladores e um servidor NTP (Network Time Protocol). As portas de gerenciamento no storage array podem dar suporte a protocolos IPv4 ou IPv6 simultaneamente.' 
 ---
-= Configurar endereços de servidor DNS
+= Configurar endereços de servidor DNS no SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

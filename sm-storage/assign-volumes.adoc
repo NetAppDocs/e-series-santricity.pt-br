@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, assign volumes 
 summary: É necessário atribuir um volume a um host ou a um cluster de host para que ele possa ser usado para operações de e/S. Essa atribuição concede a um host ou cluster de host acesso a um ou mais volumes em um storage array. 
 ---
-= Atribuir volumes aos hosts
+= Atribuir volumes a hosts no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

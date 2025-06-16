@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, upgrade, os, operating system 
 summary: Atualize um ou mais storages de armazenamento com o software mais recente e NVSRAM para garantir que você tenha todos os recursos e correções de bugs mais recentes. A NVSRAM da controladora é um arquivo de controladora que especifica as configurações padrão para os controladores. 
 ---
-= Atualize o SANtricity os
+= Atualizar o sistema operacional SANtricity
 :allow-uri-read: 
 :experimental: 
 :icons: font

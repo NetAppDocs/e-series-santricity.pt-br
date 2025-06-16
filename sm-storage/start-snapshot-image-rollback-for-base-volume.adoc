@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, start, snapshot, image, rollback, base, volume 
 summary: Você pode executar uma operação de reversão para alterar o conteúdo de um volume base para corresponder ao conteúdo que é salvo em uma imagem instantânea. A operação de reversão não altera o conteúdo das imagens instantâneas associadas ao volume base. 
 ---
-= Iniciar reversão de imagem instantânea para um volume base
+= Iniciar reversão de imagem de instantâneo para um volume base no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, mirroring, configuration, workflow 
 summary: Você configura o espelhamento assíncrono ou síncrono no Unified Manager e, em seguida, usa o System Manager para gerenciar sincronizações. 
 ---
-= Fluxo de trabalho de configuração de espelhamento
+= Fluxos de trabalho de configuração do SANtricity espelhados
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

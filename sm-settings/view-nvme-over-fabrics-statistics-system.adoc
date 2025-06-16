@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, view, nvme, fabrics, statistics, 
 summary: É possível visualizar dados sobre as conexões NVMe sobre Fabrics com o storage array. 
 ---
-= Veja as estatísticas do NVMe sobre Fabrics
+= Visualizar estatísticas de NVMe sobre Fabrics no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

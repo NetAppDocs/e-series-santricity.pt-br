@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, place, controller, offline, 
 summary: Se você for instruído a fazer isso, você pode colocar um controlador off-line. 
 ---
-= Coloque o controlador offline
+= Coloque um controlador offline no SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

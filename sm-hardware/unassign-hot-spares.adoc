@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, change, hot, spare, unassign, 
 summary: Você pode alterar um hot spare de volta para uma unidade não atribuída. 
 ---
-= Anular a atribuição de peças sobressalentes quentes
+= Desatribuir hot spares no SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

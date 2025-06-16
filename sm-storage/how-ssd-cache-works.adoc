@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, ssd cache, 
 summary: 'O recurso cache SSD é uma solução baseada em controlador que armazena em cache os dados acessados com mais frequência ("dados ativos") em unidades de estado sólido (SSDs) de baixa latência para acelerar dinamicamente o desempenho do sistema. O cache SSD é usado exclusivamente para leituras de host.' 
 ---
-= Como o cache SSD funciona
+= Como funciona o SSD Cache no software SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

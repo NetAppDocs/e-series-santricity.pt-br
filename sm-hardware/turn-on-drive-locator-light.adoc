@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, turn, drive, locator, light, LEDs 
 summary: Na página hardware, você pode ativar a luz localizador para encontrar a localização física de uma unidade no storage de armazenamento. 
 ---
-= Ligue a luz de localização da unidade
+= Ativar uma luz localizadora de unidade no SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

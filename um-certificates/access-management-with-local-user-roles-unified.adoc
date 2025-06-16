@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, access management, local, user, roles 
 summary: 'Os administradores podem usar os recursos RBAC (controle de acesso baseado em função) aplicados no SANtricity Unified Manager. Esses recursos são chamados de funções de usuário local.' 
 ---
-= Gerenciamento de acesso com funções de usuário local
+= Gerenciamento de acesso com funções de usuário local no SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

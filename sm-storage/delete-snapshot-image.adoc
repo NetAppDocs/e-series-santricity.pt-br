@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, delete, snapshot, image 
 summary: Elimina imagens de instantâneos para limpar a imagem de instantâneos mais antiga de um grupo de instantâneos ou de um grupo de consistência de instantâneos. 
 ---
-= Eliminar imagem instantânea
+= Excluir uma imagem instantânea no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

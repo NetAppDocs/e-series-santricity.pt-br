@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, permissions, mapped, roles, 
 summary: 'Os recursos RBAC (controle de acesso baseado em função) aplicados no storage array incluem perfis de usuário predefinidos com uma ou mais funções mapeadas. Cada função inclui permissões para acessar tarefas no Gerenciador de sistema do SANtricity.' 
 ---
-= Permissões para funções mapeadas
+= Saiba mais sobre permissões para funções mapeadas no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

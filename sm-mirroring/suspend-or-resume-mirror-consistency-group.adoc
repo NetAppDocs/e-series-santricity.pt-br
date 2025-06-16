@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, suspend, resume, synchronization, mirror, consistency, group, 
 summary: Você pode suspender ou retomar a sincronização de dados em todos os pares espelhados dentro de um grupo de consistência de espelho, o que é mais eficiente do que suspender ou retomar a sincronização em pares espelhados individuais. 
 ---
-= Suspender ou retomar a sincronização para o grupo de consistência do espelho
+= Suspender ou retomar a sincronização para grupos de consistência de espelho no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

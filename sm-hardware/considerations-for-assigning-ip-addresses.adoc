@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, considerations, assigning, ip, addresses 
 summary: Por padrão, os controladores são fornecidos com DHCP ativado em ambas as portas de rede. Você pode atribuir endereços IP estáticos, usar os endereços IP estáticos padrão ou usar endereços IP atribuídos por DHCP. Você também pode usar a configuração automática sem monitoração de estado IPv6. 
 ---
-= Considerações para atribuir endereços IP
+= Saiba mais sobre a atribuição de endereços IP para controladores da série E
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

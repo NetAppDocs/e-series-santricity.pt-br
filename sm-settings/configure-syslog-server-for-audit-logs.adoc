@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, configure, syslog, server, audit, logs, 
 summary: Se você quiser arquivar logs de auditoria em um servidor syslog externo, você pode configurar as comunicações entre esse servidor e o storage array. Depois que a conexão é estabelecida, os logs de auditoria são salvos automaticamente no servidor syslog. 
 ---
-= Configure o servidor syslog para logs de auditoria
+= Configurar o servidor syslog para logs de auditoria no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, clear, staged, os, software 
 summary: Você pode remover o software de sistema operacional em estágios para garantir que uma versão pendente não seja ativada inadvertidamente posteriormente. A remoção do software do SO em estágio não afeta a versão atual que está sendo executada nos storages de armazenamento. 
 ---
-= Limpar o software de SO faseado
+= Limpar software de sistema operacional em estágios no SANtricity Unified Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

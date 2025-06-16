@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, asynchronous, mirroring, 
 summary: O espelhamento assíncrono copia volumes de dados sob demanda ou de acordo com o cronograma, o que minimiza ou evita o tempo de inatividade que pode resultar de corrupção ou perda de dados. 
 ---
-= Como o espelhamento assíncrono funciona
+= Como funciona o espelhamento assíncrono no SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

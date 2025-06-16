@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, suspend, resume, synchronization, mirrored, pair, 
 summary: Você pode usar a opção suspender e a opção continuar para controlar quando sincronizar os dados no volume primário e no volume secundário em um par espelhado. 
 ---
-= Suspender e retomar a sincronização para um par espelhado
+= Suspender e retomar a sincronização para pares espelhados no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

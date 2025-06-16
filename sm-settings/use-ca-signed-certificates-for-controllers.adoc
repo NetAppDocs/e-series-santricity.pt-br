@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, ca-signed, certificates, controllers, 
 summary: Você pode obter certificados assinados pela CA para comunicações seguras entre os controladores e o navegador usado para acessar o System Manager. 
 ---
-= Use certificados assinados pela CA para controladores
+= Use certificados assinados por CA para controladores no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, delete, storage, array, group 
 summary: Você pode remover um ou mais grupos de storage que não são mais necessários. 
 ---
-= Eliminar grupo de matrizes de armazenamento
+= Excluir um grupo de matriz de armazenamento no SANtricity Unified Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

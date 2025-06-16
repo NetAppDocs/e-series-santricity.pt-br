@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, nvme, 
 summary: 'Algumas controladoras incluem uma porta para implementar o NVMe (Non-Volatile Memory Express) em Fabrics. O NVMe possibilita a comunicação de alto desempenho entre os hosts e o storage array.' 
 ---
-= Visão geral do NVMe
+= Saiba mais sobre os softwares NVMe e SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

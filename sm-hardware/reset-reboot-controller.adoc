@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, reset, reboot, controller 
 summary: 'Alguns problemas requerem uma reinicialização do controlador (reinicialização). Você pode redefinir o controlador mesmo que você não tenha acesso físico a ele.' 
 ---
-= Reiniciar o controlador
+= Redefinir (reinicializar) um controlador no SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

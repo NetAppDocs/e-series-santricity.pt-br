@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, view, audit, log, activity, 
 summary: Ao visualizar logs de auditoria, os usuários com permissões de administrador de segurança podem monitorar as ações do usuário, falhas de autenticação, tentativas de login inválidas e a vida útil da sessão do usuário. 
 ---
-= Exibir atividade do log de auditoria
+= Exibir atividade de log de auditoria no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

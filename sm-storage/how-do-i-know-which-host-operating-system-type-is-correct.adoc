@@ -84,13 +84,6 @@ Suporta sistemas operacionais Windows usando um ATTO Technology, Inc., driver mu
 
 
  a| 
-FlexArray (ALUA)
- a| 
-Suporta um sistema NetApp FlexArray usando ALUA para multipathing.
-
-
-
- a| 
 SVC DA IBM
  a| 
 Suporta uma configuração do IBM SAN volume Controller.

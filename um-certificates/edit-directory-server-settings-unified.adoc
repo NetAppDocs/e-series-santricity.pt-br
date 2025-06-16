@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, edit, directory, server, settings, role, mappings 
 summary: Se você configurou anteriormente um servidor de diretório em Gerenciamento de Acesso, poderá alterar suas configurações a qualquer momento. As configurações incluem as informações de conexão do servidor e os mapeamentos de grupo para função. 
 ---
-= Edite as configurações do servidor de diretório e mapeamentos de função
+= Editar configurações do servidor de diretório e mapeamentos de funções no SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

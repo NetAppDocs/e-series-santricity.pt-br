@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, manage, session, timeouts, 
 summary: Você pode configurar tempos limite no Gerenciador de sistema do SANtricity para que as sessões inativas dos usuários sejam desconetadas após um tempo especificado. 
 ---
-= Gerenciar tempos limite de sessão
+= Gerenciar tempos limite de sessão no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

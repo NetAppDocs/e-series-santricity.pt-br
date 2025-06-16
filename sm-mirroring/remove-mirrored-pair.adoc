@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, remove, asynchronous, mirror, relationship, 
 summary: Você remove um par espelhado para remover a relação de espelhamento do volume primário no storage array local e o volume secundário no storage array remoto. 
 ---
-= Remova a relação assíncrona do espelho
+= Remover relacionamentos de espelho assíncronos no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

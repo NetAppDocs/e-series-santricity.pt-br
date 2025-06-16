@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, view, iscsi, statistics, packages 
 summary: Pode visualizar dados sobre as ligações iSCSI à sua matriz de armazenamento. 
 ---
-= Visualizar pacotes de estatísticas iSCSI
+= Visualizar pacotes de estatísticas iSCSI no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

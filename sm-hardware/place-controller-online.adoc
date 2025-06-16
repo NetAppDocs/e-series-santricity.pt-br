@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, place, controller, online 
 summary: Se um controlador estiver no estado offline ou no modo de serviço, pode colocá-lo novamente online. 
 ---
-= Coloque o controlador online
+= Coloque um controlador on-line no SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

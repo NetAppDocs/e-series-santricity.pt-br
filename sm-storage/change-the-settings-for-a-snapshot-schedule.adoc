@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, settings, snapshot, schedule 
 summary: Para uma programação de instantâneos, pode alterar os tempos de recolha automática ou a frequência da recolha. 
 ---
-= Altere as definições de uma programação de instantâneos
+= Alterar as configurações para um agendamento de snapshot no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

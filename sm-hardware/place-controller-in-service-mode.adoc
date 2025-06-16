@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, place, controller, service, mode, 
 summary: Se você for instruído a fazê-lo, você pode colocar um controlador no modo de serviço. 
 ---
-= Coloque o controlador no modo de serviço
+= Coloque um controlador no modo de serviço no SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

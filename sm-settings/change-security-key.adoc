@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, change, security, key, 
 summary: A qualquer momento, você pode substituir uma chave de segurança por uma nova chave. Talvez seja necessário alterar uma chave de segurança nos casos em que você tenha uma potencial violação de segurança em sua empresa e queira garantir que funcionários não autorizados não possam acessar os dados das unidades. 
 ---
-= Altere a chave de segurança
+= Alterar uma chave de segurança no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, test, communication, synchronous, mirroring, 
 summary: Você pode testar a comunicação entre um storage array local e um storage array remoto para diagnosticar possíveis problemas de comunicação de um par espelhado que esteja participando do espelhamento síncrono. 
 ---
-= Teste a comunicação para espelhamento síncrono
+= Teste de comunicação para espelhamento síncrono no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

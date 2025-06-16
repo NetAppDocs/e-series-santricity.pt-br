@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity,System Manager, E-Series, validate, security, key, 
 summary: Você pode validar a chave de segurança para se certificar de que ela não foi corrompida e para verificar se você tem uma frase-passe correta. 
 ---
-= Valide a chave de segurança
+= Validar chave de segurança no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, media scan settings, volume 
 summary: Uma verificação de Mídia é uma operação em segundo plano que verifica todos os dados e informações de redundância no volume. Utilize esta opção para ativar ou desativar as definições de digitalização de multimédia para um ou mais volumes ou para alterar a duração da digitalização. 
 ---
-= Alterar as definições de digitalização de multimédia para um volume
+= Alterar as configurações de verificação de mídia para um volume no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, switch, front, back, views, shelves 
 summary: A página hardware pode mostrar a vista frontal ou a vista posterior das prateleiras. 
 ---
-= Alterne entre as vistas frontal e traseira
+= Mostrar vistas frontal e traseira no SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

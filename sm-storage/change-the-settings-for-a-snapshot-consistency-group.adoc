@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, settings, snapshot, consistency group 
 summary: Altere as definições de um grupo de consistência de instantâneos quando pretender alterar o seu nome, as definições de eliminação automática ou o número máximo de imagens instantâneas permitidas. 
 ---
-= Altere as configurações de um grupo de consistência de snapshot
+= Alterar as configurações de um grupo de consistência de instantâneo no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

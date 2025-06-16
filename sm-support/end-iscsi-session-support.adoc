@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, end, iscsi, session 
 summary: Você pode terminar uma sessão iSCSI que não é mais necessária. Sessões iSCSI podem ocorrer com hosts ou matrizes de armazenamento remotas em uma relação de espelhamento assíncrono. 
 ---
-= Terminar sessão iSCSI
+= Encerrar uma sessão iSCSI no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

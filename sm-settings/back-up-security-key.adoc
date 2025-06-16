@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, backup, security, key, 
 summary: Depois de criar ou alterar uma chave de segurança, você pode criar uma cópia de backup do arquivo de chave caso o original seja corrompido. 
 ---
-= Faça backup da chave de segurança
+= Faça backup das chaves de segurança no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

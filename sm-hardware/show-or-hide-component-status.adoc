@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, show, hide, component, status, 
 summary: Você pode exibir descrições de status para unidades, controladores, ventiladores e fontes de alimentação. 
 ---
-= Mostrar ou ocultar o estado do componente
+= Mostrar ou ocultar o status do componente no SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

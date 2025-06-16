@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, edit, key, management, server, settings, 
 summary: Se você tiver configurado o gerenciamento de chaves externas, poderá exibir e editar as configurações do servidor de gerenciamento de chaves a qualquer momento. 
 ---
-= Editar as configurações do servidor de gerenciamento de chaves
+= Editar as configurações do servidor de gerenciamento de chaves no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

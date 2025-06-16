@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, start, snapshot, image, rollback, snapshot, consistency, group, member, volumes 
 summary: Você pode executar uma operação de reversão para alterar o conteúdo dos volumes de membros do grupo de consistência de instantâneos para corresponder ao conteúdo que é salvo em uma imagem instantânea. 
 ---
-= Iniciar reversão de imagem instantânea para volumes de membros do grupo de consistência de instantâneos
+= Iniciar reversão de imagem de instantâneo para volumes de membros do grupo de consistência de instantâneo no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

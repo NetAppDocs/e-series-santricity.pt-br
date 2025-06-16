@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, host, terms 
 summary: Saiba como os termos do host se aplicam ao storage array. 
 ---
-= Terminologia do host
+= Aprenda sobre a terminologia do host no software SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

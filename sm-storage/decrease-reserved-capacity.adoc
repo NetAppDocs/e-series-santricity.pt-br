@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, decrease, reserved, capacity 
 summary: 'Você usa a opção diminuir capacidade para diminuir a capacidade reservada para os seguintes objetos de storage: Grupo de snapshot, volume de snapshot e volume de membro do grupo de consistência. Você pode diminuir a capacidade reservada somente pelo(s) valor(s) usado(s) para aumentá-la.' 
 ---
-= Diminuir a capacidade reservada
+= Diminua a capacidade reservada no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

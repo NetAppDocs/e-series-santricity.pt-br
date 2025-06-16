@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, delete, trap, destinations, 
 summary: Você pode excluir um endereço de destino de armadilha para que o monitor de eventos da matriz de armazenamento não envie mais traps SNMP para esse endereço. 
 ---
-= Eliminar destinos de armadilha
+= Excluir destinos de trap no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

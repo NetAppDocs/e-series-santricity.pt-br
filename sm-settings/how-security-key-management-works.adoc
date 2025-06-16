@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, security, key, management, 
 summary: 'Quando você implementa o recurso Segurança da unidade, as unidades habilitadas para segurança (FIPS ou FDE) exigem uma chave de segurança para acesso aos dados. Uma chave de segurança é uma cadeia de carateres que é compartilhada entre esses tipos de unidades e os controladores em um storage array.' 
 ---
-= Como funciona o gerenciamento de chaves de segurança
+= Como funciona o gerenciamento de chaves de segurança no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

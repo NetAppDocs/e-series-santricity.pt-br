@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, view, shelf, component, status, settings, 
 summary: A página hardware fornece status e configurações para os componentes do compartimento, incluindo fontes de alimentação, ventiladores e baterias. 
 ---
-= Exibir o status e as configurações do componente do compartimento
+= Visualizar o status e as configurações dos componentes da prateleira no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

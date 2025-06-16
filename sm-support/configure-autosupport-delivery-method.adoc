@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, configure, autosupport, ASUP, delivery, method 
 summary: O recurso AutoSupport oferece suporte aos protocolos HTTPS e SMTP para entrega de despachos para suporte técnico. 
 ---
-= Configurar o método de entrega do AutoSupport
+= Configurar o método de entrega do AutoSupport no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

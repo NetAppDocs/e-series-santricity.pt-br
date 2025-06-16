@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, discover, single, array 
 summary: Use a opção Add/Discover Single Storage Array para descobrir e adicionar manualmente uma única matriz de armazenamento à rede da sua organização. 
 ---
-= Descubra um único array
+= Descubra uma única matriz no SANtricity Unified Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

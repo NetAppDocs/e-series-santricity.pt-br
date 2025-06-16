@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, initialize, format, drive, 
 summary: 'Se você mover unidades atribuídas de um storage array para outro, será necessário inicializar (formatar) as unidades antes que elas possam ser usadas no novo storage array.' 
 ---
-= Inicialize (formate) a unidade
+= Inicializar (formatar) unidades no SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

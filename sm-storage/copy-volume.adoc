@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, copy volume 
 summary: 'Você pode copiar dados de um volume para outro volume no mesmo storage array e criar uma duplicata (clone) física de um volume de origem.' 
 ---
-= Volume de cópia
+= Copiar um volume no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

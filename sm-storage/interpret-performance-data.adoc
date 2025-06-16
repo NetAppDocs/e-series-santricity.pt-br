@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, interpret, performance data 
 summary: Os dados de desempenho podem orientá-lo no ajuste do desempenho do seu storage array. 
 ---
-= Interpretar dados de performance
+= Interpretar dados de desempenho no SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

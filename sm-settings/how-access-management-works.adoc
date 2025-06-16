@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, authentication, users, roles, access, Management, 
 summary: O Gerenciamento de Acesso é um método para estabelecer a autenticação do usuário no Gerenciador de sistema do SANtricity. 
 ---
-= Como o Gerenciamento de Acesso funciona
+= Como o gerenciamento de acesso funciona no SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

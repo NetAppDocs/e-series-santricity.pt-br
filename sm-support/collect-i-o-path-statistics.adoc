@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, collect, i/o path, statistics 
 summary: Você pode salvar o arquivo de estatísticas de caminho de e/S e enviá-lo para o suporte técnico para análise. 
 ---
-= Colete estatísticas de caminho de e/S.
+= Coletar estatísticas de caminho de E/S no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

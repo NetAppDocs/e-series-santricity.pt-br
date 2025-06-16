@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, mirroring 
 summary: Use os recursos de espelhamento para replicar dados entre um storage array local e um storage array remoto, seja de forma assíncrona ou síncrona. 
 ---
-= Visão geral do espelhamento
+= Saiba mais sobre espelhamento no SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

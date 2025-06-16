@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, time, graphs 
 summary: Pode alterar o período de tempo predefinido apresentado pelos gráficos de desempenho. 
 ---
-= Definir o período de tempo predefinido para gráficos de desempenho
+= Defina o período de tempo padrão para gráficos de desempenho no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

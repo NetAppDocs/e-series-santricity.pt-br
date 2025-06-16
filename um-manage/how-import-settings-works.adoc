@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, import, settings, 
 summary: Você pode usar o Unified Manager para importar configurações de um storage array para vários storage arrays. O recurso Importar configurações é uma operação em lote que economiza tempo quando você precisa configurar vários arrays na rede. 
 ---
-= Como as Configurações de importação funcionam
+= Saiba mais sobre como configurar vários conjuntos de armazenamento no SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, view, unreadable, sectors, log 
 summary: Você pode salvar o log de setores ilegíveis e enviar o arquivo para o suporte técnico para análise. 
 ---
-= Exibir log de setores ilegíveis
+= Visualizar o log de setores ilegíveis no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

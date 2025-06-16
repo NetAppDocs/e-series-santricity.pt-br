@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, edit, communities, smpv2c, traps, 
 summary: Você pode editar nomes de comunidade para SNMPv2c armadilhas. 
 ---
-= Edite comunidades para SNMPv2c armadilhas
+= Editar comunidades para armadilhas SNMPv2c no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, change, synchronization, settings, mirror, consistency, group, 
 summary: Você pode alterar as configurações de sincronização e os limites de aviso que o grupo de consistência de espelho no storage array local usa quando os dados são sincronizados inicialmente ou quando os dados são sincronizados novamente durante operações de espelhamento assíncrono. 
 ---
-= Altere as configurações de sincronização para um grupo de consistência de espelho
+= Alterar as configurações de sincronização para um grupo de consistência de espelho no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

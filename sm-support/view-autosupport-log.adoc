@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, view, autosupport, log 
 summary: O log do AutoSupport fornece informações sobre status, histórico de despacho e erros encontrados durante a entrega de despachos do AutoSupport. 
 ---
-= Ver log do AutoSupport
+= Exibir log do AutoSupport no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, remove, storage, arrays, group 
 summary: Você pode remover um ou mais arrays de armazenamento gerenciados de um grupo se não quiser mais gerenciá-los de um grupo de armazenamento específico. 
 ---
-= Remova os storages de armazenamento do grupo
+= Remover matrizes de armazenamento de um grupo no SANtricity Unified Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

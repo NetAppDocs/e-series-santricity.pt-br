@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, change, view, order, shelves 
 summary: Você pode alterar a ordem das prateleiras exibidas na página hardware para corresponder à ordem física das prateleiras em um gabinete. 
 ---
-= Alterar a ordem de visualização das prateleiras
+= Alterar a ordem de exibição das prateleiras no SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

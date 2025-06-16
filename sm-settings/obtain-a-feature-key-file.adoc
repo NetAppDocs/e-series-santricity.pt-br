@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, obtain, feature, key, file, 
 summary: Para habilitar um recurso premium ou um pacote de recursos em seu storage array, primeiro você deve obter um arquivo de chave de recurso. Uma chave é associada a apenas um storage array. 
 ---
-= Obter um arquivo de chave de recurso
+= Obter um arquivo de chave de recurso no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

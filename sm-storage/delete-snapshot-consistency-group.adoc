@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, delete, snapshot, consistency, group 
 summary: Você pode excluir grupos de consistência de snapshot que não são mais necessários. 
 ---
-= Eliminar grupo de consistência de instantâneos
+= Excluir um grupo de consistência de instantâneo no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

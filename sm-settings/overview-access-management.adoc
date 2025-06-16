@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, access, management, 
 summary: 'O Gerenciamento de Acesso é um método para estabelecer a autenticação do usuário no Gerenciador de sistema do SANtricity. Os métodos de autenticação incluem RBAC (controle de acesso baseado em função), Directory Services e Security Assertion Markup Language (SAML) 2,0.' 
 ---
-= Visão geral do Gerenciamento de Acesso
+= Aprenda sobre gerenciamento de acesso no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

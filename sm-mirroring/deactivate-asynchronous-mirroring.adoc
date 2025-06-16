@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, deactivate, asynchronous, mirroring, remote, 
 summary: Você pode desativar o espelhamento assíncrono nos storage arrays locais e remotos para restabelecer o uso normal de portas dedicadas nos storage arrays. 
 ---
-= Desativar o espelhamento assíncrono
+= Desativar espelhamento assíncrono no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

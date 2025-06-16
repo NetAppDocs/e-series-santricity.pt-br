@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, synchronize, storage, array, clocks, 
 summary: 'Se o Protocolo de tempo de rede (NTP) não estiver ativado, você poderá definir manualmente os relógios nos controladores para que eles sejam sincronizados com o cliente de gerenciamento (o sistema usado para executar o navegador que acessa o Gerenciador de sistema do SANtricity).' 
 ---
-= Sincronizar relógios de storage array
+= Sincronizar relógios de matriz de armazenamento no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

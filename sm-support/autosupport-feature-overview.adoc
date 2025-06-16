@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, autosupport, ASUP 
 summary: O recurso AutoSupport monitora a integridade de um storage array e envia patches automáticos para o suporte técnico. 
 ---
-= Visão geral do recurso AutoSupport
+= Saiba mais sobre o AutoSupport para a Série E
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

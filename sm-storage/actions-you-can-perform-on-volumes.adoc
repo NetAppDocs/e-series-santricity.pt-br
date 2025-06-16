@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, volumes 
 summary: 'Você pode executar várias ações diferentes em um volume: Aumentar a capacidade, excluir, copiar, inicializar, redistribuir, alterar a propriedade, alterar as configurações de cache e alterar as configurações de digitalização de Mídia.' 
 ---
-= Ações que podem ser executadas em volumes
+= Ações que você pode executar em volumes no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

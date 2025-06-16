@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, view, local, user, roles, 
 summary: 'Na guia funções de usuário local, você pode exibir os mapeamentos dos perfis de usuário para as funções padrão. Esses mapeamentos fazem parte do RBAC (controles de acesso baseados em função) aplicado no storage array.' 
 ---
-= Ver funções de utilizador locais
+= Exibir funções de usuários locais no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

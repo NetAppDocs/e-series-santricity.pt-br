@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, change, reserved, capacity, settings, mirrored, pair, volume, 
 summary: Você pode alterar as configurações de um volume de par espelhado para ajustar o ponto percentual no qual o System Manager envia uma notificação de alerta quando a capacidade reservada para um volume de par espelhado estiver quase cheia. 
 ---
-= Altere as configurações de capacidade reservada para um volume de par espelhado
+= Alterar as configurações de capacidade reservada para um volume de par espelhado no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

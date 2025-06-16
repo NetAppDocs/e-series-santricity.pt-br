@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, manage, session, timeouts 
 summary: Você pode configurar tempos limite para o SANtricity Unified Manager para que as sessões inativas dos usuários sejam desconetadas após um tempo especificado. 
 ---
-= Gerenciar tempos limite de sessão
+= Gerenciar tempos limite de sessão no SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

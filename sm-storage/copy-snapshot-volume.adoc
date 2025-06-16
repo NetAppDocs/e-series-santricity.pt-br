@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, copy, snapshot, volume 
 summary: Você pode executar um processo de volume de cópia em um volume instantâneo ou em um volume instantâneo de grupo de consistência de snapshot. 
 ---
-= Copiar volume instantâneo
+= Copiar um volume de instantâneo no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

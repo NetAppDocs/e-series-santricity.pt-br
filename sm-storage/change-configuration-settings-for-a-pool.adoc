@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, configuration settings, pool 
 summary: Você pode editar as configurações de um pool, incluindo seu nome, configurações de alertas de capacidade, prioridades de modificação e capacidade de preservação. 
 ---
-= Altere as configurações de um pool
+= Alterar as configurações de um pool no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

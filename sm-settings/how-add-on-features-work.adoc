@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, add-on, features, 
 summary: Complementos são recursos que não estão incluídos na configuração padrão do System Manager e podem exigir uma chave para habilitar. Um recurso complementar pode ser um único recurso premium ou um pacote de recursos. 
 ---
-= Como os recursos adicionais funcionam
+= Como os recursos complementares funcionam no SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

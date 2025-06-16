@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, create, external, security, key, 
 summary: Para usar o recurso Segurança da unidade com um servidor de gerenciamento de chaves, você deve criar uma chave externa compartilhada pelo servidor de gerenciamento de chaves e pelas unidades com capacidade segura no storage de armazenamento. 
 ---
-= Criar chave de segurança externa
+= Crie uma chave de segurança externa no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

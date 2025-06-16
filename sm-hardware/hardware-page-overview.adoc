@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, hardware, page, components, 
 summary: A página hardware fornece uma representação gráfica dos componentes físicos da matriz de armazenamento. A partir daqui, você pode verificar o status do componente e executar algumas funções relacionadas a esses componentes. 
 ---
-= Página de hardware e componentes
+= Página de hardware e componentes do SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

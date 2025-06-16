@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, delete, volume 
 summary: Normalmente, você exclui volumes se os volumes tiverem sido criados com os parâmetros ou a capacidade errados, não atenderem mais às necessidades de configuração de storage ou forem imagens snapshot que não são mais necessárias para backup ou teste de aplicativos. 
 ---
-= Eliminar volume
+= Excluir um volume no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

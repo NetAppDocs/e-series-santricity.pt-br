@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, automatic, load, balancing, 
 summary: O balanceamento de carga automático fornece gerenciamento de recursos de e/S aprimorado, reagindo dinamicamente às alterações de carga ao longo do tempo e ajustando automaticamente a propriedade do controlador de volume para corrigir quaisquer problemas de desequilíbrio de carga quando as cargas de trabalho mudam entre os controladores. 
 ---
-= Descrição geral do balanceamento de carga automático
+= Aprenda sobre balanceamento automático de carga no software SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

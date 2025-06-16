@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, collect, support, data, manually 
 summary: Você pode reunir vários tipos de inventário, status e dados de desempenho sobre seu storage array em um único arquivo. O suporte técnico pode usar o arquivo para solução de problemas e análises adicionais. 
 ---
-= Colete dados de suporte manualmente
+= Coletar dados de suporte manualmente no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

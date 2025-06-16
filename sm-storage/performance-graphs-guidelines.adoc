@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, performance, 
 summary: A página desempenho fornece gráficos e tabelas de dados que permitem avaliar o desempenho do storage array em várias áreas-chave. 
 ---
-= Gráficos de desempenho e diretrizes
+= Saiba mais sobre gráficos de desempenho e diretrizes no SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, shelf, locator, light, LED 
 summary: Para encontrar a localização física de uma prateleira mostrada na página hardware, você pode ligar a luz de localização da prateleira. 
 ---
-= Ligue a luz de localização da prateleira
+= Ativar uma luz localizadora de prateleiras no SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

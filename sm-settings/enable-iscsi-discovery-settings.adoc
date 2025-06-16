@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, enable, iscsi, discovery, settings, 
 summary: Pode ativar as definições relacionadas com a deteção de dispositivos de armazenamento numa rede iSCSI. 
 ---
-= Ativar definições de deteção iSCSI
+= Habilitar configurações de descoberta iSCSI no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

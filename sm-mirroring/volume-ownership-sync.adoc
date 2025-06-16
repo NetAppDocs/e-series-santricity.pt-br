@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, volume, ownership, sync, change, preferred, controller, owner, mirrored, pair, 
 summary: Você pode alterar o proprietário do controlador preferido em um par espelhado. 
 ---
-= Propriedade do volume
+= Aprenda sobre propriedade de volume em espelhamento síncrono no software SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

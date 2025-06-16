@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, manage, groups 
 summary: Na página Gerenciar grupos, você pode criar um conjunto de grupos de storage para facilitar o gerenciamento. 
 ---
-= Visão geral dos grupos
+= Saiba mais sobre a visão geral dos grupos no SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

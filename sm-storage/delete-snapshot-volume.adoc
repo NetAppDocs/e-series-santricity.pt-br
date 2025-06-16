@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, delete, snapshot, volume 
 summary: Você pode excluir um volume instantâneo ou um volume instantâneo de grupo de consistência de snapshot que não seja mais necessário para fins de teste de aplicativos de backup ou software. 
 ---
-= Eliminar volume instantâneo
+= Excluir um volume de snapshot no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

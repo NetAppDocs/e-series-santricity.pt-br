@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, copy, volume, 
 summary: Você pode executar uma operação de volume de cópia off-line ou uma operação de volume de cópia on-line. Uma operação off-line lê os dados de um volume de origem e os copia para um volume de destino. Uma operação on-line usa um volume snapshot como origem e copia seus dados em um volume de destino. 
 ---
-= Tipos de operações de volume de cópia
+= Aprenda sobre os tipos de operações de volume de cópia no software SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

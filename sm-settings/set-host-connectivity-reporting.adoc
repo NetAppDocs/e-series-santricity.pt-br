@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, set, host, connectivity, reporting, 
 summary: Você pode ativar os relatórios de conetividade do host para que o storage array monitore continuamente a conexão entre os controladores e os hosts configurados e, em seguida, alerte se a conexão for interrompida. Esta funcionalidade está ativada por predefinição. 
 ---
-= Definir relatórios de conetividade de host
+= Definir relatórios de conectividade do host no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

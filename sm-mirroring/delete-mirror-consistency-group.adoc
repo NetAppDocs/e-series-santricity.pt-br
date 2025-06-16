@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, delete, mirror, consistency, group, 
 summary: Você pode excluir grupos de consistência de espelho que não são mais necessários no storage de armazenamento local e no storage de armazenamento remoto. 
 ---
-= Eliminar grupo de consistência de espelho
+= Excluir um grupo de consistência de espelho no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

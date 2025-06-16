@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, unlock, reset, locked, fips, nvme, drives, 
 summary: 'Se você inserir uma ou mais unidades NVMe ou FIPS bloqueadas em um storage array, poderá desbloquear os dados da unidade adicionando o arquivo de chave de segurança associado às unidades. Se você não tiver uma chave de segurança, poderá executar uma reinicialização em cada unidade bloqueada inserindo seu ID de segurança física (PSID) para redefinir seus atributos de segurança e apagar os dados da unidade.' 
 ---
-= Desbloqueie ou redefina unidades NVMe ou FIPS bloqueadas
+= Desbloquear ou redefinir unidades NVMe ou FIPS bloqueadas no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

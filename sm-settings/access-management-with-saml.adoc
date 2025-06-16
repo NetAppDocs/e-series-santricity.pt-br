@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, access management, saml 
 summary: 'Para Gerenciamento de Acesso, os administradores podem usar os recursos de Security Assertion Markup Language (SAML) 2,0 incorporados no array.' 
 ---
-= Gerenciamento de acesso com SAML
+= Configurar o gerenciamento de acesso com SAML no SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

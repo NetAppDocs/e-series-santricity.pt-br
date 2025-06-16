@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, snapshot, schedules, snapshot, consistency groups 
 summary: Use programações para coleta de imagens instantâneas e use grupos de consistência de snapshot para gerenciar vários volumes base. 
 ---
-= Agendamentos de snapshot e grupos de consistência de snapshot
+= Saiba mais sobre agendamentos de instantâneos e grupos de consistência de instantâneos no SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

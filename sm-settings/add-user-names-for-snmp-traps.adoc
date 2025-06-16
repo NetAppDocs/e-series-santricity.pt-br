@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, add, users, snmpv3, traps, 
 summary: Você pode adicionar até 256 usuários para SNMPv3 armadilhas. 
 ---
-= Adicione usuários para SNMPv3 traps
+= Adicionar usuários para armadilhas SNMPv3 no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

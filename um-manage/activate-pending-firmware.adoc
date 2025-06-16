@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, activate, staged, os, software 
 summary: Você pode optar por ativar o arquivo de software imediatamente ou esperar até um momento mais conveniente. Este procedimento pressupõe que optou por ativar o ficheiro de software posteriormente. 
 ---
-= Ativar o software SO faseado
+= Ativar software de sistema operacional em estágios no SANtricity Unified Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

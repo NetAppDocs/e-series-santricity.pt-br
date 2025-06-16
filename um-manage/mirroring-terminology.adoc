@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, mirroring, terminology 
 summary: Saiba como os termos de espelhamento se aplicam ao storage array. 
 ---
-= Terminologia de espelhamento
+= Aprenda sobre a terminologia de espelhamento no SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

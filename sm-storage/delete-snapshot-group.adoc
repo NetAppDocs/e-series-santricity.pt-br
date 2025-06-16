@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, delete, snapshot, group 
 summary: Você exclui um grupo de instantâneos quando deseja excluir permanentemente seus dados e removê-los do sistema. A exclusão de um grupo de snapshot reclama a capacidade reservada para reutilização no pool ou no grupo de volumes. 
 ---
-= Eliminar grupo instantâneo
+= Excluir um grupo de snapshots no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

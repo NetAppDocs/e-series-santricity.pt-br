@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, delete, trusted, certificates 
 summary: Você pode excluir um ou mais certificados que não são mais necessários, como um certificado expirado. 
 ---
-= Excluir certificados confiáveis
+= Excluir certificados confiáveis no SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

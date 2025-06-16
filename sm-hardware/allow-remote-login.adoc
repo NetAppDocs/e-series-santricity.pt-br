@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, remote, login, 
 summary: O login remoto permite que os usuários de fora da rede local iniciem uma sessão SSH e alterem as configurações no controlador. 
 ---
-= Configurar login remoto (SSH)
+= Configurar login remoto (SSH) no SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

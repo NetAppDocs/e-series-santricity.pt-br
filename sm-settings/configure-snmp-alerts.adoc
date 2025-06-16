@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, configure, snmp, alerts, 
 summary: 'Para configurar alertas SNMP (Simple Network Management Protocol), você deve identificar pelo menos um servidor onde o monitor de eventos da matriz de armazenamento pode enviar traps SNMP. A configuração requer um nome de comunidade ou um nome de usuário e um endereço IP para o servidor.' 
 ---
-= Configurar alertas SNMP
+= Configurar alertas SNMP no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

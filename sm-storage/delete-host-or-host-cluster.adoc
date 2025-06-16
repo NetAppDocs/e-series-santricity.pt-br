@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, delete, host, host cluster 
 summary: Você pode excluir um host ou cluster de host. 
 ---
-= Excluir host ou cluster de host
+= Excluir um host ou cluster de host no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

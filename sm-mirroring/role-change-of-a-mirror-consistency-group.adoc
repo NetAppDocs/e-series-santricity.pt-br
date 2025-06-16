@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, role, change, mirror, consistency, group, secondary, mirror, consistency, group, 
 summary: Você pode alterar a função entre pares espelhados em um grupo de consistência de espelho. Você pode fazer isso rebaixando o grupo de consistência de espelho primário para a função secundária ou promovendo o grupo de consistência de espelho secundário para a função principal. 
 ---
-= Mudança de papel de um grupo de consistência de espelho
+= Alterar funções de grupo de consistência de espelho no software SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

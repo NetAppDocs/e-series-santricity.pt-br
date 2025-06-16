@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, switch, external, internal, key, management, 
 summary: Você pode alterar o método de gerenciamento de segurança de unidade de um servidor de chaves externo para o método interno usado pelo storage array. A chave de segurança definida anteriormente para o gerenciamento de chaves externas é então usada para o gerenciamento de chaves internas. 
 ---
-= Mude do gerenciamento de chaves externas para internas
+= Mudar do gerenciamento de chaves externo para interno no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

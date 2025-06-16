@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, system, security, key, management, 
 summary: O gerenciamento de chaves de segurança está disponível na página sistema. 
 ---
-= Visão geral do Drive Security
+= Saiba mais sobre segurança de unidade no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, create, storage, array, group 
 summary: Você cria grupos de armazenamento e adiciona matrizes de armazenamento aos grupos. O grupo de armazenamento define quais unidades fornecem o armazenamento que compõe o volume. 
 ---
-= Configurar o grupo de storage array
+= Configurar um grupo de matriz de armazenamento no SANtricity Unified Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

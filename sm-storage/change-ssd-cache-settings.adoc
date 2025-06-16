@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, ssd, cache, settings 
 summary: Você pode editar o nome do cache SSD e exibir seu status, capacidade máxima e atual, segurança da unidade e status de garantia de dados e seus volumes e unidades associados. 
 ---
-= Altere as configurações de cache SSD
+= Alterar as configurações de cache do SSD no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

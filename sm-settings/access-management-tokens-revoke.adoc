@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, access management, revoke tokens 
 summary: Você pode revogar todos os tokens de acesso se determinar que um token foi comprometido. 
 ---
-= Revogar tokens de acesso
+= Revogar tokens de acesso no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

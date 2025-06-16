@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, convert, snapshot, volume, read-write mode 
 summary: Você pode converter um volume de snapshot somente leitura ou um volume de snapshot de grupo de consistência de snapshot para o modo leitura-gravação, se necessário. 
 ---
-= Converta o volume instantâneo para o modo de leitura-gravação
+= Converter volume de snapshot para modo de leitura e gravação no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

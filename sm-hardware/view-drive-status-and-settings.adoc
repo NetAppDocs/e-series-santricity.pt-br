@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, view, drive, status, settings, media, 
 summary: Pode visualizar o estado e as definições das unidades, como o tipo de material, o tipo de interface e a capacidade. 
 ---
-= Ver o estado e as definições da unidade
+= Visualizar o status e as configurações da unidade no SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

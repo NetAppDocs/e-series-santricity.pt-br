@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, view, iscsi, sessions, 
 summary: Pode visualizar informações detalhadas sobre as ligações iSCSI à sua matriz de armazenamento. Sessões iSCSI podem ocorrer com anfitriões ou matrizes de armazenamento remotas numa relação de espelhamento assíncrono. 
 ---
-= Ver sessões iSCSI
+= Visualizar sessões iSCSI no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

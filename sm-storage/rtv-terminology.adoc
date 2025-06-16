@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, remote, storage, terms 
 summary: Saiba como os termos de armazenamento remoto se aplicam ao storage array. 
 ---
-= Terminologia de armazenamento remoto
+= Aprenda sobre a terminologia de armazenamento remoto no software SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

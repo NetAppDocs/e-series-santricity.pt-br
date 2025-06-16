@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, discover, storage, arrays 
 summary: Para gerenciar recursos de armazenamento, primeiro você deve descobrir os storages de armazenamento na rede. 
 ---
-= Descrição geral da descoberta
+= Saiba mais sobre a descoberta no SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

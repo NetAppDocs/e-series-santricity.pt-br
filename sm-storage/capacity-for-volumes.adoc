@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, capacity, volumes, 
 summary: As unidades do seu storage array fornecem a capacidade de armazenamento físico para os seus dados. Antes de começar a armazenar dados, você deve configurar a capacidade alocada em componentes lógicos conhecidos como pools ou grupos de volume. Você usa esses objetos de storage para configurar, armazenar, manter e preservar dados em seu storage array. 
 ---
-= Como a capacidade é alocada para volumes
+= Como a capacidade é alocada para volumes no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

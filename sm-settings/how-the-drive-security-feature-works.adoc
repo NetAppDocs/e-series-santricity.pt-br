@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, Drive Security, 
 summary: 'O Drive Security é um recurso de storage array que fornece uma camada extra de segurança com unidades de criptografia completa de disco (FDE) ou unidades FIPS (Federal Information Processing Standard).' 
 ---
-= Como funciona o recurso Segurança da Unidade
+= Como o recurso Drive Security funciona no SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, considerations, discovering, arrays 
 summary: Antes que o Unified Manager possa exibir e gerenciar recursos de storage, ele deve descobrir os storages que você deseja gerenciar na rede da sua organização. Você pode descobrir vários arrays ou descobrir um único array. 
 ---
-= Considerações para descobrir arrays
+= Saiba mais sobre como descobrir matrizes de armazenamento no SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, edit, mail, server, alerts, 
 summary: Você pode alterar o endereço do servidor de e-mail e o endereço do remetente usado para alertas de e-mail. 
 ---
-= Edite o servidor de e-mail para alertas
+= Editar servidor de e-mail para alertas no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

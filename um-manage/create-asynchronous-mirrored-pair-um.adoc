@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, create, asynchronous, mirrored, pair 
 summary: Para configurar o espelhamento assíncrono, você cria um par espelhado que inclui um volume primário no array local e um volume secundário no array remoto. 
 ---
-= Crie um par espelhado assíncrono
+= Crie um par espelhado assíncrono no SANtricity Unified Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, default, host, operating, system, 
 summary: O tipo de host padrão é usado pelo storage array quando os hosts são conetados inicialmente. Ele define como os controladores no storage array funcionam com o sistema operacional do host quando os volumes são acessados. 
 ---
-= Tipo de sistema operacional de host padrão
+= Saiba mais sobre o tipo de sistema operacional do host padrão no software SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

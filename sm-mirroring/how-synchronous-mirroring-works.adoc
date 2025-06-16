@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, synchronous, mirroring, 
 summary: O espelhamento síncrono replica volumes de dados em tempo real para garantir disponibilidade contínua. 
 ---
-= Como o espelhamento síncrono funciona
+= Como funciona o espelhamento síncrono no SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

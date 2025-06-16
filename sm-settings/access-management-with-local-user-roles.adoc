@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, access management, local, user, roles, 
 summary: 'Para Gerenciamento de acesso, os administradores podem usar os recursos RBAC (controle de acesso baseado em função) aplicados no storage array. Esses recursos são chamados de funções de usuário local.' 
 ---
-= Gerenciamento de acesso com funções de usuário local
+= Configurar o gerenciamento de acesso com funções de usuário local no SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

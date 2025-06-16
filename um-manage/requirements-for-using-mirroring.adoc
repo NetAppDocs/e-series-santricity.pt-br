@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, requirements, using, mirroring 
 summary: Se você planeja configurar o espelhamento, tenha em mente os seguintes requisitos. 
 ---
-= Requisitos para uso do espelhamento
+= Requisitos para usar o espelhamento no SANtricity Unified Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

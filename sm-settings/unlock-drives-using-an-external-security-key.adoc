@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, unlock, drives, external, key, management, 
 summary: Se você configurou o gerenciamento de chaves externas e depois mover unidades habilitadas para segurança de um storage array para outro, será necessário atribuir novamente a chave de segurança ao novo storage array para obter acesso aos dados criptografados nas unidades. 
 ---
-= Desbloqueie unidades ao usar o gerenciamento de chaves externas
+= Desbloqueie unidades ao usar o gerenciamento de chaves externas no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, edit, storage array, name, 
 summary: Você pode alterar o nome da matriz de armazenamento que aparece na barra de título do Gerenciador de sistema do SANtricity. 
 ---
-= Edite o nome da matriz de armazenamento
+= Editar nome da matriz de armazenamento no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

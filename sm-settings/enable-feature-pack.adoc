@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, enable, feature, pack, 
 summary: 'Um pacote de recursos é um pacote que altera os atributos do storage de armazenamento (por exemplo, alterando o protocolo de Fibre Channel para iSCSI). Os pacotes de recursos exigem uma chave especial para a capacitação.' 
 ---
-= Ativar o pacote de funcionalidades
+= Habilitar pacote de recursos no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

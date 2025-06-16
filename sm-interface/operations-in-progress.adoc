@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, operations in progress 
 summary: A página operações em andamento permite exibir uma lista de operações de longa duração que estão em execução ou estão em um estado suspenso, parado ou com falha. Você pode tomar medidas em certos tipos de operações. 
 ---
-= Página operações em andamento
+= Saiba mais sobre a página de operações em andamento do SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

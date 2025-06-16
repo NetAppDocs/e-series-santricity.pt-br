@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, remote, storage, requirements 
 summary: Antes de usar o recurso de armazenamento remoto, revise os seguintes requisitos e restrições. 
 ---
-= Requisitos do recurso de armazenamento remoto
+= Saiba mais sobre os requisitos do recurso de armazenamento remoto no software SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, define, audit, log, policies, 
 summary: Pode alterar a política de substituição e os tipos de eventos registados no registo de auditoria. 
 ---
-= Definir políticas de log de auditoria
+= Definir políticas de log de auditoria no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

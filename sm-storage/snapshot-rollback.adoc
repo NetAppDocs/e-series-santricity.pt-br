@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, snapshot, rollback 
 summary: Uma operação de reversão retorna um volume base para um estado anterior, determinado pelo snapshot selecionado. 
 ---
-= Reversão do Snapshot
+= Saiba mais sobre a reversão de snapshot no software SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, upgrade, drive, firmware 
 summary: Você pode atualizar o firmware de suas unidades para garantir que você tenha todos os recursos e correções de bugs mais recentes. 
 ---
-= Atualize o firmware da unidade
+= Atualizar firmware da unidade no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

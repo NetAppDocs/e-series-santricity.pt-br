@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, remote, storage 
 summary: O recurso armazenamento remoto permite importar dados de um sistema de storage remoto para um sistema de storage local e-Series. Esse recurso é útil quando você deseja otimizar a migração de dados com o mínimo de tempo de inatividade, como durante atualizações de equipamentos. 
 ---
-= Como o armazenamento remoto funciona
+= Como funciona o armazenamento remoto no software SANtricity
 :allow-uri-read: 
 :experimental: 
 :icons: font

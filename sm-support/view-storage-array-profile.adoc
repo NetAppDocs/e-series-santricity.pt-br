@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, view, storage, array, profile 
 summary: O perfil do storage array fornece uma descrição de todos os componentes e propriedades do storage array. 
 ---
-= Ver o perfil da matriz de armazenamento
+= Visualizar o perfil de um array de armazenamento no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, configure, iser, over, infiniband, ports, 
 summary: Se o controlador incluir uma porta iSER over InfiniBand, você poderá configurar a conexão de rede ao host. 
 ---
-= Configurar o iSER em portas InfiniBand
+= Configurar portas iSER sobre InfiniBand no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

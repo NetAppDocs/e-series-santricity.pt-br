@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, erase, drives, removal, 
 summary: Pode utilizar a opção Apagar para preparar uma unidade não atribuída para remoção do sistema. Este procedimento remove permanentemente os dados, garantindo que os dados não podem ser lidos novamente. 
 ---
-= Apagar unidades
+= Apagar unidades no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

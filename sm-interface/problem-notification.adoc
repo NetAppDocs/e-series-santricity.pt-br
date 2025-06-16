@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, notifications 
 summary: O System Manager usa ícones e vários outros métodos para notificá-lo de que existem problemas com a matriz de armazenamento. 
 ---
-= Descrição geral das notificações de problemas
+= Saiba mais sobre as notificações de problemas do SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

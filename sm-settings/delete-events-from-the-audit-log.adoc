@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, delete, events, audit, log, 
 summary: 'Você pode limpar o log de auditoria de eventos antigos, o que torna a pesquisa através de eventos mais gerenciável. Você tem a opção de salvar eventos antigos em um arquivo CSV (valores separados por vírgulas) após a exclusão.' 
 ---
-= Excluir eventos do log de auditoria
+= Excluir eventos do log de auditoria no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

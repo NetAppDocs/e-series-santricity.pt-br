@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, remote, storage 
 summary: Se tiver a funcionalidade armazenamento remoto, pode importar dados de um sistema de armazenamento remoto. 
 ---
-= Visão geral da funcionalidade de armazenamento remoto
+= Saiba mais sobre o recurso de armazenamento remoto no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

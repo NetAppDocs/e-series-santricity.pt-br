@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, change, synchronization, settings, mirrored, pair, 
 summary: Você pode alterar a prioridade de sincronização e a política de ressincronização que o par espelhado usa para concluir a operação de ressincronização após uma interrupção de comunicação. 
 ---
-= Altere as configurações de sincronização para um par espelhado
+= Alterar as configurações de sincronização para um par espelhado no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

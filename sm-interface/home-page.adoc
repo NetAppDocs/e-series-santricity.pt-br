@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, home page 
 summary: A página inicial fornece uma visualização de painel para o gerenciamento diário de seu storage array. Ao iniciar sessão no System Manager, a página inicial é a primeira tela exibida. 
 ---
-= Página inicial
+= Saiba mais sobre a página inicial do SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, enable, certificate, revocation checking, 
 summary: 'Você pode habilitar verificações automáticas para certificados revogados, de modo que um servidor OCSP (Online Certificate Status Protocol) bloqueie os usuários de fazer conexões não seguras.' 
 ---
-= Ativar verificação de revogação de certificado
+= Habilitar verificação de revogação de certificado no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, storage hierarchy 
 summary: A hierarquia de armazenamento na interface principal fornece uma visualização organizada dos vários componentes de hardware e objetos de armazenamento gerenciados pelo seu storage array. 
 ---
-= Exibir hierarquia de armazenamento
+= Exibir hierarquia de armazenamento no SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

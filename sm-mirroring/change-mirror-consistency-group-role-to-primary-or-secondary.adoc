@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, mirror, consistency group, primary, secondary 
 summary: Você pode alterar a função entre grupos de consistência de espelho para fins administrativos ou em caso de desastre no storage array local. 
 ---
-= Altere a função do grupo de consistência do espelho para primário ou secundário
+= Alterar a função do grupo de consistência do espelho para primário ou secundário no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

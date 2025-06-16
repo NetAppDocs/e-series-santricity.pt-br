@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, set, automatic, load, balancing, 
 summary: O recurso balanceamento de carga automático garante que o tráfego de e/S de entrada dos hosts seja gerenciado e balanceado dinamicamente em ambos os controladores. Esta funcionalidade está ativada por predefinição, mas pode desativá-la a partir do System Manager. 
 ---
-= Definir o balanceamento de carga automático
+= Definir balanceamento de carga automático no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

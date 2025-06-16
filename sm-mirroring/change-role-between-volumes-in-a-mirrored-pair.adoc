@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, change, role, volumes, mirrored, pair, 
 summary: Você pode realizar uma reversão de função entre os dois volumes em um par espelhado que esteja participando do espelhamento síncrono para fins administrativos ou no caso de um desastre no storage array local. 
 ---
-= Alterar função entre volumes em um par espelhado
+= Alterar a função entre volumes em um par espelhado no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

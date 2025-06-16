@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, configure, snmp, mib, variables, 
 summary: 'Para alertas SNMP, você pode opcionalmente configurar variáveis de base de informações de gerenciamento (MIB) que aparecem em traps SNMP. Essas variáveis podem retornar o nome do storage array, o local do array e uma pessoa de Contato.' 
 ---
-= Configurar variáveis MIB SNMP
+= Configurar variáveis SNMP MIB no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

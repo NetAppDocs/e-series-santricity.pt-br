@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, access management, authentication 
 summary: O Gerenciamento de Acesso é um método de configuração da autenticação de usuário no Gerenciador Unificado do SANtricity. 
 ---
-= Visão geral do Gerenciamento de Acesso
+= Saiba mais sobre o gerenciamento de acesso do SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, unassign, volumes 
 summary: Desmarque a atribuição de volumes de hosts ou clusters de host se você não precisar mais de acesso de e/S a esse volume a partir do cluster de host ou host. 
 ---
-= Anular atribuição de volumes
+= Desatribuir volumes no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

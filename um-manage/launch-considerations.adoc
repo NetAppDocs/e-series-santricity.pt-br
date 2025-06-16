@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, considerations, access system manager 
 summary: Selecione um ou mais storages e use a opção Iniciar para abrir o Gerenciador de sistemas do SANtricity quando quiser configurar e gerenciar storages. 
 ---
-= Considerações para acessar o Gerenciador de sistema do SANtricity
+= Saiba mais sobre como acessar o SANtricity System Manager a partir do Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

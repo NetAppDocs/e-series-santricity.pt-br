@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, workflow, create, snapshot, images, snapshot, volumes 
 summary: No System Manager, pode criar imagens instantâneas e volumes instantâneos seguindo estes passos. 
 ---
-= Fluxo de trabalho para criar imagens instantâneas e volumes instantâneos
+= Como funciona a criação de imagens de snapshot e volumes de snapshot no SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

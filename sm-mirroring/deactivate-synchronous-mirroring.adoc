@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, deactivate, synchronous, mirroring, adapter, host, bus, 
 summary: 'Você pode desativar o recurso de espelhamento síncrono em um storage array para restabelecer o uso normal da porta host 4 do adaptador de barramento do host (HBA), que foi reservada para transmissão de dados espelhados.' 
 ---
-= Desativar o espelhamento síncrono
+= Desativar o espelhamento síncrono no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

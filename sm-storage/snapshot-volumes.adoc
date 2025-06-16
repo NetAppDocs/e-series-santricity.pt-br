@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, snapshot, volumes 
 summary: 'Você pode criar um volume de snapshot e atribuí-lo a um host se quiser ler ou gravar dados de snapshot. O volume do Snapshot compartilha as mesmas características que o volume base (nível RAID, características de e/S etc.).' 
 ---
-= Volumes Snapshot
+= Saiba mais sobre volumes de snapshot no software SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

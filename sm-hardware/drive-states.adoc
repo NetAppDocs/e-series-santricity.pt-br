@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, drive, states, 
 summary: O System Manager relata vários estados para unidades. 
 ---
-= estados da unidade
+= Saiba mais sobre os estados da unidade no SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

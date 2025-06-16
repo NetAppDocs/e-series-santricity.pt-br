@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, import, autosupport, settings 
 summary: Você pode importar uma configuração do AutoSupport de um storage array para outros storage arrays. Esta operação em lote economiza tempo quando você precisa configurar vários arrays na rede. 
 ---
-= Importar definições do AutoSupport
+= Importar configurações do AutoSupport no SANtricity Unified Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

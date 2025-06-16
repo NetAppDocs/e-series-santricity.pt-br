@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, import, certificates, 
 summary: 'Se o controlador rejeitar uma ligação porque não pode validar a cadeia de confiança de um servidor de rede, pode importar um certificado a partir do separador fidedigno que permite ao controlador (agindo como cliente) aceitar comunicações desse servidor.' 
 ---
-= Importar certificados para controladores quando atua como clientes
+= Importar certificados para controladores quando atuam como clientes no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

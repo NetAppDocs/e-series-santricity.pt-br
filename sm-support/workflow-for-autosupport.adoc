@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, workflow, autosupport, 
 summary: No Gerenciador de sistema do SANtricity, você configura o recurso AutoSupport seguindo estas etapas. 
 ---
-= Fluxo de trabalho para o recurso AutoSupport
+= Configurar o AutoSupport no SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

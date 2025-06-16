@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, hot, spare, drives, raid1, raid6, raid5 
 summary: As peças sobressalentes ativas funcionam como unidades de reserva nos grupos de volume RAID 1, RAID 5 ou RAID 6 para o System Manager. 
 ---
-= Descrição geral da unidade hot spare
+= Saiba mais sobre unidades de reserva no SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

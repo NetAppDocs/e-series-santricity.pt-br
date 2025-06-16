@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, snapshot, storage 
 summary: O recurso Snapshots usa tecnologia copy-on-write para armazenar imagens instantâneas e usar a capacidade reservada alocada. 
 ---
-= Como funciona o armazenamento de instantâneos
+= Como funciona o armazenamento de snapshots no software SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

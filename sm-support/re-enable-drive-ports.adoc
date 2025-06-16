@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, re-enable, drive, ports 
 summary: Pode indicar ao controlador que foi tomada uma ação corretiva para recuperar de uma condição de fio incorreto. 
 ---
-= Reative as portas da unidade
+= Reative as portas da unidade no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

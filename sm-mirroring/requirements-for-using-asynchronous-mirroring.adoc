@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, requirements, asynchronous, mirroring, 
 summary: Se você planeja usar o espelhamento assíncrono, tenha em mente os seguintes requisitos. 
 ---
-= Requisitos para uso do espelhamento assíncrono
+= Requisitos para usar espelhamento assíncrono no software SANtricity
 :allow-uri-read: 
 :experimental: 
 :icons: font

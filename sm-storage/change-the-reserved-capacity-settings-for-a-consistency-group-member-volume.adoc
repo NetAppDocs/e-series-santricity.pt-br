@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, reserved capacity, settings, consistency group, member volume 
 summary: Você pode alterar as configurações de um volume de membro do grupo de consistência para ajustar o ponto percentual no qual o System Manager envia uma notificação de alerta quando a capacidade reservada para um volume de membro estiver quase cheia e para alterar a política a ser usada quando a capacidade reservada atingir sua porcentagem máxima definida. 
 ---
-= Altere as configurações de capacidade reservada para um volume de membro do grupo de consistência
+= Alterar as configurações de capacidade reservada para um volume de membro do grupo de consistência no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

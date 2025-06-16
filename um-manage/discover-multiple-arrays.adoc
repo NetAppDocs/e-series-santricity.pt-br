@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, discover, multiple, storage, arrays 
 summary: Você descobre várias matrizes para detetar todas as matrizes de armazenamento na sub-rede onde reside o servidor de gestão e para adicionar automaticamente as matrizes descobertas ao seu domínio de gestão. 
 ---
-= Descubra vários storages de armazenamento
+= Descubra vários conjuntos de armazenamento no SANtricity Unified Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

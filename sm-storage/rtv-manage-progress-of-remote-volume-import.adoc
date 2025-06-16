@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, remote, storage, imports 
 summary: Após o início do processo de importação, você pode visualizar e tomar medidas sobre seu progresso. 
 ---
-= Gerenciar o progresso das importações de armazenamento remoto
+= Gerenciar o progresso das importações de armazenamento remoto no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

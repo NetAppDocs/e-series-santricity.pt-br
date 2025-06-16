@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, change, shelf, ids, 
 summary: O ID do compartimento é um número que identifica exclusivamente uma gaveta no storage array. As prateleiras são numeradas consecutivamente, começando com 00 ou 01, no canto superior esquerdo de cada vista da prateleira. 
 ---
-= Alterar as IDs de gaveta
+= Alterar IDs de prateleiras no SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

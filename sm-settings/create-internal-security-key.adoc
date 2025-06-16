@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, create, internal, security, key, 
 summary: Para usar o recurso Segurança da unidade, você pode criar uma chave de segurança interna compartilhada pelos controladores e unidades seguras no storage de armazenamento. As chaves internas são mantidas na memória persistente do controlador. 
 ---
-= Criar chave de segurança interna
+= Crie uma chave de segurança interna no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

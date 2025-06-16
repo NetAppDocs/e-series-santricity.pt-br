@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, take, recovery, action, storage, array, status 
 summary: Você pode tomar medidas sobre o status do seu storage array atual revisando o log de setores ilegíveis, rehabilitando portas de unidade e limpando o modo de recuperação. 
 ---
-= Tome medidas de recuperação no status do storage array
+= Execute uma ação de recuperação no status do array de armazenamento no SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

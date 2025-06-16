@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, 
 summary: Você navega na interface principal para acessar recursos e tarefas do System Manager. 
 ---
-= Visão geral da interface do Gerenciador de sistema do SANtricity
+= Saiba mais sobre a interface do SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

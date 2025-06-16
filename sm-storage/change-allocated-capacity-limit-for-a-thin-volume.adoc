@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, allocated capacity, thin volume 
 summary: Para volumes finos capazes de alocar espaço sob demanda, você pode alterar o limite que restringe a capacidade alocada à qual um volume fino pode se expandir automaticamente. 
 ---
-= Alterar o limite de capacidade alocado para um volume fino
+= Alterar o limite de capacidade alocada para um volume fino no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

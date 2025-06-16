@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, complete, mirrored, pair, volumes, created, legacy, 
 summary: Se você criou um volume primário em um storage array herdado que não pode ser gerenciado pelo SANtricity System Manager, poderá criar o volume secundário nesse array com o System Manager. 
 ---
-= Par espelhado completo para volumes primários criados no sistema legado
+= Complete um par espelhado para volumes primários criados em um sistema legado no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

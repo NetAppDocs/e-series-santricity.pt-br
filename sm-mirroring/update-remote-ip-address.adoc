@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, update, remote, ip, address, connection, 
 summary: Pode atualizar o endereço IP iSCSI da sua matriz de armazenamento remota para restabelecer a ligação com a matriz de armazenamento local. 
 ---
-= Atualize o endereço IP remoto
+= Atualizar endereços IP de matriz de armazenamento remoto no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, monitor, thin, volumes 
 summary: É possível monitorar thin volumes em busca de espaço e gerar alertas apropriados para evitar condições fora da capacidade. 
 ---
-= Monitore volumes finos
+= Monitorar volumes finos no SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

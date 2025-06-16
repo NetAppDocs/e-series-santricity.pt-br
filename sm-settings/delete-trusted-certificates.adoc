@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, delete, trusted, certificates, 
 summary: Você pode excluir os certificados instalados pelo usuário importados anteriormente da guia confiável. 
 ---
-= Excluir certificados confiáveis
+= Excluir certificados confiáveis no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

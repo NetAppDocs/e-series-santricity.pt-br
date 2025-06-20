@@ -1,0 +1,200 @@
+---
+permalink: sm-storage/faq-systems-clusters.html 
+sidebar: sidebar 
+keywords:  
+summary: Este FAQ pode ajudar se você está apenas procurando uma resposta rápida para uma pergunta. 
+---
+= Perguntas frequentes sobre sistemas host e clusters de host para o SANtricity System Manager
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Este FAQ pode ajudar se você está apenas procurando uma resposta rápida para uma pergunta.
+
+
+
+== O que são hosts e clusters de host?
+
+Um host é um servidor que envia e/S para um volume em um storage array. Um cluster de host é um grupo de hosts. Você cria um cluster de host para facilitar a atribuição dos mesmos volumes a vários hosts.
+
+Você define um host separadamente. Pode ser uma entidade independente ou ser adicionada a um cluster de host. Você pode atribuir volumes a um host individual ou um host pode fazer parte de um cluster de host que compartilha o acesso a um ou mais volumes com outros hosts no cluster de host.
+
+O cluster de host é uma entidade lógica que você cria no Gerenciador de sistema do SANtricity. Você deve adicionar hosts ao cluster de host antes de poder atribuir volumes.
+
+
+
+== Por que eu precisaria criar um cluster de host?
+
+Você precisa criar um cluster de host se quiser que dois ou mais hosts compartilhem o acesso ao mesmo conjunto de volumes. Normalmente, os hosts individuais têm software de cluster instalado neles para coordenar o acesso ao volume.
+
+
+
+== Como sei qual tipo de sistema operacional do host está correto?
+
+O campo Host Operating System Type (tipo de sistema operativo anfitrião) contém o sistema operativo do anfitrião. Você pode selecionar o tipo de host recomendado na lista suspensa.
+
+Os tipos de host que aparecem na lista suspensa dependem do modelo do storage array e da versão do firmware. As versões mais recentes exibem as opções mais comuns primeiro, que são as mais prováveis de serem apropriadas. A aparência nesta lista não implica que a opção seja totalmente suportada.
+
+[NOTE]
+====
+Para obter mais informações sobre o suporte ao host, consulte o https://imt.netapp.com/matrix/#welcome["Ferramenta de Matriz de interoperabilidade do NetApp"^].
+
+====
+Alguns dos seguintes tipos de host podem aparecer na lista:
+
+[cols="35h,~"]
+|===
+| Tipo de sistema operacional do host | Sistema operacional (SO) e driver multipath 
+
+
+ a| 
+Linux DM-MP (Kernel 3,10 ou posterior)
+ a| 
+Suporta sistemas operacionais Linux usando uma solução de failover multipath Device Mapper com um Kernel 3,10 ou posterior.
+
+
+
+ a| 
+VMware ESXi
+ a| 
+Oferece suporte aos sistemas operacionais VMware ESXi que executam a arquitetura NMP (NMP) nativa usando o módulo SATP_ALUA interno de política de tipo de matriz de armazenamento da VMware.
+
+
+
+ a| 
+Windows (em cluster ou não em cluster)
+ a| 
+Oferece suporte a configurações em cluster ou não em cluster do Windows que não estejam executando o driver de multipathing ATTO.
+
+
+
+ a| 
+ATTO Cluster (todos os sistemas operacionais)
+ a| 
+Suporta todas as configurações de cluster usando o driver ATTO Technology, Inc., multipathing.
+
+
+
+ a| 
+Linux (Veritas DMP)
+ a| 
+Suporta sistemas operacionais Linux usando uma solução de multipathing Veritas DMP.
+
+
+
+ a| 
+Linux (ATTO)
+ a| 
+Suporta sistemas operacionais Linux usando um ATTO Technology, Inc., driver multipathing.
+
+
+
+ a| 
+Mac os (ATTO)
+ a| 
+Suporta versões do Mac os usando um ATTO Technology, Inc., driver multipathing.
+
+
+
+ a| 
+Windows (ATTO)
+ a| 
+Suporta sistemas operacionais Windows usando um ATTO Technology, Inc., driver multipathing.
+
+
+
+ a| 
+SVC DA IBM
+ a| 
+Suporta uma configuração do IBM SAN volume Controller.
+
+
+
+ a| 
+Predefinição de fábrica
+ a| 
+Reservado para a inicialização inicial do storage array. Se o tipo de sistema operacional do host estiver definido como padrão de fábrica, altere-o para corresponder ao sistema operacional do host e ao driver multipath executados no host conetado.
+
+
+
+ a| 
+Linux DM-MP (Kernel 3,9 ou anterior)
+ a| 
+Suporta sistemas operacionais Linux usando uma solução de failover multipath Device Mapper com um Kernel 3,9 ou anterior.
+
+
+
+ a| 
+Janela agrupada (obsoleta)
+ a| 
+Se o tipo de sistema operacional do host estiver definido para esse valor, use a configuração Windows (em cluster ou não em cluster).
+
+|===
+
+
+== O que são HBAs e portas adaptadoras?
+
+Um adaptador de barramento de host (HBA) é uma placa que reside em um host e contém uma ou mais portas de host. Uma porta de host é uma porta em um adaptador de barramento de host (HBA) que fornece a conexão física a um controlador e é usada para operações de e/S.
+
+As portas do adaptador no HBA são chamadas de portas de host. A maioria dos HBAs tem uma ou duas portas de host. O HBA tem um identificador mundial único (WWID), e cada porta de host HBA tem um WWID exclusivo. Os identificadores de porta do host são usados para associar o HBA apropriado ao host físico quando você estiver criando manualmente o host por meio do Gerenciador de sistema do SANtricity.
+
+
+
+== Como faço para corresponder as portas do host a um host?
+
+Se você estiver criando manualmente um host, primeiro deverá usar o utilitário HBA (adaptador de barramento de host) apropriado disponível no host para determinar os identificadores de porta de host associados a cada HBA instalado no host.
+
+Quando tiver essas informações, selecione os identificadores de porta do host que fizeram login no storage array na lista fornecida na caixa de diálogo criar host.
+
+[NOTE]
+====
+Certifique-se de selecionar os identificadores de porta de host apropriados para o host que você está criando. Se você associar os identificadores de porta do host errados, poderá causar acesso não intencional de outro host a esses dados.
+
+====
+
+
+== Como faço para criar segredos CHAP?
+
+Se você configurar a autenticação CHAP (Challenge Handshake Authentication Protocol) em qualquer host iSCSI conetado à matriz de armazenamento, será necessário inserir novamente esse segredo CHAP iniciador para cada host iSCSI.
+
+Para fazer isso, você pode usar o System Manager como parte da operação criar host ou através da opção Exibir/Editar configurações.
+
+Se você estiver usando a autenticação mútua CHAP, você também deve definir um segredo CHAP de destino para o storage array na página Configurações e digitar novamente esse segredo CHAP de destino em cada host iSCSI.
+
+
+
+== Qual é o cluster padrão?
+
+O cluster padrão é uma entidade definida pelo sistema que permite que qualquer identificador de porta de host não associado que tenha feito logon no storage array tenha acesso aos volumes atribuídos ao cluster padrão. Um identificador de porta de host não associado é uma porta de host que não está logicamente associada a um host específico, mas é fisicamente instalada em um host e conetada ao storage array.
+
+[NOTE]
+====
+Se você quiser que os hosts tenham acesso específico a determinados volumes no storage array, _não_ use o cluster padrão. Em vez disso, você deve associar os identificadores de porta do host aos respetivos hosts. Esta tarefa pode ser feita manualmente durante a operação criar host. Em seguida, você atribui volumes a um host individual ou a um cluster de host.
+
+====
+Você deve _somente_ usar o cluster padrão em situações especiais em que seu ambiente de armazenamento externo é propício para permitir que todos os hosts e todos os identificadores de porta de host conetados à matriz de armazenamento tenham acesso a todos os volumes (modo de acesso total) sem fazer especificamente os hosts conhecidos pela matriz de armazenamento ou pela interface de usuário.
+
+Inicialmente, você pode atribuir volumes apenas ao cluster padrão por meio da interface de linha de comando (CLI). No entanto, depois de atribuir pelo menos um volume ao cluster padrão, essa entidade (chamada cluster padrão) é exibida na interface do usuário, onde você pode gerenciar essa entidade.
+
+
+
+== O que é o relatório de conetividade do host?
+
+Quando o relatório de conetividade do host é ativado, o storage array monitora continuamente a conexão entre os controladores e os hosts configurados e, em seguida, alerta você se a conexão for interrompida.
+
+Interrupções na conexão podem ocorrer se houver um cabo solto, danificado ou ausente, ou outro problema com o host. Nessas situações, o sistema pode abrir uma mensagem Recovery Guru:
+
+* *Redundância de host perdida* -- abre se qualquer controlador não puder se comunicar com o host.
+* *Host Type Incorrect* -- abre se o tipo de host for especificado incorretamente na matriz de armazenamento, o que pode resultar em problemas de failover.
+
+
+Você pode querer desativar o relatório de conetividade do host em situações em que a reinicialização de um controlador pode levar mais tempo do que o tempo limite da conexão. Desativar esse recurso suprime as mensagens Gurus de recuperação.
+
+[NOTE]
+====
+A desativação do relatório de conetividade do host também desativa o balanceamento automático de carga, que monitora e equilibra o uso de recursos do controlador. No entanto, se você reativar os relatórios de conetividade do host, o recurso de balanceamento de carga automático não será reativado automaticamente.
+
+====

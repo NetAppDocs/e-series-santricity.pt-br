@@ -1,0 +1,183 @@
+---
+permalink: sm-storage/faq-volumes-workloads.html 
+sidebar: sidebar 
+keywords:  
+summary: Este FAQ pode ajudar se você está apenas procurando uma resposta rápida para uma pergunta. 
+---
+= Perguntas frequentes sobre volumes e cargas de trabalho para o SANtricity System Manager
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Este FAQ pode ajudar se você está apenas procurando uma resposta rápida para uma pergunta.
+
+
+
+== O que é um volume?
+
+Um volume é um contêiner no qual aplicativos, bancos de dados e sistemas de arquivos armazenam dados. É o componente lógico criado para que o host acesse o storage no storage array.
+
+Um volume é criado a partir da capacidade disponível em um pool ou em um grupo de volumes. Um volume tem uma capacidade definida. Embora um volume possa consistir em mais de uma unidade, um volume aparece como um componente lógico para o host.
+
+
+
+== Por que estou vendo um erro de superalocação de capacidade quando tenho capacidade livre suficiente em um grupo de volumes para criar volumes?
+
+O grupo de volume selecionado pode ter uma ou mais áreas de capacidade livre. Uma área de capacidade livre é a capacidade livre que pode resultar da exclusão de um volume ou da não utilização de toda a capacidade livre disponível durante a criação do volume.
+
+Quando você cria um volume em um grupo de volumes que tenha uma ou mais áreas de capacidade livre, a capacidade do volume é limitada à maior área de capacidade livre nesse grupo de volumes. Por exemplo, se um grupo de volume tiver um total de 15 GiB de capacidade livre, e a maior área de capacidade livre for de 10 GiB, o maior volume que você pode criar é de 10 GiB.
+
+Se um grupo de volume tiver áreas de capacidade livre, o gráfico de grupo de volume contém um link indicando o número de áreas de capacidade livre existentes. Selecione o link para exibir um pop-over que indica a capacidade de cada área.
+
+Ao consolidar a capacidade gratuita, você pode criar volumes adicionais a partir da quantidade máxima de capacidade livre em um grupo de volumes. Você pode consolidar a capacidade livre existente em um grupo de volumes selecionado usando um dos seguintes métodos:
+
+* Quando é detetada pelo menos uma área de capacidade livre para um grupo de volumes, a recomendação "consolidar capacidade livre" aparece na página inicial na área de notificação. Clique no link *consolidar capacidade livre* para iniciar a caixa de diálogo.
+* Você também pode selecionar menu:pools e grupos de volume[tarefas incomuns > consolidar capacidade livre do grupo de volume] para iniciar a caixa de diálogo.
+
+
+Se você quiser usar uma área de capacidade livre específica em vez da maior área de capacidade livre, use a interface de linha de comando (CLI).
+
+
+
+== Como minha carga de trabalho selecionada afeta a criação de volume?
+
+Durante a criação de volume, você será solicitado a fornecer informações sobre o uso de uma carga de trabalho. O sistema usa essas informações para criar uma configuração de volume ideal para você, que pode ser editada conforme necessário. Opcionalmente, você pode pular esta etapa na sequência de criação de volume.
+
+Um workload é um objeto de storage compatível com uma aplicação. Você pode definir uma ou mais cargas de trabalho ou instâncias por aplicação. Para alguns aplicativos, o sistema configura a carga de trabalho para conter volumes com caraterísticas de volume subjacentes semelhantes. Essas características de volume são otimizadas com base no tipo de aplicação compatível com o workload. Por exemplo, se você criar uma carga de trabalho que suporte um aplicativo Microsoft SQL Server e, posteriormente, criar volumes para essa carga de trabalho, as caraterísticas de volume subjacentes serão otimizadas para oferecer suporte ao Microsoft SQL Server.
+
+* *Específico do aplicativo* -- quando você está criando volumes usando uma carga de trabalho específica do aplicativo, o sistema pode recomendar uma configuração de volume otimizada para minimizar a contenção entre e/S da carga de trabalho do aplicativo e outro tráfego da instância do aplicativo. As características de volume, como tipo de e/S, tamanho do segmento, propriedade da controladora e cache de leitura e gravação, são automaticamente recomendadas e otimizadas para cargas de trabalho criadas para os seguintes tipos de aplicativos.
++
+** Microsoft SQL Server
+** Microsoft Exchange Server
+** Aplicações de videovigilância
+** VMware ESXi (para volumes a serem usados com o Virtual Machine File System)
++
+Você pode revisar a configuração de volume recomendada e editar, adicionar ou excluir os volumes e caraterísticas recomendados pelo sistema usando a caixa de diálogo Adicionar/Editar volumes.
+
+
+
+* *Outros* (ou aplicativos sem suporte específico para criação de volume) -- outras cargas de trabalho usam uma configuração de volume que você deve especificar manualmente quando deseja criar uma carga de trabalho que não esteja associada a um aplicativo específico ou se não houver otimização integrada para o aplicativo que você pretende usar no storage array. Você deve especificar manualmente a configuração do volume usando a caixa de diálogo Adicionar/Editar volumes.
+
+
+
+
+== Por que esses volumes não estão associados a uma carga de trabalho?
+
+Os volumes não são associados a uma carga de trabalho se tiverem sido criados usando a interface de linha de comando (CLI) ou se tiverem sido migrados (importados/exportados) de um storage array diferente.
+
+
+
+== Por que não consigo excluir a carga de trabalho selecionada?
+
+Essa carga de trabalho consiste em um grupo de volumes que foram criados usando a interface de linha de comando (CLI) ou migrados (importados/exportados) de um storage array diferente. Como resultado, os volumes dessa carga de trabalho não são associados a uma carga de trabalho específica da aplicação, portanto, a carga de trabalho não pode ser excluída.
+
+
+
+== Como os workloads específicos da aplicação me ajudam a gerenciar meu storage array?
+
+As características de volume do workload específico do aplicativo determinam como a carga de trabalho interage com os componentes do storage array e ajudam a determinar a performance do ambiente em uma determinada configuração.
+
+Um aplicativo é um software como o SQL Server ou o Exchange. Você define um ou mais workloads para dar suporte a cada aplicação.
+
+
+
+== Como o fornecimento dessas informações ajuda a criar armazenamento?
+
+As informações da carga de trabalho são usadas para otimizar as caraterísticas do volume, como tipo de e/S, tamanho do segmento e cache de leitura/gravação para a carga de trabalho selecionada. Essas características otimizadas determinam como sua carga de trabalho interage com os componentes do storage array.
+
+Com base nas informações de carga de trabalho fornecidas, o System Manager cria os volumes apropriados e os coloca nos pools ou grupos de volumes disponíveis atualmente no sistema. O sistema cria os volumes e otimiza suas características com base nas práticas recomendadas atuais para o workload selecionado.
+
+Antes de concluir a criação de volumes para uma determinada carga de trabalho, você pode revisar a configuração de volume recomendada e editar, adicionar ou excluir os volumes e as caraterísticas recomendadas pelo sistema usando a caixa de diálogo Adicionar/Editar volumes.
+
+Consulte a documentação específica da aplicação para obter informações sobre as melhores práticas.
+
+
+
+== O que eu preciso fazer para reconhecer a capacidade expandida?
+
+Se você aumentar a capacidade de um volume, o host pode não reconhecer imediatamente o aumento da capacidade do volume.
+
+A maioria dos sistemas operacionais reconhece a capacidade de volume expandida e se expande automaticamente após a expansão de volume ser iniciada. No entanto, alguns podem não. Se o sistema operacional não reconhecer automaticamente a capacidade de volume expandido, talvez seja necessário realizar uma nova digitalização ou reinicialização do disco.
+
+Depois de expandir a capacidade do volume, você deve aumentar manualmente o tamanho do sistema de arquivos para corresponder. A forma como você faz isso depende do sistema de arquivos que você está usando.
+
+Consulte a documentação do sistema operacional do host para obter detalhes adicionais.
+
+
+
+== Por que não vejo todos os meus pools e/ou grupos de volumes?
+
+Qualquer pool ou grupo de volume para o qual você não pode mover o volume não é exibido na lista.
+
+Pools ou grupos de volumes não são elegíveis por nenhum dos seguintes motivos:
+
+* Os recursos de garantia de dados (DA) de um pool ou grupo de volumes não correspondem.
+* Um pool ou grupo de volume está em um estado não ideal.
+* A capacidade de um pool ou grupo de volume é muito pequena.
+
+
+
+
+== O que é o tamanho do segmento?
+
+Um segmento é a quantidade de dados em kilobytes (KiB) que é armazenada em uma unidade antes que a matriz de armazenamento se mova para a próxima unidade na faixa (grupo RAID). O tamanho do segmento aplica-se apenas a grupos de volume, não a pools.
+
+O tamanho do segmento é definido pelo número de blocos de dados que contém. Ao determinar o tamanho do segmento, você deve saber que tipo de dados você armazenará em um volume. Se um aplicativo normalmente usa pequenas leituras e gravações aleatórias (IOPS), um tamanho de segmento menor normalmente funciona melhor. Como alternativa, se o aplicativo tiver leituras e gravações sequenciais grandes (throughput), um tamanho de segmento grande geralmente é melhor.
+
+Se um aplicativo usa pequenas leituras e gravações aleatórias ou grandes leituras e gravações sequenciais, o storage array tem melhor desempenho se o tamanho do segmento for maior do que o tamanho típico de bloco de dados. Isso normalmente torna mais fácil e rápido para as unidades acessarem os dados, o que é importante para um melhor desempenho do storage array.
+
+
+
+=== Ambientes em que a performance do IOPS é importante
+
+Em um ambiente de operações de e/S por segundo (IOPS), o storage array tem melhor desempenho se você usar um tamanho de segmento maior do que o tamanho típico do bloco de dados (" chunk'") que é lido/escrito em uma unidade. Isso garante que cada bloco seja escrito em uma única unidade.
+
+
+
+=== Ambientes onde a taxa de transferência é importante
+
+Em um ambiente de taxa de transferência, o tamanho do segmento deve ser uma fração uniforme do total de unidades de dados e o tamanho típico de bloco de dados (tamanho de e/S). Isso espalha os dados como um único stripe entre as unidades do grupo de volumes, levando a leituras e gravações mais rápidas.
+
+
+
+== O que é a propriedade preferida do controlador?
+
+A propriedade preferencial do controlador define o controlador designado para ser o controlador proprietário ou principal do volume.
+
+A propriedade do controlador é muito importante e deve ser planejada cuidadosamente. Os controladores devem ser balanceados o mais próximo possível para e/S totais.
+
+Por exemplo, se um controlador lê principalmente blocos de dados grandes e sequenciais e o outro controlador tiver blocos de dados pequenos com leituras e gravações frequentes, as cargas são muito diferentes. Saber quais volumes contêm que tipo de dados permite equilibrar as transferências de e/S igualmente em ambas as controladoras.
+
+
+
+== Quando eu gostaria de usar a seleção atribuir host mais tarde?
+
+Se você quiser acelerar o processo de criação de volumes, você pode pular a etapa de atribuição do host para que os volumes recém-criados sejam inicializados offline.
+
+Os volumes recém-criados devem ser inicializados. O sistema pode iniciá-los usando um de dois modos -- um processo de inicialização em segundo plano formato disponível imediato (IAF) ou um processo offline.
+
+Quando você mapeia um volume para um host, ele força qualquer volume inicializando nesse grupo a transição para a inicialização em segundo plano. Esse processo de inicialização em segundo plano permite e/S de host concorrente, que às vezes pode ser demorado.
+
+Quando nenhum dos volumes de um grupo de volumes é mapeado, a inicialização offline é realizada. O processo off-line é muito mais rápido do que o processo em segundo plano.
+
+
+
+== O que eu preciso saber sobre os requisitos de tamanho de bloco de host?
+
+Para sistemas EF300 e EF600, um volume pode ser definido para suportar um tamanho de bloco de 512 bytes ou 4KiB (também chamado de "tamanho do setor"). Você deve definir o valor correto durante a criação do volume. Se possível, o sistema sugere o valor padrão apropriado.
+
+Antes de definir o tamanho do bloco de volume, leia as seguintes limitações e diretrizes.
+
+* Alguns sistemas operacionais e máquinas virtuais (especialmente VMware, neste momento) exigem um tamanho de bloco de 512 bytes e não suportam 4KiB, portanto, certifique-se de conhecer os requisitos do host antes de criar um volume. Normalmente, você pode obter o melhor desempenho definindo um volume para apresentar um tamanho de bloco de 4KiB KB; no entanto, certifique-se de que seu host permita blocos de 4KiB KB (ou 4Kn KB).
+* O tipo de unidades que você selecionar para o seu pool ou grupo de volumes também determina quais tamanhos de bloco de volume são suportados, da seguinte forma:
++
+** Se você criar um grupo de volumes usando unidades que gravam em blocos de 512 bytes, então você só poderá criar volumes com blocos de 512 bytes.
+** Se você criar um grupo de volumes usando unidades que gravam em blocos 4KiB, poderá criar volumes com blocos 512 ou 4KiB.
+
+
+* Se o array tiver uma placa de interface de host iSCSI, todos os volumes estarão limitados a blocos de 512 bytes (independentemente do tamanho do bloco do grupo de volumes). Isso se deve a uma implementação de hardware específica.
+* Não é possível alterar um tamanho de bloco depois de definido. Se você precisar alterar um tamanho de bloco, exclua o volume e recriá-lo.
+

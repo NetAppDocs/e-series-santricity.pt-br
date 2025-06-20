@@ -1,0 +1,379 @@
+---
+permalink: sm-interface/faq-management-interface.html 
+sidebar: sidebar 
+keywords:  
+summary: Este FAQ pode ajudar se você está apenas procurando uma resposta rápida para uma pergunta. 
+---
+= Perguntas frequentes sobre a interface de gerenciamento do SANtricity System Manager
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Este FAQ pode ajudar se você está apenas procurando uma resposta rápida para uma pergunta.
+
+
+
+== Quais são os navegadores suportados?
+
+O Gerenciador de sistema do SANtricity suporta essas versões do navegador.
+
+[cols="1a,1a"]
+|===
+| Navegador | Versão mínima 
+
+
+ a| 
+Google Chrome
+ a| 
+89
+
+
+
+ a| 
+Mozilla Firefox
+ a| 
+80
+
+
+
+ a| 
+Safari
+ a| 
+14
+
+
+
+ a| 
+Microsoft Edge
+ a| 
+90
+
+|===
+
+
+== Quais são os atalhos de teclado?
+
+Você pode navegar pelo Gerenciador de sistema do SANtricity usando o teclado sozinho.
+
+
+
+=== Navegação geral
+
+[cols="1a,1a"]
+|===
+| Ação | Atalho de teclado 
+
+
+ a| 
+Mover para o item seguinte.
+ a| 
+Separador
+
+
+
+ a| 
+Mover para o item anterior.
+ a| 
+Shift e Tab
+
+
+
+ a| 
+Selecione um item.
+ a| 
+Introduza
+
+
+
+ a| 
+Lista suspensa - mova para o item seguinte ou anterior.
+ a| 
+Seta para baixo ou seta para cima
+
+
+
+ a| 
+Caixa de seleção--Selecione um item.
+ a| 
+Barra de espaço
+
+
+
+ a| 
+Botões de rádio - alternar entre itens.
+ a| 
+Seta para baixo ou seta para cima
+
+
+
+ a| 
+Texto expansível--expandir ou contrato item.
+ a| 
+Introduza
+
+|===
+
+
+=== Navegação da mesa
+
+[cols="1a,1a"]
+|===
+| Ação | Atalho de teclado 
+
+
+ a| 
+Selecione uma linha.
+ a| 
+Para selecionar uma linha e, em seguida, prima Enter
+
+
+
+ a| 
+Role para cima ou para baixo.
+ a| 
+Seta para baixo/seta para cima ou Página para baixo/Página para cima
+
+
+
+ a| 
+Altere a ordem de classificação de uma coluna.
+ a| 
+Para selecionar um título de coluna e, em seguida, prima Enter
+
+|===
+
+
+=== Navegação no calendário
+
+[cols="1a,1a"]
+|===
+| Ação | Atalho de teclado 
+
+
+ a| 
+Passar para o mês anterior.
+ a| 
+Página para cima
+
+
+
+ a| 
+Passar para o próximo mês.
+ a| 
+Página para baixo
+
+
+
+ a| 
+Mudar para o ano anterior.
+ a| 
+Página para cima
+
+
+
+ a| 
+Mude para o próximo ano.
+ a| 
+Página para baixo
+
+
+
+ a| 
+Abra o seletor de data se estiver fechado.
+ a| 
+Controle e Home
+
+
+
+ a| 
+Mover para o mês atual.
+ a| 
+Controle / comando e Home
+
+
+
+ a| 
+Passar para o dia anterior.
+ a| 
+Controle / comando à esquerda
+
+
+
+ a| 
+Passar para o dia seguinte.
+ a| 
+Controle / comando à direita
+
+
+
+ a| 
+Passar para a semana anterior.
+ a| 
+Controle / comando para cima
+
+
+
+ a| 
+Passar para a próxima semana.
+ a| 
+Controle / comando para baixo
+
+
+
+ a| 
+Selecione a data focada.
+ a| 
+Introduza
+
+
+
+ a| 
+Feche o seletor de data e apague a data.
+ a| 
+Controle / comando e fim
+
+
+
+ a| 
+Feche o seletor de data sem seleção.
+ a| 
+Escape
+
+|===
+
+
+== Como as estatísticas de desempenho para volumes individuais se relacionam com o total?
+
+As estatísticas de pools e grupos de volumes são calculadas agregando todos os volumes, incluindo volumes de capacidade reservada.
+
+A capacidade reservada é usada internamente pelo sistema de storage para dar suporte a thin volumes, snapshots e espelhamento assíncrono, e não é visível para hosts de e/S. Como resultado, as estatísticas do pool, do controlador e do storage array podem não ser a soma dos volumes visíveis.
+
+No entanto, para estatísticas de aplicações e cargas de trabalho, apenas os volumes visíveis são agregados.
+
+
+
+== Por que os dados são exibidos como zero nos gráficos e na tabela?
+
+Quando um zero é exibido para um ponto de dados nos gráficos e tabela, significa que não há atividade de e/S para o objeto para esse ponto no tempo. Essa situação pode ocorrer porque o host não está iniciando e/S para esse objeto, ou pode ser um problema com o próprio objeto.
+
+Os dados históricos do objeto ainda estão disponíveis para visualização. Os gráficos e a tabela mostrarão dados não-zero assim que a atividade de e/S começar a ocorrer para o objeto.
+
+A tabela a seguir lista as razões mais comuns pelas quais um valor de ponto de dados pode ser zero para qualquer objeto.
+
+[cols="25h,~"]
+|===
+| Tipo de objeto no nível do array | Os dados de motivo são exibidos como zero 
+
+
+ a| 
+Volume
+ a| 
+* O volume não tinha atribuição de host.
+
+
+
+
+ a| 
+Grupo de volume
+ a| 
+* O grupo de volume está a ser importado.
+* O grupo de volumes não contém um volume atribuído a um host, o grupo de volumes *_e_* não contém nenhuma capacidade reservada.
+
+
+
+
+ a| 
+Condução
+ a| 
+* A unidade falhou.
+* A unidade foi removida.
+* A unidade está num estado desconhecido.
+
+
+
+
+ a| 
+Controlador
+ a| 
+* O controlador está offline.
+* O controlador falhou.
+* O controlador foi removido.
+* O controlador está num estado desconhecido.
+
+
+
+
+ a| 
+Storage array
+ a| 
+* Storage array não contém volumes.
+
+
+|===
+
+
+== O que o gráfico de latência mostra?
+
+O gráfico de latência fornece estatísticas de latência, em milissegundos (ms), para volumes, grupos de volumes, pools, aplicações e workloads. Este gráfico é apresentado nos separadores Vista lógica, Vista física e Vista aplicações e cargas de trabalho.
+
+Latência refere-se a qualquer atraso que ocorre à medida que os dados são lidos ou gravados. Passe o cursor sobre um ponto no gráfico para ver os seguintes valores, em milissegundos (ms), para esse ponto no tempo:
+
+* Tempo de leitura.
+* Tempo de gravação.
+* Tamanho médio de e/S.
+
+
+
+
+== O que o gráfico IOPS mostra?
+
+O gráfico IOPS exibe estatísticas para operações de entrada/saída por segundo. Na página inicial, este gráfico exibe estatísticas para a matriz de armazenamento. Nas guias Exibição lógica, Exibição física e visualização de aplicativos e cargas de trabalho do bloco desempenho, esse gráfico exibe estatísticas do storage array, volumes, grupos de volumes, pools, aplicativos e cargas de trabalho.
+
+IOPS é uma abreviatura para _IOPS/IOPS (e/S) operações por segundo_. Passe o cursor sobre um ponto no gráfico para ver os seguintes valores para esse ponto no tempo:
+
+* Número de operações de leitura.
+* Número de operações de gravação.
+* Total de operações de leitura e gravação combinadas.
+
+
+
+
+== O que o gráfico MIB/s mostra?
+
+O gráfico MIB/s exibe estatísticas de velocidade de transferência em mebibytes por segundo. Na página inicial, este gráfico exibe estatísticas para a matriz de armazenamento. Nas guias Exibição lógica, Exibição física e visualização de aplicativos e cargas de trabalho do bloco desempenho, esse gráfico exibe estatísticas do storage array, volumes, grupos de volumes, pools, aplicativos e cargas de trabalho.
+
+MIB/s é uma abreviatura de _mebibytes por segundo_, ou 1.048.576 bytes por segundo. Passe o cursor sobre um ponto no gráfico para ver os seguintes valores para esse ponto no tempo:
+
+* A quantidade de dados lidos.
+* A quantidade de dados escritos.
+* A quantidade total combinada de dados lidos e escritos.
+
+
+
+
+== O que o gráfico da CPU mostra?
+
+O gráfico da CPU exibe estatísticas de capacidade de processamento para cada controlador (controlador A e controlador B). CPU é uma abreviatura para _central processing unit_. Na página inicial, este gráfico exibe estatísticas para a matriz de armazenamento. Na guia Exibição física do bloco desempenho, esse gráfico exibe estatísticas para o storage de armazenamento e unidades.
+
+O gráfico da CPU mostra a porcentagem da capacidade de processamento da CPU que está sendo usada em relação às operações no array. Mesmo quando nenhuma e/S externa está ocorrendo, a porcentagem de utilização da CPU pode não ser zero porque o sistema operacional de armazenamento pode estar fazendo operações e monitoramento em segundo plano. Passe o cursor sobre um ponto no gráfico para ver uma percentagem da capacidade de processamento que está a ser utilizada nesse momento.
+
+
+
+== O que o gráfico da cabeceira mostra?
+
+O gráfico de espaço livre está relacionado à capacidade de desempenho restante para os controladores do storage array. Este gráfico é visível na página inicial e na guia Exibição física do bloco desempenho.
+
+O gráfico de altura mostra a capacidade de desempenho restante dos objetos físicos no sistema de armazenamento. Passe o cursor sobre um ponto no gráfico para ver as porcentagens de capacidade de IOPS e MIB/s restantes para o controlador A e para o controlador B.
+
+
+
+== Onde posso encontrar mais informações sobre as preferências de visualização?
+
+Para encontrar informações sobre as opções de visualização disponíveis:
+
+* Para ler mais sobre as unidades padrão para exibir valores de capacidade, link:set-default-units-for-capacity-values.html["Definir unidades padrão para valores de capacidade"]consulte .
+* Para ler mais sobre o período de tempo predefinido para apresentar gráficos de desempenho, link:set-default-time-frame-for-performance-graphs.html["Definir o período de tempo predefinido para gráficos de desempenho"]consulte .
+

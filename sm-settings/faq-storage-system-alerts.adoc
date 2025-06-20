@@ -1,0 +1,39 @@
+---
+permalink: sm-settings/faq-storage-system-alerts.html 
+sidebar: sidebar 
+keywords:  
+summary: Este FAQ pode ajudar se você está apenas procurando uma resposta rápida para uma pergunta. 
+---
+= Perguntas frequentes sobre alertas do sistema de armazenamento para o SANtricity System Manager
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Este FAQ pode ajudar se você está apenas procurando uma resposta rápida para uma pergunta.
+
+
+
+== E se os alertas estiverem desativados?
+
+Se você quiser que os administradores recebam notificações sobre eventos importantes que ocorrem no storage array, configure um método de alerta.
+
+Para storages gerenciados com o Gerenciador de sistemas do SANtricity, você configura alertas na página Alertas. As notificações de alerta podem ser enviadas por e-mail, traps SNMP ou mensagens syslog. Além disso, os alertas de e-mail podem ser configurados a partir do Assistente de configuração inicial.
+
+
+
+== Como configuro alertas SNMP ou syslog?
+
+Além dos alertas por e-mail, você pode configurar alertas para serem enviados por traps SNMP (Simple Network Management Protocol) ou por mensagens syslog.
+
+Para configurar alertas SNMP ou syslog, vá para menu:Configurações[Alertas].
+
+
+
+== Por que os carimbos de data/hora são inconsistentes entre a matriz e os alertas?
+
+Quando o storage array envia alertas, ele não corrige o fuso horário do servidor de destino ou host que recebe os alertas. Em vez disso, o storage array usa a hora local (GMT) para criar o carimbo de data/hora usado para o Registro de alerta. Como resultado, você pode ver inconsistências entre os carimbos de data/hora do storage array e o servidor ou host recebendo um alerta.
+
+Como o storage array não corrige o fuso horário ao enviar alertas, o carimbo de data/hora nos alertas é GMT-Relative, que tem um deslocamento de fuso horário de zero. Para calcular um carimbo de data/hora apropriado ao seu fuso horário local, você deve determinar o deslocamento da hora do GMT e, em seguida, adicionar ou subtrair esse valor dos carimbos de data/hora.

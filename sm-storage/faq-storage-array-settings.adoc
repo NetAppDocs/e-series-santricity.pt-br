@@ -1,0 +1,99 @@
+---
+permalink: sm-storage/faq-storage-array-settings.html 
+sidebar: sidebar 
+keywords:  
+summary: Este FAQ pode ajudar se você está apenas procurando uma resposta rápida para uma pergunta. 
+---
+= Perguntas frequentes sobre configurações de matriz de armazenamento para o SANtricity System Manager
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Este FAQ pode ajudar se você está apenas procurando uma resposta rápida para uma pergunta.
+
+
+
+== O que é balanceamento de carga automático?
+
+O recurso balanceamento de carga automático fornece balanceamento de e/S automatizado e garante que o tráfego de e/S recebido dos hosts seja gerenciado e balanceado dinamicamente entre ambos os controladores.
+
+O recurso balanceamento de carga automático fornece gerenciamento de recursos de e/S aprimorado, reagindo dinamicamente às alterações de carga ao longo do tempo e ajustando automaticamente a propriedade do controlador de volume para corrigir quaisquer problemas de desequilíbrio de carga quando as cargas de trabalho mudam entre os controladores.
+
+A carga de trabalho de cada controlador é continuamente monitorizada e, com a colaboração dos drivers multipath instalados nos hosts, pode ser automaticamente colocada em equilíbrio sempre que necessário. Quando o workload é rebalanceado automaticamente entre os controladores, o administrador de storage fica aliviado da sobrecarga de ajustar manualmente a propriedade do controlador de volume para acomodar alterações de carga no storage array.
+
+Quando o balanceamento de carga automático está ativado, ele executa as seguintes funções:
+
+* Monitora e equilibra automaticamente a utilização de recursos do controlador.
+* Ajusta automaticamente a propriedade do controlador de volume quando necessário, otimizando assim a largura de banda de e/S entre os hosts e o storage array.
+
+
+[NOTE]
+====
+Qualquer volume atribuído para usar o cache SSD de um controlador não é elegível para uma transferência automática de balanceamento de carga.
+
+====
+
+
+== O que é cache de controladora?
+
+O cache do controlador é um espaço de memória física que simplifica dois tipos de operações de e/S (entrada/saída): Entre os controladores e os hosts e entre os controladores e os discos.
+
+Para transferências de dados de leitura e gravação, os hosts e controladores se comunicam por conexões de alta velocidade. No entanto, as comunicações do back-end do controlador para os discos são mais lentas, porque os discos são dispositivos relativamente lentos.
+
+Quando o cache do controlador recebe dados, o controlador reconhece aos aplicativos host que agora está segurando os dados. Dessa forma, os aplicativos host não precisam esperar que a e/S seja gravada no disco. Em vez disso, os aplicativos podem continuar as operações. Os dados armazenados em cache também são facilmente acessíveis por aplicativos de servidor, eliminando a necessidade de leituras adicionais de disco para acessar os dados.
+
+O cache da controladora afeta o desempenho geral do storage de várias maneiras:
+
+* O cache funciona como um buffer, para que as transferências de dados de host e disco não precisem ser sincronizadas.
+* Os dados para uma operação de leitura ou gravação do host podem estar em cache de uma operação anterior, o que elimina a necessidade de acessar o disco.
+* Se o cache de gravação for usado, o host poderá enviar comandos de gravação subsequentes antes que os dados de uma operação de gravação anterior sejam gravados no disco.
+* Se a pré-busca de cache estiver ativada, o acesso de leitura sequencial será otimizado. A pré-busca de cache torna uma operação de leitura mais provável de encontrar seus dados no cache, em vez de ler os dados do disco.
+
+
+[CAUTION]
+====
+*Possível perda de dados* -- se você ativar a opção *armazenamento em cache sem baterias* e não tiver uma fonte de alimentação universal para proteção, você pode perder dados. Além disso, você pode perder dados se não tiver baterias do controlador e ativar a opção *armazenamento em cache sem baterias*.
+
+====
+
+
+== O que é a lavagem de cache?
+
+Quando a quantidade de dados não escritos no cache atinge um determinado nível, o controlador grava periodicamente dados em cache em uma unidade. Este processo de gravação é chamado de "lavagem".
+
+O controlador usa dois algoritmos para a lavagem do cache: Baseado na demanda e baseado em idade. O controlador usa um algoritmo baseado em demanda até que a quantidade de dados em cache caia abaixo do limite de descarga do cache. Por padrão, um flush começa quando 80% do cache está em uso.
+
+No System Manager, você pode definir o limite "'Start Demand cache flushing'" para melhor suportar o tipo de e/S usado em seu ambiente. Em um ambiente que é principalmente operações de gravação, você deve definir a porcentagem de ""Limpeza de cache de demanda inicial"" alta para aumentar a probabilidade de que quaisquer novas solicitações de gravação possam ser processadas pelo cache sem ter que ir para o disco. Uma configuração de porcentagem alta limita o número de fluxos de cache para que mais dados permaneçam no cache, o que aumenta a chance de mais acertos no cache.
+
+Em um ambiente onde a e/S é irregular (com picos de dados), você pode usar a lavagem de cache baixo para que o sistema flushes o cache frequentemente entre picos de dados. Em um ambiente de e/S diversificado que processa uma variedade de cargas, ou quando o tipo de cargas é desconhecido, defina o limite em 50% como um bom meio-terra. Esteja ciente de que, se você escolher uma porcentagem inicial inferior a 80%, poderá ver uma redução no desempenho porque os dados necessários para uma leitura de host podem não estar disponíveis. Escolher uma porcentagem menor também aumenta o número de gravações de disco necessárias para manter o nível de cache, o que aumenta a sobrecarga do sistema.
+
+O algoritmo baseado em idade especifica o período de tempo durante o qual os dados de gravação podem permanecer no cache antes de serem elegíveis para serem lavados para os discos. Os controladores usam o algoritmo baseado em idade até que o limite de descarga do cache seja atingido. O padrão é de 10 segundos, mas esse período de tempo é contado apenas durante períodos de inatividade. Você não pode modificar o tempo de flush no System Manager; em vez disso, você deve usar o comando *Set Storage Array* na interface de linha de comando (CLI).
+
+[CAUTION]
+====
+*Possível perda de dados* -- se você ativar a opção *armazenamento em cache sem baterias* e não tiver uma fonte de alimentação universal para proteção, você pode perder dados. Além disso, você pode perder dados se não tiver baterias do controlador e ativar a opção *armazenamento em cache sem baterias*.
+
+====
+
+
+== O que é o tamanho do bloco de cache?
+
+O controlador do storage organiza seu cache em "blocos", que são pedaços de memória que podem ser 8, 16, 32 KiB de tamanho. Todos os volumes no sistema de armazenamento compartilham o mesmo espaço de cache; portanto, os volumes podem ter apenas um tamanho de bloco de cache.
+
+Os aplicativos usam tamanhos de bloco diferentes, o que pode ter um impacto no desempenho de storage. Por padrão, o tamanho do bloco no System Manager é de 32 KiB, mas você pode definir o valor para 8, 16, 32 KiBs. Um tamanho menor é uma boa escolha para sistemas de arquivos ou aplicativos de banco de dados. Um tamanho maior é uma boa escolha para aplicativos que exigem grande transferência de dados, e/S sequencial ou alta largura de banda, como Multimídia.
+
+
+
+== Quando devo sincronizar relógios de storage?
+
+Você deve sincronizar manualmente os relógios do controlador na matriz de armazenamento se notar que os carimbos de hora mostrados no Gerenciador do sistema do SANtricity não estão alinhados com os carimbos de hora mostrados no cliente de gerenciamento (o computador que está acessando o Gerenciador do sistema do SANtricity pelo navegador). Esta tarefa só é necessária se o NTP (Network Time Protocol) não estiver ativado no Gestor do sistema SANtricity.
+
+[NOTE]
+====
+É altamente recomendável que você use um servidor NTP em vez de sincronizar manualmente os relógios. NTP sincroniza automaticamente os relógios com um servidor externo usando SNTP (Simple Network Time Protocol).
+
+====
+Você pode verificar o status da sincronização na caixa de diálogo Sincronizar relógios de storage de armazenamento, que está disponível na página sistema. Se os horários mostrados na caixa de diálogo não corresponderem, execute uma sincronização. Você pode visualizar periodicamente essa caixa de diálogo, que indica se as exibições de tempo dos relógios do controlador se afastaram e não estão mais sincronizadas.

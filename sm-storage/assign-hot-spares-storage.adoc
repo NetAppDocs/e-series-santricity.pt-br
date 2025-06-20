@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, assign hot spares 
 summary: Você pode atribuir um hot spare como uma unidade de reserva para proteção de dados adicional em grupos de volume RAID 1, RAID 5 ou RAID 6. Se uma unidade falhar em um desses grupos de volume, o controlador reconstrói os dados da unidade com falha para o hot spare. 
 ---
-= Atribua peças sobressalentes quentes
+= Atribuir peças de reposição no SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

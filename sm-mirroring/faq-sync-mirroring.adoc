@@ -1,0 +1,231 @@
+---
+permalink: sm-mirroring/faq-sync-mirroring.html 
+sidebar: sidebar 
+keywords:  
+summary: Este FAQ pode ajudar se você está apenas procurando uma resposta rápida para uma pergunta. 
+---
+= Perguntas frequentes sobre espelhamento de sincronização para o SANtricity System Manager
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Este FAQ pode ajudar se você está apenas procurando uma resposta rápida para uma pergunta.
+
+
+
+== Como o espelhamento assíncrono difere do espelhamento síncrono?
+
+O recurso de espelhamento assíncrono difere do recurso de espelhamento síncrono de uma maneira essencial: Captura o estado do volume de origem em um determinado ponto no tempo e copia apenas os dados que foram alterados desde a última captura de imagem.
+
+Com o espelhamento síncrono, o estado do volume primário não é capturado em algum momento do tempo, mas sim reflete todas as alterações que foram feitas no volume primário para o volume secundário. O volume secundário é idêntico ao volume primário a cada momento porque, com este tipo de espelho, cada vez que uma gravação é feita no volume primário, uma gravação é feita no volume secundário. O host não recebe uma confirmação de que a gravação foi bem-sucedida até que o volume secundário seja atualizado com êxito com as alterações feitas no volume primário.
+
+Com o espelhamento assíncrono, o storage array remoto não é totalmente sincronizado com o storage array local. Portanto, se o aplicativo precisar fazer a transição para o storage array remoto devido à perda do storage array local, algumas transações poderão ser perdidas.
+
+Comparação entre os recursos de espelhamento:
+
+[cols="1a,1a"]
+|===
+| Espelhamento assíncrono | Espelhamento síncrono 
+
+
+ a| 
+*Método de replicação*
+
+
+
+ a| 
+* *Ponto no tempo*
++
+O espelhamento é feito sob demanda ou automaticamente de acordo com uma programação definida pelo usuário. Os horários podem ser definidos na granularidade de minutos. O tempo mínimo entre sincronizações é de 10 minutos.
+
+
+ a| 
+* *Contínuo*
++
+O espelhamento é executado automaticamente continuamente, copiando dados de cada gravação do host.
+
+
+
+
+
+ a| 
+*Capacidade reservada*
+
+
+
+ a| 
+* *Múltiplo*
++
+Um volume de capacidade reservada é necessário para cada par espelhado.
+
+
+ a| 
+* *Single*
++
+É necessário um único volume de capacidade reservada para todos os volumes espelhados.
+
+
+
+
+
+ a| 
+*Comunicação*
+
+
+
+ a| 
+* *ISCSI e Fibre Channel*
++
+Suporta interfaces iSCSI e Fibre Channel entre storage arrays.
+
+
+ a| 
+* *Fibre Channel*
++
+Suporta apenas interfaces Fibre Channel entre storage arrays.
+
+
+
+
+
+ a| 
+*Distância*
+
+
+
+ a| 
+* *Ilimitado*
++
+Suporte para distâncias praticamente ilimitadas entre a matriz de armazenamento local e a matriz de armazenamento remoto, com a distância normalmente limitada apenas pelos recursos da rede e da tecnologia de extensão de canal.
+
+
+ a| 
+* *Restrito*
++
+Normalmente, deve estar a cerca de 10 km (6,2 milhas) do storage array local para atender aos requisitos de latência e desempenho do aplicativo.
+
+
+
+|===
+
+
+== Espelhamento síncrono - Por que não vejo todos os meus volumes?
+
+Ao selecionar um volume primário para um par espelhado, uma lista mostra todos os volumes elegíveis.
+
+Quaisquer volumes que não sejam elegíveis para serem usados não são exibidos nessa lista. Os volumes podem não ser elegíveis por qualquer um dos seguintes motivos:
+
+* O volume é um volume não padrão, como um volume instantâneo ou um volume fino.
+* O volume não é ideal.
+* O volume já está participando de uma relação de espelhamento.
+
+
+
+
+== Espelhamento síncrono - Por que não vejo todos os volumes no array de armazenamento remoto?
+
+Quando você está selecionando um volume secundário no storage array remoto, uma lista mostra todos os volumes elegíveis para esse par espelhado.
+
+Quaisquer volumes que não sejam elegíveis para serem usados, não serão exibidos nessa lista. Os volumes podem não ser elegíveis por qualquer um dos seguintes motivos:
+
+* O volume é um volume não padrão, como um volume instantâneo ou um volume fino.
+* O volume não é ideal.
+* O volume já está participando de uma relação de espelhamento.
+* Se estiver a utilizar o Data Assurance (DA), o volume primário e o volume secundário têm de ter as mesmas definições DE DA.
++
+** Se o volume primário for DA ativado, o volume secundário tem de ser DA ativado.
+** Se o volume primário não estiver ativado DA, o volume secundário não deve ser ativado DA.
+
+
+
+
+
+
+== Espelhamento síncrono - o que eu preciso saber antes de criar um par espelhado?
+
+Você configura pares espelhados na interface do Gerenciador Unificado do SANtricity e gerencia os pares no Gerenciador de sistemas do SANtricity.
+
+Antes de criar um par espelhado, siga estas diretrizes:
+
+* Você precisa ter dois storage arrays.
+* Cada storage array deve ter duas controladoras.
+* Cada controlador no array primário e no array secundário deve ter uma porta de gerenciamento Ethernet configurada e estar conetado à rede.
+* Seus storage arrays locais e remotos são conectados por meio de uma malha Fibre Channel.
+* As matrizes de armazenamento têm uma versão mínima de firmware de 7,84. (Cada um deles pode executar diferentes versões do sistema operacional.)
+* Você deve saber a senha para os storages de armazenamento local e remoto.
+* Você precisa ter capacidade livre suficiente no storage array remoto para criar um volume secundário igual ou maior que o volume principal que deseja espelhar.
+* Você instalou o Web Services Proxy e o Unified Manager. Os pares espelhados são configurados na interface do Unified Manager.
+* Os dois storage arrays são descobertos no Unified Manager.
+
+
+
+
+== Qual o impactos que a prioridade de sincronização tem nas taxas de sincronização?
+
+A prioridade de sincronização define quanto tempo de processamento é alocado para atividades de sincronização em relação ao desempenho do sistema.
+
+O proprietário do controlador do volume primário executa esta operação em segundo plano. Ao mesmo tempo, o proprietário do controlador processa gravações de e/S locais no volume principal e gravações remotas associadas no volume secundário. Como a ressincronização desvia os recursos de processamento do controlador da atividade de e/S, a ressincronização pode ter um impacto no desempenho do aplicativo host.
+
+Mantenha essas diretrizes em mente para ajudá-lo a determinar quanto tempo uma prioridade de sincronização pode levar e como as prioridades de sincronização podem afetar o desempenho do sistema.
+
+.Sobre as taxas de prioridade de sincronização
+[%collapsible]
+====
+Estas tarifas prioritárias estão disponíveis:
+
+* Mais baixo
+* Baixo
+* Média
+* Alta
+* Mais alto
+
+
+A taxa de prioridade mais baixa suporta o desempenho do sistema, mas a ressincronização leva mais tempo. A taxa de prioridade mais alta é compatível com a ressincronização, mas o desempenho do sistema pode estar comprometido.
+
+====
+Estas orientações aproximam aproximadamente as diferenças entre as prioridades.
+
+[cols="35h,~"]
+|===
+| Taxa de prioridade para sincronização completa | Tempo decorrido em comparação com a taxa de sincronização mais elevada 
+
+
+ a| 
+Mais baixo
+ a| 
+Aproximadamente oito vezes, desde que na taxa de prioridade mais alta.
+
+
+
+ a| 
+Baixo
+ a| 
+Aproximadamente seis vezes, desde que na taxa de prioridade mais alta.
+
+
+
+ a| 
+Média
+ a| 
+Aproximadamente três vezes e meia, desde que com a taxa de prioridade mais alta.
+
+
+
+ a| 
+Alta
+ a| 
+Aproximadamente o dobro do tempo na taxa de prioridade mais alta.
+
+|===
+As cargas de tamanho de volume e taxa de e/S do host afetam as comparações de tempo de sincronização.
+
+
+
+== Por que é recomendável usar uma política de sincronização manual?
+
+A ressincronização manual é recomendada porque permite gerenciar o processo de ressincronização de uma forma que forneça a melhor oportunidade para recuperar dados.
+
+Se você usar uma política de ressincronização automática e ocorrerem problemas de comunicação intermitente durante a ressincronização, os dados no volume secundário poderão ser corrompidos temporariamente. Quando a ressincronização é concluída, os dados são corrigidos.

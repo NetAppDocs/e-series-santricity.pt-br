@@ -1022,7 +1022,6 @@
   <block id="67b52d0dd0552f62756981b7d04e334a" category="paragraph">Para atualizar a exibição de matriz global no Unified Manager, abra a interface e vá para menu:Gerenciar[Discover].</block>
   <block id="3f79a5cd8daf0ba8a2623f690e8ad45d" category="paragraph">Se você ainda estiver usando o SANtricity Storage Manager, vá para a janela Gerenciamento Empresarial (EMW), onde você deve remover e adicionar novamente o novo endereço IP.</block>
   <block id="bbe66c4be17769c6d4513643761ffdc8" category="summary">Atualize o servidor DHCP sempre que o servidor for modificado ou atualizado, e as informações DHCP relevantes para a matriz de armazenamento atual e a matriz de armazenamento que você deseja usar foram alteradas.</block>
-  <block id="94788b711f7e65635e443787fd7a4d64" category="doc">Quando devo atualizar a configuração da porta ou o servidor iSNS a partir do servidor DHCP?</block>
   <block id="9b0798ee6300bf2c7b2901a68b97fe16" category="paragraph">Especificamente, atualize a configuração da porta ou o servidor iSNS do servidor DHCP quando souber que o servidor DHCP atribuirá endereços diferentes.</block>
   <block id="ed5f3843db7d9e3eef32391affc01b48" category="paragraph">Atualizar uma configuração de porta é destrutivo para todas as conexões iSCSI nessa porta.</block>
   <block id="4159cdde3f290f08d06c1f8b00354757" category="summary">Pode visualizar o estado de reconstrução da unidade a partir do painel operações em curso.</block>
@@ -1033,12 +1032,9 @@
   <block id="4b69ef1f951db45a2f4880145bc9960b" category="doc">Onde obtenho a configuração de rede?</block>
   <block id="31a747501aa8fe86a4b7f0f5b654bb85" category="paragraph">Você precisa dessas informações quando estiver configurando portas nos controladores.</block>
   <block id="6173d078b9110f3bc6b143913e3eb5c3" category="summary">O método predefinido para a configuração da rede é o DHCP (Dynamic Host Configuration Protocol). Utilize sempre esta opção, a menos que a rede não tenha um servidor DHCP.</block>
-  <block id="8bc7a4f0cccf7a456c1c5e4160d10f9a" category="doc">O que eu escolho - DHCP ou configuração manual?</block>
-  <block id="71c3af242ccaa8ae2337b0f30267ab9c" category="summary">Você deve definir a configuração de rede para cada controlador, seu endereço IP (Internet Protocol), máscara de sub-rede (máscara de sub-rede) e gateway, quando você usa o gerenciamento fora da banda.</block>
   <block id="2f7ce553a41c640f56c7844a348637c6" category="doc">Por que eu preciso alterar a configuração da rede do controlador?</block>
   <block id="5e835244a570835c8ccafca9cbc311c0" category="paragraph">Você deve definir a configuração de rede para cada controlador - seu endereço IP (Internet Protocol), máscara de sub-rede (máscara de sub-rede) e gateway - quando você usa o gerenciamento fora da banda.</block>
   <block id="c9c710b8643a9328d401dbe32e5382d0" category="paragraph">Pode definir a configuração de rede utilizando um servidor DHCP (Dynamic Host Configuration Protocol). Se não estiver a utilizar um servidor DHCP, tem de introduzir manualmente a configuração da rede.</block>
-  <block id="89e384381ed0570ab577beaf9c2e601b" category="summary">Um sistema de armazenamento em modo não otimizado deve-se a um estado de Configuração do sistema inválido. Apesar desse estado, o acesso normal de e/S aos volumes existentes é totalmente suportado; no entanto, o System Manager proibirá algumas operações.</block>
   <block id="574d0bc88edf7298a47d4aa1e588a886" category="doc">Por que o sistema de armazenamento está no modo não ideal?</block>
   <block id="4daa9d5961d8e3a7d375183df715a565" category="paragraph">Um sistema de armazenamento pode ser transferido para Configuração de sistema inválida por um destes motivos:</block>
   <block id="87db37c136e3231b71d5b7b9a2777a60" category="list-text">O controlador está fora de conformidade, possivelmente porque tem um código de ID de submodelo (SMID) incorreto ou excedeu o limite de recursos premium.</block>
@@ -1076,7 +1072,6 @@
   <block id="bbf0c4d1bfa37b26d66dc6d68521abd1" category="paragraph">A área capacidade exibe uma visualização de gráfico da capacidade alocada, da capacidade de armazenamento livre e da capacidade de armazenamento não atribuída no storage.</block>
   <block id="8b266c9fb3238ab21cdfb65ae66f6d31" category="list-text">*Hierarquia de armazenamento*</block>
   <block id="c141888590eec4af951b9533399cbef4" category="paragraph">A área hierarquia de armazenamento fornece uma visualização organizada dos vários componentes de hardware e objetos de armazenamento gerenciados pelo seu storage array. Clique na seta suspensa para executar uma determinada ação nesse componente de hardware ou objeto de armazenamento.</block>
-  <block id="38fdb2afc81bf942bd8dcf4208c5c967" category="summary">Para acessar tarefas de configuração para métodos de entrega do AutoSupport, vá para suporte &gt; Centro de suporte e clique na guia AutoSupport.</block>
   <block id="6d145ddbb4b39d9e20b73518a03bfc4f" category="doc">Como faço para configurar o método de entrega para o AutoSupport?</block>
   <block id="cf5b6a8826dfd986bff2c61c9d14df01" category="paragraph">Para acessar as tarefas de configuração para os métodos de entrega do AutoSupport, vá para o menu:suporte[Centro de suporte] e clique na guia *AutoSupport*.</block>
   <block id="0da136f3416dc0476dfca971f80e1d79" category="summary">Se você aceitar a configuração de pool recomendada depende de alguns fatores.</block>
@@ -1086,7 +1081,6 @@
   <block id="a90241e2ea3cc7e6b289f2663d89a71c" category="list-text">Você prefere grupos de volume RAID em pools?</block>
   <block id="71b77d8d34e6ef7ccb170b2c2c21b079" category="list-text">Você prefere provisionar manualmente suas unidades, em vez de ter uma configuração recomendada para você?</block>
   <block id="0b7252deab11ddabf78395397af0a16e" category="paragraph">Se você respondeu Sim a qualquer uma dessas perguntas, considere rejeitar a configuração recomendada do pool.</block>
-  <block id="4343a245fb510b33d199f2e5fae7a540" category="summary">Quando você identifica aplicações, o System Manager recomenda automaticamente uma configuração de volume que otimiza o storage com base no tipo de aplicação.</block>
   <block id="c56a19e88f72c77c4ab3e3911e485975" category="doc">Como a identificação de aplicativos me ajuda a gerenciar meu storage array?</block>
   <block id="e8d880726c1e775bd5008cff6e09ad34" category="paragraph">Otimizar volumes por aplicação pode tornar as operações de storage de dados mais eficientes. Caraterísticas como tipo de e/S, tamanho do segmento, propriedade do controlador e cache de leitura e gravação estão incluídas na configuração do volume. Além disso, você pode visualizar os dados de performance por aplicação e workload para avaliar a latência, IOPS e MIB/s das aplicações e seus workloads associados.</block>
   <block id="d77e0997337cdb24d489418a010b13ee" category="summary">A página operações em andamento permite exibir uma lista de operações de longa duração que estão em execução ou estão em um estado suspenso, parado ou com falha. Você pode tomar medidas em certos tipos de operações.</block>
@@ -1262,7 +1256,6 @@
   <block id="893d039747f9ffe53427eabe393d5043" category="paragraph">Número de unidade lógica (LUN)</block>
   <block id="b3531fd334ed7cc1223e8f766ecec856" category="paragraph">Um número de unidade lógica (LUN) é o número atribuído ao espaço de endereço que um host usa para acessar um volume. O volume é apresentado ao host como capacidade na forma de um LUN.</block>
   <block id="e3fddf5f409d2274a37027003342492c" category="paragraph">Cada host tem seu próprio espaço de endereço LUN. Portanto, o mesmo LUN pode ser usado por diferentes hosts para acessar diferentes volumes.</block>
-  <block id="8dec1efe38001f4587b49af677d444ac" category="summary">Você pode navegar pelo System Manager usando apenas o teclado.</block>
   <block id="f44c2e0b9af76e9f2722f52a08c25e93" category="doc">Quais são os atalhos de teclado?</block>
   <block id="ae9a8db5f7710f133e0083741b19cfe0" category="section-title">Navegação geral</block>
   <block id="004bf6c9a40003140292e97330236c53" category="cell">Ação</block>
@@ -1311,17 +1304,12 @@
   <block id="8417d057d3b11e2b4066c9ed49c5d09d" category="paragraph">Controle / comando e fim</block>
   <block id="c35d713def8372dd160b0ae180ceadb9" category="paragraph">Feche o seletor de data sem seleção.</block>
   <block id="013ec032d3460d4be4431c6ab1f8f224" category="paragraph">Escape</block>
-  <block id="646754995935d94c046a920e98aed63b" category="summary">O System Manager suporta essas versões do navegador.</block>
   <block id="a260cf8ad6a1291b0978385144000e3c" category="doc">Quais são os navegadores suportados?</block>
-  <block id="96830edba2b0d20286d9e38c88f41f0d" category="summary">Se você não vir todos os componentes de hardware na caixa de diálogo verificar hardware, isso pode significar que um compartimento de unidade não está conetado corretamente ou que um compartimento incompatível está instalado no storage de armazenamento.</block>
-  <block id="7a3b89af3b52c55d1f98c18d0f91e932" category="doc">E se eu não vir todos os meus componentes de hardware?</block>
   <block id="9446f92493638ff7ef1aefbdc315bdba" category="paragraph">Se você não vir todos os componentes de hardware na caixa de diálogo verificar hardware, isso pode significar que um compartimento de unidade não está conetado corretamente ou que um compartimento incompatível está instalado no storage de armazenamento.</block>
   <block id="b372dad273bfadf640e39fc6f3e8aff4" category="paragraph">Verifique se todos os compartimentos de unidades estão conetados corretamente. Se você não tiver certeza sobre quais gavetas de unidade são compatíveis, entre em Contato com o suporte técnico.</block>
-  <block id="0cf92f39ed774e6e03907495e7d22aae" category="doc">E se eu não ver todos os meus anfitriões?</block>
   <block id="e08bea33d06f32222715e3fdc7fa8842" category="summary">Para alguns aplicativos em sua rede, como SQL Server ou Exchange, você pode definir uma carga de trabalho que otimiza o armazenamento para esse aplicativo.</block>
   <block id="6404d6af6f191a945c98c6e22bb8a302" category="doc">O que é uma carga de trabalho?</block>
   <block id="0f00e158c95683733d5268cd23a15139" category="paragraph">Durante a criação de volume, o sistema solicita que você responda a perguntas sobre o uso de uma carga de trabalho. Por exemplo, se você estiver criando volumes para o Microsoft Exchange, será perguntado quantas caixas de correio você precisa, quais são seus requisitos médios de capacidade de caixa de correio e quantas cópias do banco de dados deseja. O sistema usa essas informações para criar uma configuração de volume ideal para você, que pode ser editada conforme necessário.</block>
-  <block id="a4001dd61d7d9d8ea94055a6907f80f9" category="summary">Pode encontrar informações sobre as opções de visualização disponíveis nos seguintes tópicos de ajuda.</block>
   <block id="d8a6ba9a5ef05e84deee23f14a28ab46" category="doc">Onde posso encontrar mais informações sobre as preferências de visualização?</block>
   <block id="dae44576c7b1e063ed5da830d3a4f9f9" category="paragraph">Para encontrar informações sobre as opções de visualização disponíveis:</block>
   <block id="76c87f9a843301e7b52af32c31aff3df" category="list-text">Para ler mais sobre as unidades padrão para exibir valores de capacidade, <block ref="0eb9a891b9aeec8453c8ad7826b910a5" category="inline-link-macro-rx"></block>consulte .</block>
@@ -1366,7 +1354,6 @@
   <block id="7b9ce18ef057f72de83e1ebbee094643" category="paragraph">A operação de espelhamento assíncrono não consegue operar normalmente devido a uma falha nos volumes primários, volumes secundários ou na capacidade reservada espelhada.</block>
   <block id="af437ac3df15f94bfea509017c51f1aa" category="paragraph">Volumes de pares espelhados órfãos são detetados quando a comunicação é restaurada entre os dois arrays de armazenamento e os dois lados da configuração do espelho reconciliar parâmetros de espelho.</block>
   <block id="02450c956f6e4f0ee6eb09e6d2e2940b" category="paragraph">O par espelhado está em um estado parado porque o grupo de consistência espelhada está em um estado suspenso pelo sistema.</block>
-  <block id="b47b71858322e411094e44ec1a37135c" category="summary">Você configura pares espelhados na interface do Unified Manager e gerencia os pares no System Manager.</block>
   <block id="f17d23d6e7e8eddf4836a9904b73236e" category="doc">Espelhamento assíncrono - o que preciso saber antes de criar um par espelhado?</block>
   <block id="03636572249dd9880006378f3c1755fe" category="paragraph">Antes de criar um par espelhado, siga estas diretrizes.</block>
   <block id="974faf4582be88d5166f32c03cc6e7c8" category="list-text">Você precisa ter dois storage arrays.</block>
@@ -1380,14 +1367,12 @@
   <block id="fe99edff93d55843d1bd3a7d39d7dbcd" category="list-text">Os dois storage arrays são descobertos no Unified Manager.</block>
   <block id="b6287b731648fdf0c4197b5b53ed2e5b" category="list-text">Seu storage array deve conter pelo menos um grupo de consistência de espelho. Você cria um grupo de consistência no Unified Manager no assistente criar pares espelhados.</block>
   <block id="50fd10ff08567255543d64e6fdfd287a" category="summary">Ao selecionar um volume primário para um par espelhado, uma lista mostra todos os volumes elegíveis.</block>
-  <block id="d651b1b5dea76bd9febe498feca9d0aa" category="doc">Espelhamento assíncrono - por que não vejo todos os meus volumes?</block>
   <block id="6e6d3781c3d5e89dac9c7a5286567157" category="paragraph">Quaisquer volumes que não sejam elegíveis para serem usados não são exibidos nessa lista. Os volumes não podem ser elegíveis por qualquer um dos seguintes motivos:</block>
   <block id="da6c861252922d5dba9aca194ca15178" category="list-text">O volume não é ideal.</block>
   <block id="4e30fb2503bfbf3dbe8e11d9e48208d0" category="list-text">O volume já está participando de uma relação de espelhamento.</block>
   <block id="e162c795f41b2f54f4cc4318a9da4a18" category="list-text">Para volumes finos, a expansão automática deve estar ativada.</block>
   <block id="56bdcfc544aad0bd6521d9f11a6f56dd" category="admonition">Para controladores EF600 e EF300, os volumes primário e secundário de um par espelhado assíncrono devem corresponder ao mesmo protocolo, nível da bandeja, tamanho do segmento, tipo de segurança e nível RAID. Pares espelhados assíncronos não elegíveis não aparecerão na lista de volumes disponíveis.</block>
   <block id="7b35335a6eefe537ec49adb2a524da1e" category="summary">Quando você está selecionando um volume secundário no storage array remoto, uma lista mostra todos os volumes elegíveis para esse par espelhado.</block>
-  <block id="d58e89d803ae3ca8b3fded751d8dac3f" category="doc">Espelhamento assíncrono - por que não vejo todos os volumes no storage array remoto?</block>
   <block id="20f1ebedc229b82bc1ca089db22f742e" category="paragraph">Quaisquer volumes que não sejam elegíveis para serem usados, não serão exibidos nessa lista. Os volumes podem não ser elegíveis por qualquer um dos seguintes motivos:</block>
   <block id="00f230c28776a9318fa981fb114d6eee" category="list-text">Os atributos de volume fino entre o volume primário e o volume secundário não correspondem.</block>
   <block id="f6f1db7050226548590e6d3e44b79ec6" category="list-text">Se estiver a utilizar o Data Assurance (DA), o volume primário e o volume secundário têm de ter as mesmas definições DE DA.</block>
@@ -1831,10 +1816,8 @@
   <block id="3775ce2a2c01f4de7fb2ca4e65ad44b1" category="paragraph">O objetivo do ponto de recuperação (RPO) representa um objetivo que indica a diferença considerada aceitável entre o volume primário e o volume secundário em um par espelhado. Um RPO de zero indica que nenhuma diferença entre o volume primário e o volume secundário pode ser tolerada. Um RPO maior que zero indica que o volume secundário está menos corrente ou fica aquém do volume primário.</block>
   <block id="65377e804f196feceee3ad92b112155f" category="doc">Espelhamento síncrono - o que eu preciso saber antes de criar um par espelhado?</block>
   <block id="00e8b06da64441679d15d4f0ec472c62" category="paragraph">Antes de criar um par espelhado, siga estas diretrizes:</block>
-  <block id="76c6cdf244623c861eb1e9b45de9f68d" category="doc">Espelhamento síncrono - por que não vejo todos os meus volumes?</block>
   <block id="996b3bbba1205dd996b175afc6573b9c" category="paragraph">Quaisquer volumes que não sejam elegíveis para serem usados não são exibidos nessa lista. Os volumes podem não ser elegíveis por qualquer um dos seguintes motivos:</block>
   <block id="991e25bd7d0d856f1cbe33745a8858c0" category="list-text">O volume é um volume não padrão, como um volume instantâneo ou um volume fino.</block>
-  <block id="3495d24d327284018c764d189eb19ebe" category="doc">Espelhamento síncrono - por que não vejo todos os volumes no storage array remoto?</block>
   <block id="00488bd7829540f62dd4bd6dfe0f675b" category="summary">Você pode testar o link de comunicação para diagnosticar possíveis problemas de comunicação entre o storage de armazenamento local e o storage de armazenamento remoto associado a um grupo de consistência de espelho.</block>
   <block id="e68fe7f4465c0b23ebfd3e9388a30c38" category="paragraph">O grupo de consistência de espelho que você deseja testar deve existir nos storages locais e remotos.</block>
   <block id="4e8203c0bd1e1113b52a2a0fb197d539" category="paragraph">Você pode executar quatro testes diferentes:</block>
@@ -1911,15 +1894,12 @@
   <block id="097f3db213035d61f884ca206abf8577" category="paragraph">Aproximadamente três vezes e meia, desde que com a taxa de prioridade mais alta.</block>
   <block id="925e87a825d11603a040572606e602cc" category="paragraph">Aproximadamente o dobro do tempo na taxa de prioridade mais alta.</block>
   <block id="e1bde07942eb1f02a009412f9460b4d6" category="paragraph">As cargas de tamanho de volume e taxa de e/S do host afetam as comparações de tempo de sincronização.</block>
-  <block id="09aa31a04bb22f0e3a974409e4760569" category="summary">O espelhamento é configurado na interface do Unified Manager.</block>
-  <block id="1f886fa10f9979df037b0e533f029308" category="doc">Por que não consigo acessar meu recurso de espelhamento escolhido?</block>
   <block id="bf28bf2251d42b0426dd4f0ec93a91cd" category="paragraph">Para ativar e configurar o espelhamento entre dois arrays, verifique o seguinte:</block>
   <block id="f7fa64ef9537f8a03850d1c113c23923" category="list-text">O serviço Web Services Proxy deve estar em execução. (O Unified Manager é instalado em um sistema host juntamente com o Web Services Proxy.)</block>
   <block id="1fe39625b8b89ac0cef70b7f416a43ed" category="list-text">Os dois storage arrays que você deseja usar para espelhamento devem ser descobertos no Unified Manager.</block>
   <block id="4b410ab35f063945bd85c998827c4215" category="list-text">O Unified Manager deve ter certificados SSL válidos para as matrizes de armazenamento. Você pode aceitar um certificado autoassinado ou instalar certificados assinados pela CA do Unified Manager.</block>
   <block id="ae5d1cf4a7cfbd77ca9b9b11d4a9355e" category="paragraph">Para obter instruções de configuração, consulte o seguinte:</block>
   <block id="1866ca64bf91acf982f0825105cd98a1" category="summary">Você pode aumentar a capacidade reservada apenas em incrementos de 4 GiB.</block>
-  <block id="5e79bfcdaf2980a36b13dea84317bc33" category="doc">Por que não posso aumentar a capacidade reservada com o meu valor solicitado?</block>
   <block id="d2c3016b1c4893861f6df9e9ca35fb38" category="paragraph">Reveja as seguintes diretrizes:</block>
   <block id="d24fe7c57d36be3405f7a2d1747d1041" category="list-text">Você precisa ter capacidade livre suficiente no pool ou no grupo de volumes para que possa ser expandido, se necessário.</block>
   <block id="ce83ffa7dc75c0de0405ab5e24abcecf" category="paragraph">Para operações de espelhamento assíncrono, a capacidade reservada é de 20% do volume base. Use uma porcentagem maior se você acredita que o volume base sofrerá muitas mudanças ou se a expetativa de vida estimada da operação de serviço de cópia de um objeto de armazenamento será muito longa.</block>
@@ -1930,7 +1910,6 @@
   <block id="354f62801910dd1edac18a317f02d0a4" category="doc">Por que vejo valores não disponíveis exibidos na tabela?</block>
   <block id="352674da3b0347b2fa94309f9852e20b" category="paragraph">Para exibir os dados do storage array remoto, inicie o System Manager do Unified Manager.</block>
   <block id="9a40e4909c217e4f4c325f3a320ac93a" category="summary">Quando você cria um volume secundário para o par espelhado assíncrono, o sistema exibe uma lista de todos os pools qualificados e grupos de volumes para esse par espelhado assíncrono. Qualquer pool ou grupo de volume que não seja elegível para ser usado não é exibido nessa lista.</block>
-  <block id="15f94db58250536332ae255a199d8cc3" category="doc">Por que não vejo todos os meus pools e grupos de volume?</block>
   <block id="c55e0fc2f650b6c29bee97d6d925791c" category="paragraph">Pools ou grupos de volumes podem não ser elegíveis por qualquer um dos seguintes motivos.</block>
   <block id="38c3daa178b71dd0ef1047cd80837346" category="list-text">Os recursos de segurança de um pool ou grupo de volumes não correspondem.</block>
   <block id="18747fc1783ea0c8be337cee42135fc8" category="list-text">Um pool ou grupo de volume está em um estado não ideal.</block>
@@ -1938,15 +1917,12 @@
   <block id="2677e564e3696a00712811d8d452bc9d" category="summary">A ressincronização manual é recomendada porque permite gerenciar o processo de ressincronização de uma forma que forneça a melhor oportunidade para recuperar dados.</block>
   <block id="be60404b2c56981a6ade529f56c56ade" category="doc">Por que é recomendável usar uma política de sincronização manual?</block>
   <block id="203eb3487092f98bd7739657bd0afb70" category="paragraph">Se você usar uma política de ressincronização automática e ocorrerem problemas de comunicação intermitente durante a ressincronização, os dados no volume secundário poderão ser corrompidos temporariamente. Quando a ressincronização é concluída, os dados são corrigidos.</block>
-  <block id="b3fd593fc883dfb95bb20995275cb9a2" category="summary">A capacidade reservada geralmente é de 40% do volume base para operações de snapshot e 20% do volume base para operações de espelhamento assíncrono. Normalmente, essa capacidade é suficiente.</block>
   <block id="9e5663f73d80960408415d0ced12887a" category="doc">Por que eu alteraria essa porcentagem?</block>
   <block id="fe1327f33625d09259d474174d0735ed" category="paragraph">A capacidade reservada geralmente é de 40% do volume base para operações de snapshot e 20% do volume base para operações de espelhamento assíncrono.</block>
   <block id="7ef46edfdc71263097118ce1f1a8a2c2" category="paragraph">Normalmente, essa capacidade é suficiente. A capacidade necessária varia, dependendo da frequência e tamanho das gravações de e/S no volume base e quanto tempo você pretende usar a operação de serviço de cópia do objeto de armazenamento.</block>
   <block id="3ca7224ea6dd4c4fa322fb0ebdc79572" category="paragraph">Em geral, escolha uma porcentagem maior para a capacidade reservada se uma ou ambas as condições existirem:</block>
   <block id="54abd49eba72d75970404acd8a2a3512" category="list-text">Se a vida útil de uma operação de serviço de cópia de um objeto de armazenamento específico será muito longa.</block>
   <block id="3b965b7599e93263ee7ae3b2db7bf7ae" category="list-text">Se uma grande porcentagem de blocos de dados mudar no volume base devido à intensa atividade de e/S. Use dados históricos de desempenho ou outros utilitários do sistema operacional para ajudá-lo a determinar a atividade típica de e/S para o volume base.</block>
-  <block id="6dfc033921a7d8d6b90bc5145f989f1e" category="summary">Você atualiza o endereço IP da matriz de armazenamento remoto quando o endereço IP de uma porta iSCSI muda e a matriz de armazenamento local não consegue se comunicar com a matriz de armazenamento remoto.</block>
-  <block id="6f04c9a202bb634f610d093a0d5d0495" category="doc">Por que eu atualizaria o endereço IP da minha matriz de armazenamento remoto?</block>
   <block id="4eb18d2e1000f44c1aa7bf303324ef52" category="paragraph">Você atualiza o endereço IP da matriz de armazenamento remoto quando o endereço IP de uma porta iSCSI muda e a matriz de armazenamento local não consegue se comunicar com a matriz de armazenamento remoto.</block>
   <block id="fd6fd032baf66907fa006af6877faa89" category="paragraph">Ao estabelecer uma relação de espelhamento assíncrono com uma conexão iSCSI, os storage arrays locais e remotos armazenam um Registro do endereço IP do storage array remoto na configuração de espelhamento assíncrono. Se o endereço IP de uma porta iSCSI mudar, o storage de armazenamento remoto que está tentando usar essa porta encontra um erro de comunicação.</block>
   <block id="d7e48014036e048990b33b96292bcc91" category="paragraph">A matriz de armazenamento com o endereço IP alterado envia uma mensagem para cada matriz de armazenamento remoto associada aos grupos de consistência de espelho configurados para espelhar uma conexão iSCSI. As matrizes de armazenamento que recebem esta mensagem atualizam automaticamente o endereço IP de destino remoto.</block>
@@ -3714,7 +3690,6 @@
   <block id="80d9a13fe0dc89c1b71418b670b63b98" category="list-text">*Estatísticas da interface RDMA* -- fornece estatísticas para todas as portas NVMe sobre Fabrics na interface RDMA, que inclui estatísticas de desempenho e informações de erro de link associadas a cada porta do switch. Essa guia só aparece quando as portas NVMe sobre Fabrics estiverem disponíveis.</block>
   <block id="19e889e5429830fa9bb56c11470f9f4a" category="list-text">Selecione *View NVMe over Fabrics Statistics*.</block>
   <block id="0cc11689ab61cad1affdb347b83db24b" category="paragraph">Definir a linha de base define um novo ponto de partida para a coleção das estatísticas. A mesma linha de base é usada para todas as estatísticas do NVMe.</block>
-  <block id="911b263427c2a3d45b55258250b4f85d" category="summary">O System Manager permite verificar se há certificados revogados usando um servidor OCSP (Online Certificate Status Protocol), em vez de carregar listas de revogação de certificados (CRLs).</block>
   <block id="e1338191b3f39c31a394336c2fb52f36" category="doc">O que eu preciso saber sobre a verificação de revogação de certificados?</block>
   <block id="fb43529f07beddec07e39c4b3a09bd7c" category="paragraph">Os certificados revogados não devem mais ser confiáveis. Um certificado pode ser revogado por vários motivos; por exemplo, se a Autoridade de Certificação (CA) emitiu incorretamente o certificado, uma chave privada foi comprometida ou a entidade identificada não aderiu aos requisitos da política.</block>
   <block id="0fb970899dcd3fadfd680340b731758b" category="paragraph">Depois de estabelecer uma conexão com um servidor OCSP no Gerenciador de sistema, o storage array executa a verificação de revogação sempre que se coneta a um servidor AutoSupport, servidor de gerenciamento de chave externa (EKMS), servidor Lightweight Directory Access Protocol over SSL (LDAPS) ou a um servidor Syslog. O storage array tenta validar os certificados desses servidores para garantir que eles não foram revogados. O servidor então retorna um valor de "bom", "revogado" ou "desconhecido" para esse certificado. Se o certificado for revogado ou o array não puder entrar em Contato com o servidor OCSP, a conexão será recusada.</block>
@@ -3785,7 +3760,6 @@
   <block id="11e77d000508d5f96454b886e37ca7e4" category="list-text">Para as unidades que você está migrando, você deve saber o identificador da chave de segurança e a frase-passe que corresponde ao arquivo da chave de segurança.</block>
   <block id="c04cf84d52a4e75dd91e3c335b94e32c" category="list-text">O arquivo da chave de segurança deve estar disponível no cliente de gerenciamento (o sistema com um navegador usado para acessar o System Manager).</block>
   <block id="5dcad6cc0c656f580a085c998fb762f4" category="list-text">Se estiver a repor uma unidade NVMe bloqueada, tem de introduzir a ID de segurança da unidade. Para localizar a ID de segurança, você deve remover fisicamente a unidade e encontrar a cadeia PSID (máximo de 32 carateres) na etiqueta da unidade. Certifique-se de que a unidade é reinstalada antes de iniciar a operação.</block>
-  <block id="3356c7ecaf79b816577caeabeb922c52" category="summary">A tabela a seguir lista as funções do System Manager que podem ser usadas para configurar e gerenciar sessões iSER over InfiniBand.</block>
   <block id="cbe7bc079476646f06b8968551839760" category="doc">O que mais preciso fazer para configurar ou diagnosticar iSER em InfiniBand?</block>
   <block id="34e1ef42c23e055b03535998dc9a10ea" category="paragraph">As configurações iSER over InfiniBand estarão disponíveis somente se a controladora do storage array incluir uma porta de gerenciamento de host iSER over InfiniBand.</block>
   <block id="32555c4aebeed331e68820e3e0ef23ce" category="list-text">Selecione a guia *Controllers &amp; Components* (Controladores e componentes).</block>
@@ -3793,7 +3767,6 @@
   <block id="e81c4e4f2b7b93b481e13a8553c2ae1b" category="paragraph">ou</block>
   <block id="c90221339a5b1309cf424327a6bbe8d2" category="list-text">Role para baixo até *iSER over InfiniBand settings* e selecione *Configure iSER over InfiniBand ports*.</block>
   <block id="2839d8ea86224b685168d2c05ffce9f3" category="list-text">Role para baixo até *iSER over InfiniBand settings* e selecione *View iSER over InfiniBand Statistics*.</block>
-  <block id="a6f7affe4dc5be0cadf5dc1e51b4de98" category="summary">A tabela a seguir lista as funções do System Manager que você pode usar para configurar e gerenciar sessões NVMe over InfiniBand.</block>
   <block id="f579a5c2bbaa968b2ae0227f6d61ee8b" category="doc">O que mais preciso fazer para configurar ou diagnosticar o NVMe em InfiniBand?</block>
   <block id="f354dc8aa2d80d21ecf46a214b9dc749" category="paragraph">As configurações NVMe over InfiniBand estarão disponíveis somente se a controladora do storage array incluir uma porta NVMe over InfiniBand.</block>
   <block id="eb364fdd3a5fbd25e3af66197bd501b4" category="list-text">Role para baixo até *NVMe over InfiniBand settings* e selecione *Configurar portas NVMe over InfiniBand*.</block>
@@ -3810,11 +3783,9 @@
   <block id="04d3601b03e8990551a928b25c92624a" category="summary">Se você quiser que os administradores recebam notificações sobre eventos importantes que ocorrem no storage array, configure um método de alerta.</block>
   <block id="e83cec393964d455572a0d2fd3446982" category="doc">E se os alertas estiverem desativados?</block>
   <block id="6404693a8bda075036814268ace8fea0" category="paragraph">Para storages gerenciados com o Gerenciador de sistemas do SANtricity, você configura alertas na página Alertas. As notificações de alerta podem ser enviadas por e-mail, traps SNMP ou mensagens syslog. Além disso, os alertas de e-mail podem ser configurados a partir do Assistente de configuração inicial.</block>
-  <block id="f2ebc677a5b447998da1a046adcc46f0" category="summary">O controlador da matriz de armazenamento organiza o cache em blocos, que são blocos de memória que podem ter 8, 16, 32 KiB de tamanho. Todos os volumes no sistema de armazenamento compartilham o mesmo espaço de cache; portanto, os volumes podem ter apenas um tamanho de bloco de cache.</block>
   <block id="16fa5803900906142586eefc2643c7e8" category="doc">O que é o tamanho do bloco de cache?</block>
   <block id="e49b598ec0d819934f021980302ed36e" category="paragraph">O controlador do storage organiza seu cache em "blocos", que são pedaços de memória que podem ser 8, 16, 32 KiB de tamanho. Todos os volumes no sistema de armazenamento compartilham o mesmo espaço de cache; portanto, os volumes podem ter apenas um tamanho de bloco de cache.</block>
   <block id="3a60a217f8b5d35351731337da2590da" category="paragraph">Os aplicativos usam tamanhos de bloco diferentes, o que pode ter um impacto no desempenho de storage. Por padrão, o tamanho do bloco no System Manager é de 32 KiB, mas você pode definir o valor para 8, 16, 32 KiBs. Um tamanho menor é uma boa escolha para sistemas de arquivos ou aplicativos de banco de dados. Um tamanho maior é uma boa escolha para aplicativos que exigem grande transferência de dados, e/S sequencial ou alta largura de banda, como Multimídia.</block>
-  <block id="621f5a5f95be39f6dfd96721467576f1" category="summary">Quando a quantidade de dados não escritos no cache atinge um determinado nível, o controlador grava periodicamente dados em cache em uma unidade. Este processo de gravação é chamado de lavagem.</block>
   <block id="2913e0bdf47a84de45d1801f60bd03ec" category="doc">O que é a lavagem de cache?</block>
   <block id="995e13919b56bf032eea1b80b032776e" category="paragraph">Quando a quantidade de dados não escritos no cache atinge um determinado nível, o controlador grava periodicamente dados em cache em uma unidade. Este processo de gravação é chamado de "lavagem".</block>
   <block id="b722587f8397c4f92f14a10a2d19a73d" category="paragraph">O controlador usa dois algoritmos para a lavagem do cache: Baseado na demanda e baseado em idade. O controlador usa um algoritmo baseado em demanda até que a quantidade de dados em cache caia abaixo do limite de descarga do cache. Por padrão, um flush começa quando 80% do cache está em uso.</block>
@@ -3837,7 +3808,6 @@
   <block id="fda9feb87b2359f45c531014af6a78b7" category="list-text">*Host Type Incorrect* -- abre se o tipo de host for especificado incorretamente na matriz de armazenamento, o que pode resultar em problemas de failover.</block>
   <block id="53c164407ce7b81b9344c3cc998d00e8" category="paragraph">Você pode querer desativar o relatório de conetividade do host em situações em que a reinicialização de um controlador pode levar mais tempo do que o tempo limite da conexão. Desativar esse recurso suprime as mensagens Gurus de recuperação.</block>
   <block id="2c04e082d541ef748137a6bdb54ff773" category="paragraph">A desativação do relatório de conetividade do host também desativa o balanceamento automático de carga, que monitora e equilibra o uso de recursos do controlador. No entanto, se você reativar os relatórios de conetividade do host, o recurso de balanceamento de carga automático não será reativado automaticamente.</block>
-  <block id="a8e2e2e6f94a627dfb39ec0a4930c961" category="summary">A janela Configurações da unidade inclui informações sobre os atributos de segurança da unidade. Leitura/gravação acessível é um dos atributos que é exibido se os dados de uma unidade foram bloqueados.</block>
   <block id="acd4d22fedd48d49e5eaf65df648efcf" category="doc">O que é acessibilidade de leitura/escrita?</block>
   <block id="08e4cde4dec18bcf34720085b135053b" category="paragraph">A janela Configurações da unidade inclui informações sobre os atributos de segurança da unidade. "Leitura/gravação acessível" é um dos atributos que é exibido se os dados de uma unidade foram bloqueados.</block>
   <block id="5d0ace8d3a4aed739aa36c5cfff181ca" category="paragraph">Para exibir os atributos de segurança da unidade, vá para a página hardware. Selecione uma unidade, clique em *View settings* e, em seguida, clique em *Show more settings* (Mostrar mais definições). Na parte inferior da página, o valor do atributo leitura/gravação acessível é *Sim* quando a unidade é desbloqueada. O valor do atributo leitura/gravação acessível é *não, chave de segurança inválida* quando a unidade está bloqueada. Pode desbloquear uma unidade segura importando uma chave de segurança (aceda ao menu:Definições[sistema &gt; desbloquear unidades seguras]).</block>
@@ -3851,11 +3821,9 @@
   <block id="7480a3b2fdeb865352e435afa515f099" category="list-text">*Modificação e eventos somente leitura* -- ações do usuário que envolvem alterações no sistema, bem como eventos que envolvem visualização ou download de informações, como visualização de atribuições de volume.</block>
   <block id="6ddc93e60487dcf3812c7b552e4f9d06" category="summary">A matriz de armazenamento executa a verificação de revogação sempre que se coneta a um servidor AutoSupport, servidor de gerenciamento de chaves externas (EKMS), servidor Lightweight Directory Access Protocol over SSL (LDAPS) ou a um servidor Syslog.</block>
   <block id="46e5f8463c8e2d07b7af1e3695a7e32b" category="doc">Para que tipos de servidores a verificação de revogação será ativada?</block>
-  <block id="e6f9c55029196b7648834c36ed0e3472" category="summary">Você deve sincronizar manualmente os relógios do controlador na matriz de armazenamento se notar que os carimbos de hora mostrados no System Manager não estão alinhados com os carimbos de hora mostrados no cliente de gerenciamento (o computador que está acessando o System Manager através do navegador). Esta tarefa só é necessária se o NTP (Network Time Protocol) não estiver ativado no System Manager.</block>
   <block id="d0e1c48d259a397068da011bc9e48355" category="doc">Quando devo sincronizar relógios de storage?</block>
   <block id="f9a315def8f285bce635c80c1bf7c96d" category="paragraph">É altamente recomendável que você use um servidor NTP em vez de sincronizar manualmente os relógios. NTP sincroniza automaticamente os relógios com um servidor externo usando SNTP (Simple Network Time Protocol).</block>
   <block id="f7c2a6279f30ed31e705988dae3b0a7a" category="paragraph">Você pode verificar o status da sincronização na caixa de diálogo Sincronizar relógios de storage de armazenamento, que está disponível na página sistema. Se os horários mostrados na caixa de diálogo não corresponderem, execute uma sincronização. Você pode visualizar periodicamente essa caixa de diálogo, que indica se as exibições de tempo dos relógios do controlador se afastaram e não estão mais sincronizadas.</block>
-  <block id="6f0a8cf9a1855b3b4a97c825f0dc2353" category="summary">Quando você faz certas alterações no System Manager, como alternar a interface de gerenciamento ou usar o SAML para um método de autenticação, algumas ferramentas e recursos externos podem ser restritos ao uso.</block>
   <block id="6c447bc20946705a74ecd7374bbfb3d9" category="doc">Que ferramentas de gestão externas podem ser afetadas por esta alteração?</block>
   <block id="f54dbfa752935857fdfec4346eb4879a" category="section-title">Interface de gerenciamento</block>
   <block id="d4b335926e3028e39907d1a8db8d868b" category="paragraph">As ferramentas que se comunicam diretamente com a interface de gerenciamento legada (símbolo), como o provedor SMI-S do SANtricity ou o OnCommand Insight (OCI), não funcionam a menos que a configuração Interface de Gerenciamento legado esteja ativada. Além disso, você não pode usar comandos CLI legados ou executar operações de espelhamento se essa configuração estiver desativada.</block>
@@ -3866,7 +3834,6 @@
   <block id="78ae98871470907121e38585f8109534" category="doc">Que métodos de registo são suportados automaticamente para iSCSI?</block>
   <block id="104e995b71d005ce9591fed237349989" category="paragraph">O método iSNS permite a descoberta do iSNS entre os iniciadores (hosts iSCSI) e os destinos (os controladores). Você Registra o controlador de destino para fornecer ao servidor iSNS o nome qualificado iSCSI (IQN) e as informações de porta do controlador.</block>
   <block id="86f5e054028caf77425a701d42d4cdfc" category="paragraph">Se você não configurar o iSNS, o host iSCSI poderá enviar o comando Enviar destinos durante uma sessão de descoberta iSCSI. Em resposta, o controlador retorna as informações da porta (por exemplo, IQN de destino, endereço IP da porta, porta de escuta e Grupo de portas de destino). Esse método de descoberta não é necessário se você usar o iSNS, porque o iniciador do host pode recuperar os IPs de destino do servidor iSNS.</block>
-  <block id="02b62fe21218b105202354e3ea442287" category="summary">A matriz de armazenamento EF600 pode incluir dois HICs – um externo e um interno.</block>
   <block id="08c9dcbb1f09b47d3350de8dff6bfdc1" category="doc">Por que há dois endereços IP para uma porta física?</block>
   <block id="efae713b5876ddd9d5278ed17ac910d8" category="paragraph">A matriz de armazenamento EF600 pode incluir dois HICs - um externo e um interno.</block>
   <block id="8db062752d20414202ee8dcfe8b79167" category="paragraph">Nesta configuração, o HIC externo está ligado a um HIC interno auxiliar. Cada porta física que você pode acessar do HIC externo tem uma porta virtual associada do HIC interno.</block>
@@ -3876,8 +3843,6 @@
   <block id="ebed1c095df061a9c27a3a3a99521ad7" category="summary">Quando o storage array envia alertas, ele não corrige o fuso horário do servidor de destino ou host que recebe os alertas. Em vez disso, o storage array usa a hora local (GMT) para criar o carimbo de data/hora usado para o Registro de alerta. Como resultado, você pode ver inconsistências entre os carimbos de data/hora do storage array e o servidor ou host recebendo um alerta.</block>
   <block id="562004c4c73569c2c6fbe088e31b2662" category="doc">Por que os carimbos de data/hora são inconsistentes entre a matriz e os alertas?</block>
   <block id="c0ff0a62dfeb02bb133249ac90eaec17" category="paragraph">Como o storage array não corrige o fuso horário ao enviar alertas, o carimbo de data/hora nos alertas é GMT-Relative, que tem um deslocamento de fuso horário de zero. Para calcular um carimbo de data/hora apropriado ao seu fuso horário local, você deve determinar o deslocamento da hora do GMT e, em seguida, adicionar ou subtrair esse valor dos carimbos de data/hora.</block>
-  <block id="ad7b6f0b788abb4027a97020a34740d3" category="summary">Se receber um erro ao tentar iniciar sessão no System Manager, reveja estas possíveis causas.</block>
-  <block id="b6026ee3aca4cc03c6a1bf51a326a2d1" category="doc">Por que não consigo fazer login?</block>
   <block id="b9197487d195b0270141242d84cef938" category="paragraph">Erros de login no System Manager podem ocorrer por um destes motivos:</block>
   <block id="d1ac1dfa34b7d51990947002ee6adb2d" category="list-text">Introduziu um nome de utilizador ou palavra-passe incorreto.</block>
   <block id="7c5ba619c861a80ef986b7207b06fe08" category="list-text">Você não tem Privileges suficiente.</block>
@@ -5325,7 +5290,6 @@
   <block id="a2c6517135cd73db00d8df8b402549d1" category="summary">As características de volume do workload específico do aplicativo determinam como a carga de trabalho interage com os componentes do storage array e ajudam a determinar a performance do ambiente em uma determinada configuração.</block>
   <block id="9e021ef1d8805a32e4e0a710fa382108" category="doc">Como os workloads específicos da aplicação me ajudam a gerenciar meu storage array?</block>
   <block id="056bd960f994268c2245e42ab49c22b9" category="paragraph">Um aplicativo é um software como o SQL Server ou o Exchange. Você define um ou mais workloads para dar suporte a cada aplicação.</block>
-  <block id="d5099898b83b97d11acb716788257093" category="summary">Se você configurar a autenticação CHAP (Challenge Handshake Authentication Protocol) em qualquer host iSCSI conetado à matriz de armazenamento, será necessário inserir novamente esse segredo CHAP iniciador para cada host iSCSI.</block>
   <block id="ecc4042eed7652f76dd879b570b57e11" category="doc">Como faço para criar segredos CHAP?</block>
   <block id="17e37321365996a91a4f11718b601987" category="paragraph">Se você configurar a autenticação CHAP (Challenge Handshake Authentication Protocol) em qualquer host iSCSI conetado à matriz de armazenamento, será necessário inserir novamente esse segredo CHAP iniciador para cada host iSCSI.</block>
   <block id="3e9a4afaef61b4b0b728e7809d2fe707" category="paragraph">Para fazer isso, você pode usar o System Manager como parte da operação criar host ou através da opção Exibir/Editar configurações.</block>
@@ -5437,7 +5401,6 @@
   <block id="c94aa7ea6fd0c914f2e1acd9319a9b07" category="doc">Como as estatísticas de desempenho para volumes individuais se relacionam com o total?</block>
   <block id="06ed2f061b950e375a13ee75a3d9007a" category="paragraph">A capacidade reservada é usada internamente pelo sistema de storage para dar suporte a thin volumes, snapshots e espelhamento assíncrono, e não é visível para hosts de e/S. Como resultado, as estatísticas do pool, do controlador e do storage array podem não ser a soma dos volumes visíveis.</block>
   <block id="4732ac53663748f0882aa6dc42bdaa7e" category="paragraph">No entanto, para estatísticas de aplicações e cargas de trabalho, apenas os volumes visíveis são agregados.</block>
-  <block id="0c6710fd70e8f6dfb7dc7c5ef665fd39" category="summary">Durante a criação de volume, você será solicitado a fornecer informações sobre o uso de uma carga de trabalho. O sistema usa essas informações para criar uma configuração de volume ideal para você, que pode ser editada conforme necessário. Opcionalmente, você pode pular esta etapa na sequência de criação de volume.</block>
   <block id="b5a3b95a88ff3f89275ca18c4736d4b8" category="doc">Como minha carga de trabalho selecionada afeta a criação de volume?</block>
   <block id="313e2c8f533507666d0259a50f56b9d4" category="paragraph">Durante a criação de volume, você será solicitado a fornecer informações sobre o uso de uma carga de trabalho. O sistema usa essas informações para criar uma configuração de volume ideal para você, que pode ser editada conforme necessário. Opcionalmente, você pode pular esta etapa na sequência de criação de volume.</block>
   <block id="4f7439eaf72081063362c689d77bf875" category="list-text">*Específico do aplicativo* -- quando você está criando volumes usando uma carga de trabalho específica do aplicativo, o sistema pode recomendar uma configuração de volume otimizada para minimizar a contenção entre e/S da carga de trabalho do aplicativo e outro tráfego da instância do aplicativo. As características de volume, como tipo de e/S, tamanho do segmento, propriedade da controladora e cache de leitura e gravação, são automaticamente recomendadas e otimizadas para cargas de trabalho criadas para os seguintes tipos de aplicativos.</block>
@@ -5664,7 +5627,6 @@
   <block id="2e13ae7734e08611053df40d3f1def0d" category="paragraph">Espaço livre refere-se à capacidade de desempenho restante dos controladores, dos canais de host do controlador e dos canais de unidade do controlador. Esse valor é expresso como uma porcentagem e representa a lacuna entre o desempenho máximo possível que esses objetos podem fornecer e os níveis de desempenho atuais.</block>
   <block id="586027b2870a382bca0e05679771fd7b" category="list-text">Para as controladoras, o espaço livre representa uma porcentagem do máximo de IOPS possível.</block>
   <block id="1427f2191c22bac62d1791fa724629c0" category="list-text">Para os canais, o espaço livre é uma porcentagem do rendimento máximo, ou MIB/s. Taxa de transferência de leitura, taxa de transferência de gravação e taxa de transferência bidirecional estão incluídos no cálculo.</block>
-  <block id="1bf2df1e11004707e4b12d626138d3e1" category="summary">O System Manager define limites para quantas unidades você pode remover de um pool.</block>
   <block id="dc0cac4fc3fe8b65f61e8ceff382e740" category="doc">Existe um limite no número de unidades que posso remover de um pool?</block>
   <block id="2999b678146d2b33259c7cb2b948c454" category="list-text">Não é possível reduzir o número de unidades em um pool para ser inferior a 11 unidades.</block>
   <block id="7dbebcef358c2bbdbe834522ce3e1c62" category="list-text">Não é possível remover unidades se não houver capacidade livre suficiente no pool para conter os dados das unidades removidas quando esses dados são redistribuídos para as unidades restantes no pool.</block>
@@ -6161,7 +6123,6 @@
   <block id="52cc9041f5a0f86edc4e5b13b7bcecbd" category="doc">Por que estou sendo solicitado a remover meus volumes remotos?</block>
   <block id="c3d66dc6bca370db92542df692757cfb" category="paragraph">Existem alguns casos em que os volumes remotos não utilizados não são limpos durante o processo de criação. Antes de iniciar quaisquer operações de importação adicionais, verifique se os seus sistemas são ideais e as ligações de rede são estáveis.</block>
   <block id="821c127bf32c0d6d510d581384bfdc89" category="summary">Ao configurar uma importação para o recurso armazenamento remoto, você pode notar que alguns volumes não aparecem na lista de candidatos alvo devido ao tamanho do bloco, capacidade ou disponibilidade de volume.</block>
-  <block id="d4538d3e9457b3332037137becb531c2" category="doc">Por que não vejo todos os meus volumes na minha matriz de destino?</block>
   <block id="d57fac41eaeaf7a84370871910e0f6d2" category="paragraph">Para aparecer na lista, os candidatos ao volume devem ter:</block>
   <block id="69cc506297892e5a506e7d183cf03227" category="list-text">Capacidade igual ou superior ao volume remoto.</block>
   <block id="b9152e2a19a205f565f107c733485374" category="list-text">Tamanho do bloco que é o mesmo que o volume remoto.</block>
@@ -6496,7 +6457,6 @@
   <block id="592a2d22569029e2e9426d790ce24e3c" category="paragraph">A maioria dos sistemas operacionais reconhece a capacidade de volume expandida e se expande automaticamente após a expansão de volume ser iniciada. No entanto, alguns podem não. Se o sistema operacional não reconhecer automaticamente a capacidade de volume expandido, talvez seja necessário realizar uma nova digitalização ou reinicialização do disco.</block>
   <block id="e99388207555e1734196f354ee94b95c" category="paragraph">Depois de expandir a capacidade do volume, você deve aumentar manualmente o tamanho do sistema de arquivos para corresponder. A forma como você faz isso depende do sistema de arquivos que você está usando.</block>
   <block id="e65366bea33d160fbbbc4da1552c962c" category="paragraph">Consulte a documentação do sistema operacional do host para obter detalhes adicionais.</block>
-  <block id="e3745a2a50cbf1b7fb00b47442215710" category="summary">Para sistemas EF300 e EF600, um volume pode ser definido para suportar um tamanho de bloco de 512 bytes ou 4KiB (também chamado de 'tamanho de leitor'). Você deve definir o valor correto durante a criação do volume. Se possível, o sistema sugere o valor padrão apropriado.</block>
   <block id="fb5754cb7d8aec1ca725e7242d365730" category="doc">O que eu preciso saber sobre os requisitos de tamanho de bloco de host?</block>
   <block id="e5e425d8ab1cbef0e34a067f0d88d470" category="paragraph">Para sistemas EF300 e EF600, um volume pode ser definido para suportar um tamanho de bloco de 512 bytes ou 4KiB (também chamado de "tamanho do setor"). Você deve definir o valor correto durante a criação do volume. Se possível, o sistema sugere o valor padrão apropriado.</block>
   <block id="f4aa667b118a0a334c4fa467de995fc8" category="paragraph">Antes de definir o tamanho do bloco de volume, leia as seguintes limitações e diretrizes.</block>
@@ -6509,7 +6469,6 @@
   <block id="5f0c816355e12c030fe4ea91be6c6569" category="summary">Normalmente, você deve aumentar a capacidade quando receber um aviso de que a capacidade reservada corre o risco de ficar cheia. Você pode aumentar a capacidade reservada apenas em incrementos de 8 GiB.</block>
   <block id="fcad32f135536e10b0655fbae7725986" category="doc">O que eu preciso saber sobre o aumento da capacidade reservada?</block>
   <block id="4a22ea5542b1f5fb521b08d4788c1c3c" category="paragraph">Para operações de snapshot, a capacidade reservada geralmente é de 40% do volume base. Para operações de espelhamento assíncrono, a capacidade reservada é de 20% do volume base. Use uma porcentagem maior se você acredita que o volume base sofrerá muitas mudanças ou se a expetativa de vida estimada da operação de serviço de cópia de um objeto de armazenamento será muito longa.</block>
-  <block id="ef7ae095d51a83215900fcb4d6a8da70" category="summary">O gráfico da CPU exibe estatísticas de capacidade de processamento para cada controlador (controlador A e controlador B). CPU é uma abreviatura para unidade de processamento central. Na página inicial, este gráfico exibe estatísticas para a matriz de armazenamento. Na guia Exibição física do bloco desempenho, esse gráfico exibe estatísticas para o storage de armazenamento e unidades.</block>
   <block id="9af8e70c2152ca5e60b42c567ce33fa9" category="doc">O que o gráfico da CPU mostra?</block>
   <block id="0df991de7620dc5a14fb4b20b2af6425" category="paragraph">O gráfico da CPU exibe estatísticas de capacidade de processamento para cada controlador (controlador A e controlador B). CPU é uma abreviatura para _central processing unit_. Na página inicial, este gráfico exibe estatísticas para a matriz de armazenamento. Na guia Exibição física do bloco desempenho, esse gráfico exibe estatísticas para o storage de armazenamento e unidades.</block>
   <block id="9c34bb79f49d9e803ab6b7dbbd4dfc48" category="paragraph">O gráfico da CPU mostra a porcentagem da capacidade de processamento da CPU que está sendo usada em relação às operações no array. Mesmo quando nenhuma e/S externa está ocorrendo, a porcentagem de utilização da CPU pode não ser zero porque o sistema operacional de armazenamento pode estar fazendo operações e monitoramento em segundo plano. Passe o cursor sobre um ponto no gráfico para ver uma percentagem da capacidade de processamento que está a ser utilizada nesse momento.</block>
@@ -6671,7 +6630,6 @@
   <block id="38c03baad50c9c2d3adca3113ebd4076" category="paragraph">Ao consolidar a capacidade gratuita, você pode criar volumes adicionais a partir da quantidade máxima de capacidade livre em um grupo de volumes. Você pode consolidar a capacidade livre existente em um grupo de volumes selecionado usando um dos seguintes métodos:</block>
   <block id="c2513e9727acbc2439169454bebe278f" category="list-text">Você também pode selecionar menu:pools e grupos de volume[tarefas incomuns &gt; consolidar capacidade livre do grupo de volume] para iniciar a caixa de diálogo.</block>
   <block id="4dc729af6728b435730f4dd990d7aca9" category="paragraph">Se você quiser usar uma área de capacidade livre específica em vez da maior área de capacidade livre, use a interface de linha de comando (CLI).</block>
-  <block id="bbe3b633d8eb778210704db7ffbfa4f0" category="summary">Alertas de capacidade indicam quando adicionar unidades a um pool. Um pool precisa de capacidade livre suficiente para executar com sucesso as operações do storage array. Você pode evitar interrupções nessas operações configurando o System Manager para enviar alertas quando a capacidade livre de um pool atingir ou exceder uma porcentagem especificada.</block>
   <block id="b66879679e0a456d131df0dfbdb9fb95" category="doc">Por que os alertas de capacidade são importantes?</block>
   <block id="36b833228459c54e9caad4c4ebad3dad" category="paragraph">Você define essa porcentagem quando cria um pool usando a opção *Configuração automática do pool* ou a opção *criar pool*. Se você escolher a opção automática, as configurações padrão determinarão automaticamente quando você receber notificações de alerta. Se você optar por criar manualmente o pool, poderá determinar as configurações de notificação de alerta; ou, se preferir, poderá aceitar as configurações padrão. Você pode ajustar essas configurações mais tarde no menu:Configurações[Alertas].</block>
   <block id="2e7fdb8bc40f6a8c60ac3763b5af0b1d" category="paragraph">Quando a capacidade livre no pool atinge a porcentagem especificada, uma notificação de alerta é enviada usando o método especificado na configuração de alerta.</block>
@@ -6689,9 +6647,7 @@
   <block id="371568d2a3f5a6b56c711c3daf5d57e6" category="list-text">Se um pool ou grupo de volumes contiver todas as unidades FIPS (Federal Information Processing Standards), as unidades não FIPS não serão listadas.</block>
   <block id="8d63b58086a957abb733872e91b25917" category="list-text">Se um pool ou grupo de volumes contiver todas as unidades compatíveis com Data Assurance (DA) e houver pelo menos um volume habilitado PARA DA no pool ou grupo de volumes, uma unidade que não seja capaz de DA não é elegível, portanto, ela não pode ser adicionada a esse pool ou grupo de volumes. No entanto, se não houver um volume habilitado PARA DA no pool ou grupo de volumes, uma unidade que não seja capaz de DA pode ser adicionada a esse pool ou grupo de volumes. Se você decidir misturar essas unidades, lembre-se de que não é possível criar nenhum volume habilitado PARA DA.</block>
   <block id="26fc92dce88a2f2b7f6d311212b712a2" category="paragraph">A capacidade pode ser aumentada em seu storage array adicionando novas unidades ou excluindo pools ou grupos de volumes.</block>
-  <block id="7589dd9416261212740c49b4796da6dc" category="doc">Por que esses volumes não estão associados a uma carga de trabalho?</block>
   <block id="726550ac9f3a3c80815ec14c73720e62" category="summary">Você pode diminuir a capacidade reservada somente pelo valor usado para aumentá-la. A capacidade reservada para volumes membros só pode ser removida na ordem inversa em que foram adicionados.</block>
-  <block id="a30ad4433e63d5f3d62023d4c6a44eef" category="doc">Por que não posso escolher outra quantia para diminuir?</block>
   <block id="54880ee7dd93a5e304efe90ee14790cf" category="paragraph">Não é possível diminuir a capacidade reservada para um objeto de armazenamento se existir uma destas condições:</block>
   <block id="34210320456ed09a6b7ab3fd7cd515d2" category="list-text">Se o objeto de storage for um volume de par espelhado.</block>
   <block id="df7cb77dac6de30904215f9c98b0ee50" category="list-text">Se o objeto de armazenamento contiver apenas um volume para a capacidade reservada. O objeto de storage deve conter pelo menos dois volumes para a capacidade reservada.</block>
@@ -6699,9 +6655,7 @@
   <block id="c9a9f655057c31cee78def41182ef8f6" category="list-text">Se o objeto de armazenamento contiver uma ou mais imagens instantâneas associadas.</block>
   <block id="9945a680db325b61ee52dcb6a86bb0b0" category="paragraph">Você pode remover volumes para capacidade reservada somente na ordem inversa em que foram adicionados.</block>
   <block id="3bfd2179043341e09a4fc1cfd720d6ff" category="summary">Essa carga de trabalho consiste em um grupo de volumes que foram criados usando a interface de linha de comando (CLI) ou migrados (importados/exportados) de um storage array diferente. Como resultado, os volumes dessa carga de trabalho não são associados a uma carga de trabalho específica da aplicação, portanto, a carga de trabalho não pode ser excluída.</block>
-  <block id="91d388ab2a6ac649e3e39aa1f5535eef" category="doc">Por que não consigo excluir a carga de trabalho selecionada?</block>
   <block id="3cedad73b5b33c8b0c2b8d5beeed5264" category="summary">Se você criou volumes em toda a capacidade utilizável disponível, talvez não consiga aumentar a capacidade de preservação.</block>
-  <block id="87b59aa4fc1f0d0f5aac88efb29545be" category="doc">Por que não posso aumentar minha capacidade de preservação?</block>
   <block id="71396049ff539200dbba1007ca0cbc94" category="paragraph">Capacidade de preservação é a quantidade de capacidade (número de unidades) reservada em um pool para dar suporte a possíveis falhas de unidade. Quando um pool é criado, o sistema reserva automaticamente uma quantidade padrão de capacidade de preservação, dependendo do número de unidades no pool. Se você tiver criado volumes em toda a capacidade utilizável disponível, não poderá aumentar a capacidade de preservação sem adicionar capacidade ao pool adicionando unidades ou excluindo volumes.</block>
   <block id="dc5cedd32cc74ed1dd3f0b48fe2065c3" category="paragraph">Você pode alterar a capacidade de preservação de *pools &amp; grupos de volume*. Selecione o pool que você deseja editar. Clique em *Exibir/Editar configurações* e selecione a guia *Configurações*.</block>
   <block id="5f1d6366c7ffd99ff1b7c5f05e692914" category="paragraph">A capacidade de preservação é especificada como um número de unidades, mesmo que a capacidade de preservação real seja distribuída entre as unidades no pool.</block>
@@ -6727,11 +6681,8 @@
   <block id="587d6b8e844d30b592a6a9246686a7d1" category="list-text">O controlador está num estado desconhecido.</block>
   <block id="65060f746321c884e5effb98b1ee1719" category="list-text">Storage array não contém volumes.</block>
   <block id="7268cb410294effa0119ff2325fdb4e1" category="summary">Qualquer pool ou grupo de volume para o qual você não pode mover o volume não é exibido na lista.</block>
-  <block id="947a640f864857e2aadd36576eb50dd7" category="doc">Por que não vejo todos os meus pools e/ou grupos de volume?</block>
   <block id="7840c3770de62c2567d5278bd0c6c7f2" category="paragraph">Pools ou grupos de volumes não são elegíveis por nenhum dos seguintes motivos:</block>
   <block id="766dcd4dd0eb0d198d9b6bf6f1cd4d55" category="list-text">Os recursos de garantia de dados (DA) de um pool ou grupo de volumes não correspondem.</block>
-  <block id="13681cec74a14e3099d5f047f880fe52" category="summary">Os volumes instantâneos com um volume base habilitado PARA DA não são elegíveis para serem atribuídos a um host que não seja capaz de Data Assurance (DA). Você deve desativar O DA no volume base antes que um volume instantâneo possa ser atribuído a um host que não seja capaz de DA.'</block>
-  <block id="1940b3e4d69d728f35065944d4986514" category="doc">Por que não vejo todos os meus volumes, hosts ou clusters de host?</block>
   <block id="f956e41235aa6de0ef7cf1901fa9a994" category="paragraph">Os volumes instantâneos com um volume base habilitado PARA DA não são elegíveis para serem atribuídos a um host que não seja capaz de Data Assurance (DA). Você deve desativar DA no volume base antes que um volume instantâneo possa ser atribuído a um host que não seja capaz de DA.</block>
   <block id="92fc66f9534d94b4859793638454d6ee" category="paragraph">Considere as seguintes diretrizes para o host ao qual você está atribuindo o volume de snapshot:</block>
   <block id="934321fee1dda599a0c218c9b94c7e4e" category="list-text">Um host não é capaz de DA se ele estiver conetado ao storage array por meio de uma interface de e/S que não seja capaz de DA.</block>
@@ -7295,7 +7246,6 @@
   <block id="d63443002da456e4456d4e5b081c6c0a" category="list-text">Se as unidades puderem fazer uma atualização off-line, interrompa a atividade de e/S para todos os volumes associados às unidades. Quando a atividade de e/S é interrompida, não podem ocorrer operações de configuração associadas a esses volumes.</block>
   <block id="5a022462174ad36014e4195e22424c8a" category="list-text">Não remova nenhuma unidade durante a atualização do firmware da unidade.</block>
   <block id="a829bd0b0ad022ed29a011bba9299b96" category="list-text">Não faça alterações de configuração no storage de armazenamento durante a atualização do firmware da unidade.</block>
-  <block id="4abeb578b363f44144000527bdaabd0d" category="summary">Antes de atualizar o software e o firmware do controlador, esteja ciente desses itens.</block>
   <block id="5c7e6b00e34ca5a9745761f8b63dd9f3" category="doc">O que eu preciso saber antes de atualizar o software SANtricity os?</block>
   <block id="335d86aaca8c114cdd7c918669e77b31" category="paragraph">Antes de atualizar o software e o firmware do controlador, tenha em atenção estes itens.</block>
   <block id="00d0f215b8edbde21b482165efb63f25" category="list-text">Você leu o documento e o<block ref="eb6b6c90251ab33cee784713c451e6d8" prefix=" " category="inline-code"></block> arquivo e determinou que deseja fazer a atualização.</block>
@@ -7330,7 +7280,6 @@
   <block id="f6aaba4e2368a2896c068fae9fe296d2" category="list-text">*Logical* -- Um erro de leitura em outro lugar na faixa causando dados ilegíveis. Por exemplo, um setor ilegível devido a erros de Mídia em outro lugar do volume.</block>
   <block id="9ca6421bc7ef7bb38bb11f2c1316bc7b" category="list-text">*Inconsistente* -- dados de redundância inconsistentes.</block>
   <block id="60a92f90c37ecb6d923b3bd90960fe50" category="list-text">*Data Assurance* -- Um erro de garantia de dados.</block>
-  <block id="068ea21c39695d9df18e79ea4abf66e1" category="summary">Sessões iSCSI podem ocorrer com hosts ou matrizes de armazenamento remoto em uma relação de espelhamento assíncrono. As tabelas a seguir listam as funções do System Manager que podem ser usadas para configurar e gerenciar essas sessões iSCSI.</block>
   <block id="c31a63fbfe62247245f55d6b792ad9e1" category="doc">O que mais preciso fazer para configurar ou diagnosticar iSCSI?</block>
   <block id="0d97aebcf5431f90d47b2257e5c9ad96" category="paragraph">As definições iSCSI só estão disponíveis se a sua matriz de armazenamento suportar iSCSI.</block>
   <block id="28f21ae88e9953ac3d80686cfb49832b" category="section-title">Configurar iSCSI</block>
@@ -7345,7 +7294,6 @@
   <block id="0e3210bbe8fd3f7c018d6eea53acdf2e" category="list-text">Role para baixo até *iSCSI settings* e selecione *View/End iSCSI Sessions*.</block>
   <block id="d7f18aa98837b1fbda0ddb68449cb3db" category="paragraph">Ver estatísticas iSCSI</block>
   <block id="5c9d389f90ca3e90f87bb239d5f41634" category="list-text">Role para baixo até *iSCSI settings* e selecione *View iSCSI Statistics Packages*.</block>
-  <block id="ba3213bbbf9e5128613954ca4db4e5ee" category="summary">Uma imagem de integridade é um despejo de dados brutos da memória do processador do controlador que o suporte técnico pode usar para diagnosticar um problema com um controlador.</block>
   <block id="4e3f3d52a16affbf4b062a79c89574da" category="doc">O que é uma imagem de saúde?</block>
   <block id="793d79923fdf757cef5c422780f3772b" category="paragraph">Uma imagem de integridade é um despejo de dados brutos da memória do processador do controlador que o suporte técnico pode usar para diagnosticar um problema com um controlador.</block>
   <block id="ce263fa58d4fdb3ad71f24d93430faf6" category="paragraph">O firmware gera automaticamente uma imagem de integridade quando deteta determinados erros. Em certos cenários de solução de problemas, o suporte técnico pode solicitar que você recupere o arquivo de imagem de integridade e envie-o para eles.</block>
@@ -8187,16 +8135,13 @@
   <block id="18ed508fef7eeddf47212f03eac81125" category="list-text">*Configuração de armazenamento* -- as configurações incluem volumes (somente volumes espessos e somente não-repositórios), grupos de volumes, pools e atribuições de unidades hot spare.</block>
   <block id="1aa660524e4f7281ec5e49498a4718df" category="list-text">* Configurações do sistema* -- as configurações incluem configurações de varredura de Mídia para um volume, cache SSD para controladores e balanceamento de carga automático (não inclui relatórios de conetividade do host).</block>
   <block id="839a15232e75363abd83283c12dccb75" category="summary">Se houver mais de um volume em um pool ou grupo de volumes que atenda ao valor percentual de capacidade selecionado para o objeto de armazenamento, você verá vários candidatos.</block>
-  <block id="082027bfe4130225fed98f419dcfcbee" category="doc">Por que não vejo todos os meus volumes?</block>
   <block id="d6a2f3fb02a6b5a0805cb96861b2ad88" category="list-text">Para o espelhamento síncrono, os volumes primário e secundário em um par espelhado devem ser volumes padrão. Não podem ser volumes finos ou volumes instantâneos.</block>
   <block id="d003fc64a90ec0d2d96a3a9a15d536f4" category="list-text">Para o espelhamento assíncrono, os thin volumes devem ter a expansão automática ativada.</block>
   <block id="44be7be255dacc165bc883399e8ce540" category="summary">Durante a operação Importar configurações, alguns dos storages de armazenamento podem não estar disponíveis na caixa de diálogo seleção de destino.</block>
-  <block id="2ec3d7bda9724dc0164af9b927fdbc28" category="doc">Por que não vejo todos os meus arrays de armazenamento?</block>
   <block id="509271c8c60b258f298994cb7ca8944c" category="paragraph">Os storage arrays podem não aparecer pelos seguintes motivos:</block>
   <block id="c91bcce3104eb156b3cd15ae07870a24" category="list-text">A versão do firmware é inferior a 8,50.</block>
   <block id="d42c8b73b3ccc12638f610f2623a0c09" category="list-text">A matriz de armazenamento está offline.</block>
   <block id="05693bc32413083ba1ba81023c2fa739" category="list-text">O sistema não pode se comunicar com esse array (por exemplo, o array tem problemas de certificado, senha ou rede).</block>
-  <block id="7f82bc53f199e7918cc64b78504c2064" category="doc">Por que não vejo todos os volumes no storage array remoto?</block>
   <block id="8802aac967f31435c584318c847b8f96" category="paragraph">Quaisquer volumes que não sejam elegíveis para serem usados, não serão exibidos nessa lista. Os volumes não podem ser elegíveis por qualquer um dos seguintes motivos:</block>
   <block id="1e7a9162b9eda403f57543b169ec7c36" category="list-text">O volume é um volume não padrão, como um volume instantâneo.</block>
   <block id="08a038d98290bf4f3a988b5b930953b6" category="list-text">Para espelhamento assíncrono, os atributos de volume fino entre o volume primário e o volume secundário não correspondem.</block>
@@ -8247,9 +8192,6 @@
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">O que há de novo</block>
   <block id="3b878279a04dc47d60932cb294d96259" category="sidebar">Visão geral</block>
   <block id="be4486cc26282ba3c22a297f83977dbe" category="sidebar">Navegadores e sistemas operacionais suportados</block>
-  <block id="483a5da192f46e3cfe8391d3ef234fc4" category="sidebar">FAQs</block>
-  <block id="3023481996e16c0dd27c1aeeab45a6c4" category="sidebar">E se eu não vir todos os meus componentes de hardware?</block>
-  <block id="4f77fb4cfa40635f17d21979b6692c01" category="sidebar">E se eu não ver todos os meus anfitriões?</block>
   <block id="93af28c8ab635f0e7d402547ab0c929d" category="sidebar">Interface principal</block>
   <block id="fc78fae55edd9650c6455e58681d3aae" category="sidebar">Visualizar dados de desempenho</block>
   <block id="76cf11d4db12b1a45f4d62797b620d5e" category="sidebar">Gerir as definições da interface</block>
@@ -8276,8 +8218,6 @@
   <block id="775b7856e9d6f75f853357d7ff4ad166" category="sidebar">Alterar a capacidade do volume instantâneo</block>
   <block id="167bf1069d8793030ffca242b297158f" category="sidebar">Alterar o volume do membro do grupo de consistência de capacidade</block>
   <block id="ab0c882e76928fd51f394b7b8f148e5f" category="sidebar">Altere as configurações de capacidade para o volume do par espelhado</block>
-  <block id="d863817ffe646208af65e3a3e7270ce6" category="sidebar">Por que não posso aumentar minha capacidade de preservação?</block>
-  <block id="4c3ca9b61e82061eb67e30fc2e8f47f4" category="sidebar">Por que não posso escolher outra quantia para diminuir?</block>
   <block id="d9e19492064b37fdbc6a3d0c3537588a" category="sidebar">Volumes e workloads</block>
   <block id="8c49ce915d4f8928c912addef222bcf5" category="sidebar">Integridade dos dados e segurança dos dados</block>
   <block id="464608dc32f11d61980f0e0673d96128" category="sidebar">Capacidade para volumes</block>
@@ -8292,9 +8232,6 @@
   <block id="88f1d0e5fdeb268f6b87119dfcc27f8a" category="sidebar">Tipos de operações</block>
   <block id="31ef3dfd1e101bf5cf328ec387a10820" category="sidebar">Copiar volumes</block>
   <block id="41b4e5d916e26c9e0d32ceff6fd589ed" category="sidebar">Gerenciar operações</block>
-  <block id="0c54aa2356b1ba19bf4386215c1829f9" category="sidebar">Por que esses volumes não estão associados a uma carga de trabalho?</block>
-  <block id="c2573d03e7d109e27aea5c826f85d422" category="sidebar">Por que não consigo excluir a carga de trabalho selecionada?</block>
-  <block id="b9f14f06f609b90bb993424923055760" category="sidebar">Por que não vejo todos os meus pools e/ou grupos de volume?</block>
   <block id="c6707458876d290c703ac763778d44a0" category="sidebar">Hosts e clusters de host</block>
   <block id="cf9a49f1bff1d19decdde49cdbdae169" category="sidebar">Como os volumes são atribuídos</block>
   <block id="b58847c8b7694663db21c4d392c57994" category="sidebar">Configurar o acesso ao host</block>
@@ -8315,7 +8252,6 @@
   <block id="d96ab2599a9195c08b8737eafd4a8124" category="sidebar">Remova o volume do membro</block>
   <block id="170fad9f4be46ada31f8a718075ed709" category="sidebar">Gerenciar volumes de snapshot</block>
   <block id="2895ed1d66f9333c01622c7a7d6718eb" category="sidebar">Alterar as definições de volume para o volume instantâneo</block>
-  <block id="fe82cef3fafe389abaff7e7b8c1c8945" category="sidebar">Por que não vejo todos os meus volumes, hosts ou clusters de host?</block>
   <block id="3b63cdc3399c713b7de8016c91a99548" category="sidebar">Espelhamento</block>
   <block id="de3ae7d3b7cb2b60fdd43283060e9bf8" category="sidebar">Conceitos assíncronos</block>
   <block id="24f47cdbe9ddba774a7cc53e51d9032e" category="sidebar">Fluxo de trabalho</block>
@@ -8337,21 +8273,9 @@
   <block id="54d6c04f64489f12de29a89b83cec315" category="sidebar">Desativar o espelhamento</block>
   <block id="190233503c975b7bb1f4c8a3f12aba9d" category="sidebar">Desativar o espelhamento assíncrono</block>
   <block id="fa7433b43d36d2536077feb9de6b7d42" category="sidebar">Desativar o espelhamento de sincronização</block>
-  <block id="193ce2ae6dab7d8dddd7670ffaffe748" category="sidebar">FAQs assíncronas</block>
-  <block id="2b2aa633a1528095db126f6bb4133c10" category="sidebar">Por que não consigo acessar meu recurso de espelhamento escolhido?</block>
-  <block id="cb0fd874d43f58b1962d457f8982a032" category="sidebar">Por que não posso aumentar a capacidade reservada com o meu valor solicitado?</block>
-  <block id="126f364ce23072dbb9d2813556631beb" category="sidebar">Por que não vejo todos os meus pools e grupos de volume?</block>
-  <block id="cad9ea95efebc08a02e3d69cfba88444" category="sidebar">Espelhamento assíncrono - por que não vejo todos os meus volumes?</block>
-  <block id="67a0bff1354ca5f23241168ff1af4cd1" category="sidebar">Espelhamento assíncrono - por que não vejo todos os volumes no storage array remoto?</block>
-  <block id="a0a778322fcd1480ce0a97557c0bc92c" category="sidebar">Por que eu atualizaria o endereço IP da minha matriz de armazenamento remoto?</block>
-  <block id="009b56b468834c1fb339ca6fd6e64425" category="sidebar">FAQs de sincronização</block>
-  <block id="1ee329323d69a8ee4fb262351ae2bb47" category="sidebar">Como o espelhamento síncrono difere do espelhamento assíncrono?</block>
-  <block id="7948b47687c25969b744a950d4151812" category="sidebar">Espelhamento síncrono - por que não vejo todos os meus volumes?</block>
-  <block id="389d3a8b3a5730bc57f7f4d0b4d48716" category="sidebar">Espelhamento síncrono - por que não vejo todos os volumes no storage array remoto?</block>
   <block id="c7c7a6a5641f33e348244f9c43010e16" category="sidebar">Requisitos de recursos</block>
   <block id="551705bacc367306569170afabb0a315" category="sidebar">Requisitos de volume</block>
   <block id="85ecd630da2e3481551a9ee213eb40fe" category="sidebar">Gerenciar o armazenamento remoto</block>
-  <block id="2f20f508a18f461954c8d3933827bcb7" category="sidebar">Por que não vejo todos os meus volumes na minha matriz de destino?</block>
   <block id="34df2039718349f1b8c838bff98ae8fa" category="sidebar">Componentes de hardware</block>
   <block id="56fed02afa343607f2a7395908bc7b80" category="sidebar">Gerenciar os componentes do compartimento</block>
   <block id="ce5355093ef60f32420434b5e225c42c" category="sidebar">Gerenciar controladores</block>
@@ -8360,13 +8284,7 @@
   <block id="8bd00e89826dbd3fcf80ca108d7a008d" category="sidebar">Gerenciar unidades</block>
   <block id="14d1c0c1fae5f4b4b38ac991e0042905" category="sidebar">Limite a vista da unidade</block>
   <block id="2e2a47fe25c4d9ffccde0d65c889b8ea" category="sidebar">Gerenciar hot spares</block>
-  <block id="1e43379f3c402667b130d9a559cbe0a3" category="sidebar">Perguntas frequentes sobre prateleiras</block>
-  <block id="94edff9f76656b0aa64f11d10564bbec" category="sidebar">Perguntas frequentes sobre o controlador</block>
-  <block id="985daafeefad88644262898a6ba85dfd" category="sidebar">O que eu escolho - DHCP ou configuração manual?</block>
   <block id="757b19acb02bcb72f8fbe9a7b9c92bb1" category="sidebar">Quando devo atualizar a configuração da porta?</block>
-  <block id="4a4afac381fa72747a54ec753304470e" category="sidebar">Perguntas frequentes sobre iSCSI</block>
-  <block id="09ced3685690518398f597bd647eab6c" category="sidebar">Perguntas frequentes sobre NVMe</block>
-  <block id="d1cc2aa09499f8deaf22b2dc39e8d219" category="sidebar">Perguntas frequentes sobre a condução</block>
   <block id="388e3dfbbe5846b66146f413ab694755" category="sidebar">Gerenciar alertas de e-mail</block>
   <block id="3990901575d796b02953233d3202f8bb" category="sidebar">Configurar servidor de e-mail e destinatários</block>
   <block id="48d5d00e65f9a1cc7aff26da6a5c5c0a" category="sidebar">Editar endereços de e-mail</block>
@@ -8402,7 +8320,6 @@
   <block id="dc4efa2585d1662804b20a74b4acc7a4" category="sidebar">Use SAML</block>
   <block id="74f708399a048352be94abc06102bfb9" category="sidebar">Use tokens de acesso</block>
   <block id="8377583907b5858273c3fcf855ae2800" category="sidebar">Gerenciar syslog</block>
-  <block id="4db7a3bf8dbbf2993ed6610cb2fb4fe0" category="sidebar">Por que não consigo fazer login?</block>
   <block id="ab70a9bf5b25c1b7ecd7244eef9bf625" category="sidebar">Use certificados</block>
   <block id="573efefcaa393f8bfd3572c46a082bf8" category="sidebar">Exibir informações do certificado importado</block>
   <block id="085f430b0f579d2ec7d45759dea27e67" category="sidebar">Use certificados assinados pela CA para o servidor de autenticação</block>
@@ -8419,7 +8336,6 @@
   <block id="a0a3f20685c328a00474bb00b7d35fd5" category="sidebar">Remova matrizes da vista</block>
   <block id="15fc53829e4c837f62e15647e031089c" category="sidebar">Importação de definições</block>
   <block id="360bd2c3afed58c551a15d240c5d8ae4" category="sidebar">Use importações de lote</block>
-  <block id="c662a0230db643f7b489f1a5fd4c7738" category="sidebar">Por que não vejo todos os meus arrays de armazenamento?</block>
   <block id="7fa2f2323087b4b331f294a3e571ac48" category="sidebar">Grupos de array</block>
   <block id="5004fa93538efdf6507cbefc3275b79e" category="sidebar">Configurar grupos</block>
   <block id="07a90270ebf66da177e03281873bb626" category="sidebar">Remova os arrays do grupo</block>
@@ -8427,8 +8343,6 @@
   <block id="70056e37f8376098bb31cd0e5570d51b" category="sidebar">Mudar o nome do grupo</block>
   <block id="240f9686efc9548a1d556d924c143924" category="sidebar">Atualizações</block>
   <block id="ecaa37294fe56af2542fb9595f4d7c00" category="sidebar">Configurar o espelhamento</block>
-  <block id="a4228446d8c9251ebd134b25ea2f2a9d" category="sidebar">Por que não vejo todos os meus volumes?</block>
-  <block id="4a8aaebc73b69b1dce072d72f2645856" category="sidebar">Por que não vejo todos os volumes no storage array remoto?</block>
   <block id="bc864bcc140c5518082e93d37b396baf" category="sidebar">Use certificados de host de gerenciamento</block>
   <block id="0e695c0c9242624f235546e43dde2e16" category="sidebar">Use certificados de matriz</block>
   <block id="951d3fc54a28f9f46798897467d96a5b" category="sidebar">Gerenciar certificados</block>
@@ -8626,7 +8540,6 @@
   <block id="c1ef781eafa3554e3ab8e8623b4e5a71" category="paragraph">O espelhamento síncrono não está disponível no sistema de storage EF600/EF600C ou EF300/EF300C.</block>
   <block id="5a7b6df104eae510976ebef6d294bbc2" category="paragraph">Esse recurso não está disponível para espelhamento síncrono no sistema de storage EF600/EF600C ou EF300/EF300C.</block>
   <block id="b9e88ad6836c4f5d794f382de8f1f2c9" category="admonition">O DULBE não é compatível com storage arrays EF300C ou EF600C no momento.</block>
-  <block id="4b8add2dc8ff6506b02ecbd9ce368929" category="summary">O provisionamento de recursos é um recurso disponível nas matrizes de armazenamento EF300, EF300C, EF600 e EF600C, que permite que os volumes sejam colocados em uso imediatamente sem processo de inicialização em segundo plano.</block>
   <block id="90992e53bcf79cefee988e4147be01b6" category="paragraph">O gerenciamento na banda usando o volume de acesso não está disponível para sistemas de storage E4000, EF600/EF600C ou EF300/EF300C.</block>
   <block id="16ebf1283fdb23275c2211d15a82e2cd" category="list-text">Os volumes finos não estão disponíveis no sistema de armazenamento EF600/EF600C ou EF300/EF300C.</block>
   <block id="1ac9fe85275ed11ba0a95e5559f5af80" category="paragraph">Mostra se a proteção contra perda de gaveta está disponível, que é fornecida somente se você estiver usando uma prateleira de unidade que contém gavetas. A proteção contra perda de gaveta garante a acessibilidade aos dados nos volumes em um grupo de volumes se ocorrer uma perda total de comunicação com uma única gaveta em um compartimento de unidades.</block>
@@ -9050,4 +8963,75 @@
   <block id="a10a0fef1a8b50d16443976fedae1e16" category="section-title">Novos recursos na versão 11.90R3</block>
   <block id="c78544d43a065eb825edb9e16bf0e9ad" category="paragraph">Suporte do SANtricity OS para IOM12C e DCM3</block>
   <block id="94d90ce4793f949687897ec062d97b9c" category="paragraph">O suporte para prateleiras SAS-3 IOM12C e DCM3 agora está disponível para firmware de controlador 11.90R3 ou superior. As prateleiras IOM12C e DCM3 substituem as prateleiras IOM12B e DCM2.</block>
+  <block id="b1151aae9531d2f5e85d085e8878cea6" category="summary">Este FAQ pode ajudar se você está apenas procurando uma resposta rápida para uma pergunta.</block>
+  <block id="5453a26dc9b68778117a8311e75f8fbe" category="doc">Perguntas frequentes sobre o controlador de armazenamento para o SANtricity System Manager</block>
+  <block id="d51277c947b0f0f0862c6f10192a1cc0" category="section-title">O que devo escolher — DHCP ou configuração manual?</block>
+  <block id="ad76bfb46a270b4305ffd6738882677c" category="doc">Perguntas frequentes sobre prateleiras de armazenamento para o SANtricity System Manager</block>
+  <block id="19b5339279f2639b668d0bbe4f8b70a0" category="doc">Perguntas frequentes sobre a interface de gerenciamento do SANtricity System Manager</block>
+  <block id="8587ba2a3667d610eb60afc44dad1723" category="doc">Perguntas frequentes sobre configuração do sistema de armazenamento para o SANtricity System Manager</block>
+  <block id="a8d4770377b5b26815bf4624787b5cd2" category="section-title">E se eu não conseguir ver todos os meus componentes de hardware?</block>
+  <block id="93553c3f530e96d0430861eab073fd9f" category="section-title">E se eu não vir todos os meus hosts?</block>
+  <block id="ec650621f1b4e4a52be9f5b5b3aa032e" category="doc">Perguntas frequentes sobre espelhamento assíncrono para o SANtricity System Manager</block>
+  <block id="9f823e5a9e8f9ed671d7256745222141" category="section-title">Por que não consigo acessar o recurso de espelhamento escolhido?</block>
+  <block id="056a12680d6f0ea9fbc5b9cd0dcbbbc5" category="section-title">Por que não consigo aumentar a capacidade reservada com a quantidade solicitada?</block>
+  <block id="627802c3caee37379a9c399ab704765d" category="section-title">Por que não vejo todos os meus pools e grupos de volumes?</block>
+  <block id="c61a1154889025d1e7a947414ac8a162" category="section-title">Espelhamento assíncrono - Por que não vejo todos os meus volumes?</block>
+  <block id="a7d50b4837966a5a224cf9d31b8f4a86" category="section-title">Espelhamento assíncrono - Por que não vejo todos os volumes no array de armazenamento remoto?</block>
+  <block id="2aea594a4c81b0946e1265a4de81a100" category="section-title">Por que eu atualizaria o endereço IP do meu array de armazenamento remoto?</block>
+  <block id="e49efc0cfc4c7b160fd4cdfba13d0678" category="doc">Perguntas frequentes sobre espelhamento de sincronização para o SANtricity System Manager</block>
+  <block id="3cf88cf8f3807ba93b6284bc7f35241d" category="section-title">Espelhamento síncrono - Por que não vejo todos os meus volumes?</block>
+  <block id="127409013236f2ee4d2fedecdfdf9696" category="section-title">Espelhamento síncrono - Por que não vejo todos os volumes no array de armazenamento remoto?</block>
+  <block id="474e6194420a15da8f116ca1d03c1089" category="doc">Aprenda sobre configurações de cache e desempenho no software SANtricity</block>
+  <block id="07a19ca9ce814c05660c931367a1daec" category="doc">Perguntas frequentes sobre certificados assinados e autoassinados por CA para o SANtricity System Manager</block>
+  <block id="07898edb5d614ff7156be4ecdb0b0a5f" category="doc">Perguntas frequentes sobre o protocolo iSCSI para o SANtricity System Manager</block>
+  <block id="3da657434c2b0361e0108af6bf025792" category="doc">Perguntas frequentes sobre o protocolo NVMe para o SANtricity System Manager</block>
+  <block id="8a75fb951da264587a6600ccf7d93fea" category="doc">Perguntas frequentes sobre segurança de unidade de armazenamento para o SANtricity System Manager</block>
+  <block id="7e2b30503c6c69f7a65b4e868fd7b1d7" category="doc">Perguntas frequentes sobre alertas do sistema de armazenamento para o SANtricity System Manager</block>
+  <block id="fe7c1bb53377d143fbbd6019354e2c03" category="doc">Perguntas frequentes sobre gerenciamento de acesso de usuário para o SANtricity System Manager</block>
+  <block id="0307aefebec2be18a5e72767abfab6ea" category="section-title">Por que não consigo fazer login?</block>
+  <block id="8eb7d61e639ed5ef84ecef34c3ef9a90" category="doc">Saiba mais sobre volumes base, capacidade reservada e grupos de snapshots no SANtricity System Manager</block>
+  <block id="93ff2ee6ca3ebff76b39eee6c837a05c" category="doc">Perguntas frequentes sobre pools e grupos de volumes para o SANtricity System Manager</block>
+  <block id="95480a662f5c9e477922a7a2b403bb11" category="section-title">Por que não consigo aumentar minha capacidade de preservação?</block>
+  <block id="e162d80660b94f1ba0e8a0ed9b5db00c" category="section-title">Por que não posso escolher outro valor para diminuir?</block>
+  <block id="e28db378e03cfeaba6b656dc0456b190" category="doc">Perguntas frequentes sobre armazenamento remoto para o SANtricity System Manager</block>
+  <block id="24ad5296fefcace9e0149956fd904cf2" category="section-title">Por que não vejo todos os meus volumes no meu array de destino?</block>
+  <block id="5fcdf917efa28e8116867e315322b0e1" category="doc">Perguntas frequentes sobre instantâneos para o SANtricity System Manager</block>
+  <block id="2ba6fbda3398bad4861f032c2009b0d3" category="section-title">Por que não vejo todos os meus volumes, hosts ou clusters de hosts?</block>
+  <block id="9421c472440f982cec67bc525c3c00a6" category="doc">Perguntas frequentes sobre configurações de matriz de armazenamento para o SANtricity System Manager</block>
+  <block id="28f98bb6051d213c5956bab8fa693f88" category="doc">Perguntas frequentes sobre unidades de armazenamento para o SANtricity System Manager</block>
+  <block id="570b09742a6d84e577f1d00cdf68e38b" category="doc">Perguntas frequentes sobre sistemas host e clusters de host para o SANtricity System Manager</block>
+  <block id="4538489334cc71ec5bc63f18418b8b5f" category="doc">Perguntas frequentes sobre volumes e cargas de trabalho para o SANtricity System Manager</block>
+  <block id="38457c0d7698b046b04ff29966984237" category="section-title">Por que esses volumes não estão associados a uma carga de trabalho?</block>
+  <block id="38134686fcc012c564ba793d762895ce" category="section-title">Por que não consigo excluir a carga de trabalho selecionada?</block>
+  <block id="73158d5edc74cd6d3fceaaadb9c001b6" category="section-title">Por que não vejo todos os meus pools e/ou grupos de volumes?</block>
+  <block id="9e5fa4fee4e2e323cc46591b9c569f80" category="doc">Perguntas frequentes do AutoSupport para o SANtricity System Manager</block>
+  <block id="17b506511a9d92bc797c9a616e848618" category="doc">Perguntas frequentes sobre gerenciamento de acesso de usuário para o SANtricity Unified Manager</block>
+  <block id="46bbf70058c38d16be148ec731c4e2ff" category="doc">Perguntas frequentes sobre configurações de importação para o SANtricity Unified Manager</block>
+  <block id="9265078167e4a547bcd07baa0fcd2c28" category="section-title">Por que não vejo todos os meus conjuntos de armazenamento?</block>
+  <block id="e4dd224c723eab5d0e1fc1ba66660335" category="doc">Perguntas frequentes sobre espelhamento de armazenamento para o SANtricity Unified Manager</block>
+  <block id="a09f907840e3debc354b7bf16928d0a9" category="section-title">Por que não vejo todos os meus volumes?</block>
+  <block id="59811ac2b31c7c14c4f6c5a0fe557df0" category="section-title">Por que não vejo todos os volumes no conjunto de armazenamento remoto?</block>
+  <block id="6aa27cc5d4cf944c8ace1bc2cb4b986d" category="doc">Importar configurações de serviços de diretório no SANtricity Unified Manager</block>
+  <block id="af12fbdbeeb22bd98af40e694f9dbeed" category="sidebar">Perguntas frequentes sobre configuração do sistema de armazenamento</block>
+  <block id="e880fbedb2e8a12c7abef7ffeecb5c8a" category="sidebar">Perguntas frequentes sobre a interface de gerenciamento</block>
+  <block id="85f37ae864bd5c5fb734f986c131ea41" category="sidebar">Perguntas frequentes sobre pools e grupos de volumes</block>
+  <block id="c12ad1150304879fdf3619ff461b010f" category="sidebar">Perguntas frequentes sobre volumes e cargas de trabalho</block>
+  <block id="e3f88e92f689c60cd6dd33d9bdf1781f" category="sidebar">Perguntas frequentes sobre sistemas host e clusters host</block>
+  <block id="7b79c68474c127986d80027dea958b67" category="sidebar">Perguntas frequentes sobre instantâneos</block>
+  <block id="f3c1090e458eacb45d91144e5e8843dc" category="sidebar">Perguntas frequentes sobre espelhamento assíncrono</block>
+  <block id="e812bdafa8421a172fa5f89167c98d11" category="sidebar">Perguntas frequentes sobre espelhamento de sincronização</block>
+  <block id="764c366408531519068ab72822b9d70b" category="sidebar">Perguntas frequentes sobre armazenamento remoto</block>
+  <block id="f5500aa15342ea488f2a3948a19f8a86" category="sidebar">Perguntas frequentes sobre prateleiras de armazenamento</block>
+  <block id="efaedbc5c0388f05f894ade9a9b051be" category="sidebar">Controlador de armazenamento FAQ</block>
+  <block id="423cac0d8ecb8cbe666a15aa9d177028" category="sidebar">Perguntas frequentes sobre o protocolo iSCSI</block>
+  <block id="57a622d8a0a7d13e86e3514bb3b4e9ea" category="sidebar">Perguntas frequentes sobre o protocolo NVMe</block>
+  <block id="7848d82d7d98c22e1395a7e63f5fab9b" category="sidebar">Perguntas frequentes sobre unidades de armazenamento</block>
+  <block id="dab141492d4f7a76f831015c28747d7e" category="sidebar">Perguntas frequentes sobre alertas do sistema de armazenamento</block>
+  <block id="4da5cbb04d7ab418ddaf55ae50d07680" category="sidebar">Perguntas frequentes sobre configurações de matriz de armazenamento</block>
+  <block id="f39e9ea930d05db1a69c96b879497b38" category="sidebar">Perguntas frequentes sobre segurança de unidades de armazenamento</block>
+  <block id="fe28cf5dc2afdedb53feb43fe61499e7" category="sidebar">Perguntas frequentes sobre gerenciamento de acesso do usuário</block>
+  <block id="2a2d5026981871719d2bae7c3420cf9e" category="sidebar">Perguntas frequentes sobre certificados</block>
+  <block id="f9e9bc191db345171d0de707013016a3" category="sidebar">Perguntas frequentes sobre suporte automático</block>
+  <block id="3af089d2853adca01b3ba738ac9987ff" category="sidebar">Perguntas frequentes sobre configurações de importação</block>
+  <block id="e35e805c872d89cfd87942f59e41eb2d" category="sidebar">Perguntas frequentes sobre espelhamento de armazenamento</block>
 </blocks>

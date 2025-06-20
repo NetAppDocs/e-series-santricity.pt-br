@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, cache, settings, performance, 
 summary: A memória cache é uma área de armazenamento temporário volátil no controlador que tem um tempo de acesso mais rápido do que a Mídia da unidade. 
 ---
-= Configurações de cache e desempenho
+= Aprenda sobre configurações de cache e desempenho no software SANtricity
 :allow-uri-read: 
 :experimental: 
 :icons: font

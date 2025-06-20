@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, base volumes, reserved capacity, snapshot groups 
 summary: O recurso Snapshots faz uso de volumes base, capacidade reservada e grupos de snapshot. 
 ---
-= Volumes base, capacidade reservada e grupos de snapshot
+= Saiba mais sobre volumes base, capacidade reservada e grupos de snapshots no SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -1,0 +1,58 @@
+---
+permalink: sm-storage/faq-storage-drives.html 
+sidebar: sidebar 
+keywords:  
+summary: Este FAQ pode ajudar se você está apenas procurando uma resposta rápida para uma pergunta. 
+---
+= Perguntas frequentes sobre unidades de armazenamento para o SANtricity System Manager
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Este FAQ pode ajudar se você está apenas procurando uma resposta rápida para uma pergunta.
+
+
+
+== O que é uma unidade de reserva quente?
+
+As peças sobressalentes ativas funcionam como unidades de reserva nos grupos de volumes RAID 1, RAID 5 ou RAID 6. São unidades totalmente funcionais que não contêm dados. Se uma unidade falhar no grupo de volumes, o controlador reconstrói automaticamente os dados da unidade com falha para um hot spare.
+
+Se uma unidade falhar no storage de armazenamento, a unidade hot spare será automaticamente substituída pela unidade com falha sem exigir uma troca física. Se a unidade hot spare estiver disponível quando uma unidade falhar, a controladora usará dados de redundância para reconstruir os dados da unidade com falha para a unidade hot spare.
+
+Uma unidade hot spare não é dedicada a um grupo de volume específico. Em vez disso, você pode usar uma unidade hot spare para qualquer unidade com falha no storage de armazenamento com a mesma capacidade ou capacidade menor. Uma unidade hot spare deve ser do mesmo tipo de Mídia (HDD ou SSD) que as unidades que está protegendo.
+
+[NOTE]
+====
+Unidades hot spare não são suportadas com pools. Em vez de unidades hot spare, os pools usam a capacidade de preservação dentro de cada unidade que compreende o pool.
+
+====
+
+
+== O que é a capacidade de preservação?
+
+Capacidade de preservação é a quantidade de capacidade (número de unidades) reservada em um pool para dar suporte a possíveis falhas de unidade.
+
+Quando um pool é criado, o sistema reserva automaticamente uma quantidade padrão de capacidade de preservação, dependendo do número de unidades no pool.
+
+Os pools usam capacidade de preservação durante a reconstrução, enquanto os grupos de volume usam unidades hot spare para o mesmo propósito. O método de capacidade de preservação é uma melhoria em relação às unidades hot spare porque permite que a reconstrução aconteça mais rapidamente. A capacidade de preservação é espalhada por várias unidades no pool em vez de em uma unidade no caso de uma unidade hot spare, portanto, você não está limitado pela velocidade ou disponibilidade de uma unidade.
+
+
+
+== Por que eu substituiria logicamente uma unidade?
+
+Se uma unidade falhar ou você quiser substituí-la por qualquer outro motivo, e você tiver uma unidade não atribuída em sua matriz de armazenamento, você pode logicamente substituir a unidade com falha pela unidade não atribuída. Se você não tiver uma unidade não atribuída, pode substituir fisicamente a unidade.
+
+Os dados da unidade original são copiados ou reconstruídos na unidade de substituição.
+
+
+
+== Onde posso ver o estado de uma unidade em fase de reconstrução?
+
+Pode visualizar o estado de reconstrução da unidade a partir do painel operações em curso.
+
+Na página inicial, clique no link *Exibir operações em andamento* no canto superior direito.
+
+Dependendo da unidade, a reconstrução completa pode demorar um tempo considerável. Se a propriedade de um volume tiver mudado, poderá ocorrer uma reconstrução completa em vez da reconstrução rápida.

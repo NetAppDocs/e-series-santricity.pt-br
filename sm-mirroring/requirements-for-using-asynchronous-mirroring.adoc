@@ -85,6 +85,11 @@ O espelhamento assíncrono usa as portas de e/S do host do storage array para tr
 
 
 
+[NOTE]
+====
+O E4000 não suporta espelhamento assíncrono ao usar o protocolo iSCSI.
+
+====
 
 
 == Candidatos a volume espelhado

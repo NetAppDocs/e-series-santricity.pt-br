@@ -9034,4 +9034,5 @@
   <block id="f9e9bc191db345171d0de707013016a3" category="sidebar">Perguntas frequentes sobre suporte automático</block>
   <block id="3af089d2853adca01b3ba738ac9987ff" category="sidebar">Perguntas frequentes sobre configurações de importação</block>
   <block id="e35e805c872d89cfd87942f59e41eb2d" category="sidebar">Perguntas frequentes sobre espelhamento de armazenamento</block>
+  <block id="ded92516be8a7fa425e1814e7ca1ea4e" category="paragraph">O E4000 não suporta espelhamento assíncrono ao usar o protocolo iSCSI.</block>
 </blocks>

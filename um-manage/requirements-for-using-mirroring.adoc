@@ -57,6 +57,10 @@ O espelhamento através de uma interface iSCSI (apenas assíncrona) requer o seg
 
 * Ao contrário do FC, o iSCSI não requer uma porta dedicada. Quando o espelhamento assíncrono é usado em ambientes iSCSI, não é necessário dedicar nenhuma das portas iSCSI de front-end do storage array para uso com espelhamento assíncrono. Essas portas são compartilhadas para tráfego de espelhamento assíncrono e conexões de e/S de host para array.
 * O controlador mantém uma lista de sistemas de armazenamento remoto com os quais o iniciador iSCSI tenta estabelecer uma sessão. A primeira porta que estabelece com êxito uma conexão iSCSI é usada para toda a comunicação subsequente com esse storage de armazenamento remoto. Se a comunicação falhar, uma nova sessão é tentada usando todas as portas disponíveis.
++
+
+NOTE: Os controladores E4000 não suportam espelhamento iSCSI.
+
 * As portas iSCSI são configuradas no nível da matriz, porta a porta. A comunicação entre controladores para mensagens de configuração e transferência de dados usa as configurações globais, incluindo configurações para:
 +
 ** VLAN: Os sistemas locais e remotos devem ter a mesma configuração de VLAN para se comunicar
@@ -92,6 +96,7 @@ NOTE: Para controladores EF600 e EF300, os volumes primário e secundário de um
 ** Se o volume principal não estiver usando o Drive Security, o volume secundário não deve estar usando o Drive Security.
 
 
+* Os volumes primário e secundário não devem ter o particionamento de recursos ativado.
 
 
 

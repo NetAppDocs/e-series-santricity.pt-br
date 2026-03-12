@@ -9039,4 +9039,7 @@
   <block id="3ec10d346538ec4062959d73db3a7bac" category="list-text">Os volumes primário e secundário não devem ter o particionamento de recursos ativado.</block>
   <block id="9da88b3d41fc062b2fe1a843a0e9c3f6" category="admonition">Os controladores E4000 não suportam espelhamento iSCSI.</block>
   <block id="2ba81316cd80bb512d2d7c99312de69e" category="section-title">Novos recursos na versão 11.90R4</block>
+  <block id="980295b6698b8b2aea7adc1d9dafed8c" category="section-title">Novos recursos na versão 11.90R5</block>
+  <block id="94bf3a177cda972f0b25d90290f4610c" category="paragraph">Esta versão contém apenas correções de defeitos e nenhum novo recurso. Para mais informações sobre as alterações nesta versão, consulte o E-Series SANtricity OS 11.90R5 README.</block>
+  <block id="b2676fbb812b8574fa9249e68163593f" category="paragraph">Esta versão contém apenas pequenas alterações e nenhum novo recurso. Para mais informações sobre as alterações nesta versão, consulte o E-Series SANtricity OS 11.90R4 README.</block>
 </blocks>

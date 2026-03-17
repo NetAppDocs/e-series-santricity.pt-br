@@ -23,7 +23,7 @@ Para usar um nome de domínio totalmente qualificado, você deve configurar um s
 
 ====
 .Passos
-. Selecione menu:Definições[Alertas].
+. No painel esquerdo, selecione menu:Settings[Alerts].
 . Selecione a guia *Email*.
 . Selecione *Configure Mail Server*.
 +

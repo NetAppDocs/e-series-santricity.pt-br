@@ -14,7 +14,7 @@ summary: Você pode exibir descrições de status para unidades, controladores, 
 Você pode exibir descrições de status para unidades, controladores, ventiladores e fontes de alimentação.
 
 .Passos
-. Selecione *hardware*.
+. No painel esquerdo, selecione *Hardware*.
 . Para ver os componentes posterior ou frontal:
 +
 ** Se você quiser ver os componentes do controlador e do recipiente de alimentação/ventilador, mas as unidades forem exibidas, clique na guia *Controllers & Components* (Controladores e componentes).

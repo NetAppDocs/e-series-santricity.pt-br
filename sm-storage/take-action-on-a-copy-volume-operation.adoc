@@ -15,7 +15,7 @@ summary: É possível exibir uma operação de volume de cópia em andamento e p
 É possível exibir uma operação de volume de cópia em andamento e parar, alterar prioridade, recopiar ou limpar uma operação de volume de cópia.
 
 .Passos
-. Selecione menu:Home[View Operations in Progress] (Ver operações em curso).
+. No painel esquerdo, selecione menu:Storage[Operations in Progress].
 +
 A caixa de diálogo operações em andamento é exibida.
 

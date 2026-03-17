@@ -20,7 +20,7 @@ O hot spare tem de estar no estado ideal, em espera.
 Não é possível anular a atribuição de um hot spare que esteja atualmente a assumir uma unidade com falha. Se o hot spare não estiver no estado ideal, siga os procedimentos Recovery Guru para corrigir quaisquer problemas antes de tentar anular a atribuição da unidade.
 
 .Passos
-. Selecione *hardware*.
+. No painel esquerdo, selecione *Hardware*.
 . Se o gráfico mostrar os controladores, clique na guia *Drives*.
 +
 O gráfico muda para mostrar as unidades em vez dos controladores.

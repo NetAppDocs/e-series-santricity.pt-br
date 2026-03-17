@@ -23,7 +23,7 @@ Você pode atualizar o firmware das suas unidades para se certificar de que voc�
 
 
 .Passos
-. Selecione menu:suporte[Centro de atualizações].
+. No painel esquerdo, selecione menu:Support[Upgrade Center].
 . Transfira os novos ficheiros do site de suporte para o seu cliente de gestão.
 . Em Drive firmware upgrade, clique em *Begin Upgrade* (Iniciar atualização).
 +

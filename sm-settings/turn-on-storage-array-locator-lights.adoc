@@ -15,7 +15,7 @@ summary: 'Para encontrar a localização física de uma matriz de armazenamento 
 Para encontrar a localização física de uma matriz de armazenamento em um gabinete, você pode ligar suas luzes de localizador (LED).
 
 .Passos
-. Selecione menu:Definições[sistema].
+. No painel esquerdo, selecione menu:Settings[System].
 . Em *Geral*, clique em *Ativar as luzes do localizador da matriz de armazenamento*.
 +
 A caixa de diálogo Ativar luzes do localizador de matriz de armazenamento abre-se e as luzes de localização da matriz de armazenamento correspondente acendem-se.

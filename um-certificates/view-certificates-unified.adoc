@@ -17,12 +17,12 @@ Você pode ver informações resumidas de um certificado, que inclui a organiza�
 Você deve estar conetado com um perfil de usuário que inclua permissões de administrador de segurança. Caso contrário, as funções do certificado não aparecem.
 
 .Passos
-. Selecione *Gerenciamento de certificados*.
+. No painel esquerdo, selecione menu:Settings[Certificates].
 . Selecione um dos seguintes separadores:
 +
 ** *Gerenciamento* -- mostra o certificado para o sistema que hospeda o Proxy de Serviços Web. Um certificado de gerenciamento pode ser autoassinado ou aprovado por uma autoridade de certificação (CA). Ele permite acesso seguro ao Unified Manager.
 ** *Trusted* -- mostra os certificados que o Unified Manager pode acessar para matrizes de armazenamento e outros servidores remotos, como um servidor LDAP. Os certificados podem ser emitidos a partir de uma autoridade de certificação (CA) ou podem ser autoassinados.
 
 
-. Para ver mais informações sobre um certificado, selecione sua linha, selecione as elipses no final da linha e clique em *Exibir* ou *Exportar*.
+. Para ver mais informações sobre um certificado, selecione a linha correspondente, selecione as reticências no final da linha e clique em *View* ou *Export*.
 

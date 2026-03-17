@@ -23,7 +23,7 @@ Se o grupo de instantâneos no qual a imagem instantânea reside tiver uma ou ma
 
 ====
 .Passos
-. Selecione menu:armazenamento[instantâneos].
+. No painel esquerdo, selecione menu:Storage[Snapshots].
 . Clique no separador *Snapshot Images* (imagens instantâneas).
 . Selecione a reversão ativa ou pausada e, em seguida, selecione menu:Repor[Cancelar].
 +

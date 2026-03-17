@@ -53,6 +53,6 @@ Os dados da unidade original são copiados ou reconstruídos na unidade de subst
 
 Pode visualizar o estado de reconstrução da unidade a partir do painel operações em curso.
 
-Na página inicial, clique no link *Exibir operações em andamento* no canto superior direito.
+No menu Storage, no painel esquerdo, clique no link *Operations in Progress* no canto superior direito.
 
 Dependendo da unidade, a reconstrução completa pode demorar um tempo considerável. Se a propriedade de um volume tiver mudado, poderá ocorrer uma reconstrução completa em vez da reconstrução rápida.

@@ -22,7 +22,7 @@ Se você criou um volume primário em um storage array herdado que não pode ser
 
 
 .Passos
-. Selecione menu:armazenamento[Espelhamento assíncrono].
+. No painel esquerdo, selecione menu:Storage[Asynchronous Mirroring].
 . Selecione a guia *Mirrored Pair* (par espelhado).
 +
 A tabela pares espelhados é exibida e exibe todos os pares espelhados associados ao storage array.

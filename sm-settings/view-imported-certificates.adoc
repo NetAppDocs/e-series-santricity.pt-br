@@ -18,7 +18,7 @@ Na página certificados, você pode exibir o tipo de certificado, a autoridade e
 Você deve estar conetado com um perfil de usuário que inclua permissões de administrador de segurança. Caso contrário, as funções do certificado não aparecem.
 
 .Passos
-. Selecione menu:Definições[certificados].
+. No painel esquerdo, selecione menu:Settings[Certificates].
 . Selecione uma das guias para exibir informações sobre os certificados.
 +
 [cols="25h,~"]

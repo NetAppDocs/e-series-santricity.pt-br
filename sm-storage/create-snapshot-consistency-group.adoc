@@ -31,7 +31,7 @@ Selecione membros para especificar uma coleção de volumes que compõem o grupo
 Os volumes dos membros devem ser ótimos.
 
 .Passos
-. Selecione menu:armazenamento[instantâneos].
+. No painel esquerdo, selecione menu:Storage[Snapshots].
 . Clique na guia *Snapshot Consistency Groups* (grupos de consistência de instantâneos).
 . Selecione menu:criar[Snapshot consistency group].
 +

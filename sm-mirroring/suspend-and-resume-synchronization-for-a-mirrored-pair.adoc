@@ -18,7 +18,7 @@ Você pode usar a opção suspender e a opção continuar para controlar quando 
 Se um par espelhado for suspenso manualmente, o par espelhado não será sincronizado até que seja retomado manualmente.
 
 .Passos
-. Selecione menu:armazenamento[Espelhamento síncrono].
+. No painel esquerdo, selecione menu:Storage[Synchronous Mirroring].
 . Selecione o par espelhado que pretende suspender ou retomar e, em seguida, selecione menu:mais[suspender] ou menu:mais[continuar].
 +
 O sistema apresenta uma confirmação.

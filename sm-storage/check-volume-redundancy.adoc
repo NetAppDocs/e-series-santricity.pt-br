@@ -41,8 +41,11 @@ Executar imediatamente uma verificação de redundância no mesmo pool ou grupo 
 
 ====
 .Passos
-. Selecione menu:armazenamento[pools & grupos de volume].
-. Selecione menu:tarefas incomuns[verificar redundância de volume].
+
+NOTE: O recurso Verificar Redundância de Volume está atualmente disponível apenas para operações na interface Legacy System Manager.
+
+. No painel esquerdo, selecione menu:Storage[Pools and volume groups].
+. Clique no ícone de menu:reticências [Check volume redundancy] para o pool ou grupo de volume que deseja verificar.
 +
 A caixa de diálogo verificar redundância é exibida.
 

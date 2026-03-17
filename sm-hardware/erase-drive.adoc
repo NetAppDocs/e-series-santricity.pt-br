@@ -26,7 +26,7 @@ O recurso Apagar não suporta alguns modelos de unidade mais antigos. Se tentar 
 
 ====
 .Passos
-. Selecione *hardware*.
+. No painel esquerdo, selecione *Hardware*.
 . Se o gráfico mostrar os controladores, clique na guia *Drives*.
 +
 O gráfico muda para mostrar as unidades em vez dos controladores.
@@ -42,12 +42,12 @@ A vista do compartimento mostra apenas as unidades não atribuídas; todas as ou
 *Possível perda de dados* -- a operação Apagar não pode ser desfeita. Certifique-se de que seleciona as unidades corretas durante o procedimento.
 
 ====
-. No menu de contexto, selecione *Apagar*.
+. No menu de contexto, selecione *Apagar drives*.
 +
 A caixa de diálogo Apagar unidades é aberta, mostrando todas as unidades elegíveis para uma operação de apagamento.
 
 . Se desejar, selecione unidades adicionais na tabela. Não é possível selecionar _All_ drives; certifique-se de que uma unidade permanece desmarcada.
-. Confirme a operação digitando `erase`e clique em *Apagar*.
+. Confirme a operação digitando `erase`, e depois clique em *Apagar unidades*.
 +
 [CAUTION]
 ====
@@ -58,7 +58,7 @@ Certifique-se de que pretende continuar com esta operação. Depois de clicar em
 
 
 .Resultados
-A operação de eliminação pode demorar vários minutos ou várias horas. Você pode exibir o status no menu:Home[View Operations in Progress] (Exibir operações em andamento). Quando a operação Apagar for concluída, as unidades estarão disponíveis para uso em outro grupo de volumes ou pool de discos ou em outro storage de armazenamento.
+A operação de apagamento pode levar vários minutos ou várias horas. Você pode visualizar o status em menu:Storage[Operations in Progress]. Quando a operação de apagamento for concluída, as unidades estarão disponíveis para uso em outro grupo de volume ou pool de discos, ou em outro storage array.
 
 .Depois de terminar
 Se você quiser usar a unidade novamente, você deve iniciá-la primeiro. Para fazer isso, selecione *Initialize* no menu de contexto da unidade.

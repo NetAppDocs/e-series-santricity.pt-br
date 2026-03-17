@@ -34,7 +34,7 @@ Os hot spares também podem ser atribuídos a partir do assistente de configura�
 
 ====
 .Passos
-. Selecione *hardware*.
+. No painel esquerdo, selecione *Hardware*.
 . Se o gráfico mostrar os controladores, clique na guia *Drives*.
 +
 O gráfico muda para mostrar as unidades em vez dos controladores.

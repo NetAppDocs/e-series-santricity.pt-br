@@ -27,7 +27,7 @@ Não coloque um controlador offline a menos que você seja instruído a fazê-lo
 
 ====
 .Passos
-. Selecione *hardware*.
+. No painel esquerdo, selecione *Hardware*.
 . Se o gráfico mostrar as unidades, clique na guia *Controllers & Components* (Controladores e componentes).
 +
 O gráfico muda para mostrar os controladores em vez das unidades.

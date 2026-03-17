@@ -18,7 +18,7 @@ Pode atualizar o endereço IP iSCSI da sua matriz de armazenamento remota para r
 Tanto o storage array local quanto o storage array remoto devem ser configurados para espelhamento assíncrono usando uma conexão iSCSI.
 
 .Passos
-. Selecione menu:armazenamento[Espelhamento assíncrono].
+. No painel esquerdo, selecione menu:Storage[Asynchronous Mirroring].
 . Selecione a guia *Espelhar grupos de consistência*.
 +
 A tabela Grupo de consistência de espelho exibe todos os grupos de consistência de espelho associados ao storage array.

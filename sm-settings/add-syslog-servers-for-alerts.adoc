@@ -20,7 +20,7 @@ Você pode adicionar um máximo de cinco servidores para alertas syslog.
 
 
 .Passos
-. Selecione menu:Definições[Alertas].
+. No painel esquerdo, selecione menu:Settings[Alerts].
 . Selecione a guia *Syslog*.
 . Selecione *Adicionar servidores Syslog*.
 +

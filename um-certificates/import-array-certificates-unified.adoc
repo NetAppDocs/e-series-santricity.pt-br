@@ -20,7 +20,7 @@ Se necessário, você pode importar certificados para os storage arrays para que
 
 
 .Passos
-. Selecione *Gerenciamento de certificados*.
+. No painel esquerdo, selecione menu:Settings[Certificates].
 . Selecione a guia *Trusted*.
 +
 Esta página mostra todos os certificados reportados para os storages de armazenamento.

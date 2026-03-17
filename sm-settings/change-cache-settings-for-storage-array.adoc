@@ -36,7 +36,7 @@ O tamanho do bloco de cache determina o tamanho máximo de cada bloco de cache, 
 
 |===
 .Passos
-. Selecione menu:Definições[sistema].
+. No painel esquerdo, selecione menu:Settings[System].
 . Role para baixo até *Configurações adicionais* e clique em *alterar configurações de cache*.
 +
 A caixa de diálogo alterar configurações de cache é aberta.

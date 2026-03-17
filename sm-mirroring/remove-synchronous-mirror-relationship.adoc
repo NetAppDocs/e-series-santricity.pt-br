@@ -22,7 +22,7 @@ Você também pode remover um par espelhado para corrigir um estado de par espel
 
 
 .Passos
-. Selecione menu:armazenamento[Espelhamento síncrono].
+. No painel esquerdo, selecione menu:Storage[Synchronous Mirroring].
 . Selecione o par espelhado que pretende remover e, em seguida, selecione o menu:tarefas incomuns[Remover].
 +
 A caixa de diálogo Remover relação de espelho é exibida.

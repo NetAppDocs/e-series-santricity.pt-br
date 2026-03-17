@@ -18,7 +18,7 @@ Você pode alterar as configurações de sincronização e os limites de aviso q
 Alterar as configurações de sincronização afeta as operações de sincronização de todos os pares espelhados dentro do grupo de consistência de espelho.
 
 .Passos
-. Selecione menu:armazenamento[Espelhamento assíncrono].
+. No painel esquerdo, selecione menu:Storage[Asynchronous Mirroring].
 . Selecione a guia *Espelhar grupos de consistência*.
 +
 A tabela Grupo de consistência espelhada é exibida e exibe todos os grupos de consistência de espelho associados ao storage array.

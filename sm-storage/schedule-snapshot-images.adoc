@@ -28,13 +28,13 @@ Você também pode criar um agendamento de snapshot ao mesmo tempo em que cria u
 .Passos
 . Execute uma das seguintes ações para criar uma programação de instantâneos:
 +
-** Selecione menu:armazenamento[volumes].
+** No painel esquerdo, selecione menu:Storage[Volumes].
 +
 Selecione o objeto (grupo de consistência de volume ou snapshot) para esta programação de instantâneos e, em seguida, selecione menu:Serviços de cópia[criar agendamento de instantâneos].
 
-** Selecione menu:armazenamento[instantâneos].
+** No painel esquerdo, selecione menu:Storage[Snapshots].
 +
-Selecione a guia *horários* e clique em *criar*.
+Selecione a aba *Snapsshot schedules* e clique em *Criar*.
 
 
 

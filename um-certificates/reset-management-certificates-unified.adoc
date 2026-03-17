@@ -20,7 +20,7 @@ Você deve estar conetado com um perfil de usuário que inclua permissões de ad
 Esta tarefa exclui o certificado de gerenciamento atual do sistema host onde o Proxy de serviços da Web e o Unified Manager estão instalados. Depois que o certificado é redefinido, o sistema host reverte para usando o certificado autoassinado.
 
 .Passos
-. Selecione *Definições > certificados*.
+. No painel esquerdo, selecione menu:Settings[Certificates].
 . Selecione a guia *Array Management* e, em seguida, selecione *Reset*.
 +
 Uma caixa de diálogo confirmar certificado de gerenciamento de redefinição é aberta.

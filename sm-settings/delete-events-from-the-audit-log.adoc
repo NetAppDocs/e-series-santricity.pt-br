@@ -18,7 +18,7 @@ Você pode limpar o log de auditoria de eventos antigos, o que torna a pesquisa 
 Você deve estar conetado com um perfil de usuário que inclua permissões de administrador de segurança. Caso contrário, as funções de Gerenciamento de Acesso não aparecem.
 
 .Passos
-. Selecione menu:Definições[Gestão de Acesso].
+. No painel esquerdo, selecione menu:Settings[Access Management].
 . Selecione o separador *Registo de auditoria*.
 . Selecione *Eliminar*.
 +

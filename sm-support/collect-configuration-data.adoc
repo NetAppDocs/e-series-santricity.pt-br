@@ -25,7 +25,7 @@ O recurso coletar dados de configuração salva as mesmas informações do coman
 Você só deve executar esta tarefa quando instruído por uma operação Recovery Guru ou por suporte técnico.
 
 .Passos
-. Selecione menu:guia Support [Support Center > Diagnostics] (suporte > Centro de suporte > Diagnóstico).
+. No painel esquerdo, selecione menu:Support [Support Center > Diagnostics] tab.
 . Selecione *Collect Configuration Data*.
 . Na caixa de diálogo, clique em *Collect*.
 +

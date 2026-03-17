@@ -17,14 +17,14 @@ Você pode exportar um certificado para exibir seus detalhes completos.
 Para abrir o ficheiro exportado, tem de ter uma aplicação de visualizador de certificados.
 
 .Passos
-. Selecione *Gerenciamento de certificados*.
+. No painel esquerdo, selecione menu:Settings[Certificates].
 . Selecione um dos seguintes separadores:
 +
 ** *Gerenciamento* -- mostra o certificado para o sistema que hospeda o Proxy de Serviços Web. Um certificado de gerenciamento pode ser autoassinado ou aprovado por uma autoridade de certificação (CA). Ele permite acesso seguro ao Unified Manager.
 ** *Trusted* -- mostra os certificados que o Unified Manager pode acessar para matrizes de armazenamento e outros servidores remotos, como um servidor LDAP. Os certificados podem ser emitidos a partir de uma autoridade de certificação (CA) ou podem ser autoassinados.
 
 
-. Selecione um certificado na página e, em seguida, clique nas elipses no final da linha.
+. Selecione um certificado na página e, em seguida, clique nas reticências no final da linha.
 . Clique em *Exportar* e salve o arquivo de certificado.
 . Abra o arquivo no aplicativo visualizador de certificados.
 

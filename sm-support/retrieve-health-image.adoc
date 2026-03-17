@@ -25,7 +25,7 @@ Execute esta operação somente quando instruído a fazê-lo pelo suporte técni
 
 ====
 .Passos
-. Selecione menu:guia Support [Support Center > Diagnostics] (suporte > Centro de suporte > Diagnóstico).
+. No painel esquerdo, selecione menu:Support [Support Center > Diagnostics] tab.
 . Selecione *Retrieve Health Image*.
 +
 Você pode olhar para a seção de detalhes para ver o tamanho da imagem de integridade antes de baixar o arquivo.

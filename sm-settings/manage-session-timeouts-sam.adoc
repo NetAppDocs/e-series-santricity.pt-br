@@ -23,7 +23,7 @@ Se o Gerenciamento de Acesso for configurado usando os recursos SAML (Security A
 
 ====
 .Passos
-. Selecione menu:Definições[sistema].
+. No painel esquerdo, selecione menu:Settings[System].
 . Na seção Geral, selecione *Ativar/Desativar tempo limite da sessão*.
 +
 A caixa de diálogo Ativar/Desativar tempo limite da sessão é aberta.

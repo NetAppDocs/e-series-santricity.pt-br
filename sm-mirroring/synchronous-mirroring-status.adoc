@@ -15,7 +15,7 @@ O status de um par espelhado síncrono indica se os dados no volume primário e 
 
 [NOTE]
 ====
-Esse recurso não está disponível no sistema de storage EF600/EF600C ou EF300/EF300C.
+Este recurso não está disponível nos sistemas de storage EF80, EF50, EF600/EF600C ou EF300/EF300C.
 
 ====
 Pares espelhados síncronos podem ter um dos seguintes status:

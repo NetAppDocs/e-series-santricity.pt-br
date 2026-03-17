@@ -21,7 +21,7 @@ Para as versões 11,74 e posteriores do SANtricity, você também pode configura
 
 ====
 .Passos
-. Selecione *hardware*.
+. No painel esquerdo, selecione *Hardware*.
 . Se o gráfico mostrar as unidades, clique na guia *Controllers & Components* (Controladores e componentes).
 +
 O gráfico muda para mostrar os controladores em vez das unidades.

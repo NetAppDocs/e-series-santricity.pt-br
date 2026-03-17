@@ -18,9 +18,9 @@ Se já não pretender recolher imagens de instantâneos, pode eliminar uma agend
 Quando elimina uma agenda de instantâneos, as imagens de instantâneos associadas não são eliminadas juntamente com esta. Se você acha que a coleção de imagens instantâneas pode ser retomada em algum momento, você deve suspender o agendamento de instantâneos em vez de excluí-lo.
 
 .Passos
-. Selecione menu:armazenamento[instantâneos].
-. Clique na guia *horários*.
-. Selecione a programação de instantâneos que pretende eliminar e confirme a operação.
+. No painel esquerdo, selecione menu:Storage[Snapshots].
+. Clique na guia *Snapshots Schedules*.
+. Selecione a programação de snapshot que deseja excluir, clique em *Delete* e confirme a operação.
 
 
 .Resultados

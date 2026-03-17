@@ -1,0 +1,213 @@
+---
+permalink: sm-support/use-script-editor.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, script editor, script file, execute script 
+summary: Utilize o editor de scripts para criar ou editar um arquivo de script, salvar um arquivo de script no disco local da estação de gerenciamento de storage ou carregar um arquivo de script do disco. 
+---
+= Usando o editor de script
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Utilize o editor de scripts para criar ou editar um arquivo de script, salvar um arquivo de script no disco local da estação de gerenciamento de storage ou carregar um arquivo de script do disco.
+
+.Antes de começar
+O editor de scripts se comunica com o array de storage para permitir a verificação da sintaxe do script e a execução de comandos. Os comandos de script digitados no editor de scripts geralmente são executados no array de storage.
+
+O editor de scripts oferece duas visualizações na janela:
+
+* Painel do editor – Fornece uma área para inserir ou editar comandos de script.
+* Painel de saída – Exibe os resultados da verificação ou execução. Uma barra divisora separa a janela entre o painel do editor e o painel de saída.
+* O editor de scripts não suporta comandos que exigem arquivos de entrada, como firmware do controlador, NVSRAM ou atualizações de firmware da unidade.
+* O editor de scripts suporta comandos que geram arquivos de saída.
+* Existem alguns comandos que exigem execução no lado do cliente (comandos do lado do cliente).
++
+** Os únicos comandos do lado do cliente suportados para esta versão são  `on error stop` e  `on error continue`.
+** O editor de scripts gera um erro se você tentar executar quaisquer outros comandos do lado do cliente.
+
+
+
+
+
+
+== Abra o editor de scripts
+
+.Passos
+. No painel esquerdo, selecione menu:support[Script editor].
++
+A tabela a seguir lista as opções de arquivo disponíveis no Script editor:
+
++
+.Detalhes do campo
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Tarefa | Ação 
+
+
+ a| 
+Abra um novo script
+ a| 
+.. Clique em *Carregar arquivo de script* para carregar um arquivo de script existente no Script editor.
++
+O editor de scripts abre o arquivo de script selecionado no painel do editor.
+
+
+
+
+
+ a| 
+Verifique a sintaxe do comando do script
+ a| 
+.. Clique em *Verificação de sintaxe* para verificar a sintaxe do script atual no painel do editor.
++
+O editor de scripts analisa as instruções no arquivo de script, uma linha por vez, e verifica se elas possuem a sintaxe correta. Quaisquer erros de sintaxe aparecem no painel de saída, que informam o número da linha do erro e uma descrição do erro.
+
++
+Se o editor de scripts encontrar um erro de sintaxe, nenhuma verificação adicional de sintaxe é realizada no script.
+
++
+Corrija quaisquer erros de sintaxe e execute novamente a *Verificação de Sintaxe* para validar a correção do erro e verificar o restante das instruções no script.
+
+
+
+
+
+ a| 
+Executar script
+ a| 
+.. Clique em *Executar Script* para executar o script atual no painel do editor.
++
+O editor de scripts inicia uma operação de verificação de sintaxe e, em seguida, para cada comando de script do arquivo de entrada, uma execução de comando é realizada no controlador do array de storage.
+
++
+Se o Script editor encontrar um erro de sintaxe, ele interrompe a execução e exibe uma mensagem de erro.
+
++
+Corrija o erro e execute novamente *Verificação de sintaxe* para validar a correção do erro.
+
++
+
+NOTE: Se ocorrer um erro de execução, o script pode não continuar a ser executado dependendo da instrução de script  `On Error` incluída. A instrução  `On Error Stop` interrompe o script se um erro de execução for encontrado. A instrução  `On Error
+Continue` permite que o script continue mesmo após a ocorrência de um erro de execução. Esta instrução é a configuração padrão.
+
+
+
+
+
+ a| 
+Editar um script existente
+ a| 
+.. Clique em *Carregar arquivo de script* para carregar um arquivo de script existente no Script editor.
+.. No painel do editor, faça as alterações necessárias no script.
+
+
+
+
+ a| 
+Salve o script em um arquivo local
+ a| 
+.. Clique em *Salvar arquivo de script* para baixar as alterações no painel de script como um novo arquivo de script.
+
+
+
+
+ a| 
+Limpe o texto no painel do editor do Script editor
+ a| 
+.. Clique em *Limpar editor* para limpar o texto no painel do editor.
+
+
+
+
+ a| 
+Salve os resultados em um arquivo local
+ a| 
+.. Clique em *Salvar resultados* para baixar o conteúdo do painel de saída como um novo arquivo.
+
+
+|===
+====
+
+
+
+
+=== Escreva scripts no editor de scripts
+
+.Antes de começar
+Ao usar o editor de scripts para escrever comandos, certifique-se de seguir estas diretrizes: * Termine todas as instruções com um ponto e vírgula (;). * Separe cada comando base e seus parâmetros primários e secundários associados com um espaço. * Os parâmetros não diferenciam maiúsculas de minúsculas quando inseridos no editor de scripts. * Coloque cada instrução em uma linha separada. * Adicione comentários aos seus scripts para facilitar a compreensão do propósito das instruções de comando, tanto para você quanto para futuros usuários.
+
+.Passos
+. Envolva comentários de várias linhas com os caracteres  `/*` e  `*/`.
++
+Se o mecanismo de script não encontrar tanto uma notação de comentário inicial quanto uma notação de comentário final, uma mensagem de erro será exibida e a execução do script será encerrada.
+
+. Comece comentários de linha única com duas barras (`//`) e termine com um caractere de fim de linha, que você pode inserir pressionando *Enter*.
++
+Se o mecanismo de script não encontrar um caractere de fim de linha no script após processar um comentário, uma mensagem de erro aparece e a execução do script é terminada.
+
++
+Esse erro geralmente ocorre quando um comentário é colocado no final de um script, e você se esqueceu de pressionar *Enter*.
+
+. Use a  `show` instrução para inserir comentários em um script que aparecerão no painel do editor durante a execução do script.
++
+A  `show`statement é útil para depurar scripts.
+
++
+Incluir uma  `show setting controller mode` instrução no seu script fará com que a seguinte linha apareça no painel de saída quando essa linha for processada durante a execução do script:
+
++
+[listing]
+----
+setting controller mode
+----
+
+
+
+
+=== Interpretar resultados da execução do script
+
+Durante a execução do script, mensagens aparecem no painel de saída começando com:
+
+[listing]
+----
+Executing script...
+----
+Se ocorrer um erro durante a fase de análise sintática, o erro aparecerá no painel de saída, que fornece o número da linha, o número da coluna e uma descrição do erro de sintaxe. O seguinte é um exemplo de mensagem de erro de sintaxe.
+
+Se você digitar a seguinte instrução em um script:
+
+`set controller[a] mod = passive;`
+
+O painel de saída exibe o erro de sintaxe resultante da seguinte forma:
+
+[listing]
+----
+Encountered "mod" at line 2, column 19
+Was expecting one of...
+"mode"...
+"availability"...
+"NVSRAMbyte"...
+----
+Se ocorrer um erro durante a execução de um script, uma mensagem aparece no painel de saída, informa que o comando falhou e apresenta uma descrição do erro.
+
+Por exemplo, se você digitar a seguinte instrução em um script:
+
+`set volume [three] userLabel="OneOne";`
+
+O erro resultante aparece no painel de saída a seguir. O comando não pôde ser enviado para o array de storage porque ele estava em estado de não resposta.
+
+[listing]
+----
+Unable to change the volume user label using the Set Volume command at line 1
+Error - 1 - Could not communicate with the storage array to complete this request.
+----
+
+NOTE: Certos erros de execução, incluindo a incapacidade de comunicação com o array de storage, sempre causam a interrupção da execução do script. Nesses casos, a execução para mesmo se você usar a  `On Error Continue` instrução.
+
+.Resultados
+Após executar um script, revise o painel de saída para verificar se houve sucesso ou erros.

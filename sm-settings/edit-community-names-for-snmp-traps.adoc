@@ -18,7 +18,7 @@ Você pode editar nomes de comunidade para SNMPv2c armadilhas.
 Um nome de comunidade deve ser criado.
 
 .Passos
-. Selecione menu:Definir[Alertas].
+. No painel esquerdo, selecione menu:Setting[Alerts].
 . Selecione a guia *SNMP*.
 +
 Os destinos da armadilha e os nomes da comunidade aparecem na tabela.

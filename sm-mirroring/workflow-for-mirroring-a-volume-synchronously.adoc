@@ -15,7 +15,7 @@ Você configura o espelhamento síncrono usando o fluxo de trabalho a seguir.
 
 [NOTE]
 ====
-Esse recurso não está disponível no sistema de storage EF600/EF600C ou EF300/EF300C.
+Este recurso não está disponível nos sistemas de storage EF80, EF50, EF600/EF600C ou EF300/EF300C.
 
 ====
 . Execute a configuração inicial no Unified Manager:

@@ -24,7 +24,7 @@ Você pode adicionar um novo volume de membro a um grupo de consistência de sna
 É possível adicionar volumes padrão ou volumes finos ao grupo de consistência de snapshot. O volume base pode residir em um pool ou grupo de volumes.
 
 .Passos
-. Selecione menu:armazenamento[instantâneos].
+. No painel esquerdo, selecione menu:Storage[Snapshots].
 . Selecione a guia *grupos de consistência de instantâneos*.
 +
 A tabela é exibida e exibe todos os grupos de consistência de snapshot associados ao storage array.

@@ -29,7 +29,7 @@ Não é possível parar o processo de ativação depois de iniciado.
 
 ====
 .Passos
-. Selecione menu:suporte[Centro de atualizações].
+. No painel esquerdo, selecione menu:Support[Upgrade Center].
 . Na área rotulada SANtricity os Controller Software upgrade, clique em *Activate* e confirme se deseja executar a operação.
 +
 Pode cancelar a operação durante a verificação de estado de pré-atualização, mas não durante a ativação.

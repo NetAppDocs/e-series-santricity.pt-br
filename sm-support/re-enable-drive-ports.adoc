@@ -15,7 +15,7 @@ summary: Pode indicar ao controlador que foi tomada uma ação corretiva para re
 Pode indicar ao controlador que foi tomada uma ação corretiva para recuperar de uma condição de fio incorreto.
 
 .Passos
-. Selecione menu:guia Support [Support Center > Diagnostics] (suporte > Centro de suporte > Diagnóstico).
+. No painel esquerdo, selecione menu:Support [Support Center > Diagnostics] tab.
 . Selecione *reativar portas de unidade* e confirme se deseja executar a operação.
 +
 Esta opção aparece apenas quando a matriz de armazenamento tiver desativado as portas da unidade.

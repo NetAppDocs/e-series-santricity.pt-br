@@ -18,7 +18,7 @@ Ao visualizar logs de auditoria, os usuários com permissões de administrador d
 Você deve estar conetado com um perfil de usuário que inclua permissões de administrador de segurança. Caso contrário, as funções de Gerenciamento de Acesso não aparecem.
 
 .Passos
-. Selecione menu:Definições[Gestão de Acesso].
+. No painel esquerdo, selecione menu:Settings[Access Management].
 . Selecione a guia **Audit Log**.
 +
 A atividade do log de auditoria aparece em formato tabular, que inclui as seguintes colunas de informações:

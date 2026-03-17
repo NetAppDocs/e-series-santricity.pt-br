@@ -18,7 +18,7 @@ Você pode desativar o recurso de espelhamento síncrono em um storage array par
 Você deve ter excluído todas as relações espelhadas síncronas. Verifique se todos os pares espelhados foram excluídos do storage array.
 
 .Passos
-. Selecione menu:armazenamento[Espelhamento síncrono].
+. No painel esquerdo, selecione menu:Storage[Synchronous Mirroring].
 . Selecione menu:tarefas incomuns[Desativar].
 +
 O sistema apresenta uma confirmação.

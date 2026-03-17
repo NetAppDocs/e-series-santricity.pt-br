@@ -21,7 +21,7 @@ Você deve estar conetado com um perfil de usuário que inclua permissões de ad
 Os perfis de usuário e mapeamentos não podem ser alterados. Apenas as senhas podem ser modificadas.
 
 .Passos
-. Selecione menu:Definições[Gestão de Acesso].
+. No painel esquerdo, selecione menu:Settings[Access Management].
 . Selecione a guia *funções de usuário local*.
 +
 Os perfis de utilizador são apresentados na tabela:

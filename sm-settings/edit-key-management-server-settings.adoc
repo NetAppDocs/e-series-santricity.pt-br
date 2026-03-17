@@ -15,7 +15,7 @@ summary: Se você tiver configurado o gerenciamento de chaves externas, poderá 
 Se você tiver configurado o gerenciamento de chaves externas, poderá exibir e editar as configurações do servidor de gerenciamento de chaves a qualquer momento.
 
 .Passos
-. Selecione menu:Definições[sistema].
+. No painel esquerdo, selecione menu:Settings[System].
 . Em *Gerenciamento de chaves de segurança*, selecione *Exibir/Editar Configurações do servidor de gerenciamento de chaves*.
 . Edite informações nos seguintes campos:
 +

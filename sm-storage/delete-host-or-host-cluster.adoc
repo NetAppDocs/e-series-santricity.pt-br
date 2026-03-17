@@ -23,8 +23,8 @@ Tenha estas diretrizes em mente quando você excluir um host ou um cluster de ho
 
 
 .Passos
-. Selecione menu:armazenamento[hosts].
-. Selecione o host ou cluster de host que você deseja excluir e clique em *Excluir*.
+. No painel esquerdo, selecione menu:Storage[Hosts].
+. Selecione o host ou cluster de hosts que deseja excluir e clique no menu:ícone de reticências[Excluir].
 +
 É apresentada a caixa de diálogo de confirmação.
 

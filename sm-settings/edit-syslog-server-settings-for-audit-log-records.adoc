@@ -21,7 +21,7 @@ Você pode alterar as configurações do servidor syslog usado para arquivar log
 
 
 .Passos
-. Selecione menu:Definições[Gestão de Acesso].
+. No painel esquerdo, selecione menu:Settings[Access Management].
 . Na guia Registro de auditoria, selecione *Configurar servidores Syslog*.
 +
 Os servidores syslog configurados são exibidos na página.

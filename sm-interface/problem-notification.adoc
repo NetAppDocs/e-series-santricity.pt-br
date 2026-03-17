@@ -53,8 +53,7 @@ Cuidado
 |===
 O System Manager exibe esses ícones em vários locais.
 
-* A área notificações na página inicial exibe o ícone com falha e uma mensagem.
-* O ícone da página inicial na área de navegação exibe o ícone com falha.
+* Área de notificações (ícone de sino na parte superior da janela)
 * Na página componentes, os gráficos para unidades e controladores exibem o ícone com falha.
 
 

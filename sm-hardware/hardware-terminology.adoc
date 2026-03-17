@@ -229,7 +229,7 @@ Um compartimento de unidade, também chamado de compartimento de expansão, cont
  a| 
 DULBE
  a| 
-Erro de bloco lógico desalocado ou não escrito (DULBE) é uma opção nas unidades NVMe que permite que o storage array EF300 ou EF600 ofereça suporte a volumes provisionados por recursos.
+O recurso DULBE (Deallocated or Unwritten Logical Block Error) é uma opção em unidades NVMe que permite que o array de storage EF80, EF50, EF300/EF300C ou EF600/EF600C suporte volumes com recursos provisionados.
 
 
 

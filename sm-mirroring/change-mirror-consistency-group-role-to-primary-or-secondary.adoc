@@ -18,7 +18,7 @@ Você pode alterar a função entre grupos de consistência de espelho para fins
 Os grupos de consistência de espelho criados no storage array local mantêm a função principal. Os grupos de consistência de espelho criados no storage array remoto mantêm a função secundária. Você pode rebaixar o grupo de consistência de espelho local para uma função secundária ou promover o grupo de consistência de espelho remoto para uma função primária.
 
 .Passos
-. Selecione menu:armazenamento[Espelhamento assíncrono].
+. No painel esquerdo, selecione menu:Storage[Asynchronous Mirroring].
 . Selecione a guia *Espelhar grupos de consistência*.
 +
 A tabela Mirror Consistency Group (Grupo de consistência de espelho) é exibida e exibe todos os grupos de consistência de espelho associados ao storage array.

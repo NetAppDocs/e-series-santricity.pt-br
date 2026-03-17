@@ -26,14 +26,14 @@ Os gráficos disponíveis na vista de desempenho detalhada estão dispostos em t
 
 * *Exibição lógica* -- exibe dados de desempenho para objetos lógicos agrupados por grupos de volume e pools. Os objetos lógicos incluem grupos de volumes, pools e volumes.
 * *Physical View* -- exibe dados de desempenho para o controlador, canais host, canais de unidade e unidades.
-* *Exibição de aplicativos e cargas de trabalho* -- exibe uma lista de objetos lógicos (volumes) agrupados pelos tipos de aplicativos e cargas de trabalho que você definiu.
+* *Visualização de aplicativos e cargas de trabalho* -- Exibe uma lista de objetos lógicos (volumes) agrupados pelos tipos de aplicativos e cargas de trabalho que você definiu.
 
 
 .Passos
 . Selecione *Home*.
 . Para selecionar uma visualização em nível de matriz, clique no botão IOPS, MIB/s ou CPU.
 . Para ver mais detalhes, clique em *Exibir detalhes de desempenho*.
-. Selecione a guia *Exibição lógica*, a guia *Exibição física* ou a guia *Exibição de aplicativos e cargas de trabalho*.
+. Selecione a guia *Logical View*, a guia *Physical View* ou a guia *Applications and workloads View*.
 +
 Dependendo do tipo de objeto, diferentes gráficos aparecem em cada guia.
 
@@ -66,7 +66,7 @@ Vista física
 
 
  a| 
-Visualização de aplicações e workloads
+Aplicações e cargas de trabalho Visualizar
  a| 
 ** *Storage array*: IOPS, MIB/s.
 ** *Aplicações*: Latência, IOPS, MIB/s

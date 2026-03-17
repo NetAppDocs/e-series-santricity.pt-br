@@ -15,7 +15,7 @@ summary: Você pode iniciar manualmente a re-sincronização para todos os pares
 Você pode iniciar manualmente a re-sincronização para todos os pares espelhados dentro de um grupo de consistência de espelho.
 
 .Passos
-. Selecione menu:armazenamento[Espelhamento assíncrono].
+. No painel esquerdo, selecione menu:Storage[Asynchronous Mirroring].
 . Selecione a guia *Espelhar grupos de consistência*.
 +
 A tabela Mirror Consistency Group (Grupo de consistência de espelho) é exibida e exibe todos os grupos de consistência de espelho associados ao storage array.

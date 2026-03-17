@@ -28,7 +28,7 @@ Você pode querer desativar o balanceamento de carga automático em seu storage 
 
 
 .Passos
-. Selecione menu:Definições[sistema].
+. No painel esquerdo, selecione menu:Settings[System].
 . Role para baixo até *Configurações adicionais* e clique em *Ativar/Desativar balanceamento de carga automático*.
 +
 O texto abaixo dessa opção indica se o recurso está ativado ou desativado no momento.

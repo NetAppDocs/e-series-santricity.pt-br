@@ -18,7 +18,7 @@ Você pode alterar o método de gerenciamento de segurança de unidade de um ser
 Nesta tarefa, desative o gerenciamento de chaves externas e baixe uma nova cópia de backup para o host local. A chave existente ainda é usada para o Drive Security, mas será gerenciada internamente na matriz de armazenamento.
 
 .Passos
-. Selecione menu:Definições[sistema].
+. No painel esquerdo, selecione menu:Settings[System].
 . Em *Gerenciamento de chaves de segurança*, selecione *Desativar Gerenciamento de chaves externas*.
 +
 A caixa de diálogo Desativar gerenciamento de chaves externas é aberta.

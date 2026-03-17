@@ -15,7 +15,7 @@ summary: Ative a janela de manutenção do AutoSupport para suprimir a criação
 Ative a janela de manutenção do AutoSupport para suprimir a criação automática de tickets em eventos de erro. No modo de operação normal, o storage array usa o AutoSupport para abrir um caso com suporte se houver um problema.
 
 .Passos
-. Selecione menu:suporte[Centro de suporte > AutoSupport].
+. No painel esquerdo, selecione menu:Suporte [Central de Suporte > AutoSupport] guia.
 . Selecione *Ativar janela de manutenção do AutoSupport*.
 . Introduza o endereço de e-mail para receber uma confirmação de que o pedido da janela de manutenção foi processado.
 +

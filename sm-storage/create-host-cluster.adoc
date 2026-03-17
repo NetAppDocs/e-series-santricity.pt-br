@@ -29,7 +29,7 @@ Se qualquer uma das conexões de host nos controladores do storage array não su
 
 
 .Passos
-. Selecione menu:armazenamento[hosts].
+. No painel esquerdo, selecione menu:Storage[Hosts].
 . Selecione menu:criar[Host Cluster].
 +
 A caixa de diálogo criar cluster de host é exibida.

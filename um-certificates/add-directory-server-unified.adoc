@@ -24,7 +24,7 @@ Para configurar a autenticação para o Gerenciamento de Acesso, você estabelec
 Adicionar um servidor de diretório é um processo de duas etapas. Primeiro você insere o nome de domínio e URL. Se o servidor usar um protocolo seguro, você também deve carregar um certificado de CA para autenticação se ele for assinado por uma autoridade de assinatura não padrão. Se tiver credenciais para uma conta BIND, também poderá introduzir o nome da conta de utilizador e a palavra-passe. Em seguida, você mapeia os grupos de usuários do servidor LDAP para funções de usuário locais.
 
 .Passos
-. Selecione *Gerenciamento de Acesso*.
+. No painel esquerdo, selecione menu:Settings[Access Management].
 . Na guia *Serviços de diretório*, selecione *Adicionar servidor de diretório*.
 +
 A caixa de diálogo Adicionar servidor de diretório é aberta.

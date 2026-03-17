@@ -20,8 +20,8 @@ Você pode importar configurações de um agendamento instantâneo existente ou 
 Como uma programação de instantâneos está associada a um grupo de instantâneos ou a um grupo de consistência de instantâneos, a capacidade reservada pode ser afetada por alterações nas configurações de agendamento.
 
 .Passos
-. Selecione menu:armazenamento[instantâneos].
-. Clique na guia *horários*.
+. No painel esquerdo, selecione menu:Storage[Snapshots].
+. Clique na guia *Snapshot Schedules*.
 . Selecione a programação de instantâneos que pretende alterar e, em seguida, clique em *Editar*.
 +
 A caixa de diálogo Editar agendamento instantâneo é exibida.

@@ -45,8 +45,8 @@ NOTE: Quaisquer novos volumes que você criar no pool serão capazes de DA. Se v
 
 ====
 .Passos
-. Selecione menu:armazenamento[pools & grupos de volume].
-. Selecione o pool ou cache SSD e clique em menu:mais[Remover capacidade].
+. No painel esquerdo, selecione menu:Storage[Pools and volume groups].
+. Selecione o pool ou o SSD Cache e clique no menu:ícone de reticências[Remover capacidade].
 +
 A caixa de diálogo Remover capacidade é exibida.
 

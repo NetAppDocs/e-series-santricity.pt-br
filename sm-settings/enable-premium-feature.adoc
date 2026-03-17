@@ -28,7 +28,7 @@ Se você quiser desativar um recurso premium, use o comando Desativar recurso de
 
 ====
 .Passos
-. Selecione menu:Definições[sistema].
+. No painel esquerdo, selecione menu:Settings[System].
 . Em *Complementos*, selecione *Ativar recurso Premium*.
 +
 A caixa de diálogo Ativar um recurso Premium é aberta.

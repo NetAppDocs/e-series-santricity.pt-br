@@ -30,7 +30,7 @@ Execute esta operação somente quando instruído a fazê-lo pelo suporte técni
 
 ====
 .Passos
-. Selecione menu:guia Support [Support Center > Diagnostics] (suporte > Centro de suporte > Diagnóstico).
+. No painel esquerdo, selecione menu:Support [Support Center > Diagnostics] tab.
 . Selecione *coletar dados de suporte*.
 . Clique em *Collect*.
 +

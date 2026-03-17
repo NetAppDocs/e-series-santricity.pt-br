@@ -33,7 +33,7 @@ Você pode acessar os recursos e funções do Unified Manager na barra lateral d
  a| 
 Gerenciar
  a| 
-Descubra matrizes de armazenamento na sua rede, inicie o Gestor de sistema SANtricity para uma matriz, importe definições de uma matriz para várias matrizes e gere grupos de matrizes. Marque as caixas de seleção ao lado dos nomes dos arrays para executar operações neles, como importar configurações e criar grupos de matrizes. As elipses no final de cada linha fornecem um menu em linha para operações em um único array, como renomeá-lo.
+Descubra arrays de armazenamento em sua rede, inicie SANtricity System Manager para um array, importe configurações de um array para vários arrays e gerencie grupos de arrays. Selecione as caixas de seleção ao lado dos nomes dos arrays para realizar operações neles, como importar configurações e criar grupos de arrays. As reticências no final de cada linha fornecem um menu in-line para operações em um único array, como renomeá-lo.
 
 
 
@@ -79,7 +79,7 @@ No canto superior direito da interface, você pode acessar a Ajuda e outra docum
 
 == Logins de usuário e senhas
 
-O usuário atual conetado ao sistema é mostrado no canto superior direito da interface.
+O usuário atualmente conectado ao sistema é exibido nas configurações de usuário.
 
 Para obter mais informações sobre usuários e senhas, consulte:
 

@@ -20,7 +20,7 @@ Suspender e retomar a sincronização em grupos ajuda a reduzir qualquer impacto
 O estado do grupo de consistência do espelho e seus pares espelhados permanecem suspensos até que você use a opção Retomar para retomar a atividade de sincronização.
 
 .Passos
-. Selecione menu:armazenamento[Espelhamento assíncrono].
+. No painel esquerdo, selecione menu:Storage[Asynchronous Mirroring].
 . Selecione a guia *Espelhar grupos de consistência*.
 +
 A tabela Grupo de consistência espelhada é exibida e exibe todos os grupos de consistência de espelho associados ao storage array.

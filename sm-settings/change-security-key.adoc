@@ -15,7 +15,7 @@ summary: A qualquer momento, você pode substituir uma chave de segurança por u
 A qualquer momento, você pode substituir uma chave de segurança por uma nova chave. Talvez seja necessário alterar uma chave de segurança nos casos em que você tenha uma potencial violação de segurança em sua empresa e queira garantir que funcionários não autorizados não possam acessar os dados das unidades.
 
 .Passos
-. Selecione menu:Definições[sistema].
+. No painel esquerdo, selecione menu:Settings[System].
 . Em *Gerenciamento de chaves de segurança*, selecione *alterar chave*.
 +
 A caixa de diálogo alterar chave de segurança é aberta.

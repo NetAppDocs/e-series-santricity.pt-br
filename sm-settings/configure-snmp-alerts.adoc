@@ -36,7 +36,7 @@ Se você não tiver o arquivo MIB, poderá obtê-lo no site de suporte da NetApp
 Esta tarefa descreve como identificar o servidor SNMP para destinos de intercetação e, em seguida, testar sua configuração.
 
 .Passos
-. Selecione menu:Definições[Alertas].
+. No painel esquerdo, selecione menu:Settings[Alerts].
 . Selecione a guia *SNMP*.
 +
 Na primeira configuração, a guia SNMP exibe "Configurar Comunidades/usuários".

@@ -15,7 +15,7 @@ summary: A página AutoSupport mostra se o recurso AutoSupport e os recursos ind
 A página AutoSupport mostra se o recurso AutoSupport e os recursos individuais do AutoSupport estão ativados no momento.
 
 .Passos
-. Selecione menu:suporte[Centro de suporte > AutoSupport].
+. No painel esquerdo, selecione menu:Suporte [Central de Suporte > AutoSupport] guia.
 . Olhe para o lado direito da página logo abaixo das guias para ver se o recurso básico do AutoSupport está ativado.
 . Passe o cursor sobre o ponto de interrogação para ver se os recursos individuais do AutoSupport estão ativados.
 

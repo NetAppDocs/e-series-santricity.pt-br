@@ -17,7 +17,7 @@ Após o início do processo de importação, você pode visualizar e tomar medid
 .Sobre esta tarefa
 Para cada operação de importação, a caixa de diálogo operações em andamento exibe uma porcentagem de conclusão e tempo estimado restante. As ações incluem alterar a prioridade de importação, parar e retomar as operações e desconetar da operação.
 
-Também pode visualizar operações em curso a partir da página inicial (menu:Página inicial[Mostrar operações em andamento]).
+Você também pode visualizar as operações em andamento através do menu:storage[Operations in Progress].
 
 .Passos
 . Na página armazenamento remoto, selecione *Exibir operações*.

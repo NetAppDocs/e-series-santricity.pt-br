@@ -31,7 +31,7 @@ Saiba mais:
 
 == Como você cria piscinas?
 
-Você pode permitir que o System Manager crie pools automaticamente quando detetar capacidade não atribuída em um storage array. Alternativamente, quando a criação automática não pode determinar a melhor configuração, você pode criar pools manualmente a partir do menu:armazenamento[pools & grupos de volume].
+Você pode permitir que System Manager crie pools automaticamente quando detectar capacidade não alocada em um array de storage. Como alternativa, quando a criação automática não conseguir determinar a melhor configuração, você pode criar pools manualmente em menu:Storage[Pools and volume groups].
 
 Saiba mais:
 
@@ -45,7 +45,7 @@ Saiba mais:
 
 == Como criar grupos de volume?
 
-Pode criar grupos de volume a partir do menu:armazenamento[pools & grupos de volume].
+Você pode criar grupos de volume a partir do menu:Storage[Pools and volume groups].
 
 Saiba mais:
 

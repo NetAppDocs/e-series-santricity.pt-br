@@ -18,11 +18,11 @@ Você pode alterar as configurações de um volume de membro do grupo de consist
 Alterar as configurações de capacidade reservada para um volume de membro individual também altera as configurações de capacidade reservada para todos os volumes associados a um grupo de consistência.
 
 .Passos
-. Selecione menu:armazenamento[pools & grupos de volume].
+. No painel esquerdo, selecione menu:Storage[Pools and volume groups].
 . Clique na guia *capacidade reservada*.
-. Selecione o volume do membro do grupo de consistência que você deseja editar e clique em *Exibir/Editar configurações*.
+. Selecione o volume membro do grupo de consistência que deseja editar e, em seguida, clique no menu:ícone de reticências[Editar configurações].
 +
-A caixa de diálogo Configurações de capacidade reservada do volume do membro é exibida.
+A janela Editar volume do membro do grupo de consistência é exibida.
 
 . Altere as configurações de capacidade reservada para o volume do membro, conforme apropriado.
 +
@@ -35,9 +35,9 @@ A caixa de diálogo Configurações de capacidade reservada do volume do membro 
 
 
  a| 
-Alerta-me quando...
+Limiar de alerta de capacidade reservada cheia
  a| 
-Use a caixa giratório para ajustar o ponto percentual no qual o System Manager envia uma notificação de alerta quando a capacidade reservada para um volume de membro estiver quase cheia.
+Use a barra para ajustar o ponto percentual em que System Manager envia uma notificação de alerta quando a capacidade reservada para um volume de membro estiver quase cheia.
 
 Quando a capacidade reservada para o volume do membro excede o limite especificado, o System Manager envia um alerta, permitindo-lhe tempo para aumentar a capacidade reservada ou eliminar objetos desnecessários.
 

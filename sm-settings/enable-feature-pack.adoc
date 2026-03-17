@@ -33,7 +33,7 @@ O arquivo do pacote de recursos é carregado no cliente de gerenciamento (o sist
 Esta tarefa descreve como utilizar o Gestor do sistema para ativar um pacote de funcionalidades. Quando terminar, você deve reiniciar o storage array.
 
 .Passos
-. Selecione menu:Definições[sistema].
+. No painel esquerdo, selecione menu:Settings[System].
 . Em *Add-ons*, selecione *Change Feature Pack*.
 . Clique em *Browse* e selecione o arquivo de chave.
 +

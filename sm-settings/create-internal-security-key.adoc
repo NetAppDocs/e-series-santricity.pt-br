@@ -33,7 +33,7 @@ A frase-passe para o Drive Security é independente da senha do Administrador do
 
 ====
 .Passos
-. Selecione menu:Definições[sistema].
+. No painel esquerdo, selecione menu:Settings[System].
 . Em *Gerenciamento de chaves de segurança*, selecione *criar chave interna*.
 +
 Se você ainda não gerou uma chave de segurança, a caixa de diálogo criar chave de segurança será aberta.

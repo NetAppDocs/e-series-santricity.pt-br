@@ -27,7 +27,7 @@ Se já tiver configurado as portas de gestão da matriz de armazenamento com DHC
 
 ====
 .Passos
-. Selecione *hardware*.
+. No painel esquerdo, selecione *Hardware*.
 . Se o gráfico mostrar as unidades, clique na guia *Controllers & Components* (Controladores e componentes).
 +
 O gráfico muda para mostrar os controladores em vez das unidades.

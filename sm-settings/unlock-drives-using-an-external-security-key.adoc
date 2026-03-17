@@ -47,7 +47,7 @@ Depois de reinstalar unidades habilitadas para segurança em outro array, esse a
 Se outras unidades habilitadas para segurança estiverem instaladas no novo storage array, elas poderão usar uma chave de segurança diferente da que você está importando. Durante o processo de importação, a chave de segurança antiga é usada apenas para desbloquear os dados das unidades que você está instalando. Quando o processo de desbloqueio é bem-sucedido, as unidades recém-instaladas são recodificadas para a chave de segurança da matriz de armazenamento de destino.
 
 .Passos
-. Selecione menu:Definições[sistema].
+. No painel esquerdo, selecione menu:Settings[System].
 . Em *Gerenciamento de chaves de segurança*, selecione *criar chave externa*.
 . Conclua o assistente com as informações e certificados de conexão pré-requisito.
 . Clique em *Test Communication* para garantir o acesso ao servidor de gerenciamento de chaves externo.

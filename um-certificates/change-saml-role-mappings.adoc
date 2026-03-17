@@ -21,7 +21,7 @@ Se você configurou o SAML para Gerenciamento de Acesso anteriormente, poderá a
 
 
 .Passos
-. Selecione menu:Definições[Gestão de Acesso].
+. No painel esquerdo, selecione menu:Settings[Access Management].
 . Selecione a guia *SAML*.
 . Selecione *Mapeamento de função*.
 +

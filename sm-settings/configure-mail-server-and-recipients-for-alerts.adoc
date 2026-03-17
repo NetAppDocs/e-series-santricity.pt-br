@@ -35,7 +35,7 @@ Os alertas de e-mail também podem ser configurados a partir do assistente de co
 
 ====
 .Passos
-. Selecione menu:Definições[Alertas].
+. No painel esquerdo, selecione menu:Settings[Alerts].
 . Selecione a guia *Email*.
 +
 Se um servidor de e-mail ainda não estiver configurado, a guia e-mail exibirá "Configurar servidor de e-mail".

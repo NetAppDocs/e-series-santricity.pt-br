@@ -25,16 +25,13 @@ Esta ação pode ocorrer quando uma nova bateria está sendo carregada, quando u
 
 
 .Passos
-. Selecione menu:armazenamento[volumes].
-. Selecione qualquer volume e, em seguida, selecione menu:mais[alterar definições de cache].
+. No painel esquerdo, selecione menu:Storage[Volumes].
+. Clique no ícone de menu: reticências [Change volume cache settings].
 +
-A caixa de diálogo alterar configurações de cache é exibida. Todos os volumes na matriz de armazenamento aparecem nesta caixa de diálogo.
+A janela Alterar configurações do cache de volume é exibida. Todos os volumes no array de storage aparecem nesta caixa de diálogo.
 
-. Selecione a guia *Basic* para alterar as configurações de armazenamento em cache de leitura e armazenamento em cache de gravação.
+. Marque a caixa ao lado de cada volume para o qual deseja alterar as configurações de cache ou marque a caixa no cabeçalho da tabela para selecionar todos os volumes.
 +
-.Detalhes do campo
-[%collapsible]
-====
 [cols="25h,~"]
 |===
 | Definição de cache | Descrição 
@@ -55,16 +52,6 @@ O cache de gravação é um buffer que armazena dados do host que ainda não for
 
 NOTE: O cache é automaticamente lavado após o *Write caching* estar desativado para um volume.
 
-|===
-====
-. Selecione a guia *Avançado* para alterar as configurações avançadas para volumes espessos. As configurações avançadas de cache estão disponíveis apenas para volumes espessos.
-+
-.Detalhes do campo
-[%collapsible]
-====
-[cols="25h,~"]
-|===
-| Definição de cache | Descrição 
 
 
  a| 
@@ -77,7 +64,7 @@ Para um volume fino, a pré-busca de leitura de cache dinâmico é sempre desati
 
 
  a| 
-Escreva a cache sem baterias
+Cache de gravação sem baterias
  a| 
 A configuração de armazenamento de gravação sem baterias permite que o armazenamento em cache continue, mesmo quando as baterias estiverem em falta, falharem, descarregadas completamente ou não estiverem totalmente carregadas. Normalmente, a escolha do armazenamento em cache sem baterias não é recomendada, pois os dados podem ser perdidos se perder energia. Normalmente, o armazenamento em cache de gravação é desligado temporariamente pelo controlador até que as baterias sejam carregadas ou uma bateria com falha seja substituída.
 
@@ -96,6 +83,5 @@ O cache de gravação com espelhamento ocorre quando os dados gravados na memór
 Esta configuração estará disponível somente se você tiver habilitado o armazenamento em cache de gravação. Esta definição não está disponível para volumes finos.
 
 |===
-====
-. Clique em *Salvar* para alterar as configurações de cache.
+. Clique em *Salvar* para alterar as configurações de cache
 

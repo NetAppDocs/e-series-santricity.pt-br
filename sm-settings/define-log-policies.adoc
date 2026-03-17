@@ -21,7 +21,7 @@ Você deve estar conetado com um perfil de usuário que inclua permissões de ad
 Esta tarefa descreve como alterar as definições do registo de auditoria, que incluem a política de substituição de eventos antigos e a política de gravação de tipos de eventos.
 
 .Passos
-. Selecione menu:Definições[Gestão de Acesso].
+. No painel esquerdo, selecione menu:Settings[Access Management].
 . Selecione o separador *Registo de auditoria*.
 . Selecione *Exibir/Editar configurações*.
 +

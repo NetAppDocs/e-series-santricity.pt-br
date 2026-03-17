@@ -15,7 +15,7 @@ summary: Você pode remover o servidor de e-mail definido anteriormente para que
 Você pode remover o servidor de e-mail definido anteriormente para que os alertas não sejam mais enviados para os endereços de e-mail ou remover endereços de e-mail individuais.
 
 .Passos
-. Selecione menu:Definições[Alertas].
+. No painel esquerdo, selecione menu:Settings[Alerts].
 . Selecione a guia *Email*.
 . Na tabela, execute um dos seguintes procedimentos:
 +

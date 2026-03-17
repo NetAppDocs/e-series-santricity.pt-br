@@ -17,7 +17,11 @@ O ID do compartimento é um número que identifica exclusivamente uma gaveta no 
 O firmware do controlador atribui automaticamente o ID do compartimento, mas você pode alterar esse número se quiser criar um esquema de pedidos diferente.
 
 .Passos
-. Selecione *hardware*.
+. No painel esquerdo, selecione *Hardware*.
+. Se o gráfico mostrar as unidades, clique na guia *Controllers & Components* (Controladores e componentes).
++
+O gráfico muda para mostrar os controladores em vez das unidades.
+
 . Selecione a lista suspensa para o compartimento de controladora ou compartimento de unidade e selecione *alterar ID*.
 . Na caixa de diálogo alterar ID do compartimento, selecione a lista suspensa para exibir os números disponíveis.
 +

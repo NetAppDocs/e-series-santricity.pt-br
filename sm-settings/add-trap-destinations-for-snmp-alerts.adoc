@@ -33,12 +33,12 @@ Se você não tiver o arquivo MIB, poderá obtê-lo no site de suporte da NetApp
 
 
 .Passos
-. Selecione menu:Definições[Alertas].
+. No painel esquerdo, selecione menu:Settings[Alerts].
 . Selecione a guia *SNMP*.
 +
 Os destinos de armadilha definidos atualmente aparecem na tabela.
 
-. Selecione *Add Trap Desinations*.
+. Selecione *Add Trap Destinations*.
 +
 A caixa de diálogo Adicionar destinos de armadilha é aberta.
 

@@ -35,7 +35,7 @@ Não é possível cancelar a operação Clear Recovery Mode (Limpar modo de recu
 
 ====
 .Passos
-. Selecione menu:guia Support [Support Center > Diagnostics] (suporte > Centro de suporte > Diagnóstico).
+. No painel esquerdo, selecione menu:Support [Support Center > Diagnostics] tab.
 . Selecione *Clear Recovery Mode* (Limpar modo de recuperação) e confirme que pretende executar esta operação.
 +
 Esta opção aparece apenas se a matriz de armazenamento estiver no modo de recuperação.

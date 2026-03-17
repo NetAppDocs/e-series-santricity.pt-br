@@ -14,7 +14,7 @@ summary: Se um controlador estiver no estado offline ou no modo de serviço, pod
 Se um controlador estiver no estado offline ou no modo de serviço, pode colocá-lo novamente online.
 
 .Passos
-. Selecione *hardware*.
+. No painel esquerdo, selecione *Hardware*.
 . Se o gráfico mostrar as unidades, clique na guia *Controllers & Components* (Controladores e componentes).
 +
 O gráfico muda para mostrar os controladores em vez das unidades.

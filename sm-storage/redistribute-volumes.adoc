@@ -26,8 +26,8 @@ Se você quiser redistribuir volumes sem um driver multipath nos hosts, todas as
 A maioria dos drivers multipath de host tenta acessar cada volume em um caminho para o proprietário do controlador preferido. No entanto, se esse caminho preferido ficar indisponível, o driver multipath no host fará failover para um caminho alternativo. Esse failover pode fazer com que a propriedade do volume mude para o controlador alternativo. Depois de resolver a condição que causou o failover, alguns hosts podem mover automaticamente a propriedade do volume de volta para o proprietário do controlador preferido, mas, em alguns casos, talvez seja necessário redistribuir manualmente os volumes.
 
 .Passos
-. Selecione menu:armazenamento[volumes].
-. Selecione menu:mais[redistribuir volumes].
+. No painel esquerdo, selecione menu:Storage[Volumes].
+. Clique no ícone de menu:ellipsis [Redistribuir volumes].
 +
 A caixa de diálogo redistribuir volumes é exibida. Todos os volumes na matriz de armazenamento cujo proprietário de controlador preferido não corresponde ao proprietário atual aparecem nesta caixa de diálogo.
 

@@ -28,7 +28,7 @@ Se o volume instantâneo do volume do instantâneo ou do grupo de consistência 
 
 ====
 .Passos
-. Selecione menu:armazenamento[instantâneos].
+. No painel esquerdo, selecione menu:Storage[Snapshots].
 . Selecione a guia *volumes instantâneos*.
 +
 A tabela volumes de Snapshot é exibida e exibe todos os volumes de snapshot associados ao storage array.

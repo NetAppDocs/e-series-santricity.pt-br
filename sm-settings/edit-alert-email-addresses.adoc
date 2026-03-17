@@ -18,7 +18,7 @@ Você pode alterar os endereços de e-mail dos destinatários que recebem alerta
 O endereço de e-mail que você pretende editar deve ser definido na guia e-mail da página Alertas.
 
 .Passos
-. Selecione menu:Definições[Alertas].
+. No painel esquerdo, selecione menu:Settings[Alerts].
 . Selecione a guia *Email*.
 . Na tabela *Endereço de e-mail*, selecione o endereço que deseja alterar e clique no ícone *Editar* (lápis) na extrema direita.
 +

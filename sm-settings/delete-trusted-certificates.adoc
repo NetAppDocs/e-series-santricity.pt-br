@@ -28,7 +28,7 @@ Poderá perder o acesso a um sistema se eliminar um certificado utilizado para a
 Esta tarefa descreve como eliminar certificados instalados pelo utilizador. Os certificados pré-instalados e auto-assinados não podem ser eliminados.
 
 .Passos
-. Selecione menu:Definições[certificados].
+. No painel esquerdo, selecione menu:Settings[Certificates].
 . Selecione a guia *Trusted*.
 +
 A tabela mostra os certificados confiáveis do storage array.

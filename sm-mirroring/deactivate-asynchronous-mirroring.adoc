@@ -23,7 +23,7 @@ Você pode desativar o espelhamento assíncrono nos storage arrays locais e remo
 Quando você desativa o espelhamento assíncrono, nenhuma atividade espelhada pode ocorrer nos storage arrays locais e remotos.
 
 .Passos
-. Selecione menu:armazenamento[Espelhamento assíncrono].
+. No painel esquerdo, selecione menu:Storage[Asynchronous Mirroring].
 . Selecione menu:tarefas incomuns[Desativar].
 +
 O sistema apresenta uma confirmação.

@@ -18,7 +18,7 @@ Você pode alterar a prioridade de sincronização e a política de ressincroniz
 Você pode editar as configurações de sincronização para um par espelhado somente na matriz de armazenamento que contém o volume primário.
 
 .Passos
-. Selecione menu:armazenamento[Espelhamento síncrono].
+. No painel esquerdo, selecione menu:Storage[Synchronous Mirroring].
 . Selecione o par espelhado que pretende editar e, em seguida, selecione menu:mais[Editar definições].
 +
 O sistema exibe a caixa de diálogo Exibir/Editar configurações.

@@ -37,7 +37,7 @@ Alternativamente, você pode gerar um arquivo CSR usando uma ferramenta como Ope
 
 ====
 .Passos
-. Selecione menu:Definições[certificados].
+. No painel esquerdo, selecione menu:Settings[Certificates].
 . Na guia Gerenciamento de matrizes, selecione *Complete CSR*.
 +
 [NOTE]
@@ -114,7 +114,7 @@ Depois de receber certificados assinados da Autoridade de Certificação (CA), i
 
 
 .Passos
-. Selecione o menu:Configurações[certificados]
+. No painel esquerdo, selecione menu:Settings[Certificates]
 . Na guia Gerenciamento de matrizes, selecione *Importar*.
 +
 Abre-se uma caixa de diálogo para importar o(s) ficheiro(s) de certificado.

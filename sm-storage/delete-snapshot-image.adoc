@@ -20,7 +20,7 @@ Você pode excluir uma única imagem de snapshot ou excluir imagens de snapshot 
 Não é possível excluir uma imagem instantânea se ela não for a imagem de snapshot mais antiga para o volume base associado ou grupo de consistência de snapshot.
 
 .Passos
-. Selecione menu:armazenamento[instantâneos].
+. No painel esquerdo, selecione menu:Storage[Snapshots].
 . Clique no separador *Snapshot Images* (imagens instantâneas).
 . Selecione a imagem instantânea que pretende eliminar e confirme que pretende executar a operação.
 +

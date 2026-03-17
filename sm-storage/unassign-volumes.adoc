@@ -22,8 +22,8 @@ Mantenha estas diretrizes em mente quando você anular a atribuição de um volu
 
 
 .Passos
-. Selecione menu:armazenamento[hosts].
-. Selecione o host ou cluster de host que você deseja editar e clique em *UnAssign volumes*.
+. No painel esquerdo, selecione menu:Storage[Hosts].
+. Selecione o host ou cluster de hosts que deseja editar e clique no menu:ellipsis icon[Desatribuir volumes].
 +
 É apresentada uma caixa de diálogo que mostra todos os volumes que estão atualmente atribuídos.
 

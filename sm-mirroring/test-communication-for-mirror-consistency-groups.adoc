@@ -27,7 +27,7 @@ Você pode executar quatro testes diferentes:
 
 
 .Passos
-. Selecione menu:armazenamento[Espelhamento assíncrono].
+. No painel esquerdo, selecione menu:Storage[Asynchronous Mirroring].
 . Selecione a guia *Mirror Consistency Groups* e, em seguida, selecione o grupo Mirror Consistency que deseja testar.
 . Selecione *Test Communication*.
 +

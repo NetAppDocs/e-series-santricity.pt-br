@@ -46,8 +46,8 @@ Quando um volume excede um determinado tamanho (atualmente 128 TB), a exclusão 
 
 ====
 .Passos
-. Selecione menu:armazenamento[volumes].
-. Clique em *Excluir*.
+. No painel esquerdo, selecione menu:Storage[Volumes].
+. Selecione o volume que deseja excluir e clique no menu:ellipsis icon[Delete].
 +
 A caixa de diálogo Excluir volumes é exibida.
 

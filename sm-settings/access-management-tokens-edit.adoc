@@ -15,7 +15,7 @@ summary: Você pode editar configurações para tokens de acesso, que incluem os
 Você pode editar configurações para tokens de acesso, que incluem os tempos de expiração e a capacidade de criar novos tokens.
 
 .Passos
-. Selecione menu:Definições[Gestão de Acesso].
+. No painel esquerdo, selecione menu:Settings[Access Management].
 . Selecione a guia *Access tokens*.
 . Selecione *Exibir/Editar Configurações do token de acesso*.
 . Na caixa de diálogo, você pode executar uma ou ambas as tarefas:

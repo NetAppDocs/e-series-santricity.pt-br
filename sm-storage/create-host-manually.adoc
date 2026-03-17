@@ -24,7 +24,7 @@ Mantenha estas diretrizes em mente quando você cria um host:
 
 
 .Passos
-. Selecione menu:armazenamento[hosts].
+. No painel esquerdo, selecione menu:Storage[Hosts].
 . Clique em menu:criar[Host].
 +
 A caixa de diálogo criar host é exibida.
@@ -61,7 +61,7 @@ Tipo de interface de host
 
 
  a| 
-Portas de host
+Identificador
  a| 
 Execute um dos seguintes procedimentos:
 

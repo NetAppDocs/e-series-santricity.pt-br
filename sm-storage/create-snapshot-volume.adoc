@@ -30,7 +30,7 @@ O processo para criar um volume instantâneo é um procedimento de várias etapa
 Selecione uma imagem instantânea de um volume base ou um grupo de consistência de instantâneos. Se você selecionar uma imagem instantânea do grupo de consistência de instantâneos, os volumes membros do grupo de consistência de instantâneos serão exibidos para revisão.
 
 .Passos
-. Selecione menu:armazenamento[instantâneos].
+. No painel esquerdo, selecione menu:Storage[Snapshots].
 . Selecione a guia *volumes instantâneos*.
 . Selecione *criar*.
 +

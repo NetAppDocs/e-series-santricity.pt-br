@@ -16,7 +16,7 @@ Use a opção Add/Discover Single Storage Array (Adicionar/descobrir matriz de a
 
 .Antes de começar
 * A matriz de armazenamento deve ser corretamente configurada e configurada.
-* As senhas do storage array devem ser configuradas usando o bloco Gerenciamento de Acesso do System Manager.
+* As senhas do array de storage devem ser configuradas usando a página Gerenciamento de Acesso do System Manager.
 
 
 .Passos

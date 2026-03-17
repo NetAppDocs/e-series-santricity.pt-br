@@ -14,7 +14,7 @@ summary: A página hardware fornece funções de ordenação e filtragem que fac
 A página hardware fornece funções de ordenação e filtragem que facilitam a localização de componentes.
 
 .Passos
-. Selecione *hardware*.
+. No painel esquerdo, selecione *Hardware*.
 . Use as funções descritas na tabela a seguir para exibir componentes de hardware.
 
 

@@ -20,7 +20,7 @@ Você também pode especificar se deseja excluir o volume de capacidade reservad
 A exclusão de um volume base exclui automaticamente qualquer volume instantâneo associado ou volume instantâneo de grupo de consistência. Não é possível excluir um volume instantâneo que esteja em uma cópia de volume com o status *em andamento*.
 
 .Passos
-. Selecione menu:armazenamento[instantâneos].
+. No painel esquerdo, selecione menu:Storage[Snapshots].
 . Selecione a guia *volumes instantâneos*.
 +
 O System Manager exibe todos os volumes instantâneos associados ao storage array.

@@ -24,7 +24,7 @@ O recurso AutoSupport deve estar ativado. Você pode ver se ele está habilitado
 
 
 .Passos
-. Selecione menu:suporte[Centro de suporte > AutoSupport].
+. No painel esquerdo, selecione menu:Suporte [Central de Suporte > AutoSupport] guia.
 . Selecione *Agendar envios AutoSupport*.
 +
 O assistente Agendar envios AutoSupport é exibido.

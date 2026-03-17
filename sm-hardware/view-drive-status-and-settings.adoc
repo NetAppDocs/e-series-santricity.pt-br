@@ -14,7 +14,7 @@ summary: Pode visualizar o estado e as definições das unidades, como o tipo de
 Pode visualizar o estado e as definições das unidades, como o tipo de material, o tipo de interface e a capacidade.
 
 .Passos
-. Selecione *hardware*.
+. No painel esquerdo, selecione *Hardware*.
 . Se o gráfico mostrar os controladores, clique na guia *Drives*.
 +
 O gráfico muda para mostrar as unidades em vez dos controladores.
@@ -215,7 +215,7 @@ Mostra se a funcionalidade Data Assurance (DA) está ativada (Sim) ou não (não
  a| 
 DULBE capaz
  a| 
-Indica se a opção para erro de bloco lógico desalocado ou não escrito (DULBE) está ativada (Sim) ou não (não). O DULBE é uma opção nas unidades NVMe que permite que o storage array EF300 ou EF600 ofereça suporte a volumes provisionados por recursos.
+Indica se a opção para Erro de Bloco Lógico Desalocado ou Não Escrito (DULBE) está habilitada (Sim) ou não (Não). DULBE é uma opção em unidades NVMe que permite que o array de storage EF80, EF50, EF300 ou EF600 suporte volumes com recursos provisionados.
 
 |===
 ====

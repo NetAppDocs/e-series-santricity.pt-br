@@ -27,8 +27,8 @@ Se você quiser usar o Drive Security, selecione um pool ou grupo de volume que 
 Depois de ativar a segurança, você só pode removê-la excluindo o pool ou grupo de volumes e apagando as unidades.
 
 .Passos
-. Selecione menu:armazenamento[pools & grupos de volume].
-. Selecione o pool ou grupo de volume no qual deseja ativar a segurança e clique em menu:mais[Ativar segurança].
+. No painel esquerdo, selecione menu:Storage[Pools and volume groups].
+. Selecione o pool ou grupo de volume no qual deseja ativar a segurança e, em seguida, clique em menu:ellipsis icon[Enable security].
 +
 A caixa de diálogo confirmar ativação da segurança é exibida.
 

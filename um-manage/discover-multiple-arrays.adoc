@@ -17,7 +17,7 @@ Você descobre várias matrizes para detetar todas as matrizes de armazenamento 
 .Antes de começar
 * Você deve estar conetado com um perfil de usuário que inclua permissões de Administrador de Segurança.
 * A matriz de armazenamento deve ser corretamente configurada e configurada.
-* As senhas do storage array devem ser configuradas usando o bloco Gerenciamento de Acesso do System Manager.
+* As senhas do array de storage devem ser configuradas usando a página Gerenciamento de Acesso do System Manager.
 * Para resolver certificados não confiáveis, você deve ter arquivos de certificado confiáveis de uma autoridade de certificação (CA) e os arquivos de certificado estão disponíveis no sistema local.
 
 

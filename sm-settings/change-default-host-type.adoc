@@ -29,7 +29,7 @@ Por exemplo, se você estiver conetando oito hosts diferentes ao storage array e
 
 
 .Passos
-. Selecione menu:Definições[sistema].
+. No painel esquerdo, selecione menu:Settings[System].
 . Role para baixo até *Configurações adicionais* e clique em *alterar o tipo de sistema operacional padrão do host*.
 . Selecione o tipo de sistema operacional do host que você deseja usar como padrão.
 . Clique em *alterar*.

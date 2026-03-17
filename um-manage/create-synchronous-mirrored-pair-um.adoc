@@ -16,7 +16,7 @@ Para configurar o espelhamento síncrono, você cria um par espelhado que inclui
 
 [NOTE]
 ====
-Esse recurso não está disponível no sistema de storage EF600/EF600C ou EF300/EF300C.
+Este recurso não está disponível nos sistemas de storage EF80, EF50, EF600/EF600C ou EF300/EF300C.
 
 ====
 .Antes de começar
@@ -145,4 +145,4 @@ A capacidade de cada volume é de 128 MIB. No entanto, se os volumes forem coloc
 
 
 .Depois de terminar
-Vá para System Manager e selecione menu:Home[View Operations in Progress] (Visualizar operações em andamento) para ver o progresso da operação de espelhamento síncrono. Esta operação pode ser demorada e pode afetar o desempenho do sistema.
+Acesse o System Manager e o menu:Storage[Operations in Progress] para visualizar o progresso da operação de espelhamento síncrono. Essa operação pode ser demorada e pode afetar o desempenho do sistema.

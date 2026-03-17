@@ -33,7 +33,7 @@ Reveja estas diretrizes antes de criar um grupo de volumes:
 
 
 .Passos
-. Selecione menu:armazenamento[pools & grupos de volume].
+. No painel esquerdo, selecione menu:Storage[Pools and volume groups].
 . Clique em menu:criar[Grupo de volume].
 +
 A caixa de diálogo criar grupo de volume é exibida.
@@ -132,9 +132,9 @@ Um grupo de volumes pode conter unidades que são capazes de DA ou não, mas tod
 
 
  a| 
-Compatível com provisionamento de recursos (somente EF300 e EF600)
+Resource Provisioning Capable (somente EF80, EF50, EF300 e EF600)
  a| 
-Mostra se o provisionamento de recursos está disponível para este grupo. O provisionamento de recursos é um recurso disponível nas matrizes de armazenamento EF300 e EF600, que permite que os volumes sejam colocados em uso imediatamente sem processo de inicialização em segundo plano.
+Mostra se o Resource Provisioning está disponível para este grupo. Resource Provisioning é um recurso disponível nos storage arrays EF80, EF50, EF300 e EF600, que permite que os volumes sejam colocados em uso imediatamente, sem processo de inicialização em segundo plano.
 
 
 
@@ -273,9 +273,9 @@ Mostra os tamanhos de bloco que podem ser criados para os volumes no grupo:
 
 
  a| 
-Compatível com provisionamento de recursos (somente EF300 e EF600)
+Resource Provisioning Capable (somente EF80, EF50, EF300 e EF600)
  a| 
-Mostra se o provisionamento de recursos está disponível para este grupo. O provisionamento de recursos é um recurso disponível nas matrizes de armazenamento EF300 e EF600, que permite que os volumes sejam colocados em uso imediatamente sem processo de inicialização em segundo plano.
+Mostra se o Resource Provisioning está disponível para este grupo. Resource Provisioning é um recurso disponível nos storage arrays EF80, EF50, EF300 e EF600, que permite que os volumes sejam colocados em uso imediatamente, sem processo de inicialização em segundo plano.
 
 |===
 ====

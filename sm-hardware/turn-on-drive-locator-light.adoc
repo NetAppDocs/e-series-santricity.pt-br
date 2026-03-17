@@ -17,7 +17,7 @@ Na página hardware, você pode ativar a luz localizador para encontrar a locali
 Você pode localizar unidades individuais ou várias unidades mostradas na página hardware.
 
 .Passos
-. Selecione *hardware*.
+. No painel esquerdo, selecione *Hardware*.
 . Para localizar uma ou mais unidades, execute um dos seguintes procedimentos:
 +
 ** * Unidade única* -- a partir do gráfico da prateleira, encontre a unidade que você deseja localizar fisicamente no array. (Se o gráfico mostrar os controladores, clique na guia *Drives*.) Clique na unidade para exibir seu menu de contexto e selecione *Ativar luz localizador*.

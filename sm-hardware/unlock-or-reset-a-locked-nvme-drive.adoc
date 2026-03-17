@@ -30,7 +30,7 @@ Se a unidade foi bloqueada usando um servidor de gerenciamento de chaves externo
 Pode aceder à funcionalidade desbloquear a partir da página hardware ou do menu:Definições[sistema > Gestão da chave de segurança]. A tarefa abaixo fornece instruções na página hardware.
 
 .Passos
-. Selecione *hardware*.
+. No painel esquerdo, selecione *Hardware*.
 . Se o gráfico mostrar os controladores, clique na guia *Drives*.
 +
 O gráfico muda para mostrar as unidades em vez dos controladores.

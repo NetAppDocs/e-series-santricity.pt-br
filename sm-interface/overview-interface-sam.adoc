@@ -19,18 +19,11 @@ O SANtricity System Manager é uma interface baseada na Web que permite gerencia
 
 A página inicial fornece uma visualização de painel para o gerenciamento diário de seu storage array. Ao iniciar sessão no System Manager, a página inicial é a primeira tela exibida.
 
-A visualização do dashboard compreende quatro áreas de resumo que contêm informações importantes sobre o estado e a integridade do storage array. Pode encontrar mais informações na área de resumo.
+A visualização do painel é composta por três áreas de resumo que contêm informações importantes sobre o estado e a integridade do seu array de storage. Você pode encontrar mais informações na área de resumo.
 
 [cols="25h,~"]
 |===
 | Área | Descrição 
-
-
- a| 
-Notificações
- a| 
-A área notificações exibe notificações de problemas que indicam o status do storage array e seus componentes. Além disso, esse portlet exibe alertas automatizados que podem ajudar você a solucionar problemas antes que isso afete outras áreas do seu ambiente de storage.
-
 
 
  a| 
@@ -55,40 +48,21 @@ A área hierarquia de armazenamento fornece uma visualização organizada dos v�
 |===
 
 
+== Área de notificações
+
+A área de Notificações pode ser acessada pelo ícone de sino no canto superior da janela. A área de Notificações exibe notificações de problemas que indicam o status do array de storage e seus componentes. Além disso, esta seção exibe alertas automatizados que podem ajudar você a solucionar problemas antes que eles afetem outras áreas do seu ambiente de storage.
+
+
+
 == Definições de interface
 
 Pode alterar as preferências de apresentação e outras definições a partir da interface principal.
 
-[cols="25h,~"]
-|===
-| Definição | Descrição 
-
-
- a| 
-Preferências de visualização
- a| 
-Altere os valores de capacidade e o período de tempo na lista suspensa Preferências no canto superior direito da interface.
-
-
-
- a| 
-Tempos limite da sessão
- a| 
-Configure tempos limite para que as sessões inativas dos usuários sejam desconetadas após um tempo especificado.
-
-
-
- a| 
-Ajuda
- a| 
-Acesse a documentação da Ajuda e outros recursos no menu suspenso no canto superior direito da interface.
-
-|===
 
 
 == Logins de usuário e senhas
 
-O usuário atual conetado ao sistema é mostrado no canto superior direito da interface.
+O usuário atualmente conectado ao sistema é exibido nas configurações de usuário.
 
 Para obter mais informações sobre usuários e senhas, consulte:
 

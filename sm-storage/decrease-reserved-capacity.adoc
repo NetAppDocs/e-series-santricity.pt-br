@@ -29,11 +29,11 @@ Reveja as seguintes diretrizes:
 
 
 .Passos
-. Selecione menu:armazenamento[pools & grupos de volume].
+. No painel esquerdo, selecione menu:Storage[Pools and volume groups].
 . Clique na guia *capacidade reservada*.
-. Selecione o objeto de armazenamento para o qual você deseja diminuir a capacidade reservada e clique em *diminuir a capacidade*.
+. Selecione o objeto de armazenamento para o qual deseja diminuir a capacidade reservada e clique no menu:ícone de reticências[Diminuir capacidade].
 +
-A caixa de diálogo diminuir capacidade reservada é exibida.
+A página Diminuir Capacidade Reservada é exibida.
 
 . Selecione a quantidade de capacidade pela qual você deseja diminuir a capacidade reservada e clique em *diminuir*.
 

@@ -22,7 +22,7 @@ Os componentes disponíveis dependem do tipo de prateleira:
 
 
 .Passos
-. Selecione *hardware*.
+. No painel esquerdo, selecione *Hardware*.
 . Selecione a lista suspensa para o compartimento do controlador ou compartimento de unidade e selecione *Exibir configurações*.
 +
 A caixa de diálogo Configurações de componentes do compartimento é aberta, com guias que mostram o status e as configurações relacionadas aos componentes do compartimento. Dependendo do tipo de prateleira selecionado, algumas guias descritas na tabela podem não aparecer.

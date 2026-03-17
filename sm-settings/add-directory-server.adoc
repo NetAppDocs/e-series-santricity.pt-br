@@ -30,7 +30,7 @@ Durante o procedimento para adicionar um servidor LDAP, a interface de gerenciam
 
 ====
 .Passos
-. Selecione menu:Definições[Gestão de Acesso].
+. No painel esquerdo, selecione menu:Settings[Access Management].
 . Na guia Serviços de diretório, selecione *Adicionar servidor de diretório*.
 +
 A caixa de diálogo Adicionar servidor de diretório é aberta.

@@ -22,7 +22,7 @@ Dois testes diferentes são executados:
 
 
 .Passos
-. Selecione menu:armazenamento[Espelhamento síncrono].
+. No painel esquerdo, selecione o menu: storage [espelhamento síncrono].
 . Selecione o par espelhado que deseja testar e, em seguida, selecione *Test Communication*.
 . Reveja as informações apresentadas na janela resultados e, se necessário, siga a ação corretiva indicada.
 +

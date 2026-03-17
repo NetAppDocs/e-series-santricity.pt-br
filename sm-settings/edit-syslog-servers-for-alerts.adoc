@@ -15,7 +15,7 @@ summary: Você pode editar o endereço do servidor usado para receber alertas sy
 Você pode editar o endereço do servidor usado para receber alertas syslog.
 
 .Passos
-. Selecione menu:Definições[Alertas].
+. No painel esquerdo, selecione menu:Settings[Alerts].
 . Selecione a guia *Syslog*.
 . Na tabela, selecione um endereço de servidor syslog e clique no ícone *Editar* (lápis) na extrema direita.
 +

@@ -45,7 +45,7 @@ Configurar a autenticação SAML é um procedimento de várias etapas.
 Para fornecer ao storage array informações de conexão IDP, você importa metadados IDP para o Unified Manager. O sistema de IDP precisa desses metadados para redirecionar as solicitações de autenticação para o URL correto e para validar as respostas recebidas.
 
 .Passos
-. Selecione menu:Definições[Gestão de Acesso].
+. No painel esquerdo, selecione menu:Settings[Access Management].
 . Selecione a guia *SAML*.
 +
 A página exibe uma visão geral das etapas de configuração.

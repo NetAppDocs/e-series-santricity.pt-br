@@ -22,7 +22,7 @@ Se todas as unidades compartilharem os mesmos atributos físicos, o campo de fil
 
 ====
 .Passos
-. Selecione *hardware*.
+. No painel esquerdo, selecione *Hardware*.
 . No primeiro campo de filtro (em *Mostrar unidades que são...*), clique na seta suspensa para exibir os tipos de unidade disponíveis e os atributos de segurança.
 +
 Os tipos de unidade podem incluir:

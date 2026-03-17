@@ -35,7 +35,7 @@ Essas ações incluem gravações RAID 5 e gravações RAID 6 que teriam sido be
 
 ====
 .Passos
-. Selecione menu:guia Support [Support Center > Diagnostics] (suporte > Centro de suporte > Diagnóstico).
+. No painel esquerdo, selecione menu:Support [Support Center > Diagnostics] tab.
 . Selecione *Exibir/Limpar setores ilegíveis*.
 . Para salvar o log de setores ilegíveis:
 +

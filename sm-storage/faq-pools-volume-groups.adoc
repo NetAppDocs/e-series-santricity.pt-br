@@ -93,11 +93,11 @@ Os exemplos a seguir descrevem por que você deseja configurar manualmente um po
 Você pode atribuir apenas um ou dois volumes em vez de atribuir a carga de trabalho a um pool grande que tenha muitos volumes para distribuir os dados. A criação manual de um pool separado dedicado ao workload de uma aplicação específica pode permitir que as operações de storage array tenham performance mais rápida, com menos contenção.
 
 +
-Para criar manualmente um pool: Selecione *armazenamento* e, em seguida, selecione *pools e grupos de volume*. Na guia All Capacity (todas as capacidades), clique em menu:Create[Pool] (criar [Pool]).
+Para criar um pool manualmente: selecione *Armazenamento* e, em seguida, selecione *Pools e grupos de volumes*. Na guia All Capacity, clique em menu:Create[Pool].
 
 * Se houver vários pools do mesmo tipo de unidade, uma mensagem será exibida indicando que o System Manager não pode recomendar as unidades para um pool automaticamente. No entanto, você pode adicionar manualmente as unidades a um pool existente.
 +
-Para adicionar manualmente unidades a um pool existente: Na página pools & grupos de volume, selecione o pool e clique em *Adicionar capacidade*.
+Para adicionar unidades manualmente a um pool existente: na página Pools e grupos de volumes, selecione o pool e clique em *Adicionar capacidade*.
 
 
 
@@ -122,7 +122,7 @@ Se você criou volumes em toda a capacidade utilizável disponível, talvez não
 
 Capacidade de preservação é a quantidade de capacidade (número de unidades) reservada em um pool para dar suporte a possíveis falhas de unidade. Quando um pool é criado, o sistema reserva automaticamente uma quantidade padrão de capacidade de preservação, dependendo do número de unidades no pool. Se você tiver criado volumes em toda a capacidade utilizável disponível, não poderá aumentar a capacidade de preservação sem adicionar capacidade ao pool adicionando unidades ou excluindo volumes.
 
-Você pode alterar a capacidade de preservação de *pools & grupos de volume*. Selecione o pool que você deseja editar. Clique em *Exibir/Editar configurações* e selecione a guia *Configurações*.
+Você pode alterar a capacidade de preservação em *Pools e grupos de volumes*. Selecione o pool que você deseja editar. Clique no menu:ícone de reticências[Editar configurações] e, em seguida, selecione a guia *Configurações*.
 
 [NOTE]
 ====
@@ -150,7 +150,7 @@ São suportados os seguintes tipos de material: Unidade de disco rígido (HDD) e
 
 == Por que algumas unidades não estão aparecendo?
 
-Na caixa de diálogo Adicionar capacidade, nem todas as unidades estão disponíveis para adicionar capacidade a um pool ou grupo de volumes existente.
+Na caixa de diálogo Adicionar capacidade, nem todas as unidades estão disponíveis para adicionar capacidade a um pool ou volume group.
 
 As unidades não são qualificadas por nenhum dos seguintes motivos:
 
@@ -315,7 +315,7 @@ Selecione um nível RAID com base nas seguintes informações.
 +
 ** É necessário um mínimo de duas unidades para RAID 1: Uma unidade para os dados do usuário e uma unidade para os dados espelhados.
 ** Se você selecionar quatro ou mais unidades, o RAID 10 será configurado automaticamente no grupo de volumes: Duas unidades para dados de usuário e duas unidades para os dados espelhados.
-** Você deve ter um número par de unidades no grupo de volumes. Se você não tiver um número par de unidades e tiver algumas unidades não atribuídas restantes, vá para *pools & grupos de volume* para adicionar unidades adicionais ao grupo de volumes e tente novamente a operação.
+** Você precisa ter um número par de unidades no grupo de volume. Se você não tiver um número par de unidades e ainda tiver algumas unidades não atribuídas, acesse *Pools e grupos de volumes* para adicionar unidades adicionais ao grupo de volume e tente a operação novamente.
 ** Os grupos de volumes RAID 1 e RAID 10 podem ter mais de 30 unidades. É possível criar um grupo de volumes que inclua todas as unidades do storage array.
 
 
@@ -463,7 +463,7 @@ As estatísticas detalhadas só podem ser visualizadas quando você exporta toda
 
 === Estatísticas nominais
 
-Para exibir estatísticas de cache SSD, selecione menu:armazenamento[pools & grupos de volume]. Selecione o cache SSD para o qual deseja exibir estatísticas e, em seguida, selecione menu:mais[View Statistics]. As estatísticas nominais são apresentadas na caixa de diálogo View SSD Cache Statistics (Ver estatísticas de cache SSD).
+Para visualizar as estatísticas do SSD Cache, selecione menu:Storage[Pools and volume groups] no painel esquerdo. Selecione o SSD Cache para o qual deseja visualizar as estatísticas e clique no ícone menu:ellipsis[View statistics]. As estatísticas nominais são exibidas na página View Statistics.
 
 A lista a seguir inclui estatísticas nominais, que são um subconjunto das estatísticas detalhadas.
 
@@ -669,26 +669,20 @@ O controle deslizante capacidade de otimização adicional está disponível ape
 
 == O que é capaz de provisionamento de recursos?
 
-O provisionamento de recursos é um recurso disponível nas matrizes de armazenamento EF300 e EF600, que permite que os volumes sejam colocados em uso imediatamente sem processo de inicialização em segundo plano.
+O provisionamento de recursos é uma funcionalidade disponível nos storage arrays EF80, EF50, EF300 e EF600, que permite que os volumes sejam colocados em uso imediatamente sem processo de inicialização em segundo plano.
 
 Um volume provisionado por recursos é um volume espesso em um grupo ou pool de volumes SSD, em que a capacidade da unidade é alocada (atribuída ao volume) quando o volume é criado, mas os blocos de unidades são deslocalizados (não mapeados). Em comparação, em um volume grosso tradicional, todos os blocos de unidades são mapeados ou alocados durante uma operação de inicialização de volume em segundo plano, a fim de inicializar os campos de informações de proteção do Data Assurance e tornar os dados e a paridade RAID consistentes em cada faixa RAID. Com um volume provisionado de recurso, não há inicialização em segundo plano com tempo. Em vez disso, cada stripe RAID é inicializado na primeira gravação em um bloco de volume no stripe.
 
 Os volumes provisionados por recursos são compatíveis apenas com grupos de volumes e pools de SSD, em que todas as unidades do grupo ou pool são compatíveis com a funcionalidade de recuperação de erro de ativação de bloco lógico (DULBE) desalocada ou não escrita do NVMe. Quando um volume provisionado por recurso é criado, todos os blocos de unidade atribuídos ao volume são desalocados (não mapeados). Além disso, os hosts podem desalocar blocos lógicos no volume usando o comando NVMe Dataset Management ou o comando SCSI Unmap. A desalocação de blocos pode melhorar a vida útil do SSD e aumentar o desempenho máximo de gravação. A melhoria varia de acordo com cada modelo de unidade e capacidade.
-
-
-NOTE: O DULBE não é compatível com storage arrays EF300C ou EF600C no momento.
 
 
 
 == O que eu preciso saber sobre o recurso volumes provisionados por recursos?
 
-O provisionamento de recursos é um recurso disponível nas matrizes de armazenamento EF300 e EF600, que permite que os volumes sejam colocados em uso imediatamente sem processo de inicialização em segundo plano.
+O provisionamento de recursos é uma funcionalidade disponível nos storage arrays EF80, EF50, EF300 e EF600, que permite que os volumes sejam colocados em uso imediatamente sem processo de inicialização em segundo plano.
 
 Um volume provisionado por recursos é um volume espesso em um grupo ou pool de volumes SSD, em que a capacidade da unidade é alocada (atribuída ao volume) quando o volume é criado, mas os blocos de unidades são deslocalizados (não mapeados). Em comparação, em um volume grosso tradicional, todos os blocos de unidades são mapeados ou alocados durante uma operação de inicialização de volume em segundo plano, a fim de inicializar os campos de informações de proteção do Data Assurance e tornar os dados e a paridade RAID consistentes em cada faixa RAID. Com um volume provisionado de recurso, não há inicialização em segundo plano com tempo. Em vez disso, cada stripe RAID é inicializado na primeira gravação em um bloco de volume no stripe.
 
 Os volumes provisionados por recursos são compatíveis apenas com grupos de volumes e pools de SSD, em que todas as unidades do grupo ou pool são compatíveis com a funcionalidade de recuperação de erro de ativação de bloco lógico (DULBE) desalocada ou não escrita do NVMe. Quando um volume provisionado por recurso é criado, todos os blocos de unidade atribuídos ao volume são desalocados (não mapeados). Além disso, os hosts podem desalocar blocos lógicos no volume usando o comando NVMe Dataset Management ou o comando SCSI Unmap. A desalocação de blocos pode melhorar a vida útil do SSD e aumentar o desempenho máximo de gravação. A melhoria varia de acordo com cada modelo de unidade e capacidade.
 
-O provisionamento de recursos é habilitado por padrão em sistemas onde as unidades suportam DULBE. Você pode desativar essa configuração padrão em *pools & grupos de volume*.
-
-
-NOTE: O DULBE não é compatível com storage arrays EF300C ou EF600C no momento.
+O provisionamento de recursos está ativado por padrão em sistemas onde as unidades suportam DULBE. Você pode desativar essa configuração padrão em *Pools e grupos de volume*.

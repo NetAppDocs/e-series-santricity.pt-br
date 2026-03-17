@@ -20,7 +20,7 @@ Ao criar e usar snapshots, revise os requisitos e diretrizes a seguir.
 * Cada imagem instantânea está associada a exatamente um grupo de instantâneos.
 * Um grupo de instantâneos é criado na primeira vez que você cria uma imagem de instantâneo agendada ou instantânea para um objeto associado. Isso cria capacidade reservada.
 +
-Pode visualizar grupos de instantâneos a partir da página pools e grupos de volume.
+Você pode visualizar os grupos de snapshots na página Pools e grupo de volumes.
 
 * As imagens instantâneas programadas não ocorrem quando a matriz de armazenamento está offline ou desligada.
 * Se eliminar um grupo de instantâneos que tenha uma agenda de instantâneos, a agenda de instantâneos também é eliminada.

@@ -23,7 +23,7 @@ Revise as seguintes informações sobre pares espelhados órfãos:
 
 
 .Passos
-. Selecione menu:armazenamento[Espelhamento assíncrono].
+. No painel esquerdo, selecione menu:Storage[Asynchronous Mirroring].
 . Selecione a guia *Mirrored Pair* (par espelhado).
 +
 A tabela pares espelhados é exibida e exibe todos os pares espelhados associados ao storage array.

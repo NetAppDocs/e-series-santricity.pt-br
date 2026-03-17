@@ -18,7 +18,7 @@ O perfil do storage array fornece uma descrição de todos os componentes e prop
 Você pode usar o perfil do storage array como auxiliar durante a recuperação ou como uma visão geral da configuração atual do storage array. Talvez você queira salvar uma cópia do perfil do storage array no cliente de gerenciamento e manter uma cópia impressa do perfil do storage array com o storage array. Crie uma nova cópia do perfil de storage array se a configuração mudar.
 
 .Passos
-. Selecione o menu:guia Support [Support Center > Support Resources] (suporte > recursos de suporte).
+. No painel esquerdo, selecione menu:Support [Support Center > Support Resources] tab.
 . Role para baixo até *Launch detailed storage array information* e selecione *Storage Array Profile*.
 +
 O relatório é apresentado no ecrã.

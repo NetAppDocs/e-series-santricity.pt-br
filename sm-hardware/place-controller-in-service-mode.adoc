@@ -24,7 +24,7 @@ Colocar um controlador no modo de serviço pode reduzir significativamente o des
 
 ====
 .Passos
-. Selecione *hardware*.
+. No painel esquerdo, selecione *Hardware*.
 . Se o gráfico mostrar as unidades, clique na guia *Controllers & Components* (Controladores e componentes).
 +
 O gráfico muda para mostrar os controladores em vez das unidades.

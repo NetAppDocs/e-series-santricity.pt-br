@@ -18,6 +18,6 @@ Pode alterar o período de tempo predefinido apresentado pelos gráficos de dese
 Os gráficos de desempenho apresentados na página inicial e na página desempenho mostram inicialmente um período de tempo de 1 hora. As preferências são armazenadas no armazenamento local do navegador para que todos os usuários possam ter suas próprias configurações.
 
 .Passos
-. Selecione menu:Preferências[Definir preferências].
-. Na lista suspensa, selecione *5 minutes*, *1 hour*, *8 hours*, *1 day* ou *7 Days* e confirme que deseja executar a operação.
+. Clique no ícone *User Settings* no canto superior direito da janela.
+. Na lista suspensa Default performance graphs time range to show, selecione *5 minutos*, *1 hora*, *8 horas*, *1 dia* ou *7 dias* e confirme que deseja realizar a operação.
 

@@ -17,7 +17,7 @@ Você pode converter um volume de snapshot somente leitura ou um volume de snaps
 Um volume de snapshot que é convertido para leitura-gravação acessível contém sua própria capacidade reservada. Essa capacidade é usada para salvar quaisquer modificações subsequentes feitas pelo aplicativo host no volume base sem afetar a imagem de snapshot referenciada.
 
 .Passos
-. Selecione menu:armazenamento[instantâneos].
+. No painel esquerdo, selecione menu:Storage[Snapshots].
 . Selecione a guia *volumes instantâneos*.
 +
 A tabela volumes de Snapshot é exibida e exibe todos os volumes de snapshot associados ao storage array.

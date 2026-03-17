@@ -17,7 +17,11 @@ Um ciclo de aprendizagem é um ciclo automático para calibrar o indicador intel
 A atualização dos ciclos de aprendizagem afeta ambas as baterias do controlador.
 
 .Passos
-. Selecione *hardware*.
+. No painel esquerdo, selecione *Hardware*.
+. Se o gráfico mostrar as unidades, clique na guia *Controllers & Components* (Controladores e componentes).
++
+O gráfico muda para mostrar os controladores em vez das unidades.
+
 . Selecione a lista suspensa para o compartimento do controlador e selecione *Exibir configurações*.
 . Selecione o separador *baterias*.
 . Selecione *Atualizar ciclos de aprendizagem da bateria*.

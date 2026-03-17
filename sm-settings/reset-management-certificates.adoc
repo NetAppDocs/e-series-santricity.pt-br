@@ -23,7 +23,7 @@ Você pode reverter os certificados nos controladores de usar certificados assin
 A função Redefinir exclui os arquivos de certificado assinados pela CA atuais de cada controlador. Em seguida, os controladores reverterão para o uso de certificados autoassinados.
 
 .Passos
-. Selecione menu:Definições[certificados].
+. No painel esquerdo, selecione menu:Settings[Certificates].
 . Na guia Gerenciamento de matrizes, selecione *Redefinir*.
 +
 Uma caixa de diálogo confirmar certificados de Gerenciamento é aberta.

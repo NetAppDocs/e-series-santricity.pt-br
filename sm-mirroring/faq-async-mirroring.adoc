@@ -118,7 +118,7 @@ O espelhamento é configurado na interface do SANtricity Unified Manager.
 
 [NOTE]
 ====
-O espelhamento síncrono não está disponível no storage array EF600/EF600C ou EF300/EF300C.
+O espelhamento síncrono não está disponível no array de storage EF80, EF50, EF600/EF600C ou EF300/EF300C.
 
 ====
 Para ativar e configurar o espelhamento entre dois arrays, verifique o seguinte:
@@ -143,7 +143,7 @@ Siga estas diretrizes antes de criar um grupo de consistência espelhada.
 
 [NOTE]
 ====
-O espelhamento síncrono não está disponível no sistema de storage EF600/EF600C ou EF300/EF300C.
+O espelhamento síncrono não está disponível nos sistemas de storage EF80, EF50, EF600/EF600C ou EF300/EF300C.
 
 ====
 Você cria um grupo de consistência no Unified Manager no assistente criar pares espelhados.

@@ -23,8 +23,8 @@ A expansão faz com que a capacidade livre adicional seja incluída no pool ou n
 * O número máximo de volumes permitido num grupo de volumes é 256.
 * O número máximo de volumes permitidos em um pool depende do modelo do sistema de armazenamento:
 +
-** 2.048 volumes (séries EF600 e E5700)
-** 1.024 volumes (EF300)
+** 2.048 volumes (EF80, EF600 e E5700 series)
+** 1.024 volumes (EF50 and EF300)
 ** 512 volumes (séries E4000 e E2800)
 
 
@@ -44,16 +44,16 @@ Com a adição de unidades, sua capacidade de preservação pode precisar ser au
 ====
 [NOTE]
 ====
-Evite usar unidades que são capazes de garantia de dados (DA) para adicionar capacidade a um pool ou grupo de volume que não é capaz de DA. O pool ou o grupo de volumes não podem aproveitar as capacidades da unidade capaz de DA. Considere usar unidades que não são capazes de DA nesta situação.
+Evite usar unidades com suporte a Data Assurance (DA) para adicionar capacidade a um pool ou grupo de volume que não seja compatível com DA. O pool ou grupo de volume não pode aproveitar os recursos da unidade compatível com DA. Considere usar unidades que não sejam compatíveis com DA nessa situação.
 
 ====
 .Passos
-. Selecione menu:armazenamento[pools & grupos de volume].
-. Selecione o pool ou grupo de volumes ao qual deseja adicionar unidades e clique em *Adicionar capacidade*.
+. No painel esquerdo, selecione menu:Storage[Pools and volume groups].
+. Selecione o pool ou grupo de volume ao qual deseja adicionar unidades e clique no menu:ellipsis icon[Add capacity].
 +
-A caixa de diálogo Adicionar capacidade é exibida. Somente as unidades não atribuídas compatíveis com o pool ou grupo de volumes são exibidas.
+A caixa de diálogo Adicionar capacidade é exibida. Somente as unidades não atribuídas que são compatíveis com o pool ou grupo de volume aparecem.
 
-. Em *Selecione unidades para adicionar capacidade...*, selecione uma ou mais unidades que você deseja adicionar ao pool ou grupo de volumes existente.
+. Em *Selecionar unidades para adicionar capacidade...*, selecione uma ou mais unidades que você deseja adicionar ao pool ou grupo de volume.
 +
 O firmware do controlador organiza as unidades não atribuídas com as melhores opções listadas na parte superior. A capacidade total gratuita adicionada ao pool ou grupo de volumes aparece abaixo da lista em *capacidade total selecionada*.
 
@@ -111,8 +111,8 @@ DA capaz
  a| 
 Indica se a unidade é capaz de Garantia de dados (DA).
 
-** O uso de unidades que não são capazes de garantia de dados (DA) para adicionar capacidade a um pool ou grupo de volume compatível com DA não é recomendado. O pool ou grupo de volumes não tem mais recursos DA e você não tem mais a opção de ativar DA em volumes recém-criados dentro do pool ou grupo de volumes.
-** O uso de unidades que são capazes de garantia de dados (DA) para adicionar capacidade a um pool ou grupo de volume que não é capaz de DA não é recomendado, porque esse pool ou grupo de volume não pode tirar proveito dos recursos da unidade capaz de DA (os atributos da unidade não correspondem). Considere usar unidades que não são capazes DE DA nesta situação.
+** Não é recomendável usar unidades que não sejam compatíveis com Data Assurance (DA) para adicionar capacidade a um pool ou grupo de volume compatível com DA. O pool ou grupo de volume deixa de ter recursos de DA e você não tem mais a opção de habilitar DA em volumes recém-criados dentro do pool ou grupo de volume.
+** Não é recomendável usar unidades com suporte a Data Assurance (DA) para adicionar capacidade a um pool ou grupo de volume que não tem suporte a DA, pois esse pool ou grupo de volume não poderá aproveitar os recursos da unidade com DA (os atributos da unidade não correspondem). Considere usar unidades sem suporte a DA nessa situação.
 
 
 
@@ -120,7 +120,7 @@ Indica se a unidade é capaz de Garantia de dados (DA).
  a| 
 DULBE capaz
  a| 
-Indica se a unidade tem a opção de erro de bloco lógico desalocado ou não escrito (DULBE). O DULBE é uma opção nas unidades NVMe que permite que o storage array EF300 ou EF600 ofereça suporte a volumes provisionados por recursos.
+Indica se a unidade possui a opção de erro de bloco lógico desalocado ou não gravado (DULBE). DULBE é uma opção em unidades NVMe que permite que o array de storage EF80, EF50, EF300 ou EF600 suporte volumes com recursos provisionados.
 
 |===
 ====

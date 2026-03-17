@@ -18,7 +18,7 @@ Você pode remover um volume de membro de um grupo de consistência de snapshot 
 Quando você remove um volume de membro de um grupo de consistência de snapshot, o System Manager exclui automaticamente os objetos de snapshot associados a esse volume de membro.
 
 .Passos
-. Selecione menu:armazenamento[instantâneos].
+. No painel esquerdo, selecione menu:Storage[Snapshots].
 . Clique na guia *Snapshot Consistency Groups* (grupos de consistência de instantâneos).
 . Expanda o grupo de consistência de snapshot que você deseja modificar selecionando o sinal de mais ao lado dele.
 . Selecione o volume do membro que deseja remover e clique em *Remover*.

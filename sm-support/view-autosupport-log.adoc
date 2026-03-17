@@ -22,7 +22,7 @@ Podem existir vários ficheiros de registo. Quando o arquivo de log atual atinge
 
 
 .Passos
-. Selecione menu:suporte[Centro de suporte > AutoSupport].
+. No painel esquerdo, selecione menu:Suporte [Central de Suporte > AutoSupport] guia.
 . Selecione *Ver Registo AutoSupport*.
 +
 É apresentada uma caixa de diálogo que lista o registo AutoSupport atual.

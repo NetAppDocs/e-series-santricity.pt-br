@@ -28,8 +28,8 @@ O System Manager mostra estes tipos de estatísticas iSCSI. Todas as estatístic
 Você pode visualizar cada uma dessas estatísticas como estatísticas em bruto ou como estatísticas de linha de base. As estatísticas em bruto são todas as estatísticas que foram coletadas desde que os controladores foram iniciados. As estatísticas da linha de base são estatísticas pontuais que foram reunidas desde que você definiu o tempo da linha de base.
 
 .Passos
-. Selecione menu:Definições[sistema].
-. Selecione *Ver Pacotes de Estatísticas iSCSI*.
+. No painel esquerdo, selecione menu:Settings[System].
+. Selecione *Exibir estatísticas iSCSI*.
 . Clique num separador para ver os diferentes conjuntos de estatísticas.
 . *Opcional:* para definir a linha de base, clique em *Definir nova linha de base*.
 +

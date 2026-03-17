@@ -18,7 +18,7 @@ Você pode editar definições de usuário para SNMPv3 traps.
 Um usuário deve ser criado para o trap SNMPv3.
 
 .Passos
-. Selecione menu:Definições[Alertas].
+. No painel esquerdo, selecione menu:Settings[Alerts].
 . Selecione a guia *SNMP*.
 +
 Os destinos e os nomes de utilizador da armadilha são apresentados na tabela.

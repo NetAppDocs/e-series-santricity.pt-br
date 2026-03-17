@@ -45,7 +45,7 @@ Execute esta operação somente quando instruído a fazê-lo pelo suporte técni
 ====
 .Passos
 . Se o storage array contiver apenas uma controladora ou você não tiver um driver multipath instalado, interrompa a atividade de e/S para o storage array para evitar erros de aplicativos. Se o seu storage array tiver duas controladoras e você tiver um driver multipath instalado, não será necessário interromper a atividade de e/S.
-. Selecione menu:suporte[Centro de atualizações].
+. No painel esquerdo, selecione menu:Support[Upgrade Center].
 . Transfira o novo ficheiro do site de suporte para o seu cliente de gestão.
 +
 .. Clique em *suporte NetApp* para iniciar o site de suporte.

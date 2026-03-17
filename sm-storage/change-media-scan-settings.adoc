@@ -43,12 +43,12 @@ Você pode executar as seguintes ações:
 
 
 .Passos
-. Selecione menu:armazenamento[volumes].
-. Selecione qualquer volume e, em seguida, selecione menu:mais[alterar definições de digitalização de multimédia].
+. No painel esquerdo, selecione menu:Storage[Volumes].
+. Clique no ícone de menu:ellipsis [Alterar configurações de verificação de mídia de volume].
 +
-É apresentada a caixa de diálogo alterar as definições de digitalização de multimédia da unidade. Todos os volumes na matriz de armazenamento aparecem nesta caixa de diálogo.
+A janela Alterar configurações de verificação de mídia da unidade é exibida. Todos os volumes no array de storage aparecem nesta caixa de diálogo.
 
-. Para ativar a digitalização de material, selecione a caixa de verificação *Digitalizar material ao longo de...*.
+. Para ativar a verificação de mídia, selecione a caixa de seleção *Media scan*.
 +
 A caixa de verificação desativar a digitalização de multimédia suspende todas as definições de digitalização de multimédia.
 

@@ -18,7 +18,7 @@ Você pode executar um processo de volume de cópia em um volume instantâneo ou
 Você pode copiar um volume instantâneo para o volume de destino, conforme executado em uma operação normal de volume de cópia. No entanto, os volumes instantâneos não podem permanecer online durante o processo de volume de cópia.
 
 .Passos
-. Selecione menu:armazenamento[instantâneos].
+. No painel esquerdo, selecione menu:Storage[Snapshots].
 . Selecione a guia *volumes instantâneos*.
 +
 A tabela volumes de Snapshot é exibida e exibe todos os volumes de snapshot associados ao storage array.

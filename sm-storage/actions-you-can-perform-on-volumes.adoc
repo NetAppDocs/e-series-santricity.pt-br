@@ -22,11 +22,11 @@ Você pode expandir a capacidade de um volume de duas maneiras:
 
 * Use a capacidade gratuita disponível no pool ou grupo de volumes.
 +
-Você adiciona capacidade a um volume selecionando menu:armazenamento[pools e grupos de volume > Adicionar capacidade].
+Você adiciona capacidade a um volume selecionando menu:Armazenamento[Volumes] no painel esquerdo e, em seguida, selecionando o menu:ícone de reticências[Aumentar capacidade] para o volume.
 
 * Adicione capacidade não atribuída (na forma de unidades não utilizadas) ao pool ou grupo de volumes do volume. Use esta opção quando não houver capacidade livre no pool ou grupo de volumes.
 +
-Você adiciona capacidade não atribuída ao pool ou grupo de volumes selecionando menu:armazenamento[pools e grupos de volume > Adicionar capacidade].
+Você adiciona capacidade não atribuída ao pool ou grupo de volume selecionando menu:Storage[Pools and Volume Groups > Add capacity].
 
 +
 Se a capacidade livre não estiver disponível no pool ou no grupo de volumes, você não poderá aumentar a capacidade do volume. Você deve aumentar primeiro o tamanho do pool ou do grupo de volumes ou excluir volumes não utilizados.
@@ -47,7 +47,7 @@ A exclusão de volumes causa a perda de todos os dados nesses volumes. A exclus�
 
 == Cópia
 
-Ao copiar volumes, você cria uma cópia pontual de dois volumes separados, o volume de origem e o volume de destino, no mesmo storage array. Pode copiar volumes selecionando menu:armazenamento[volumes > Serviços de cópia > volume de cópia].
+Ao copiar volumes, você cria uma cópia pontual de dois volumes separados, o volume de origem e o volume de destino, no mesmo array de storage. Você pode copiar volumes selecionando menu:Storage[Volumes] e, em seguida, selecionando o ícone menu:ellipsis[Copy volume].
 
 
 
@@ -55,7 +55,7 @@ Ao copiar volumes, você cria uma cópia pontual de dois volumes separados, o vo
 
 A inicialização de um volume apaga todos os dados do volume. Um volume é inicializado automaticamente quando é criado pela primeira vez. No entanto, o Recovery Guru pode aconselhar que você inicialize manualmente um volume para recuperar de certas condições de falha. Ao inicializar um volume, o volume mantém suas configurações WWN, atribuições de host, capacidade alocada e capacidade reservada. Ele também mantém as mesmas configurações de garantia de dados (DA) e configurações de segurança.
 
-Pode inicializar volumes selecionando menu:armazenamento[volumes > mais > Inicializar volumes].
+Você pode inicializar volumes selecionando menu:Storage [Volumes > ícone de reticências > Initialize volumes].
 
 
 
@@ -65,15 +65,15 @@ Você redistribui volumes para mover volumes de volta para os proprietários de 
 
 A maioria dos drivers multipath de host tenta acessar cada volume em um caminho para o proprietário do controlador preferido. No entanto, se esse caminho preferido ficar indisponível, o driver multipath no host fará failover para um caminho alternativo. Esse failover pode fazer com que a propriedade do volume mude para o controlador alternativo. Depois de resolver a condição que causou o failover, alguns hosts podem mover automaticamente a propriedade do volume de volta para o proprietário do controlador preferido, mas, em alguns casos, talvez seja necessário redistribuir manualmente os volumes.
 
-Pode redistribuir volumes selecionando menu:armazenamento[volumes > mais > redistribuir volumes].
+Você pode redistribuir volumes selecionando menu:Storage[Volumes > ícone de reticências > Redistribuir volumes].
 
 
 
 == Alterar a propriedade do volume
 
-Alterar a propriedade de um volume altera a propriedade preferida do controlador do volume. O proprietário do controlador preferido de um volume está listado no menu:armazenamento[volumes > Ver/Editar Definições > separador Avançadas].
+Alterar a propriedade de um volume altera a propriedade preferencial do controlador desse volume. O proprietário preferencial do controlador de um volume é listado em menu:Storage[Volumes > ellipsis icon > Edit settings].
 
-Pode alterar a propriedade de um volume selecionando menu:armazenamento[volumes > mais > alterar propriedade].
+Você pode alterar a propriedade de um volume selecionando menu:Storage[Volumes > ellipsis icon > Change volume ownership].
 
 
 
@@ -101,7 +101,7 @@ A memória cache é uma área de armazenamento temporário volátil (RAM) no con
 * Gravar dados é gravado inicialmente no cache, o que libera o aplicativo para continuar em vez de esperar que os dados sejam gravados na unidade.
 
 
-Selecione menu:armazenamento[volumes > mais > alterar definições de cache] para alterar as seguintes definições de cache:
+Selecione o menu:Storage[Volumes > ícone de reticências > Alterar configurações de cache] para alterar as seguintes configurações de cache:
 
 * *Cache de leitura e gravação* -- o cache de leitura é um buffer que armazena dados lidos das unidades. Os dados para uma operação de leitura podem já estar no cache de uma operação anterior, o que elimina a necessidade de acessar as unidades. Os dados permanecem no cache de leitura até que sejam lavados.
 +

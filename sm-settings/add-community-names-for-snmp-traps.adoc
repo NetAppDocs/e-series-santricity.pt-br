@@ -15,7 +15,7 @@ summary: Você pode adicionar até 256 nomes de comunidade para SNMPv2c armadilh
 Você pode adicionar até 256 nomes de comunidade para SNMPv2c armadilhas.
 
 .Passos
-. Selecione menu:Definições[Alertas].
+. No painel esquerdo, selecione menu:Settings[Alerts].
 . Selecione a guia *SNMP*.
 +
 Os destinos da armadilha e os nomes da comunidade aparecem na tabela.

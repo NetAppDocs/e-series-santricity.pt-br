@@ -14,8 +14,8 @@ summary: O Recovery Guru é um componente do System Manager que diagnostica prob
 O Recovery Guru é um componente do SANtricity System Manager que diagnostica problemas de storage array e recomenda procedimentos de recuperação para corrigir os problemas.
 
 .Passos
-. Selecione *Home*.
-. Clique no link *Recover from _n_ problems* no centro da janela.
+. No painel esquerdo, selecione *Home*.
+. Clique no ícone do *Sino* e depois clique no link rotulado *Recuperar de _n_ problemas* no centro superior da janela.
 +
 A caixa de diálogo Recovery Guru (Guru de recuperação) é exibida.
 
@@ -35,7 +35,6 @@ Se todos os problemas tiverem sido corrigidos, o ícone do storage array eventua
 
 . *Opcional:* para salvar as informações do Recovery Guru em um arquivo, clique no ícone *Salvar*.
 +
-O arquivo é salvo na pasta Downloads do navegador com o nome `recovery-guru-failure-yyyy-mm-dd-hh-mm-ss-mmm.html`.
+O arquivo é salvo na pasta Downloads do seu navegador com o nome  `recoveryGuru-failureName-arrayName-yyyy-mm-dd-hh-mm-ss.html`.
 
-. Para imprimir as informações do Recovery Guru, clique no ícone *Print*.
 

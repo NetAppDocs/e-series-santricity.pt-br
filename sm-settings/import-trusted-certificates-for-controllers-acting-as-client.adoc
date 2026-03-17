@@ -23,7 +23,7 @@ Se o controlador rejeitar uma ligação porque não pode validar a cadeia de con
 A importação de certificados da guia confiável pode ser necessária se você quiser permitir que outro servidor entre em Contato com os controladores (por exemplo, um servidor LDAP ou um servidor syslog que usa TLS).
 
 .Passos
-. Selecione menu:Definições[certificados].
+. No painel esquerdo, selecione menu:Settings[Certificates].
 . Na guia confiável, selecione *Importar*.
 +
 Abre-se uma caixa de diálogo para importar os ficheiros de certificado fidedignos.

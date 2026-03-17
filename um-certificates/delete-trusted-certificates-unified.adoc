@@ -22,7 +22,7 @@ Esteja ciente de que a exclusão de um certificado raiz ou intermediário pode a
 
 ====
 .Passos
-. Selecione *Gerenciamento de certificados*.
+. No painel esquerdo, selecione menu:Settings[Certificates].
 . Selecione a guia *Trusted*.
 . Selecione um ou mais certificados na tabela e clique em *Excluir*.
 +

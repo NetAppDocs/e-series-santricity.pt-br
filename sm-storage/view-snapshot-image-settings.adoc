@@ -18,7 +18,7 @@ Você pode exibir as propriedades, o status, a capacidade reservada e os objetos
 Os objetos associados a uma imagem instantânea incluem o volume base ou o grupo de consistência de instantâneos para o qual esta imagem instantânea é um ponto de restauração, o grupo de instantâneos associado e quaisquer volumes de instantâneos criados a partir da imagem instantânea. Utilize as definições de instantâneos para determinar se pretende copiar ou converter a imagem instantânea.
 
 .Passos
-. Selecione menu:armazenamento[instantâneos].
+. No painel esquerdo, selecione menu:Storage[Snapshots].
 . Clique no separador *Snapshot Images* (imagens instantâneas).
 . Selecione a imagem instantânea que você deseja exibir e clique em *Exibir configurações*.
 +

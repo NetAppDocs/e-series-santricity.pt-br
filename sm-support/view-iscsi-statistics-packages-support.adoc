@@ -32,7 +32,7 @@ NOTE: Os tipos de estatísticas exibidos no System Manager baseiam-se nas estat�
 Você pode visualizar cada uma dessas estatísticas como estatísticas em bruto ou como estatísticas de linha de base. As estatísticas em bruto são todas as estatísticas que foram coletadas desde que os controladores foram iniciados. As estatísticas da linha de base são estatísticas pontuais que foram reunidas desde que você definiu o tempo da linha de base.
 
 .Passos
-. Selecione menu:guia Support [Support Center > Diagnostics] (suporte > Centro de suporte > Diagnóstico).
+. No painel esquerdo, selecione menu:Support [Support Center > Diagnostics] tab.
 . Selecione *Ver Pacotes de Estatísticas iSCSI*.
 . Clique num separador para ver os diferentes conjuntos de estatísticas.
 . Para definir a linha de base, clique em *Definir nova linha de base*.

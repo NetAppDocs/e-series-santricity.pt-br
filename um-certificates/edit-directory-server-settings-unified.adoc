@@ -19,7 +19,7 @@ Se você configurou anteriormente um servidor de diretório em Gerenciamento de 
 
 
 .Passos
-. Selecione *Gerenciamento de Acesso*.
+. No painel esquerdo, selecione menu:Settings[Access Management].
 . Selecione a guia *Serviços de diretório*.
 . Se mais de um servidor estiver definido, selecione o servidor que deseja editar na tabela.
 . Selecione *Exibir/Editar configurações*.

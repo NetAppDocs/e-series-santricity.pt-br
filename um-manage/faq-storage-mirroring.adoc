@@ -39,7 +39,7 @@ Certifique-se também de atender aos seguintes requisitos para matrizes de armaz
 
 [NOTE]
 ====
-O espelhamento síncrono não está disponível no sistema de storage EF600/EF600C ou EF300/EF300C.
+O espelhamento síncrono não está disponível nos sistemas de storage EF80, EF50, EF600/EF600C ou EF300/EF300C.
 
 ====
 
@@ -60,7 +60,7 @@ Antes de criar um par espelhado, siga estas diretrizes.
 
 [NOTE]
 ====
-O espelhamento síncrono não está disponível no sistema de storage EF600/EF600C ou EF300/EF300C.
+O espelhamento síncrono não está disponível nos sistemas de storage EF80, EF50, EF600/EF600C ou EF300/EF300C.
 
 ====
 

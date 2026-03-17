@@ -37,7 +37,7 @@ Para obter mais informações sobre o certificado do servidor, consulte a docume
 Nesta tarefa, você define o endereço IP do servidor de gerenciamento de chaves e o número da porta que ele usa e, em seguida, carrega certificados para gerenciamento de chaves externas.
 
 .Passos
-. Selecione menu:Definições[sistema].
+. No painel esquerdo, selecione menu:Settings[System].
 . Em *Gerenciamento de chaves de segurança*, selecione *criar chave externa*.
 +
 [NOTE]
@@ -60,7 +60,7 @@ A caixa de diálogo criar chave de segurança externa é aberta.
 NOTE: Apenas um servidor de chave única é usado de cada vez. Se a matriz de armazenamento não conseguir alcançar o servidor de chave primária, a matriz entrará em Contato com o servidor de chave de backup. Esteja ciente de que você deve manter a paridade entre ambos os servidores; a falha em fazê-lo pode resultar em erros.
 
 ** *Selecione o certificado do cliente* -- clique no primeiro botão *Procurar* para selecionar o arquivo de certificado para os controladores do storage.
-** *Selecione o arquivo de chave privada* -- se necessário, clique no segundo botão *Procurar* para selecionar um arquivo de chave privada para os controladores do storage array.
+** *Selecionar arquivo de chave privada* -- Se necessário, clique no segundo botão *Procurar* para selecionar um arquivo de chave privada para os controladores do array de storage.
 ** *Selecione o certificado do servidor de gerenciamento de chaves* -- clique no terceiro botão *Procurar* para selecionar o arquivo de certificado para o servidor de gerenciamento de chaves. Você pode escolher um certificado de raiz, intermediário ou servidor para o servidor de gerenciamento de chaves.
 
 

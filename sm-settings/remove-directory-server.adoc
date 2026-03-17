@@ -21,7 +21,7 @@ Você deve estar conetado com um perfil de usuário que inclua permissões de ad
 Depois de concluir esta tarefa, todas as sessões ativas do utilizador são encerradas. Apenas a sessão de utilizador atual é mantida.
 
 .Passos
-. Selecione menu:Definições[Gestão de Acesso].
+. No painel esquerdo, selecione menu:Settings[Access Management].
 . Selecione a guia *Serviços de diretório*.
 . Na lista, selecione o servidor de diretório que deseja excluir.
 . Clique em *Remover*.

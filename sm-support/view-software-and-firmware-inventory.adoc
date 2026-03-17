@@ -18,7 +18,7 @@ O inventário de software e firmware lista as versões de firmware para cada com
 Um storage array é composto por muitos componentes, que podem incluir controladores, unidades, gavetas e módulos de entrada/saída (IOMs). Cada um destes componentes contém firmware. Algumas versões do firmware dependem de outras versões do firmware. Para capturar informações sobre todas as versões de firmware em sua matriz de armazenamento, consulte o inventário de software e firmware. O suporte técnico pode analisar o inventário de software e firmware para detetar quaisquer problemas de firmware.
 
 .Passos
-. Selecione o menu:guia Support [Support Center > Support Resources] (suporte > recursos de suporte).
+. No painel esquerdo, selecione menu:Support [Support Center > Support Resources] tab.
 . Role para baixo até *Launch detailed storage array information* e selecione *Software and firmware Inventory*.
 +
 O relatório de inventário de software e firmware é apresentado no ecrã.

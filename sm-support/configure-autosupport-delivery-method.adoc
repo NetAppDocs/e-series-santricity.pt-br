@@ -32,7 +32,7 @@ Reveja os diferentes protocolos:
 
 ====
 .Passos
-. Selecione menu:suporte[Centro de suporte > AutoSupport].
+. No painel esquerdo, selecione menu:Suporte [Central de Suporte > AutoSupport] guia.
 . Selecione *Configurar método de entrega AutoSupport*.
 +
 Uma caixa de diálogo é exibida, que lista os métodos de entrega de despacho.

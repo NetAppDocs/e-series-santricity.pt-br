@@ -21,7 +21,7 @@ Se você quiser arquivar logs de auditoria em um servidor syslog externo, você 
 
 
 .Passos
-. Selecione menu:Definições[Gestão de Acesso].
+. No painel esquerdo, selecione menu:Settings[Access Management].
 . Na guia Registro de auditoria, selecione *Configurar servidores Syslog*.
 +
 A caixa de diálogo Configurar servidores Syslog é aberta.

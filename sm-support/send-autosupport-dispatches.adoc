@@ -21,7 +21,7 @@ O recurso AutoSupport deve estar ativado. Você pode ver se ele está habilitado
 Essa operação coleta dados de suporte e os envia automaticamente para o suporte técnico, para que eles possam solucionar problemas.
 
 .Passos
-. Selecione menu:suporte[Centro de suporte > AutoSupport].
+. No painel esquerdo, selecione menu:Suporte [Central de Suporte > AutoSupport] guia.
 . Selecione *Enviar Envio AutoSupport*.
 +
 A caixa de diálogo Enviar Envio AutoSupport é exibida.

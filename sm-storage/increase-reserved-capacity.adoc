@@ -41,9 +41,9 @@ Não é possível aumentar a capacidade reservada para um volume instantâneo qu
 
 ====
 .Passos
-. Selecione menu:armazenamento[pools & grupos de volume].
+. No painel esquerdo, selecione menu:Storage[Pools and volume groups].
 . Selecione a guia *capacidade reservada*.
-. Selecione o objeto de armazenamento para o qual deseja aumentar a capacidade reservada e clique em *aumentar a capacidade*.
+. Selecione o objeto de armazenamento para o qual deseja aumentar a capacidade reservada e clique no menu:ícone de reticências[Aumentar capacidade reservada].
 +
 A caixa de diálogo aumentar capacidade reservada é exibida.
 

@@ -28,7 +28,7 @@ Após a sincronização, você pode notar que as estatísticas de desempenho sã
 
 ====
 .Passos
-. Selecione menu:Definições[sistema].
+. No painel esquerdo, selecione menu:Settings[System].
 . Em *General*, clique em *Synchronize Storage Array Clocks*.
 +
 A caixa de diálogo Sincronizar relógios de matriz de armazenamento é aberta. Mostra a data e hora atuais do(s) controlador(es) e do computador usado como cliente de gerenciamento.

@@ -39,7 +39,7 @@ O processo para iniciar a reversão de uma imagem instantânea de um grupo de co
 Você deve selecionar os volumes de membros a serem revertidos.
 
 .Passos
-. Selecione menu:armazenamento[instantâneos].
+. No painel esquerdo, selecione menu:Storage[Snapshots].
 . Selecione o separador *Snapshot Images* (imagens instantâneas).
 . Selecione a imagem instantânea do grupo de consistência de instantâneos e, em seguida, selecione menu:Repor[Iniciar].
 +
@@ -67,7 +67,7 @@ A caixa de diálogo aumentar capacidade reservada é exibida.
 
 . Use a caixa giratório para ajustar a porcentagem de capacidade e clique em *aumentar*.
 +
-Se a capacidade livre não existir no pool ou grupo de volumes que contém o objeto de armazenamento selecionado e o storage de armazenamento tiver capacidade não atribuída, você poderá adicionar capacidade. Você pode criar um novo pool ou grupo de volumes e tentar novamente essa operação usando a nova capacidade livre nesse pool ou grupo de volumes.
+Se não houver capacidade livre no pool ou grupo de volume que contém o objeto de storage selecionado e o array de storage tiver Unassigned Capacity, você pode adicionar capacidade. Você pode criar um novo pool ou grupo de volume e tentar novamente esta operação usando a nova capacidade livre nesse pool ou grupo de volume.
 
 . Clique em *seguinte* e vá para <<Passo 3: Editar prioridade>>.
 +
@@ -97,6 +97,6 @@ O System Manager executa as seguintes ações:
 
 
 .Depois de terminar
-Selecione menu:Home[View Operations in Progress] (Ver operações em curso) para ver o progresso da operação de reversão.
+Selecione o menu:Storage[Operations in Progress] para visualizar o progresso da operação de rollback.
 
 Se a operação de reversão não for bem-sucedida, a operação será interrompida. Você pode retomar a operação em pausa e, se ainda não tiver êxito, siga o procedimento Recovery Guru para corrigir o problema ou entre em Contato com o suporte técnico.

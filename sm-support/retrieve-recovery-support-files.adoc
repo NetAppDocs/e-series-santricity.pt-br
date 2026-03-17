@@ -29,7 +29,7 @@ Os arquivos de suporte de recuperação incluem estes tipos de arquivos:
 
 
 .Passos
-. Selecione menu:guia Support [Support Center > Diagnostics] (suporte > Centro de suporte > Diagnóstico).
+. No painel esquerdo, selecione menu:Support [Support Center > Diagnostics] tab.
 . Selecione *recuperar arquivos de suporte de recuperação*.
 +
 Uma caixa de diálogo lista todos os arquivos de suporte de recuperação que seu storage array coletou. Para encontrar arquivos específicos, você pode classificar qualquer uma das colunas ou digitar carateres na caixa *filtro*.

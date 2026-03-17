@@ -20,7 +20,7 @@ A CLI fornece um método baseado em texto para configurar e monitorar matrizes d
 Um Java Runtime Environment (JRE), versão 8 e superior, deve estar disponível no sistema de gerenciamento onde você planeja executar os comandos CLI.
 
 .Passos
-. Selecione menu:Definições[sistema].
+. No painel esquerdo, selecione menu:Settings[System].
 . Em *Complementos*, selecione *Interface de linha de comando*.
 +
 O pacote ZIP é baixado para o navegador.

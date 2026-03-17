@@ -23,8 +23,8 @@ Esta tarefa descreve como reunir as informações necessárias para o recurso e,
 
 
 .Passos
-. No System Manager, localize e registe o número de série do chassis. Você pode visualizar este número de série passando o Mouse sobre o bloco do Centro de suporte.
-. No System Manager, localize o identificador de ativação da funcionalidade. Vá para menu:Configurações[sistema] e role para baixo até *Complementos*. Procure o *Feature Enable Identifier*. Registe o número do identificador de ativação da funcionalidade.
+. No System Manager, localize e anote o número de série do chassi. No painel esquerdo, acesse menu:Support[Suport Center] e role para baixo até *View top storage array properties* para visualizar o número de série do chassi.
+. No System Manager, localize o Feature Enable Identifier. No painel esquerdo, vá para menu:Settings[System] e role para baixo até *Add-ons*. Procure o *Feature Enable Identifier*. Anote o número do Feature Enable Identifier.
 . Localize e grave o código para a ativação da funcionalidade. Para pacotes de recursos, esse código é fornecido nas instruções apropriadas para executar a conversão.
 +
 Para recursos premium, você pode acessar o código de ativação no site de suporte, como segue:

@@ -18,7 +18,7 @@ Você pode criar um banner de login que é apresentado aos usuários antes que e
 Quando você cria um banner, ele aparece antes da tela de login em uma caixa de diálogo.
 
 .Passos
-. Selecione menu:Definições[sistema].
+. No painel esquerdo, selecione menu:Settings[System].
 . Na seção Geral, selecione *Configure Login Banner*.
 +
 A caixa de diálogo Configurar banner de login será aberta.

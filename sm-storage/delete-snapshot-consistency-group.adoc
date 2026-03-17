@@ -21,7 +21,7 @@ Confirme se as imagens de todos os volumes de membros não são mais necessária
 Esta operação elimina todas as imagens instantâneas ou programações associadas ao grupo de consistência de instantâneos.
 
 .Passos
-. Selecione menu:armazenamento[instantâneos].
+. No painel esquerdo, selecione menu:Storage[Snapshots].
 . Selecione a guia *grupos de consistência de instantâneos*.
 . Selecione o grupo de consistência de instantâneos que deseja excluir e, em seguida, selecione menu:tarefas incomuns[Excluir].
 +

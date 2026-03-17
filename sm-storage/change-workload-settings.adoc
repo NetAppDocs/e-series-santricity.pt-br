@@ -15,14 +15,14 @@ summary: Você pode alterar o nome de uma carga de trabalho e exibir seu tipo de
 Você pode alterar o nome de uma carga de trabalho e exibir seu tipo de aplicativo associado. Altere o nome de uma carga de trabalho quando o nome atual não for mais significativo ou aplicável.
 
 .Passos
-. Selecione menu:armazenamento[volumes].
-. Selecione a guia *aplicativos e cargas de trabalho*.
+. No painel esquerdo, selecione menu:Storage[Volumes].
+. Selecione a guia *Aplicações e workloads*.
 +
-A exibição aplicações e cargas de trabalho é exibida.
+A visualização Aplicações e cargas de trabalho é exibida.
 
-. Selecione a carga de trabalho que você deseja alterar e selecione *Exibir/Editar configurações*.
+. Selecione a carga de trabalho que deseja alterar e clique no menu:ellipsis icon[Edit Settings].
 +
-A caixa de diálogo Configurações de aplicativos e cargas de trabalho é exibida.
+A caixa de diálogo Applications and workloads Settings é exibida.
 
 . *Opcional:* altere o nome fornecido pelo usuário da carga de trabalho.
 . Clique em *Salvar*.

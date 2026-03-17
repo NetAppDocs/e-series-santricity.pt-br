@@ -33,25 +33,25 @@ O aumento da capacidade de um volume é suportado apenas em determinados sistema
 
 ====
 .Passos
-. Selecione menu:armazenamento[volumes].
-. Selecione o volume para o qual deseja aumentar a capacidade e, em seguida, selecione *aumentar a capacidade*.
+. No painel esquerdo, selecione menu:Storage[Volumes].
+. Selecione o volume para o qual deseja aumentar a capacidade e, em seguida, clique no menu:ícone de reticências[Aumentar capacidade].
 +
-A caixa de diálogo confirmar aumento de capacidade é exibida.
+A página Confirm Increase Capacity é exibida.
 
 . Selecione *Sim* para continuar.
 +
-É apresentada a caixa de diálogo aumentar capacidade comunicada.
+A página Aumento da Capacidade Reportada é exibida.
 
 +
-Esta caixa de diálogo exibe a capacidade atual reportada do volume e a capacidade livre disponível no pool ou grupo de volumes associados do volume.
+Esta página exibe a capacidade atual relatada do volume e a capacidade livre disponível no pool ou grupo de volume associado ao volume.
 
-. Use a caixa *aumente a capacidade reportada adicionando...* para adicionar capacidade à capacidade reportada disponível atual. Você pode alterar o valor de capacidade para exibir em mebibytes (MIB), gibibytes (GiB) ou tebibytes (TIB).
+. Use a caixa *Aumentar a capacidade relatada adicionando...* para adicionar capacidade à capacidade relatada disponível atualmente. Você pode alterar o valor da capacidade para exibir em mebibytes (MiB), gibibytes (GiB) ou tebibytes (TiB).
 . Clique em *aumentar*.
 
 
 .Resultados
 * O System Manager aumenta a capacidade do volume com base na sua seleção.
-* Selecione menu:Home[View Operations in Progress] (Ver operações em curso) para ver o progresso da operação de aumento de capacidade que está atualmente em execução para o volume selecionado. Esta operação pode ser demorada e pode afetar o desempenho do sistema.
+* Selecione menu:Storage[Operations in Progress] para visualizar o progresso da operação de aumento de capacidade que está sendo executada para o volume selecionado. Essa operação pode ser demorada e pode afetar o desempenho do sistema.
 
 
 .Depois de terminar

@@ -18,7 +18,7 @@ Você pode validar a chave de segurança para se certificar de que ela não foi 
 Esta tarefa descreve como validar a chave de segurança criada anteriormente. Esta é uma etapa importante para se certificar de que o arquivo de chave não está corrompido e a frase-passe está correta, o que garante que você possa acessar mais tarde os dados da unidade se mover uma unidade habilitada para segurança de uma matriz de armazenamento para outra.
 
 .Passos
-. Selecione menu:Definições[sistema].
+. No painel esquerdo, selecione menu:Settings[System].
 . Em *Gerenciamento de chaves de segurança*, selecione *Validar chave*.
 +
 A caixa de diálogo Validar chave de segurança é aberta.

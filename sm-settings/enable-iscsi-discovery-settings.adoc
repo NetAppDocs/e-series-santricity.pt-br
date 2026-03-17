@@ -32,7 +32,7 @@ As definições e funções iSCSI só são apresentadas na página Definições 
 
 ====
 .Passos
-. Selecione menu:Definições[sistema].
+. No painel esquerdo, selecione menu:Settings[System].
 . Em *iSCSI settings*, clique em *View/Edit Target Discovery Settings*.
 +
 A caixa de diálogo Target Discovery Settings (Definições de deteção de destino) é apresentada. Abaixo do campo *Enable iSNS Server*... (Ativar servidor iSNS*...), a caixa de diálogo indica se o controlador já está registado.

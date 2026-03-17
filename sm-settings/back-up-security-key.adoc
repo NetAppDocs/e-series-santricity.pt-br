@@ -18,7 +18,7 @@ Depois de criar ou alterar uma chave de segurança, você pode criar uma cópia 
 Esta tarefa descreve como fazer backup de uma chave de segurança criada anteriormente. Durante este procedimento, você cria uma nova frase-passe para o backup. Essa frase-passe não precisa corresponder à frase-passe usada quando a chave original foi criada ou alterada pela última vez. A frase-passe é aplicada apenas ao backup que você está criando.
 
 .Passos
-. Selecione menu:Definições[sistema].
+. No painel esquerdo, selecione menu:Settings[System].
 . Em *Gerenciamento de chaves de segurança*, selecione *Backup Key*.
 +
 A caixa de diálogo fazer backup da chave de segurança é aberta.

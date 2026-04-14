@@ -12,14 +12,20 @@ summary: Novos recursos no SANtricity os.
 
 
 [role="lead"]
-A tabela a seguir descreve os novos recursos no SANtricity System Manager 12.00.
+A tabela a seguir descreve os novos recursos no SANtricity System Manager 12.0.
 
 
 
-== Novidades na versão 12.00
+== Novos recursos na versão 12.0R1
+
+Esta versão contém apenas pequenas alterações e nenhum novo recurso. Para mais informações sobre as alterações nesta versão, consulte o E-Series SANtricity OS 12.0R1 README.
 
 
-NOTE: A versão 12.00 do SANtricity OS é compatível apenas com os novos sistemas de storage all-flash EF80 e EF50. Se você estiver usando SANtricity OS 11.9 ou anterior, consulte link:known-issues.html["Problemas conhecidos"] para uma lista de novos recursos das versões anteriores.
+
+== Novidades na versão 12.0
+
+
+NOTE: A versão 12.0 do SANtricity OS é compatível apenas com os novos sistemas de storage all-flash EF80 e EF50. Se você estiver usando SANtricity OS 11.9 ou anterior, consulte link:known-issues.html["Problemas conhecidos"] para uma lista de novos recursos das versões anteriores.
 
 [cols="35h,~"]
 |===

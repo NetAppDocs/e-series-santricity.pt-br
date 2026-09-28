@@ -22,8 +22,7 @@ Uma imagem instantânea está em um estado pendente devido às seguintes condiç
 
 
 .Passos
-. No painel esquerdo, selecione menu:Storage[Pools and volume groups].
-. Clique na guia *capacidade reservada*.
+. No painel esquerdo, selecione menu:Storage [Capacidade reservada].
 . Selecione o grupo de Snapshot para o qual deseja cancelar uma imagem de Snapshot pendente e clique no menu:ícone de reticências[Cancelar imagem de Snapshot pendente].
 . Clique em *Sim* para confirmar que deseja cancelar a imagem de instantâneo pendente.
 

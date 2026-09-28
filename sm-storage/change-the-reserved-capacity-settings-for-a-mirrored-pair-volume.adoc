@@ -15,9 +15,8 @@ summary: Você pode alterar as configurações de um volume de par espelhado par
 Você pode alterar as configurações de um volume de par espelhado para ajustar o ponto percentual no qual o Gerenciador de sistema do SANtricity envia uma notificação de alerta quando a capacidade reservada para um volume de par espelhado estiver quase cheia.
 
 .Passos
-. No painel esquerdo, selecione menu:Storage[Pools and volume groups].
-. Selecione a guia *capacidade reservada*.
-. Selecione o volume do par espelhado que você deseja editar e, em seguida, clique no menu:ícone de reticências[Edit Settings].
+. No painel esquerdo, selecione menu:Storage [Capacidade reservada].
+. Selecione o par de volumes espelhados que você deseja editar e, em seguida, clique no menu:ícone de reticências[Editar configurações].
 +
 A janela Edit Mirrored Pair Volume Reserved Capacity Settings é exibida.
 

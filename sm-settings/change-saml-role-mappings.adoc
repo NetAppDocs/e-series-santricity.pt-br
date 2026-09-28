@@ -21,8 +21,7 @@ Se você configurou o SAML para Gerenciamento de Acesso anteriormente, poderá a
 
 
 .Passos
-. No painel esquerdo, selecione menu:Settings[Access Management].
-. Selecione a guia *SAML*.
+. No painel esquerdo, selecione menu:autenticação[SAML].
 . Selecione *Mapear funções do System Manager*.
 +
 A caixa de diálogo Mapeamento de função é aberta.

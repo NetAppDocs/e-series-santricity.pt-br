@@ -19,11 +19,7 @@ Execute esta operação somente quando instruído a fazê-lo pelo suporte técni
 
 ====
 .Passos
-. No painel esquerdo, selecione *Hardware*.
-. Se o gráfico mostrar os controladores, clique na guia *Drives*.
-+
-O gráfico muda para mostrar as unidades em vez dos controladores.
-
+. No painel esquerdo, selecione menu:Hardware[Drives].
 . Clique na unidade que pretende reconstruir manualmente.
 +
 É apresentado o menu de contexto da unidade.

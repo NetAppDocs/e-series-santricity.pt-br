@@ -15,6 +15,7 @@ Para Gerenciamento de Acesso, os administradores podem usar os recursos de Secur
 
 
 
+[[configuration-workflow]]
 == Fluxo de trabalho de configuração
 
 A configuração SAML funciona da seguinte forma:
@@ -49,6 +50,7 @@ Uma vez que o SAML está ativado, você _não pode_ desabilitá-lo através da i
 
 
 
+[[management]]
 == Gerenciamento
 
 Ao usar o SAML para autenticação, os administradores podem executar as seguintes tarefas de gerenciamento:
@@ -59,6 +61,7 @@ Ao usar o SAML para autenticação, os administradores podem executar as seguint
 
 
 
+[[access-restrictions]]
 == Restrições de acesso
 
 Quando o SAML está ativado, os usuários não podem descobrir ou gerenciar o armazenamento desse array a partir da interface herdada do Storage Manager.

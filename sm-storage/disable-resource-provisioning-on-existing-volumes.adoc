@@ -29,7 +29,7 @@ Quando você ativa o provisionamento de recursos para grupos de volumes e pools 
 Quando você desativa o provisionamento de recursos para grupos ou pools de volumes existentes, uma operação em segundo plano reescreve todos os blocos lógicos em cada volume. Os dados existentes permanecem intactos. As gravações mapearão ou provisionarão os blocos nas unidades associadas ao grupo de volumes ou pool.
 
 
-NOTE: Para novos grupos de volumes e pools, você pode ativar ou desativar o provisionamento de recursos do menu:Configurações[sistema > Configurações adicionais > Ativar/Desativar volumes provisionados por recursos].
+NOTE: Para novos grupos de volume e pools, você pode ativar ou desativar o provisionamento de recursos no menu:System[Configurações adicionais > Configurar volumes com provisionamento de recursos].
 
 .Passos
 . No painel esquerdo, selecione menu:Storage[Pools and volume groups].

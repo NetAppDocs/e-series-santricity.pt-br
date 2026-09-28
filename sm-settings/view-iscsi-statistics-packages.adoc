@@ -28,7 +28,7 @@ O System Manager mostra estes tipos de estatísticas iSCSI. Todas as estatístic
 Você pode visualizar cada uma dessas estatísticas como estatísticas em bruto ou como estatísticas de linha de base. As estatísticas em bruto são todas as estatísticas que foram coletadas desde que os controladores foram iniciados. As estatísticas da linha de base são estatísticas pontuais que foram reunidas desde que você definiu o tempo da linha de base.
 
 .Passos
-. No painel esquerdo, selecione menu:Settings[System].
+. No painel esquerdo, selecione *System*.
 . Selecione *Exibir estatísticas iSCSI*.
 . Clique num separador para ver os diferentes conjuntos de estatísticas.
 . *Opcional:* para definir a linha de base, clique em *Definir nova linha de base*.
@@ -41,6 +41,7 @@ Consulte as seções a seguir para obter mais informações sobre os diferentes 
 
 
 
+[[mac-transmit-and-mac-receive-statistics]]
 == Estatísticas de transmissão MAC e receção MAC
 
 Quando você seleciona estatísticas Ethernet MAC, as estatísticas de receção e transmissão são exibidas. Você pode visualizar cada uma dessas estatísticas como estatísticas em bruto ou como estatísticas de linha de base.
@@ -273,6 +274,7 @@ Contagem de erros de deteção de operadora
 ====
 
 
+[[ethernet-tcpip-statistics]]
 == Estatísticas Ethernet TCP/IP
 
 Quando você seleciona estatísticas TCP/IP Ethernet, as estatísticas TCP e IP são exibidas. Você pode visualizar cada uma dessas estatísticas como estatísticas em bruto ou como estatísticas de linha de base.
@@ -463,6 +465,7 @@ Erro de remontagem de datagramas, contagem de tempo limite
 ====
 
 
+[[iscsi-target-statistics-and-local-initiator-statistics]]
 == Estatísticas de destino iSCSI e estatísticas do iniciador local
 
 Quando seleciona estatísticas de destino (protocolo) ou estatísticas de iniciador local (protocolo), as estatísticas iSCSI são apresentadas. Você pode visualizar cada uma dessas estatísticas como estatísticas em bruto ou como estatísticas de linha de base.
@@ -547,6 +550,7 @@ Contagem inesperada de terminação de ligação iSCSI
 ====
 
 
+[[dcbx-operational-state-statistics]]
 == Estatísticas do estado operacional DCBX
 
 Quando você seleciona Estatísticas de Estado operacional do Data Center Bridging Exchange (DCBX), as estatísticas DCBX são exibidas.
@@ -606,6 +610,7 @@ NOTE: Você pode encontrar estatísticas de estado operacional DCBX adicionais n
 
 
 
+[[lldp-tlv-statistics]]
 == Estatísticas de TLV LLDP
 
 Quando você seleciona Link Layer Discovery Protocol (LLDP) Type Length Value (TLV) Statistics, dois conjuntos de estatísticas são exibidos: Um para o dispositivo local e outro para o dispositivo remoto. O dispositivo local refere-se ao controlador. O dispositivo remoto refere-se ao dispositivo ponto a que o controlador está ligado, normalmente um switch.
@@ -665,6 +670,7 @@ NOTE: Você pode encontrar estatísticas adicionais do LLDP TLV no arquivo de ca
 
 
 
+[[dcbx-tlv-statistics]]
 == Estatísticas DCBX TLV
 
 Quando você seleciona Estatísticas do valor do comprimento do tipo (TLV) do intercâmbio de Bridging do data center (DCBX), essas estatísticas são exibidas:

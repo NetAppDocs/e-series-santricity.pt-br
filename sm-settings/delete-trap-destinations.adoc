@@ -15,15 +15,14 @@ summary: Você pode excluir um endereço de destino de armadilha para que o moni
 Você pode excluir um endereço de destino de armadilha para que o monitor de eventos da matriz de armazenamento não envie mais traps SNMP para esse endereço.
 
 .Passos
-. No painel esquerdo, selecione menu:Settings[Alerts].
-. Selecione a guia *SNMP*.
+. No painel esquerdo, selecione menu:Alerts[Alertas SNMP].
 +
 Os endereços de destino da armadilha aparecem na tabela.
 
 . Selecione um destino de armadilha e clique em *Excluir* no canto superior direito da página.
 . Confirme a operação e, em seguida, clique em *Delete*.
 +
-O endereço de destino não aparece mais na página Alertas.
+O endereço de destino não aparece mais na página de alertas SNMP.
 
 
 

@@ -2,7 +2,7 @@
 permalink: sm-storage/actions-you-can-perform-on-volumes.html 
 sidebar: sidebar 
 keywords: SANtricity, System Manager, E-Series, volumes 
-summary: 'Você pode executar várias ações diferentes em um volume: Aumentar a capacidade, excluir, copiar, inicializar, redistribuir, alterar a propriedade, alterar as configurações de cache e alterar as configurações de digitalização de Mídia.' 
+summary: Você pode executar diversas ações diferentes em um volume. Aumentar a capacidade, excluir, copiar, inicializar, redistribuir, alterar a propriedade, alterar as configurações de cache e alterar as configurações de verificação de mídia. 
 ---
 = Ações que você pode executar em volumes no SANtricity System Manager
 :allow-uri-read: 
@@ -16,6 +16,7 @@ Você pode executar várias ações diferentes em um volume: Aumentar a capacida
 
 
 
+[[increase-capacity]]
 == Aumentar a capacidade
 
 Você pode expandir a capacidade de um volume de duas maneiras:
@@ -26,7 +27,7 @@ Você adiciona capacidade a um volume selecionando menu:Armazenamento[Volumes] n
 
 * Adicione capacidade não atribuída (na forma de unidades não utilizadas) ao pool ou grupo de volumes do volume. Use esta opção quando não houver capacidade livre no pool ou grupo de volumes.
 +
-Você adiciona capacidade não atribuída ao pool ou grupo de volume selecionando menu:Storage[Pools and Volume Groups > Add capacity].
+Você adiciona capacidade não atribuída ao pool ou grupo de volume selecionando menu:Storage[Pools and volume groups > Add capacity].
 
 +
 Se a capacidade livre não estiver disponível no pool ou no grupo de volumes, você não poderá aumentar a capacidade do volume. Você deve aumentar primeiro o tamanho do pool ou do grupo de volumes ou excluir volumes não utilizados.
@@ -37,6 +38,7 @@ Depois de expandir a capacidade de volume, você deve aumentar manualmente o tam
 
 
 
+[[delete]]
 == Eliminar
 
 Normalmente, você exclui volumes se os volumes tiverem sido criados com os parâmetros ou a capacidade errados, não atenderem mais às necessidades de configuração de storage ou forem imagens snapshot que não são mais necessárias para backup ou teste de aplicativos. A exclusão de um volume aumenta a capacidade livre no pool ou grupo de volumes.
@@ -45,12 +47,14 @@ A exclusão de volumes causa a perda de todos os dados nesses volumes. A exclus�
 
 
 
+[[copy]]
 == Cópia
 
 Ao copiar volumes, você cria uma cópia pontual de dois volumes separados, o volume de origem e o volume de destino, no mesmo array de storage. Você pode copiar volumes selecionando menu:Storage[Volumes] e, em seguida, selecionando o ícone menu:ellipsis[Copy volume].
 
 
 
+[[initialize]]
 == Inicializar
 
 A inicialização de um volume apaga todos os dados do volume. Um volume é inicializado automaticamente quando é criado pela primeira vez. No entanto, o Recovery Guru pode aconselhar que você inicialize manualmente um volume para recuperar de certas condições de falha. Ao inicializar um volume, o volume mantém suas configurações WWN, atribuições de host, capacidade alocada e capacidade reservada. Ele também mantém as mesmas configurações de garantia de dados (DA) e configurações de segurança.
@@ -59,6 +63,7 @@ Você pode inicializar volumes selecionando menu:Storage [Volumes > ícone de re
 
 
 
+[[redistribute]]
 == Redistribuir
 
 Você redistribui volumes para mover volumes de volta para os proprietários de controladores preferenciais. Normalmente, os drivers multipath movem volumes do proprietário da controladora preferida quando ocorre um problema ao longo do caminho de dados entre o host e o storage array.
@@ -69,14 +74,16 @@ Você pode redistribuir volumes selecionando menu:Storage[Volumes > ícone de re
 
 
 
+[[change-volume-ownership]]
 == Alterar a propriedade do volume
 
-Alterar a propriedade de um volume altera a propriedade preferencial do controlador desse volume. O proprietário preferencial do controlador de um volume é listado em menu:Storage[Volumes > ellipsis icon > Edit settings].
+Alterar a propriedade de um volume altera a propriedade preferencial do controlador desse volume. O controlador preferencial de um volume é listado em menu:Storage [Volumes > ícone de reticências > Exibir configurações].
 
 Você pode alterar a propriedade de um volume selecionando menu:Storage[Volumes > ellipsis icon > Change volume ownership].
 
 
 
+[[mirroring-and-volume-ownership]]
 === Espelhamento e propriedade de volume
 
 Se o volume primário do par espelhado for de propriedade da controladora A, o volume secundário também será de propriedade da controladora A do storage array remoto. Alterar o proprietário do volume primário mudará automaticamente o proprietário do volume secundário para garantir que ambos os volumes sejam propriedade do mesmo controlador. As alterações de propriedade atuais no lado primário propagam-se automaticamente para as alterações de propriedade atuais correspondentes no lado secundário.
@@ -85,6 +92,7 @@ Se um grupo de consistência de espelho contiver um volume secundário local e a
 
 
 
+[[copy-volume-and-volume-ownership]]
 === Copiar volume e propriedade de volume
 
 Durante uma operação de volume de cópia, o mesmo controlador deve possuir o volume de origem e o volume de destino. Às vezes, ambos os volumes não têm o mesmo controlador preferido quando a operação de volume de cópia é iniciada. Portanto, a propriedade do volume de destino é automaticamente transferida para o controlador preferido do volume de origem. Quando a cópia de volume é concluída ou interrompida, a propriedade do volume de destino é restaurada para o controlador preferido.
@@ -93,6 +101,7 @@ Se a propriedade do volume de origem for alterada durante a operação de volume
 
 
 
+[[change-cache-settings]]
 == Altere as configurações de cache
 
 A memória cache é uma área de armazenamento temporário volátil (RAM) no controlador que tem um tempo de acesso mais rápido do que a Mídia da unidade. Se você usar a memória cache, você pode aumentar o desempenho geral de e/S por causa destes motivos:
@@ -120,13 +129,14 @@ Para um volume fino, a pré-busca de leitura de cache dinâmico é sempre desati
 
 
 
+[[change-media-scan-settings]]
 == Alterar as definições de digitalização de multimédia
 
 As digitalizações de Mídia detetam e reparam erros de Mídia em blocos de disco que são raramente lidos por aplicativos. Esta verificação pode impedir que ocorra perda de dados se outras unidades no pool ou grupo de volumes falharem, uma vez que os dados para unidades com falha são reconstruídos usando informações de redundância e dados de outras unidades no pool ou grupo de volumes.
 
 As digitalizações multimédia são executadas continuamente a uma taxa constante, com base na capacidade a digitalizar e na duração da digitalização. As digitalizações em segundo plano podem ser temporariamente suspensas por uma tarefa de fundo de prioridade mais alta (por exemplo, reconstrução), mas serão retomadas com a mesma taxa constante.
 
-Pode ativar e definir a duração durante a qual a digitalização de multimédia é executada selecionando menu:armazenamento[volumes > mais > alterar definições de digitalização de multimédia].
+Você pode ativar e definir a duração da verificação de mídia selecionando menu:Storage [Volumes > ícone de reticências > Change media scan settings].
 
 Um volume só é lido quando a opção de digitalização de material está ativada para a matriz de armazenamento e para esse volume. Se a verificação de redundância também estiver ativada para esse volume, as informações de redundância no volume serão verificadas quanto à consistência com os dados, desde que o volume tenha redundância. A verificação de Mídia com verificação de redundância é ativada por padrão para cada volume quando é criado.
 

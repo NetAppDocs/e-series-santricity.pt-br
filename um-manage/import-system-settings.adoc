@@ -16,7 +16,7 @@ Você pode importar a configuração do sistema de um storage array para outros 
 
 .Antes de começar
 * As configurações do sistema são configuradas no System Manager para a matriz de armazenamento que você deseja usar como origem.
-* A configuração existente para os storages de armazenamento de destino é feita com backup no System Manager (menu:Configurações[sistema > Salvar configuração da matriz de armazenamento]).
+* A configuração existente para os arrays de storage de destino é salva no System Manager (menu:System[Save storage array configuration]).
 
 
 .Sobre esta tarefa

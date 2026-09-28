@@ -19,6 +19,7 @@ Os volumes são a única camada de dados visível para os hosts. Em um ambiente 
 
 
 
+[[volume-types-you-can-create-from-pools-and-volume-groups]]
 == Tipos de volume que você pode criar a partir de pools e grupos de volumes
 
 Os volumes tiram sua capacidade de pools ou grupos de volumes. Você pode criar os seguintes tipos de volumes a partir dos pools ou grupos de volumes que existem no storage array.
@@ -48,6 +49,7 @@ Os sistemas de storage EF80, EF50, EF600/EF600C e EF300/EF300C não suportam thi
 ====
 
 
+[[characteristics-of-volumes]]
 == Caraterísticas dos volumes
 
 Cada volume em um pool ou grupo de volumes pode ter suas próprias caraterísticas individuais com base em que tipo de dados serão armazenados nele. Algumas dessas caraterísticas incluem:

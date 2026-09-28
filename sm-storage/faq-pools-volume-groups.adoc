@@ -16,12 +16,14 @@ Este FAQ pode ajudar se você está apenas procurando uma resposta rápida para 
 
 
 
+[[what-is-a-volume-group]]
 == O que é um grupo de volume?
 
 Um grupo de volumes é um contentor para volumes com caraterísticas compartilhadas. Um grupo de volumes tem uma capacidade definida e um nível RAID. Você pode usar um grupo de volumes para criar um ou mais volumes acessíveis a um host. (Você cria volumes a partir de um grupo de volumes ou de um pool.)
 
 
 
+[[what-is-a-pool]]
 == O que é uma piscina?
 
 Um pool é um conjunto de unidades que é agrupado logicamente. Você pode usar um pool para criar um ou mais volumes acessíveis a um host. (Você cria volumes a partir de um pool ou de um grupo de volumes.)
@@ -32,6 +34,7 @@ Com pools, os dados são redistribuídos automaticamente para manter o equilíbr
 
 
 
+[[what-is-reserved-capacity]]
 == O que é a capacidade reservada?
 
 A capacidade reservada é a capacidade alocada fisicamente que armazena dados para objetos de serviço de cópia, como imagens snapshot, volumes de membros do grupo de consistência e volumes de pares espelhados.
@@ -40,6 +43,7 @@ O volume de capacidade reservada associado a uma operação de serviço de cópi
 
 
 
+[[what-is-fdefips-security]]
 == O que é segurança FDE/FIPS?
 
 A segurança FDE/FIPS refere-se a unidades com capacidade segura que criptografam dados durante gravações e descriptografam dados durante leituras usando uma chave de criptografia exclusiva. Essas unidades com capacidade de segurança evitam o acesso não autorizado aos dados em uma unidade que é fisicamente removida do storage array.
@@ -53,6 +57,7 @@ Para volumes que exigem suporte FIPS, use apenas unidades FIPS. A combinação d
 ====
 
 
+[[what-is-redundancy-check]]
 == O que é verificação de redundância?
 
 Uma verificação de redundância determina se os dados em um volume em um pool ou grupo de volumes são consistentes. Os dados de redundância são usados para reconstruir rapidamente informações em uma unidade de substituição se uma das unidades no pool ou grupo de volumes falhar.
@@ -71,6 +76,7 @@ Executar imediatamente uma verificação de redundância no mesmo pool ou grupo 
 ====
 
 
+[[what-are-the-differences-between-pools-and-volume-groups]]
 == Quais são as diferenças entre pools e grupos de volumes?
 
 Um pool é semelhante a um grupo de volume, com as seguintes diferenças.
@@ -84,6 +90,7 @@ Um pool é semelhante a um grupo de volume, com as seguintes diferenças.
 
 
 
+[[why-would-i-want-to-manually-configure-a-pool]]
 == Por que eu gostaria de configurar manualmente um pool?
 
 Os exemplos a seguir descrevem por que você deseja configurar manualmente um pool.
@@ -97,17 +104,18 @@ Para criar um pool manualmente: selecione *Armazenamento* e, em seguida, selecio
 
 * Se houver vários pools do mesmo tipo de unidade, uma mensagem será exibida indicando que o System Manager não pode recomendar as unidades para um pool automaticamente. No entanto, você pode adicionar manualmente as unidades a um pool existente.
 +
-Para adicionar unidades manualmente a um pool existente: na página Pools e grupos de volumes, selecione o pool e clique em *Adicionar capacidade*.
+Para adicionar unidades manualmente a um pool existente: na página Pools e grupos de volumes, localize o pool e clique em *Adicionar capacidade*.
 
 
 
 
 
+[[why-are-capacity-alerts-important]]
 == Por que os alertas de capacidade são importantes?
 
 Alertas de capacidade indicam quando adicionar unidades a um pool. Um pool precisa de capacidade livre suficiente para executar com sucesso as operações do storage array. Você pode evitar interrupções nessas operações configurando o Gerenciador de sistemas do SANtricity para enviar alertas quando a capacidade livre de um pool atingir ou exceder uma porcentagem especificada.
 
-Você define essa porcentagem quando cria um pool usando a opção *Configuração automática do pool* ou a opção *criar pool*. Se você escolher a opção automática, as configurações padrão determinarão automaticamente quando você receber notificações de alerta. Se você optar por criar manualmente o pool, poderá determinar as configurações de notificação de alerta; ou, se preferir, poderá aceitar as configurações padrão. Você pode ajustar essas configurações mais tarde no menu:Configurações[Alertas].
+Você define essa porcentagem ao criar um pool usando a opção *Configuração automática do pool* ou a opção *Criar pool*. Se você escolher a opção automática, as configurações padrão determinarão automaticamente quando você receberá notificações de alerta. Se você optar por criar o pool manualmente, poderá definir as configurações de notificação de alerta ou, se preferir, aceitar as configurações padrão. Você pode ajustar essas configurações depois no menu:Armazenamento[Pools e grupos de volumes]. Selecione o pool, clique no ícone menu:reticências[Editar configurações] e atualize as *Configurações de alerta de capacidade*.
 
 [NOTE]
 ====
@@ -116,13 +124,14 @@ Quando a capacidade livre no pool atinge a porcentagem especificada, uma notific
 ====
 
 
+[[why-cant-i-increase-my-preservation-capacity]]
 == Por que não consigo aumentar minha capacidade de preservação?
 
 Se você criou volumes em toda a capacidade utilizável disponível, talvez não consiga aumentar a capacidade de preservação.
 
 Capacidade de preservação é a quantidade de capacidade (número de unidades) reservada em um pool para dar suporte a possíveis falhas de unidade. Quando um pool é criado, o sistema reserva automaticamente uma quantidade padrão de capacidade de preservação, dependendo do número de unidades no pool. Se você tiver criado volumes em toda a capacidade utilizável disponível, não poderá aumentar a capacidade de preservação sem adicionar capacidade ao pool adicionando unidades ou excluindo volumes.
 
-Você pode alterar a capacidade de preservação em *Pools e grupos de volumes*. Selecione o pool que você deseja editar. Clique no menu:ícone de reticências[Editar configurações] e, em seguida, selecione a guia *Configurações*.
+Você pode alterar a capacidade de preservação em *Pools e grupos de volumes*. Selecione o pool que você deseja editar. Clique em *View/Edit Settings* e, em seguida, selecione a guia *Settings*.
 
 [NOTE]
 ====
@@ -131,23 +140,26 @@ A capacidade de preservação é especificada como um número de unidades, mesmo
 ====
 
 
+[[is-there-a-limit-on-the-number-of-drives-i-can-remove-from-a-pool]]
 == Existe um limite no número de unidades que posso remover de um pool?
 
 O Gerenciador de sistema do SANtricity define limites para quantas unidades você pode remover de um pool.
 
-* Não é possível reduzir o número de unidades em um pool para ser inferior a 11 unidades.
+* Não é possível reduzir o número de unidades em um pool abaixo do limite mínimo. Para sistemas EF80 e EF50, o mínimo é 6 unidades para pools de desempenho e 12 unidades para pools de capacidade. Para todos os outros sistemas, o mínimo é 11 unidades.
 * Não é possível remover unidades se não houver capacidade livre suficiente no pool para conter os dados das unidades removidas quando esses dados são redistribuídos para as unidades restantes no pool.
 * Você pode remover um máximo de 60 unidades de cada vez. Se você selecionar mais de 60 unidades, a opção Remover unidades será desativada. Se precisar remover mais de 60 unidades, repita a operação Remover unidades.
 
 
 
 
+[[what-media-types-are-supported-for-a-drive]]
 == Quais tipos de Mídia são suportados para uma unidade?
 
 São suportados os seguintes tipos de material: Unidade de disco rígido (HDD) e disco de estado sólido (SSD).
 
 
 
+[[why-are-some-drives-not-showing-up]]
 == Por que algumas unidades não estão aparecendo?
 
 Na caixa de diálogo Adicionar capacidade, nem todas as unidades estão disponíveis para adicionar capacidade a um pool ou volume group.
@@ -162,6 +174,7 @@ As unidades não são qualificadas por nenhum dos seguintes motivos:
 ** Unidades de disco rígido (HDDs) com discos de estado sólido (SSDs)
 ** NVMe com unidades SAS
 ** Unidades com tamanhos de bloco de volume de 512 bytes e 4KiB
+** Unidades SSD NVMe de desempenho e capacidade (somente para sistemas EF80 e EF50)
 
 
 * Se um pool ou grupo de volumes contiver todas as unidades com capacidade de segurança, as unidades com capacidade de segurança não serão listadas.
@@ -176,6 +189,7 @@ A capacidade pode ser aumentada em seu storage array adicionando novas unidades 
 ====
 
 
+[[how-do-i-maintain-shelfdrawer-loss-protection]]
 == Como faço para manter a proteção contra perda de prateleira/gaveta?
 
 Para manter a proteção contra perda de gaveta/gaveta para um pool ou grupo de volumes, use os critérios especificados na tabela a seguir.
@@ -240,6 +254,7 @@ A proteção contra perda de gaveta/gaveta não será mantida se uma unidade já
 ====
 
 
+[[what-is-the-optimal-drive-positioning-for-pools-and-volume-groups]]
 == Qual é o posicionamento ideal da unidade para pools e grupos de volume?
 
 Ao criar pools e grupos de volume, certifique-se de equilibrar a seleção de unidade entre os slots de unidade superior e inferior.
@@ -248,12 +263,14 @@ Para os controladores EF600 e EF300, os slots de unidade 0-11 são conetados a u
 
 
 
+[[what-raid-level-is-best-for-my-application]]
 == Que nível RAID é melhor para a minha aplicação?
 
 Para maximizar o desempenho de um grupo de volumes, você deve selecionar o nível RAID apropriado. Você pode determinar o nível RAID apropriado conhecendo as porcentagens de leitura e gravação dos aplicativos que estão acessando o grupo de volumes. Use a página desempenho para obter essas porcentagens.
 
 
 
+[[raid-levels-and-application-performance]]
 === Níveis de RAID e desempenho do aplicativo
 
 O RAID depende de uma série de configurações, chamadas _levels_, para determinar como os dados de usuário e redundância são gravados e recuperados das unidades. Cada nível de RAID fornece recursos de desempenho diferentes. Os aplicativos com uma alta porcentagem de leitura terão bom desempenho usando volumes RAID 5 ou volumes RAID 6 devido ao excelente desempenho de leitura das configurações RAID 5 e RAID 6.
@@ -382,6 +399,7 @@ Não é possível alterar o nível RAID de um pool. A interface do usuário conf
 ====
 
 
+[[raid-levels-and-data-protection]]
 === Níveis de RAID e proteção de dados
 
 RAID 1, RAID 5 e RAID 6 escrevem dados de redundância no suporte de dados da unidade para tolerância a falhas. Os dados de redundância podem ser uma cópia dos dados (espelhados) ou um código de correção de erros derivado dos dados. Você pode usar os dados de redundância para reconstruir rapidamente as informações em uma unidade de substituição se uma unidade falhar.
@@ -390,6 +408,7 @@ Você configura um único nível RAID em um único grupo de volumes. Todos os da
 
 
 
+[[what-is-data-assurance]]
 == O que é o Data Assurance?
 
 A Data Assurance (DA) implementa a norma T10 Protection Information (PI), que aumenta a integridade dos dados verificando e corrigindo erros que possam ocorrer à medida que os dados são transferidos ao longo do caminho de e/S.
@@ -402,12 +421,14 @@ Certifique-se de atribuir esses volumes habilitados PARA DA a um host usando uma
 
 
 
+[[what-is-secure-capable-drive-security]]
 == O que é seguro (Drive Security)?
 
 O Drive Security é um recurso que impede o acesso não autorizado aos dados em unidades habilitadas para segurança quando removido do storage array. Essas unidades podem ser unidades com criptografia total de disco (FDE) ou unidades FIPS (Federal Information Processing Standard).
 
 
 
+[[what-do-i-need-to-know-about-increasing-reserved-capacity]]
 == O que eu preciso saber sobre o aumento da capacidade reservada?
 
 Normalmente, você deve aumentar a capacidade quando receber um aviso de que a capacidade reservada corre o risco de ficar cheia. Você pode aumentar a capacidade reservada apenas em incrementos de 8 GiB.
@@ -425,6 +446,7 @@ Para operações de snapshot, a capacidade reservada geralmente é de 40% do vol
 
 
 
+[[why-cant-i-choose-another-amount-to-decrease-by]]
 == Por que não posso escolher outro valor para diminuir?
 
 Você pode diminuir a capacidade reservada somente pelo valor usado para aumentá-la. A capacidade reservada para volumes membros só pode ser removida na ordem inversa em que foram adicionados.
@@ -443,6 +465,7 @@ Não é possível diminuir a capacidade reservada para um volume instantâneo qu
 
 
 
+[[why-do-i-need-reserved-capacity-for-each-member-volume]]
 == Por que eu preciso de capacidade reservada para cada volume de membro?
 
 Cada volume de membro em um grupo de consistência de snapshot deve ter sua própria capacidade reservada para salvar quaisquer modificações feitas pelo aplicativo host no volume base sem afetar a imagem de snapshot do grupo de consistência referenciada. A capacidade reservada fornece ao aplicativo host acesso de gravação a uma cópia dos dados contidos no volume do membro designado como leitura-gravação.
@@ -453,6 +476,7 @@ Durante a criação de um volume instantâneo de grupo de consistência designad
 
 
 
+[[how-do-i-view-and-interpret-all-ssd-cache-statistics]]
 == Como posso visualizar e interpretar todas as estatísticas de cache SSD?
 
 Você pode ver estatísticas nominais e estatísticas detalhadas para cache SSD. As estatísticas nominais são um subconjunto das estatísticas detalhadas.
@@ -461,6 +485,7 @@ As estatísticas detalhadas só podem ser visualizadas quando você exporta toda
 
 
 
+[[nominal-statistics]]
 === Estatísticas nominais
 
 Para visualizar as estatísticas do SSD Cache, selecione menu:Storage[Pools and volume groups] no painel esquerdo. Selecione o SSD Cache para o qual deseja visualizar as estatísticas e clique no ícone menu:ellipsis[View statistics]. As estatísticas nominais são exibidas na página View Statistics.
@@ -513,6 +538,7 @@ A quantidade de armazenamento em cache SSD que contém dados de volumes ativados
 |===
 
 
+[[detailed-statistics]]
 === Estatísticas detalhadas
 
 As estatísticas detalhadas consistem nas estatísticas nominais, mais estatísticas adicionais. Essas estatísticas adicionais são salvas juntamente com as estatísticas nominais, mas, ao contrário das estatísticas nominais, elas não são exibidas na caixa de diálogo View SSD Cache Statistics (Exibir estatísticas de cache SSD). Você pode exibir as estatísticas detalhadas somente depois de exportar as estatísticas para um `.csv` arquivo.
@@ -637,6 +663,7 @@ O número de bytes alocados no cache SSD que contêm dados de volumes base. Os b
 |===
 
 
+[[what-is-optimization-capacity-for-pools]]
 == O que é a capacidade de otimização para pools?
 
 As unidades SSD terão vida útil mais longa e melhor desempenho máximo de gravação quando uma parte de sua capacidade não for alocada.
@@ -652,6 +679,7 @@ O controle deslizante de Capacidade de Otimização Adicional está disponível 
 ====
 
 
+[[what-is-optimization-capacity-for-volume-groups]]
 == O que é a capacidade de otimização para grupos de volumes?
 
 As unidades SSD terão vida útil mais longa e melhor desempenho máximo de gravação quando uma parte de sua capacidade não for alocada.
@@ -667,6 +695,7 @@ O controle deslizante de Capacidade de Otimização Adicional está disponível 
 ====
 
 
+[[what-is-resource-provisioning-capable]]
 == O que é capaz de provisionamento de recursos?
 
 O provisionamento de recursos é uma funcionalidade disponível nos storage arrays EF80, EF50, EF300 e EF600, que permite que os volumes sejam colocados em uso imediatamente sem processo de inicialização em segundo plano.
@@ -677,6 +706,7 @@ Os volumes provisionados por recursos são compatíveis apenas com grupos de vol
 
 
 
+[[what-do-i-need-to-know-about-the-resource-provisioned-volumes-feature]]
 == O que eu preciso saber sobre o recurso volumes provisionados por recursos?
 
 O provisionamento de recursos é uma funcionalidade disponível nos storage arrays EF80, EF50, EF300 e EF600, que permite que os volumes sejam colocados em uso imediatamente sem processo de inicialização em segundo plano.

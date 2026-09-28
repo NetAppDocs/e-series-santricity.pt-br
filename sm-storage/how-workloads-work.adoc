@@ -17,12 +17,14 @@ Um workload é um objeto de storage compatível com uma aplicação. Você pode 
 
 
 
+[[creating-a-workload]]
 == Criando uma carga de trabalho
 
 Você deve especificar manualmente quando deseja criar uma carga de trabalho que não esteja associada a um aplicativo específico. Você também deve especificar manualmente a configuração de volume usando a página Add Volumes.
 
 
 
+[[application-and-workload-views]]
 == Visualizações de aplicação e workload
 
 Para visualizar aplicações e workloads, inicie o Gerenciador de sistemas do SANtricity. Nessa interface, você pode exibir informações associadas a uma carga de trabalho específica do aplicativo de algumas maneiras diferentes:

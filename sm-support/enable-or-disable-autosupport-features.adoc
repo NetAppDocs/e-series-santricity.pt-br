@@ -28,7 +28,7 @@ O recurso AutoSupport é composto por três recursos individuais que você ativa
 
 
 .Passos
-. No painel esquerdo, selecione menu:Suporte [Central de Suporte > AutoSupport] guia.
+. No painel esquerdo, selecione menu:Support[AutoSupport].
 . Selecione *Ativar/Desativar recursos do AutoSupport*.
 . Marque as caixas de seleção ao lado dos recursos do AutoSupport que você deseja habilitar.
 +
@@ -36,6 +36,6 @@ As funcionalidades dependem umas das outras, conforme indicado pela indentação
 
 . Clique em *Salvar*.
 +
-Se desativar o AutoSupport, é apresentada uma notificação na página inicial. Você pode ignorar a notificação clicando em *Ignorar*.
+Se você desativar o AutoSupport, uma notificação aparecerá na área de Notificações, acessível pelo ícone de sino no canto superior da janela. Você pode descartar a notificação clicando em *Ignorar*.
 
 

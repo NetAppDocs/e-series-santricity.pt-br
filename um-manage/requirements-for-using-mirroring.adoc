@@ -16,6 +16,7 @@ Se você planeja configurar o espelhamento, tenha em mente os seguintes requisit
 
 
 
+[[unified-manager]]
 == Unified Manager
 
 * O serviço Web Services Proxy deve estar em execução.
@@ -25,6 +26,7 @@ Se você planeja configurar o espelhamento, tenha em mente os seguintes requisit
 
 
 
+[[storage-arrays]]
 == Storage arrays
 
 [NOTE]
@@ -44,6 +46,7 @@ Espelhamento síncrono não está disponível nos arrays de storage EF80, EF50, 
 
 
 
+[[connectivity-requirements]]
 == Requisitos de conetividade
 
 O espelhamento por meio de uma interface FC (assíncrona ou síncrona) requer o seguinte:
@@ -66,9 +69,16 @@ NOTE: Os controladores E4000 não suportam espelhamento iSCSI.
 ** VLAN: Os sistemas locais e remotos devem ter a mesma configuração de VLAN para se comunicar
 ** Porta de escuta iSCSI
 ** Jumbo Frames
-** Prioridade Ethernet
 
 
+
+
+[NOTE]
+====
+Recomenda-se o uso de Jumbo Frames para melhorar o desempenho da CPU e a taxa de transferência.
+
+====
+* Prioridade Ethernet
 
 
 [NOTE]
@@ -78,6 +88,7 @@ A comunicação do intercontrolador iSCSI deve usar uma porta de conexão de hos
 ====
 
 
+[[mirrored-volume-candidates]]
 == Candidatos a volume espelhado
 
 * O nível RAID, os parâmetros de armazenamento em cache e o tamanho do segmento podem ser diferentes nos volumes primário e secundário de um par espelhado.
@@ -96,11 +107,12 @@ NOTE: Para controladores EF600 e EF300, os volumes primário e secundário de um
 ** Se o volume principal não estiver usando o Drive Security, o volume secundário não deve estar usando o Drive Security.
 
 
-* Os volumes primário e secundário não devem ter o particionamento de recursos ativado.
+* Os volumes primário e secundário não devem ter o Resource Provisioning ativado.
 
 
 
 
+[[reserved-capacity]]
 == Capacidade reservada
 
 Espelhamento assíncrono:
@@ -117,6 +129,7 @@ Espelhamento síncrono:
 
 
 
+[[drive-security-feature]]
 == Recurso de segurança da unidade
 
 * Se você estiver usando unidades com capacidade de segurança, o volume primário e o volume secundário devem ter configurações de segurança compatíveis. Esta restrição não é imposta; portanto, você deve verificá-la por conta própria.

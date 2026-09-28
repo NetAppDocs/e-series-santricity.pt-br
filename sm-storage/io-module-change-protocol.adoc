@@ -22,6 +22,7 @@ Você pode alterar o protocolo nos módulos de E/S do host para seus controlador
 
 
 
+[[step-1-prepare-for-the-protocol-change]]
 == Etapa 1: prepare-se para a mudança de protocolo
 
 Prepare-se para alterar o protocolo nos módulos de E/S do host, verificando o protocolo atualmente em uso, determinando se é necessário alterá-lo e, em caso afirmativo, agendando uma janela de manutenção de downtime.
@@ -29,7 +30,7 @@ Prepare-se para alterar o protocolo nos módulos de E/S do host, verificando o p
 .Passos
 . Caso não conheça o protocolo atual nos módulos de E/S do host em seu sistema de storage, verifique-o usando SANtricity System Manager.
 +
-.. Selecione *Configurações* > *Sistema*.
+.. Selecione *System*.
 .. Na seção *Configurações adicionais*, clique em *Alterar protocolo de E/S do host* para abrir essa página.
 .. Veja o protocolo padrão exibido no campo *Host I/O Protocol*.
 +
@@ -63,6 +64,7 @@ Continue com este procedimento para alterar o protocolo.
 
 
 
+[[step-2-stop-host-io-operations]]
 == Etapa 2: pare as operações de E/S do host
 
 Você deve interromper todas as operações de E/S do host e, em seguida, excluir todos os hosts definidos do sistema de storage antes de alterar o protocolo.
@@ -113,7 +115,7 @@ image::../media/icon_round_1.png[Chamada número 1]
 |===
 . Confirme se as operações nos controladores foram concluídas no SANtricity System Manager:
 +
-.. Selecione *Storage* > *Operations in progress* para ver a tela Overview.
+.. Selecione *Monitoramento* > *Operações em andamento* para ver a tela Overview.
 .. Aguarde até que todas as operações sejam concluídas e a tela Overview exiba *No operations currently in progress*, antes de prosseguir para a próxima etapa.
 
 
@@ -125,12 +127,13 @@ Para obter mais informações sobre como excluir hosts, consulte o https://docs.
 
 
 
+[[step-3-change-the-protocol]]
 == Etapa 3: alterar o protocolo
 
 Utilizando SANtricity System Manager, altere o protocolo nos módulos de E/S do host, aguarde os controladores concluírem seu ciclo de reinicialização, confirme que o status deles está como Ótimo e, em seguida, recrie as definições do host.
 
 .Passos
-. Selecione *Configurações* > *Sistema*.
+. Selecione *System*.
 . Na seção *Configurações adicionais*, clique em *Alterar protocolo de E/S do host* para abrir essa página.
 . No campo *Host I/O Protocol*, clique no menu suspenso e escolha o protocolo que deseja usar.
 +
@@ -151,6 +154,7 @@ Para obter mais informações sobre como criar hosts, consulte o https://docs.ne
 
 
 
+[[step-4-configure-the-host-to-use-the-new-protocol]]
 == Etapa 4: configurar o host para usar o novo protocolo
 
 Após alterar o protocolo das portas do host, você deve configurar o host para usar o novo protocolo.

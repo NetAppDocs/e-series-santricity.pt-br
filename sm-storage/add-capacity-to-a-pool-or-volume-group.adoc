@@ -18,20 +18,22 @@ A expansão faz com que a capacidade livre adicional seja incluída no pool ou n
 
 .Antes de começar
 * As unidades devem estar em um status ideal.
-* As unidades devem ter o mesmo tipo de unidade (HDD ou SSD).
+* As unidades devem ser do mesmo tipo (HDD ou SSD). Para os sistemas EF80 e EF50, as unidades SSD NVMe de desempenho e de capacidade podem coexistir no mesmo array de storage, mas não podem ser misturadas no mesmo pool ou grupo de volume.
 * O pool ou grupo de volume deve estar em um status ideal.
 * O número máximo de volumes permitido num grupo de volumes é 256.
 * O número máximo de volumes permitidos em um pool depende do modelo do sistema de armazenamento:
 +
-** 2.048 volumes (EF80, EF600 e E5700 series)
+** 2.048 volumes (EF80, EF600 e EF600C)
 ** 1.024 volumes (EF50 and EF300)
-** 512 volumes (séries E4000 e E2800)
+** 512 volumes (E4000)
 
 
 * Se o pool ou grupo de volumes contiver todas as unidades com capacidade segura, adicione apenas unidades com capacidade segura para continuar a usar as habilidades de criptografia das unidades com capacidade segura.
 +
 As unidades com capacidade segura podem ser unidades com criptografia total de disco (FDE) ou unidades FIPS (Federal Information Processing Standard).
 
+* A capacidade das unidades que você adicionar deve ser igual ou maior que a capacidade da menor unidade no pool ou grupo de volume.
+* A velocidade PCIe e o tipo de unidade (Desempenho ou Capacidade) das unidades que você adicionar devem corresponder às unidades existentes no pool ou grupo de volume. Unidades de Desempenho e Capacidade não podem ser misturadas no mesmo pool ou grupo de volume.
 
 
 .Sobre esta tarefa
@@ -49,9 +51,9 @@ Evite usar unidades com suporte a Data Assurance (DA) para adicionar capacidade 
 ====
 .Passos
 . No painel esquerdo, selecione menu:Storage[Pools and volume groups].
-. Selecione o pool ou grupo de volume ao qual deseja adicionar unidades e clique no menu:ellipsis icon[Add capacity].
+. Localize o pool ou grupo de volume ao qual você deseja adicionar unidades e clique no menu:ellipsis icon[Add capacity].
 +
-A caixa de diálogo Adicionar capacidade é exibida. Somente as unidades não atribuídas que são compatíveis com o pool ou grupo de volume aparecem.
+A página Adicionar capacidade é exibida. Somente as unidades não atribuídas que são compatíveis com o pool ou grupo de volume são exibidas.
 
 . Em *Selecionar unidades para adicionar capacidade...*, selecione uma ou mais unidades que você deseja adicionar ao pool ou grupo de volume.
 +

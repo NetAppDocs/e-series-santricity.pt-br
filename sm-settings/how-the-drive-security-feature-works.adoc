@@ -17,6 +17,7 @@ Quando essas unidades são usadas com o recurso Segurança da Unidade, elas prec
 
 
 
+[[how-to-implement-drive-security]]
 == Como implementar o Drive Security
 
 Para implementar o Drive Security, execute as etapas a seguir.
@@ -33,6 +34,7 @@ Para implementar o Drive Security, execute as etapas a seguir.
 
 
 
+[[how-drive-security-works-at-the-drive-level]]
 == Como o Drive Security funciona no nível da unidade
 
 Uma unidade com capacidade segura, FDE ou FIPS, criptografa os dados durante gravações e descriptografa dados durante leituras. Essa criptografia e descriptografia não afetam o desempenho ou o fluxo de trabalho do usuário. Cada unidade tem sua própria chave de criptografia exclusiva, que nunca pode ser transferida da unidade.
@@ -41,6 +43,7 @@ O recurso Drive Security fornece uma camada extra de proteção com unidades com
 
 
 
+[[how-drive-security-works-at-the-storage-array-level]]
 == Como o Drive Security funciona no nível da matriz de armazenamento
 
 Com o recurso Segurança da unidade, você cria uma chave de segurança compartilhada entre as unidades e os controladores habilitados para segurança em um storage de armazenamento. Sempre que a alimentação das unidades é desligada e ligada, as unidades ativadas por segurança mudam para um estado de Segurança bloqueada até que o controlador aplique a chave de segurança.
@@ -54,6 +57,7 @@ Para o gerenciamento de chaves internas, a chave de segurança real é armazenad
 ====
 
 
+[[how-drive-security-works-at-the-volume-level]]
 == Como o Drive Security funciona no nível do volume
 
 Ao criar um pool ou grupo de volumes a partir de unidades com capacidade segura, também é possível ativar a Segurança da unidade para esses pools ou grupos de volumes. A opção Segurança da unidade torna as unidades e os grupos de volume e pools associados seguros-_enabled_.

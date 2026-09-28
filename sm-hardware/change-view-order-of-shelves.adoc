@@ -14,10 +14,6 @@ summary: Você pode alterar a ordem das prateleiras exibidas na página hardware
 Você pode alterar a ordem das prateleiras exibidas na página hardware para corresponder à ordem física das prateleiras em um gabinete.
 
 .Passos
-. No painel esquerdo, selecione *Hardware*.
-. Se o gráfico mostrar as unidades, clique na guia *Controllers & Components* (Controladores e componentes).
-+
-O gráfico muda para mostrar os controladores em vez das unidades.
-
-. No canto superior direito de uma exibição de prateleira, selecione as setas para cima ou para baixo para reorganizar a ordem das prateleiras mostrada na página hardware.
+. No painel esquerdo, selecione menu:Hardware[Controllers and components].
+. Selecione a lista suspensa de uma prateleira e, em seguida, selecione *Alterar ordem* para reorganizar a ordem das prateleiras exibidas na página de hardware.
 

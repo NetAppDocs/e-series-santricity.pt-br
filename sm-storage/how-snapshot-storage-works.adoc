@@ -15,6 +15,7 @@ O recurso Snapshots usa tecnologia copy-on-write para armazenar imagens instant�
 
 
 
+[[how-snapshot-images-are-used]]
 == Como as imagens instantâneas são usadas
 
 Uma imagem instantânea é uma cópia lógica e somente leitura do conteúdo do volume, capturada em um determinado momento. Você pode usar snapshots para se proteger contra a perda de dados.
@@ -23,6 +24,7 @@ As imagens instantâneas também são úteis para ambientes de teste. Ao criar u
 
 
 
+[[snapshot-creation]]
 == Criação de snapshot
 
 À medida que os instantâneos são criados, o recurso Snapshots armazena os dados da imagem da seguinte forma:
@@ -42,6 +44,7 @@ image::../media/sam1130-dwg-snapshots-cow-overview.gif[Visão geral do Snapshot]
 
 
 
+[[snapshot-restoration]]
 == Restauração de instantâneos
 
 Para restaurar dados para um volume base, você pode usar um volume instantâneo ou uma imagem instantânea:

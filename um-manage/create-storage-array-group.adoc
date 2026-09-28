@@ -18,6 +18,7 @@ A configuração de grupos é um procedimento de duas etapas.
 
 
 
+[[step-1-create-group]]
 == Passo 1: Criar grupo
 
 Primeiro você cria um grupo. O grupo de armazenamento define quais unidades fornecem o armazenamento que compõe o volume.
@@ -31,6 +32,7 @@ Primeiro você cria um grupo. O grupo de armazenamento define quais unidades for
 
 
 
+[[step-2-add-storage-array-to-group]]
 == Etapa 2: Adicionar storage array ao grupo
 
 Você pode adicionar um ou mais arrays de armazenamento a um grupo criado pelo usuário.

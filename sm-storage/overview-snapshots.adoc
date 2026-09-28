@@ -16,6 +16,7 @@ O recurso Snapshot permite que você crie imagens pontuais de volumes de storage
 
 
 
+[[what-are-snapshot-images]]
 == O que são imagens instantâneas?
 
 Uma imagem _snapshot_ é uma cópia lógica dos dados de volume, capturados em um determinado ponto no tempo. Como um ponto de restauração, as imagens instantâneas permitem que você role de volta para um conjunto de dados em boas condições. Embora o host possa acessar a imagem instantânea, ele não pode ler ou gravar diretamente nela.
@@ -31,9 +32,10 @@ Saiba mais:
 
 
 
+[[how-do-i-create-snapshots]]
 == Como faço para criar snapshots?
 
-Você pode criar manualmente uma imagem de snapshot a partir de um volume base ou grupo de consistência de snapshot. Este procedimento está disponível no menu:armazenamento[instantâneos].
+Você pode criar manualmente uma imagem de Snapshot a partir de um volume base ou grupo de consistência de Snapshot. Esse procedimento está disponível em menu:Snapshots[Snapshot images].
 
 Saiba mais:
 
@@ -47,9 +49,10 @@ Saiba mais:
 
 
 
+[[how-do-i-roll-back-data-from-a-snapshot]]
 == Como faço para reverter dados de um snapshot?
 
-Um _rollback_ é o processo de retornar dados em um volume base para um ponto anterior no tempo. Você pode reverter os dados instantâneos a partir do menu:armazenamento[instantâneos].
+Um _rollback_ é o processo de retornar os dados de um volume base para um ponto anterior no tempo. Você pode reverter os dados do Snapshot em menu:Snapshots[Snapshot images].
 
 Saiba mais:
 
@@ -60,6 +63,7 @@ Saiba mais:
 
 
 
+[[related-information]]
 == Informações relacionadas
 
 Saiba mais sobre tarefas relacionadas a instantâneos:

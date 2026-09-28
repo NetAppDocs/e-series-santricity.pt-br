@@ -21,7 +21,7 @@ Você pode baixar e transferir os arquivos sem ativá-los. Você pode optar por 
 * * Tipo de pacote* -- você pode querer testar o novo software e firmware em uma matriz de armazenamento antes de atualizar os arquivos em outras matrizes de armazenamento.
 
 
-Quando tiver software ou firmware transferido, mas não ativado, verá uma notificação na área notificações da página inicial do System Manager e também na página Centro de Atualização.
+Quando você tiver um software ou firmware que foi transferido, mas ainda não ativado, você verá uma notificação na área de Notificações (acessível pelo ícone de sino no canto superior da janela) e também na página Upgrade center.
 
 [CAUTION]
 ====
@@ -29,8 +29,8 @@ Não é possível parar o processo de ativação depois de iniciado.
 
 ====
 .Passos
-. No painel esquerdo, selecione menu:Support[Upgrade Center].
-. Na área rotulada SANtricity os Controller Software upgrade, clique em *Activate* e confirme se deseja executar a operação.
+. No painel esquerdo, selecione o menu: suporte [Upgrade center].
+. Na área intitulada SANtricity OS software upgrade, clique em *Ativar atualização em etapas* e confirme que você deseja realizar a operação.
 +
 Pode cancelar a operação durante a verificação de estado de pré-atualização, mas não durante a ativação.
 
@@ -40,7 +40,7 @@ A verificação de integridade da pré-atualização começa. Se a verificação
 +
 Após a conclusão bem-sucedida da verificação de integridade da pré-atualização, ocorre a ativação. O tempo de ativação depende da configuração do storage array e dos componentes que você está ativando.
 
-. *Opcional:* para ver uma lista do que foi atualizado, clique em *Salvar Registro*.
+. *Opcional:* Para ver uma lista do que foi atualizado, clique em *Salvar registro*.
 +
 O arquivo é salvo na pasta Downloads do navegador com o nome `drive_upgrade_log-timestamp.txt`.
 
@@ -48,6 +48,6 @@ O arquivo é salvo na pasta Downloads do navegador com o nome `drive_upgrade_log
 
 .Depois de terminar
 * Verifique se todos os componentes aparecem na página hardware.
-* Verifique as novas versões de software e firmware marcando a caixa de diálogo Inventário de Software e firmware (vá para o menu:suporte[Centro de Atualização] e clique no link *Inventário de Software e firmware*).
+* Verifique as novas versões de software e firmware consultando a página de inventário de software e firmware (vá para menu:Suporte[Upgrade center] e clique no link para *software e firmware inventory*).
 * Se você atualizou a NVSRAM da controladora, quaisquer configurações personalizadas aplicadas à NVSRAM existente serão perdidas durante o processo de ativação. Você precisa aplicar as configurações personalizadas à NVSRAM novamente depois que o processo de ativação for concluído.
 

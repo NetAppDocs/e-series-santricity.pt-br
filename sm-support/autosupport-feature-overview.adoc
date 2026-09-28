@@ -19,6 +19,7 @@ Os dados do AutoSupport incluem informações sobre a configuração, o status, 
 
 
 
+[[key-benefits]]
 == Principais benefícios
 
 Alguns dos principais benefícios do recurso AutoSupport incluem:
@@ -33,6 +34,7 @@ Alguns dos principais benefícios do recurso AutoSupport incluem:
 
 
 
+[[individual-autosupport-features]]
 == Recursos individuais do AutoSupport
 
 O recurso AutoSupport é composto por três recursos individuais que você ativa separadamente.
@@ -44,6 +46,7 @@ O recurso AutoSupport é composto por três recursos individuais que você ativa
 
 
 
+[[difference-between-autosupport-and-collect-support-data]]
 == Diferença entre AutoSupport e coletar dados de suporte
 
 Existem dois métodos de coleta de dados de suporte na matriz de armazenamento:

@@ -16,6 +16,7 @@ Este FAQ pode ajudar se você está apenas procurando uma resposta rápida para 
 
 
 
+[[what-settings-will-be-imported]]
 == Que definições serão importadas?
 
 O recurso Importar configurações é uma operação em lote que carrega configurações de uma matriz de armazenamento para várias matrizes de armazenamento. As configurações que são importadas durante essa operação dependem de como o storage de origem é configurado no Gerenciador do sistema do SANtricity.
@@ -33,6 +34,7 @@ As seguintes configurações podem ser importadas para vários storages de armaz
 
 
 
+[[why-dont-i-see-all-of-my-storage-arrays]]
 == Por que não vejo todos os meus conjuntos de armazenamento?
 
 Durante a operação Importar configurações, alguns dos storages de armazenamento podem não estar disponíveis na caixa de diálogo seleção de destino.

@@ -16,6 +16,7 @@ Se tiver a funcionalidade armazenamento remoto, pode importar dados de um sistem
 
 
 
+[[what-is-the-remote-storage-feature]]
 == O que é o recurso de armazenamento remoto?
 
 O recurso _armazenamento remoto_ permite importar dados de um sistema de armazenamento remoto para um sistema de armazenamento local e-Series. O sistema remoto pode ser outro sistema e-Series ou um sistema de outro fornecedor. Esse recurso é útil quando você deseja otimizar a migração de dados com o mínimo de tempo de inatividade, como durante atualizações de equipamentos.
@@ -33,6 +34,7 @@ Saiba mais:
 
 
 
+[[how-do-i-import-data-with-this-feature]]
 == Como posso importar dados com esta funcionalidade?
 
 Usando o assistente de armazenamento remoto, você mapeia um dispositivo de armazenamento remoto (a origem da importação de dados) para um volume de destino no sistema e-Series. Este assistente está disponível no menu:armazenamento[armazenamento remoto].

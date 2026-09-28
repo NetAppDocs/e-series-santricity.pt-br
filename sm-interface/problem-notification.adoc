@@ -15,6 +15,7 @@ O Gerenciador de sistema do SANtricity usa ícones e vários outros métodos par
 
 
 
+[[icons]]
 == Ícones
 
 O System Manager usa esses ícones para indicar o status do storage array e seus componentes.
@@ -59,6 +60,7 @@ O System Manager exibe esses ícones em vários locais.
 
 
 
+[[alerts-and-leds]]
 == Alertas e LEDs
 
 Além disso, o System Manager notifica você sobre problemas de outras maneiras.

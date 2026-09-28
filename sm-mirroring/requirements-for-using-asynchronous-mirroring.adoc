@@ -16,6 +16,7 @@ Se você planeja usar o espelhamento assíncrono, tenha em mente os seguintes re
 
 
 
+[[unified-manager]]
 == Unified Manager
 
 Para ativar e configurar o espelhamento entre dois arrays, você deve usar a interface do Unified Manager. O Unified Manager é instalado em um sistema host juntamente com o Web Services Proxy.
@@ -27,6 +28,7 @@ Para ativar e configurar o espelhamento entre dois arrays, você deve usar a int
 
 
 
+[[storage-arrays]]
 == Storage arrays
 
 * Você precisa ter dois storage arrays.
@@ -41,6 +43,7 @@ Para ativar e configurar o espelhamento entre dois arrays, você deve usar a int
 
 
 
+[[supported-connections]]
 == Conexões suportadas
 
 O espelhamento assíncrono pode usar conexões FC ou iSCSI ou ambas para comunicação entre sistemas de storage locais e remotos. No momento da criação de um grupo de consistência de espelho, o administrador pode selecionar FC ou iSCSI para esse grupo se ambos estiverem conetados ao storage array remoto. Não há failover de um tipo de canal para o outro.
@@ -71,6 +74,12 @@ As portas iSCSI são configuradas no nível da matriz, porta a porta. A comunica
 ** VLAN: Os sistemas locais e remotos devem ter a mesma configuração de VLAN para se comunicar
 ** Porta de escuta iSCSI
 ** Jumbo Frames
++
+[NOTE]
+====
+Recomenda-se o uso de Jumbo Frames para melhorar o desempenho da CPU, a taxa de transferência e a estabilidade funcional.
+
+====
 ** Prioridade Ethernet
 +
 [NOTE]
@@ -92,6 +101,7 @@ O E4000 não suporta espelhamento assíncrono ao usar o protocolo iSCSI.
 ====
 
 
+[[mirrored-volume-candidates]]
 == Candidatos a volume espelhado
 
 * O nível RAID, os parâmetros de armazenamento em cache e o tamanho do segmento podem ser diferentes nos volumes primário e secundário de um par espelhado assíncrono.
@@ -109,11 +119,12 @@ NOTE: Para controladores EF600 e EF300, os volumes primário e secundário de um
 
 
 * Os volumes primário e secundário devem compartilhar o mesmo tipo de unidade. A combinação de unidades NVMe e SAS entre volumes primário e secundário não é compatível.
-* Os volumes primário e secundário não devem ter o particionamento de recursos ativado.
+* Os volumes primário e secundário não devem ter o Resource Provisioning ativado.
 
 
 
 
+[[reserved-capacity]]
 == Capacidade reservada
 
 * Um volume de capacidade reservada é necessário para um volume primário e para um volume secundário em um par espelhado para Registrar informações de gravação para recuperar de reinicializações do controlador e outras interrupções temporárias.
@@ -128,6 +139,7 @@ NOTE: Para controladores EF600 e EF300, os volumes primário e secundário de um
 
 
 
+[[drive-security-feature]]
 == Recurso de segurança da unidade
 
 * Se você estiver usando unidades com capacidade de segurança, o volume primário e o volume secundário devem ter configurações de segurança compatíveis. Esta restrição não é imposta; portanto, você deve verificá-la por conta própria.

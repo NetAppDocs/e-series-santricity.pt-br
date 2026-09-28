@@ -13,10 +13,11 @@ summary: A hierarquia de armazenamento na interface principal fornece uma visual
 [role="lead"]
 A hierarquia de armazenamento na interface principal fornece uma visualização organizada dos vários componentes de hardware e objetos de armazenamento gerenciados pelo seu storage array.
 
-Para exibir a hierarquia de armazenamento, vá para a página inicial e clique na seta suspensa em um componente de storage ou objeto de armazenamento. Um storage array consiste em uma coleção de componentes físicos e componentes lógicos.
+Para visualizar a hierarquia de armazenamento, acesse o Dashboard e clique na seta suspensa em um componente de array de storage ou objeto de armazenamento. Um array de storage consiste em uma coleção de componentes físicos e lógicos.
 
 
 
+[[physical-components]]
 == Componentes físicos
 
 Os componentes físicos de um storage array são descritos nesta tabela.
@@ -81,6 +82,7 @@ Um cliente de gerenciamento é o computador em que um navegador está instalado 
 |===
 
 
+[[logical-components]]
 == Componentes lógicos
 
 As unidades no storage array fornecem a capacidade de armazenamento físico para os dados. Use o System Manager para configurar a capacidade física em componentes lógicos, como pools, grupos de volumes e volumes. Esses componentes são as ferramentas que você usa para configurar, armazenar, manter e preservar dados no storage array. Os componentes lógicos de um storage array são descritos nesta tabela.

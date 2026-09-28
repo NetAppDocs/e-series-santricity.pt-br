@@ -40,6 +40,7 @@ O processo para criar um par espelhado assíncrono é um procedimento de várias
 
 
 
+[[step-1-create-or-select-a-mirror-consistency-group]]
 == Passo 1: Crie ou selecione um grupo de consistência de espelho
 
 Nesta etapa, você cria um novo grupo de consistência de espelho ou seleciona um existente. Um grupo de consistência de espelho é um contentor para os volumes primário e secundário (o par espelhado) e especifica o método de ressincronização desejado (manual ou automático) para todos os pares no grupo.
@@ -59,7 +60,7 @@ Para criar um novo grupo, faça o seguinte:
 
 +
 .. Selecione *Um novo grupo de consistência de espelho* e, em seguida, clique em *seguinte*.
-.. Insira um nome exclusivo que melhor descreva os dados nos volumes que serão espelhados entre os dois arrays de armazenamento. Um nome só pode consistir em letras, números e os carateres especiais sublinhado (_), traço (-) e sinal de hash ( no). Um nome não pode exceder 30 carateres e não pode conter espaços.
+.. Insira um nome exclusivo que melhor descreva os dados nos volumes que serão espelhados entre os dois arrays de storage. Um nome pode conter apenas letras, números e os caracteres especiais sublinhado (_), hífen (-) e cerquilha (#). Um nome não pode exceder 60 caracteres e não pode conter espaços.
 .. Selecione a matriz de armazenamento remoto na qual você deseja estabelecer uma relação de espelhamento com a matriz de armazenamento local.
 +
 [NOTE]
@@ -69,7 +70,7 @@ Se a matriz de armazenamento remota estiver protegida por palavra-passe, o siste
 ====
 .. Escolha se deseja sincronizar os pares espelhados manualmente ou automaticamente:
 +
-*** *Manual* -- Selecione essa opção para iniciar manualmente a sincronização de todos os pares espelhados nesse grupo. Observe que quando você deseja executar uma ressincronização mais tarde, você deve iniciar o System Manager para o storage array primário e, em seguida, ir para menu:armazenamento[Espelhamento assíncrono], selecione o grupo na guia *Espelhar grupos* e selecione menu:mais[manualmente ressincronizar].
+*** *Manual* -- Selecione esta opção para iniciar manualmente a sincronização de todos os pares espelhados dentro deste grupo. Observe que, quando você quiser realizar uma ressincronização posteriormente, será necessário iniciar o System Manager para o array de storage primário, acessar menu:Espelhamento[Grupos de consistência de espelhamento assíncrono], selecionar o grupo e, em seguida, selecionar menu:Mais[Ressincronizar manualmente].
 *** *Automático* -- Selecione o intervalo desejado em *minutos*, *horas* ou *dias*, desde o início da atualização anterior até o início da próxima atualização. Por exemplo, se o intervalo de sincronização for definido em 30 minutos e o processo de sincronização começar às 4:00 horas, o próximo processo será iniciado às 4:30 horas
 
 
@@ -95,6 +96,7 @@ Se o Unified Manager criar com êxito o grupo de consistência de espelho no sto
 
 
 
+[[step-2-select-the-primary-volume]]
 == Passo 2: Selecione o volume principal
 
 Nesta etapa, você seleciona o volume principal a ser usado na relação de espelhamento e aloca capacidade reservada. Quando você seleciona um volume primário no storage array local, o sistema exibe uma lista de todos os volumes elegíveis para esse par espelhado. Quaisquer volumes que não sejam elegíveis para serem usados não são exibidos nessa lista.
@@ -123,6 +125,7 @@ Tenha em mente as seguintes diretrizes:
 
 
 
+[[step-3-select-the-secondary-volume]]
 == Passo 3: Selecione o volume secundário
 
 Nesta etapa, você seleciona o volume secundário a ser usado na relação de espelhamento e aloca sua capacidade reservada. Quando você seleciona um volume secundário no storage array remoto, o sistema exibe uma lista de todos os volumes elegíveis para esse par espelhado. Quaisquer volumes que não sejam elegíveis para serem usados não são exibidos nessa lista.

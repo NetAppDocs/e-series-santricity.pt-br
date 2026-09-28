@@ -15,9 +15,8 @@ summary: Você pode alterar as configurações de um volume instantâneo para aj
 Você pode alterar as configurações de um volume instantâneo para ajustar o ponto percentual no qual o sistema envia uma notificação de alerta quando a capacidade reservada para um volume instantâneo estiver quase cheia.
 
 .Passos
-. No painel esquerdo, selecione menu:Storage[Pools and volume groups].
-. Clique na guia *capacidade reservada*.
-. Selecione o volume de snapshot que você deseja editar e, em seguida, clique no menu:ellipsis icon[Edit Settings].
+. No painel esquerdo, selecione menu:Storage [Capacidade reservada].
+. Selecione o volume de Snapshot que você deseja editar e clique no menu:ícone de reticências[Editar configurações].
 +
 A janela Editar configurações de capacidade reservada do volume de Snapshot é exibida.
 

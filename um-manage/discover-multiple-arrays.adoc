@@ -17,7 +17,7 @@ Você descobre várias matrizes para detetar todas as matrizes de armazenamento 
 .Antes de começar
 * Você deve estar conetado com um perfil de usuário que inclua permissões de Administrador de Segurança.
 * A matriz de armazenamento deve ser corretamente configurada e configurada.
-* As senhas do array de storage devem ser configuradas usando a página Gerenciamento de Acesso do System Manager.
+* As senhas do array de storage devem ser configuradas usando a categoria Authentication do System Manager.
 * Para resolver certificados não confiáveis, você deve ter arquivos de certificado confiáveis de uma autoridade de certificação (CA) e os arquivos de certificado estão disponíveis no sistema local.
 
 
@@ -25,6 +25,7 @@ Descobrir arrays é um procedimento de várias etapas.
 
 
 
+[[step-1-enter-network-address]]
 == Etapa 1: Insira o endereço de rede
 
 Introduza um intervalo de endereços de rede para pesquisar na sub-rede local. Qualquer matriz de armazenamento alcançada com sucesso aparece na página descobrir e pode ser adicionada ao seu domínio de gerenciamento.
@@ -57,6 +58,7 @@ O Unified Manager executa uma verificação de credenciais em cada array que voc
 
 
 
+[[step-2-resolve-self-signed-certificates-during-discovery]]
 == Etapa 2: Resolva certificados autoassinados durante a descoberta
 
 Como parte do processo de descoberta, o sistema verifica se os storages de armazenamento estão usando certificados por uma fonte confiável.
@@ -73,6 +75,7 @@ Como parte do processo de descoberta, o sistema verifica se os storages de armaz
 
 
 
+[[step-3-resolve-untrusted-certificates-during-discovery]]
 == Etapa 3: Resolva certificados não confiáveis durante a descoberta
 
 Certificados não confiáveis ocorrem quando um storage array tenta estabelecer uma conexão segura com o Unified Manager, mas a conexão não consegue confirmar como segura. Durante o processo de descoberta de matriz, você pode resolver certificados não confiáveis importando um certificado de autoridade de certificação (CA) (ou certificado assinado pela CA) emitido por um terceiro confiável.
@@ -109,6 +112,7 @@ Qualquer storage array com problemas de certificado não confiáveis que não se
 
 
 
+[[step-4-provide-passwords]]
 == Passo 4: Forneça senhas
 
 Você deve inserir as senhas dos storages de armazenamento que deseja adicionar ao seu domínio de gerenciamento.

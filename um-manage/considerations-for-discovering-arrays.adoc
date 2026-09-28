@@ -15,12 +15,14 @@ Antes que o SANtricity Unified Manager possa exibir e gerenciar recursos de stor
 
 
 
+[[discovering-multiple-storage-arrays]]
 == Descobrindo vários storages de armazenamento
 
 Se você optar por descobrir vários arrays, insira um intervalo de endereços IP de rede e, em seguida, o Unified Manager tentará conexões individuais para cada endereço IP nesse intervalo. Qualquer matriz de armazenamento alcançada com sucesso aparece na página descobrir e pode ser adicionada ao seu domínio de gerenciamento.
 
 
 
+[[discovering-a-single-storage-array]]
 == Descobrindo um único storage array
 
 Se você optar por descobrir um único array, insira o endereço IP único de um dos controladores no storage array e, em seguida, o storage array individual será adicionado.
@@ -32,12 +34,14 @@ O Unified Manager deteta e exibe apenas o único endereço IP ou endereço IP de
 ====
 
 
+[[user-credentials]]
 == Credenciais do usuário
 
 Como parte do processo de descoberta, você deve fornecer a senha de administrador para cada storage que deseja adicionar.
 
 
 
+[[web-services-certificates]]
 == Certificados de serviços da Web
 
 Como parte do processo de descoberta, o Unified Manager verifica se os storage arrays descobertos estão usando certificados de uma fonte confiável. O Unified Manager usa dois tipos de autenticação baseada em certificado para todas as conexões que estabelece com o navegador:

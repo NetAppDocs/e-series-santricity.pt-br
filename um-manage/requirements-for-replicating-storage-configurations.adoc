@@ -15,6 +15,7 @@ Antes de importar uma configuração de armazenamento de um storage array para o
 
 
 
+[[shelves]]
 == Compartimentos
 
 * Os compartimentos em que os controladores residem devem ser idênticos nos arrays de origem e destino.
@@ -24,9 +25,10 @@ Antes de importar uma configuração de armazenamento de um storage array para o
 
 
 
+[[controllers]]
 == Controladores
 
-* O tipo de controlador pode ser diferente entre os arrays de origem e destino (por exemplo, importando de um E2800 para um E5700), mas o tipo de gabinete RBOD deve ser idêntico.
+* O tipo de controlador pode ser diferente entre os arrays de origem e destino (por exemplo, importar de um EF300 para um EF80), mas o tipo de gabinete RBOD deve ser idêntico.
 * As HICs, incluindo os recursos DA DO host, devem ser idênticas entre os arrays de origem e destino.
 * A importação de uma configuração duplex para simplex não é suportada; no entanto, a importação de simplex para duplex é permitida.
 * As definições FDE não estão incluídas no processo de importação.
@@ -34,6 +36,7 @@ Antes de importar uma configuração de armazenamento de um storage array para o
 
 
 
+[[status]]
 == Estado
 
 * Os arrays de destino devem estar no status ideal.
@@ -42,6 +45,7 @@ Antes de importar uma configuração de armazenamento de um storage array para o
 
 
 
+[[storage]]
 == Armazenamento
 
 * A capacidade da unidade pode variar entre os arrays de origem e destino, desde que a capacidade de volume no destino seja maior do que a origem. (Um array de destino pode ter unidades de capacidade mais novas e maiores que não seriam totalmente configuradas em volumes pela operação de replicação.)

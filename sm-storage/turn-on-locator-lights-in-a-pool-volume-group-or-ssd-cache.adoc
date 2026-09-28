@@ -16,7 +16,7 @@ Você pode localizar unidades para identificar fisicamente todas as unidades que
 
 .Passos
 . No painel esquerdo, selecione menu:Storage[Pools and volume groups].
-. Selecione o pool, grupo de volume ou SSD Cache que deseja localizar e clique no menu:ícone de reticências[Ligar luzes de localização].
+. Localize o pool, grupo de volume ou SSD Cache que você deseja localizar e clique no menu:ícone de reticências[Ativar luzes de localização].
 +
 É exibida uma caixa de diálogo que indica que as luzes nas unidades que compõem o pool selecionado, o grupo de volume ou o cache SSD estão ativados.
 

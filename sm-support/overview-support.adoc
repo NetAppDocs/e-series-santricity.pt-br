@@ -16,6 +16,7 @@ A página de suporte fornece acesso a recursos de suporte técnico.
 
 
 
+[[what-support-tasks-are-available]]
 == Quais tarefas de suporte estão disponíveis?
 
 No suporte, você pode visualizar Contatos de suporte técnico, executar diagnósticos, configurar o AutoSupport, exibir o log de eventos e executar atualizações de software.
@@ -24,11 +25,12 @@ Saiba mais:
 
 * link:autosupport-feature-overview.html["Visão geral do recurso AutoSupport"]
 * link:overview-event-log.html["Visão geral do log de eventos"]
-* link:overview-upgrade-center.html["Visão geral do Centro de atualizações"]
+* link:overview-upgrade-center.html["Visão geral do Upgrade Center"]
 
 
 
 
+[[how-do-i-contact-technical-support]]
 == Como posso entrar em Contato com o suporte técnico?
 
-Na página principal, clique no menu:suporte[Centro de suporte > separador recursos de suporte]. As informações de Contato do suporte técnico estão listadas no canto superior direito da interface.
+Na página principal, clique em menu:Suporte[Recursos de suporte]. As informações de contato do suporte técnico estão listadas no canto superior direito da interface.

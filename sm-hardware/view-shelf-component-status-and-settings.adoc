@@ -23,9 +23,9 @@ Os componentes disponíveis dependem do tipo de prateleira:
 
 .Passos
 . No painel esquerdo, selecione *Hardware*.
-. Selecione a lista suspensa para o compartimento do controlador ou compartimento de unidade e selecione *Exibir configurações*.
+. Selecione a lista suspensa para o Controller Shelf ou Drive Shelf e, em seguida, selecione *Exibir configurações*.
 +
-A caixa de diálogo Configurações de componentes do compartimento é aberta, com guias que mostram o status e as configurações relacionadas aos componentes do compartimento. Dependendo do tipo de prateleira selecionado, algumas guias descritas na tabela podem não aparecer.
+O painel de configurações da prateleira é aberto, com seções que mostram o status e as configurações relacionadas aos componentes da prateleira. Dependendo do tipo de prateleira selecionado, algumas seções descritas na tabela podem não aparecer.
 
 +
 [cols="25h,~"]

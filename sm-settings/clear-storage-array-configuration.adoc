@@ -98,8 +98,8 @@ X
 
 ====
 .Passos
-. No painel esquerdo, selecione menu:Settings[System].
-. Em *Geral*, selecione *Limpar configuração do storage array*.
+. No painel esquerdo, selecione *System*.
+. Em *Geral*, selecione *Limpar configuração do array de storage*.
 . Na lista suspensa, selecione *volume* ou *Storage Array*.
 . *Opcional:* se você quiser salvar a configuração (não os dados), use os links na caixa de diálogo.
 . Confirme se pretende efetuar a operação.

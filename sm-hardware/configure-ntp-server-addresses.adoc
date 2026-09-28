@@ -32,22 +32,18 @@ Você não precisa configurar o NTP em ambos os controladores; no entanto, isso 
 
 ====
 .Passos
-. No painel esquerdo, selecione *Hardware*.
-. Se o gráfico mostrar as unidades, clique na guia *Controllers & Components* (Controladores e componentes).
-+
-O gráfico muda para mostrar os controladores em vez das unidades.
-
+. No painel esquerdo, selecione menu:Hardware[Controllers and components].
 . Clique no controlador que pretende configurar.
 +
 É apresentado o menu de contexto do controlador.
 
 . Selecione *Configurar servidor NTP*.
 +
-A caixa de diálogo Configurar servidor NTP (Network Time Protocol) é aberta.
+A página Configurar servidor de protocolo de tempo de rede (NTP) é aberta.
 
-. Selecione *quero ativar o NTP no controlador* (*A* ou *B*).
+. Selecione a caixa de seleção *Enable NTP*.
 +
-Seleções adicionais aparecem na caixa de diálogo.
+Outras opções aparecem na página.
 
 . Selecione uma das seguintes opções:
 +
@@ -66,4 +62,4 @@ Se o storage array estiver definido para usar um endereço NTP estático, nenhum
 
 
 .Resultados
-A configuração do servidor NTP é exibida nas configurações do controlador, guia *DNS / NTP*.
+A configuração do servidor NTP é exibida nas configurações do controlador, na seção *Configurações do servidor de protocolo de tempo de rede (NTP)*.

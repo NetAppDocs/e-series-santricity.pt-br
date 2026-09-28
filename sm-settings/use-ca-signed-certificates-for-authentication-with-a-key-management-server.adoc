@@ -22,6 +22,7 @@ A autenticação entre os controladores e um servidor de gerenciamento de chaves
 
 
 
+[[step-1-complete-and-submit-csr-for-authentication-with-a-key-management-server]]
 == Etapa 1: Conclua e envie CSR para autenticação com um servidor de gerenciamento de chaves
 
 Primeiro, você deve gerar um arquivo de solicitação de assinatura de certificado (CSR) e usar o CSR para solicitar um certificado de cliente assinado de uma autoridade de certificação (CA) confiável pelo servidor de gerenciamento de chaves. Você também pode criar e baixar um certificado de cliente a partir do servidor de gerenciamento de chaves usando o arquivo CSR baixado. Um certificado de cliente valida os controladores do storage array, para que o servidor de gerenciamento de chaves possa confiar em suas solicitações KMIP (Key Management Interoperability Protocol).
@@ -30,8 +31,7 @@ Primeiro, você deve gerar um arquivo de solicitação de assinatura de certific
 NOTE: Os arquivos CSR gerados externamente por meio de pares de chaves privadas e públicas podem ser importados através da caixa de diálogo criar chave de segurança externa. Para obter mais informações sobre como importar um arquivo CSR gerado externamente, https://docs.netapp.com/us-en/e-series-santricity/sm-settings/use-ca-signed-certificates-for-authentication-with-a-key-management-server.html#step-2-import-certificates-for-the-key-management-server["Etapa 2: Importar certificados para o servidor de gerenciamento de chaves"] consulte .
 
 .Passos
-. No painel esquerdo, selecione menu:Settings[Certificates].
-. Na guia Gerenciamento de chaves, selecione *Complete CSR*.
+. No painel esquerdo, selecione menu:Certificates[Key management certificates] e, em seguida, selecione *Complete CSR*.
 . Introduza as seguintes informações:
 +
 ** * Nome comum* -- Um nome que identifica o cliente. É prática comum combinar o que está no nome comum com os requisitos do servidor KMS para convenções de nomenclatura de certificados de cliente. O nome comum geralmente ajuda o KMS a identificar o certificado do cliente quando ele é apresentado durante um handshake.
@@ -56,6 +56,7 @@ NOTE: É comum que o servidor de gerenciamento de chaves tenha um recurso que ge
 
 
 
+[[step-2-import-certificates-for-the-key-management-server]]
 == Etapa 2: Importar certificados para o servidor de gerenciamento de chaves
 
 Como próxima etapa, você importa certificados para autenticação entre o storage array e o servidor de gerenciamento de chaves. Existem dois tipos de certificados: O certificado do cliente valida os controladores da matriz de armazenamento, enquanto o certificado do servidor de gestão de chaves valida o servidor. Você deve carregar o arquivo de certificado do cliente para os controladores e o arquivo de certificado do servidor para o servidor de gerenciamento de chaves.
@@ -72,8 +73,7 @@ Para obter mais informações sobre o certificado do servidor, consulte a docume
 
 
 .Passos
-. No painel esquerdo, selecione menu:Settings[Certificates].
-. Na guia Gerenciamento de chaves, selecione *Importar*.
+. No painel esquerdo, selecione menu:Certificates[Key management certificates] e, em seguida, selecione *Importar*.
 +
 Abre-se uma caixa de diálogo para importar os ficheiros de certificado.
 

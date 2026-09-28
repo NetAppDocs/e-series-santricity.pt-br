@@ -15,6 +15,7 @@ Os volumes utilizados para importações devem satisfazer os requisitos de taman
 
 
 
+[[remote-storage-volume]]
 == Volume de armazenamento remoto
 
 O volume de origem de uma importação é chamado de "volume de armazenamento remoto". Este volume deve satisfazer os seguintes critérios:
@@ -41,6 +42,7 @@ Cada volume de armazenamento remoto está associado a apenas um objeto de armaze
 
 
 
+[[target-volume-candidates]]
 == Candidatos ao volume-alvo
 
 O volume de destino é o volume de destino no sistema e-Series local. O volume de destino deve satisfazer os seguintes critérios:

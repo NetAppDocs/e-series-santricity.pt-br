@@ -17,9 +17,8 @@ Pode alterar as definições de um grupo de instantâneos para alterar o seu nom
 Durante a criação de um grupo de instantâneos, a capacidade reservada é criada para armazenar os dados de todas as imagens instantâneas contidas no grupo.
 
 .Passos
-. No painel esquerdo, selecione menu:Storage[Pools and volume groups].
-. Clique na guia *capacidade reservada*.
-. Selecione o grupo de snapshot que você deseja editar e, em seguida, clique no menu:ícone de reticências[Editar configurações].
+. No painel esquerdo, selecione menu:Storage [Capacidade reservada].
+. Selecione o grupo de Snapshot que você deseja editar e clique no menu:ícone de reticências[Editar configurações].
 +
 A janela Edit snapshot group settings é exibida.
 

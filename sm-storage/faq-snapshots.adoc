@@ -16,6 +16,7 @@ Este FAQ pode ajudar se você está apenas procurando uma resposta rápida para 
 
 
 
+[[why-dont-i-see-all-my-volumes-hosts-or-host-clusters]]
 == Por que não vejo todos os meus volumes, hosts ou clusters de hosts?
 
 Os volumes instantâneos com um volume base habilitado PARA DA não são elegíveis para serem atribuídos a um host que não seja capaz de Data Assurance (DA). Você deve desativar DA no volume base antes que um volume instantâneo possa ser atribuído a um host que não seja capaz de DA.
@@ -33,6 +34,7 @@ Não é possível desativar DA em um volume associado a snapshots (grupos de con
 ====
 
 
+[[what-is-a-snapshot-image]]
 == O que é uma imagem instantânea?
 
 Uma imagem instantânea é uma cópia lógica do conteúdo do volume, capturada em um determinado ponto no tempo. As imagens instantâneas usam espaço de armazenamento mínimo.
@@ -45,6 +47,7 @@ Os dados de imagem instantânea são armazenados da seguinte forma:
 
 
 
+[[why-use-snapshot-images]]
 == Por que usar imagens instantâneas?
 
 Você pode usar snapshots para proteger e permitir a recuperação de perda acidental ou maliciosa ou corrupção de dados.
@@ -61,12 +64,14 @@ O sistema retém várias imagens instantâneas como pontos de restauração que 
 
 
 
+[[what-kinds-of-volumes-can-be-used-for-snapshots]]
 == Que tipos de volumes podem ser usados para instantâneos?
 
 Volumes padrão e volumes finos são os únicos tipos de volumes que podem ser usados para armazenar imagens instantâneas. Não é possível utilizar volumes não standard. O volume base pode residir em um pool ou grupo de volumes.
 
 
 
+[[why-would-i-create-a-snapshot-consistency-group]]
 == Por que eu criaria um grupo de consistência de snapshot?
 
 Você cria um grupo de consistência de instantâneos quando deseja garantir que as imagens instantâneas sejam tiradas em vários volumes ao mesmo tempo.
@@ -85,6 +90,7 @@ Você pode executar as seguintes operações de snapshot em um grupo de consist�
 
 
 
+[[what-is-a-snapshot-volume-and-when-does-it-need-reserved-capacity]]
 == O que é um volume snapshot e quando ele precisa de capacidade reservada?
 
 Um volume instantâneo permite que o host acesse dados na imagem instantânea. O volume instantâneo contém a sua própria capacidade reservada, que guarda quaisquer modificações no volume base sem afetar a imagem instantânea original. As imagens instantâneas não são acessíveis para leitura ou gravação para os hosts. Se você quiser ler ou gravar dados de snapshot, crie um volume de snapshot e atribua-o a um host.
@@ -97,6 +103,7 @@ Você pode criar dois tipos de volumes de snapshot. O tipo de volume instantâne
 
 
 
+[[what-is-a-snapshot-group]]
 == O que é um grupo de instantâneos?
 
 Um grupo de instantâneos é uma coleção de imagens instantâneas pontuais de um único volume base associado.
@@ -109,6 +116,7 @@ O System Manager organiza imagens instantâneas em _grupos de instantâneos_. Os
 
 
 
+[[why-would-i-disable-a-snapshot-volume]]
 == Por que eu desabilitaria um volume de snapshot?
 
 Desativa um volume instantâneo quando pretende atribuir um volume instantâneo diferente à imagem instantânea. Pode reservar o volume instantâneo desativado para utilização posterior.
@@ -117,6 +125,7 @@ Se você não precisar mais do volume instantâneo ou do volume instantâneo do 
 
 
 
+[[what-is-the-disabled-state]]
 == Qual é o estado Desativado?
 
 Um volume instantâneo no estado Disabled (Desativado) não está atualmente atribuído a uma imagem instantânea. Para ativar o volume instantâneo, tem de utilizar a operação de recriação para atribuir uma nova imagem instantânea ao volume instantâneo desativado.
@@ -125,6 +134,7 @@ As caraterísticas do volume instantâneo são definidas pela imagem instantâne
 
 
 
+[[why-would-i-suspend-a-snapshot-schedule]]
 == Por que eu suspenderia uma programação de instantâneos?
 
 Quando um agendamento é suspenso, as criações de imagem instantânea programadas não ocorrem. Você pode pausar uma programação de snapshot para economizar espaço de armazenamento e, em seguida, retomar os snapshots programados posteriormente.

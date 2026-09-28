@@ -20,8 +20,7 @@ Pode guardar um certificado para um servidor de gestão de chaves na sua máquin
 
 
 .Passos
-. No painel esquerdo, selecione menu:Settings[Certificates].
-. Selecione a guia *Key Management*.
+. No painel esquerdo, selecione menu:Certificates[Key management certificates].
 . Na tabela, selecione o certificado que deseja exportar e clique em *Exportar*.
 +
 Abre-se uma caixa de diálogo Guardar.

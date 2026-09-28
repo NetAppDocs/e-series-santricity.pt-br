@@ -56,4 +56,4 @@ O System Manager executa as seguintes ações:
 * Limpa os índices de bloco, o que faz com que os blocos não escritos sejam lidos como se fossem preenchidos com zero (o volume parece estar completamente vazio).
 
 
-Selecione menu:Storage[Operations in Progress] para visualizar o progresso da operação de inicialização que está sendo executada para o volume selecionado. Essa operação pode ser demorada e pode afetar o desempenho do sistema.
+Selecione o menu: Monitoring [Operations in progress] para visualizar o progresso da operação de inicialização que está sendo executada para o volume selecionado. Essa operação pode ser demorada e pode afetar o desempenho do sistema.

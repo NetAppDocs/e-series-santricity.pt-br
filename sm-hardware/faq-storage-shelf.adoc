@@ -16,12 +16,14 @@ Este FAQ pode ajudar se você está apenas procurando uma resposta rápida para 
 
 
 
+[[what-is-shelf-loss-protection-and-drawer-loss-protection]]
 == O que é proteção contra perda de prateleira e proteção contra perda de gaveta?
 
 A proteção contra perda de gaveta e a proteção contra perda de gaveta são atributos de pools e grupos de volumes que permitem manter o acesso aos dados em caso de falha de gaveta ou gaveta única.
 
 
 
+[[shelf-loss-protection]]
 === Proteção contra perda de prateleira
 
 Um compartimento é o compartimento que contém as unidades ou as unidades e a controladora. A proteção contra perda de gaveta garante a acessibilidade aos dados nos volumes em um pool ou grupo de volumes se houver perda total de comunicação com um único compartimento de unidade. Um exemplo de perda total de comunicação pode ser perda de energia para o compartimento de unidades ou falha de ambos os módulos de e/S (IOMs).
@@ -84,6 +86,7 @@ Não aplicável
 |===
 
 
+[[drawer-loss-protection]]
 === Proteção contra perda de gaveta
 
 Uma gaveta é um dos compartimentos de uma prateleira que você puxa para fora para acessar as unidades. Apenas as prateleiras de alta capacidade têm gavetas. A proteção contra perda de gaveta garante a acessibilidade aos dados nos volumes em um pool ou grupo de volumes se ocorrer uma perda total de comunicação com uma única gaveta. Um exemplo de perda total de comunicação pode ser perda de energia para a gaveta ou falha de um componente interno dentro da gaveta.
@@ -150,6 +153,7 @@ Não aplicável
 |===
 
 
+[[what-are-battery-learn-cycles]]
 == O que são ciclos de aprendizagem da bateria?
 
 Um ciclo de aprendizagem é um ciclo automático para calibrar o indicador inteligente da bateria.

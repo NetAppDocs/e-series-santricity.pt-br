@@ -18,8 +18,7 @@ Você pode suspender temporariamente a coleção programada de imagens instantâ
 O estado da programação de instantâneos permanece suspenso até que você use a opção *Activate* para retomar a atividade de snapshot agendada.
 
 .Passos
-. No painel esquerdo, selecione menu:Storage[Snapshots].
-. Caso ainda não esteja visível, clique na guia *Agendamentos de Snapshot*.
+. No painel esquerdo, selecione menu:Snapshots[Snapshot schedules].
 +
 Os horários estão listados na página.
 

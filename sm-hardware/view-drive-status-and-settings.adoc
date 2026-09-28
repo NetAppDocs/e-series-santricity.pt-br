@@ -14,20 +14,16 @@ summary: Pode visualizar o estado e as definições das unidades, como o tipo de
 Pode visualizar o estado e as definições das unidades, como o tipo de material, o tipo de interface e a capacidade.
 
 .Passos
-. No painel esquerdo, selecione *Hardware*.
-. Se o gráfico mostrar os controladores, clique na guia *Drives*.
-+
-O gráfico muda para mostrar as unidades em vez dos controladores.
-
+. No painel esquerdo, selecione menu:Hardware[Drives].
 . Selecione a unidade para a qual pretende ver o estado e as definições.
 +
 O menu de contexto da unidade é aberto.
 
 . Selecione *Ver definições*.
 +
-A caixa de diálogo Configurações da unidade é aberta.
+O painel de configurações do Drive é aberto.
 
-. Para ver todas as configurações, clique em *Mostrar mais configurações* no canto superior direito da caixa de diálogo.
+. Para visualizar todas as configurações, role a tela pelo painel de configurações do Drive.
 +
 .Detalhes do campo
 [%collapsible]

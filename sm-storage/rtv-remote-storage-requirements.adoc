@@ -15,6 +15,7 @@ Antes de usar o recurso de armazenamento remoto, revise os seguintes requisitos 
 
 
 
+[[supported-protocols]]
 == Protocolos compatíveis
 
 São suportados os seguintes protocolos:
@@ -27,6 +28,7 @@ Para obter informações atualizadas sobre suporte e configuração do e-Series,
 
 
 
+[[hardware-requirements]]
 == Requisitos de hardware
 
 O sistema de storage e-Series deve incluir:
@@ -44,6 +46,7 @@ O sistema remoto pode ser um sistema de storage e-Series ou um sistema de outro 
 
 
 
+[[restrictions]]
 == Restrições
 
 O recurso de armazenamento remoto tem as seguintes restrições:

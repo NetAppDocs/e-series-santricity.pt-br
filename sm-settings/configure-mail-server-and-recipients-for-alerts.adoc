@@ -27,7 +27,7 @@ Para usar um nome de domínio totalmente qualificado, você deve configurar um s
 
 
 .Sobre esta tarefa
-Esta tarefa descreve como configurar o servidor de e-mail, inserir endereços de e-mail para o remetente e destinatários e testar todos os endereços de e-mail inseridos na página Alertas.
+Esta tarefa descreve como configurar o servidor de e-mail, inserir endereços de e-mail para o remetente e os destinatários e testar todos os endereços de e-mail inseridos na página de alertas de e-mail.
 
 [NOTE]
 ====
@@ -35,10 +35,9 @@ Os alertas de e-mail também podem ser configurados a partir do assistente de co
 
 ====
 .Passos
-. No painel esquerdo, selecione menu:Settings[Alerts].
-. Selecione a guia *Email*.
+. No painel esquerdo, selecione menu:Alerts[Alertas por e-mail].
 +
-Se um servidor de e-mail ainda não estiver configurado, a guia e-mail exibirá "Configurar servidor de e-mail".
+Se um servidor de e-mail ainda não estiver configurado, a página exibirá "Configurar servidor de e-mail".
 
 . Selecione *Configure Mail Server*.
 +
@@ -58,7 +57,7 @@ Para usar um nome de domínio totalmente qualificado, você deve configurar um s
 ** *Nome de usuário e senha* -- se necessário, insira um nome de usuário e senha para autenticação com o remetente de saída e o servidor de e-mail.
 ** *Inclua informações de Contato no e-mail* -- para incluir as informações de Contato do remetente com a mensagem de alerta, selecione esta opção e insira um nome e número de telefone.
 +
-Depois de clicar em *Salvar*, os endereços de e-mail aparecem na guia e-mail da página Alertas.
+Após clicar em *Salvar*, os endereços de e-mail aparecem na página de alertas por e-mail.
 
 
 
@@ -68,7 +67,7 @@ A caixa de diálogo Adicionar e-mails é aberta.
 
 . Insira um ou mais endereços de e-mail para os destinatários do alerta e clique em *Adicionar*.
 +
-Os endereços de e-mail aparecem na página Alertas.
+Os endereços de e-mail aparecem na página de alertas por e-mail.
 
 . Se você quiser garantir que os endereços de e-mail sejam válidos, clique em *testar todos os e-mails* para enviar mensagens de teste aos destinatários.
 

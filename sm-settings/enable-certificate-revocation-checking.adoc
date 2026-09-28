@@ -26,12 +26,11 @@ A verificação automática de revogação é útil nos casos em que a autoridad
 Durante essa tarefa, você pode configurar um servidor OCSP ou usar o servidor especificado no arquivo de certificado. O servidor OCSP determina se a CA revogou quaisquer certificados antes da data de expiração agendada e, em seguida, bloqueia o usuário de acessar um site se o certificado for revogado.
 
 .Passos
-. No painel esquerdo, selecione menu:Settings[Certificates].
-. Selecione a guia *Trusted*.
+. No painel esquerdo, selecione menu:Certificates[Trusted certificates].
 +
 [NOTE]
 ====
-Você também pode ativar a verificação de revogação na guia *Key Management*.
+Você também pode ativar a verificação de revogação na página *Key management certificates*.
 
 ====
 . Clique em *tarefas incomuns* e selecione *Ativar Verificação de revogação* no menu suspenso.

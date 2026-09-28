@@ -15,8 +15,7 @@ summary: Você pode adicionar até 256 usuários para SNMPv3 armadilhas.
 Você pode adicionar até 256 usuários para SNMPv3 armadilhas.
 
 .Passos
-. No painel esquerdo, selecione menu:Settings[Alerts].
-. Selecione a guia *SNMP*.
+. No painel esquerdo, selecione menu:Alerts[Alertas SNMP].
 +
 Os destinos e os nomes de utilizador da armadilha são apresentados na tabela.
 

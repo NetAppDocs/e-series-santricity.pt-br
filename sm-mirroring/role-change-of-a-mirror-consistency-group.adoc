@@ -24,6 +24,7 @@ Reveja as seguintes informações sobre a operação de mudança de função:
 
 
 
+[[force-role-change]]
 == Forçar mudança de função
 
 Você pode forçar uma mudança de função entre grupos de consistência de espelho quando um problema de comunicação entre o storage array local e o storage array remoto estiver impedindo a promoção dos volumes de membro dentro do grupo de consistência de espelho secundário ou a rebaixamento dos volumes de membro dentro do grupo de consistência de espelho primário.
@@ -32,6 +33,7 @@ Você pode forçar o grupo de consistência de espelho no lado secundário a faz
 
 
 
+[[when-is-a-forced-promotion-allowed-and-not-allowed]]
 == Quando é permitida uma promoção forçada e não é permitida?
 
 A promoção forçada de um grupo de consistência de espelho só é permitida se todos os volumes de membros do grupo de consistência de espelho tiverem sido sincronizados e tiverem pontos de recuperação consistentes.
@@ -46,6 +48,7 @@ A promoção forçada de um grupo de consistência de espelhos não é permitida
 
 
 
+[[mirror-group-role-conflict]]
 == Conflito de função do grupo de espelhos
 
 Quando um problema de comunicação entre as matrizes de armazenamento local e remoto foi resolvido, ocorre uma condição de conflito de função de Grupo de espelhos. Use o Recovery Guru para recuperar desse erro. Uma promoção forçada não é permitida ao resolver um conflito de dupla função.
@@ -54,6 +57,7 @@ Para evitar a condição de conflito de função do Grupo de espelhos e as etapa
 
 
 
+[[role-change-in-progress-state]]
 == Mudança de função no estado em andamento
 
 Se dois storage arrays em uma configuração de espelhamento forem desconetados e o lado primário de um grupo de consistência de espelho for forçado a uma função secundária, e o lado secundário de um grupo de consistência de espelho for promovido a uma função primária, então, quando a comunicação for restaurada, os grupos de consistência de espelho em ambos os storage arrays serão colocados no estado de mudança de função em andamento.

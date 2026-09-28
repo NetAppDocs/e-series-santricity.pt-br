@@ -18,7 +18,7 @@ Você pode atribuir um hot spare como uma unidade de reserva para proteção de 
 * Uma unidade que atenda aos seguintes critérios deve estar disponível:
 +
 ** Não atribuído, com o estado ideal.
-** Mesmo tipo de Mídia que as unidades no grupo de volumes (por exemplo, SSDs).
+** O mesmo tipo de mídia e tipo de unidade das unidades no grupo de volume (por exemplo, SSDs). Nos sistemas EF80 e EF50, os hot spares também devem corresponder ao tipo de unidade de capacidade.
 ** Mesmo tipo de interface que as unidades no grupo de volumes (por exemplo, SAS).
 ** Capacidade igual ou superior à capacidade utilizada das unidades no grupo de volumes.
 
@@ -34,11 +34,7 @@ Os hot spares também podem ser atribuídos a partir do assistente de configura�
 
 ====
 .Passos
-. No painel esquerdo, selecione *Hardware*.
-. Se o gráfico mostrar os controladores, clique na guia *Drives*.
-+
-O gráfico muda para mostrar as unidades em vez dos controladores.
-
+. No painel esquerdo, selecione menu:Hardware[Drives].
 . Selecione uma unidade não atribuída (mostrada em cinza) que você deseja usar como hot spare.
 +
 O menu de contexto da unidade é aberto.
@@ -64,6 +60,7 @@ A unidade é exibida em rosa na página hardware, o que indica que agora é um h
 
 
 
+[[results]]
 == Resultados
 
 Se uma unidade dentro de um grupo de volumes RAID 1, RAID 5 ou RAID 6 falhar, a controladora usará automaticamente dados de redundância para reconstruir os dados da unidade com falha para o hot spare.

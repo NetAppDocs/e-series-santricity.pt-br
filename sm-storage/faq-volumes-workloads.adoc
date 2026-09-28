@@ -16,6 +16,7 @@ Este FAQ pode ajudar se você está apenas procurando uma resposta rápida para 
 
 
 
+[[what-is-a-volume]]
 == O que é um volume?
 
 Um volume é um contêiner no qual aplicativos, bancos de dados e sistemas de arquivos armazenam dados. É o componente lógico criado para que o host acesse o storage no storage array.
@@ -24,6 +25,7 @@ Um volume é criado a partir da capacidade disponível em um pool ou em um grupo
 
 
 
+[[why-am-i-seeing-a-capacity-over-allocation-error-when-i-have-enough-free-capacity-in-a-volume-group-to-create-volumes]]
 == Por que estou vendo um erro de superalocação de capacidade quando tenho capacidade livre suficiente em um grupo de volumes para criar volumes?
 
 O grupo de volume selecionado pode ter uma ou mais áreas de capacidade livre. Uma área de capacidade livre é a capacidade livre que pode resultar da exclusão de um volume ou da não utilização de toda a capacidade livre disponível durante a criação do volume.
@@ -34,7 +36,7 @@ Se um grupo de volume tiver áreas de capacidade livre, o gráfico de grupo de v
 
 Ao consolidar a capacidade gratuita, você pode criar volumes adicionais a partir da quantidade máxima de capacidade livre em um grupo de volumes. Você pode consolidar a capacidade livre existente em um grupo de volumes selecionado usando um dos seguintes métodos:
 
-* Quando é detetada pelo menos uma área de capacidade livre para um grupo de volumes, a recomendação "consolidar capacidade livre" aparece na página inicial na área de notificação. Clique no link *consolidar capacidade livre* para iniciar a caixa de diálogo.
+* Quando pelo menos uma área de capacidade livre é detectada para um grupo de volume, a recomendação "Consolidar capacidade livre" aparece na área de Notificações, acessível pelo ícone de sino no canto superior da janela. Clique no link *Consolidar capacidade livre* para abrir a caixa de diálogo.
 * Você também pode acessar menu:Storage[Pools and volume groups] no painel esquerdo e, em seguida, selecionar o menu:ellipsis icon[Consolidate volume group free capacity] para abrir a caixa de diálogo.
 
 
@@ -42,18 +44,21 @@ Se você quiser usar uma área de capacidade livre específica em vez da maior �
 
 
 
+[[why-arent-these-volumes-associated-with-a-workload]]
 == Por que esses volumes não estão associados a uma carga de trabalho?
 
 Os volumes não são associados a uma carga de trabalho se tiverem sido criados usando a interface de linha de comando (CLI) ou se tiverem sido migrados (importados/exportados) de um storage array diferente.
 
 
 
+[[why-cant-i-delete-the-selected-workload]]
 == Por que não consigo excluir a carga de trabalho selecionada?
 
 Essa carga de trabalho consiste em um grupo de volumes que foram criados usando a interface de linha de comando (CLI) ou migrados (importados/exportados) de um storage array diferente. Como resultado, os volumes dessa carga de trabalho não são associados a uma carga de trabalho específica da aplicação, portanto, a carga de trabalho não pode ser excluída.
 
 
 
+[[how-do-application-specific-workloads-help-me-manage-my-storage-array]]
 == Como os workloads específicos da aplicação me ajudam a gerenciar meu storage array?
 
 As características de volume do workload específico do aplicativo determinam como a carga de trabalho interage com os componentes do storage array e ajudam a determinar a performance do ambiente em uma determinada configuração.
@@ -62,6 +67,7 @@ Um aplicativo é um software como o SQL Server ou o Exchange. Você define um ou
 
 
 
+[[what-do-i-need-to-do-to-recognize-the-expanded-capacity]]
 == O que eu preciso fazer para reconhecer a capacidade expandida?
 
 Se você aumentar a capacidade de um volume, o host pode não reconhecer imediatamente o aumento da capacidade do volume.
@@ -74,6 +80,7 @@ Consulte a documentação do sistema operacional do host para obter detalhes adi
 
 
 
+[[why-dont-i-see-all-my-pools-andor-volume-groups]]
 == Por que não vejo todos os meus pools e/ou grupos de volumes?
 
 Qualquer pool ou grupo de volume para o qual você não pode mover o volume não é exibido na lista.
@@ -87,6 +94,7 @@ Pools ou grupos de volumes não são elegíveis por nenhum dos seguintes motivos
 
 
 
+[[what-is-segment-size]]
 == O que é o tamanho do segmento?
 
 Um segmento é a quantidade de dados em kilobytes (KiB) que é armazenada em uma unidade antes que a matriz de armazenamento se mova para a próxima unidade na faixa (grupo RAID). O tamanho do segmento aplica-se apenas a grupos de volume, não a pools.
@@ -97,18 +105,21 @@ Se um aplicativo usa pequenas leituras e gravações aleatórias ou grandes leit
 
 
 
+[[environments-where-iops-performance-is-important]]
 === Ambientes em que a performance do IOPS é importante
 
 Em um ambiente de operações de e/S por segundo (IOPS), o storage array tem melhor desempenho se você usar um tamanho de segmento maior do que o tamanho típico do bloco de dados (" chunk'") que é lido/escrito em uma unidade. Isso garante que cada bloco seja escrito em uma única unidade.
 
 
 
+[[environments-where-throughput-is-important]]
 === Ambientes onde a taxa de transferência é importante
 
 Em um ambiente de taxa de transferência, o tamanho do segmento deve ser uma fração uniforme do total de unidades de dados e o tamanho típico de bloco de dados (tamanho de e/S). Isso espalha os dados como um único stripe entre as unidades do grupo de volumes, levando a leituras e gravações mais rápidas.
 
 
 
+[[what-is-preferred-controller-ownership]]
 == O que é a propriedade preferida do controlador?
 
 A propriedade preferencial do controlador define o controlador designado para ser o controlador proprietário ou principal do volume.
@@ -119,6 +130,7 @@ Por exemplo, se um controlador lê principalmente blocos de dados grandes e sequ
 
 
 
+[[when-would-i-want-to-use-the-assign-host-later-selection]]
 == Quando eu gostaria de usar a seleção atribuir host mais tarde?
 
 Se você quiser acelerar o processo de criação de volumes, você pode pular a etapa de atribuição do host para que os volumes recém-criados sejam inicializados offline.
@@ -131,6 +143,7 @@ Quando nenhum dos volumes de um grupo de volumes é mapeado, a inicialização o
 
 
 
+[[what-do-i-need-to-know-about-host-block-size-requirements]]
 == O que eu preciso saber sobre os requisitos de tamanho de bloco de host?
 
 Para sistemas EF300 e EF600, um volume pode ser definido para suportar um tamanho de bloco de 512 bytes ou 4KiB (também chamado de "tamanho do setor"). Você deve definir o valor correto durante a criação do volume. Se possível, o sistema sugere o valor padrão apropriado.

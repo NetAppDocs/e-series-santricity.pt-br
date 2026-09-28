@@ -16,6 +16,7 @@ Este FAQ pode ajudar se você está apenas procurando uma resposta rápida para 
 
 
 
+[[what-if-i-dont-see-all-of-my-hardware-components]]
 == E se eu não conseguir ver todos os meus componentes de hardware?
 
 Se você não vir todos os componentes de hardware na caixa de diálogo verificar hardware, isso pode significar que um compartimento de unidade não está conetado corretamente ou que um compartimento incompatível está instalado no storage de armazenamento.
@@ -24,6 +25,7 @@ Verifique se todos os compartimentos de unidades estão conetados corretamente. 
 
 
 
+[[what-if-i-dont-see-all-of-my-hosts]]
 == E se eu não vir todos os meus hosts?
 
 Se você não vir seus hosts conetados, a deteção automática falhou, os hosts estão conetados incorretamente ou nenhum host está conetado atualmente.
@@ -36,12 +38,14 @@ Você pode configurar os hosts mais tarde, uma vez que você terminar com a conf
 
 
 
+[[how-does-identifying-applications-help-me-manage-my-storage-array]]
 == Como a identificação de aplicativos me ajuda a gerenciar meu storage array?
 
 Você pode visualizar dados de desempenho por aplicativo e por carga de trabalho para avaliar a latência, IOPS e MiB/s dos aplicativos e suas respectivas cargas de trabalho para otimizar o desempenho. Características como tipo de E/S, tamanho do segmento, propriedade do controlador e cache de leitura e gravação estão incluídas na configuração do volume.
 
 
 
+[[what-is-a-workload]]
 == O que é uma carga de trabalho?
 
 Para alguns aplicativos em sua rede, como SQL Server ou Exchange, você pode definir uma carga de trabalho que otimiza o armazenamento para esse aplicativo.
@@ -52,14 +56,16 @@ Durante a criação de volume, o sistema solicita que você responda a perguntas
 
 
 
+[[how-do-i-configure-the-delivery-method-for-autosupport]]
 == Como faço para configurar o método de entrega para o AutoSupport?
 
-Para acessar as tarefas de configuração para os métodos de entrega do AutoSupport, vá para o menu:suporte[Centro de suporte] e clique na guia *AutoSupport*.
+Para acessar as tarefas de configuração dos métodos de entrega do AutoSupport, vá para menu:Suporte[AutoSupport].
 
 São suportados os seguintes protocolos: HTTPS e SMTP.
 
 
 
+[[how-do-i-know-if-i-should-accept-the-recommended-pool-configuration]]
 == Como sei se devo aceitar a configuração recomendada do pool?
 
 Se você aceitar a configuração de pool recomendada depende de alguns fatores.
@@ -75,6 +81,7 @@ Se você respondeu Sim a qualquer uma dessas perguntas, considere rejeitar a con
 
 
 
+[[santricity-system-manager-has-not-detected-any-hosts-what-do-i-do]]
 == O Gerenciador de sistema do SANtricity não detetou nenhum host. O que faço?
 
 Se você não vir seus hosts conetados, a deteção automática falhou, os hosts estão conetados incorretamente ou nenhum host está conetado atualmente.

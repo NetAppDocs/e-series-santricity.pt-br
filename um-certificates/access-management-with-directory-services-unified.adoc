@@ -15,6 +15,7 @@ Os administradores podem usar um servidor LDAP (Lightweight Directory Access Pro
 
 
 
+[[configuration-workflow]]
 == Fluxo de trabalho de configuração
 
 Se um servidor LDAP e um serviço de diretório são usados na rede, a configuração funciona da seguinte forma:
@@ -35,6 +36,7 @@ O `admin` utilizador tem acesso total a todas as funções do sistema.
 
 
 
+[[management]]
 == Gerenciamento
 
 Ao usar serviços de diretório para autenticação, os administradores podem executar as seguintes tarefas de gerenciamento:

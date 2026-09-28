@@ -23,18 +23,20 @@ O processo de alertas funciona da seguinte forma:
 ** *Syslog* -- as mensagens são enviadas para um servidor syslog.
 
 
-. Quando o monitor de eventos do storage deteta um problema, ele grava informações sobre esse problema no log de eventos (disponível no menu:suporte[Log de eventos]). Por exemplo, os problemas podem incluir eventos como uma falha de bateria, um componente que se move do Optimal para o Offline ou erros de redundância no controlador.
+. Quando o monitor de eventos do array de storage detecta um problema, ele registra informações sobre esse problema no log de eventos (disponível em menu:Monitoring[Event log]). Por exemplo, os problemas podem incluir eventos como falha de bateria, um componente passando de Optimal para Offline ou erros de redundância no controlador.
 . Se o monitor de eventos determinar que o evento é "alertable", ele então envia uma notificação usando os métodos de alerta configurados (e-mail, SNMP e/ou syslog). Todos os eventos críticos são considerados "alertable", juntamente com alguns eventos de aviso e informação.
 
 
 
 
+[[alerts-configuration]]
 == Configuração de alertas
 
-Você pode configurar alertas no assistente de Configuração Inicial (somente para alertas por e-mail) ou na página Alertas. Para acessar a página Alertas, vá para menu:Configurações[Alertas] no painel esquerdo.
+Você pode configurar alertas no assistente de Configuração Inicial (somente para alertas por e-mail) ou na página Alertas. Para acessar a página Alertas, vá para menu:Alertas[] no painel esquerdo.
 
 
 
+[[alerts-information]]
 == Informações de alertas
 
 Os alertas podem incluir os seguintes tipos de informações:

@@ -19,6 +19,7 @@ As operações de volume de cópia offline e online são descritas abaixo.
 
 
 
+[[offline-copy-volume-operation]]
 == Operação de volume de cópia offline
 
 A relação volume de cópia offline está entre um volume de origem e um volume de destino. Uma cópia off-line lê os dados do volume de origem e os copia para um volume de destino, enquanto suspende todas as atualizações para o volume de origem com a cópia em andamento. Todas as atualizações do volume de origem são suspensas para evitar que inconsistências cronológicas sejam criadas no volume de destino.
@@ -49,6 +50,7 @@ Sistema de arquivos journaling
 |===
 
 
+[[online-copy-volume-operation]]
 == Operação de volume de cópia online
 
 A relação de volume de cópia on-line é entre um volume instantâneo e um volume de destino. Você pode iniciar uma operação volume de cópia enquanto o volume de origem estiver on-line e disponível para gravações de dados. Esta função é obtida criando um instantâneo do volume e usando o instantâneo como o volume de origem real para a cópia.

@@ -22,6 +22,7 @@ O uso de certificados assinados pela CA é um procedimento de três etapas.
 
 
 
+[[step-1-complete-a-csr-file]]
 == Passo 1: Complete um arquivo CSR
 
 Primeiro, é necessário gerar um arquivo de solicitação de assinatura de certificado (CSR), que identifique sua organização e o sistema host onde o Proxy de Serviços Web e o Unified Manager estão instalados.
@@ -57,6 +58,7 @@ Como alternativa, você pode gerar um arquivo CSR usando uma ferramenta como Ope
 
 
 
+[[step-2-submit-csr-file]]
 == Passo 2: Envie o arquivo CSR
 
 Depois de criar um arquivo de solicitação de assinatura de certificado (CSR), você o enviará a uma Autoridade de Certificação (CA) para receber certificados de gerenciamento assinados para o sistema que hospeda o Unified Manager e o Proxy de Serviços da Web.
@@ -81,6 +83,7 @@ A localização da pasta do download depende do seu navegador.
 
 
 
+[[step-3-import-management-certificates]]
 == Passo 3: Importar certificados de gestão
 
 Depois de receber certificados assinados da Autoridade de Certificação (CA), importe os certificados para o sistema host onde a interface Web Services Proxy e Unified Manager estão instalados.

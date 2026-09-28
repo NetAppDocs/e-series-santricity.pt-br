@@ -21,12 +21,14 @@ Para gerenciar facilmente operações de snapshot de volumes base, você pode us
 
 
 
+[[snapshot-schedule]]
 == Agendamento do Snapshot
 
 Se você quiser tirar snapshots automaticamente para um volume base, você pode criar um agendamento. Por exemplo, você pode definir uma programação que tira imagens instantâneas todos os sábados à meia-noite, no primeiro de cada mês ou em quaisquer datas e horas que você decidir. Depois que o máximo de 32 instantâneos for alcançado para um único agendamento, você poderá suspender snapshots programados, criar mais capacidade reservada ou excluir snapshots. Os instantâneos podem ser excluídos manualmente ou automatizando o processo de exclusão. Depois de eliminar uma imagem instantânea, a capacidade reservada adicional está disponível para reutilização.
 
 
 
+[[snapshot-consistency-group]]
 == Grupo de consistência do Snapshot
 
 Você cria um grupo de consistência de instantâneos quando deseja garantir que as imagens instantâneas sejam tiradas em vários volumes ao mesmo tempo. As ações de imagem instantânea são executadas no grupo de consistência de instantâneos como um todo. Por exemplo, você pode agendar snapshots sincronizados de todos os volumes com o mesmo carimbo de data/hora. Os grupos de consistência de snapshot são ideais para aplicativos que abrangem vários volumes, como aplicativos de banco de dados que armazenam Registros em um volume e os arquivos de banco de dados em outro volume.

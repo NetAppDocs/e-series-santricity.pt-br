@@ -15,6 +15,7 @@ A criação de um host é uma das etapas necessárias para que o storage array s
 
 
 
+[[manual-creation]]
 == Criação manual
 
 A criação manual de host permite que você verifique se os identificadores de porta de host detetados pelos controladores de storage array estão associados corretamente aos hosts.

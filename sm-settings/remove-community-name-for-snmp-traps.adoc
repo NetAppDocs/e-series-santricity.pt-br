@@ -15,10 +15,9 @@ summary: Você pode remover um nome de comunidade para SNMPv2c armadilhas.
 Você pode remover um nome de comunidade para SNMPv2c armadilhas.
 
 .Passos
-. No painel esquerdo, selecione menu:Settings[Alerts].
-. Selecione a guia *SNMP*.
+. No painel esquerdo, selecione menu:Alerts[Alertas SNMP].
 +
-Os destinos da armadilha e os nomes da comunidade aparecem na página *Alertas*.
+Os destinos dos traps e os nomes das comunidades aparecem na página de *SNMP alerts*.
 
 . Selecione *Configurar Comunidades*.
 +
@@ -32,4 +31,4 @@ Se os destinos de intercetação estiverem associados a esse nome de comunidade,
 
 
 .Resultados
-O nome da comunidade e seu destino de armadilha associado são removidos da página Alertas.
+O nome da comunidade e o destino associado de trap foram removidos da página de alertas SNMP.

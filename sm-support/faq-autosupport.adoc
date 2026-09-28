@@ -16,6 +16,7 @@ Este FAQ pode ajudar se você está apenas procurando uma resposta rápida para 
 
 
 
+[[what-data-am-i-collecting]]
 == Que dados estou coletando?
 
 O recurso AutoSupport e o recurso manual de coleta de dados de suporte fornecem maneiras de coletar dados em um pacote de suporte ao cliente para solução remota de problemas e análise de problemas por suporte técnico.
@@ -24,6 +25,7 @@ O pacote de suporte ao cliente reúne todos os tipos de informações sobre a ma
 
 
 
+[[what-does-unreadable-sectors-data-show-me]]
 == O que os dados de setores ilegíveis me mostram?
 
 Você pode exibir dados detalhados sobre setores ilegíveis detetados nas unidades em seu storage array.
@@ -104,6 +106,7 @@ Mostra um dos seguintes tipos de falha:
 |===
 
 
+[[what-is-a-health-image]]
 == O que é uma imagem de saúde?
 
 Uma imagem de integridade é um despejo de dados brutos da memória do processador do controlador que o suporte técnico pode usar para diagnosticar um problema com um controlador.
@@ -112,6 +115,7 @@ O firmware gera automaticamente uma imagem de integridade quando deteta determin
 
 
 
+[[what-do-the-autosupport-features-do]]
 == O que fazem os recursos do AutoSupport?
 
 O recurso AutoSupport é composto por três recursos individuais que você ativa separadamente.
@@ -123,6 +127,7 @@ O recurso AutoSupport é composto por três recursos individuais que você ativa
 
 
 
+[[what-type-of-data-is-collected-through-the-autosupport-feature]]
 == Que tipo de dados são recolhidos através da funcionalidade AutoSupport?
 
 O recurso AutoSupport contém três tipos de despacho padrão: Despachos de eventos, despachos programados e despachos de diagnóstico remoto e sob demanda.
@@ -157,6 +162,7 @@ O recurso AutoSupport envia automaticamente vários despachos em um horário reg
 
 
 
+[[how-do-i-configure-the-delivery-method-for-the-autosupport-feature]]
 == Como configuro o método de entrega para o recurso AutoSupport?
 
 O recurso AutoSupport oferece suporte aos protocolos HTTPS e SMTP para entrega de despachos AutoSupport para suporte técnico.
@@ -179,7 +185,7 @@ Reveja os diferentes protocolos:
 
 ====
 .Passos
-. No painel esquerdo, selecione menu:Suporte [Central de Suporte > AutoSupport] guia.
+. No painel esquerdo, selecione menu:Support[AutoSupport].
 . Selecione *Configurar método de entrega AutoSupport*.
 +
 Uma caixa de diálogo é exibida, que lista os métodos de entrega de despacho.
@@ -213,6 +219,7 @@ Se o teste de configuração falhar, verifique as configurações e execute o te
 
 
 
+[[what-is-configuration-data]]
 == O que são dados de configuração?
 
 Quando você seleciona coletar dados de configuração, o sistema salva o estado atual do banco de dados de configuração RAID.
@@ -221,6 +228,7 @@ O banco de dados de configuração RAID inclui todos os dados para grupos de vol
 
 
 
+[[what-do-i-need-to-know-before-upgrading-the-santricity-os-software]]
 == O que eu preciso saber antes de atualizar o software SANtricity os?
 
 Antes de atualizar o software e o firmware do controlador, tenha em atenção estes itens.
@@ -268,6 +276,7 @@ CAUTION: Não faça alterações no storage array enquanto a atualização ocorr
 
 
 
+[[what-do-i-need-to-know-before-suspending-iom-auto-synchronization]]
 == O que eu preciso saber antes de suspender a sincronização automática IOM?
 
 A suspensão da sincronização automática IOM impede que o firmware IOM seja atualizado da próxima vez que ocorrer uma atualização do software da controladora SANtricity os.
@@ -276,6 +285,7 @@ Normalmente, o software da controladora e o firmware IOM são atualizados como u
 
 
 
+[[why-is-my-firmware-upgrade-progressing-so-slowly]]
 == Por que minha atualização de firmware está progredindo tão lentamente?
 
 O progresso da atualização do firmware depende da carga geral do sistema.
@@ -284,6 +294,7 @@ Durante uma atualização online do firmware da unidade, se ocorrer uma transfer
 
 
 
+[[what-do-i-need-to-know-before-upgrading-drive-firmware]]
 == O que eu preciso saber antes de atualizar o firmware da unidade?
 
 Antes de atualizar o firmware da sua unidade, esteja ciente desses itens.
@@ -298,6 +309,7 @@ Antes de atualizar o firmware da sua unidade, esteja ciente desses itens.
 
 
 
+[[how-do-i-choose-which-type-of-upgrade-to-perform]]
 == Como faço para escolher qual tipo de atualização deve ser executada?
 
 Você escolhe o tipo de atualização a ser executada na unidade, dependendo do estado do pool ou do grupo de volume.

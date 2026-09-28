@@ -21,8 +21,7 @@ Se você quiser arquivar logs de auditoria em um servidor syslog externo, você 
 
 
 .Passos
-. No painel esquerdo, selecione menu:Settings[Access Management].
-. Na guia Registro de auditoria, selecione *Configurar servidores Syslog*.
+. No painel esquerdo, selecione menu:Monitoring[Audit log] e, em seguida, selecione *Configure Syslog Servers*.
 +
 A caixa de diálogo Configurar servidores Syslog é aberta.
 
@@ -38,7 +37,7 @@ A caixa de diálogo Add Syslog Server (Adicionar servidor Syslog) é aberta.
 +
 [NOTE]
 ====
-Se o certificado se tornar inválido mais tarde, o handshake TLS falhará. Como resultado, uma mensagem de erro é postada no log de auditoria e as mensagens não são mais enviadas para o servidor syslog. Para resolver este problema, tem de corrigir o certificado no servidor syslog e, em seguida, aceder ao menu:Definições[Registo de auditoria > Configurar servidores Syslog > testar tudo].
+Se o certificado se tornar inválido posteriormente, o handshake TLS falhará. Como resultado, uma mensagem de erro será registrada no log de auditoria e as mensagens não serão mais enviadas para o servidor syslog. Para resolver esse problema, você deve corrigir o certificado no servidor syslog e, em seguida, acessar menu:Monitoramento[Log de auditoria > Configurar servidores syslog > Testar todos].
 
 ====
 ** *Port* -- Digite o número da porta para o recetor syslog. Depois de clicar em *Add*, a caixa de diálogo Configurar servidores Syslog abre e exibe o servidor syslog configurado na página.

@@ -15,6 +15,7 @@ Você pode usar o Gerenciador Unificado do SANtricity para importar configuraç�
 
 
 
+[[settings-available-for-import]]
 == Definições disponíveis para importação
 
 As configurações a seguir podem ser importadas para vários storages:
@@ -40,6 +41,7 @@ As configurações a seguir podem ser importadas para vários storages:
 
 
 
+[[configuration-workflow]]
 == Fluxo de trabalho de configuração
 
 Para importar configurações, siga este fluxo de trabalho:

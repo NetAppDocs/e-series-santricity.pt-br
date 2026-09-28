@@ -36,10 +36,9 @@ Se você não tiver o arquivo MIB, poderá obtê-lo no site de suporte da NetApp
 Esta tarefa descreve como identificar o servidor SNMP para destinos de intercetação e, em seguida, testar sua configuração.
 
 .Passos
-. No painel esquerdo, selecione menu:Settings[Alerts].
-. Selecione a guia *SNMP*.
+. No painel esquerdo, selecione menu:Alerts[Alertas SNMP].
 +
-Na primeira configuração, a guia SNMP exibe "Configurar Comunidades/usuários".
+Na configuração inicial, a página exibe "Configurar comunidades/usuários".
 
 . Selecione *Configurar Comunidades/usuários*.
 +
@@ -62,7 +61,7 @@ Dependendo da seleção, a caixa de diálogo Configurar Comunidades ou a caixa d
 
 
 
-. Na página Alertas com a guia SNMP selecionada, clique em *Adicionar destinos de armadilha*.
+. Clique em *Adicionar destinos de armadilha*.
 +
 A caixa de diálogo Adicionar destinos de armadilha é aberta.
 
@@ -70,7 +69,7 @@ A caixa de diálogo Adicionar destinos de armadilha é aberta.
 +
 ** *Trap Destination* -- Digite um endereço IPv4 ou IPv6 do servidor executando um serviço SNMP.
 ** *Nome da comunidade ou Nome do usuário* -- na lista suspensa, selecione o nome da comunidade (SNMPv2c) ou nome de usuário (SNMPv3) para esse destino de armadilha. (Se você definiu apenas um, o nome já aparece neste campo.)
-** *Send Authentication Failure Trap* -- Selecione essa opção (a caixa de seleção) se você quiser alertar o destino da armadilha sempre que uma solicitação SNMP for rejeitada por causa de um nome de comunidade ou nome de usuário não reconhecido. Depois de clicar em *Add*, os destinos de intercetação e os nomes associados aparecem na guia *SNMP* da página *Alerts*.
+** *Enviar Trap de Falha de Autenticação* -- selecione esta opção (a caixa de seleção) se você quiser alertar o destino do trap sempre que uma solicitação SNMP for rejeitada devido a um nome de comunidade ou nome de usuário não reconhecido. Depois de clicar em *Adicionar*, os destinos do trap e os nomes associados aparecem na página *Alertas SNMP*.
 
 
 . Para se certificar de que uma armadilha é válida, selecione um destino de armadilha na tabela e clique em *destino de armadilha de teste* para enviar uma armadilha de teste para o endereço configurado.

@@ -50,6 +50,7 @@ Volumes finos
 |===
 
 
+[[thin-volume-restrictions]]
 == Restrições de volume fino
 
 Os thin volumes suportam todas as operações como volumes espessos, com as seguintes exceções:

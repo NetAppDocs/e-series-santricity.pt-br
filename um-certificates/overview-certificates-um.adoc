@@ -15,6 +15,7 @@ O Gerenciamento de certificados permite criar solicitações de assinatura de ce
 
 
 
+[[what-are-certificates]]
 == O que são certificados?
 
 _Certificados_ são arquivos digitais que identificam entidades online, como sites e servidores, para comunicações seguras na internet. Existem dois tipos de certificados: Um certificado _assinado_ é validado por uma autoridade de certificação (CA) e um certificado _autoassinado_ é validado pelo proprietário da entidade em vez de um terceiro.
@@ -27,6 +28,7 @@ Saiba mais:
 
 
 
+[[how-do-i-configure-certificates]]
 == Como faço para configurar certificados?
 
 No Gerenciamento de certificados, você pode configurar certificados para a estação de gerenciamento que hospeda o Unified Manager e também importar certificados para os controladores nos arrays.

@@ -28,7 +28,7 @@ Depois de ativar a segurança, você só pode removê-la excluindo o pool ou gru
 
 .Passos
 . No painel esquerdo, selecione menu:Storage[Pools and volume groups].
-. Selecione o pool ou grupo de volume no qual deseja ativar a segurança e, em seguida, clique em menu:ellipsis icon[Enable security].
+. Localize o pool ou grupo de volume no qual você deseja ativar a segurança e clique em menu:ícone de reticências[Ativar segurança].
 +
 A caixa de diálogo confirmar ativação da segurança é exibida.
 

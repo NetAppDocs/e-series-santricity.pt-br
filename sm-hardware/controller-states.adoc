@@ -2,7 +2,7 @@
 permalink: sm-hardware/controller-states.html 
 sidebar: sidebar 
 keywords: SANtricity, System Manager, E-Series, controller, states, 
-summary: 'Você pode colocar um controlador em três estados diferentes: On-line, off-line e modo de serviço.' 
+summary: Você pode colocar um controlador em três estados diferentes. Online, offline e modo de serviço. 
 ---
 = Aprenda sobre estados do controlador no SANtricity System Manager
 :allow-uri-read: 
@@ -15,6 +15,7 @@ Você pode colocar um controlador em três estados diferentes: On-line, off-line
 
 
 
+[[online-state]]
 == Estado online
 
 O estado online é o estado de funcionamento normal do controlador. Isso significa que o controlador está operando normalmente e está disponível para operações de e/S.
@@ -23,6 +24,7 @@ Quando você coloca um controlador on-line, seu status é definido como ideal.
 
 
 
+[[offline-state]]
 == Estado offline
 
 O estado off-line é normalmente usado para preparar um controlador para substituição quando há dois controladores na matriz de armazenamento. Um controlador pode entrar no estado offline de duas maneiras: Você pode emitir um comando explícito ou o controlador pode falhar. Um controlador pode sair do estado offline apenas emitindo outro comando explícito ou substituindo o controlador com falha. Você pode colocar um controlador off-line apenas se houver dois controladores na matriz de armazenamento.
@@ -37,6 +39,7 @@ Quando um controlador está no estado offline, as seguintes condições são ver
 
 
 
+[[service-mode]]
 == Modo de assistência
 
 O modo de serviço geralmente é usado apenas pelo suporte técnico para mover todos os volumes de storage array para uma controladora, de modo que a outra controladora possa ser diagnosticada. Um controlador deve ser colocado manualmente no modo de serviço e deve ser colocado manualmente de volta on-line após a conclusão da operação de serviço.

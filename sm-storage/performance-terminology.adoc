@@ -104,7 +104,10 @@ Um volume é criado a partir da capacidade disponível em um pool ou em um grupo
  a| 
 Nome do volume
  a| 
-Um nome de volume é uma cadeia de carateres atribuída ao volume quando é criado. Você pode aceitar o nome padrão ou fornecer um nome mais descritivo indicando o tipo de dados armazenados no volume.
+O nome de um volume é uma sequência de caracteres atribuída ao volume no momento de sua criação. Você pode aceitar o nome padrão ou fornecer um nome mais descritivo que indique o tipo de dados armazenados no volume. Os nomes de volumes padrão e thin podem ter um comprimento máximo de 60 caracteres. O nome deve ser único. Somente volumes padrão e thin podem ter nomes com mais de 30 caracteres.
+
+
+NOTE: Não há suporte para o downgrade para a versão 11.90 ou anterior do software SANtricity OS caso existam volumes padrão ou thin com nomes maiores que 30 caracteres. Se você pretende fazer o downgrade para a versão 11.90 ou anterior do software SANtricity OS, altere os nomes de quaisquer volumes padrão ou thin que possuam nomes maiores que 30 caracteres antes de efetuar o downgrade.
 
 
 

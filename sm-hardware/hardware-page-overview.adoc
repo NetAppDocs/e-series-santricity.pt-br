@@ -15,6 +15,7 @@ A página hardware fornece uma representação gráfica dos componentes físicos
 
 
 
+[[shelves]]
 == Compartimentos
 
 Uma gaveta é um componente que contém o hardware para o storage array (controladoras, coletores de energia/ventoinhas e unidades). Existem dois tipos de prateleiras:
@@ -25,7 +26,7 @@ Uma gaveta é um componente que contém o hardware para o storage array (control
 
 As gavetas estão disponíveis em três tamanhos para acomodar até 12, 24 ou 60 unidades. Cada compartimento inclui um número de ID, que é atribuído pelo firmware da controladora. O ID aparece no canto superior esquerdo da exibição da prateleira.
 
-A exibição do compartimento na página hardware mostra os componentes frontal ou traseiro. Você pode alternar entre as duas visualizações selecionando as guias *Drives* ou *Controller* no canto superior direito da exibição da prateleira. Você também pode selecionar *Mostrar tudo frontal* ou *Mostrar tudo de volta* na parte inferior da página. As vistas frontal e traseira mostram o seguinte:
+A visualização da prateleira na página Hardware mostra os componentes da parte frontal ou traseira. Você pode alternar entre as duas visualizações selecionando as guias *Unidades* ou *Controladores e componentes* no canto superior direito da visualização da prateleira. Você também pode selecionar *Mostrar toda a parte frontal* ou *Mostrar toda a parte traseira* na parte inferior da página. As visualizações frontal e traseira mostram o seguinte:
 
 * *Componentes dianteiros* -- unidades e compartimentos de unidades vazios.
 * *Componentes traseiros* -- Controladores e coletores de energia/ventilador (para compartimentos de controladores) ou IOMs e coletores de energia/ventilador (para compartimentos de unidades).
@@ -41,6 +42,7 @@ Você pode executar as seguintes funções relacionadas às prateleiras:
 
 
 
+[[controllers]]
 == Controladores
 
 Um controlador é o hardware e firmware combinados que implementa funções de storage e gerenciamento. Ele inclui a memória cache, suporte à unidade e suporte à interface do host.
@@ -57,6 +59,7 @@ Você pode executar as seguintes funções relacionadas aos controladores:
 
 
 
+[[drives]]
 == Unidades
 
 O storage array pode incluir unidades de disco rígido (HDDs) ou unidades de estado sólido (SSDs). Dependendo do tamanho da gaveta, até 12, 24 ou 60 unidades podem ser instaladas na gaveta.

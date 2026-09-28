@@ -14,7 +14,7 @@ summary: Para volumes finos capazes de alocar espaço sob demanda, você pode al
 [role="lead"]
 Para volumes finos capazes de alocar espaço sob demanda, você pode alterar o limite que restringe a capacidade alocada à qual um volume fino pode se expandir automaticamente.
 
-Você também pode alterar o ponto percentual no qual um alerta (limite de aviso excedido) é enviado para a área notificações na página inicial quando um volume fino estiver próximo do limite de capacidade alocado. Pode optar por ativar ou desativar esta notificação de alerta.
+Você também pode alterar a porcentagem em que um alerta (limite de aviso excedido) é enviado para a área de Notificações, acessível pelo ícone de sino no canto superior da janela, quando um volume fino estiver próximo do limite de capacidade alocada. Você pode optar por ativar ou desativar essa notificação de alerta.
 
 [NOTE]
 ====
@@ -26,10 +26,9 @@ O sistema expande automaticamente a capacidade alocada com base no limite de cap
 Ao alterar o limite de capacidade alocada e o limite de aviso de um volume fino, você deve levar em conta o espaço a ser consumido pelos dados do usuário do volume e pelos dados dos serviços de cópia.
 
 .Passos
-. No painel esquerdo, selecione menu:Storage[Volumes].
-. Selecione a guia *Thin volume Monitoring*.
+. No painel esquerdo, selecione menu:Storage[Monitoramento de volume fino].
 +
-É apresentada a vista Thin volume Monitoring (monitorização de volume fino).
+A visualização de monitoramento de volume fino é exibida.
 
 . Selecione o volume fino que deseja alterar e, em seguida, selecione *alterar limite*.
 +
@@ -55,7 +54,7 @@ O limite no qual as gravações falham, impedindo que o volume fino consuma recu
  a| 
 Alerta-me quando... (limiar de aviso)
  a| 
-Marque a caixa de seleção se desejar que o sistema gere um alerta quando um volume fino estiver próximo do limite de capacidade alocado. O alerta é enviado para a área notificações na página inicial. Esse limite é uma porcentagem do tamanho da capacidade informada do volume.
+Selecione a caixa de seleção se você quiser que o sistema gere um alerta quando um volume thin estiver próximo do limite de capacidade alocada. O alerta é enviado para a área de Notificações, acessível pelo ícone de sino no canto superior da janela. Esse limite é uma porcentagem do tamanho de capacidade relatada do volume.
 
 Desmarque a caixa de verificação para desativar a notificação de alerta de limite de aviso.
 

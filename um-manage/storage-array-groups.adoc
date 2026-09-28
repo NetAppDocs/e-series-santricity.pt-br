@@ -15,6 +15,7 @@ Você pode gerenciar sua infraestrutura física e virtualizada agrupando um conj
 
 
 
+[[types-of-storage-array-groups]]
 == Tipos de grupos de storage array
 
 * *Todos os grupos*

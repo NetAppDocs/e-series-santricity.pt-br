@@ -15,6 +15,7 @@ Saiba como os termos de capacidade se aplicam ao storage array.
 
 
 
+[[storage-objects]]
 == Objetos de storage
 
 A terminologia a seguir descreve os diferentes tipos de objetos de armazenamento que podem interagir com seu storage array.
@@ -97,6 +98,7 @@ Um grupo de volumes é um contentor para volumes com caraterísticas compartilha
 |===
 
 
+[[storage-capacity]]
 == Capacidade de storage
 
 A terminologia a seguir descreve os diferentes tipos de capacidade usados em seu storage array.

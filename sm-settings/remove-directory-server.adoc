@@ -2,7 +2,7 @@
 permalink: sm-settings/remove-directory-server.html 
 sidebar: sidebar 
 keywords: SANtricity, System Manager, E-Series, remove, directory, server, 
-summary: Para interromper a conexão entre um servidor de diretório e o storage array, você pode remover as informações do servidor da página Gerenciamento de acesso. Talvez você queira executar essa tarefa se tiver configurado um novo servidor e, em seguida, desejar remover o antigo. 
+summary: Para interromper a conexão entre um servidor de diretório e o array de storage, você pode remover as informações do servidor na página Directory services. Você pode querer realizar essa tarefa se tiver configurado um novo servidor e depois quiser remover o antigo. 
 ---
 = Remover servidor de diretório no SANtricity System Manager
 :allow-uri-read: 
@@ -12,7 +12,7 @@ summary: Para interromper a conexão entre um servidor de diretório e o storage
 
 
 [role="lead"]
-Para interromper a conexão entre um servidor de diretório e o storage array, você pode remover as informações do servidor da página Gerenciamento de acesso. Talvez você queira executar essa tarefa se tiver configurado um novo servidor e, em seguida, desejar remover o antigo.
+Para interromper a conexão entre um servidor de diretório e o array de storage, você pode remover as informações do servidor na página Directory services. Você pode querer realizar essa tarefa se tiver configurado um novo servidor e depois quiser remover o antigo.
 
 .Antes de começar
 Você deve estar conetado com um perfil de usuário que inclua permissões de administrador de segurança. Caso contrário, as funções de Gerenciamento de Acesso não aparecem.
@@ -21,8 +21,7 @@ Você deve estar conetado com um perfil de usuário que inclua permissões de ad
 Depois de concluir esta tarefa, todas as sessões ativas do utilizador são encerradas. Apenas a sessão de utilizador atual é mantida.
 
 .Passos
-. No painel esquerdo, selecione menu:Settings[Access Management].
-. Selecione a guia *Serviços de diretório*.
+. No painel esquerdo, selecione menu:autenticação[Serviços de diretório].
 . Na lista, selecione o servidor de diretório que deseja excluir.
 . Clique em *Remover*.
 +

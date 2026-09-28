@@ -15,8 +15,8 @@ summary: Pode visualizar informações detalhadas sobre as ligações iSCSI à s
 Pode visualizar informações detalhadas sobre as ligações iSCSI à sua matriz de armazenamento. Sessões iSCSI podem ocorrer com anfitriões ou matrizes de armazenamento remotas numa relação de espelhamento assíncrono.
 
 .Passos
-. No painel esquerdo, selecione menu:Settings[System].
-. Selecione *View/End iSCSI Sessions* (Ver/terminar sessões iSCSI).
+. No painel esquerdo, selecione *System*.
+. Selecione *Visualizar/encerrar sessões iSCSI*.
 +
 É apresentada uma lista das sessões iSCSI atuais.
 

@@ -14,11 +14,7 @@ summary: Para encontrar a localização física de uma prateleira mostrada na p�
 Para encontrar a localização física de uma prateleira mostrada na página hardware, você pode ligar a luz de localização da prateleira.
 
 .Passos
-. No painel esquerdo, selecione *Hardware*.
-. Se o gráfico mostrar as unidades, clique na guia *Controllers & Components* (Controladores e componentes).
-+
-O gráfico muda para mostrar os controladores em vez das unidades.
-
+. No painel esquerdo, selecione menu:Hardware[Controllers and components].
 . Selecione a lista suspensa para o compartimento do controlador ou compartimento de unidade e selecione *Ativar luz de localização*.
 +
 A luz de localização da prateleira acende-se.

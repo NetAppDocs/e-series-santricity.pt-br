@@ -32,10 +32,7 @@ Você também pode criar um agendamento de snapshot ao mesmo tempo em que cria u
 +
 Selecione o objeto (grupo de consistência de volume ou snapshot) para esta programação de instantâneos e, em seguida, selecione menu:Serviços de cópia[criar agendamento de instantâneos].
 
-** No painel esquerdo, selecione menu:Storage[Snapshots].
-+
-Selecione a aba *Snapsshot schedules* e clique em *Criar*.
-
+** No painel esquerdo, selecione menu:Snapshots[Snapshot schedules] e clique em *Criar*.
 
 
 . Selecione o objeto (grupo de consistência de volume ou snapshot) para essa programação de snapshot e clique em *Avançar*.

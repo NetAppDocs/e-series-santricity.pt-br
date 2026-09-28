@@ -15,7 +15,7 @@ summary: Você pode exibir o log de eventos, que fornece um Registro histórico 
 Você pode exibir o log de eventos, que fornece um Registro histórico de eventos que ocorreram no storage array.
 
 .Passos
-. No painel esquerdo, selecione menu:Support[Event Log].
+. No painel esquerdo, selecione menu:Monitoring[Event log].
 +
 É apresentada a página Registo de eventos.
 

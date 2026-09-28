@@ -20,6 +20,7 @@ O espelhamento síncrono não está disponível nos sistemas de storage EF80, EF
 ====
 
 
+[[what-is-mirroring]]
 == O que é espelhamento?
 
 As aplicações SANtricity incluem dois tipos de espelhamento: Assíncrono e síncrono. O espelhamento assíncrono copia volumes de dados sob demanda ou de acordo com o cronograma, o que minimiza ou evita o tempo de inatividade que pode resultar de corrupção ou perda de dados. O espelhamento síncrono replica volumes de dados em tempo real para garantir disponibilidade contínua.
@@ -32,6 +33,7 @@ Saiba mais:
 
 
 
+[[how-do-i-configure-mirroring]]
 == Como faço para configurar o espelhamento?
 
 Você configura o espelhamento assíncrono ou síncrono no Unified Manager e, em seguida, usa o System Manager para gerenciar sincronizações.

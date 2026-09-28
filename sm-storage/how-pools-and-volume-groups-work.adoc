@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, pools, volume group, 
 summary: 'Para provisionar o armazenamento, você cria um pool ou um grupo de volumes que conterá as unidades de disco rígido (HDD) ou de disco de estado sólido (SSD) que você deseja usar em seu storage array.' 
 ---
-= Como pools e grupos de volumes funcionam no software SANtricity
+= Como os pools e os grupos de volumes funcionam no software SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -36,6 +36,7 @@ Você pode ter pools ou grupos de volume no mesmo sistema de armazenamento, mas 
 
 
 
+[[pools]]
 == Piscinas
 
 Os pools foram projetados para agregar unidades de disco rígido físicas em um grande espaço de armazenamento e oferecer proteção RAID aprimorada para ele. Um pool cria muitos conjuntos de RAID virtuais a partir do número total de unidades atribuídas ao pool e distribui os dados uniformemente entre todas as unidades participantes. Se uma unidade for perdida ou adicionada, o System Manager reequilibra dinamicamente os dados em todas as unidades ativas.
@@ -44,15 +45,17 @@ Os pools funcionam como outro nível RAID, virtualizando a arquitetura RAID subj
 
 
 
+[[drive-matching]]
 === Correspondência de condução
 
-Você pode escolher entre HDD ou SSDs para uso em pools. No entanto, assim como nos grupos de volumes, todas as unidades do pool precisam usar a mesma tecnologia. Os controladores selecionam automaticamente quais unidades incluir, portanto, você deve ter certeza de que tem um número suficiente de unidades para a tecnologia escolhida.
+Você pode escolher entre HDDs ou SSDs para uso em pools; no entanto, assim como nos grupos de volume, todas as unidades no pool devem usar a mesma tecnologia. Os controladores selecionam automaticamente quais unidades incluir, portanto, você deve garantir que tenha um número suficiente de unidades para a tecnologia escolhida. Nos sistemas EF80 e EF50, as unidades SSD NVMe de Performance e Capacidade são tratadas como tipos de unidade separados; elas podem coexistir no mesmo array de storage, mas devem estar em pools separados.
 
 
 
+[[managing-failed-drives]]
 === Gerenciamento de unidades com falha
 
-Os pools têm uma capacidade mínima de 11 unidades; no entanto, uma unidade de capacidade é reservada para capacidade extra em caso de falha da unidade. Esta capacidade sobressalente é chamada de "capacidade de preservação".
+Os pools têm uma capacidade mínima de 11 unidades; no entanto, a capacidade equivalente a uma unidade é reservada como capacidade de reserva em caso de falha de uma unidade. Essa capacidade de reserva é chamada de "preservation capacity". Nos sistemas EF80 e EF50, os pools de Performance exigem um mínimo de 6 unidades e os pools de Capacity exigem um mínimo de 12 unidades. Para pools de Capacity-DDP, a proteção RAID1-DDP é usada até 10 unidades e, em seguida, passa para RAID6-DDP a partir de 11 unidades, com um tamanho mínimo de pool de Capacity-DDP de 8 unidades.
 
 Quando os pools são criados, uma certa quantidade de capacidade é preservada para uso de emergência. Essa capacidade é expressa em termos de várias unidades no System Manager, mas a implementação real está espalhada por todo o pool de unidades. A quantidade padrão de capacidade preservada é baseada no número de unidades no pool.
 
@@ -60,6 +63,70 @@ Depois que o pool é criado, você pode alterar o valor da capacidade de preserv
 
 
 
+[[maximum-capacity]]
+=== Capacidade máxima
+
+A capacidade máxima do Dynamic Disk Pool (DDP) suportada por array de storage depende do modelo do controlador e da versão do SANtricity OS instalada.
+
+[cols="18,13,13,10,13,13,10,10"]
+|===
+| Versão OS | EF50 | EF80 | E4000 | EF300 | EF600 | E280x | E5700 
+
+
+| 11.90 R6 e abaixo | _Não aplicável_ | _Não aplicável_ | 6  a| 
+* 12 (NVMe)
+* 6 (SAS)
+
+ a| 
+* 12 (NVMe)
+* 6 (SAS)
+
+| 6 | 6 
+
+
+| 11,90 R7 | _Não aplicável_ | _Não aplicável_ | 6  a| 
+* 12 (NVMe)
+* 6 (SAS)
+
+ a| 
+* 16 (NVMe)
+* 8 (SAS)
+
+| 6 | 8 
+
+
+| 12.00 GA | 12 | 12 | _Não aplicável_ | _Não aplicável_ | _Não aplicável_ | _Não aplicável_ | _Não aplicável_ 
+
+
+| 12.10 e acima  a| 
+* 12 (NVMe)
+* 6 (SAS)
+
+ a| 
+* 16 (NVMe)
+* 8 (SAS)
+
+| 6  a| 
+* 12 (NVMe)
+* 6 (SAS)
+
+ a| 
+* 16 (NVMe)
+* 8 (SAS)
+
+| _Não aplicável_ | _Não aplicável_ 
+
+
+ a| 
+[NOTE]
+====
+Para células com dois números, o primeiro número é para a gaveta NVMe e o segundo número é para as gavetas de expansão SAS. As capacidades máximas de DDP de SAS e NVMe não são aditivas. A capacidade de DDP na bandeja base é subtraída da capacidade máxima nas gavetas de expansão SAS e vice-versa.
+
+====
+|===
+
+
+[[volume-groups]]
 == Grupos de volume
 
 Os grupos de volume definem como a capacidade é alocada no sistema de storage para volumes. As unidades de disco são organizadas em grupos RAID e os volumes residem nas unidades de um grupo RAID. Portanto, as configurações do grupo de volume identificam quais unidades fazem parte do grupo e qual nível RAID é usado.
@@ -68,14 +135,16 @@ Quando você cria um grupo de volumes, os controladores selecionam automaticamen
 
 
 
+[[drive-matching]]
 === Correspondência de condução
 
 Você deve corresponder as unidades no grupo de volumes para tamanho e desempenho. Se houver unidades menores e maiores no grupo de volumes, todas as unidades serão reconhecidas como o menor tamanho de capacidade. Se houver unidades mais lentas e mais rápidas no grupo de volumes, todas as unidades são reconhecidas na velocidade mais lenta. Esses fatores afetam o desempenho e a capacidade geral do sistema de storage.
 
-Não é possível misturar diferentes tecnologias de unidade (unidades HDD e SSD). RAID 3, 5 e 6 estão limitados a um máximo de 30 unidades. RAID 1 e RAID 10 usam espelhamento, portanto, esses grupos de volume devem ter um número par de discos.
+Não é possível misturar tecnologias de unidades diferentes (HDD e SSD). Nos sistemas EF80 e EF50, as unidades SSD NVMe de Performance e de Capacidade são tipos de unidades diferentes e não podem ser misturadas no mesmo grupo de volume; o número mínimo de unidades é 6 para Performance e 12 para Capacidade. RAID 3, 5 e 6 são limitados a um máximo de 30 unidades. RAID 1 e RAID 10 usam espelhamento, então esses grupos de volume devem ter um número par de discos.
 
 
 
+[[managing-failed-drives]]
 === Gerenciamento de unidades com falha
 
 Os grupos de volume usam unidades hot spare como modo de espera no caso de uma unidade falhar nos volumes RAID 1/10, RAID 3, RAID 5 ou RAID 6 contidos em um grupo de volumes. Uma unidade hot spare não contém dados e adiciona outro nível de redundância à sua matriz de armazenamento.

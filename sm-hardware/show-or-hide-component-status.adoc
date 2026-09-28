@@ -14,13 +14,7 @@ summary: Você pode exibir descrições de status para unidades, controladores, 
 Você pode exibir descrições de status para unidades, controladores, ventiladores e fontes de alimentação.
 
 .Passos
-. No painel esquerdo, selecione *Hardware*.
-. Para ver os componentes posterior ou frontal:
-+
-** Se você quiser ver os componentes do controlador e do recipiente de alimentação/ventilador, mas as unidades forem exibidas, clique na guia *Controllers & Components* (Controladores e componentes).
-** Se você quiser ver as unidades, mas os componentes do controlador e do recipiente de energia/ventilador forem exibidos, clique na guia *unidades*.
-
-
+. No painel esquerdo, selecione menu:Hardware[Unidades] ou menu:Hardware[Controladores e componentes], dependendo dos componentes que você deseja visualizar.
 . Para visualizar ou ocultar descrições de estado pop-over:
 +
 ** Se você quiser ver uma descrição pop-over dos ícones de status, clique em *Mostrar detalhes do ícone de status* no canto superior direito da exibição da prateleira (marque a caixa de seleção).
@@ -28,5 +22,4 @@ Você pode exibir descrições de status para unidades, controladores, ventilado
 
 
 . Se você quiser ver os detalhes completos do status, selecione o componente na exibição de prateleira e selecione *Configurações de exibição*.
-. Se quiser ver as descrições dos componentes coloridos, selecione *Legenda*.
 

@@ -26,11 +26,7 @@ O recurso Apagar não suporta alguns modelos de unidade mais antigos. Se tentar 
 
 ====
 .Passos
-. No painel esquerdo, selecione *Hardware*.
-. Se o gráfico mostrar os controladores, clique na guia *Drives*.
-+
-O gráfico muda para mostrar as unidades em vez dos controladores.
-
+. No painel esquerdo, selecione menu:Hardware[Drives].
 . Opcionalmente, você pode usar os campos de filtro para exibir todas as unidades não atribuídas no compartimento. Na lista suspensa *Mostrar unidades que são...*, selecione *não atribuídas*.
 +
 A vista do compartimento mostra apenas as unidades não atribuídas; todas as outras estão acinzentadas.
@@ -42,23 +38,23 @@ A vista do compartimento mostra apenas as unidades não atribuídas; todas as ou
 *Possível perda de dados* -- a operação Apagar não pode ser desfeita. Certifique-se de que seleciona as unidades corretas durante o procedimento.
 
 ====
-. No menu de contexto, selecione *Apagar drives*.
+. No menu de contexto, selecione *Erase*.
 +
-A caixa de diálogo Apagar unidades é aberta, mostrando todas as unidades elegíveis para uma operação de apagamento.
+A página Apagar unidades é aberta, mostrando todas as unidades elegíveis para uma operação de apagamento.
 
 . Se desejar, selecione unidades adicionais na tabela. Não é possível selecionar _All_ drives; certifique-se de que uma unidade permanece desmarcada.
-. Confirme a operação digitando `erase`, e depois clique em *Apagar unidades*.
+. Confirme a operação digitando  `erase` e depois clique em *Apagar*.
 +
 [CAUTION]
 ====
 Certifique-se de que pretende continuar com esta operação. Depois de clicar em Sim na caixa de diálogo seguinte, a operação não pode ser cancelada.
 
 ====
-. Na caixa de diálogo tempo estimado de conclusão, clique em *Sim* para continuar com a operação de eliminação.
+. Na caixa de diálogo "Tempo estimado de conclusão da exclusão de unidades", clique em *Apagar* para continuar com a operação de exclusão.
 
 
 .Resultados
-A operação de apagamento pode levar vários minutos ou várias horas. Você pode visualizar o status em menu:Storage[Operations in Progress]. Quando a operação de apagamento for concluída, as unidades estarão disponíveis para uso em outro grupo de volume ou pool de discos, ou em outro storage array.
+A operação de apagamento pode levar vários minutos ou várias horas. Você pode visualizar o status em menu:Monitoring[Operações em andamento]. Quando a operação de apagamento for concluída, as unidades estarão disponíveis para uso em outro grupo de volume ou pool de discos, ou em outro array de storage.
 
 .Depois de terminar
 Se você quiser usar a unidade novamente, você deve iniciá-la primeiro. Para fazer isso, selecione *Initialize* no menu de contexto da unidade.

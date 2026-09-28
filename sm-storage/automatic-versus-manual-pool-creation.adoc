@@ -15,6 +15,7 @@ Você cria pools automaticamente ou manualmente para permitir que o storage fís
 
 
 
+[[automatic-creation]]
 == Criação automática
 
 A criação automática de pool é iniciada quando o System Manager deteta capacidade não atribuída em um storage array. Quando a capacidade não atribuída é detetada, o System Manager solicita automaticamente que você crie um ou mais pools ou adicione a capacidade não atribuída a um pool existente ou a ambos.
@@ -25,7 +26,7 @@ A criação automática de pool ocorre quando uma destas condições é verdadei
 * Novas unidades são adicionadas a um storage array que tenha pelo menos um pool.
 
 
-Cada unidade em um pool deve ser do mesmo tipo de unidade (HDD ou SSD) e ter capacidade semelhante. O System Manager solicitará que você conclua as seguintes tarefas:
+Cada unidade em um pool deve ser do mesmo tipo de unidade (HDD ou SSD) e ter capacidade semelhante. Nos sistemas EF80 e EF50, as unidades SSD NVMe de Performance e de Capacidade são tratadas como tipos de unidade distintos; o System Manager cria pools separados para cada tipo quando ambos estão presentes. O System Manager solicitará que você conclua as seguintes tarefas:
 
 * Crie um único pool se houver um número suficiente de unidades desses tipos.
 * Crie vários pools se a capacidade não atribuída consistir em diferentes tipos de unidade.
@@ -35,6 +36,7 @@ Cada unidade em um pool deve ser do mesmo tipo de unidade (HDD ou SSD) e ter cap
 
 
 
+[[manual-creation]]
 == Criação manual
 
 Você pode querer criar um pool manualmente quando a criação automática não puder determinar a melhor configuração. Esta situação pode ocorrer por uma das seguintes razões:

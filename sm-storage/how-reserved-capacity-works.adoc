@@ -17,6 +17,7 @@ O objetivo da capacidade reservada é armazenar alterações de dados nesses vol
 
 
 
+[[copy-service-objects-that-use-reserved-capacity]]
 == Copiar objetos de serviço que usam capacidade reservada
 
 A capacidade reservada é o mecanismo de storage subjacente usado por esses objetos de serviço de cópia:
@@ -31,6 +32,7 @@ Ao criar ou expandir esses objetos de serviço de cópia, você deve criar uma n
 
 
 
+[[thin-volumes-and-reserved-capacity]]
 == Volumes finos e capacidade reservada
 
 Para um volume fino, se a capacidade máxima comunicada de 256 TIB tiver sido atingida, não poderá aumentar a sua capacidade. Certifique-se de que a capacidade reservada do volume fino está definida para um tamanho maior do que a capacidade máxima comunicada. (Um volume fino é sempre provisionado de forma fina, o que significa que a capacidade é alocada à medida que os dados estão sendo gravados no volume.)
@@ -43,6 +45,7 @@ Se você criar capacidade reservada usando um thin volume em um pool, revise as 
 
 
 
+[[capacity-alerts]]
 == Alertas de capacidade
 
 O objeto de serviço de cópia tem um aviso de capacidade configurável e um limite de alerta, bem como uma resposta configurável quando a capacidade reservada está cheia.
@@ -51,16 +54,18 @@ Quando a capacidade reservada de um volume de objeto de serviço de cópia está
 
 
 
+[[orphaned-reserved-capacity-volumes]]
 == Volumes de capacidade reservados órfãos
 
 Um volume de capacidade reservada órfão é um volume que não está mais armazenando dados para operações de serviço de cópia porque seu objeto de serviço de cópia associado foi excluído. Quando o objeto de serviço de cópia foi excluído, seu volume de capacidade reservada também deve ter sido excluído. No entanto, o volume da capacidade reservada não foi eliminado.
 
 Como os volumes de capacidade reservada órfãos não são acessados por nenhum host, eles são candidatos à recuperação. Exclua manualmente o volume de capacidade reservada órfã para que você possa usar sua capacidade para outras operações.
 
-O System Manager alerta-o sobre volumes de capacidade reservada órfãos com uma mensagem "recuperar capacidade não utilizada" na área notificações na página inicial. Você pode clicar em *recuperar capacidade não utilizada* para exibir a caixa de diálogo recuperar capacidade não utilizada, onde você pode excluir o volume de capacidade reservada órfã.
+O System Manager alerta você sobre volumes de capacidade reservada órfãos com uma mensagem "Recuperar capacidade não utilizada" na área de Notificações, acessível pelo ícone de sino no canto superior da janela. Você pode clicar em *Recuperar capacidade não utilizada* para exibir a caixa de diálogo Recuperar Capacidade Não Utilizada, onde você pode excluir o volume de capacidade reservada órfão.
 
 
 
+[[characteristics-of-reserved-capacity]]
 == Caraterísticas da capacidade reservada
 
 * A capacidade atribuída à capacidade reservada deve ser considerada durante a criação do volume para manter uma capacidade livre suficiente.

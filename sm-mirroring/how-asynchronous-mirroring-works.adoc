@@ -24,6 +24,7 @@ Esse tipo de espelhamento é ideal para atender a demanda por operações ininte
 
 
 
+[[asynchronous-mirroring-session]]
 == Sessão de espelhamento assíncrono
 
 O espelhamento assíncrono captura o estado do volume primário em um determinado momento no tempo e copia apenas os dados que foram alterados desde a última captura de imagem. O espelhamento assíncrono permite que o site primário seja atualizado imediatamente e o site secundário seja atualizado conforme a largura de banda o permita. As informações são armazenadas em cache e enviadas posteriormente, à medida que os recursos de rede ficam disponíveis.
@@ -46,6 +47,7 @@ Os storage arrays devem ter uma versão mínima de firmware de 7,84. (Cada um de
 
 
 
+[[mirror-consistency-groups-and-mirrored-pairs]]
 == Grupos de consistência espelhada e pares espelhados
 
 Você cria um grupo de consistência de espelho para estabelecer a relação de espelhamento entre o storage array local e o storage array remoto. A relação de espelhamento assíncrono consiste em um par espelhado: Um volume primário em um storage array e um volume secundário em outro storage array.
@@ -54,6 +56,7 @@ O storage array que contém o volume primário geralmente está localizado no lo
 
 
 
+[[synchronization-settings]]
 == Definições de sincronização
 
 Ao criar um par espelhado, você também define a prioridade de sincronização e a política de ressincronização que o par espelhado usa para concluir a operação de ressincronização após uma interrupção de comunicação.
@@ -72,6 +75,7 @@ Os volumes primário e secundário em um par espelhado podem ficar não sincroni
 
 
 
+[[reserved-capacity-and-asynchronous-mirroring]]
 == Capacidade reservada e espelhamento assíncrono
 
 A capacidade reservada é usada para acompanhar as diferenças entre o volume primário e secundário quando a sincronização não está ocorrendo. Ele também mantém o controle das estatísticas de sincronização para cada par espelhado.
@@ -80,6 +84,7 @@ Cada volume em um par espelhado requer sua própria capacidade reservada.
 
 
 
+[[configuration-and-management]]
 == Configuração e gerenciamento
 
 Para ativar e configurar o espelhamento entre dois arrays, você deve usar a interface do Unified Manager. Quando o espelhamento estiver ativado, você poderá gerenciar pares espelhados e configurações de sincronização no System Manager.

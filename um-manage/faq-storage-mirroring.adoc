@@ -16,6 +16,7 @@ Este FAQ pode ajudar se você está apenas procurando uma resposta rápida para 
 
 
 
+[[what-do-i-need-to-know-before-creating-a-mirror-consistency-group]]
 == O que eu preciso saber antes de criar um grupo de consistência de espelho?
 
 Siga estas diretrizes antes de criar um grupo de consistência espelhada.
@@ -44,6 +45,7 @@ O espelhamento síncrono não está disponível nos sistemas de storage EF80, EF
 ====
 
 
+[[what-do-i-need-to-know-before-creating-a-mirrored-pair]]
 == O que eu preciso saber antes de criar um par espelhado?
 
 Antes de criar um par espelhado, siga estas diretrizes.
@@ -65,6 +67,7 @@ O espelhamento síncrono não está disponível nos sistemas de storage EF80, EF
 ====
 
 
+[[why-would-i-change-this-percentage]]
 == Por que eu alteraria essa porcentagem?
 
 A capacidade reservada costuma ser de 20% do volume base para operações de espelhamento assíncrono. Normalmente, essa capacidade é suficiente.
@@ -77,6 +80,7 @@ A capacidade necessária varia, dependendo da frequência e tamanho das gravaç�
 
 
 
+[[why-do-i-see-more-than-one-reserved-capacity-candidate]]
 == Por que vejo mais de um candidato à capacidade reservada?
 
 Se houver mais de um volume em um pool ou grupo de volumes que atenda ao valor percentual de capacidade selecionado para o objeto de armazenamento, você verá vários candidatos.
@@ -85,6 +89,7 @@ Você pode atualizar a lista de candidatos recomendados alterando a porcentagem 
 
 
 
+[[why-dont-i-see-all-my-volumes]]
 == Por que não vejo todos os meus volumes?
 
 Ao selecionar um volume primário para um par espelhado, uma lista mostra todos os volumes elegíveis.
@@ -102,6 +107,7 @@ NOTE: Para controladores EF600 e EF300, os volumes primário e secundário de um
 
 
 
+[[why-dont-i-see-all-the-volumes-on-the-remote-storage-array]]
 == Por que não vejo todos os volumes no conjunto de armazenamento remoto?
 
 Quando você está selecionando um volume secundário no storage array remoto, uma lista mostra todos os volumes elegíveis para esse par espelhado.
@@ -129,6 +135,7 @@ Quaisquer volumes que não sejam elegíveis para serem usados, não serão exibi
 
 
 
+[[what-impact-does-synchronization-priority-have-on-synchronization-rates]]
 == Qual o impactos que a prioridade de sincronização tem nas taxas de sincronização?
 
 A prioridade de sincronização define quanto tempo de processamento é alocado para atividades de sincronização em relação ao desempenho do sistema.
@@ -186,6 +193,7 @@ As cargas de tamanho de volume e taxa de e/S do host afetam as comparações de 
 
 
 
+[[why-is-it-recommended-to-use-a-manual-synchronization-policy]]
 == Por que é recomendável usar uma política de sincronização manual?
 
 A ressincronização manual é recomendada porque permite gerenciar o processo de ressincronização de uma forma que forneça a melhor oportunidade para recuperar dados.

@@ -24,7 +24,7 @@ Não é possível alterar o nível RAID de um pool usando a interface do System 
 ====
 .Passos
 . No painel esquerdo, selecione menu:Storage[Pools and volume groups].
-. Selecione o pool que você deseja editar e, em seguida, clique no menu:ícone de reticências[Edit Settings].
+. Localize o pool que você deseja editar e clique no ícone menu:reticências[Editar configurações].
 +
 A janela Edit pool Setting é exibida.
 
@@ -50,7 +50,7 @@ Alertas de capacidade
  a| 
 Você pode enviar notificações de alerta quando a capacidade livre em um pool atingir ou exceder um limite especificado. Quando os dados armazenados no pool excedem o limite especificado, o System Manager envia uma mensagem, permitindo que você adicione mais espaço de armazenamento ou exclua objetos desnecessários.
 
-Os alertas são exibidos na área notificações no Painel de instrumentos e podem ser enviados do servidor para administradores por e-mail e mensagens de intercetação SNMP.
+Os alertas são exibidos na área de Notificações, acessível pelo ícone de sino no canto superior da janela, e podem ser enviados do servidor para administradores por e-mail e mensagens SNMP trap.
 
 Você pode definir os seguintes alertas de capacidade:
 

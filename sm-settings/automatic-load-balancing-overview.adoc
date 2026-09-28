@@ -23,6 +23,7 @@ Quando o balanceamento de carga automático está ativado, ele executa as seguin
 
 
 
+[[enabling-and-disabling-automatic-load-balancing]]
 == Ativar e desativar o balanceamento de carga automático
 
 O balanceamento de carga automático é ativado por padrão em todos os storages de armazenamento.
@@ -35,6 +36,7 @@ Você pode querer desativar o balanceamento de carga automático em seu storage 
 
 
 
+[[host-types-that-support-the-automatic-load-balancing-feature]]
 == Tipos de host que suportam o recurso balanceamento de carga automático
 
 Embora o balanceamento de carga automático esteja habilitado no nível do storage array, o tipo de host selecionado para um host ou cluster de host tem uma influência direta sobre como o recurso opera.
@@ -82,6 +84,7 @@ Consulte o https://mysupport.netapp.com/matrix["Ferramenta de Matriz de interope
 
 
 
+[[verifying-os-compatibility-with-the-automatic-load-balancing-feature]]
 == Verificando a compatibilidade do SO com o recurso balanceamento de carga automático
 
 Verifique a compatibilidade do sistema operacional com o recurso balanceamento de carga automático antes de configurar um novo (ou migrar um sistema existente).

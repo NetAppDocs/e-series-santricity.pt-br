@@ -16,6 +16,7 @@ Este FAQ pode ajudar se você está apenas procurando uma resposta rápida para 
 
 
 
+[[what-happens-when-i-use-an-isns-server-for-registration]]
 == O que acontece quando utilizo um servidor iSNS para registo?
 
 Quando as informações do servidor iSNS (Internet Storage Name Service) são usadas, os hosts (iniciadores) podem ser configurados para consultar o servidor iSNS para recuperar informações do destino (controladores).
@@ -24,6 +25,7 @@ Este registo fornece ao servidor iSNS o nome qualificado iSCSI (IQN) e as inform
 
 
 
+[[which-registration-methods-are-automatically-supported-for-iscsi]]
 == Que métodos de registo são suportados automaticamente para iSCSI?
 
 A implementação iSCSI suporta o método de deteção iSNS (Internet Storage Name Service) ou o uso do comando Enviar destinos.
@@ -34,9 +36,10 @@ Se você não configurar o iSNS, o host iSCSI poderá enviar o comando Enviar de
 
 
 
+[[how-do-i-interpret-iser-over-infiniband-statistics]]
 == Como faço para interpretar estatísticas iSER over InfiniBand?
 
-A caixa de diálogo View iSER over InfiniBand Statistics exibe estatísticas de destino local (protocolo) e estatísticas de interface iSER over InfiniBand (IB). Todas as estatísticas são apenas de leitura e não podem ser definidas.
+A caixa de diálogo Exibir estatísticas de iSER sobre InfiniBand exibe estatísticas do destino local (protocolo) e estatísticas da interface iSER sobre InfiniBand (IB). Todas as estatísticas são somente leitura e não podem ser definidas.
 
 * *Estatísticas locais de destino (protocolo)* -- fornece estatísticas para o destino iSER over InfiniBand, que mostra acesso em nível de bloco a sua Mídia de storage.
 * *ISER over InfiniBand Interface statistics* -- fornece estatísticas para todas as portas iSER over InfiniBand na interface InfiniBand, que inclui estatísticas de desempenho e informações de erro de link associadas a cada porta do switch.
@@ -46,6 +49,7 @@ Você pode visualizar cada uma dessas estatísticas como estatísticas em bruto 
 
 
 
+[[what-else-do-i-need-to-do-to-configure-or-diagnose-iser-over-infiniband]]
 == O que mais preciso fazer para configurar ou diagnosticar iSER em InfiniBand?
 
 A tabela a seguir lista as funções do Gerenciador de sistema do SANtricity que você pode usar para configurar e gerenciar sessões iSER over InfiniBand.
@@ -63,16 +67,15 @@ As configurações iSER over InfiniBand estarão disponíveis somente se a contr
  a| 
 Configurar o iSER em portas InfiniBand
  a| 
-. Selecione *hardware*.
-. Selecione a guia *Controllers & Components* (Controladores e componentes).
+. Selecione o menu: Hardware [Controllers and components].
 . Selecione um controlador.
 . Selecione *Configure iSER over InfiniBand Ports*.
 
 
 ou
 
-. Selecione menu:Definições[sistema].
-. Role para baixo até *iSER over InfiniBand settings* e selecione *Configure iSER over InfiniBand ports*.
+. Selecione *System*.
+. Desça até *iSER sobre InfiniBand configurações* e, em seguida, selecione *Configurar iSER sobre InfiniBand portas*.
 
 
 
@@ -80,13 +83,14 @@ ou
  a| 
 Visualizar estatísticas do iSER em InfiniBand
  a| 
-. Selecione menu:Definições[sistema].
-. Role para baixo até *iSER over InfiniBand settings* e selecione *View iSER over InfiniBand Statistics*.
+. Selecione *System*.
+. Desça até *iSER over InfiniBand settings* e selecione *View iSER over InfiniBand statistics*.
 
 
 |===
 
 
+[[what-else-do-i-need-to-do-to-configure-or-diagnose-iscsi]]
 == O que mais preciso fazer para configurar ou diagnosticar iSCSI?
 
 Sessões iSCSI podem ocorrer com hosts ou matrizes de armazenamento remoto em uma relação de espelhamento assíncrono. As tabelas a seguir listam as funções do Gerenciador de sistema do SANtricity que você pode usar para configurar e gerenciar essas sessões iSCSI.
@@ -98,6 +102,7 @@ As definições iSCSI só estão disponíveis se a sua matriz de armazenamento s
 ====
 
 
+[[configure-iscsi]]
 === Configurar iSCSI
 
 [cols="1a,1a"]
@@ -108,7 +113,7 @@ As definições iSCSI só estão disponíveis se a sua matriz de armazenamento s
  a| 
 Gerir as definições iSCSI
  a| 
-. Selecione menu:Definições[sistema].
+. Selecione *System*.
 . Role para baixo até *iSCSI settings* para visualizar todas as funções de gerenciamento.
 
 
@@ -128,8 +133,8 @@ Configurar portas iSCSI
  a| 
 Defina o segredo CHAP host
  a| 
-. Selecione menu:Definições[sistema].
-. Role para baixo até *iSCSI settings* e selecione *Configure Authentication*.
+. Selecione *System*.
+. Desça até *configurações iSCSI* e selecione *Configurar iSCSI/iSER sobre InfiniBand autenticação*.
 
 
 ou
@@ -142,6 +147,7 @@ ou
 |===
 
 
+[[diagnose-iscsi]]
 === Diagnosticar iSCSI
 
 [cols="1a,1a"]
@@ -152,14 +158,14 @@ ou
  a| 
 Visualizar ou terminar sessões iSCSI
  a| 
-. Selecione menu:Definições[sistema].
-. Role para baixo até *iSCSI settings* e selecione *View/End iSCSI Sessions*.
+. Selecione *System*.
+. Desça até *configurações iSCSI* e selecione *Visualizar/encerrar sessões iSCSI*.
 
 
 ou
 
-. Selecione menu:guia Support [Support Center > Diagnostics] (suporte > Centro de suporte > Diagnóstico).
-. Selecione *View/End iSCSI Sessions* (Ver/terminar sessões iSCSI).
+. Selecione o menu: Suporte [Diagnostics].
+. Selecione *Visualizar/encerrar sessões iSCSI*.
 
 
 
@@ -167,14 +173,14 @@ ou
  a| 
 Ver estatísticas iSCSI
  a| 
-. Selecione menu:Definições[sistema].
-. Role para baixo até *iSCSI settings* e selecione *View iSCSI Statistics Packages*.
+. Selecione *System*.
+. Desça até *configurações de iSCSI* e selecione *Exibir estatísticas de iSCSI*.
 
 
 ou
 
-. Selecione menu:guia Support [Support Center > Diagnostics] (suporte > Centro de suporte > Diagnóstico).
-. Selecione *Ver Pacotes de Estatísticas iSCSI*.
+. Selecione o menu: Suporte [Diagnostics].
+. Selecione *Exibir estatísticas iSCSI*.
 
 
 |===

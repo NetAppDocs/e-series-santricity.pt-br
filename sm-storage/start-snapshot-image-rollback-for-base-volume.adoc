@@ -31,8 +31,7 @@ O host pode acessar imediatamente o novo volume base revertido, mas o volume bas
 
 ====
 .Passos
-. No painel esquerdo, selecione menu:Storage[Snapshots].
-. Selecione o separador *Snapshot Images* (imagens instantâneas).
+. No painel esquerdo, selecione menu: Snapshots [Snapshot images].
 . Selecione a imagem de instantâneo e, em seguida, selecione menu:Reverter[Start].
 +
 A caixa de diálogo confirmar início de reversão é exibida.
@@ -60,6 +59,6 @@ O System Manager executa as seguintes ações:
 
 
 .Depois de terminar
-Selecione o menu:Storage[Operations in Progress] para visualizar o progresso da operação de rollback.
+Selecione o menu: Monitoramento [Operações em andamento] para visualizar o progresso da operação de reverter.
 
 Se a operação de reversão não for bem-sucedida, a operação será interrompida. Você pode retomar a operação em pausa e, se ainda não tiver êxito, siga o procedimento Recovery Guru para corrigir o problema ou entre em Contato com o suporte técnico.

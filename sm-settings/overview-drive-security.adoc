@@ -16,6 +16,7 @@ Você pode configurar o Drive Security e o gerenciamento de chaves na página Se
 
 
 
+[[what-is-drive-security]]
 == O que é o Drive Security?
 
 _Drive Security_ é um recurso que impede o acesso não autorizado a dados em unidades habilitadas para segurança quando removido do storage array. Essas unidades podem ser unidades com criptografia total de disco (FDE) ou unidades FIPS (Federal Information Processing Standard). Quando as unidades FDE ou FIPS são removidas fisicamente do storage, elas não podem operar até serem instaladas em outro storage, e nesse ponto, as unidades estarão em um estado de segurança bloqueado até que a chave de segurança correta seja fornecida. A _security key_ é uma cadeia de carateres que é compartilhada entre esses tipos de unidades e os controladores em um storage array.
@@ -29,9 +30,10 @@ Saiba mais:
 
 
 
+[[how-do-i-configure-key-management]]
 == Como faço para configurar o gerenciamento de chaves?
 
-Para implementar o Drive Security, é necessário ter unidades FDE ou FIPS instaladas no array. Para configurar a gestão de chaves para estas unidades, aceda ao menu:Definições[sistema > Gestão de chaves de segurança], onde pode criar uma chave interna a partir da memória persistente do controlador ou uma chave externa a partir de um servidor de gestão de chaves. Por fim, você ativa a Segurança da Unidade para pools e grupos de volume selecionando "segura-capaz" nas configurações de volume.
+Para implementar a Segurança de Unidade, você precisa ter unidades FDE ou FIPS instaladas no array. Para configurar o gerenciamento de chaves para essas unidades, acesse menu:System[Security key management], onde você pode criar uma chave interna a partir da memória persistente do controlador ou uma chave externa a partir de um servidor de gerenciamento de chaves. Por fim, você habilita a Segurança de Unidade para pools e grupos de volumes selecionando "secure-capable" nas configurações do volume.
 
 Saiba mais:
 
@@ -43,6 +45,7 @@ Saiba mais:
 
 
 
+[[how-do-i-unlock-drives]]
 == Como posso desbloquear unidades?
 
 Se você tiver configurado o gerenciamento de chaves e, em seguida, mover unidades habilitadas para segurança de um storage array para outro, será necessário atribuir novamente a chave de segurança ao novo storage array para obter acesso aos dados criptografados nas unidades.
@@ -55,6 +58,7 @@ Saiba mais:
 
 
 
+[[related-information]]
 == Informações relacionadas
 
 Saiba mais sobre tarefas relacionadas ao gerenciamento de chaves:

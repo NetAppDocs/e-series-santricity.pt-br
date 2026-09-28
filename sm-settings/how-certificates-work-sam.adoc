@@ -24,6 +24,7 @@ Embora os certificados assinados pela CA forneçam melhor proteção de seguran�
 ====
 
 
+[[signed-certificates]]
 == Certificados assinados
 
 Um certificado assinado é validado por uma autoridade de certificação (CA), que é uma organização de terceiros confiável. Os certificados assinados incluem detalhes sobre o proprietário da entidade (normalmente, um servidor ou site), data de emissão e expiração do certificado, domínios válidos para a entidade e uma assinatura digital composta por letras e números.
@@ -39,6 +40,7 @@ A CA toma medidas para verificar sua identidade durante o processo de inscriçã
 
 
 
+[[self-signed-certificates]]
 == Certificados autoassinados
 
 Cada controladora no storage inclui um certificado pré-instalado e autoassinado. Um certificado autoassinado é semelhante a um certificado assinado pela CA, exceto que ele é validado pelo proprietário da entidade em vez de um terceiro. Como um certificado assinado pela CA, um certificado autoassinado contém sua própria chave privada e também garante que os dados sejam criptografados e enviados por uma conexão HTTPS entre um servidor e um cliente. No entanto, um certificado autoassinado não usa a mesma cadeia de confiança que um certificado assinado pela CA.
@@ -47,6 +49,7 @@ Os certificados autoassinados não são "confiáveis" pelos navegadores. Cada ve
 
 
 
+[[certificates-used-for-key-management-server]]
 == Certificados usados para o servidor de gerenciamento de chaves
 
 Se você estiver usando um servidor de gerenciamento de chaves externo com o recurso Segurança da unidade, também poderá gerenciar certificados para autenticação entre esse servidor e os controladores.

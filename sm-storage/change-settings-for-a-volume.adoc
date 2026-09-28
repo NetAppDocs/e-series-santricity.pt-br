@@ -22,7 +22,7 @@ NOTE: Algumas operações podem estar indisponíveis enquanto as alterações na
 
 .Passos
 . No painel esquerdo, selecione menu:Storage[Volumes].
-. Selecione o volume que deseja alterar e clique no menu:ícone de reticências[Editar configurações].
+. Localize o volume que você deseja alterar e clique no ícone menu:ellipsis icon[Edit Settings].
 +
 A janela Edit Volume Settings é exibida, mostrando as configurações do volume selecionado.
 
@@ -39,7 +39,10 @@ A janela Edit Volume Settings é exibida, mostrando as configurações do volume
  a| 
 Nome
  a| 
-Exibe o nome do volume. Altere o nome de um volume quando o nome atual não for mais significativo ou aplicável.
+Exibe o nome do volume. Altere o nome de um volume quando o nome atual não for mais significativo ou aplicável. Os nomes de volumes padrão e finos podem ter um comprimento máximo de 60 caracteres. Somente volumes padrão e thin podem ter nomes com mais de 30 caracteres. O nome deve ser único.
+
+
+NOTE: Não há suporte para o downgrade para a versão 11.90 ou anterior do software SANtricity OS caso existam volumes padrão ou thin com nomes maiores que 30 caracteres. Se você pretende fazer o downgrade para a versão 11.90 ou anterior do software SANtricity OS, altere os nomes de quaisquer volumes padrão ou thin que possuam nomes maiores que 30 caracteres antes de efetuar o downgrade.
 
 
 
@@ -98,4 +101,4 @@ O System Manager altera as definições do volume com base nas suas seleções.
 
 
 .Depois de terminar
-Selecione o menu:Storage[Operations in Progress] para visualizar o progresso das operações de alteração que estão sendo executadas no volume selecionado.
+Selecione o menu: Monitoring [Operations in progress] para visualizar o progresso das operações de alteração que estão sendo executadas no volume selecionado.

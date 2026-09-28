@@ -15,12 +15,14 @@ No Gerenciador do sistema do SANtricity, você pode criar imagens instantâneas 
 
 
 
+[[workflow-for-creating-snapshot-images]]
 == Fluxo de trabalho para criar imagens instantâneas
 
 image::../media/sam1130-flw-snapshots-create-ss-images.gif[Criar fluxo de trabalho de imagens instantâneas]
 
 
 
+[[workflow-for-creating-snapshot-volumes]]
 == Fluxo de trabalho para criar volumes instantâneos
 
 image::../media/sam1130-flw-snapshots-create-ss-volumes.gif[Criar fluxo de trabalho do Snapshot volumes]

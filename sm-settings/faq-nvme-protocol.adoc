@@ -16,9 +16,10 @@ Este FAQ pode ajudar se você está apenas procurando uma resposta rápida para 
 
 
 
+[[how-do-i-interpret-nvme-over-fabrics-statistics]]
 == Como interpretar as estatísticas do NVMe sobre Fabrics?
 
-A caixa de diálogo View NVMe over Fabrics Statistics exibe estatísticas do subsistema NVMe e da interface RDMA. Todas as estatísticas são apenas de leitura e não podem ser definidas.
+A caixa de diálogo "Exibir estatísticas NVMe over Fabrics" mostra estatísticas do subsistema NVMe e da interface RDMA. Todas as estatísticas são somente leitura e não podem ser definidas.
 
 * *Estatísticas do subsistema NVMe* -- mostra estatísticas para o controlador NVMe e sua fila. O controlador NVMe fornece um caminho de acesso entre um host e os namespaces no storage array. Você pode revisar as estatísticas do subsistema NVMe para itens como falhas de conexão, reconfigurações e paradas. Para obter mais informações sobre essas estatísticas, clique em *Exibir legenda para títulos de tabela*.
 * *Estatísticas da interface RDMA* -- fornece estatísticas para todas as portas NVMe sobre Fabrics na interface RDMA, que inclui estatísticas de desempenho e informações de erro de link associadas a cada porta do switch. Essa guia só aparece quando as portas NVMe sobre Fabrics estiverem disponíveis. Para obter mais informações sobre as estatísticas, clique em *Exibir legenda para títulos de tabela*.
@@ -28,6 +29,7 @@ Você pode visualizar cada uma dessas estatísticas como estatísticas em bruto 
 
 
 
+[[what-else-do-i-need-to-do-to-configure-or-diagnose-nvme-over-infiniband]]
 == O que mais preciso fazer para configurar ou diagnosticar o NVMe em InfiniBand?
 
 A tabela a seguir lista as funções do Gerenciador de sistema do SANtricity que você pode usar para configurar e gerenciar sessões NVMe over InfiniBand.
@@ -45,16 +47,15 @@ As configurações NVMe over InfiniBand estarão disponíveis somente se a contr
  a| 
 Configurar portas NVMe em InfiniBand
  a| 
-. Selecione *hardware*.
-. Selecione a guia *Controllers & Components* (Controladores e componentes).
+. Selecione o menu: Hardware [Controllers and components].
 . Selecione um controlador.
 . Selecione *Configurar portas NVMe over InfiniBand*.
 
 
 ou
 
-. Selecione menu:Definições[sistema].
-. Role para baixo até *NVMe over InfiniBand settings* e selecione *Configurar portas NVMe over InfiniBand*.
+. Selecione *System*.
+. Desça até *Configurações de NVMe sobre InfiniBand*, e então selecione *Configurar portas de NVMe sobre InfiniBand*.
 
 
 
@@ -62,16 +63,17 @@ ou
  a| 
 Visualizar estatísticas do NVMe em InfiniBand
  a| 
-. Selecione menu:Definições[sistema].
-. Role para baixo até *NVMe over InfiniBand settings* e selecione *View NVMe over Fabrics Statistics*.
+. Selecione *System*.
+. Desça até *NVMe over InfiniBand settings* e, em seguida, selecione *Exibir estatísticas NVMe over Fabrics*.
 
 
 |===
 
 
+[[what-else-do-i-need-to-do-to-configure-or-diagnose-nvme-over-roce]]
 == O que mais preciso fazer para configurar ou diagnosticar o NVMe em RoCE?
 
-Você pode configurar e gerenciar o NVMe sobre RoCE nas páginas hardware e Configurações.
+Você pode configurar e gerenciar o NVMe sobre RoCE nas páginas Hardware e System.
 
 [NOTE]
 ====
@@ -94,8 +96,8 @@ Configurar o NVMe em portas RoCE
 
 ou
 
-. Selecione menu:Definições[sistema].
-. Role para baixo até *NVMe over RoCE settings* e selecione *Configure NVMe over RoCE ports*.
+. Selecione *System*.
+. Desça até *Configurações de NVMe sobre RoCE* e selecione *Configurar portas NVMe sobre RoCE*.
 
 
 
@@ -103,13 +105,14 @@ ou
  a| 
 Veja as estatísticas do NVMe sobre Fabrics
  a| 
-. Selecione menu:Definições[sistema].
-. Role para baixo até *NVMe over RoCE settings* e selecione *View NVMe over Fabrics Statistics*.
+. Selecione *System*.
+. Desça até *Configurações de NVMe sobre RoCE* e selecione *Exibir estatísticas de NVMe over Fabrics*.
 
 
 |===
 
 
+[[why-are-there-two-ip-addresses-for-one-physical-port]]
 == Por que há dois endereços IP para uma porta física?
 
 A matriz de armazenamento EF600 pode incluir dois HICs - um externo e um interno.
@@ -120,6 +123,7 @@ Para obter o máximo desempenho de 200GB GbE, você deve atribuir um endereço I
 
 
 
+[[why-are-there-two-sets-of-parameters-for-one-physical-port]]
 == Por que existem dois conjuntos de parâmetros para uma porta física?
 
 A matriz de armazenamento EF600 pode incluir dois HICs - um externo e um interno.

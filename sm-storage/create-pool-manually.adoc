@@ -17,7 +17,7 @@ Você pode criar um pool manualmente (a partir de um conjunto de candidatos) se 
 Um pool fornece a capacidade de storage lógica necessária a partir da qual você pode criar volumes individuais que podem ser usados para hospedar seus aplicativos.
 
 .Antes de começar
-* Você deve ter um mínimo de 11 unidades com o mesmo tipo de unidade (HDD ou SSD).
+* Você deve ter um número mínimo de unidades do mesmo tipo. Para os sistemas EF80 e EF50, o mínimo é de 6 unidades para pools de Performance ou 12 unidades para pools de Capacity; em arrays mistos de Performance e Capacity, Capacity requer um mínimo de 12 unidades e Performance requer um mínimo de 2 unidades. Para todos os outros sistemas, o mínimo é 11 unidades.
 * A proteção contra perda de gaveta exige que as unidades que compõem o pool estejam localizadas em pelo menos seis compartimentos de unidades diferentes e não haja mais do que duas unidades em um único compartimento de unidades.
 * A proteção contra perda de gaveta exige que as unidades que compõem o pool estejam localizadas em pelo menos cinco gavetas diferentes e o pool inclua um número igual de prateleiras de unidades de cada gaveta.
 * Ao configurar um storage de armazenamento EF600 ou EF300, verifique se cada controlador tem acesso a um número igual de unidades nos primeiros 12 slots e a um número igual de unidades nos últimos 12 slots. Essa configuração ajuda os controladores a usar os dois barramentos PCIe do lado da unidade de forma mais eficaz. Atualmente o System Manager permite a seleção de unidades no recurso Avançado ao criar um grupo de volumes. Para a criação de pool, recomenda-se usar todas as unidades no storage de armazenamento.
@@ -34,7 +34,7 @@ A caixa de diálogo criar pool é exibida.
 +
 A tabela de resultados lista todos os pools possíveis que você pode criar.
 
-. Selecione o candidato ao pool que você deseja usar com base nas seguintes caraterísticas e clique em *criar*.
+. Localize o candidato do pool que você deseja usar com base nas seguintes características e clique em *Criar*.
 +
 [cols="25h,~"]
 |===
@@ -81,6 +81,9 @@ Indica se esse candidato a pool é composto inteiramente de unidades com capacid
 ** Se você quiser criar um pool apenas FDE, procure *Sim - FDE* na coluna compatível com segurança. Se você quiser criar um pool somente FIPS, procure *Sim - FIPS* ou *Sim - FIPS (Misto)*. "Mixed" (Misto) indica uma mistura de unidades de nível 140-2 e 140-3. Se você usar uma mistura desses níveis, esteja ciente de que o pool funcionará no nível mais baixo de segurança (140-2).
 ** Você pode criar um pool composto de unidades que podem ou não ser seguras ou que são uma combinação de níveis de segurança. Se as unidades no pool incluírem unidades que não são seguras, você não poderá tornar o pool seguro.
 
+
+
+NOTE: A combinação de unidades FDE e FIPS no mesmo array de storage não é suportada. Todas as unidades com capacidade de segurança no sistema devem ser do mesmo tipo.
 
 
 

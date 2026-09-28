@@ -33,6 +33,7 @@ O editor de scripts oferece duas visualizações na janela:
 
 
 
+[[open-the-script-editor]]
 == Abra o editor de scripts
 
 .Passos
@@ -136,6 +137,7 @@ Salve os resultados em um arquivo local
 
 
 
+[[write-scripts-in-the-script-editor]]
 === Escreva scripts no editor de scripts
 
 .Antes de começar
@@ -169,6 +171,7 @@ setting controller mode
 
 
 
+[[interpret-script-execution-results]]
 === Interpretar resultados da execução do script
 
 Durante a execução do script, mensagens aparecem no painel de saída começando com:

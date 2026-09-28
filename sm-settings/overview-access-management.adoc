@@ -16,6 +16,7 @@ O Gerenciamento de Acesso é um método para estabelecer a autenticação do usu
 
 
 
+[[what-authentication-methods-are-available]]
 == Quais métodos de autenticação estão disponíveis?
 
 Os métodos de autenticação incluem RBAC (controle de acesso baseado em função), Directory Services e Security Assertion Markup Language (SAML):
@@ -37,9 +38,10 @@ Saiba mais:
 
 
 
+[[how-do-i-configure-authentication]]
 == Como faço para configurar a autenticação?
 
-O storage array é pré-configurado para usar funções de usuário locais, que são uma implementação das funcionalidades do RBAC. Se você quiser configurar um método diferente, vá para menu:Configurações[Gerenciamento de Acesso].
+O array de storage está pré-configurado para usar funções de usuário locais, que são uma implementação dos recursos RBAC. Se você quiser configurar um método diferente, acesse menu:Authentication[].
 
 Saiba mais:
 
@@ -49,6 +51,7 @@ Saiba mais:
 
 
 
+[[related-information]]
 == Informações relacionadas
 
 Saiba mais sobre tarefas relacionadas ao gerenciamento de acesso:

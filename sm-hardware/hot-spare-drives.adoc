@@ -24,12 +24,14 @@ As peças sobressalentes quentes não são dedicadas a grupos de volumes especí
 
 
 
+[[how-to-identify-hot-spares]]
 == Como identificar peças sobressalentes quentes
 
 Você pode atribuir hot spares através do Assistente de configuração inicial ou da página hardware. Para determinar se os hot spares são atribuídos, vá para a página hardware e procure os compartimentos de unidade mostrados em rosa.
 
 
 
+[[how-hot-spare-coverage-works]]
 == Como funciona a cobertura hot spare
 
 A cobertura hot spare funciona da seguinte forma:
@@ -49,6 +51,7 @@ Os hot spares não podem ser usados para pools, que têm um método diferente de
 
 
 
+[[considerations-for-hot-spare-drive-capacity]]
 == Considerações sobre a capacidade da unidade hot spare
 
 Selecione uma unidade com uma capacidade igual ou superior à capacidade total da unidade que pretende proteger. Por exemplo, se você tiver uma unidade de 18 GiB com capacidade configurada de 8 GiB, poderá usar uma unidade de 9 GiB ou maior como hot spare. Geralmente, não atribua uma unidade como hot spare a menos que sua capacidade seja igual ou maior que a capacidade da unidade maior no storage de armazenamento.
@@ -60,12 +63,14 @@ Se as peças sobressalentes quentes não estiverem disponíveis que tenham a mes
 ====
 
 
+[[considerations-for-media-and-interface-types]]
 == Considerações para tipos de Mídia e interface
 
 A unidade usada como hot spare deve compartilhar o mesmo tipo de Mídia e tipo de interface que as unidades que protegerão. Por exemplo, uma unidade HDD não pode servir como hot spare para unidades SSD.
 
 
 
+[[considerations-for-secure-capable-drives]]
 == Considerações para unidades com capacidade de segurança
 
 Uma unidade com capacidade segura, como FDE ou FIPS, pode servir como um hot spare para unidades com ou sem recursos de segurança. No entanto, uma unidade que não seja segura não pode servir como hot spare para unidades com recursos de segurança.
@@ -79,6 +84,7 @@ Quando você ativa o recurso Segurança da Unidade e cria um pool ou grupo de vo
 ====
 
 
+[[recommended-number-of-hot-spare-drives]]
 == Número recomendado de unidades hot spare
 
 Se você usou o assistente de configuração inicial para criar automaticamente hot spares, o System Manager cria um hot spare para cada 30 unidades de um tipo de Mídia e tipo de interface específicos. Caso contrário, você pode criar manualmente unidades hot spare entre os grupos de volume no storage de armazenamento.

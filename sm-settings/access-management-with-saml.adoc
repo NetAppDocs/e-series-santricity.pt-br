@@ -15,6 +15,7 @@ Para Gerenciamento de Acesso, os administradores podem usar os recursos de Secur
 
 
 
+[[configuration-workflow]]
 == Fluxo de trabalho de configuração
 
 A configuração SAML funciona da seguinte forma:
@@ -26,7 +27,7 @@ A configuração SAML funciona da seguinte forma:
 O `admin` utilizador tem acesso total a todas as funções do System Manager.
 
 ====
-. O administrador vai para a guia *SAML* em Gerenciamento de Acesso.
+. O administrador acessa a página *SAML* em Autenticação.
 . Um administrador configura as comunicações com o Provedor de identidade (IDP). Um IDP é um sistema externo usado para solicitar credenciais de um usuário e determinar se o usuário foi autenticado com êxito. Para configurar as comunicações com a matriz de armazenamento, o administrador transfere o ficheiro de metadados IDP do sistema IDP e, em seguida, utiliza o System Manager para carregar o ficheiro para a matriz de armazenamento.
 . Um administrador estabelece uma relação de confiança entre o Fornecedor de Serviços e o IDP. Um Fornecedor de Serviços controla a autorização do utilizador; neste caso, o controlador na matriz de armazenamento atua como o Fornecedor de Serviços. Para configurar comunicações, o administrador usa o System Manager para exportar um arquivo de metadados do provedor de serviços para cada controlador. A partir do sistema IDP, o administrador então importa esses arquivos de metadados para o IDP.
 +
@@ -49,6 +50,7 @@ Uma vez que o SAML está ativado, você _não pode_ desabilitá-lo através da i
 
 
 
+[[management]]
 == Gerenciamento
 
 Ao usar o SAML para autenticação, os administradores podem executar as seguintes tarefas de gerenciamento:
@@ -59,6 +61,7 @@ Ao usar o SAML para autenticação, os administradores podem executar as seguint
 
 
 
+[[access-restrictions]]
 == Restrições de acesso
 
 Quando o SAML está ativado, os usuários não podem descobrir ou gerenciar o storage desse array a partir do Unified Manager ou da interface herdada do Storage Manager.
@@ -73,6 +76,7 @@ Além disso, os seguintes clientes não podem acessar os serviços e recursos do
 
 
 
+[[limited-connectivity-with-saml-enabled]]
 === Conetividade limitada com SAML habilitado
 
 Os seguintes recursos de storage array têm conetividade limitada com a autenticação JSON Web Token sempre que o SAML está habilitado.

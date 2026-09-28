@@ -15,6 +15,7 @@ Os administradores podem usar os recursos RBAC (controle de acesso baseado em fu
 
 
 
+[[configuration-workflow]]
 == Fluxo de trabalho de configuração
 
 As funções de utilizador local são pré-configuradas no sistema. Para usar funções de usuário local para autenticação, os administradores podem fazer o seguinte:
@@ -33,6 +34,7 @@ O `admin` utilizador tem acesso total a todas as funções do sistema.
 
 
 
+[[management]]
 == Gerenciamento
 
 Ao usar apenas funções de usuário local para autenticação, os administradores podem executar as seguintes tarefas de gerenciamento:

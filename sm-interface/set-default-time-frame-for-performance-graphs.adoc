@@ -15,7 +15,7 @@ summary: Pode alterar o período de tempo predefinido apresentado pelos gráfico
 Pode alterar o período de tempo predefinido apresentado pelos gráficos de desempenho.
 
 .Sobre esta tarefa
-Os gráficos de desempenho apresentados na página inicial e na página desempenho mostram inicialmente um período de tempo de 1 hora. As preferências são armazenadas no armazenamento local do navegador para que todos os usuários possam ter suas próprias configurações.
+Os gráficos de desempenho exibidos no Dashboard e na página de Desempenho mostram inicialmente um período de 1 hora. As preferências são armazenadas no armazenamento local do navegador, assim todos os usuários podem ter suas próprias configurações.
 
 .Passos
 . Clique no ícone *User Settings* no canto superior direito da janela.

@@ -16,12 +16,13 @@ Use o assistente de configuração para configurar seu storage array, incluindo 
 
 
 
+[[first-time-setup]]
 == Configuração pela primeira vez
 
 Quando abre o System Manager pela primeira vez, o assistente de configuração é iniciado. O assistente de configuração solicita que você execute tarefas básicas de configuração, como nomear sua matriz de armazenamento, configurar seus hosts, selecionar aplicativos e criar pools de armazenamento.
 
 
-NOTE: Antes de continuar com a configuração inicial, vá para a Central de Atualização (menu:suporte[Centro de Atualização]) e certifique-se de que o software SANtricity os está atualizado. Se necessário, atualize para a versão mais recente e atualize o navegador para continuar a configuração. Para obter mais informações, link:../sm-support/overview-upgrade-center.html["Visão geral do Centro de atualizações"]consulte .
+NOTE: Antes de continuar com a configuração inicial, acesse o Upgrade center (menu:Support[Upgrade center]) e verifique se o SANtricity OS software está atualizado. Se necessário, faça o upgrade para a versão mais recente e atualize seu navegador para continuar a configuração. Para obter mais informações, consulte link:../sm-support/overview-upgrade-center.html["Visão geral do Centro de atualizações"].
 
 Se você cancelar o assistente, não será possível reiniciá-lo manualmente. O assistente reinicia automaticamente quando você abre o System Manager ou atualiza o navegador e _pelo menos uma_ das seguintes condições é atendida:
 
@@ -32,6 +33,7 @@ Se você cancelar o assistente, não será possível reiniciá-lo manualmente. O
 
 
 
+[[terminology]]
 == Terminologia
 
 O assistente de configuração usa os seguintes termos.

@@ -24,6 +24,7 @@ Por exemplo, um volume primário é de propriedade da controladora A e, em segui
 
 
 
+[[controller-resets]]
 == O controlador é reiniciado
 
 Uma reinicialização do controlador causa uma alteração de propriedade de volume no lado primário do proprietário do controlador preferido para o controlador alternativo no storage de armazenamento.

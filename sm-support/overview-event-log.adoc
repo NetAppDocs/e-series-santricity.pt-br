@@ -17,6 +17,7 @@ Você pode usar o log de eventos como uma ferramenta de diagnóstico complementa
 
 
 
+[[event-categories]]
 == Categorias de eventos
 
 Os eventos no log de eventos são categorizados com status diferentes. Os eventos nos quais você precisa agir têm os seguintes status:
@@ -32,6 +33,7 @@ Os eventos que são informativos e não exigem nenhuma ação imediata são os s
 
 
 
+[[critical-events]]
 == Eventos críticos
 
 Eventos críticos indicam um problema com o storage array. Se você resolver o evento crítico imediatamente, poderá evitar a perda de acesso aos dados.

@@ -16,6 +16,7 @@ As unidades do seu storage array fornecem a capacidade de armazenamento físico 
 
 
 
+[[using-capacity-to-create-and-expand-volumes]]
 == Uso da capacidade para criar e expandir volumes
 
 Você pode criar volumes a partir da capacidade não atribuída ou da capacidade livre em um pool ou grupo de volumes.
@@ -28,6 +29,7 @@ Depois de expandir a capacidade de volume, você deve aumentar manualmente o tam
 
 
 
+[[capacity-types-for-thick-volumes-and-thin-volumes]]
 == Tipos de capacidade para volumes espessos e volumes finos
 
 Você pode criar volumes espessos ou volumes finos. A capacidade reportada e a capacidade alocada são as mesmas para volumes espessos, mas são diferentes para volumes finos.
@@ -49,6 +51,7 @@ O Gerenciador de sistema do SANtricity não oferece uma opção para criar thin 
 ====
 
 
+[[capacity-limits-for-thick-volumes]]
 == Limites de capacidade para volumes espessos
 
 A capacidade mínima para um volume espesso é de 1 MIB e a capacidade máxima é determinada pelo número e capacidade das unidades no pool ou grupo de volumes.
@@ -65,6 +68,7 @@ Quando você cria um volume, alguma capacidade adicional é pré-alocada para mi
 
 
 
+[[capacity-limits-for-thin-volumes]]
 == Limites de capacidade para volumes finos
 
 Você pode criar thin volumes com uma grande capacidade relatada e uma capacidade alocada relativamente pequena, o que é benéfico para a utilização e a eficiência do storage. Os thin volumes podem ajudar a simplificar a administração de storage porque a capacidade alocada pode aumentar à medida que as necessidades da aplicação mudam, sem interromper a aplicação, possibilitando uma melhor utilização do storage.
@@ -99,6 +103,6 @@ Para um volume fino, se a capacidade máxima comunicada de 256 TIB tiver sido at
 
 O sistema expande automaticamente a capacidade alocada com base no limite de capacidade alocado. O limite de capacidade alocado permite limitar o crescimento automático do volume fino abaixo da capacidade reportada. Quando a quantidade de dados gravados se aproxima da capacidade alocada, você pode alterar o limite de capacidade alocada.
 
-Para alterar o limite de capacidade alocada, selecione menu:armazenamento[volumes > separador Thin volume Monitoring > Change Limit] (monitorização de volume fino > alterar limite).
+Para alterar o limite de capacidade alocada, selecione menu:Storage[Monitoramento de volume fino > Alterar limite].
 
 Como o System Manager não aloca a capacidade total quando cria um volume fino, pode haver capacidade livre insuficiente no pool. Espaço insuficiente pode bloquear gravações no pool, não apenas para os volumes finos, mas também para outras operações que exigem capacidade do pool (por exemplo, imagens de snapshot ou volumes de snapshot). No entanto, você ainda pode executar operações de leitura a partir do pool. Se esta situação ocorrer, recebe um aviso de limite de alerta.

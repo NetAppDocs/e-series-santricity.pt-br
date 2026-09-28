@@ -16,7 +16,7 @@ Você pode importar a configuração de armazenamento de um storage array para o
 
 .Antes de começar
 * O armazenamento é configurado no Gerenciador de sistema do SANtricity para o storage array que você deseja usar como origem.
-* A configuração existente para os storages de armazenamento de destino é feita com backup no System Manager (menu:Configurações[sistema > Salvar configuração da matriz de armazenamento]).
+* A configuração existente para os arrays de storage de destino é salva no System Manager (menu:System[Save storage array configuration]).
 * Os arrays de origem e destino devem atender a estes requisitos:
 +
 ** As gavetas em que os controladores residem devem ser idênticas.

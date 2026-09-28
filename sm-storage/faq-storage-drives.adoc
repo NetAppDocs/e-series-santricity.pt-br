@@ -16,13 +16,14 @@ Este FAQ pode ajudar se você está apenas procurando uma resposta rápida para 
 
 
 
+[[what-is-a-hot-spare-drive]]
 == O que é uma unidade de reserva quente?
 
 As peças sobressalentes ativas funcionam como unidades de reserva nos grupos de volumes RAID 1, RAID 5 ou RAID 6. São unidades totalmente funcionais que não contêm dados. Se uma unidade falhar no grupo de volumes, o controlador reconstrói automaticamente os dados da unidade com falha para um hot spare.
 
 Se uma unidade falhar no storage de armazenamento, a unidade hot spare será automaticamente substituída pela unidade com falha sem exigir uma troca física. Se a unidade hot spare estiver disponível quando uma unidade falhar, a controladora usará dados de redundância para reconstruir os dados da unidade com falha para a unidade hot spare.
 
-Uma unidade hot spare não é dedicada a um grupo de volume específico. Em vez disso, você pode usar uma unidade hot spare para qualquer unidade com falha no storage de armazenamento com a mesma capacidade ou capacidade menor. Uma unidade hot spare deve ser do mesmo tipo de Mídia (HDD ou SSD) que as unidades que está protegendo.
+Um hot spare não é dedicado a um grupo de volume específico. Em vez disso, você pode usar um hot spare para qualquer unidade com falha no array de storage com a mesma capacidade ou capacidade inferior. Um hot spare deve ser do mesmo tipo de mídia (HDD ou SSD) que as unidades que ele está protegendo. Nos sistemas EF80 e EF50, os hot spares também devem corresponder ao tipo de unidade de capacidade.
 
 [NOTE]
 ====
@@ -31,6 +32,7 @@ Unidades hot spare não são suportadas com pools. Em vez de unidades hot spare,
 ====
 
 
+[[what-is-preservation-capacity]]
 == O que é a capacidade de preservação?
 
 Capacidade de preservação é a quantidade de capacidade (número de unidades) reservada em um pool para dar suporte a possíveis falhas de unidade.
@@ -41,6 +43,7 @@ Os pools usam capacidade de preservação durante a reconstrução, enquanto os 
 
 
 
+[[why-would-i-logically-replace-a-drive]]
 == Por que eu substituiria logicamente uma unidade?
 
 Se uma unidade falhar ou você quiser substituí-la por qualquer outro motivo, e você tiver uma unidade não atribuída em sua matriz de armazenamento, você pode logicamente substituir a unidade com falha pela unidade não atribuída. Se você não tiver uma unidade não atribuída, pode substituir fisicamente a unidade.
@@ -49,10 +52,11 @@ Os dados da unidade original são copiados ou reconstruídos na unidade de subst
 
 
 
+[[where-can-i-view-the-status-of-a-drive-undergoing-reconstruction]]
 == Onde posso ver o estado de uma unidade em fase de reconstrução?
 
-Pode visualizar o estado de reconstrução da unidade a partir do painel operações em curso.
+Você pode visualizar o status da reconstrução da unidade no painel de operações em andamento.
 
-No menu Storage, no painel esquerdo, clique no link *Operations in Progress* no canto superior direito.
+No painel esquerdo, selecione o menu: monitoramento [Operações em andamento].
 
 Dependendo da unidade, a reconstrução completa pode demorar um tempo considerável. Se a propriedade de um volume tiver mudado, poderá ocorrer uma reconstrução completa em vez da reconstrução rápida.

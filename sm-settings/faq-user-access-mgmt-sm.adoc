@@ -16,6 +16,7 @@ Este FAQ pode ajudar se você está apenas procurando uma resposta rápida para 
 
 
 
+[[why-cant-i-log-in]]
 == Por que não consigo fazer login?
 
 Se você receber um erro ao tentar fazer login no Gerenciador de sistema do SANtricity, revise essas possíveis causas.
@@ -26,7 +27,7 @@ Erros de login no System Manager podem ocorrer por um destes motivos:
 * Você não tem Privileges suficiente.
 * O servidor de diretório (se configurado) pode estar indisponível. Se for esse o caso, tente fazer login com uma função de usuário local.
 * Tentou iniciar sessão sem sucesso várias vezes, o que acionou o modo de bloqueio. Aguarde 10 minutos para voltar a iniciar sessão.
-* Uma condição de bloqueio foi acionada e seu log de auditoria pode estar cheio. Aceda a Gestão de Acesso e elimine eventos antigos do registo de auditoria.
+* Uma condição de bloqueio foi acionada e seu log de auditoria pode estar cheio. Acesse Monitoramento > log de auditoria e exclua eventos antigos do log de auditoria.
 * A autenticação SAML está ativada. Atualize seu navegador para fazer login.
 
 
@@ -39,6 +40,7 @@ Erros de login em um storage array remoto para tarefas de espelhamento podem oco
 
 
 
+[[what-do-i-need-to-know-before-adding-a-directory-server]]
 == O que eu preciso saber antes de adicionar um servidor de diretório?
 
 Antes de adicionar um servidor de diretório no Gerenciamento de Acesso, certifique-se de atender aos seguintes requisitos.
@@ -50,6 +52,7 @@ Antes de adicionar um servidor de diretório no Gerenciamento de Acesso, certifi
 
 
 
+[[what-do-i-need-to-know-about-mapping-to-storage-array-roles]]
 == O que eu preciso saber sobre mapeamento para funções de storage array?
 
 Antes de mapear grupos para funções, revise as diretrizes a seguir.
@@ -64,6 +67,7 @@ As funcionalidades de RBAC (controle de acesso baseado em funções) do storage 
 
 
 
+[[directory-services]]
 === Serviços de diretório
 
 Se estiver a utilizar um servidor LDAP (Lightweight Directory Access Protocol) e Serviços de diretório, certifique-se de que:
@@ -80,6 +84,7 @@ Se estiver a utilizar um servidor LDAP (Lightweight Directory Access Protocol) e
 
 
 
+[[saml]]
 === SAML
 
 Se você estiver usando os recursos de Security Assertion Markup Language (SAML) incorporados ao storage array, verifique se:
@@ -97,12 +102,14 @@ Se você estiver usando os recursos de Security Assertion Markup Language (SAML)
 
 
 
+[[which-external-management-tools-may-be-affected-by-this-change]]
 == Que ferramentas de gestão externas podem ser afetadas por esta alteração?
 
 Quando você faz certas alterações no Gerenciador de sistema do SANtricity, como alternar a interface de gerenciamento ou usar o SAML para um método de autenticação, algumas ferramentas e recursos externos podem ser restritos ao uso.
 
 
 
+[[management-interface]]
 === Interface de gerenciamento
 
 As ferramentas que se comunicam diretamente com a interface de gerenciamento legada (símbolo), como o provedor SMI-S do SANtricity ou o OnCommand Insight (OCI), não funcionam a menos que a configuração Interface de Gerenciamento legado esteja ativada. Além disso, você não pode usar comandos CLI legados ou executar operações de espelhamento se essa configuração estiver desativada.
@@ -111,6 +118,7 @@ Entre em Contato com o suporte técnico para obter mais informações.
 
 
 
+[[saml-authentication]]
 === Autenticação SAML
 
 Quando o SAML está habilitado, os seguintes clientes não podem acessar os serviços e recursos do storage array:
@@ -127,12 +135,14 @@ Entre em Contato com o suporte técnico para obter mais informações.
 
 
 
+[[what-do-i-need-to-know-before-configuring-and-enabling-saml]]
 == O que eu preciso saber antes de configurar e ativar o SAML?
 
 Antes de configurar e habilitar os recursos de Security Assertion Markup Language (SAML) para autenticação, certifique-se de atender aos requisitos a seguir e entender as restrições SAML.
 
 
 
+[[requirements]]
 === Requisitos
 
 Antes de começar, certifique-se de que:
@@ -147,6 +157,7 @@ Antes de começar, certifique-se de que:
 
 
 
+[[restrictions]]
 === Restrições
 
 Além dos requisitos acima, certifique-se de que compreende as seguintes restrições:
@@ -168,6 +179,7 @@ Além dos requisitos acima, certifique-se de que compreende as seguintes restri�
 
 
 
+[[what-types-of-events-are-recorded-in-the-audit-log]]
 == Que tipos de eventos são registrados no log de auditoria?
 
 O log de auditoria pode gravar eventos de modificação ou eventos de modificação e somente leitura.
@@ -180,6 +192,7 @@ Dependendo das definições da política, são apresentados os seguintes tipos d
 
 
 
+[[what-do-i-need-to-know-before-configuring-a-syslog-server]]
 == O que eu preciso saber antes de configurar um servidor syslog?
 
 Você pode arquivar logs de auditoria em um servidor syslog externo.
@@ -195,8 +208,9 @@ Antes de configurar um servidor syslog, tenha em mente as seguintes diretrizes.
 
 
 
+[[the-syslog-server-is-no-longer-receiving-audit-logs-what-do-i-do]]
 == O servidor syslog não está mais recebendo logs de auditoria. O que faço?
 
 Se você configurou um servidor syslog com um protocolo TLS, o servidor não poderá receber mensagens se o certificado se tornar inválido por qualquer motivo. Uma mensagem de erro sobre o certificado inválido é publicada no log de auditoria.
 
-Para resolver esse problema, primeiro você deve corrigir o certificado para o servidor syslog. Quando uma cadeia de certificados válida estiver em vigor, aceda ao menu:Definições[Registo de auditoria > Configurar servidores Syslog > testar tudo].
+Para resolver esse problema, você precisa primeiro corrigir o certificado do servidor syslog. Depois que uma cadeia de certificados válida estiver instalada, acesse o menu:Monitoring[Log de auditoria > Configurar servidores syslog > Testar todos].

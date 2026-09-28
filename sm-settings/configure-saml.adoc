@@ -40,13 +40,13 @@ Configurar a autenticação SAML é um procedimento de várias etapas.
 
 
 
+[[step-1-upload-the-idp-metadata-file]]
 == Passo 1: Faça o upload do arquivo de metadados IDP
 
 Para fornecer ao storage array informações de conexão IDP, você importa metadados IDP para o System Manager. O sistema de IDP precisa desses metadados para redirecionar as solicitações de autenticação para o URL correto e para validar as respostas recebidas. Você só precisa fazer o upload de um arquivo de metadados para o storage array, mesmo que haja dois controladores.
 
 .Passos
-. No painel esquerdo, selecione menu:Settings[Access Management].
-. Selecione a guia *SAML*.
+. No painel esquerdo, selecione menu:autenticação[SAML].
 +
 A página exibe uma visão geral das etapas de configuração.
 
@@ -63,6 +63,7 @@ Depois de selecionar o ficheiro, é apresentado o ID da entidade IDP.
 
 
 
+[[step-2-export-service-provider-files]]
 == Passo 2: Exportar arquivos do provedor de serviços
 
 Para estabelecer uma relação de confiança entre o IDP e o storage array, você importa os metadados do provedor de serviços para o IDP. O IDP precisa desses metadados para estabelecer uma relação de confiança com os controladores e processar solicitações de autorização. O arquivo inclui informações como o nome de domínio do controlador ou endereço IP, para que o IDP possa se comunicar com os provedores de serviços.
@@ -85,6 +86,7 @@ Há um arquivo formatado em XML para cada controlador.
 
 
 
+[[step-3-map-roles]]
 == Passo 3: Mapear funções
 
 Para fornecer aos usuários autorização e acesso ao System Manager, é necessário mapear os atributos de usuário e associações a grupos de IDP para as funções predefinidas do storage array.
@@ -162,6 +164,7 @@ Mapeamentos de função podem ser modificados depois que o SAML estiver habilita
 
 
 
+[[step-4-test-sso-login]]
 == Passo 4: Teste o login SSO
 
 Para garantir que o sistema IDP e o storage array possam se comunicar, você pode testar opcionalmente um login SSO. Este teste também é realizado durante a etapa final para ativar o SAML.
@@ -194,6 +197,7 @@ Se o teste não for concluído com êxito, é apresentada uma mensagem de erro c
 
 
 
+[[step-5-enable-saml]]
 == Passo 5: Ative o SAML
 
 Sua etapa final é concluir a configuração SAML para autenticação de usuário. Durante esse processo, o sistema também solicita que você teste um login SSO. O processo de teste SSO Login é descrito na etapa anterior.
@@ -210,7 +214,7 @@ Sua etapa final é concluir a configuração SAML para autenticação de usuári
 
 ====
 .Passos
-. Na guia *SAML*, selecione o link *Ativar SAML*.
+. Selecione o link *Enable SAML*.
 +
 A caixa de diálogo confirmar ativação SAML é aberta.
 

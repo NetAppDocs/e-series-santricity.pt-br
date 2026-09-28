@@ -18,8 +18,7 @@ Você exclui um grupo de instantâneos quando deseja excluir permanentemente seu
 Quando um grupo de instantâneos é eliminado, todas as imagens de instantâneos no grupo também são eliminadas.
 
 .Passos
-. No painel esquerdo, selecione menu:Storage[Pools and volume groups].
-. Clique na guia *capacidade reservada*.
+. No painel esquerdo, selecione menu:Storage [Capacidade reservada].
 . Selecione o grupo de snapshot que você deseja excluir e, em seguida, clique no menu:ellipsis icon[Delete].
 +
 É exibida a caixa de diálogo confirmar Excluir grupo de instantâneos.

@@ -23,14 +23,14 @@ Se o Gerenciamento de Acesso for configurado usando os recursos SAML (Security A
 
 ====
 .Passos
-. No painel esquerdo, selecione menu:Settings[System].
+. No painel esquerdo, selecione *System*.
 . Na seção Geral, selecione *Ativar/Desativar tempo limite da sessão*.
 +
 A caixa de diálogo Ativar/Desativar tempo limite da sessão é aberta.
 
 . Utilize os controlos giratórios para aumentar ou diminuir o tempo em minutos.
 +
-O tempo limite mínimo que você pode definir para o System Manager é de 15 minutos.
+O tempo limite mínimo que você pode definir para System Manager é 10 minutos.
 
 +
 [NOTE]

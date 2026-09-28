@@ -23,6 +23,7 @@ O processo para criar um grupo de consistência de instantâneos é um procedime
 
 
 
+[[step-1-add-members-to-snapshot-consistency-group]]
 == Etapa 1: Adicionar membros ao grupo de consistência de snapshot
 
 Selecione membros para especificar uma coleção de volumes que compõem o grupo de consistência de snapshot. Todas as ações executadas no grupo de consistência de snapshot se estendem uniformemente para os volumes de membros selecionados.
@@ -31,18 +32,18 @@ Selecione membros para especificar uma coleção de volumes que compõem o grupo
 Os volumes dos membros devem ser ótimos.
 
 .Passos
-. No painel esquerdo, selecione menu:Storage[Snapshots].
-. Clique na guia *Snapshot Consistency Groups* (grupos de consistência de instantâneos).
+. No painel esquerdo, selecione menu:Snapshots[Snapshot grupos de consistência].
 . Selecione menu:criar[Snapshot consistency group].
 +
 A caixa de diálogo criar grupo de consistência de instantâneo é exibida.
 
-. Selecione o(s) volume(s) a ser(em) adicionado(s) como volumes membros ao grupo de consistência de instantâneos.
+. Localize o(s) volume(s) a serem adicionados como volumes membros ao grupo de consistência de Snapshot.
 . Clique em *seguinte* e vá para <<Etapa 2: Reserva de capacidade para o grupo de consistência de snapshot>>.
 
 
 
 
+[[step-2-reserve-capacity-for-snapshot-consistency-group]]
 == Etapa 2: Reserva de capacidade para o grupo de consistência de snapshot
 
 Associe a capacidade reservada ao grupo de consistência de snapshot. O System Manager sugere os volumes e a capacidade com base nas propriedades do grupo de consistência de snapshot. Pode aceitar a configuração de capacidade reservada recomendada ou personalizar o armazenamento alocado.
@@ -74,6 +75,7 @@ Alocar a capacidade reservada usando as diretrizes a seguir.
 
 
 
+[[step-3-edit-settings-for-snapshot-consistency-group]]
 == Etapa 3: Edite as configurações para o grupo de consistência de snapshot
 
 Aceite ou escolha configurações de exclusão automática e limites de alerta de capacidade reservada para o grupo de consistência de snapshot.

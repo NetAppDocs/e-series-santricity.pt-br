@@ -16,6 +16,7 @@ Este FAQ pode ajudar se você está apenas procurando uma resposta rápida para 
 
 
 
+[[what-do-i-need-to-know-before-creating-a-security-key]]
 == O que eu preciso saber antes de criar uma chave de segurança?
 
 Uma chave de segurança é compartilhada por controladores e unidades habilitadas para proteger dentro de um storage array. Se uma unidade habilitada para segurança for removida do storage array, a chave de segurança protegerá os dados contra acesso não autorizado.
@@ -28,6 +29,7 @@ Você pode criar e gerenciar chaves de segurança usando um dos seguintes métod
 
 
 
+[[internal-key-management]]
 === Gerenciamento de chaves internas
 
 As chaves internas são mantidas e "ocultas" em um local não acessível na memória persistente do controlador. Antes de criar uma chave de segurança interna, você deve fazer o seguinte:
@@ -40,6 +42,7 @@ Em seguida, você pode criar uma chave de segurança interna, que envolve a defi
 
 
 
+[[external-key-management]]
 === Gerenciamento de chaves externas
 
 As chaves externas são mantidas em um servidor de gerenciamento de chaves separado, usando um KMIP (Key Management Interoperability Protocol). Antes de criar uma chave de segurança externa, você deve fazer o seguinte:
@@ -48,7 +51,7 @@ As chaves externas são mantidas em um servidor de gerenciamento de chaves separ
 . Certifique-se de que a funcionalidade de Segurança da unidade está ativada. Se necessário, entre em Contato com o fornecedor de armazenamento para obter instruções sobre como ativar o recurso Segurança da unidade.
 . Obtenha um arquivo de certificado de cliente assinado. Um certificado de cliente valida os controladores do storage array, para que o servidor de gerenciamento de chaves possa confiar em suas solicitações KMIP.
 +
-.. Primeiro, você conclui e faz o download de uma solicitação de assinatura de certificado de cliente (CSR). Aceda ao menu:Definições[certificados > Gestão de chaves > CSR completo].
+.. Primeiro, você preenche e baixa uma Solicitação de Assinatura de Certificado (CSR) do cliente. Vá para menu:Certificates[Key management certificates] e selecione *Complete CSR*.
 .. Em seguida, você solicita um certificado de cliente assinado de uma CA confiável pelo servidor de gerenciamento de chaves. (Você também pode criar e baixar um certificado de cliente do servidor de gerenciamento de chaves usando o arquivo CSR baixado.)
 .. Depois de ter um arquivo de certificado de cliente, copie esse arquivo para o host onde você está acessando o System Manager.
 
@@ -60,12 +63,14 @@ Em seguida, você pode criar uma chave externa, que envolve a definição do end
 
 
 
+[[why-do-i-need-to-define-a-pass-phrase]]
 == Por que eu preciso definir uma frase-passe?
 
 A frase-passe é usada para criptografar e descriptografar o arquivo de chave de segurança armazenado no cliente de gerenciamento local. Sem a frase-passe, a chave de segurança não pode ser descriptografada e usada para desbloquear dados de uma unidade habilitada para segurança se for reinstalada em outra matriz de armazenamento.
 
 
 
+[[why-is-it-important-to-record-security-key-information]]
 == Por que é importante Registrar informações de chave de segurança?
 
 Se você perder as informações da chave de segurança e não tiver um backup, poderá perder dados ao relocar unidades habilitadas ou atualizar um controlador. Você precisa da chave de segurança para desbloquear dados nas unidades.
@@ -74,6 +79,7 @@ Certifique-se de gravar o identificador da chave de segurança, a frase-passe as
 
 
 
+[[what-do-i-need-to-know-before-backing-up-a-security-key]]
 == O que eu preciso saber antes de fazer backup de uma chave de segurança?
 
 Se a chave de segurança original ficar corrompida e você não tiver um backup, perderá o acesso aos dados nas unidades se eles forem migrados de um storage array para outro.
@@ -99,6 +105,7 @@ A frase-passe para o Drive Security não deve ser confundida com a senha de Admi
 
 
 
+[[what-do-i-need-to-know-before-unlocking-secure-drives]]
 == O que eu preciso saber antes de desbloquear unidades seguras?
 
 Para desbloquear os dados de uma unidade ativada de forma segura, tem de importar a respetiva chave de segurança.
@@ -113,14 +120,16 @@ Antes de desbloquear unidades seguras, tenha em mente as seguintes diretrizes:
 
 
 
+[[what-is-readwrite-accessibility]]
 == O que é acessibilidade de leitura/escrita?
 
 A janela Configurações da unidade inclui informações sobre os atributos de segurança da unidade. "Leitura/gravação acessível" é um dos atributos que é exibido se os dados de uma unidade foram bloqueados.
 
-Para exibir os atributos de segurança da unidade, vá para a página hardware. Selecione uma unidade, clique em *View settings* e, em seguida, clique em *Show more settings* (Mostrar mais definições). Na parte inferior da página, o valor do atributo leitura/gravação acessível é *Sim* quando a unidade é desbloqueada. O valor do atributo leitura/gravação acessível é *não, chave de segurança inválida* quando a unidade está bloqueada. Pode desbloquear uma unidade segura importando uma chave de segurança (aceda ao menu:Definições[sistema > desbloquear unidades seguras]).
+Para visualizar os atributos de segurança da unidade, acesse a página Hardware. Selecione uma unidade, clique em *Exibir configurações* e, em seguida, em *Mostrar mais configurações*. Na parte inferior da página, o valor do atributo Acesso para leitura/gravação é *Sim* quando a unidade está desbloqueada. O valor do atributo Acesso para leitura/gravação é *Não, chave de segurança inválida* quando a unidade está bloqueada. Você pode desbloquear uma unidade segura importando uma chave de segurança (vá para menu:System[Desbloquear unidades seguras]).
 
 
 
+[[what-do-i-need-to-know-about-validating-the-security-key]]
 == O que eu preciso saber sobre a validação da chave de segurança?
 
 Depois de criar uma chave de segurança, você deve validar o arquivo de chave para se certificar de que ele não está corrompido.
@@ -134,6 +143,7 @@ Se a validação falhar, faça o seguinte:
 
 
 
+[[what-is-the-difference-between-internal-security-key-and-external-security-key-management]]
 == Qual é a diferença entre a chave de segurança interna e o gerenciamento de chaves de segurança externas?
 
 Ao implementar o recurso Segurança da unidade, você pode usar uma chave de segurança interna ou uma chave de segurança externa para bloquear dados quando uma unidade habilitada for removida do storage de armazenamento.

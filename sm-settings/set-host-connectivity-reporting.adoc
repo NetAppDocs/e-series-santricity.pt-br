@@ -23,7 +23,7 @@ A desativação do relatório de conetividade do host também desativa o balance
 
 ====
 .Passos
-. No painel esquerdo, selecione menu:Settings[System].
+. No painel esquerdo, selecione *System*.
 . Role para baixo até *Configurações adicionais* e clique em *Ativar/Desativar relatórios de conetividade do host*.
 +
 O texto abaixo dessa opção indica se ela está atualmente ativada ou desativada.

@@ -17,7 +17,7 @@ Para ver e agir em operações de longa duração, use a página operações em 
 Para cada operação listada na página operações em andamento, uma porcentagem de conclusão e o tempo estimado restante para concluir a operação são mostrados. Em alguns casos, você pode parar uma operação ou colocá-la em uma prioridade maior ou menor. Também pode limpar uma operação de cópia de volume concluída da lista.
 
 .Passos
-. No painel esquerdo, selecione menu:Storage[Operations in Progress].
+. No painel esquerdo, selecione o menu: monitoramento [Operações em andamento].
 +
 A página operações em andamento é exibida.
 
@@ -33,7 +33,7 @@ Pode parar uma operação de cópia de volume ou alterar a sua prioridade.
 
 . Quando uma operação de cópia de volume estiver concluída, você poderá selecionar *Clear* para removê-la da lista.
 +
-Na parte superior da página inicial, uma mensagem informativa e um ícone de chave amarela aparecem quando uma operação estiver concluída. Esta mensagem inclui um link que permite limpar a operação da página operações em andamento.
+Uma mensagem informativa e um ícone de chave inglesa amarela aparecem na área de Notificações, acessível pelo ícone de sino no canto superior da janela, quando uma operação é concluída. Essa mensagem inclui um link que permite limpar a operação na página Operações em Andamento.
 
 
 

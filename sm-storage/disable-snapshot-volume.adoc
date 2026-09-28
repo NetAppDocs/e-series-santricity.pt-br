@@ -30,8 +30,7 @@ Se o volume instantâneo do volume do instantâneo ou do grupo de consistência 
 
 ====
 .Passos
-. No painel esquerdo, selecione menu:Storage[Snapshots].
-. Selecione a guia *volumes instantâneos*.
+. No painel esquerdo, selecione menu:Snapshots[Snapshot volumes].
 +
 O System Manager exibe todos os volumes instantâneos associados ao storage array.
 

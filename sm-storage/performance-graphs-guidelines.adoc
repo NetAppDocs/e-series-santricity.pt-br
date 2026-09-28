@@ -30,6 +30,7 @@ Você pode visualizar dados de desempenho em três formatos:
 
 
 
+[[characteristics-of-performance-data-formats]]
 == Caraterísticas dos formatos de dados de desempenho
 
 [cols="1a,1a,1a,1a,1a"]
@@ -93,6 +94,7 @@ Sim
 |===
 
 
+[[guidelines-for-viewing-performance-data]]
 == Diretrizes para visualização de dados de desempenho
 
 * A coleta de dados de desempenho está sempre ativa. Não há opção para desligá-lo.

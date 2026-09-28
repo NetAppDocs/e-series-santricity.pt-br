@@ -46,6 +46,7 @@ O processo para criar pares espelhados síncronos é um procedimento de várias 
 
 
 
+[[step-1-select-the-primary-volume]]
 == Passo 1: Selecione o volume principal
 
 Nesta etapa, você seleciona o volume primário a ser usado na relação de espelhamento síncrono. Quando você seleciona um volume primário no storage array local, o sistema exibe uma lista de todos os volumes elegíveis para esse par espelhado. Quaisquer volumes que não sejam elegíveis para serem usados não são exibidos nessa lista. O volume selecionado mantém a função principal na relação de espelhamento.
@@ -62,6 +63,7 @@ O assistente criar par espelhado síncrono é aberto.
 
 
 
+[[step-2-select-the-secondary-volume]]
 == Passo 2: Selecione o volume secundário
 
 Nesta etapa, você seleciona o volume secundário a ser usado na relação de espelhamento. Quando você seleciona um volume secundário no storage array remoto, o sistema exibe uma lista de todos os volumes elegíveis para esse par espelhado. Quaisquer volumes que não sejam elegíveis para serem usados não são exibidos nessa lista. O volume selecionado manterá a função secundária na relação de espelho.
@@ -91,6 +93,7 @@ Se um volume secundário for escolhido com uma capacidade maior que o volume pri
 
 
 
+[[step-3-select-synchronization-settings]]
 == Passo 3: Selecione as configurações de sincronização
 
 Nesta etapa, você seleciona as configurações que determinam como os dados são sincronizados após uma interrupção de comunicação. Você pode definir a prioridade na qual o proprietário do controlador do volume primário ressincroniza os dados com o volume secundário após uma interrupção de comunicação. Você também deve selecionar a política de ressincronização, manual ou automática.
@@ -101,7 +104,7 @@ Nesta etapa, você seleciona as configurações que determinam como os dados sã
 A prioridade de sincronização determina quanto dos recursos do sistema são usados para concluir a sincronização inicial e a operação de ressincronização após uma interrupção de comunicação em comparação com as solicitações de e/S de serviço.
 
 +
-A prioridade definida nesta caixa de diálogo aplica-se tanto ao volume primário como ao volume secundário. Você pode modificar a taxa no volume primário posteriormente acessando o System Manager e selecionando menu:armazenamento[Espelhamento síncrono > mais > Editar configurações].
+A prioridade definida nesta caixa de diálogo aplica-se tanto ao volume primário quanto ao volume secundário. Você pode modificar a taxa no volume primário posteriormente acessando o System Manager e selecionando menu:Mirroring[espelhamento síncrono > ícone de reticências > Editar configurações].
 
 +
 Existem cinco taxas de prioridade de sincronização:
@@ -122,7 +125,7 @@ Se a prioridade de sincronização estiver definida para a taxa mais baixa, a at
 ** *Manual* (a opção recomendada) -- Selecione essa opção para exigir que a sincronização seja reiniciada manualmente após a comunicação ser restaurada para um par espelhado. Essa opção oferece a melhor oportunidade para recuperar dados.
 ** *Automático* -- Selecione esta opção para iniciar a ressincronização automaticamente após a comunicação ser restaurada para um par espelhado.
 +
-Para retomar manualmente a sincronização, vá para System Manager e selecione menu:armazenamento[Espelhamento síncrono], realce o par espelhado na tabela e selecione *Resume* em *More*.
+Para retomar a sincronização manualmente, acesse o System Manager e selecione menu:Espelhamento[espelhamento síncrono], destaque o par espelhado na tabela e selecione *Retomar* em *Mais*.
 
 
 
@@ -145,4 +148,4 @@ A capacidade de cada volume é de 128 MIB. No entanto, se os volumes forem coloc
 
 
 .Depois de terminar
-Acesse o System Manager e o menu:Storage[Operations in Progress] para visualizar o progresso da operação de espelhamento síncrono. Essa operação pode ser demorada e pode afetar o desempenho do sistema.
+Acesse o System Manager e o menu: Monitoring [Operations in progress] para visualizar o progresso da operação de espelhamento síncrono. Essa operação pode ser demorada e pode afetar o desempenho do sistema.

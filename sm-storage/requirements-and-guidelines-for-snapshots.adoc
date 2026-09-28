@@ -15,6 +15,7 @@ Ao criar e usar snapshots, revise os requisitos e diretrizes a seguir.
 
 
 
+[[snapshot-images-and-snapshot-groups]]
 == Imagens instantâneas e grupos de instantâneos
 
 * Cada imagem instantânea está associada a exatamente um grupo de instantâneos.
@@ -29,6 +30,7 @@ Você pode visualizar os grupos de snapshots na página Pools e grupo de volumes
 
 
 
+[[snapshot-consistency-group]]
 == Grupo de consistência do Snapshot
 
 * Um grupo de consistência de snapshot contém um grupo de snapshot para cada volume que é membro do grupo de consistência de snapshot.
@@ -39,6 +41,7 @@ Você pode visualizar os grupos de snapshots na página Pools e grupo de volumes
 
 
 
+[[base-volume]]
 == Volume base
 
 * Um volume instantâneo deve ter as mesmas configurações de segurança e garantia de dados que o volume base associado.
@@ -49,6 +52,7 @@ Você pode visualizar os grupos de snapshots na página Pools e grupo de volumes
 
 
 
+[[reserved-capacity]]
 == Capacidade reservada
 
 * A capacidade reservada está associada a apenas um volume base.
@@ -58,6 +62,7 @@ Você pode visualizar os grupos de snapshots na página Pools e grupo de volumes
 
 
 
+[[pending-snapshot-images]]
 == Imagens instantâneas pendentes
 
 A criação de imagens instantâneas pode permanecer em um estado pendente nas seguintes condições:
@@ -68,6 +73,7 @@ A criação de imagens instantâneas pode permanecer em um estado pendente nas s
 
 
 
+[[maximum-number-of-snapshot-images]]
 == Número máximo de imagens instantâneas
 
 * Se um volume for membro de um grupo de consistência de snapshot, o System Manager criará um grupo de snapshot para esse volume de membro. Este grupo de instantâneos conta para o número máximo permitido de grupos de instantâneos por volume base.
@@ -81,12 +87,14 @@ A criação de imagens instantâneas pode permanecer em um estado pendente nas s
 
 
 
+[[auto-deletion]]
 == Eliminação automática
 
 Se o grupo de instantâneos ou o grupo de consistência de instantâneos estiver ativado para eliminação automática, o System Manager eliminará a imagem de instantâneo mais antiga quando o sistema criar uma nova para o grupo.
 
 
 
+[[rollback-operation]]
 == Operação de reversão
 
 * Você não pode executar as seguintes ações quando uma operação de reversão estiver em andamento:

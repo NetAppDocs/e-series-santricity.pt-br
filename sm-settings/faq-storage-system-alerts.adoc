@@ -16,6 +16,7 @@ Este FAQ pode ajudar se você está apenas procurando uma resposta rápida para 
 
 
 
+[[what-if-alerts-are-disabled]]
 == E se os alertas estiverem desativados?
 
 Se você quiser que os administradores recebam notificações sobre eventos importantes que ocorrem no storage array, configure um método de alerta.
@@ -24,14 +25,16 @@ Para storages gerenciados com o Gerenciador de sistemas do SANtricity, você con
 
 
 
+[[how-do-i-configure-snmp-or-syslog-alerts]]
 == Como configuro alertas SNMP ou syslog?
 
 Além dos alertas por e-mail, você pode configurar alertas para serem enviados por traps SNMP (Simple Network Management Protocol) ou por mensagens syslog.
 
-Para configurar alertas SNMP ou syslog, vá para menu:Configurações[Alertas].
+Para configurar alertas SNMP ou syslog, acesse menu:Alerts[].
 
 
 
+[[why-are-timestamps-inconsistent-between-the-array-and-alerts]]
 == Por que os carimbos de data/hora são inconsistentes entre a matriz e os alertas?
 
 Quando o storage array envia alertas, ele não corrige o fuso horário do servidor de destino ou host que recebe os alertas. Em vez disso, o storage array usa a hora local (GMT) para criar o carimbo de data/hora usado para o Registro de alerta. Como resultado, você pode ver inconsistências entre os carimbos de data/hora do storage array e o servidor ou host recebendo um alerta.

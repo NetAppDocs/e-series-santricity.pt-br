@@ -22,7 +22,7 @@ A configuração e a autenticação do usuário funcionam da seguinte forma:
 Para iniciar sessão pela primeira vez, o nome de utilizador `admin` é apresentado automaticamente e não pode ser alterado. O `admin` utilizador tem acesso total a todas as funções do sistema.
 
 ====
-. O administrador navega para acessar o Gerenciamento na interface do usuário. O storage array é pré-configurado para usar funções de usuário locais, que são uma implementação dos recursos RBAC (controle de acesso baseado em função).
+. O administrador navega até Autenticação na interface de usuário. O array de storage está pré-configurado para usar funções de usuário locais, que são uma implementação dos recursos de controle de acesso baseado em funções (RBAC - role-based access control).
 . O administrador configura um ou mais dos seguintes métodos de autenticação:
 +
 ** *Funções de usuário local* -- a autenticação é gerenciada por meio de recursos RBAC aplicados no storage array. As funções de usuário local incluem perfis de usuário predefinidos e funções com permissões de acesso específicas. Os administradores podem usar essas funções de usuário local como o único método de autenticação ou usá-las em combinação com um serviço de diretório. Nenhuma configuração é necessária, além de definir senhas para usuários.
@@ -52,6 +52,7 @@ Durante o início de sessão, o sistema executa as seguintes tarefas em segundo 
 
 
 
+[[tasks-available-in-system-manager]]
 == Tarefas disponíveis no System Manager
 
 O acesso a tarefas depende das funções atribuídas de um usuário, que incluem o seguinte:
@@ -66,6 +67,7 @@ Uma tarefa indisponível está a cinzento ou não é apresentada na interface do
 
 
 
+[[limitations-in-unified-manager-and-storage-manager]]
 == Limitações no Unified Manager e no Storage Manager
 
 Se o SAML estiver configurado para um storage array, os usuários não poderão descobrir ou gerenciar o storage desse array a partir do Unified Manager ou das interfaces herdadas do Storage Manager.

@@ -18,8 +18,7 @@ Ao visualizar logs de auditoria, os usuários com permissões de administrador d
 Você deve estar conetado com um perfil de usuário que inclua permissões de administrador de segurança. Caso contrário, as funções de Gerenciamento de Acesso não aparecem.
 
 .Passos
-. No painel esquerdo, selecione menu:Settings[Access Management].
-. Selecione a guia **Audit Log**.
+. No painel esquerdo, selecione menu:Monitoramento[log de auditoria].
 +
 A atividade do log de auditoria aparece em formato tabular, que inclui as seguintes colunas de informações:
 
@@ -33,7 +32,7 @@ A atividade do log de auditoria aparece em formato tabular, que inclui as seguin
 ** *Descrição* -- informações adicionais sobre o evento, se aplicável.
 
 
-. Utilize as seleções na página Registo de auditoria para ver e gerir eventos.
+. Utilize as opções na página de registro de auditoria para visualizar e gerenciar eventos.
 +
 .Detalhes da seleção
 [%collapsible]
@@ -99,7 +98,7 @@ Clique no ícone da coluna *Mostrar/Ocultar* image:../media/sam-1140-ss-access-c
  a| 
 Alternar filtros de coluna
  a| 
-Clique no ícone *alternar* image:../media/sam-1140-ss-access-toggle.gif["Alternar"]para abrir campos de filtragem para cada coluna. Insira carateres dentro de um campo de coluna para limitar eventos mostrados por esses carateres. Clique novamente no ícone para fechar os campos de filtragem.
+Clique no ícone *Alternar* image:../media/sam-1140-ss-access-toggle.gif["Alternar"] para abrir os campos de filtro de cada coluna. Digite caracteres em um campo da coluna para limitar os eventos exibidos por esses caracteres. Clique no ícone novamente para fechar os campos de filtro.
 
 
 

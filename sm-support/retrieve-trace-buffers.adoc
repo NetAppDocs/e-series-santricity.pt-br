@@ -23,7 +23,7 @@ Execute esta operação somente quando instruído a fazê-lo pelo suporte técni
 
 ====
 .Passos
-. No painel esquerdo, selecione menu:Support [Support Center > Diagnostics] tab.
+. No painel esquerdo, selecione menu:Support[Diagnostics].
 . Selecione *Retrieve Trace Buffers*.
 . Marque a caixa de seleção ao lado de cada controlador para o qual você deseja recuperar buffers de rastreamento.
 +

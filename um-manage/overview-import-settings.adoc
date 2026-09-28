@@ -15,6 +15,7 @@ O recurso Importar configurações permite que você execute uma operação em l
 
 
 
+[[what-settings-can-be-imported]]
 == Que definições podem ser importadas?
 
 Você pode importar métodos de alerta, configurações do AutoSupport, configurações dos Serviços de diretório, configurações de armazenamento (como grupos de volumes e pools) e configurações do sistema (como balanceamento de carga automático).
@@ -27,6 +28,7 @@ Saiba mais:
 
 
 
+[[how-do-i-perform-a-batch-import]]
 == Como faço para executar uma importação em lote?
 
 Em uma matriz de armazenamento a ser usada como fonte, abra o System Manager e configure as configurações desejadas. Em seguida, no Unified Manager, vá para a página Gerenciar e importe as configurações para um ou mais arrays.

@@ -16,6 +16,7 @@ Este FAQ pode ajudar se você está apenas procurando uma resposta rápida para 
 
 
 
+[[what-do-i-need-to-know-before-creating-a-remote-storage-connection]]
 == O que eu preciso saber antes de criar uma conexão de armazenamento remoto?
 
 Para configurar a funcionalidade armazenamento remoto, tem de ligar diretamente o dispositivo remoto e os sistemas de armazenamento de destino através de iSCSI.
@@ -28,6 +29,7 @@ Para configurar a ligação do sistema iSCSI, consulte:
 
 
 
+[[why-am-i-being-prompted-to-remove-my-remote-volumes]]
 == Por que estou sendo solicitado a remover meus volumes remotos?
 
 Quando atinge o número máximo de volumes remotos, o sistema de armazenamento deteta automaticamente quaisquer volumes remotos não utilizados e solicita que os remova.
@@ -36,6 +38,7 @@ Existem alguns casos em que os volumes remotos não utilizados não são limpos 
 
 
 
+[[why-dont-i-see-all-my-volumes-on-my-destination-array]]
 == Por que não vejo todos os meus volumes no meu array de destino?
 
 Ao configurar uma importação para o recurso armazenamento remoto, você pode notar que alguns volumes não aparecem na lista de candidatos alvo devido ao tamanho do bloco, capacidade ou disponibilidade de volume.
@@ -57,6 +60,7 @@ Os candidatos a volumes são excluídos da lista se tiverem:
 
 
 
+[[what-do-i-need-to-know-about-the-remote-volume-in-an-import]]
 == O que eu preciso saber sobre o volume remoto em uma importação?
 
 Ao utilizar a funcionalidade armazenamento remoto, tenha em atenção que o volume remoto é a origem da origem dos dados.
@@ -65,19 +69,21 @@ Quando a importação está em andamento, os dados são transferidos do volume r
 
 
 
+[[what-do-i-need-to-know-before-starting-a-remote-storage-import]]
 == O que eu preciso saber antes de iniciar uma importação de armazenamento remoto?
 
 O recurso armazenamento remoto permite copiar dados de um sistema de storage remoto para um volume em um sistema de storage local e-Series. Antes de usar esse recurso, revise as diretrizes a seguir.
 
 
 
+[[configuration]]
 === Configuração
 
 Antes de criar a importação de armazenamento remoto, você deve concluir as seguintes ações e verificar as seguintes condições:
 
 * Certifique-se de que cada controlador do sistema de storage local e-Series tem uma conexão iSCSI ao sistema de storage remoto.
 * No sistema de storage local do e-Series, crie um volume de destino para a operação de importação. Certifique-se de que o volume tem uma capacidade igual ou superior ao volume de origem, tem um tamanho de bloco que corresponde ao volume de origem e não está mapeado. link:create-volumes.html["Criar volumes"]Consulte .
-* Configure o sistema de storage local e-Series como um host no sistema remoto usando seu nome qualificado iSCSI (IQN). Pode visualizar o IQN a partir do menu:Definições[sistema > Definições iSCSI > IQN de destino]. Além disso, certifique-se de definir o tipo de host apropriado com base no sistema que está sendo usado.
+* Configure o sistema de storage E-Series como host no sistema remoto usando seu iSCSI Qualified Name (IQN). Você pode visualizar o IQN em menu:System[iSCSI settings > Target IQN]. Além disso, certifique-se de definir o tipo de host apropriado com base no sistema que está sendo usado.
 * Pare todas as I/os, desmonte quaisquer sistemas de arquivos e remova quaisquer atribuições a hosts ou aplicativos para o volume selecionado no sistema de storage remoto.
 * Atribua o volume ao sistema de storage remoto ao recém-criado host local do sistema de storage e-Series.
 * Reúna as seguintes informações do sistema de armazenamento remoto para que a importação possa ser criada:
@@ -92,6 +98,7 @@ Antes de criar a importação de armazenamento remoto, você deve concluir as se
 
 
 
+[[import-process]]
 === Processo de importação
 
 As etapas a seguir descrevem o processo de importação.
@@ -114,6 +121,7 @@ Quando a importação é desconetada, o desempenho do destino local retorna ao n
 
 
 
+[[restrictions]]
 === Restrições
 
 O recurso de armazenamento remoto tem as seguintes restrições:
@@ -132,6 +140,7 @@ O recurso de armazenamento remoto tem as seguintes restrições:
 
 
 
+[[additional-information]]
 === Informações adicionais
 
 Para obter mais informações sobre a funcionalidade de armazenamento remoto, consulte a https://www.netapp.com/pdf.html?item=/media/28697-tr-4893-deploy.pdf["Relatório técnico de armazenamento remoto"^] .

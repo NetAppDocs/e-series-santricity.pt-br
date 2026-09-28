@@ -15,6 +15,7 @@ A página desempenho fornece maneiras fáceis de monitorar a performance do stor
 
 
 
+[[what-can-i-learn-from-performance-data]]
 == O que posso aprender com os dados de desempenho?
 
 Os gráficos e tabelas de desempenho mostram dados de desempenho quase em tempo real, o que ajuda a determinar se um storage array está enfrentando problemas. Você também pode salvar dados de performance para criar uma visualização histórica de um storage array e identificar quando um problema foi iniciado ou o que causou um problema.
@@ -27,9 +28,10 @@ Saiba mais:
 
 
 
+[[how-can-i-view-performance-data]]
 == Como posso visualizar dados de desempenho?
 
-Os dados de desempenho estão disponíveis na página inicial e na página armazenamento.
+Os dados de desempenho estão disponíveis no Dashboard e na página Monitoramento > Performance.
 
 Saiba mais:
 

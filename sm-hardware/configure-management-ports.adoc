@@ -23,18 +23,14 @@ Não use a porta 2 em nenhum dos controladores. A porta 2 está reservada para u
 
 ====
 .Passos
-. No painel esquerdo, selecione *Hardware*.
-. Se o gráfico mostrar as unidades, clique na guia *Controllers & Components* (Controladores e componentes).
-+
-O gráfico muda para mostrar os controladores em vez das unidades.
-
+. No painel esquerdo, selecione menu:Hardware[Controllers and components].
 . Clique no controlador com a porta de gerenciamento que deseja configurar.
 +
 É apresentado o menu de contexto do controlador.
 
 . Selecione *Configurar portas de gerenciamento*.
 +
-A caixa de diálogo Configurar portas de gerenciamento é aberta.
+A página Configurar portas de gerenciamento é aberta.
 
 . Certifique-se de que a porta 1 é exibida e clique em *Next*.
 . Selecione as definições da porta de configuração e, em seguida, clique em *seguinte*.
@@ -62,7 +58,7 @@ Selecione uma ou ambas as opções para ativar o suporte para redes IPv4G e IPv6
 |===
 ====
 +
-Se selecionar *Ativar IPv4*, abre-se uma caixa de diálogo para selecionar IPv4 definições depois de clicar em *seguinte*. Se selecionar *Ativar IPv6*, abre-se uma caixa de diálogo para selecionar IPv6 definições depois de clicar em *seguinte*. Se você selecionar ambas as opções, a caixa de diálogo para configurações IPv4 será aberta primeiro e, depois de clicar em *Avançar*, a caixa de diálogo para configurações IPv6 será aberta.
+Se você selecionar *Habilitar IPv4*, a etapa *Configurar IPv4* aparece após você clicar em *Avançar*. Se você selecionar *Habilitar IPv6*, a etapa *Configurar IPv6* aparece após você clicar em *Avançar*. Se você selecionar ambas as opções, a etapa *Configurar IPv4* aparece primeiro e, depois que você clicar em *Avançar*, a etapa *Configurar IPv6* aparece.
 
 . Configure as definições IPv4 e/ou IPv6, automática ou manualmente.
 +
@@ -95,4 +91,4 @@ NOTE: Se você alterar a configuração do endereço IP, perderá o caminho de g
 
 
 .Resultados
-A configuração da porta de gerenciamento é exibida nas configurações do controlador, guia portas de gerenciamento.
+A configuração da porta de gerenciamento é exibida nas configurações do controlador, seção *Configurações da porta de gerenciamento*.

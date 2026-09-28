@@ -16,12 +16,14 @@ No Centro de Atualização, você pode gerenciar atualizações de software SANt
 
 
 
+[[how-do-upgrades-work]]
 == Como funcionam as atualizações?
 
 Transfira o software SO mais recente e, em seguida, atualize um ou mais arrays.
 
 
 
+[[upgrade-workflow]]
 === Atualizar fluxo de trabalho
 
 As etapas a seguir fornecem um fluxo de trabalho de alto nível para a realização de atualizações de software.
@@ -46,6 +48,7 @@ Você também pode especificar que o software está ativado posteriormente.
 
 
 
+[[immediate-or-staged-upgrade]]
 === Atualização imediata ou faseada
 
 Você pode ativar a atualização imediatamente ou colocá-la em fase posterior. Você pode optar por ativar mais tarde por estes motivos:
@@ -54,10 +57,11 @@ Você pode ativar a atualização imediatamente ou colocá-la em fase posterior.
 * * Tipo de pacote* -- você pode querer testar o novo software e firmware em uma matriz de armazenamento antes de atualizar os arquivos em outras matrizes de armazenamento.
 
 
-Para ativar o software em estágio, vá para o menu:suporte[Centro de atualização] e clique em *Ativar* na área rotulada SANtricity os Controller Software upgrade.
+Para ativar o software em fase de testes, acesse menu:Support[Upgrade center] e clique em *Ativar* na área intitulada SANtricity OS Controller Software upgrade.
 
 
 
+[[health-check]]
 === Verificação de integridade
 
 Uma verificação de integridade é executada como parte do processo de atualização, mas você também pode executar uma verificação de integridade separadamente antes de começar (vá para o menu:Centro de Atualização[Verificação de integridade pré-atualização]).
@@ -77,18 +81,21 @@ A verificação de integridade avalia todos os componentes do sistema de storage
 
 
 
+[[what-do-i-need-to-know-before-upgrading]]
 == O que eu preciso saber antes de atualizar?
 
 Antes de atualizar vários storages de armazenamento, revise as principais considerações como parte do Planejamento.
 
 
 
+[[current-versions]]
 === Versões atuais
 
 Você pode exibir as versões atuais do software SANtricity os na página Gerenciar do Gerenciador Unificado para cada storage array descoberto. A versão é mostrada na coluna Software do SANtricity os. As informações de firmware e NVSRAM da controladora estão disponíveis em uma caixa de diálogo pop-up quando você clica na versão do SANtricity os em cada linha.
 
 
 
+[[other-components-requiring-upgrade]]
 === Outros componentes que exigem atualização
 
 Como parte do processo de atualização, você também pode precisar atualizar o driver multipath/failover do host ou o driver HBA para que o host possa interagir com os controladores corretamente.
@@ -97,6 +104,7 @@ Para obter informações sobre compatibilidade, consulte o https://imt.netapp.co
 
 
 
+[[dual-controllers]]
 === Controladores duplos
 
 Se um storage array contiver dois controladores e você tiver um driver multipath instalado, o storage array poderá continuar processando e/S durante a atualização. Durante a atualização, ocorre o seguinte processo:

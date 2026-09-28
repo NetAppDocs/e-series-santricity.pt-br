@@ -20,7 +20,7 @@ Tenha estas diretrizes em mente quando atribuir volumes a hosts:
 * Você pode atribuir um volume a apenas um host ou cluster de host de cada vez.
 * Os volumes atribuídos são compartilhados entre controladores no storage array.
 * O mesmo número de unidade lógica (LUN) não pode ser usado duas vezes por um host ou um cluster de host para acessar um volume. Você deve usar um LUN exclusivo.
-* Para novos grupos de volumes, se você esperar até que todos os volumes sejam criados e inicializados antes de atribuí-los a um host, o tempo de inicialização do volume será reduzido. Tenha em mente que uma vez que um volume associado ao grupo de volumes é mapeado, _all_ volumes reverterá para a inicialização mais lenta. Você pode verificar o progresso da inicialização a partir do menu:Home[operações em andamento].
+* Para novos grupos de volumes, se você esperar até que todos os volumes sejam criados e inicializados antes de atribuí-los a um host, o tempo de inicialização do volume será reduzido. Lembre-se de que, uma vez que um volume associado ao grupo de volume seja mapeado, _todos_ os volumes retornarão à inicialização mais lenta. Você pode verificar o progresso da inicialização em menu:Monitoring[Operações em andamento].
 
 
 A atribuição de um volume falha nestas condições:

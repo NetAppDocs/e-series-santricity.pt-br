@@ -25,13 +25,13 @@ O processo para criar um volume instantâneo é um procedimento de várias etapa
 
 
 
+[[step-1-review-members-for-a-snapshot-volume]]
 == Etapa 1: Revise os membros para obter um volume instantâneo
 
 Selecione uma imagem instantânea de um volume base ou um grupo de consistência de instantâneos. Se você selecionar uma imagem instantânea do grupo de consistência de instantâneos, os volumes membros do grupo de consistência de instantâneos serão exibidos para revisão.
 
 .Passos
-. No painel esquerdo, selecione menu:Storage[Snapshots].
-. Selecione a guia *volumes instantâneos*.
+. No painel esquerdo, selecione menu:Snapshots[Snapshot volumes].
 . Selecione *criar*.
 +
 A caixa de diálogo criar volume instantâneo é exibida.
@@ -48,6 +48,7 @@ Na caixa de diálogo Review Members (Rever membros), reveja a lista de volumes s
 
 
 
+[[step-2-assign-snapshot-volume-to-host]]
 == Etapa 2: Atribuir volume instantâneo ao host
 
 Selecione um host ou cluster de host específico para atribuí-lo ao volume de snapshot. Esta atribuição concede a um host ou cluster de host acesso ao volume de snapshot. Você pode optar por atribuir um host mais tarde, se necessário.
@@ -90,6 +91,7 @@ A atribuição de um volume a um host falhará se você tentar atribuir um volum
 
 
 
+[[step-3-reserve-capacity-for-a-snapshot-volume]]
 == Etapa 3: Reserva de capacidade para um volume instantâneo
 
 Associar a capacidade reservada a um volume instantâneo de leitura/gravação. O System Manager sugere os volumes e a capacidade com base nas propriedades do volume base ou do grupo de consistência de snapshot. Pode aceitar a configuração de capacidade reservada recomendada ou personalizar o armazenamento alocado.
@@ -130,6 +132,7 @@ Alocar a capacidade reservada usando as diretrizes a seguir.
 
 
 
+[[step-4-edit-settings-for-a-snapshot-volume]]
 == Etapa 4: Edite as configurações para um volume instantâneo
 
 Altere as configurações de um volume instantâneo, como nome, armazenamento em cache, limites de alerta de capacidade reservada, etc.
@@ -156,7 +159,7 @@ Você pode adicionar o volume ao cache de disco de estado sólido (SSD) como uma
  a| 
 Nome
  a| 
-Especifique o nome do volume instantâneo.
+Especifique o nome para o volume de Snapshot. Os nomes de volume podem ter um comprimento máximo de 30 caracteres. O nome deve ser único.
 
 
 

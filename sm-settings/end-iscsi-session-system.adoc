@@ -22,8 +22,8 @@ Você pode querer terminar uma sessão iSCSI por estes motivos:
 
 
 .Passos
-. No painel esquerdo, selecione menu:Settings[System].
-. Em *configurações iSCSI*, selecione *Visualizar/Encerrar sessões iSCSI*.
+. No painel esquerdo, selecione *System*.
+. Em *configurações iSCSI*, selecione *Visualizar/encerrar sessões iSCSI*.
 +
 É apresentada uma lista das sessões iSCSI atuais.
 

@@ -34,18 +34,14 @@ Os hot spares também podem ser atribuídos a partir do assistente de configura�
 
 ====
 .Passos
-. No painel esquerdo, selecione *Hardware*.
-. Se o gráfico mostrar os controladores, clique na guia *Drives*.
-+
-O gráfico muda para mostrar as unidades em vez dos controladores.
-
+. No painel esquerdo, selecione menu:Hardware[Drives].
 . Selecione uma unidade não atribuída (mostrada em cinza) que você deseja usar como hot spare.
 +
 O menu de contexto da unidade é aberto.
 
 . Selecione *Assign hot spare*.
 +
-Se a unidade estiver habilitada para segurança, a caixa de diálogo Apagar Unidade segura? Será aberta. Para usar uma unidade habilitada para segurança como hot spare, você deve primeiro executar uma operação de apagamento seguro para remover todos os seus dados e redefinir seus atributos de segurança.
+Se a unidade estiver com a segurança ativada, a caixa de diálogo "Apagar unidade com segurança" será exibida. Para usar uma unidade com a segurança ativada como hot spare, você deve primeiro executar uma operação de Secure Erase para remover todos os dados e redefinir seus atributos de segurança.
 
 +
 [CAUTION]
@@ -54,7 +50,7 @@ Se a unidade estiver habilitada para segurança, a caixa de diálogo Apagar Unid
 
 ====
 +
-Se a unidade estiver ativada para segurança *not*, a caixa de diálogo confirmar atribuição de unidade sobressalente automática será aberta.
+Se a unidade *não* estiver com o recurso de segurança ativado, a caixa de diálogo Atribuir hot spare será aberta.
 
 . Revise o texto na caixa de diálogo e confirme a operação.
 +

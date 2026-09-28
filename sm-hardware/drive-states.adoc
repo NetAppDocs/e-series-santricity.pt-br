@@ -15,6 +15,7 @@ O SANtricity System Manager relata vários estados para unidades.
 
 
 
+[[accessibility-states]]
 == estados de acessibilidade
 
 [cols="25h,~"]
@@ -63,6 +64,7 @@ A unidade não está respondendo aos comandos.
 |===
 
 
+[[role-states]]
 == estados de função
 
 [cols="25h,~"]
@@ -78,14 +80,14 @@ A unidade é membro de um pool ou grupo de volume.
 
 
  a| 
-Hot spare in-use
+Hot spare em uso
  a| 
 A unidade está sendo usada atualmente como um substituto para uma unidade que falhou. As peças sobressalentes quentes são usadas apenas em grupos de volume, não em pools.
 
 
 
  a| 
-Reserva quente em espera
+Hot spare em espera
  a| 
 A unidade está pronta para ser usada como substituição de uma unidade que falhou. As peças sobressalentes quentes são usadas apenas em grupos de volume, não em pools.
 
@@ -99,6 +101,7 @@ A unidade não é membro de um pool ou grupo de volume.
 |===
 
 
+[[availability-states]]
 == estados de disponibilidade
 
 [cols="25h,~"]
@@ -114,7 +117,7 @@ A unidade não está funcionando. Os dados na unidade não estão disponíveis.
 
 
  a| 
-Avaria iminente
+Falha iminente
  a| 
 Foi detetado que a unidade poderia falhar em breve. Os dados na unidade ainda estão disponíveis.
 

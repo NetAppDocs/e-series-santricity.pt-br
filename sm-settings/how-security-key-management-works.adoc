@@ -24,19 +24,21 @@ Você pode criar e gerenciar chaves de segurança usando um dos seguintes métod
 
 
 
+[[internal-key-management]]
 == Gerenciamento de chaves internas
 
 As chaves internas são mantidas e "ocultas" em um local não acessível na memória persistente do controlador. Para implementar o gerenciamento de chaves internas, execute as seguintes etapas:
 
 . Instale unidades com capacidade segura no storage de armazenamento. Essas unidades podem ser unidades com criptografia total de disco (FDE) ou unidades FIPS (Federal Information Processing Standard).
 . Certifique-se de que a funcionalidade de Segurança da unidade está ativada. Se necessário, entre em Contato com o fornecedor de armazenamento para obter instruções sobre como ativar o recurso Segurança da unidade.
-. Crie uma chave de segurança interna, que envolve a definição de um identificador e uma frase-passe. O identificador é uma cadeia de carateres associada à chave de segurança e é armazenada no controlador e em todas as unidades associadas à chave. A frase-passe é usada para criptografar a chave de segurança para fins de backup. Para criar uma chave interna, aceda ao menu:Definições[sistema > Gestão da chave de segurança > criar chave interna].
+. Crie uma chave de segurança interna, o que envolve definir um identificador e uma frase secreta. O identificador é uma sequência de caracteres associada à chave de segurança e armazenada no controlador e em todas as unidades associadas à chave. A frase secreta é usada para criptografar a chave de segurança para fins de backup. Para criar uma chave interna, acesse menu:System[Criar chave de segurança interna].
 
 
 A chave de segurança é armazenada no controlador num local oculto e não acessível. Em seguida, você pode criar grupos de volume ou pools habilitados para segurança ou habilitar a segurança em grupos de volumes e pools existentes.
 
 
 
+[[external-key-management]]
 == Gerenciamento de chaves externas
 
 As chaves externas são mantidas em um servidor de gerenciamento de chaves separado, usando um KMIP (Key Management Interoperability Protocol). Para implementar o gerenciamento de chaves externas, execute as seguintes etapas:
@@ -45,14 +47,14 @@ As chaves externas são mantidas em um servidor de gerenciamento de chaves separ
 . Certifique-se de que a funcionalidade de Segurança da unidade está ativada. Se necessário, entre em Contato com o fornecedor de armazenamento para obter instruções sobre como ativar o recurso Segurança da unidade.
 . Obtenha um arquivo de certificado de cliente assinado. Um certificado de cliente valida os controladores do storage array, para que o servidor de gerenciamento de chaves possa confiar em suas solicitações KMIP.
 +
-.. Primeiro, você conclui e faz o download de uma solicitação de assinatura de certificado de cliente (CSR). Aceda ao menu:Definições[certificados > Gestão de chaves > CSR completo].
+.. Primeiro, você preenche e baixa uma Solicitação de Assinatura de Certificado (CSR) do cliente. Vá para menu:Certificates[Key management certificates] e selecione *Complete CSR*.
 .. Em seguida, você solicita um certificado de cliente assinado de uma CA confiável pelo servidor de gerenciamento de chaves. (Você também pode criar e baixar um certificado de cliente a partir do servidor de gerenciamento de chaves usando o arquivo CSR.)
 .. Depois de ter um arquivo de certificado de cliente, copie esse arquivo para o host onde você está acessando o System Manager.
 .. Como alternativa, você pode gerar uma solicitação de assinatura de certificado externamente usando um par de chaves privadas e públicas.
 
 
 . Recupere um arquivo de certificado do servidor de gerenciamento de chaves e copie esse arquivo para o host onde você está acessando o System Manager. Um certificado do servidor de gerenciamento de chaves valida o servidor de gerenciamento de chaves, de modo que o storage array possa confiar em seu endereço IP. Você pode usar um certificado raiz, intermediário ou servidor para o servidor de gerenciamento de chaves.
-. Crie uma chave externa, que envolve definir o endereço IP do servidor de gerenciamento de chaves e o número da porta usada para comunicações KMIP. Durante esse processo, você também carrega arquivos de certificado. Para criar uma chave externa, aceda ao menu:Definições[sistema > Gestão da chave de segurança > criar chave externa].
+. Crie uma chave externa, o que envolve definir o endereço IP do servidor de gerenciamento de chaves e o número da porta usado para as comunicações KMIP. Durante esse processo, você também carrega os arquivos de certificado. Para criar uma chave externa, vá para menu:System[Criar chave de segurança externa].
 
 
 O sistema se coneta ao servidor de gerenciamento de chaves com as credenciais inseridas. Em seguida, você pode criar grupos de volume ou pools habilitados para segurança ou habilitar a segurança em grupos de volumes e pools existentes.

@@ -20,6 +20,7 @@ O espelhamento síncrono não está disponível nos sistemas de storage EF80, EF
 ====
 
 
+[[types-of-mirroring]]
 == Tipos de espelhamento
 
 As aplicações SANtricity incluem dois tipos de espelhamento: Assíncrono e síncrono.
@@ -30,6 +31,7 @@ O espelhamento síncrono replica volumes de dados em tempo real para garantir di
 
 
 
+[[differences-between-mirroring-types]]
 == Diferenças entre tipos de espelhamento
 
 A tabela a seguir descreve as principais diferenças entre os dois tipos de espelhamento.

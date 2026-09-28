@@ -18,11 +18,11 @@ Os filtros de unidade podem limitar a exibição a apenas certos tipos de unidad
 
 [NOTE]
 ====
-Se todas as unidades compartilharem os mesmos atributos físicos, o campo de filtro *Mostrar unidades que são...* não será exibido. Se todas as unidades compartilharem os mesmos atributos lógicos, o campo de filtro *em qualquer lugar no storage de armazenamento* não será exibido.
+Se todas as unidades compartilharem os mesmos atributos físicos, o campo de filtro *Mostrar unidades que são...* não será exibido. Se todas as unidades compartilharem os mesmos atributos lógicos, as opções de localização lógica não serão exibidas no campo de filtro.
 
 ====
 .Passos
-. No painel esquerdo, selecione *Hardware*.
+. No painel esquerdo, selecione menu:Hardware[Drives].
 . No primeiro campo de filtro (em *Mostrar unidades que são...*), clique na seta suspensa para exibir os tipos de unidade disponíveis e os atributos de segurança.
 +
 Os tipos de unidade podem incluir:
@@ -46,7 +46,7 @@ Quando você seleciona uma opção no campo, as unidades que não correspondem a
 
 
 
-. Na segunda caixa de filtro, clique na seta suspensa para exibir os locais lógicos disponíveis para as unidades.
+. No mesmo campo de filtro, clique na seta suspensa para exibir os locais lógicos disponíveis para as unidades.
 +
 [NOTE]
 ====
@@ -67,7 +67,7 @@ Quando você seleciona uma opção no campo, as unidades que não correspondem a
 
 
 
-. Opcionalmente, você pode selecionar *ligar as luzes de localização* na extrema direita dos campos de filtro para ligar as luzes de localização para as unidades exibidas.
+. Opcionalmente, você pode selecionar *ativar luzes de localização* no canto direito do campo de filtro para ativar as luzes de localização dos drives exibidos.
 +
 Essa ação ajuda você a localizar fisicamente as unidades no storage array.
 

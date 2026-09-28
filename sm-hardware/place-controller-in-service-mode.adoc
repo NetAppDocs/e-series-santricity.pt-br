@@ -24,11 +24,7 @@ Colocar um controlador no modo de serviço pode reduzir significativamente o des
 
 ====
 .Passos
-. No painel esquerdo, selecione *Hardware*.
-. Se o gráfico mostrar as unidades, clique na guia *Controllers & Components* (Controladores e componentes).
-+
-O gráfico muda para mostrar os controladores em vez das unidades.
-
+. No painel esquerdo, selecione menu:Hardware[Controllers and components].
 . Clique no controlador que pretende colocar no modo de serviço.
 +
 É apresentado o menu de contexto do controlador.

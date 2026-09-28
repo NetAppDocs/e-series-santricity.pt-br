@@ -15,10 +15,9 @@ summary: Você pode remover um usuário para SNMPv3 traps.
 Você pode remover um usuário para SNMPv3 traps.
 
 .Passos
-. No painel esquerdo, selecione menu:Settings[Alerts].
-. Selecione a guia *SNMP*.
+. No painel esquerdo, selecione menu:Alerts[Alertas SNMP].
 +
-Os destinos de intercetação e os nomes de usuário aparecem na página Alertas.
+Os destinos dos traps e os nomes de usuário aparecem na página de alertas SNMP.
 
 . Selecione *Configurar usuários*.
 +
@@ -29,4 +28,4 @@ A caixa de diálogo Configurar usuários SNMPv3 será aberta.
 
 
 .Resultados
-O nome de usuário e seu destino de armadilha associado são removidos da página Alertas.
+O nome de usuário e o destino associado ao trap são removidos da página de alertas SNMP.

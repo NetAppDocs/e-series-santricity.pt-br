@@ -28,6 +28,7 @@ Reveja as seguintes informações sobre a operação de mudança de função:
 
 
 
+[[force-role-change]]
 == Forçar mudança de função
 
 Você pode forçar uma mudança de função entre volumes em um par espelhado quando um problema de comunicação entre o storage array local e o storage array remoto estiver impedindo a promoção do volume secundário ou a rebaixamento do volume primário.
@@ -41,6 +42,7 @@ Quando a matriz de armazenamento remoto for recuperada e quaisquer problemas de 
 ====
 
 
+[[when-is-a-forced-promotion-allowed-and-not-allowed]]
 == Quando é permitida uma promoção forçada e não é permitida?
 
 A promoção forçada de um volume em um par espelhado não é permitida nas seguintes condições:
@@ -51,6 +53,7 @@ A promoção forçada de um volume em um par espelhado não é permitida nas seg
 
 
 
+[[role-change-in-progress-state]]
 == Mudança de função no estado em andamento
 
 Se dois storage arrays em uma configuração de espelhamento forem desconetados e o volume primário de um par espelhado for forçado a ser rebaixado para uma função secundária, e o volume secundário de um par espelhado for forçado a uma função primária, então, quando a comunicação for restaurada, os volumes em ambos os storage arrays serão colocados no estado de mudança de função em andamento.

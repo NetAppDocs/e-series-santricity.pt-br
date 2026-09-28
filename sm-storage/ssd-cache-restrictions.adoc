@@ -15,6 +15,7 @@ Saiba mais sobre as restrições ao usar cache SSD em seu storage array.
 
 
 
+[[restrictions]]
 == Restrições
 
 * Qualquer volume atribuído para usar o cache SSD de um controlador não é elegível para uma transferência automática de balanceamento de carga.
@@ -27,6 +28,7 @@ Saiba mais sobre as restrições ao usar cache SSD em seu storage array.
 
 
 
+[[restrictions-with-drive-security]]
 == Restrições com Segurança da Unidade
 
 * Você pode ativar a segurança no cache SSD somente quando você criar o cache SSD. Não é possível ativar a segurança mais tarde como pode num volume.

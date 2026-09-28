@@ -15,26 +15,16 @@ summary: Você pode alterar o nome da matriz de armazenamento que aparece na bar
 Você pode alterar o nome da matriz de armazenamento que aparece na barra de título do Gerenciador de sistema do SANtricity.
 
 .Passos
-. No painel esquerdo, selecione menu:Settings[System].
-. Em *Geral*, procure o campo *Nome:*.
+. No painel esquerdo, selecione *System*.
+. Em *Geral*, clique em *Editar nome do array de storage*.
 +
-Se o nome de uma matriz de armazenamento não tiver sido definido, este campo exibirá "desconhecido".
+A caixa de diálogo Editar nome do array de storage é exibida.
 
-. Clique no ícone *Edit* (lápis) ao lado do nome da matriz de armazenamento.
-+
-O campo torna-se editável.
-
-. Introduza um novo nome.
+. Digite um novo nome no campo *Nome*.
 +
 Um nome pode conter letras, números e os carateres especiais sublinhado (_), traço (-) e sinal de hash ( Um nome não pode conter espaços. Um nome pode ter um comprimento máximo de 30 carateres. O nome deve ser único.
 
-. Clique no ícone *Save* (marca de seleção).
-+
-[NOTE]
-====
-Se quiser fechar o campo editável sem fazer alterações, clique no ícone *Cancelar* (X).
-
-====
+. Clique em *Salvar*.
 
 
 .Resultados

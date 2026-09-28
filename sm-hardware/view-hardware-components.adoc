@@ -26,7 +26,7 @@ A página hardware fornece funções de ordenação e filtragem que facilitam a 
  a| 
 Exibições de unidades, controladores e componentes
  a| 
-Para alternar entre as exibições frontal e traseira, selecione *Drives* ou *Controllers & Components* na extrema direita (o link que aparece depende da exibição atual). A visualização *Drives* mostra as unidades e quaisquer compartimentos de unidade vazios. A visualização *Controllers & Components* mostra os controladores e quaisquer módulos IOM (ESM), coletores de alimentação/ventilador ou compartimentos de controlador vazios. Na parte inferior da página, você também pode selecionar *Mostrar todas as unidades*.
+Para alternar entre as visualizações de unidades e controladores, selecione menu:Hardware[Unidades] ou menu:Hardware[Controladores e componentes] no painel esquerdo. A visualização *Unidades* mostra as unidades e quaisquer baias de unidade vazias. A visualização *Controladores e componentes* mostra os controladores, e quaisquer módulos IOM (ESM), fontes de alimentação/ventoinhas ou baias de controlador vazias. Na visualização *Unidades*, você também pode selecionar *Mostrar todas as unidades*.
 
 
 

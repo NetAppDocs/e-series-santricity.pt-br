@@ -15,7 +15,7 @@ summary: 'Se você inserir uma ou mais unidades NVMe ou FIPS bloqueadas em um st
 Se você inserir uma ou mais unidades NVMe ou FIPS bloqueadas em um storage array, poderá desbloquear os dados da unidade adicionando o arquivo de chave de segurança associado às unidades. Se você não tiver uma chave de segurança, poderá executar uma reinicialização em cada unidade bloqueada inserindo seu ID de segurança física (PSID) para redefinir seus atributos de segurança e apagar os dados da unidade.
 
 .Antes de começar
-* Para a opção desbloquear, verifique se o arquivo de chave de segurança (com uma extensão do `.slk`) está disponível no cliente de gerenciamento (o sistema com um navegador usado para acessar o System Manager). Você também deve saber a frase-passe associada à chave.
+* Para a opção Desbloquear, certifique-se de que o arquivo da chave de segurança (com a extensão  `.slk`) esteja disponível no cliente de gerenciamento (o sistema com navegador usado para acessar o System Manager). Você também precisa saber a senha associada à chave.
 * Para a opção Redefinir, você deve encontrar o PSID em cada unidade que você deseja redefinir. Para localizar o PSID, remova fisicamente a unidade e localize a cadeia PSID (máximo de 32 carateres) na etiqueta da unidade e, em seguida, reinstale a unidade.
 
 
@@ -24,17 +24,13 @@ Esta tarefa descreve como desbloquear dados em unidades NVMe ou FIPS importando 
 
 [NOTE]
 ====
-Se a unidade foi bloqueada usando um servidor de gerenciamento de chaves externo, selecione menu:Configurações[sistema > Gerenciamento de chaves de segurança] no System Manager para configurar o gerenciamento de chaves externas e desbloquear a unidade.
+Se a unidade foi bloqueada usando um servidor externo de gerenciamento de chaves, selecione menu:System[Gerenciamento de chaves de segurança] no System Manager para configurar o gerenciamento de chaves externas e desbloquear a unidade.
 
 ====
-Pode aceder à funcionalidade desbloquear a partir da página hardware ou do menu:Definições[sistema > Gestão da chave de segurança]. A tarefa abaixo fornece instruções na página hardware.
+Você pode acessar o recurso Desbloquear na página Hardware ou no menu:system[Gerenciamento de chaves de segurança]. A tarefa abaixo fornece instruções a partir da página Hardware.
 
 .Passos
-. No painel esquerdo, selecione *Hardware*.
-. Se o gráfico mostrar os controladores, clique na guia *Drives*.
-+
-O gráfico muda para mostrar as unidades em vez dos controladores.
-
+. No painel esquerdo, selecione menu:Hardware[Drives].
 . Selecione a unidade NVMe ou FIPS que deseja desbloquear ou redefinir.
 +
 O menu de contexto da unidade é aberto.
@@ -51,8 +47,8 @@ Durante uma operação de reposição, todos os dados são apagados. Execute ape
 ====
 . Execute um dos seguintes procedimentos:
 +
-.. *Unlock*: Na caixa de diálogo *Unlock Secure Drive*, clique em *Browse* e, em seguida, selecione o arquivo de chave de segurança que corresponde à unidade que deseja desbloquear. Em seguida, digite a frase-passe e clique em *Unlock*.
-.. *Reset*: Na caixa de diálogo *Reset locked Drive* (Redefinir unidade bloqueada), insira a cadeia PSID no campo e digite `RESET` para confirmar. Clique em *Reset*.
+.. *Desbloquear*: Na página *Desbloquear unidades seguras*, selecione o arquivo de chave de segurança correspondente à unidade que você deseja desbloquear. Em seguida, insira a senha e clique em *Desbloquear*.
+.. *Redefinir*: Na caixa de diálogo *Redefinir unidade bloqueada*, insira a string PSID no campo e digite  `RESET` para confirmar. Clique em *Redefinir*.
 +
 Para uma operação de desbloqueio, você só precisa executar essa operação uma vez para desbloquear todas as unidades NVMe ou FIPS. Para uma operação de reinicialização, você deve selecionar individualmente cada unidade que deseja redefinir.
 

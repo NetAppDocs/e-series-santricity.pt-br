@@ -15,12 +15,14 @@ Antes de usar o SANtricity Unified Manager para atualizar vários storage arrays
 
 
 
+[[current-versions]]
 == Versões atuais
 
 Você pode exibir as versões atuais do software SANtricity os na página Gerenciar do Gerenciador Unificado para cada storage array descoberto. A versão é mostrada na coluna Software do SANtricity os. As informações de firmware e NVSRAM da controladora estão disponíveis em uma caixa de diálogo pop-up quando você clica na versão do SANtricity os em cada linha.
 
 
 
+[[other-components-requiring-upgrade]]
 == Outros componentes que exigem atualização
 
 Como parte do processo de atualização, você também pode precisar atualizar o driver multipath/failover do host ou o driver HBA para que o host possa interagir com os controladores corretamente.
@@ -29,6 +31,7 @@ Para obter informações sobre compatibilidade, consulte o https://imt.netapp.co
 
 
 
+[[dual-controllers]]
 == Controladores duplos
 
 Se um storage array contiver dois controladores e você tiver um driver multipath instalado, o storage array poderá continuar processando e/S durante a atualização. Durante a atualização, ocorre o seguinte processo:

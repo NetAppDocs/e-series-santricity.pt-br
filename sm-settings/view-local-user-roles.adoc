@@ -2,7 +2,7 @@
 permalink: sm-settings/view-local-user-roles.html 
 sidebar: sidebar 
 keywords: SANtricity, System Manager, E-Series, view, local, user, roles, 
-summary: 'Na guia funções de usuário local, você pode exibir os mapeamentos dos perfis de usuário para as funções padrão. Esses mapeamentos fazem parte do RBAC (controles de acesso baseados em função) aplicado no storage array.' 
+summary: 'Na página Funções de usuário local, você pode visualizar o mapeamento dos perfis de usuário para as funções padrão. Esses mapeamentos fazem parte do RBAC (controles de acesso baseado em funções) implementados no array de storage.' 
 ---
 = Exibir funções de usuários locais no SANtricity System Manager
 :allow-uri-read: 
@@ -12,7 +12,7 @@ summary: 'Na guia funções de usuário local, você pode exibir os mapeamentos 
 
 
 [role="lead"]
-Na guia funções de usuário local, você pode exibir os mapeamentos dos perfis de usuário para as funções padrão. Esses mapeamentos fazem parte do RBAC (controles de acesso baseados em função) aplicado no storage array.
+Na página Funções de usuário local, você pode visualizar o mapeamento dos perfis de usuário para as funções padrão. Esses mapeamentos fazem parte do RBAC (controles de acesso baseado em funções) implementados no array de storage.
 
 .Antes de começar
 Você deve estar conetado com um perfil de usuário que inclua permissões de administrador de segurança. Caso contrário, as funções de Gerenciamento de Acesso não aparecem.
@@ -21,8 +21,7 @@ Você deve estar conetado com um perfil de usuário que inclua permissões de ad
 Os perfis de usuário e mapeamentos não podem ser alterados. Apenas as senhas podem ser modificadas.
 
 .Passos
-. No painel esquerdo, selecione menu:Settings[Access Management].
-. Selecione a guia *funções de usuário local*.
+. No painel esquerdo, selecione menu:autenticação[Funções de usuário local].
 +
 Os perfis de utilizador são apresentados na tabela:
 

@@ -15,8 +15,8 @@ summary: Você pode importar uma configuração do AutoSupport de um storage arr
 Você pode importar uma configuração do AutoSupport de um storage array para outros storage arrays. Esta operação em lote economiza tempo quando você precisa configurar vários arrays na rede.
 
 .Antes de começar
-* O AutoSupport é configurado no Gerenciador de sistema para o storage array que você deseja usar como origem (menu:suporte[Centro de suporte]).
-* A configuração existente para os storages de armazenamento de destino é feita com backup no System Manager (menu:Configurações[sistema > Salvar configuração da matriz de armazenamento]).
+* AutoSupport está configurado no System Manager para o array de storage que você deseja usar como fonte (menu:Support[AutoSupport]).
+* A configuração existente para os arrays de storage de destino é salva no System Manager (menu:System[Save storage array configuration]).
 
 
 .Sobre esta tarefa

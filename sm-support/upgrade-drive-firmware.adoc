@@ -23,11 +23,11 @@ Você pode atualizar o firmware das suas unidades para se certificar de que voc�
 
 
 .Passos
-. No painel esquerdo, selecione menu:Support[Upgrade Center].
+. No painel esquerdo, selecione o menu: suporte [Upgrade center].
 . Transfira os novos ficheiros do site de suporte para o seu cliente de gestão.
-. Em Drive firmware upgrade, clique em *Begin Upgrade* (Iniciar atualização).
+. Em upgrade do formware da unidade, clique em *Iniciar upgrade do formware da unidade*.
 +
-É apresentada uma caixa de diálogo que lista os ficheiros de firmware da unidade atualmente em utilização.
+A página de upgrade do firmware da unidade é exibida, listando os arquivos de firmware da unidade atualmente em uso.
 
 . Extraia (descompacte) os arquivos que você baixou do site de suporte.
 . Clique em *Procurar* e selecione os novos arquivos de firmware da unidade que você baixou no site de suporte.
@@ -39,7 +39,7 @@ Você pode selecionar até quatro arquivos de firmware da unidade, um de cada ve
 
 . Clique em *seguinte*.
 +
-A caixa de diálogo *Selecionar unidades* é exibida, que lista as unidades que você pode atualizar com os arquivos selecionados.
+A etapa *Selecionar unidades* é exibida, listando as unidades que você pode atualizar com os arquivos selecionados.
 
 +
 Apenas as unidades compatíveis aparecem.
@@ -49,8 +49,8 @@ O firmware selecionado para a unidade aparece na área de informações de firmw
 
 . Selecione o tipo de atualização que deseja executar:
 +
-** *Online (padrão)* -- mostra as unidades que podem suportar um download de firmware _enquanto o storage array está processando I/o_. Não é necessário interromper a e/S para os volumes associados usando essas unidades quando você selecionar esse método de atualização. Essas unidades são atualizadas uma de cada vez, enquanto o storage array está processando e/S para essas unidades.
-** *Offline (paralelo)* -- mostra as unidades que podem suportar um download de firmware _somente enquanto toda a atividade de e/S está parada_ em qualquer volume que use as unidades. Você deve parar toda a atividade de e/S em todos os volumes que usam as unidades que você está atualizando ao selecionar esse método de atualização. As unidades que não têm redundância devem ser processadas como uma operação off-line. Esse requisito inclui qualquer unidade associada ao cache SSD, um grupo de volumes RAID 0 ou qualquer pool ou grupo de volumes degradado. A atualização off-line (paralela) é normalmente mais rápida do que o método on-line (padrão).
+** *Atualizar todas as unidades online* -- Mostra as unidades que suportam um download de firmware _enquanto o array de storage está processando E/S_. Você não precisa interromper a E/S nos volumes associados que usam essas unidades ao selecionar este método de upgrade. Essas unidades são atualizadas uma de cada vez enquanto o array de storage está processando E/S nessas unidades.
+** *Atualizar todas as unidades offline (paralelo)* -- Mostra as unidades que podem suportar um download de firmware _somente enquanto toda a atividade de E/S estiver interrompida_ em quaisquer volumes que utilizam as unidades. Você deve interromper toda a atividade de E/S em quaisquer volumes que utilizam as unidades que você está atualizando ao selecionar este método de atualização. Unidades que não possuem redundância devem ser processadas como uma operação offline. Este requisito inclui qualquer unidade associada ao cache SSD, a um grupo de volume RAID 0 ou a qualquer pool ou grupo de volume que esteja degradado. A atualização offline (paralela) geralmente é mais rápida do que o método online.
 
 
 . Na primeira coluna da tabela, selecione a unidade ou unidades que deseja atualizar.
@@ -64,7 +64,7 @@ Se você precisar parar a atualização, clique em *Parar*. Todas as transferên
 Parar a atualização do firmware da unidade pode resultar em perda de dados ou unidades indisponíveis.
 
 ====
-. *Opcional:* para ver uma lista do que foi atualizado, clique em *Salvar Registro*.
+. *Opcional:* Para ver uma lista do que foi atualizado, clique em *Salvar registro*.
 +
 O arquivo é salvo na pasta Downloads do navegador com o nome `drive_upgrade_log-timestamp.txt`.
 

@@ -20,6 +20,7 @@ Este recurso não está disponível nos sistemas de storage EF80, EF50, EF600/EF
 ====
 
 
+[[what-is-synchronous-mirroring]]
 == O que é espelhamento síncrono?
 
 O _espelhamento síncrono_ replica volumes de dados em tempo real para garantir disponibilidade contínua. Os controladores de storage array gerenciam a operação de espelhamento, que é transparente para máquinas host e aplicações de software.
@@ -37,6 +38,7 @@ Saiba mais:
 
 
 
+[[how-do-i-configure-synchronous-mirroring]]
 == Como faço para configurar o espelhamento síncrono?
 
 Você deve usar a interface do Unified Manager para executar a configuração de espelhamento inicial entre os arrays. Uma vez configurado, você pode gerenciar pares espelhados no System Manager.
@@ -50,6 +52,7 @@ Saiba mais:
 
 
 
+[[related-information]]
 == Informações relacionadas
 
 Saiba mais sobre conceitos relacionados ao espelhamento síncrono:

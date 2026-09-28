@@ -37,7 +37,7 @@ Para obter mais informações sobre o certificado do servidor, consulte a docume
 Nesta tarefa, você define o endereço IP do servidor de gerenciamento de chaves e o número da porta que ele usa e, em seguida, carrega certificados para gerenciamento de chaves externas.
 
 .Passos
-. No painel esquerdo, selecione menu:Settings[System].
+. No painel esquerdo, selecione *System*.
 . Em *Gerenciamento de chaves de segurança*, selecione *criar chave externa*.
 +
 [NOTE]

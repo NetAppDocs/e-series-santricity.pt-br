@@ -21,8 +21,7 @@ Para as versões 11,74 e posteriores do SANtricity, você também pode configura
 
 ====
 .Passos
-. No painel esquerdo, selecione *Hardware*.
-. Se o gráfico mostrar as unidades, clique na guia *Controllers & Components* (Controladores e componentes).
+. No painel esquerdo, selecione menu:Hardware[Controllers and components].
 +
 O gráfico muda para mostrar os controladores em vez das unidades.
 
@@ -32,7 +31,7 @@ O gráfico muda para mostrar os controladores em vez das unidades.
 
 . Selecione *Configurar login remoto (SSH)*. (Para as versões 11,73 e anteriores do SANtricity, este item de menu é *alterar início de sessão remoto*.)
 +
-A caixa de diálogo abre-se para ativar o início de sessão remoto.
+A página Configurar login remoto (SSH) é aberta.
 
 . Selecione a caixa de verificação *Ativar início de sessão remoto*.
 +
@@ -44,12 +43,12 @@ Esta definição fornece o início de sessão remoto com três opções de autor
 ** * A senha e a chave SSH*. Para esta opção, selecione a caixa de verificação *Require public key and password for Remote login* e avance para o passo seguinte.
 
 
-. Preencha o campo *chave pública autorizada*. Este campo contém uma lista de chaves públicas autorizadas, no formato do arquivo OpenSSH *Authorized_keys*.
+. Preencha o campo *Chaves públicas autorizadas*. Este campo contém uma lista de chaves públicas autorizadas, no formato do arquivo *authorized_keys* do OpenSSH.
 +
-Ao preencher o campo *chave pública autorizada*, esteja ciente das seguintes diretrizes:
+Ao preencher o campo *Chaves públicas autorizadas*, esteja ciente das seguintes diretrizes:
 
 +
-** O campo *chave pública autorizada* aplica-se a ambos os controladores e só precisa ser configurado no primeiro controlador.
+** O campo *Chaves públicas autorizadas* aplica-se a ambos os controladores e só precisa ser configurado no primeiro controlador.
 ** O arquivo *Authorized_keys* deve conter apenas uma chave por linha. Linhas que começam com no e linhas vazias são ignoradas. Para obter mais informações sobre o formato do arquivo, link:https://www.ssh.com/academy/ssh/authorized-keys-openssh["Configurando chaves autorizadas para OpenSSH"^]consulte .
 ** Um arquivo *Authorized_keys* deve ser semelhante ao seguinte exemplo:
 +
@@ -62,7 +61,7 @@ AAAAB3NzaC1yc2EAAAADAQABAAABAQDJlG20rYTk4ok+xFjkPHYp/R0LfJqEYDLXA5AJ49w3DvAWLrUg
 
 . Quando terminar, clique em *Salvar*.
 . Para sistemas duplex, você pode ativar o login remoto no segundo controlador seguindo as etapas acima. Se você estiver configurando a opção para uma senha e chave SSH, certifique-se de selecionar a caixa de seleção *Require public key and password for Remote login* novamente.
-. Depois que o suporte técnico terminar a solução de problemas, você pode desativar o login remoto retornando à caixa de diálogo Configurar Login remoto e desmarcar a caixa de seleção *Ativar login remoto*. Se o início de sessão remoto estiver ativado num segundo controlador, abre-se uma caixa de diálogo de confirmação e permite-lhe também desativar o início de sessão remoto no segundo.
+. Após o suporte técnico concluir a resolução de problemas, você pode desativar o login remoto retornando à página Configurar login remoto (SSH) e desmarcando a caixa de seleção *Ativar login remoto*. Se o login remoto estiver ativado em um segundo controlador, uma caixa de diálogo de confirmação será exibida e permitirá que você desative o login remoto também nesse segundo controlador.
 +
 A desativação do login remoto termina todas as sessões SSH atuais e rejeita quaisquer novas solicitações de login.
 

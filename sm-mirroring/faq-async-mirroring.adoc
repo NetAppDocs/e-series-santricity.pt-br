@@ -16,6 +16,7 @@ Este FAQ pode ajudar se você está apenas procurando uma resposta rápida para 
 
 
 
+[[how-does-asynchronous-mirroring-differ-from-synchronous-mirroring]]
 == Como o espelhamento assíncrono difere do espelhamento síncrono?
 
 O recurso de espelhamento assíncrono difere do recurso de espelhamento síncrono de uma maneira essencial: Captura o estado do volume de origem em um determinado ponto no tempo e copia apenas os dados que foram alterados desde a última captura de imagem.
@@ -112,6 +113,7 @@ Normalmente, deve estar a cerca de 10 km (6,2 milhas) do storage array local par
 |===
 
 
+[[why-cant-i-access-my-chosen-mirroring-feature]]
 == Por que não consigo acessar o recurso de espelhamento escolhido?
 
 O espelhamento é configurado na interface do SANtricity Unified Manager.
@@ -137,6 +139,7 @@ Para obter instruções de configuração, consulte o seguinte:
 
 
 
+[[what-do-i-need-to-know-before-creating-a-mirror-consistency-group]]
 == O que eu preciso saber antes de criar um grupo de consistência de espelho?
 
 Siga estas diretrizes antes de criar um grupo de consistência espelhada.
@@ -167,6 +170,7 @@ Certifique-se também de atender aos seguintes requisitos para matrizes de armaz
 
 
 
+[[asynchronous-mirroring-what-do-i-need-to-know-before-creating-a-mirrored-pair]]
 == Espelhamento assíncrono - o que preciso saber antes de criar um par espelhado?
 
 Você configura pares espelhados na interface do Gerenciador Unificado do SANtricity e gerencia os pares no Gerenciador de sistemas do SANtricity.
@@ -187,6 +191,7 @@ Antes de criar um par espelhado, siga estas diretrizes.
 
 
 
+[[what-do-i-need-to-know-before-increasing-my-reserved-capacity-on-a-mirrored-pair-volume]]
 == O que eu preciso saber antes de aumentar minha capacidade reservada em um volume de par espelhado?
 
 Normalmente, você deve aumentar a capacidade reservada quando receber um aviso de que a capacidade reservada para um par espelhado está ficando cheia. Você pode aumentar a capacidade reservada apenas em incrementos de 8 GiB.
@@ -208,6 +213,7 @@ Se não houver capacidade livre em nenhum pool ou grupo de volumes, você poder�
 
 
 
+[[why-cant-i-increase-reserved-capacity-with-my-requested-amount]]
 == Por que não consigo aumentar a capacidade reservada com a quantidade solicitada?
 
 Você pode aumentar a capacidade reservada apenas em incrementos de 4 GiB.
@@ -226,6 +232,7 @@ Para operações de espelhamento assíncrono, a capacidade reservada é de 20% d
 
 
 
+[[why-would-i-change-this-percentage]]
 == Por que eu alteraria essa porcentagem?
 
 A capacidade reservada geralmente é de 40% do volume base para operações de snapshot e 20% do volume base para operações de espelhamento assíncrono.
@@ -240,6 +247,7 @@ Em geral, escolha uma porcentagem maior para a capacidade reservada se uma ou am
 
 
 
+[[why-do-i-see-more-than-one-reserved-capacity-candidate]]
 == Por que vejo mais de um candidato à capacidade reservada?
 
 Se houver mais de um volume em um pool ou grupo de volumes que atenda ao valor percentual de capacidade selecionado para o objeto de armazenamento, você verá vários candidatos.
@@ -248,6 +256,7 @@ Você pode atualizar a lista de candidatos recomendados alterando a porcentagem 
 
 
 
+[[why-do-i-see-not-available-values-displayed-in-the-table]]
 == Por que vejo valores não disponíveis exibidos na tabela?
 
 A tabela lista valores não disponíveis quando os dados localizados na matriz de armazenamento remoto não estão disponíveis para serem exibidos.
@@ -256,6 +265,7 @@ Para exibir os dados do storage array remoto, inicie o System Manager do Unified
 
 
 
+[[why-dont-i-see-all-of-my-pools-and-volume-groups]]
 == Por que não vejo todos os meus pools e grupos de volumes?
 
 Quando você cria um volume secundário para o par espelhado assíncrono, o sistema exibe uma lista de todos os pools qualificados e grupos de volumes para esse par espelhado assíncrono. Qualquer pool ou grupo de volume que não seja elegível para ser usado não é exibido nessa lista.
@@ -269,6 +279,7 @@ Pools ou grupos de volumes podem não ser elegíveis por qualquer um dos seguint
 
 
 
+[[asynchronous-mirroring-why-dont-i-see-all-my-volumes]]
 == Espelhamento assíncrono - Por que não vejo todos os meus volumes?
 
 Ao selecionar um volume primário para um par espelhado, uma lista mostra todos os volumes elegíveis.
@@ -285,6 +296,7 @@ NOTE: Para controladores EF600 e EF300, os volumes primário e secundário de um
 
 
 
+[[asynchronous-mirroring-why-dont-i-see-all-the-volumes-on-the-remote-storage-array]]
 == Espelhamento assíncrono - Por que não vejo todos os volumes no array de armazenamento remoto?
 
 Quando você está selecionando um volume secundário no storage array remoto, uma lista mostra todos os volumes elegíveis para esse par espelhado.
@@ -304,6 +316,7 @@ Quaisquer volumes que não sejam elegíveis para serem usados, não serão exibi
 
 
 
+[[why-would-i-update-my-remote-storage-arrays-ip-address]]
 == Por que eu atualizaria o endereço IP do meu array de armazenamento remoto?
 
 Você atualiza o endereço IP da matriz de armazenamento remoto quando o endereço IP de uma porta iSCSI muda e a matriz de armazenamento local não consegue se comunicar com a matriz de armazenamento remoto.

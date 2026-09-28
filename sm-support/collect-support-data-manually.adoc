@@ -19,7 +19,7 @@ Mais uma vez
 
 [NOTE]
 ====
-Se o recurso AutoSupport estiver ativado, você também poderá coletar esses dados acessando a guia *AutoSupport* e selecionando *Enviar Envio AutoSupport*.
+Se o recurso AutoSupport estiver ativado, você também pode coletar esses dados acessando menu:Suporte[AutoSupport] e selecionando *Enviar despacho do AutoSupport*.
 
 ====
 Você pode executar apenas uma operação de coleta de cada vez. Se tentar iniciar outra operação, receberá uma mensagem de erro.
@@ -30,7 +30,7 @@ Execute esta operação somente quando instruído a fazê-lo pelo suporte técni
 
 ====
 .Passos
-. No painel esquerdo, selecione menu:Support [Support Center > Diagnostics] tab.
+. No painel esquerdo, selecione menu:Support[Diagnostics].
 . Selecione *coletar dados de suporte*.
 . Clique em *Collect*.
 +

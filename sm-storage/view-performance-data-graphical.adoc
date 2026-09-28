@@ -16,112 +16,27 @@ summary: É possível exibir dados de performance gráficos para objetos lógico
 .Sobre esta tarefa
 Os gráficos de desempenho mostram dados históricos, bem como dados em tempo real que estão sendo capturados. Uma linha vertical no gráfico, rotulada Live Updating, distingue os dados históricos dos dados em tempo real.
 
-* Visualização da página inicial*
+*Visão do dashboard*
 
-A página inicial contém um gráfico que mostra o desempenho do nível da matriz de armazenamento. Você pode selecionar métricas limitadas nessa exibição ou clicar em *Exibir detalhes de desempenho* para selecionar todas as métricas disponíveis.
+O painel de controle contém um gráfico que mostra o desempenho do array de storage. Você pode selecionar métricas limitadas nesta visualização ou clicar em *Exibir detalhes de desempenho* para acessar menu:Monitoramento[Desempenho] e selecionar todas as métricas disponíveis.
 
 *Vista detalhada*
 
-Os gráficos disponíveis na vista de desempenho detalhada estão dispostos em três separadores:
+Os gráficos disponíveis na página de desempenho são baseados nas suas seleções:
 
-* *Exibição lógica* -- exibe dados de desempenho para objetos lógicos agrupados por grupos de volume e pools. Os objetos lógicos incluem grupos de volumes, pools e volumes.
-* *Physical View* -- exibe dados de desempenho para o controlador, canais host, canais de unidade e unidades.
-* *Visualização de aplicativos e cargas de trabalho* -- Exibe uma lista de objetos lógicos (volumes) agrupados pelos tipos de aplicativos e cargas de trabalho que você definiu.
+* *Tipos de objetos* -- Seleciona as categorias de objetos a serem incluídas (por exemplo, array de storage, controladores, pools e grupos de volume, aplicativos, cargas de trabalho, volumes, canais e unidades).
+* *Objetos* — seleciona até cinco objetos específicos para os tipos de objeto selecionados.
 
 
 .Passos
-. Selecione *Home*.
-. Para selecionar uma visualização em nível de matriz, clique no botão IOPS, MIB/s ou CPU.
-. Para ver mais detalhes, clique em *Exibir detalhes de desempenho*.
-. Selecione a guia *Logical View*, a guia *Physical View* ou a guia *Applications and workloads View*.
+. Selecione o menu: Monitoramento [Performance].
+. Use *Tipos de objeto* e *Objetos* para selecionar os dados que você deseja exibir. Você pode selecionar até cinco objetos; use o campo de pesquisa na lista *Objetos* para encontrar nomes de objetos ou nomes parciais.
 +
-Dependendo do tipo de objeto, diferentes gráficos aparecem em cada guia.
+Nem todas as métricas estão disponíveis para todos os tipos de objeto. Arrays de storage e controladores não reportam latência, apenas controladores reportam utilização de CPU e somente controladores e canais reportam headroom.
 
-+
-[cols="25h,~"]
-|===
-| Ver separadores | Dados de desempenho exibidos para cada tipo de objeto 
-
-
- a| 
-Vista lógica
- a| 
-** *Storage array*: IOPS, MIB/s.
-** *Pools*: Latência, IOPS, MIB/s
-** *Grupos de volume*: Latência, IOPS, MIB/s.
-** *Volumes*: Latência, IOPS, MIB/s
-
-
-
-
- a| 
-Vista física
- a| 
-** *Controladores*: IOPS, MIB/s, CPU, espaço livre
-** *Canais de host*: Latência, IOPS, MIB/s, espaço livre
-** *Canais de unidade*: Latência, IOPS, MIB/s.
-** *Unidades*: Latência, IOPS, MIB/s
-
-
-
-
- a| 
-Aplicações e cargas de trabalho Visualizar
- a| 
-** *Storage array*: IOPS, MIB/s.
-** *Aplicações*: Latência, IOPS, MIB/s
-** *Cargas de trabalho*: Latência, IOPS, MIB/s
-** *Volumes*: Latência, IOPS, MIB/s
-
-
-|===
-. Utilize as opções para visualizar os objetos e as informações de que necessita.
-+
-.Opções
-[%collapsible]
-====
-[cols="25h,~"]
-|===
-| Opções para visualização de objetos | Descrição 
-
-
- a| 
-Expanda uma gaveta para ver a lista de objetos.
- a| 
-_Gavetas de navegação_ contêm objetos de armazenamento, como pools, grupos de volume e unidades.
-
-Clique na gaveta para ver a lista de objetos na gaveta.
-
-
-
- a| 
-Selecione objetos para visualizar.
- a| 
-Marque a caixa de seleção à esquerda de cada objeto para escolher os dados de desempenho que deseja exibir.
-
-
-
- a| 
-Use filtro para encontrar nomes de objetos ou nomes parciais.
- a| 
-Na caixa filtro, insira o nome ou um nome parcial de objetos para listar apenas esses objetos na gaveta.
-
-
-
- a| 
-Clique em *Atualizar gráficos* depois de selecionar objetos.
- a| 
-Depois de selecionar objetos nas gavetas, selecione *Atualizar gráficos* para ver os dados gráficos dos itens selecionados.
-
-
-
- a| 
-Ocultar ou mostrar gráfico
- a| 
-Selecione o título do gráfico para ocultar ou mostrar o gráfico.
-
-|===
-====
+. Use *Intervalo de tempo* para selecionar o período que você deseja exibir.
+. Clique em *Atualizar*.
+. *Opcional:* Em um gráfico individual, use *Comparar* para sobrepor outro tipo de métrica para os mesmos objetos.
 . Conforme necessário, use as opções adicionais para visualizar dados de desempenho.
 +
 .Opções adicionais
@@ -133,12 +48,12 @@ Selecione o título do gráfico para ocultar ou mostrar o gráfico.
 
 
  a| 
-Período de tempo
+Intervalo de tempo
  a| 
 Selecione a duração do tempo que pretende visualizar (5 minutos, 1 hora, 8 horas, 1 dia, 7 dias ou 30 dias). O padrão é 1 hora.
 
 
-NOTE: O carregamento de dados de desempenho para um período de 30 dias pode demorar vários minutos. Não navegue para fora da página da Web, atualize a página da Web ou feche o navegador enquanto os dados estão sendo carregados.
+NOTE: O carregamento dos dados de desempenho para um período de 30 dias pode levar vários minutos. Não saia da página da web, não atualize a página da web nem feche o navegador enquanto os dados estiverem sendo carregados.
 
 
 

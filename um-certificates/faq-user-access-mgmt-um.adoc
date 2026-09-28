@@ -16,6 +16,7 @@ Este FAQ pode ajudar se você está apenas procurando uma resposta rápida para 
 
 
 
+[[why-cant-i-log-in]]
 == Por que não consigo fazer login?
 
 Se receber um erro ao tentar iniciar sessão, reveja estas possíveis causas.
@@ -30,6 +31,7 @@ Erros de login podem ocorrer por um destes motivos:
 
 
 
+[[what-do-i-need-to-know-before-adding-a-directory-server]]
 == O que eu preciso saber antes de adicionar um servidor de diretório?
 
 Antes de adicionar um servidor de diretório no Gerenciamento de Acesso, você deve atender a certos requisitos.
@@ -41,6 +43,7 @@ Antes de adicionar um servidor de diretório no Gerenciamento de Acesso, você d
 
 
 
+[[what-do-i-need-to-know-about-mapping-to-storage-array-roles]]
 == O que eu preciso saber sobre mapeamento para funções de storage array?
 
 Antes de mapear grupos para funções, revise as diretrizes.
@@ -66,6 +69,7 @@ Se estiver a utilizar um servidor LDAP (Lightweight Directory Access Protocol) e
 
 
 
+[[saml]]
 === SAML
 
 Se você estiver usando os recursos de Security Assertion Markup Language (SAML) incorporados ao storage array, verifique se:
@@ -83,12 +87,14 @@ Se você estiver usando os recursos de Security Assertion Markup Language (SAML)
 
 
 
+[[what-do-i-need-to-know-before-configuring-and-enabling-saml]]
 == O que eu preciso saber antes de configurar e ativar o SAML?
 
 Antes de configurar e habilitar os recursos de Security Assertion Markup Language (SAML) para autenticação, certifique-se de atender aos requisitos a seguir e entender as restrições SAML.
 
 
 
+[[requirements]]
 === Requisitos
 
 Antes de começar, certifique-se de que:
@@ -103,6 +109,7 @@ Antes de começar, certifique-se de que:
 
 
 
+[[restrictions]]
 === Restrições
 
 Além dos requisitos acima, certifique-se de que compreende as seguintes restrições:
@@ -124,6 +131,7 @@ Além dos requisitos acima, certifique-se de que compreende as seguintes restri�
 
 
 
+[[what-are-the-local-users]]
 == Quais são os usuários locais?
 
 Os usuários locais são predefinidos no sistema e incluem permissões específicas.

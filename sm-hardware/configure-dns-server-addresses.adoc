@@ -27,18 +27,13 @@ Se já tiver configurado as portas de gestão da matriz de armazenamento com DHC
 
 ====
 .Passos
-. No painel esquerdo, selecione *Hardware*.
-. Se o gráfico mostrar as unidades, clique na guia *Controllers & Components* (Controladores e componentes).
-+
-O gráfico muda para mostrar os controladores em vez das unidades.
-
-. Selecione o controlador a configurar.
+. No painel esquerdo, selecione menu:Hardware[Controllers and components].
 +
 É apresentado o menu de contexto do controlador.
 
 . Selecione *Configurar servidor DNS*.
 +
-A caixa de diálogo Configurar servidor DNS (Domain Name System) é aberta.
+A página Configurar servidor do sistema de nomes de domínio (DNS) é aberta.
 
 . Selecione uma das seguintes opções:
 +
@@ -57,4 +52,4 @@ Se o storage array estiver definido para usar um endereço DNS estático, nenhum
 
 
 .Resultados
-A configuração DNS é exibida nas configurações do controlador, guia *DNS / NTP*.
+A configuração de DNS é exibida nas configurações do controlador, na seção *Configurações do servidor do sistema de nomes de domínio (DNS)*.

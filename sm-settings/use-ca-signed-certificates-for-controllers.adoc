@@ -24,6 +24,7 @@ O uso de certificados assinados pela CA é um procedimento de três etapas.
 
 
 
+[[step-1-complete-csrs-for-the-controllers]]
 == Etapa 1: Conclua CSRs para os controladores
 
 Primeiro, você deve gerar um arquivo de solicitação de assinatura de certificado (CSR) para cada controlador no storage de armazenamento.
@@ -37,8 +38,7 @@ Alternativamente, você pode gerar um arquivo CSR usando uma ferramenta como Ope
 
 ====
 .Passos
-. No painel esquerdo, selecione menu:Settings[Certificates].
-. Na guia Gerenciamento de matrizes, selecione *Complete CSR*.
+. No painel esquerdo, selecione menu:Certificates[Array management certificates] e, em seguida, selecione *Complete CSR*.
 +
 [NOTE]
 ====
@@ -85,6 +85,7 @@ Para um único controlador, um ficheiro CSR é transferido para o seu sistema lo
 
 
 
+[[step-2-submit-the-csr-files]]
 == Passo 2: Envie os arquivos CSR
 
 Depois de criar os arquivos de solicitação de assinatura de certificado (CSR), envie os arquivos para uma autoridade de certificação (CA). Os sistemas e-Series exigem o formato PEM (codificação ASCII Base64) para certificados assinados, que inclui os seguintes tipos de arquivo: pem, .crt, .cer ou .key.
@@ -103,6 +104,7 @@ Depois de criar os arquivos de solicitação de assinatura de certificado (CSR),
 
 
 
+[[step-3-import-signed-certificates-for-controllers]]
 == Etapa 3: Importar certificados assinados para controladores
 
 Depois de receber certificados assinados da Autoridade de Certificação (CA), importe os arquivos para os controladores.
@@ -114,8 +116,7 @@ Depois de receber certificados assinados da Autoridade de Certificação (CA), i
 
 
 .Passos
-. No painel esquerdo, selecione menu:Settings[Certificates]
-. Na guia Gerenciamento de matrizes, selecione *Importar*.
+. No painel esquerdo, selecione menu:Certificates[Array management certificates] e, em seguida, selecione *Importar*.
 +
 Abre-se uma caixa de diálogo para importar o(s) ficheiro(s) de certificado.
 

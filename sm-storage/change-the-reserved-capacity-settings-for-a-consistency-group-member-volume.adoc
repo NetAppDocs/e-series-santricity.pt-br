@@ -18,9 +18,8 @@ Você pode alterar as configurações de um volume de membro do grupo de consist
 Alterar as configurações de capacidade reservada para um volume de membro individual também altera as configurações de capacidade reservada para todos os volumes associados a um grupo de consistência.
 
 .Passos
-. No painel esquerdo, selecione menu:Storage[Pools and volume groups].
-. Clique na guia *capacidade reservada*.
-. Selecione o volume membro do grupo de consistência que deseja editar e, em seguida, clique no menu:ícone de reticências[Editar configurações].
+. No painel esquerdo, selecione menu:Storage [Capacidade reservada].
+. Selecione o volume membro do grupo de consistência que você deseja editar e clique no ícone de menu: reticências [Editar configurações].
 +
 A janela Editar volume do membro do grupo de consistência é exibida.
 

@@ -16,6 +16,7 @@ Este FAQ pode ajudar se você está apenas procurando uma resposta rápida para 
 
 
 
+[[why-does-the-cannot-access-other-controller-dialog-box-appear]]
 == Por que a caixa de diálogo não é possível acessar outro controlador aparece?
 
 Quando você executa determinadas operações relacionadas a certificados de CA (por exemplo, importando um certificado), você pode ver uma caixa de diálogo solicitando que você aceite um certificado autoassinado para o segundo controlador.
@@ -32,6 +33,7 @@ Se esta caixa de diálogo aparecer novamente e não for possível concluir uma t
 
 
 
+[[how-do-i-know-what-certificates-need-to-be-uploaded-to-santricity-system-manager-for-external-key-management]]
 == Como sei quais certificados precisam ser carregados para o Gerenciador de sistemas do SANtricity para gerenciamento de chaves externas?
 
 Para o gerenciamento de chaves externas, você importa dois tipos de certificados para autenticação entre o storage array e o servidor de gerenciamento de chaves para que as duas entidades possam confiar umas nas outras.
@@ -46,6 +48,7 @@ Um certificado do servidor de gerenciamento de chaves valida o servidor de geren
 
 
 
+[[what-do-i-need-to-know-about-certificate-revocation-checking]]
 == O que eu preciso saber sobre a verificação de revogação de certificados?
 
 O Gerenciador de sistema do SANtricity permite que você verifique se há certificados revogados usando um servidor OCSP (protocolo de status de certificado on-line), em vez de carregar listas de revogação de certificados (CRLs).
@@ -61,6 +64,7 @@ Especificar um endereço de resposta OCSP no System Manager ou na interface de l
 ====
 
 
+[[what-types-of-servers-will-revocation-checking-be-enabled-for]]
 == Para que tipos de servidores a verificação de revogação será ativada?
 
 A matriz de armazenamento executa a verificação de revogação sempre que se coneta a um servidor AutoSupport, servidor de gerenciamento de chaves externas (EKMS), servidor Lightweight Directory Access Protocol over SSL (LDAPS) ou a um servidor Syslog.

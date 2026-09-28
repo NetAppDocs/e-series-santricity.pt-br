@@ -23,7 +23,7 @@ Se você estiver alterando o nível RAID para acomodar as necessidades de desemp
 
 .Passos
 . No painel esquerdo, selecione menu:Storage[Pools and volume groups].
-. Selecione o grupo de volume que deseja editar e clique no menu:ellipsis icon[Edit Settings].
+. Localize o grupo de volume que você deseja editar e clique no menu:ícone de reticências[Editar configurações].
 +
 A janela Edit Volume Group Settings é exibida.
 

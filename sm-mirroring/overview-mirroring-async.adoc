@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, ARVM, asynchronous, mirroring, firmware, 
 summary: O recurso espelhamento assíncrono fornece um mecanismo baseado em firmware em nível de controlador para replicação de dados entre um storage array local e um storage array remoto. 
 ---
-= Aprenda sobre espelhamento assíncrono no software SANtricity
+= Aprenda sobre espelhamento assíncrono no SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

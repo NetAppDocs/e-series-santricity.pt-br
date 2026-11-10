@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, maximum, luns 
 summary: O storage array tem um número máximo de LUNs que podem ser usados para cada host. 
 ---
-= Saiba mais sobre o número máximo de LUNs no software SANtricity
+= Saiba mais sobre o número máximo de LUNs no SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

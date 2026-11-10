@@ -32,9 +32,6 @@ Reveja estas diretrizes antes de criar um grupo de volumes:
 
 
 
-
-NOTE: A combinação de unidades FDE e FIPS no mesmo array de storage não é suportada. Todas as unidades com capacidade de segurança no sistema devem ser do mesmo tipo.
-
 .Passos
 . No painel esquerdo, selecione menu:Storage[Pools and volume groups].
 . Clique em menu:criar[Grupo de volume].

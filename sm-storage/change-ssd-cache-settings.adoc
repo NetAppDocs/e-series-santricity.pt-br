@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, ssd, cache, settings 
 summary: Você pode editar as configurações do cache SSD. As configurações atuais do cache SSD podem ser acessadas através da opção Exibir configurações. 
 ---
-= Alterar as configurações de cache do SSD no SANtricity System Manager
+= Alterar as configurações de cache SSD no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

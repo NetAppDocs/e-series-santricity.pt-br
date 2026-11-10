@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, workflow, mirroring, synchronously, 
 summary: Você configura o espelhamento síncrono usando o fluxo de trabalho a seguir. 
 ---
-= Espelhar um volume de forma síncrona no software SANtricity
+= Fluxo de trabalho do espelhamento síncrono para o software SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

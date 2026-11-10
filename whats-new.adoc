@@ -16,6 +16,13 @@ A tabela a seguir descreve os novos recursos no SANtricity System Manager 12.10.
 
 
 
+[[new-features-in-version-12-10r1]]
+== Novos recursos na versão 12.10R1
+
+Esta versão contém apenas pequenas alterações e nenhum novo recurso. Para mais informações sobre as alterações nesta versão, consulte o E-Series SANtricity OS 12.10R1 README.
+
+
+
 [[new-features-in-version-12-10]]
 == Novidades na versão 12.10
 
@@ -131,6 +138,6 @@ Para Dynamic Disk Pools em sistemas baseados em SSD e NVMe, o tamanho padrão do
  a| 
 Editor de scripts agora disponível no SANtricity System Manager
  a| 
-Um novo editor de scripts já está disponível no SANtricity System Manager. O editor de scripts permite criar ou editar um arquivo de script, salvar um arquivo de script no disco local da estação de gerenciamento de storage ou carregar um arquivo de script do disco. O editor de scripts oferece recursos de verificação de sintaxe e execução de comandos para gerenciar seu sistema de storage. Para mais informações, consulte link:sm-support/use-script-editor.html["Usando o editor de script"^].
+Um novo editor de scripts já está disponível no SANtricity System Manager. O editor de scripts permite criar ou editar um arquivo de script, salvar um arquivo de script no disco local da estação de gerenciamento de storage ou carregar um arquivo de script do disco. O editor de scripts oferece recursos de verificação de sintaxe e execução de comandos para gerenciar seu sistema de storage. Para obter mais informações, consulte link:sm-support/use-script-editor.html["Use o editor de script no SANtricity System Manager"^].
 
 |===

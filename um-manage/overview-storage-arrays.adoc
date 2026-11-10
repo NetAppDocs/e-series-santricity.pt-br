@@ -24,7 +24,7 @@ Saiba mais:
 
 * link:considerations-for-discovering-arrays.html["Considerações para descobrir arrays"]
 * link:discover-multiple-arrays.html["Descubra vários storages de armazenamento"]
-* link:discover-single-array.html["Descubra um único array"]
+* link:discover-single-array.html["Descubra um único array de storage"]
 
 
 
@@ -40,5 +40,5 @@ Saiba mais:
 
 * link:launch-considerations.html["Considerações para acessar o System Manager"]
 * link:launch-system-manager.html["Gerenciar um storage array individual"]
-* link:storage-array-status.html["Ver o status do storage array"]
+* link:storage-array-status.html["Status do storage array"]
 

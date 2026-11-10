@@ -83,9 +83,6 @@ Indica se esse candidato a pool é composto inteiramente de unidades com capacid
 
 
 
-NOTE: A combinação de unidades FDE e FIPS no mesmo array de storage não é suportada. Todas as unidades com capacidade de segurança no sistema devem ser do mesmo tipo.
-
-
 
  a| 
 Ativar segurança?

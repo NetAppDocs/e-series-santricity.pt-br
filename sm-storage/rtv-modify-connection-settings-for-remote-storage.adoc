@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, modify, connection, settings, remote, storage 
 summary: Pode editar, adicionar ou eliminar definições de ligação para qualquer configuração de armazenamento remoto através da opção Ver/Editar definições. 
 ---
-= Modifique as configurações de conexão de armazenamento remoto no SANtricity System Manager
+= Modifique as configurações de conexão para storage remoto no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -40,7 +40,7 @@ Você configura o espelhamento assíncrono ou síncrono no Unified Manager e, em
 
 Saiba mais:
 
-* link:mirroring-configuration-workflow.html["Fluxos de trabalho de configuração de espelhamento"]
+* link:mirroring-configuration-workflow.html["Fluxo de trabalho de configuração de espelhamento"]
 * link:requirements-for-using-mirroring.html["Requisitos para uso do espelhamento"]
 * link:create-asynchronous-mirrored-pair-um.html["Crie um par espelhado assíncrono"]
 * link:create-synchronous-mirrored-pair-um.html["Crie par espelhado síncrono"]

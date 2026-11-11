@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, volume, settings, snapshot, volume 
 summary: 'Você pode alterar as configurações de um volume instantâneo ou volume instantâneo do grupo de consistência de snapshot para renomeá-lo, ativar ou desativar o cache SSD ou alterar a atribuição do host, cluster de host ou número de unidade lógica (LUN).' 
 ---
-= Alterar as configurações do volume de Snapshot no SANtricity System Manager
+= Altere as configurações de volume para um volume de Snapshot no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

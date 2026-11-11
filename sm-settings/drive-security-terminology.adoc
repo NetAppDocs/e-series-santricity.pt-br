@@ -64,6 +64,9 @@ Unidades com capacidade de segurança
 As unidades com capacidade segura podem ser unidades com criptografia total de disco (FDE) ou unidades FIPS (Federal Information Processing Standard), que criptografam dados durante gravações e descriptografam dados durante leituras. Essas unidades são consideradas seguras-_Capable_ porque podem ser usadas para segurança adicional usando o recurso Segurança da Unidade. Se o recurso Segurança da unidade estiver habilitado para grupos de volume e pools usados com essas unidades, as unidades se tornarão seguras-_enabled_.
 
 
+NOTE: A combinação de unidades FDE e FIPS no mesmo array de storage não é suportada. Todas as unidades com capacidade de segurança no sistema devem ser do mesmo tipo.
+
+
 
  a| 
 Unidades habilitadas para segurança

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, resolve, untrusted, certificates 
 summary: Certificados não confiáveis ocorrem quando um storage array tenta estabelecer uma conexão segura com o Gerenciador Unificado do SANtricity, mas a conexão não confirma como segura. 
 ---
-= Resolver problemas com certificados não confiáveis no SANtricity Unified Manager
+= Resolver certificados não confiáveis
 :allow-uri-read: 
 :experimental: 
 :icons: font

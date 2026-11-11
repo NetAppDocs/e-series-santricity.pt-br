@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary: Este FAQ pode ajudar se você está apenas procurando uma resposta rápida para uma pergunta. 
 ---
-= Perguntas frequentes sobre espelhamento assíncrono para o SANtricity System Manager
+= Perguntas frequentes sobre espelhamento assíncrono para SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

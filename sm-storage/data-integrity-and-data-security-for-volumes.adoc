@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, data, integrity, security, volumes 
 summary: 'Pode ativar os volumes para utilizar a funcionalidade Data Assurance (DA) e a funcionalidade Drive Security (Segurança da unidade). Esses recursos são apresentados no nível de grupo de volume e pool.' 
 ---
-= Saiba mais sobre a integridade de dados e a segurança dos volumes do SANtricity System Manager
+= Aprenda sobre integridade de dados e segurança de dados para volumes no software SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -8998,139 +8998,124 @@
   <block id="9058b34022122c78e9a4a4d9c48a5b78" category="sidebar">Documentação do software SANtricity 12.10</block>
   <block id="484059fb06cc5d8441498bee89fda7f0" category="sidebar">Gerenciamento de array único com SANtricity System Manager 12.10</block>
   <block id="1f83597d32022fe75587024ad625d4e2" category="sidebar">Documentação do software SANtricity 12.10</block>
-  <block id="134432d9b45ecd0bcdd7b7c60bd89da4" category="doc">Configure o login remoto no SANtricity System Manager</block>
-  <block id="6f2c8150d0541f6d3d80fd1a169388e7" category="doc">Configure as portas de gerenciamento no SANtricity System Manager</block>
-  <block id="927b4dde35df16413982ab0976a77c09" category="doc">Saiba mais sobre a atribuição de endereço IP no SANtricity System Manager</block>
-  <block id="5adae37ff25d36c6049a940a86676ee1" category="doc">Saiba mais sobre a página de Hardware no SANtricity System Manager</block>
-  <block id="61a3838bcd7ac35c7c9ce40cc761200e" category="doc">Aprenda sobre a terminologia de hardware usada no SANtricity System Manager</block>
-  <block id="70d924eca8845b61b1cdd970867f402d" category="doc">Componentes de hardware no SANtricity System Manager</block>
-  <block id="6607ffaeb29ed452100e0c7be07cfd1b" category="doc">Inicialize e formate as unidades no SANtricity System Manager</block>
-  <block id="cd7ee85ab0133b77bee2a0af986ef781" category="doc">Coloque um controlador em modo de serviço com SANtricity System Manager</block>
-  <block id="dd3ed70dcea5a4d788ac339495ccfaec" category="doc">Reinicie um controlador no SANtricity System Manager</block>
-  <block id="c6d38bd42c7753a502dbfcc3e64a4e68" category="doc">Saiba mais sobre discos de estado sólido no SANtricity System Manager</block>
-  <block id="2a23eef8c145213f4060c0554e5e6b7b" category="doc">Saiba mais sobre proteção por senha no SANtricity System Manager</block>
-  <block id="cd232f63ed0f060fa350ea1b26df4363" category="doc">Saiba mais sobre o SANtricity System Manager</block>
-  <block id="a9735a04dc71a7db46a174ac8ccda166" category="doc">Página de operações em andamento do SANtricity System Manager</block>
-  <block id="084874d5f181b81b23ffbd59e3d4a668" category="doc">Recupere-se de problemas usando o Recovery Guru no SANtricity System Manager</block>
-  <block id="921c144f48ef3893455fcdb6decb4ba0" category="doc">Visualize e tome medidas em relação às operações em andamento no SANtricity System Manager</block>
-  <block id="ba6f63b2cab2a580f8dd18519f0edbd7" category="doc">Hierarquia de armazenamento no SANtricity System Manager</block>
-  <block id="5888e1873e32110f9f832a166fc0f6b6" category="doc">Status de espelhamento assíncrono no SANtricity System Manager</block>
-  <block id="f098bcbdba1a541d53b204f22655fefa" category="doc">Terminologia de espelhamento assíncrono no software SANtricity</block>
-  <block id="8f8561ca1fde03428626df6a44e63942" category="doc">Alterar a função do grupo de consistência de espelhamento no SANtricity System Manager</block>
-  <block id="2378ab2eda4ec14e25f5b46cd1c7559c" category="doc">Alterar funções de volume em um par espelhado para o SANtricity System Manager</block>
-  <block id="55be868d2ebe435e831bab0a220aa3b0" category="doc">Altere as configurações de sincronização do grupo de consistência de espelhamento no SANtricity System Manager</block>
-  <block id="8055d362c1c525a7880f1859b9d441ac" category="doc">Alterar as configurações de sincronização de pares espelhados no SANtricity System Manager</block>
-  <block id="4637b68ca7ff918b4e4bf5ac658d2547" category="doc">Alterar as configurações de capacidade reservada para um volume de par espelhado no SANtricity System Manager</block>
-  <block id="0a19af6efe6a2a449d9dcd507afb17ea" category="doc">Conclua um par espelhado para volumes primários legados no SANtricity System Manager</block>
-  <block id="ad5437cc669ff0015f8db812b4a4edbf" category="doc">Perguntas frequentes sobre espelhamento assíncrono para o SANtricity System Manager</block>
-  <block id="678dcb8b934bcfee6023f4387ecc5edc" category="doc">Perguntas frequentes sobre espelhamento síncrono para o SANtricity System Manager</block>
-  <block id="27dd2829274cb731d86fdfff738a32aa" category="doc">Saiba mais sobre espelhamento no SANtricity System Manager</block>
-  <block id="ede0c36dbf5f30fc169cec99857a1440" category="doc">Aprenda sobre espelhamento assíncrono no SANtricity System Manager</block>
-  <block id="7a6d62a7461954e464c86505d6a8c7d4" category="doc">Saiba mais sobre espelhamento síncrono no SANtricity System Manager</block>
-  <block id="191e76d66a912905e157f9225d8e3186" category="doc">Ressincronize manualmente um grupo de consistência de espelhamento no SANtricity System Manager</block>
-  <block id="2025435a1266219220e858696a963e70" category="doc">Como funcionam as alterações de função do grupo de consistência de espelhamento no software SANtricity</block>
-  <block id="d107764a4f14ba79357c932a2e8fe251" category="doc">Suspender ou retomar a sincronização de pares espelhados no SANtricity System Manager</block>
-  <block id="5158ed7e99a63d68a703740e281ca5b3" category="doc">Suspender ou retomar a sincronização do grupo de consistência de espelhamento no SANtricity System Manager</block>
-  <block id="2b1f465833d7101e5ea6946c576c9590" category="doc">Status do espelhamento síncrono no SANtricity System Manager</block>
-  <block id="af47f4e1076312f48bf60c1509779628" category="doc">Terminologia de espelhamento síncrono no software SANtricity</block>
-  <block id="ca68d7f80a0ebedb5b7bd3b981f01410" category="doc">Fluxo de trabalho do espelhamento assíncrono para o software SANtricity</block>
-  <block id="8954c73d912d880bf588530889efb774" category="doc">Fluxo de trabalho do espelhamento síncrono para o software SANtricity</block>
-  <block id="556d06cd51a88ddf44ea0610f7d83950" category="doc">Saiba mais sobre tokens de acesso no SANtricity System Manager</block>
-  <block id="68eb179a14037e17ab457b9bdc0dee21" category="doc">Gerenciamento de acesso com serviços de diretório no SANtricity System Manager</block>
-  <block id="b71dd4c1e9beff6bd6d4c63728b656bd" category="doc">Gerenciamento de acesso com funções de usuário locais no SANtricity System Manager</block>
-  <block id="9f61df96f208c62b0160a6ea16391412" category="doc">Gerenciamento de acesso com SAML no SANtricity System Manager</block>
-  <block id="c7d61109369977053daf9c88d1108e8e" category="doc">Baixe a interface de linha de comando do SANtricity</block>
-  <block id="95a98b3c6e0c5954da4c7e8b96a3ac5a" category="doc">Habilite um pacote de recursos no SANtricity System Manager</block>
-  <block id="464f8a9d64784984a543eae9182df875" category="doc">Ativar ou desativar o provisionamento de recursos no SANtricity System Manager</block>
-  <block id="1fd0a1d54f4bd06351fb76e8eca332ad" category="doc">Importar certificados confiáveis para controladores de cliente no SANtricity System Manager</block>
-  <block id="a934f0d06ea2342378e1380857519549" category="doc">Saiba mais sobre as configurações no SANtricity System Manager</block>
-  <block id="1ccffe90f1de4d408d38bf20da51c899" category="doc">Permissões para funções mapeadas no SANtricity System Manager</block>
-  <block id="039788d1864b684f87346f59bfa4d739" category="doc">Remover um servidor de diretório no SANtricity System Manager</block>
-  <block id="3453a28d38c4cafd145716ec592d395d" category="doc">Mude para o gerenciamento de chaves internas no SANtricity System Manager</block>
-  <block id="b470a793f075a7fcfcfc9659dc234c58" category="doc">Use certificados assinados por CA para autenticação do servidor de gerenciamento de chaves no SANtricity System Manager</block>
-  <block id="1331920238f82433bb6db7793528c5ea" category="doc">Valide a chave de segurança no SANtricity System Manager</block>
-  <block id="d2a1754e8e06bfe5612c3beea7f405ff" category="doc">Adicione volumes a um grupo de consistência de Snapshot no SANtricity System Manager</block>
-  <block id="0e69962765f06e747fa32fbef5ca2dfa" category="doc">Criação automática versus manual de pools no SANtricity System Manager</block>
-  <block id="02b225176109d9c377facad88362e99a" category="doc">Volumes base, capacidade reservada e grupos de Snapshot no SANtricity System Manager</block>
-  <block id="d192a83ef8925f54fdcf0c16c0e7b299" category="doc">Cancelar a reversão de uma imagem Snapshot no SANtricity System Manager</block>
-  <block id="7e918b0d2faea692d326e3756220b310" category="doc">Como o SANtricity System Manager aloca capacidade para volumes</block>
-  <block id="f54321e06c768597eebe0dcc72e489c0" category="doc">Terminologia de capacidade no SANtricity System Manager</block>
-  <block id="32a3b11ed3463df61dc16477437d8a24" category="doc">Alterar as configurações de cache SSD no SANtricity System Manager</block>
-  <block id="56192af025cdf48a354c62c853f30e54" category="doc">Alterar as configurações do volume de Snapshot no SANtricity System Manager</block>
-  <block id="fab94fed7dca6dc66cfc6ab1f0f5c05e" category="doc">Volumes espessos e volumes finos no SANtricity System Manager</block>
-  <block id="3d2c4b5356c5b86167b6a15f009e24e5" category="doc">Converter um volume de snapshot para o modo de leitura/gravação no SANtricity System Manager</block>
-  <block id="9083ead8449c448c781abfe6b54610f4" category="doc">Crie um cache SSD no SANtricity System Manager</block>
-  <block id="b5b04b6393f18dbf0e62bd2b4dd834a8" category="doc">Saiba mais sobre a integridade de dados e a segurança dos volumes do SANtricity System Manager</block>
-  <block id="3c54e1c53a0dc4c38d81725a8da18c12" category="doc">Ative ou desative o provisionamento de recursos em volumes existentes no SANtricity System Manager</block>
-  <block id="00c222b3c27caa065f2548538948419d" category="doc">Exportação e importação de grupo de volume usando a SANtricity CLI</block>
-  <block id="60515e9f325b01561c9a2ed474128036" category="doc">Terminologia de host no software SANtricity</block>
-  <block id="7c2e93916c4a983be9790eb66bf04cf6" category="doc">Como o SANtricity System Manager atribui volumes a hosts e clusters de hosts</block>
-  <block id="c5f2b72a092ee991678a3b63fb135375" category="doc">Como as cargas de trabalho funcionam no SANtricity System Manager</block>
-  <block id="bfddbb4a8974ff568ad18a38fda4dfc1" category="doc">Métricas de desempenho e seus efeitos no SANtricity System Manager</block>
-  <block id="eee1145d1428056283f791bad1763d47" category="doc">Alterar o protocolo do módulo de E/S do host no SANtricity System Manager</block>
-  <block id="6bedb5cbd20ea6f758277a771f0d9619" category="doc">Aplicações e cargas de trabalho no SANtricity System Manager</block>
-  <block id="24cc6fafa46a4c4c80d12d135f962c9b" category="doc">Saiba mais sobre o número máximo de LUNs no SANtricity System Manager</block>
-  <block id="b89ee3f3429b4e7847dbed9539b56934" category="doc">Saiba mais sobre monitoramento de desempenho no SANtricity System Manager</block>
-  <block id="d819f2c17c60edea453d123633ebd19c" category="doc">Gráficos de desempenho e diretrizes no SANtricity System Manager</block>
-  <block id="ecb13a670ce0aca336bd52c59d8f9a27" category="doc">Terminologia de desempenho no software SANtricity</block>
-  <block id="fa147213586cc32c79ffab9d58b400ed" category="doc">Remover capacidade de um pool ou cache SSD no SANtricity System Manager</block>
-  <block id="a2bd31be59cb17391b08f73dc83aae2b" category="doc">Remover um volume de um grupo de consistência de Snapshot no SANtricity System Manager</block>
-  <block id="5cd5c8220f13f98d2fe6b292135e29ae" category="doc">Como o Remote Storage funciona no SANtricity System Manager</block>
-  <block id="8bfc191572da98279c6c9c0513469753" category="doc">Modifique as configurações de conexão de armazenamento remoto no SANtricity System Manager</block>
-  <block id="ca288818744ef5728748d41b6c613b9d" category="doc">Requisitos do recurso de armazenamento remoto no software SANtricity</block>
-  <block id="a243a7b5acda9122ef1699d6d1dc6103" category="doc">Requisitos de volume do armazenamento remoto no software SANtricity</block>
-  <block id="fe755a1a0856a898707f25e7afd31925" category="doc">Terminologia de armazenamento remoto no software SANtricity</block>
-  <block id="ddb40ea2e71917899406465ddab6b266" category="doc">Aprenda sobre agendamentos de Snapshot e grupos de consistência no SANtricity System Manager</block>
-  <block id="29e61858c276e79b0402d85b037c18a7" category="doc">Terminologia de Snapshot no software SANtricity</block>
-  <block id="e2ebe859b5713ea8bb2f4a44408b9309" category="doc">Ative as luzes indicadoras para um pool, grupo de volume ou cache SSD no SANtricity System Manager</block>
-  <block id="776f5784462b72c4d773b46e42ad192f" category="doc">Terminologia de volume no SANtricity System Manager</block>
-  <block id="6cffc95c43f10dad2ccd290c79c89cf2" category="doc">Saiba mais sobre os serviços de cópia no SANtricity System Manager</block>
-  <block id="4a7b7b8c4bd59cf364756c6ed8442f82" category="doc">Fluxo de trabalho de criação de hosts e atribuição de volumes no SANtricity System Manager</block>
-  <block id="76d433aabf7d2457b9020c23d5e36443" category="doc">Fluxo de trabalho de criação de imagem Snapshot e volume Snapshot no SANtricity System Manager</block>
-  <block id="cb957be371f4decf5b339d4cc8a4121b" category="doc">Fluxo de trabalho de criação de volume no SANtricity System Manager</block>
-  <block id="fa4a43d6200d6d180038f666f189f163" category="doc">Saiba mais sobre AutoSupport no SANtricity System Manager</block>
-  <block id="c76bd70d7abee16e78ad80f656dec63f" category="doc">Limpar o modo de recuperação no SANtricity System Manager</block>
-  <block id="27fd826d33043052db377eea34000de6" category="doc">Suporte no SANtricity System Manager</block>
-  <block id="f731c4e3b43815425b588e377f8b8bc1" category="doc">Saiba mais sobre o registro de eventos no SANtricity System Manager</block>
-  <block id="87f3ce8d204b0e323026384d3bd0d9aa" category="doc">Saiba mais sobre o suporte no SANtricity System Manager</block>
-  <block id="d6f46d0217af5fd0a99ad24839f9525f" category="doc">Saiba mais sobre como atualizar o SANtricity System Manager</block>
-  <block id="2a94eba180a711a184d2fd7931e69678" category="doc">Recupere uma imagem de integridade no SANtricity System Manager</block>
-  <block id="e06497835b2b7382a8895553a3db5d8b" category="doc">Erros de atualização de software e firmware no SANtricity System Manager</block>
-  <block id="d3befcf90191b6f16d3a22220a61e39b" category="doc">Use o editor de script no SANtricity System Manager</block>
-  <block id="655af2da0ba012c2c8a9a88cb897b759" category="doc">Informações do array de armazenamento no SANtricity System Manager</block>
-  <block id="e68263bc0480a6d1e0655715e366dabc" category="doc">Fluxo de trabalho de configuração do AutoSupport para o SANtricity System Manager</block>
-  <block id="f30f830df378d2c8989c81556f2c4764" category="summary">Saiba mais sobre a administração do SANtricity Unified Manager</block>
-  <block id="47f0413cb20bb8e14a5ffff0eaadaa09" category="doc">Terminologia de gerenciamento de acesso no SANtricity Unified Manager</block>
-  <block id="4757289a5855c9f1c7db68000325786c" category="doc">Adicione um servidor de diretório no SANtricity Unified Manager</block>
-  <block id="6b5418b89a39f915692d8e34cfd942a6" category="doc">Terminologia de certificados no SANtricity Unified Manager</block>
-  <block id="9637827307b29627dc2238af9725a5d6" category="doc">Aprenda sobre o gerenciamento de certificados no SANtricity Unified Manager</block>
-  <block id="a7ecf1553995da3d2743c22262c37124" category="doc">Saiba mais sobre os certificados no SANtricity Unified Manager</block>
-  <block id="b5f1b67c06b7b544f96a6bbdad051ccb" category="doc">Permissões para funções mapeadas no SANtricity Unified Manager</block>
-  <block id="5a209d7dbfa459b30592ced09cdeec87" category="doc">Remover um servidor de diretório no SANtricity Unified Manager</block>
-  <block id="9d2c2b0302cfbfb3c67b05135a735b12" category="doc">Redefinir certificados de gerenciamento no SANtricity Unified Manager</block>
-  <block id="5bf7980117541c59631c0a16238f41ae" category="doc">Resolver problemas com certificados não confiáveis no SANtricity Unified Manager</block>
-  <block id="05c5f1fcfe8cc31fab357e37d4775802" category="doc">Use certificados assinados por uma Autoridade Certificadora (CA) para o SANtricity Unified Manager</block>
-  <block id="c1007a9b27f844c6cfb5b9721fc0d3d7" category="doc">Visualize os certificados no SANtricity Unified Manager</block>
-  <block id="9fa5838c036e41275620f4416d7f3ccc" category="doc">Visualize as funções de usuário locais no SANtricity Unified Manager</block>
-  <block id="481a1eb5d00f26554de764845060834c" category="doc">Descubra um único array de storage no SANtricity Unified Manager</block>
-  <block id="477e7370a4b5379f602b1304b1cf7e15" category="doc">Como funciona o recurso Importar configurações no SANtricity Unified Manager</block>
-  <block id="579042bf24fd7fde9d7627d9ecf70af7" category="doc">Fluxos de trabalho de configuração de espelhamento no SANtricity Unified Manager</block>
-  <block id="e878e800e48b5fa2852ca7f54fb327e7" category="doc">Terminologia de espelhamento no SANtricity Unified Manager</block>
-  <block id="29da77c52eafcba541581a388cd664a9" category="doc">Saiba mais sobre como importar configurações no SANtricity Unified Manager</block>
-  <block id="e2fdda3387120d1171ee4244ec5b44ce" category="inline-link-macro">Como o recurso Importar configurações funciona</block>
-  <block id="03f5ec10608e982c1558044d901b338b" category="list-text"><block ref="03f5ec10608e982c1558044d901b338b" category="inline-link-macro-rx"></block></block>
-  <block id="310a91e54737c4ae8df21da5af91b19f" category="inline-link-macro">Requisitos de replicação da configuração de storage</block>
-  <block id="5319c9afb1aeefc2270bda11ebaf9791" category="list-text"><block ref="5319c9afb1aeefc2270bda11ebaf9791" category="inline-link-macro-rx"></block></block>
-  <block id="53e23b1768e32229c0ee10904e25f9c7" category="doc">Saiba mais sobre grupos de arrays no SANtricity Unified Manager</block>
-  <block id="62fa16231fa8e76394efd72b5b3c2e66" category="inline-link-macro">Fluxos de trabalho de configuração de espelhamento</block>
-  <block id="17371bd83c772c10f3243d7e49b98b70" category="list-text"><block ref="17371bd83c772c10f3243d7e49b98b70" category="inline-link-macro-rx"></block></block>
-  <block id="a0506609f1afca5d8ba269ec071ce896" category="inline-link-macro">Descubra um único array de storage</block>
-  <block id="90a265ac1f01d3273097d6ed7a2e35cb" category="list-text"><block ref="90a265ac1f01d3273097d6ed7a2e35cb" category="inline-link-macro-rx"></block></block>
-  <block id="2b3d2d1b872ee0e8f27ff39b8e81bd98" category="list-text"><block ref="2b3d2d1b872ee0e8f27ff39b8e81bd98" category="inline-link-macro-rx"></block></block>
-  <block id="1dbfa2854295a031cae67e2c27b8d7f7" category="doc">Requisitos de replicação da configuração de armazenamento no SANtricity Unified Manager</block>
-  <block id="63b0ef9396e6fdd1ebe4ed0ac96a0b88" category="doc">Status do array de storage no SANtricity Unified Manager</block>
-  <block id="3e3ab97da43f9cbbde4f710dc1523d3a" category="doc">Saiba mais sobre como atualizar arrays de storage com o SANtricity Unified Manager</block>
-  <block id="712baff1701c605dfc39f4e5da7d934e" category="section-title">Novos recursos na versão 12.10R1</block>
-  <block id="9bee6f4318d6dc6bfd57ef5376da8437" category="paragraph">Esta versão contém apenas pequenas alterações e nenhum novo recurso. Para mais informações sobre as alterações nesta versão, consulte o E-Series SANtricity OS 12.10R1 README.</block>
-  <block id="534d737e3b11a0c1ecc6be448beff492" category="paragraph">Um novo editor de scripts já está disponível no SANtricity System Manager. O editor de scripts permite criar ou editar um arquivo de script, salvar um arquivo de script no disco local da estação de gerenciamento de storage ou carregar um arquivo de script do disco. O editor de scripts oferece recursos de verificação de sintaxe e execução de comandos para gerenciar seu sistema de storage. Para obter mais informações, consulte <block ref="c89b24f343925323abf5bc404bade770" category="inline-link-macro-rx"></block>.</block>
+  <block id="e696b5c8159d83bd1e0c9466e8dc6569" category="doc">Configurar o login remoto (SSH) no SANtricity System Manager</block>
+  <block id="818b0e2fc3aea06067d74bb4f780f6b9" category="doc">Configurar a porta de gerenciamento no SANtricity System Manager</block>
+  <block id="a5b238fa2c3059fafa096070c01245a3" category="doc">Saiba mais sobre a atribuição de endereço IP para controladoras E-Series</block>
+  <block id="4e93b8b944e5c04bea9b9d1730a25d24" category="doc">Página de hardware e componentes do SANtricity System Manager</block>
+  <block id="4dc44f8dbe6ad59382a81af1f307e488" category="doc">Aprenda sobre a terminologia de hardware usada no software SANtricity</block>
+  <block id="a4db80cf14327a39f06d517d526b499b" category="doc">Inicializar (formatar) as unidades no SANtricity System Manager</block>
+  <block id="bc002fb1c00b485cb67eb27376711964" category="doc">Coloque um controlador em modo de serviço no SANtricity System Manager</block>
+  <block id="625d3b8a8a0203cf44e0f6efaf6a34ea" category="doc">Reinicializar (reiniciar) um controlador no SANtricity System Manager</block>
+  <block id="4e9beac4b22e622f0d3183b6f9575a00" category="doc">Saiba mais sobre Solid State Disks (SSDs) no SANtricity System Manager</block>
+  <block id="69985995523c2d426b66408d7daed125" category="doc">Gerenciar a proteção por senha no SANtricity System Manager</block>
+  <block id="5c32253d600042425394ed5980d9be38" category="doc">Saiba mais sobre a página de operações em andamento do SANtricity System Manager</block>
+  <block id="84c667f2d1e6dc3b9cfc907f53006d6b" category="doc">Recupere-se de problemas usando o SANtricity System Manager Recovery Guru</block>
+  <block id="cdc0f9266381611530583b5dbc95a241" category="doc">Visualize e tome medidas em operações em andamento no SANtricity System Manager</block>
+  <block id="da92aaa9d58d31bf3512ac56ae148a38" category="doc">Visualizar a hierarquia de armazenamento no SANtricity System Manager</block>
+  <block id="f9b276c09a9e51a75340fb1dfc3ed5b3" category="doc">Visualizar o status do espelhamento assíncrono no SANtricity System Manager</block>
+  <block id="b20236a95c5f1bc7346a4ac7f1eebdd7" category="doc">Saiba mais sobre a terminologia de espelhamento assíncrono no software SANtricity</block>
+  <block id="27c9d2020a7ee9c9a172785caee2aa42" category="doc">Altere a função do grupo de consistência de espelhamento para primário ou secundário no SANtricity System Manager</block>
+  <block id="17823d78ef73f722cb5ec83d77a0f31e" category="doc">Altere a função entre volumes em um par espelhado no SANtricity System Manager</block>
+  <block id="e344db326042f633dec679fb389ca0e4" category="doc">Alterar as configurações de sincronização para um grupo de consistência em SANtricity System Manager</block>
+  <block id="b571c7942921f56e38dc2234119600d8" category="doc">Alterar as configurações de sincronização para um par espelhado no SANtricity System Manager</block>
+  <block id="b052df0a73bcccc6ed7511b3380c1c60" category="doc">Conclua um par espelhado para volumes primários criados em um sistema legado no SANtricity System Manager</block>
+  <block id="ec650621f1b4e4a52be9f5b5b3aa032e" category="doc">Perguntas frequentes sobre espelhamento assíncrono para SANtricity System Manager</block>
+  <block id="e49efc0cfc4c7b160fd4cdfba13d0678" category="doc">Perguntas frequentes sobre espelhamento síncrono para o SANtricity System Manager</block>
+  <block id="b2cce2e99d90dba951300d4a07acdb14" category="doc">Saiba mais sobre espelhamento assíncrono no software SANtricity</block>
+  <block id="0f972a72bd5aee334d59e1b29c5fab31" category="doc">Saiba mais sobre espelhamento síncrono no software SANtricity</block>
+  <block id="7926a1ac9382d00cfc6590c0c80ef6be" category="doc">Ressincronizar manualmente os grupos de consistência de espelhamento no SANtricity System Manager</block>
+  <block id="842e6d9c2ca7e55947da010574d7e7c1" category="doc">Alterar funções do grupo de consistência de espelhamento no software SANtricity</block>
+  <block id="cc26556700cde643f7a4998ca0976a84" category="doc">Suspender e retomar a sincronização de pares espelhados no SANtricity System Manager</block>
+  <block id="792c6be07e358d94fe968a169f79db04" category="doc">Suspender ou retomar a sincronização para grupos de consistência de espelhamento no SANtricity System Manager</block>
+  <block id="9212fc74e3a656c3e279ca35e552e4b8" category="doc">Saiba mais sobre o status do espelhamento síncrono no SANtricity System Manager</block>
+  <block id="4f8462d7e51cbebb3142f0e3ef3307d5" category="doc">Saiba mais sobre a terminologia de espelhamento síncrono no software SANtricity</block>
+  <block id="8a5d4160ce799475585f4a484b087ea4" category="doc">Espelhe um volume de forma assíncrona no software SANtricity</block>
+  <block id="6269a17f543c70330eed460dfbeb80cf" category="doc">Espelhe um volume de forma síncrona no software SANtricity</block>
+  <block id="98e180b1b51e3a769b6b400a853b4fee" category="doc">Saiba mais sobre tokens de acesso e o software SANtricity</block>
+  <block id="12ef56ab57abceebe446bc84df46db66" category="doc">Configurar o controle de acesso com serviços de diretório no SANtricity System Manager</block>
+  <block id="651d31373dfaa6016c9970348683a4e2" category="doc">Configurar o controle de acesso com funções de usuário locais no SANtricity System Manager</block>
+  <block id="f89df32ddf89eeb4831e3ce927641b0d" category="doc">Configurar o controle de acesso com SAML no SANtricity System Manager</block>
+  <block id="a51e02ec23d44482ee35f52a6cee39df" category="doc">Baixe a interface de linha de comando (CLI) do SANtricity</block>
+  <block id="e952784922289283b3df3c1933d68928" category="admonition">A combinação de unidades FDE e FIPS no mesmo array de storage não é suportada. Todas as unidades com capacidade de segurança no sistema devem ser do mesmo tipo.</block>
+  <block id="6dc937bc5628a4386cadff95dc13abbf" category="doc">Ativar o pacote de recursos no SANtricity System Manager</block>
+  <block id="10aff6802167a5ac9452c8b14db4242c" category="doc">Ativar ou desativar o provisionamento de recursos para novos grupos de volumes ou pools no SANtricity System Manager</block>
+  <block id="d58c9e6d59208ed869a5a6027d70f7f1" category="doc">Encerrar sessão iSCSI no SANtricity System Manager</block>
+  <block id="a0deb44d63d5f738f7550059d305633f" category="doc">Importar certificados para controladores ao atuar como clientes no SANtricity System Manager</block>
+  <block id="ae48cd923fae951bb620af759c7d55b2" category="doc">Saiba mais sobre a visão geral das configurações no SANtricity System Manager</block>
+  <block id="18edfcf681469261c28a2bea1990ea7c" category="doc">Saiba sobre permissões para funções mapeadas no SANtricity System Manager</block>
+  <block id="f4e6a2ce83fceea85080a8b1da16b11b" category="doc">Remover servidor de diretório em SANtricity System Manager</block>
+  <block id="00777c3320e115287926e31250ef4795" category="doc">Altere do gerenciamento de chaves externas para internas no SANtricity System Manager</block>
+  <block id="dab3bfe38b7f2554e1401a2ef31824e9" category="doc">Use certificados assinados por CA para autenticação com um servidor de gerenciamento de chaves no SANtricity System Manager</block>
+  <block id="ac84474de686243b90bb777f8ce6e019" category="doc">Validar chave de segurança no SANtricity System Manager</block>
+  <block id="c5a40eee53e3a6a046bdea74e93f749f" category="doc">Adicione um volume membro a um grupo de consistência de Snapshot no SANtricity System Manager</block>
+  <block id="509488a264daaa2f4c25a1fa7afa1f46" category="doc">Saiba mais sobre a criação automática versus manual de pools no SANtricity System Manager</block>
+  <block id="8eb7d61e639ed5ef84ecef34c3ef9a90" category="doc">Saiba mais sobre volumes base, capacidade reservada e grupos de Snapshot no SANtricity System Manager</block>
+  <block id="a5f504929c631626bde694e07e40402f" category="doc">Cancelar o rollback da imagem de Snapshot no SANtricity System Manager</block>
+  <block id="f6451e9b8258e70783f6678ce4a78412" category="doc">Como a capacidade é alocada para volumes no SANtricity System Manager</block>
+  <block id="a22bf3ba1965f4018179bbe16740c08b" category="doc">Aprenda sobre a terminologia de capacidade no SANtricity software</block>
+  <block id="d93ede7c0a9199ba535682cd36adfd6b" category="doc">Alterar as configurações de cache SSD no SANtricity System Manager</block>
+  <block id="2d7b65b82c1f0b9693bcaec90915566b" category="doc">Altere as configurações de volume para um volume de Snapshot no SANtricity System Manager</block>
+  <block id="0097a0f3241434bae78043e2c521dcb5" category="doc">Aprenda sobre volumes espessos e finos no software SANtricity</block>
+  <block id="cebf235e245ac1727a4fb08543606201" category="doc">Converter volume de Snapshot para modo de leitura/gravação no SANtricity System Manager</block>
+  <block id="eb3abb20820606d928fae99a14f6f642" category="doc">Criar um SSD Cache no SANtricity System Manager</block>
+  <block id="9e8f2d62c9dcd77c3af552f4dc422803" category="doc">Aprenda sobre integridade de dados e segurança de dados para volumes no software SANtricity</block>
+  <block id="a972ddc2555e0c0f6f4250942ecf95ce" category="doc">Aprenda sobre pools e grupos de volume no software SANtricity</block>
+  <block id="eb78bb0efa13b98850811f7037ae0248" category="doc">Ative ou desative o provisionamento de recursos em grupos de volume e pools existentes no SANtricity System Manager</block>
+  <block id="fbca024c709800ed9d79d8d98711710e" category="doc">Exportar/importar grupos de volume na interface de linha de comando do SANtricity</block>
+  <block id="784971b82053a9ec4e8b050ed269b12e" category="doc">Aprenda sobre a terminologia de hosts no software SANtricity</block>
+  <block id="c5e2b4d9edd295e4401e7a8af50e8885" category="doc">Como os volumes são atribuídos a hosts e clusters de hosts no SANtricity software</block>
+  <block id="b5737f8b0357274da1616dd64fdf26d9" category="doc">Como funcionam as cargas de trabalho no SANtricity software</block>
+  <block id="9d4b81d6353945511bba44b53f060178" category="doc">Interpretar dados de desempenho no SANtricity System Manager</block>
+  <block id="b8f664f5fc973a8d1f414e6e339615b0" category="doc">Gerencie aplicativos e cargas de trabalho no SANtricity System Manager</block>
+  <block id="341c80e43a8a914f71a2e7ad4a5f7fda" category="doc">Saiba mais sobre o número máximo de LUNs no SANtricity software</block>
+  <block id="84606dd9cabb3b19867d6f645fd8c8a8" category="doc">Saiba mais sobre a visão geral de desempenho no SANtricity System Manager</block>
+  <block id="731e43a989aca6062649b6099aea7cd9" category="doc">Saiba mais sobre gráficos de desempenho e diretrizes no SANtricity System Manager</block>
+  <block id="d3c3d5c671cfe29f288d108c475d0cea" category="doc">Aprenda sobre a terminologia de desempenho no SANtricity software</block>
+  <block id="1f5cc0774a4c5896a1fb25c090efb928" category="doc">Remover capacidade de um pool ou SSD Cache no SANtricity System Manager</block>
+  <block id="da30c6e6de44aadac9f61229e5115658" category="doc">Remover um volume membro de um grupo de consistência de Snapshot no SANtricity System Manager</block>
+  <block id="83e9ff341dfee574c32441ab8b662616" category="doc">Como o armazenamento remoto funciona no software SANtricity</block>
+  <block id="7f5129743a0f50bc41a8c9a062a8bab5" category="doc">Modifique as configurações de conexão para storage remoto no SANtricity System Manager</block>
+  <block id="2e2d253f7cd81ceb6bcba438c519b2ee" category="doc">Saiba mais sobre os requisitos do recurso Remote Storage no software SANtricity</block>
+  <block id="f7776c2d857931b11f315d9f567809aa" category="doc">Saiba mais sobre os requisitos de volume de armazenamento remoto no software SANtricity</block>
+  <block id="9bbd2c41600fb135b12ce4e029570cb3" category="doc">Aprenda sobre a terminologia de armazenamento remoto no software SANtricity</block>
+  <block id="f8e23923415fcce5a7cdcdc2257e6d85" category="doc">Saiba mais sobre agendamento do Snapshot e grupo de consistência no SANtricity System Manager</block>
+  <block id="b69d32f5fb8ab10915adbba619c0017e" category="doc">Aprenda sobre a terminologia de Snapshot no software SANtricity</block>
+  <block id="70bac6cb7596a1c5682c0b4051f0160e" category="doc">Ative as luzes indicadoras em um pool, grupo de volume ou cache SSD no SANtricity System Manager</block>
+  <block id="150d59a7387353231504faf7bf859a37" category="doc">Aprenda sobre a terminologia de volume no software SANtricity</block>
+  <block id="03d6e8dbe8844e33147500a449a64865" category="doc">Trabalhe com serviços de cópia no SANtricity System Manager</block>
+  <block id="b39156053f03ed44af37d8f2f50fb255" category="doc">Como funciona a criação de host e a atribuição de volumes no SANtricity System Manager</block>
+  <block id="718da838e465d1abdbb88f3d4afe63d1" category="doc">Como funciona a criação de imagens de snapshot e volumes de snapshot no SANtricity System Manager</block>
+  <block id="9d122974ba94e0669b60b1256ad34bfd" category="doc">Como funciona a criação de volumes no SANtricity System Manager</block>
+  <block id="dcc654c03fdd53146e27ae86d2a8d251" category="doc">Saiba mais sobre AutoSupport para E-Series</block>
+  <block id="9e2da9890d81f2a3a0fd3c5aa502bbc2" category="doc">Limpar o modo de recuperação no software SANtricity</block>
+  <block id="2ef1bc8a31b44790bfa2373dac614173" category="doc">Saiba mais sobre o registro de eventos no software SANtricity</block>
+  <block id="2c3df2acde9fe7176be03c82187c5d37" category="doc">Obtenha suporte no SANtricity System Manager</block>
+  <block id="6c247fdcaa3825d5dc1ae46f09e8ee20" category="doc">Saiba mais sobre como atualizar o software SANtricity</block>
+  <block id="7463122a32a40f3e04176a4eb5ff44c2" category="doc">Recuperar imagem de integridade no SANtricity System Manager</block>
+  <block id="44a6cbe3df16b1a1e8d0858832567f21" category="doc">Saiba mais sobre erros de upgrade de software e firmware do SANtricity</block>
+  <block id="286df7907589603c59edb63682f9667f" category="doc">Usando o editor de script</block>
+  <block id="664d03b3e0f7be60fce96082fc9602bd" category="doc">Visualize as informações de um array de storage no SANtricity System Manager</block>
+  <block id="599923004690b0c1117d7b708d7321cb" category="doc">Configurar AutoSupport no SANtricity System Manager</block>
+  <block id="12552cabe7cc02a88100da5f5c4c0b2d" category="summary">SANtricity Unified Manager 8</block>
+  <block id="d851bcacf6cd800c089a36d64d74a181" category="doc">Saiba mais sobre a terminologia de gerenciamento de acesso do SANtricity Unified Manager</block>
+  <block id="955cd4a17806922c8ca0dd3c53f0e180" category="doc">Adicionar servidor de diretório em SANtricity Unified Manager</block>
+  <block id="678fed422fa391c5a10436bb093756a0" category="doc">Saiba mais sobre a terminologia de certificados no SANtricity Unified Manager</block>
+  <block id="6b719500a46be35ef104e70ead2e14cb" category="doc">Visão geral dos certificados</block>
+  <block id="200b55ecf44e01b07228d86f14ac18a0" category="doc">Descobrir um único array no SANtricity Unified Manager</block>
+  <block id="fc93d33343fdfc3c73cfca172ffd6ebf" category="doc">Saiba mais sobre como configurar vários arrays de storage no SANtricity Unified Manager</block>
+  <block id="dab3ba4d78fb907a2b857b70cff46835" category="doc">Fluxos de trabalho de configuração do espelhamento SANtricity</block>
+  <block id="3b359f38e087517c0d02b105333d690f" category="doc">Saiba mais sobre a terminologia de espelhamento no SANtricity Unified Manager</block>
+  <block id="273afb9794fcb75bd1b190680990764e" category="doc">Saiba mais sobre como importar configurações de array de storage no SANtricity Unified Manager</block>
+  <block id="1eaf4936c48bc1f30cb16af32c820a59" category="list-text"><block ref="1eaf4936c48bc1f30cb16af32c820a59" category="inline-link-macro-rx"></block></block>
+  <block id="1388708b1c1631e745e1497782d0a4a5" category="list-text"><block ref="1388708b1c1631e745e1497782d0a4a5" category="inline-link-macro-rx"></block></block>
+  <block id="782dea5f0e7d506c6ba4bafc90640252" category="doc">Saiba mais sobre a visão geral de grupos no SANtricity Unified Manager</block>
+  <block id="457c34efc7526192d414539f64c241d3" category="inline-link-macro">Fluxo de trabalho de configuração de espelhamento</block>
+  <block id="a2c2ab24785ab98435f81f6f49001ec8" category="list-text"><block ref="a2c2ab24785ab98435f81f6f49001ec8" category="inline-link-macro-rx"></block></block>
+  <block id="e4030f71404621b473962d90bbbdc87b" category="list-text"><block ref="e4030f71404621b473962d90bbbdc87b" category="inline-link-macro-rx"></block></block>
+  <block id="234804df6b8c83d56d3d447cbd1e7fe3" category="inline-link-macro">Visualizar status do array de storage</block>
+  <block id="ed3b298a5696d78a02facae953c788ad" category="list-text"><block ref="ed3b298a5696d78a02facae953c788ad" category="inline-link-macro-rx"></block></block>
+  <block id="a79c2f9262b82d53fa0ea61bc945844c" category="doc">Requisitos para replicar configurações de array de storage no SANtricity Unified Manager</block>
+  <block id="76dc6c9aa3960fe34656b2f144f48c06" category="doc">Visualize o status do array de storage no SANtricity Unified Manager</block>
+  <block id="9da51a1302e75e343632d510bb4cc161" category="doc">Saiba mais sobre como atualizar vários arrays de storage com SANtricity Unified Manager</block>
+  <block id="96326b5520f644337f2b9f27c4b4e238" category="paragraph">Um novo editor de scripts já está disponível no SANtricity System Manager. O editor de scripts permite criar ou editar um arquivo de script, salvar um arquivo de script no disco local da estação de gerenciamento de storage ou carregar um arquivo de script do disco. O editor de scripts oferece recursos de verificação de sintaxe e execução de comandos para gerenciar seu sistema de storage. Para obter mais informações, consulte <block ref="7511cf8ef97831a0432bb6966b2afe45" category="inline-link-macro-rx"></block>.</block>
 </blocks>

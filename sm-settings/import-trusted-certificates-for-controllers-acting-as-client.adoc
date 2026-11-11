@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, import, certificates, 
 summary: 'Se o controlador rejeitar uma conexão por não conseguir validar a cadeia de confiança de um servidor de rede, você pode importar um certificado da página Certificados confiáveis que permite ao controlador (atuando como cliente) aceitar comunicações desse servidor.' 
 ---
-= Importar certificados confiáveis para controladores de cliente no SANtricity System Manager
+= Importar certificados para controladores ao atuar como clientes no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

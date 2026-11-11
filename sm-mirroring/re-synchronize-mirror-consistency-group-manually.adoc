@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, re-synchronize, mirror, consistency, group, manually, 
 summary: Você pode iniciar manualmente a re-sincronização para todos os pares espelhados dentro de um grupo de consistência de espelho. 
 ---
-= Ressincronize manualmente um grupo de consistência de espelhamento no SANtricity System Manager
+= Ressincronizar manualmente os grupos de consistência de espelhamento no SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

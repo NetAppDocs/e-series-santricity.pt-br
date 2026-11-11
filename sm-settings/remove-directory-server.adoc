@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, remove, directory, server, 
 summary: Para interromper a conexão entre um servidor de diretório e o array de storage, você pode remover as informações do servidor na página Directory services. Você pode querer realizar essa tarefa se tiver configurado um novo servidor e depois quiser remover o antigo. 
 ---
-= Remover um servidor de diretório no SANtricity System Manager
+= Remover servidor de diretório em SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

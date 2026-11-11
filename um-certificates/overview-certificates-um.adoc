@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, certificate management 
 summary: 'O Gerenciamento de certificados permite criar solicitações de assinatura de certificado (CSRs), importar certificados e gerenciar certificados existentes.' 
 ---
-= Saiba mais sobre os certificados no SANtricity Unified Manager
+= Visão geral dos certificados
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

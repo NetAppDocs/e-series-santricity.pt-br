@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, reset, management, certificates 
 summary: Você pode reverter o certificado de gerenciamento para o estado original, autoassinado de fábrica. 
 ---
-= Redefinir certificados de gerenciamento no SANtricity Unified Manager
+= Repor certificados de gestão
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

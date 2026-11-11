@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, volumes, assigned, hosts, clusters 
 summary: Para que um host ou cluster de host envie e/S para um volume, você deve atribuir o volume ao host ou cluster de host. 
 ---
-= Como o SANtricity System Manager atribui volumes a hosts e clusters de hosts
+= Como os volumes são atribuídos a hosts e clusters de hosts no SANtricity software
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
